@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "CommonJS",
+      "outDir": "./dist",
+      "rootDir": "./",
+      "resolveJsonModule": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "paths": {
+        "@/src/*": [
+            "./src/*"
+        ]
+    }
+    },
+    "exclude": ["node_modules", "dist"],
+    "compileOnSave": true,
+    "typeAcquisition": {
+      "enable": true
+    }
+  }
