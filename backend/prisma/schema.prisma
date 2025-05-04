@@ -26,7 +26,171 @@ model User {
   user_deleted           Boolean   @default(false)
   user_created_at        DateTime  @default(now())
   user_updated_at        DateTime  @updatedAt
+  type                   UserType  @default(USER)
+
+  // Relations for previous CitizenAccount
+  evidenceSubmitted EvidenceItem[] @relation("EvidenceItem_submittedBy")
+  projectsCreated   Initiative[]      @relation("ProjectCreator")
 
   @@index([user_active])
   @@index([user_deleted])
+}
+
+// ===== PROJECTS =====
+
+enum ProjectType {
+  LOCAL_GOV
+  NATIONAL_GOV
+  REGIONAL_GOV
+}
+
+enum ProjectStatus {
+  AMBER
+  GREEN
+}
+
+enum EvidenceType {
+  PDF
+  URL
+  TEXT
+}
+
+enum ModerationState {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum UserType {
+  ADMIN
+  MODERATOR
+  USER
+}
+
+enum CountryCode {
+  ENGLAND
+  SCOTLAND
+  WALES
+  NORTHERN_IRELAND
+}
+
+model LocalAuthority {
+  id          String      @id @default(uuid())
+  name        String
+  code        String      @unique
+  website     String?
+  countryCode CountryCode
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  projects Initiative[]
+}
+
+// ── Core Aggregates ─────────────────────────────────────────────────────────
+model Initiative {
+  id                 String          @id @default(uuid())
+  title              String
+  description        String?
+  type               ProjectType
+  ownerOrg           String?
+  regionId           String
+  region             Region          @relation(fields: [regionId], references: [id])
+  localAuthorityId   String?
+  localAuthority     LocalAuthority? @relation(fields: [localAuthorityId], references: [id])
+  createdById        Int
+  createdBy          User            @relation("ProjectCreator", fields: [createdById], references: [user_id])
+  createdAt          DateTime        @default(now())
+  expectedCompletion DateTime?
+  status             ProjectStatus
+  statusUpdatedAt    DateTime        @default(now())
+  statusRationale    String?
+
+  // Minimal geo fields; switch to PostGIS Point/Polygon if you enable the ext.
+  latitude  Decimal? @db.Decimal(10, 7)
+  longitude Decimal? @db.Decimal(10, 7)
+
+  // Relationships
+  objectives      Objective[]
+  evidence        EvidenceItem[]
+  discoveredLinks DiscoveredProject[]
+
+  @@index([regionId])
+  @@index([status])
+  @@index([localAuthorityId])
+	@@map("Project")
+}
+
+model Objective {
+  id          String      @id @default(uuid())
+  projectId   String
+  project     Initiative     @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  title       String
+  description String?
+  orderIndex  Int
+  keyResults  KeyResult[]
+
+  @@index([projectId, orderIndex])
+}
+
+model KeyResult {
+  id            String        @id @default(uuid())
+  objectiveId   String
+  objective     Objective     @relation(fields: [objectiveId], references: [id], onDelete: Cascade)
+  statement     String
+  targetMetric  Decimal?      @db.Decimal(20, 6)
+  currentMetric Decimal?      @db.Decimal(20, 6)
+  unit          String?
+  dueDate       DateTime?
+  ragStatus     ProjectStatus
+
+  @@index([objectiveId])
+}
+
+model EvidenceItem {
+  id              String          @id @default(uuid())
+  projectId       String
+  project         Initiative         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  submittedById   Int
+  submittedBy     User            @relation("EvidenceItem_submittedBy", fields: [submittedById], references: [user_id])
+  type            EvidenceType
+  urlOrBlobId     String
+  caption         String?
+  createdAt       DateTime        @default(now())
+  moderationState ModerationState @default(PENDING)
+
+  // Geo-tag for where the evidence was captured
+  latitude  Decimal? @db.Decimal(10, 7)
+  longitude Decimal? @db.Decimal(10, 7)
+
+  @@index([projectId])
+  @@index([submittedById])
+  @@index([moderationState])
+}
+
+model Region {
+  id              String    @id @default(uuid())
+  name            String
+  // Store complex shapes as GeoJSON until migrate to PostGIS Polygon
+  boundingPolygon Json?
+  projects        Initiative[]
+}
+
+model DiscoveredProject {
+  id              String       @id @default(uuid())
+  rawContentHash  String       @unique
+  sourceUrl       String
+  crawledAt       DateTime     @default(now())
+  linkedProjectId String?
+  linkedProject   Initiative?     @relation(fields: [linkedProjectId], references: [id])
+  llmSummaries    LLMSummary[]
+
+  @@index([linkedProjectId])
+}
+
+model LLMSummary {
+  id                  String            @id @default(uuid())
+  discoveredProjectId String
+  discoveredProject   DiscoveredProject @relation(fields: [discoveredProjectId], references: [id], onDelete: Cascade)
+  summaryJson         Json
+  confidence          Float
 }
