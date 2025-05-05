@@ -30,7 +30,7 @@ model User {
 
   // Relations for previous CitizenAccount
   evidenceSubmitted EvidenceItem[] @relation("EvidenceItem_submittedBy")
-  projectsCreated   Initiative[]      @relation("ProjectCreator")
+  projectsCreated   Initiative[]   @relation("ProjectCreator")
 
   @@index([user_active])
   @@index([user_deleted])
@@ -82,6 +82,7 @@ model LocalAuthority {
   countryCode CountryCode
   createdAt   DateTime    @default(now())
   updatedAt   DateTime    @updatedAt
+  regionId    String
 
   projects Initiative[]
 }
@@ -117,13 +118,13 @@ model Initiative {
   @@index([regionId])
   @@index([status])
   @@index([localAuthorityId])
-	@@map("Project")
+  @@map("Project")
 }
 
 model Objective {
   id          String      @id @default(uuid())
   projectId   String
-  project     Initiative     @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  project     Initiative  @relation(fields: [projectId], references: [id], onDelete: Cascade)
   title       String
   description String?
   orderIndex  Int
@@ -149,7 +150,7 @@ model KeyResult {
 model EvidenceItem {
   id              String          @id @default(uuid())
   projectId       String
-  project         Initiative         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  project         Initiative      @relation(fields: [projectId], references: [id], onDelete: Cascade)
   submittedById   Int
   submittedBy     User            @relation("EvidenceItem_submittedBy", fields: [submittedById], references: [user_id])
   type            EvidenceType
@@ -168,8 +169,8 @@ model EvidenceItem {
 }
 
 model Region {
-  id              String    @id @default(uuid())
-  name            String
+  id              String       @id @default(uuid())
+  name            String       @unique
   // Store complex shapes as GeoJSON until migrate to PostGIS Polygon
   boundingPolygon Json?
   projects        Initiative[]
@@ -181,7 +182,7 @@ model DiscoveredProject {
   sourceUrl       String
   crawledAt       DateTime     @default(now())
   linkedProjectId String?
-  linkedProject   Initiative?     @relation(fields: [linkedProjectId], references: [id])
+  linkedProject   Initiative?  @relation(fields: [linkedProjectId], references: [id])
   llmSummaries    LLMSummary[]
 
   @@index([linkedProjectId])

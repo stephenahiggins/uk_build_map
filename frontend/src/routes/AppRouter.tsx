@@ -2,6 +2,8 @@ import React from 'react';
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import DashboardTemplate from '../components/templates/DashboardTemplate';
 import HomePage from '../components/pages/Home/HomePage';
+import AddInitiativePage from '../components/pages/AddInitiative/AddInitiativePage';
+import InitiativeTemplate from '../components/templates/InitativeTemplate';
 import AuthTemplate from '../components/templates/AuthTemplate';
 import LoginPage from '../components/pages/Login/LoginPage';
 import RegisterPage from '../components/pages/Register/RegisterPage';
@@ -49,6 +51,17 @@ const AppRouter = createBrowserRouter([
     ],
   },
   {
+    path: 'initiative',
+    element: <ProtectedRoute element={<InitiativeTemplate />} />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: 'add',
+        element: <AddInitiativePage />,
+      },
+    ],
+  },
+  {
     path: 'auth',
     element: <PublicRoute element={<AuthTemplate />} />, // Protect login/register for authenticated users
     errorElement: <ErrorPage />,
@@ -77,4 +90,5 @@ const AppRouter = createBrowserRouter([
   },
 ]);
 
+console.log('Foo', AppRouter);
 export default AppRouter;

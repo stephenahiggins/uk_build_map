@@ -1,5 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Logout from '../molecules/Logout';
 
-const Navbar: React.FC = () => <nav></nav>;
+const Navbar: React.FC = () => (
+  <nav className="flex items-center justify-between p-4 bg-white shadow">
+    <div className="flex items-center gap-4">
+      <Link
+        to="/dashboard/home"
+        className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
+      >
+        Home
+      </Link>
+      <Link
+        to="/initiative/add"
+        className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
+      >
+        Add Initiative
+      </Link>
+    </div>
+    <div className="flex items-center">
+      <Logout />
+    </div>
+  </nav>
+);
 
 export default Navbar;

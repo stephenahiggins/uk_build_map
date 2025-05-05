@@ -9,6 +9,7 @@ interface UserState {
     user_created_at: string;
     user_updated_at: string;
     user_deleted: boolean;
+    user_type: 'ADMIN' | 'MODERATOR' | 'USER';
   } | null;
   setUser: (user: {
     user_id: number;
@@ -18,6 +19,7 @@ interface UserState {
     user_created_at: string;
     user_updated_at: string;
     user_deleted: boolean;
+    user_type: 'ADMIN' | 'MODERATOR' | 'USER';
   }) => void;
   clearUser: () => void;
 }

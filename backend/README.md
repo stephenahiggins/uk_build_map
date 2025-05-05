@@ -32,7 +32,7 @@ NODE_ENV="development" # development, staging, production
 GOOGLE_CLIENT_ID=""
 EMAIL_USER="youremail@example.com"
 EMAIL_PASS=""
-FRONTEND_URL="http://localhost:3000"
+FRONTEND_URL="http://localhost:3001"
 
 # auth >>>
 JWT_ACCESS_SECRET="your-jwt-secret"
@@ -61,7 +61,7 @@ NODE_ENV="development" # development, staging, production
 GOOGLE_CLIENT_ID=""
 EMAIL_USER="youremail@example.com"
 EMAIL_PASS=""
-FRONTEND_URL="http://localhost:3000"
+FRONTEND_URL="http://localhost:3001"
 
 # auth >>>
 JWT_ACCESS_SECRET="your-jwt-secret"

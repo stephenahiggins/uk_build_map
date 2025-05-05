@@ -112,7 +112,7 @@ const LoginPage: React.FC = () => {
           </form>
           <div className="flex justify-between">
             <Button
-              text="forgot password"
+              text="I've forgotten my password"
               onClick={() => navigate('/auth/forgot-password')}
               size="none"
               variant="link"

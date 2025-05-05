@@ -11,6 +11,7 @@ export const login = async (payload: LoginPayload) => {
   const { data } = await axiosInstance.post('/api/v1/auth/login', payload, {
     withCredentials: true, // Ensure credentials are included
   });
+  console.log('LOG auth', data);
   return data;
 };
 
