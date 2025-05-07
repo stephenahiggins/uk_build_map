@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import metadataService from '../../../services/metadataService';
+import axiosInstance from '../../../config/axiosConfig';
 import useUserStore from '../../../store/userStore';
 
-// Types for the form
 interface InitiativeForm {
   title: string;
   description: string;
@@ -63,8 +63,7 @@ const AddInitiativePage: React.FC = () => {
     setError(null);
     setSuccess(false);
     try {
-      // TODO: Replace with your API endpoint
-      await axios.post('/api/initiatives', data);
+      await axiosInstance.post('/api/v1/initiatives', data);
       setSuccess(true);
       reset();
     } catch (e: any) {
@@ -73,7 +72,6 @@ const AddInitiativePage: React.FC = () => {
   };
 
   if (loading) return <div className="p-8">Loading...</div>;
-  console.log('FOO');
   return (
     <div className="max-w-xl mx-auto p-8 bg-white rounded shadow mt-8">
       <h1 className="text-2xl font-bold mb-6">Add Initiative</h1>
@@ -107,7 +105,7 @@ const AddInitiativePage: React.FC = () => {
             {...register('type', { required: true })}
             className="input input-bordered w-full"
           >
-            <option value="">Select type</option>
+            <option value="">Select region level</option>
             <option value="LOCAL_GOV">Local Government</option>
             <option value="NATIONAL_GOV">National Government</option>
             <option value="REGIONAL_GOV">Regional Government</option>
@@ -172,6 +170,7 @@ const AddInitiativePage: React.FC = () => {
             className="input input-bordered w-full"
           >
             <option value="">Select status</option>
+            <option value="RED">Red</option>
             <option value="AMBER">Amber</option>
             <option value="GREEN">Green</option>
           </select>

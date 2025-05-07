@@ -12,16 +12,14 @@ export interface LocalAuthority {
   regionId: string;
 }
 
-const BASE_URL = process.env.REACT_APP_METADATA_API_URL || '';
-
 const metadataService = {
   async getRegions(): Promise<Region[]> {
-    const response = await axiosInstance.get(`${BASE_URL}/regions`);
+    const response = await axiosInstance.get(`/api/v1/regions`);
     return response.data;
   },
 
   async getLocalAuthorities(regionId?: string): Promise<LocalAuthority[]> {
-    let url = `${BASE_URL}/local-authorities`;
+    let url = `/api/v1/local-authorities`;
     if (regionId) {
       url += `?regionId=${regionId}`;
     }
