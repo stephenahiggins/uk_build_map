@@ -1,23 +1,30 @@
 {
-    "compilerOptions": {
-      "target": "ES5",
-      "module": "CommonJS",
-      "outDir": "./dist",
-      "rootDir": "./",
-      "resolveJsonModule": true,
-      "strict": true,
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true,
-      "paths": {
-        "@/src/*": [
-            "./src/*"
-        ]
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "resolveJsonModule": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@/src/*": [
+        "./src/*"
+      ]
     }
-    },
-    "exclude": ["node_modules", "dist"],
-    "compileOnSave": true,
-    "typeAcquisition": {
-      "enable": true
-    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "src",
+    "src/v1/types"
+  ],
+  "compileOnSave": true,
+  "typeAcquisition": {
+    "enable": true
   }
+}

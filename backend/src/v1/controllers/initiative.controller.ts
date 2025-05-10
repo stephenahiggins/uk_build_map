@@ -1,11 +1,15 @@
-import { Request, Response } from 'express';
-import prisma from '@/src/prisma/client';
+import { Response } from 'express';
+import { RequestWithProfile } from '@/src/v1/types';
+import prisma from '@/src/db';
 import { UserType } from '@prisma/client';
 
 // POST /initiatives - Create an initiative
-export const createInitiative = async (req: Request, res: Response) => {
+export const createInitiative = async (
+  req: RequestWithProfile,
+  res: Response
+) => {
   try {
-    const userId = req.user?.user_id; // Assuming req.user is set by auth middleware
+    const userId = req.profile?.user_id;
     if (!userId) return res.status(401).json({ error: 'Unauthorized' });
 
     const {
@@ -22,6 +26,28 @@ export const createInitiative = async (req: Request, res: Response) => {
       longitude,
     } = req.body;
 
+    // Validate and convert expectedCompletion
+    let isoExpectedCompletion = expectedCompletion;
+    if (expectedCompletion && !expectedCompletion.includes('T')) {
+      // Convert date string to ISO-8601
+      const dateObj = new Date(expectedCompletion);
+      if (isNaN(dateObj.getTime())) {
+        return res.status(400).json({
+          error:
+            "Invalid 'expectedCompletion' format. Must be a valid date or ISO-8601 DateTime (e.g. 2025-05-15T00:00:00.000Z).",
+        });
+      }
+      isoExpectedCompletion = dateObj.toISOString();
+    } else if (
+      expectedCompletion &&
+      isNaN(new Date(expectedCompletion).getTime())
+    ) {
+      return res.status(400).json({
+        error:
+          "Invalid 'expectedCompletion' format. Must be a valid date or ISO-8601 DateTime (e.g. 2025-05-15T00:00:00.000Z).",
+      });
+    }
+
     const initiative = await prisma.initiative.create({
       data: {
         title,
@@ -30,7 +56,7 @@ export const createInitiative = async (req: Request, res: Response) => {
         ownerOrg,
         regionId,
         localAuthorityId,
-        expectedCompletion,
+        expectedCompletion: isoExpectedCompletion,
         status,
         statusRationale,
         latitude,
@@ -38,6 +64,8 @@ export const createInitiative = async (req: Request, res: Response) => {
         createdById: userId,
       },
     });
+
+    console.log('FOO', initiative);
     res.status(201).json(initiative);
   } catch (err) {
     res
@@ -47,7 +75,10 @@ export const createInitiative = async (req: Request, res: Response) => {
 };
 
 // GET /initiatives/:id - Retrieve initiative by ID
-export const getInitiativeById = async (req: Request, res: Response) => {
+export const getInitiativeById = async (
+  req: RequestWithProfile,
+  res: Response
+) => {
   try {
     const { id } = req.params;
     const initiative = await prisma.initiative.findUnique({
@@ -64,7 +95,10 @@ export const getInitiativeById = async (req: Request, res: Response) => {
 };
 
 // GET /initiatives - List all initiatives (optionally filtered by type)
-export const getInitiatives = async (req: Request, res: Response) => {
+export const getInitiatives = async (
+  req: RequestWithProfile,
+  res: Response
+) => {
   try {
     // Optional filter: ?type=LOCAL_GOV|NATIONAL_GOV|REGIONAL_GOV
     const { type } = req.query;
@@ -93,16 +127,21 @@ export const getInitiatives = async (req: Request, res: Response) => {
     });
     res.json(initiatives);
   } catch (err) {
-    res.status(500).json({ error: 'Failed to fetch initiatives', details: err });
+    res
+      .status(500)
+      .json({ error: 'Failed to fetch initiatives', details: err });
   }
 };
 
 // POST /initiatives/:id - Modify an initiative
-export const modifyInitiative = async (req: Request, res: Response) => {
+export const modifyInitiative = async (
+  req: RequestWithProfile,
+  res: Response
+) => {
   try {
     const { id } = req.params;
-    const userId = req.user?.user_id;
-    const userType = req.user?.type;
+    const userId = req.profile?.user_id;
+    const userType = req.profile?.user_type;
     if (!userId) return res.status(401).json({ error: 'Unauthorized' });
 
     // Fetch the initiative to check permissions

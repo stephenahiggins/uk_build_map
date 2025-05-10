@@ -25,7 +25,24 @@ axiosInstance.interceptors.request.use(
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
-    // Handle errors
+    // Check if the error response indicates an expired JWT
+    if (
+      error.response &&
+      error.response.data &&
+      error.response.data.error === 'jwt expired'
+    ) {
+      // Clear token from store and localStorage (if used)
+      if (useTokenStore.getState().logout) {
+        useTokenStore.getState().logout();
+      }
+      localStorage.removeItem('token'); // Adjust if your token uses a different key
+
+      // Optionally, show a message
+      alert('Session expired. Please log in again.');
+
+      // Redirect to login page
+      window.location.href = '/auth/login';
+    }
     return Promise.reject(error);
   }
 );

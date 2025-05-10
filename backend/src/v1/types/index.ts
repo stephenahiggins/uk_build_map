@@ -6,6 +6,7 @@ export interface Profile {
   user_email: string;
   user_password?: string;
   user_refreshToken?: string | null;
+  user_type?: string;
 }
 
 export interface RequestWithProfile extends Request {

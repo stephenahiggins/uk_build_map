@@ -45,6 +45,7 @@ enum ProjectType {
 }
 
 enum ProjectStatus {
+  RED
   AMBER
   GREEN
 }

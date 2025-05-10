@@ -14,12 +14,19 @@ logs:
 shell:
 	$(DOCKER_COMPOSE) exec $(SERVICE) /bin/sh
 
+restart:
+	$(DOCKER_COMPOSE) restart $(SERVICE)
+
 # --- Database & Prisma ---
 migrate:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma migrate dev
 
 prisma-generate:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma generate
+
+update-schema:
+	$(MAKE) prisma-generate
+	$(MAKE) migrate
 
 seed:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma db seed

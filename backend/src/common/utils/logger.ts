@@ -54,6 +54,24 @@ const logger: winston.Logger = winston.createLogger({
       level: 'info', // Log all messages with level 'info' and above
     }),
   ],
+  exceptionHandlers: [
+    new winston.transports.Console({
+      stderrLevels: ['error'],
+    }),
+    new winston.transports.File({
+      filename: 'logs/exceptions.log',
+      level: 'error',
+    }),
+  ],
+  rejectionHandlers: [
+    new winston.transports.Console({
+      stderrLevels: ['error'],
+    }),
+    new winston.transports.File({
+      filename: 'logs/rejections.log',
+      level: 'error',
+    }),
+  ],
 });
 
 const avbLogLevels = [

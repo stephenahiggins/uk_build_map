@@ -60,6 +60,10 @@ const AddInitiativePage: React.FC = () => {
   }, []);
 
   const onSubmit = async (data: InitiativeForm) => {
+    // Convert expectedCompletion to ISO-8601 if only a date is provided
+    if (data.expectedCompletion && !data.expectedCompletion.includes('T')) {
+      data.expectedCompletion = new Date(data.expectedCompletion).toISOString();
+    }
     setError(null);
     setSuccess(false);
     try {
