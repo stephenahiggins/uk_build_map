@@ -3,7 +3,7 @@ import Navbar from '../organisms/Navbar';
 import Footer from '../organisms/Footer';
 import { Outlet } from 'react-router-dom';
 
-const InitiativeTemplate: React.FC = () => {
+const ProjectTemplate: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
@@ -15,4 +15,4 @@ const InitiativeTemplate: React.FC = () => {
   );
 };
 
-export default InitiativeTemplate;
+export default ProjectTemplate;

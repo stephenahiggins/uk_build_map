@@ -3,12 +3,24 @@ import { CustomError, RequestWithProfile } from '@/src/v1/types';
 import { NextFunction, Response } from 'express';
 import { errorResponse } from '../services/response';
 import prisma from '@/src/db';
+import config from '@/src/common/config/config';
 
 export default async (
   req: RequestWithProfile,
   res: Response,
   next: NextFunction
 ): Promise<void> => {
+  if (config.env === 'development') {
+    // Bypass authentication in development mode
+    req.profile = {
+      user_id: 1,
+      user_name: 'Dev User',
+      user_email: 'dev@example.com',
+      user_type: 'admin',
+      user_refreshToken: null
+    };
+    return next();
+  }
   try {
     let token = '';
     let token_string =

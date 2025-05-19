@@ -59,6 +59,93 @@ Create a `.env.test` file in the root directory of the project to run tests with
 PORT=5002
 NODE_ENV="development" # development, staging, production
 GOOGLE_CLIENT_ID=""
+
+---
+
+# Project API Routes
+
+## Create a Project
+
+**POST** `/api/v1/projects`
+
+Create a new project.
+
+**Request Body (JSON):**
+
+| Field             | Type     | Required | Description                                 |
+|-------------------|----------|----------|---------------------------------------------|
+| title             | string   | Yes      | Project title                               |
+| description       | string   | No       | Project description                         |
+| type              | string   | Yes      | Project type (`LOCAL_GOV`, `NATIONAL_GOV`, `REGIONAL_GOV`) |
+| regionId          | string   | Yes      | Associated region ID                        |
+| localAuthorityId  | string   | No       | Associated local authority ID               |
+| expectedCompletion| string   | No       | Expected completion date (ISO 8601)         |
+| status            | string   | Yes      | Project status (`RED`, `AMBER`, `GREEN`)    |
+| statusRationale   | string   | No       | Reason for project status                   |
+| latitude          | number   | No       | Project latitude                            |
+| longitude         | number   | No       | Project longitude                           |
+
+**Response:**  
+Returns the created project object.
+
+---
+
+## Get All Projects
+
+**GET** `/api/v1/projects`
+
+Retrieve a list of projects. All parameters are optional and can be used as filters (combined as needed).
+
+**Query Parameters:**
+
+| Parameter         | Type     | Description                                        |
+|-------------------|----------|----------------------------------------------------|
+| id                | string   | Filter by project ID                               |
+| title             | string   | Filter by title (case-insensitive, partial match)  |
+| description       | string   | Filter by description (case-insensitive, partial)  |
+| type              | string   | Filter by type (`LOCAL_GOV`, `NATIONAL_GOV`, `REGIONAL_GOV`) |
+| regionId          | string   | Filter by region ID                                |
+| localAuthorityId  | string   | Filter by local authority ID                       |
+| expectedCompletion| string   | Filter by expected completion date (ISO 8601)      |
+| status            | string   | Filter by status (`RED`, `AMBER`, `GREEN`)         |
+| statusRationale   | string   | Filter by status rationale (case-insensitive, partial) |
+| latitude          | number   | Filter by latitude                                 |
+| longitude         | number   | Filter by longitude                                |
+| createdAt         | string   | Filter by creation date (ISO 8601)                 |
+
+**Response:**  
+Returns an array of project objects matching the filters.
+
+**Example:**  
+`GET /api/v1/projects?type=LOCAL_GOV&regionId=abc123&status=GREEN`
+
+---
+
+## Get Project by ID
+
+**GET** `/api/v1/projects/:id`
+
+Retrieve a single project by its ID.
+
+**Response:**  
+Returns the project object or 404 if not found.
+
+---
+
+## Update Project
+
+**POST** `/api/v1/projects/:id`
+
+Update an existing project.
+
+**Request Body:**  
+Same as "Create a Project" (fields optional; only provided fields will be updated).
+
+**Response:**  
+Returns the updated project object.
+
+---
+
 EMAIL_USER="youremail@example.com"
 EMAIL_PASS=""
 FRONTEND_URL="http://localhost:3001"

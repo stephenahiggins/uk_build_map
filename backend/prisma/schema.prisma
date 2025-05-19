@@ -30,7 +30,7 @@ model User {
 
   // Relations for previous CitizenAccount
   evidenceSubmitted EvidenceItem[] @relation("EvidenceItem_submittedBy")
-  projectsCreated   Initiative[]   @relation("ProjectCreator")
+  projectsCreated   Project[]      @relation("ProjectCreator")
 
   @@index([user_active])
   @@index([user_deleted])
@@ -54,6 +54,7 @@ enum EvidenceType {
   PDF
   URL
   TEXT
+  DATE
 }
 
 enum ModerationState {
@@ -85,16 +86,16 @@ model LocalAuthority {
   updatedAt   DateTime    @updatedAt
   regionId    String
 
-  projects Initiative[]
+  projects Project[]
 }
 
 // ── Core Aggregates ─────────────────────────────────────────────────────────
-model Initiative {
-  id                 String          @id @default(uuid())
-  title              String
-  description        String?
-  type               ProjectType
-  ownerOrg           String?
+model Project {
+  id          String      @id @default(uuid())
+  title       String
+  description String?
+  type        ProjectType
+
   regionId           String
   region             Region          @relation(fields: [regionId], references: [id])
   localAuthorityId   String?
@@ -125,7 +126,7 @@ model Initiative {
 model Objective {
   id          String      @id @default(uuid())
   projectId   String
-  project     Initiative  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  project     Project     @relation(fields: [projectId], references: [id], onDelete: Cascade)
   title       String
   description String?
   orderIndex  Int
@@ -151,12 +152,13 @@ model KeyResult {
 model EvidenceItem {
   id              String          @id @default(uuid())
   projectId       String
-  project         Initiative      @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  project         Project         @relation(fields: [projectId], references: [id], onDelete: Cascade)
   submittedById   Int
   submittedBy     User            @relation("EvidenceItem_submittedBy", fields: [submittedById], references: [user_id])
   type            EvidenceType
+  title           String
   urlOrBlobId     String
-  caption         String?
+  description     String?
   createdAt       DateTime        @default(now())
   moderationState ModerationState @default(PENDING)
 
@@ -170,11 +172,11 @@ model EvidenceItem {
 }
 
 model Region {
-  id              String       @id @default(uuid())
-  name            String       @unique
+  id              String    @id @default(uuid())
+  name            String    @unique
   // Store complex shapes as GeoJSON until migrate to PostGIS Polygon
   boundingPolygon Json?
-  projects        Initiative[]
+  projects        Project[]
 }
 
 model DiscoveredProject {
@@ -183,7 +185,7 @@ model DiscoveredProject {
   sourceUrl       String
   crawledAt       DateTime     @default(now())
   linkedProjectId String?
-  linkedProject   Initiative?  @relation(fields: [linkedProjectId], references: [id])
+  linkedProject   Project?     @relation(fields: [linkedProjectId], references: [id])
   llmSummaries    LLMSummary[]
 
   @@index([linkedProjectId])

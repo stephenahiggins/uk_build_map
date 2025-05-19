@@ -2,8 +2,8 @@ import React from 'react';
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import DashboardTemplate from '../components/templates/DashboardTemplate';
 import HomePage from '../components/pages/Home/HomePage';
-import AddInitiativePage from '../components/pages/AddInitiative/AddInitiativePage';
-import InitiativeTemplate from '../components/templates/InitativeTemplate';
+import AddProjectPage from '../components/pages/AddProject/AddProjectPage';
+import ProjectTemplate from '../components/templates/InitativeTemplate';
 import AuthTemplate from '../components/templates/AuthTemplate';
 import LoginPage from '../components/pages/Login/LoginPage';
 import RegisterPage from '../components/pages/Register/RegisterPage';
@@ -11,6 +11,8 @@ import ErrorPage from '../components/pages/Error/ErrorPage';
 import useTokenStore from '../store/tokenStore';
 import ForgotPasswordPage from '../components/pages/ForgotPassword/ForgotPassword';
 import ResetPasswordPage from '../components/pages/ResetPassword/ResetPassword';
+import ListProjects from '../components/pages/ListProjects/ListProjects';
+import ViewProject from '../components/pages/ViewProjects/ViewProject';
 
 // Component to protect routes
 const ProtectedRoute = ({ element }: { element: React.JSX.Element }) => {
@@ -51,13 +53,21 @@ const AppRouter = createBrowserRouter([
     ],
   },
   {
-    path: 'initiative',
-    element: <ProtectedRoute element={<InitiativeTemplate />} />,
+    path: 'project',
+    element: <ProtectedRoute element={<ProjectTemplate />} />,
     errorElement: <ErrorPage />,
     children: [
       {
         path: 'add',
-        element: <AddInitiativePage />,
+        element: <AddProjectPage />,
+      },
+      {
+        path: ':id',
+        element: <ViewProject />,
+      },
+      {
+        path: 'list',
+        element: <ListProjects />,
       },
     ],
   },

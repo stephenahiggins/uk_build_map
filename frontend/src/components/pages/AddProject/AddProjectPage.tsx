@@ -3,12 +3,13 @@ import { useForm } from 'react-hook-form';
 import metadataService from '../../../services/metadataService';
 import axiosInstance from '../../../config/axiosConfig';
 import useUserStore from '../../../store/userStore';
+import Button from '../../molecules/Button';
 
-interface InitiativeForm {
+interface ProjectForm {
   title: string;
   description: string;
   type: 'LOCAL_GOV' | 'NATIONAL_GOV' | 'REGIONAL_GOV';
-  ownerOrg: string;
+
   regionId: string;
   localAuthorityId: string;
   expectedCompletion: string;
@@ -24,14 +25,14 @@ interface LocalAuthority {
   name: string;
 }
 
-const AddInitiativePage: React.FC = () => {
+const AddProjectPage: React.FC = () => {
   const { user, setUser, clearUser } = useUserStore();
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm<InitiativeForm>();
+  } = useForm<ProjectForm>();
   const [regions, setRegions] = useState<Region[]>([]);
   const [localAuthorities, setLocalAuthorities] = useState<LocalAuthority[]>(
     []
@@ -59,7 +60,7 @@ const AddInitiativePage: React.FC = () => {
     fetchData();
   }, []);
 
-  const onSubmit = async (data: InitiativeForm) => {
+  const onSubmit = async (data: ProjectForm) => {
     // Convert expectedCompletion to ISO-8601 if only a date is provided
     if (data.expectedCompletion && !data.expectedCompletion.includes('T')) {
       data.expectedCompletion = new Date(data.expectedCompletion).toISOString();
@@ -67,21 +68,21 @@ const AddInitiativePage: React.FC = () => {
     setError(null);
     setSuccess(false);
     try {
-      await axiosInstance.post('/api/v1/initiatives', data);
+      await axiosInstance.post('/api/v1/projects', data);
       setSuccess(true);
       reset();
     } catch (e: any) {
-      setError(e?.response?.data?.message || 'Failed to add initiative');
+      setError(e?.response?.data?.message || 'Failed to add project');
     }
   };
 
   if (loading) return <div className="p-8">Loading...</div>;
   return (
     <div className="max-w-xl mx-auto p-8 bg-white rounded shadow mt-8">
-      <h1 className="text-2xl font-bold mb-6">Add Initiative</h1>
+      <h1 className="text-2xl font-bold mb-6">Add Project</h1>
       {success && (
         <div className="mb-4 text-green-600">
-          Initiative added successfully!
+          Project tracking added successfully!
         </div>
       )}
       {error && <div className="mb-4 text-red-600">{error}</div>}
@@ -117,17 +118,7 @@ const AddInitiativePage: React.FC = () => {
           {errors.type && (
             <span className="text-red-500">This field is required</span>
           )}
-        </div>
-        <div>
-          <label className="block font-medium">Owner Organisation</label>
-          <input
-            {...register('ownerOrg', { required: true })}
-            className="input input-bordered w-full"
-          />
-          {errors.ownerOrg && (
-            <span className="text-red-500">This field is required</span>
-          )}
-        </div>
+        </div>{' '}
         <div>
           <label className="block font-medium">Region</label>
           <select
@@ -182,12 +173,14 @@ const AddInitiativePage: React.FC = () => {
             <span className="text-red-500">This field is required</span>
           )}
         </div>
-        <button type="submit" className="btn btn-primary w-full">
-          Add Initiative
-        </button>
+        <Button
+          type="submit"
+          className="btn btn-primary w-full"
+          text="Add project"
+        />
       </form>
     </div>
   );
 };
 
-export default AddInitiativePage;
+export default AddProjectPage;

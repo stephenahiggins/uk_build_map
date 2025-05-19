@@ -12,10 +12,16 @@ const Navbar: React.FC = () => (
         Home
       </Link>
       <Link
-        to="/initiative/add"
+        to="/project/list"
         className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
       >
-        Add Initiative
+        Projects
+      </Link>
+      <Link
+        to="/project/add"
+        className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
+      >
+        Add Project
       </Link>
     </div>
     <div className="flex items-center">

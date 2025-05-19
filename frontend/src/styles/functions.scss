@@ -1,0 +1,14 @@
+@import './_colors';
+
+@function get($name, $map) {
+  @if map-has-key($map, $name) {
+    @return map-get($map, $name);
+  } @else {
+    @warn "#{$name} was not found.";
+    @return '';
+  }
+}
+
+@function get-color($name) {
+  @return get($name, $okr-tracker-colors);
+}

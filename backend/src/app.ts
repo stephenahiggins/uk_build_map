@@ -13,7 +13,7 @@ import cookieParser from 'cookie-parser';
 const app: Application = express();
 app.use(helmet());
 app.use(swaggerApiDocs);
-const allowedOrigins = ['http://localhost:3001', 'http://localhost:5002']; // Add your frontend URL
+const allowedOrigins = ['http://localhost:3001', 'http://localhost:5002'];
 app.use(cookieParser());
 app.use(
   cors({
@@ -27,7 +27,7 @@ app.use(
       ) {
         callback(null, true);
       } else {
-        callback(new Error('Not allowed by CORS'));
+        callback(new Error('Not allowed by CORS. Origin'));
       }
     },
     credentials: true, // Allow credentials
