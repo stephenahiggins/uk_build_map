@@ -4,6 +4,20 @@ import axiosInstance from '../../../config/axiosConfig';
 
 import Header from '../../organisms/Header';
 
+interface Evidence {
+  id: string;
+  projectId: string;
+  submittedById: number;
+  type: string;
+  title: string;
+  urlOrBlobId?: string;
+  description?: string;
+  createdAt: string;
+  moderationState?: string;
+  latitude?: number | null;
+  longitude?: number | null;
+}
+
 interface Project {
   id: string;
   title: string;
@@ -17,6 +31,7 @@ interface Project {
   latitude?: number | null;
   longitude?: number | null;
   createdAt: string;
+  evidence?: Evidence[];
 }
 
 const ViewProject: React.FC = () => {
@@ -103,9 +118,48 @@ const ViewProject: React.FC = () => {
               </section>
               <section className="bg-white rounded shadow p-6">
                 <h2 className="text-lg font-semibold mb-2">Timeline</h2>
-                <div className="italic text-gray-400">
-                  (Timeline placeholder)
-                </div>
+                {project.evidence && project.evidence.length > 0 ? (
+                  <ol className="relative border-l border-gray-200 dark:border-gray-700">
+                    {project.evidence
+                      .slice()
+                      .sort(
+                        (a, b) =>
+                          new Date(a.createdAt).getTime() -
+                          new Date(b.createdAt).getTime()
+                      )
+                      .map((ev, idx) => (
+                        <li className="mb-10 ml-4" key={ev.id}>
+                          <div className="absolute w-3 h-3 bg-blue-200 rounded-full mt-1.5 -left-1.5 border border-blue-400" />
+                          <time className="mb-1 text-xs font-normal leading-none text-gray-400">
+                            {new Date(ev.createdAt).toLocaleDateString()}
+                          </time>
+                          <h3 className="text-md font-semibold text-gray-900 flex items-center gap-2">
+                            {ev.title}
+                            <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded ml-2">
+                              {ev.type}
+                            </span>
+                          </h3>
+                          {ev.description && (
+                            <p className="mb-2 text-sm font-normal text-gray-500">
+                              {ev.description}
+                            </p>
+                          )}
+                          {ev.urlOrBlobId && (
+                            <a
+                              href={ev.urlOrBlobId}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-2 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded hover:underline mt-1"
+                            >
+                              View Evidence
+                            </a>
+                          )}
+                        </li>
+                      ))}
+                  </ol>
+                ) : (
+                  <div className="italic text-gray-400">No evidence yet.</div>
+                )}
               </section>
             </div>
             {/* Right: Map (3/12) and Similar Projects */}

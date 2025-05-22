@@ -2,32 +2,31 @@ import React, { forwardRef } from 'react';
 import clsx from 'clsx';
 
 type InputProps = {
-  type?: 'text' | 'password' | 'email' | 'number'; // Different input types
-  size?: 'small' | 'medium' | 'large' | 'login'; // Different sizes for the input
-  placeholder?: string; // Placeholder text
-  label?: string; // Corrected typo from `lable` to `label`
-  value?: string; // Controlled value
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void; // Change handler
-  className?: string; // Custom Tailwind classes if needed
-  disabled?: boolean; // Disable input
-  reactHookFormRegister?: any; // React Hook Form register function
+  type?: 'text' | 'password' | 'email' | 'number';
+  size?: 'small' | 'medium' | 'large' | 'login';
+  placeholder?: string;
+  label?: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  className?: string;
+  disabled?: boolean;
+  reactHookFormRegister?: any;
 };
 
-// Forward the ref to the input element with a display name
 const Input = forwardRef<HTMLInputElement, InputProps>(
   (
     {
       type = 'text',
       size = 'medium',
       placeholder,
-      label, // Corrected `lable` to `label`
+      label,
       value,
       onChange,
       className,
       disabled = false,
       reactHookFormRegister,
     },
-    ref // `ref` comes as the second parameter
+    ref
   ) => {
     const sizeStyles = {
       small: 'text-sm px-2 py-1',
@@ -56,8 +55,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     );
   }
 );
-
-// Set display name for better debugging
+x
 Input.displayName = 'Input';
 
 export default Input;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import classNames from 'classnames';
+import clsx from 'clsx';
 import Header from '../../organisms/Header';
 import useAuth from '../../../hooks/useAuth';
 import Logout from '../../molecules/Logout';
@@ -79,7 +79,7 @@ const ListProjects: React.FC = () => {
                 onClick={() =>
                   setProjectType(projectType === btn.value ? '' : btn.value)
                 }
-                className={classNames(
+                className={clsx(
                   'sub-page-header',
                   'flex items-center justify-between flex-1 min-w-0 px-6 py-4 border-2 rounded-2xl sketchy-outline transition-colors duration-150 hover:bg-blue-50',
                   {
