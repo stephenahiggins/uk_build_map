@@ -9,6 +9,7 @@ COPY package*.json ./
 
 # Install project dependencies
 RUN npm install --force
+RUN npm install -g ts-node
 
 # Copy the rest of the application code to the container
 COPY . .

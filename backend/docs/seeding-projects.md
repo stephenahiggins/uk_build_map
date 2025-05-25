@@ -31,17 +31,30 @@ This guide explains how to seed national, regional, and local projects into your
 
 ## Running the Seeder
 
-1. Place your JSON file in the backend directory (e.g., `projects.seed.json`).
-2. Run the script:
+1. Place your JSON file in the `seeds/` directory (recommended), e.g., `seeds/national-starter.json`.
+2. Run the seeder using the Makefile, specifying the path to your JSON file with the `SEED` variable:
+
+**Example command:**
+```sh
+make seed-projects SEED=seeds/national-starter.json
+```
+
+This will run the seeding script inside your Docker container, using the specified JSON file.
+
+> You can use any valid JSON file matching the schema, and place it anywhere, but `seeds/` is the recommended location for organization.
+
+### Advanced: Run directly with ts-node
+
+You can also run the script directly (outside Docker):
 
 ```
-npx ts-node scripts/seedProjectsFromFile.ts projects.seed.json
+npx ts-node scripts/seedProjectsFromFile.ts seeds/national-starter.json
 ```
 
 Or add to `package.json` scripts:
 
 ```
-"seed:projects": "ts-node scripts/seedProjectsFromFile.ts projects.seed.json"
+"seed:projects": "ts-node scripts/seedProjectsFromFile.ts seeds/national-starter.json"
 ```
 
 ## Notes
