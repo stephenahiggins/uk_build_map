@@ -94,7 +94,12 @@ export const getProjectById = async (
       },
     });
     if (!project) return res.status(404).json({ error: 'project not found' });
-    res.json(project);
+    const { latitude, longitude, ...rest } = project;
+    res.json({
+      ...rest,
+      latitude: latitude ?? null,
+      longitude: longitude ?? null,
+    });
   } catch (err) {
     res.status(500).json({ error: 'Failed to retrieve project', details: err });
   }

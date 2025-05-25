@@ -12,7 +12,7 @@ import useTokenStore from '../store/tokenStore';
 import ForgotPasswordPage from '../components/pages/ForgotPassword/ForgotPassword';
 import ResetPasswordPage from '../components/pages/ResetPassword/ResetPassword';
 import ListProjects from '../components/pages/ListProjects/ListProjects';
-import ViewProject from '../components/pages/ViewProjects/ViewProject';
+import ViewProject from '../components/pages/ViewProject/ViewProject';
 
 // Component to protect routes
 const ProtectedRoute = ({ element }: { element: React.JSX.Element }) => {

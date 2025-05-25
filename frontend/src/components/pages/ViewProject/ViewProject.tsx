@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axiosInstance from '../../../config/axiosConfig';
 
 import Header from '../../organisms/Header';
+import ProjectMap from '../../atoms/ProjectMap';
 
 interface Evidence {
   id: string;
@@ -168,10 +169,12 @@ const ViewProject: React.FC = () => {
                 <h2 className="text-lg font-semibold mb-2">
                   Map showing location
                 </h2>
-                <div className="italic text-gray-400 text-center">
-                  (Map placeholder
-                  <br />
-                  Show other projects nearby)
+                <div className="w-full">
+                  <ProjectMap
+                    latitude={project.latitude}
+                    longitude={project.longitude}
+                    title={project.title}
+                  />
                 </div>
               </section>
               <section className="bg-white rounded shadow p-6 flex flex-col items-center justify-center min-h-[100px]">
