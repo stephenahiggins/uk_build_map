@@ -1,4 +1,5 @@
 import axiosInstance from '../config/axiosConfig';
+import sortBy from 'lodash/sortBy';
 
 // Define types for the expected responses
 export interface Region {
@@ -24,7 +25,8 @@ const metadataService = {
       url += `?regionId=${regionId}`;
     }
     const response = await axiosInstance.get(url);
-    return response.data;
+    // Sort alphabetically by 'name' property
+    return sortBy(response.data, 'name');
   },
 };
 

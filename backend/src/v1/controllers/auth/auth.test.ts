@@ -1,5 +1,4 @@
 import { agent as request } from 'supertest';
-const bcrypt = require('bcryptjs');
 import httpStatus from 'http-status';
 import app from '@/src/app';
 import prisma from '@/src/db';

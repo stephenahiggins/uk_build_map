@@ -1,4 +1,13 @@
-import { Request } from 'express';
+import type { Request } from 'express';
+
+// This extends the Express Request type to include the file property
+declare global {
+  namespace Express {
+    interface Request {
+      file?: Express.Multer.File;
+    }
+  }
+}
 
 export interface Profile {
   user_id: number;
@@ -9,6 +18,7 @@ export interface Profile {
   user_type?: string;
 }
 
+// RequestWithProfile extends the Express Request type and adds the profile property
 export interface RequestWithProfile extends Request {
   profile?: Profile;
 }

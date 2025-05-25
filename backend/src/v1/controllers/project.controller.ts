@@ -2,6 +2,7 @@ import { Response } from 'express';
 import { RequestWithProfile } from '@/src/v1/types';
 import prisma from '@/src/db';
 import { UserType } from '@prisma/client';
+import { getFileUrl } from '@/src/common/utils/fileUpload';
 
 // POST /projects - Create a project
 export const createProject = async (req: RequestWithProfile, res: Response) => {
@@ -13,7 +14,6 @@ export const createProject = async (req: RequestWithProfile, res: Response) => {
       title,
       description,
       type,
-
       regionId,
       localAuthorityId,
       expectedCompletion,
@@ -23,9 +23,17 @@ export const createProject = async (req: RequestWithProfile, res: Response) => {
       longitude,
     } = req.body;
 
+    // Get the uploaded file path if it exists
+    const imageUrl = req.file?.filename
+      ? getFileUrl(req, req.file.filename)
+      : null;
+
     // Validate and convert expectedCompletion
+    // If expectedCompletion is empty or null, set it to null
     let isoExpectedCompletion = expectedCompletion;
-    if (expectedCompletion && !expectedCompletion.includes('T')) {
+    if (!expectedCompletion || expectedCompletion === '') {
+      isoExpectedCompletion = null;
+    } else if (expectedCompletion && !expectedCompletion.includes('T')) {
       // Convert date string to ISO-8601
       const dateObj = new Date(expectedCompletion);
       if (isNaN(dateObj.getTime())) {
@@ -45,23 +53,27 @@ export const createProject = async (req: RequestWithProfile, res: Response) => {
       });
     }
 
+    // If localAuthorityId is empty or falsy, set to null for Prisma
+    const derivedLocalAuthorityId =
+      !localAuthorityId || localAuthorityId === '' ? null : localAuthorityId;
+
     const project = await prisma.project.create({
       data: {
         title,
         description,
         type,
         regionId,
-        localAuthorityId,
+        localAuthorityId: derivedLocalAuthorityId,
         expectedCompletion: isoExpectedCompletion,
         status,
         statusRationale,
         latitude,
         longitude,
+        imageUrl,
         createdById: userId,
       },
     });
 
-    console.log('FOO', project);
     res.status(201).json(project);
   } catch (err) {
     res.status(500).json({ error: 'Failed to create project', details: err });
@@ -190,6 +202,14 @@ export const modifyProject = async (req: RequestWithProfile, res: Response) => {
       longitude,
     } = req.body;
 
+    // Get the current project to check for existing image
+    const currentProject = await prisma.project.findUnique({ where: { id } });
+
+    // If there's a new file, update the image URL
+    const imageUrl = req.file
+      ? getFileUrl(req, req.file.filename)
+      : currentProject?.imageUrl || null;
+
     const updated = await prisma.project.update({
       where: { id },
       data: {
@@ -198,6 +218,7 @@ export const modifyProject = async (req: RequestWithProfile, res: Response) => {
         type,
         regionId,
         localAuthorityId,
+        imageUrl,
         expectedCompletion,
         status,
         statusRationale,

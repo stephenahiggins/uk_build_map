@@ -1,12 +1,13 @@
-import { User } from '../models/user'; // Adjust path as needed, or use 'any' if no User type
+import { User } from '../models/user';
+import type { MulterFile } from '@/src/common/utils/fileUpload';
 
-// This file augments the Express Request type to include 'user'.
 declare global {
   namespace Express {
     interface Request {
-      profile?: User; // Added for JWT-authenticated profile
+      profile?: User;
+      file?: MulterFile;
     }
   }
 }
 
-export {}; // Ensures this file is treated as a module
+export {};

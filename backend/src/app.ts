@@ -12,6 +12,7 @@ import cookieParser from 'cookie-parser';
 
 const app: Application = express();
 app.use(helmet());
+app.use('/uploads', express.static('uploads'));
 app.use(swaggerApiDocs);
 const allowedOrigins = ['http://localhost:3001', 'http://localhost:5002'];
 app.use(cookieParser());

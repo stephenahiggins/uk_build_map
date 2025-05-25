@@ -111,6 +111,7 @@ model Project {
   // Minimal geo fields; switch to PostGIS Point/Polygon if you enable the ext.
   latitude  Decimal? @db.Decimal(10, 7)
   longitude Decimal? @db.Decimal(10, 7)
+  imageUrl  String?  @db.Text
 
   // Relationships
   objectives      Objective[]
