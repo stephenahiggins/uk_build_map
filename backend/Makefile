@@ -18,6 +18,7 @@ restart:
 	$(DOCKER_COMPOSE) restart $(SERVICE)
 
 # --- Database & Prisma ---
+# See docs/seeding-projects.md (linked from README.md) for JSON seeding instructions.
 migrate:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma migrate dev
 
@@ -30,6 +31,10 @@ update-schema:
 
 seed:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma db seed
+
+# Usage: make seed-projects [SEED=seeds/projects.seed.json]
+seed-projects:
+	$(DOCKER_COMPOSE) exec $(SERVICE) ts-node scripts/seedProjectsFromFile.ts $(SEED)
 
 # --- Testing ---
 test:

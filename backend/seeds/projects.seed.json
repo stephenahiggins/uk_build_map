@@ -1,0 +1,30 @@
+[
+  {
+    "id": "hs2-proj-id",
+    "title": "HS2 High Speed Rail",
+    "description": "High Speed 2 (HS2) is a high-speed railway under construction in the UK, linking London, Birmingham, Manchester and Leeds.",
+    "type": "NATIONAL_GOV",
+    "regionId": "<region-id>",
+    "localAuthorityId": "<local-authority-id>",
+    "createdById": 1,
+    "expectedCompletion": "2035-12-31T00:00:00Z",
+    "status": "AMBER",
+    "statusRationale": "Delays due to funding and planning changes.",
+    "latitude": 51.5074,
+    "longitude": -0.1278
+  },
+  {
+    "id": "crossrail-proj-id",
+    "title": "Crossrail (Elizabeth Line)",
+    "description": "A major new railway for London and the South East.",
+    "type": "REGIONAL",
+    "regionId": "<region-id>",
+    "localAuthorityId": "<local-authority-id>",
+    "createdById": 1,
+    "expectedCompletion": "2022-05-24T00:00:00Z",
+    "status": "GREEN",
+    "statusRationale": "Project complete.",
+    "latitude": 51.5154,
+    "longitude": -0.0721
+  }
+]

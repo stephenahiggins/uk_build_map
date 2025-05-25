@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "seed:projects": "ts-node scripts/seedProjectsFromFile.ts projects.seed.json",
     "build": "tsc --project tsconfig.build.json && tsc-alias",
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
