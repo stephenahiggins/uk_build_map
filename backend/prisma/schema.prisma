@@ -93,11 +93,11 @@ model LocalAuthority {
 model Project {
   id          String      @id @default(uuid())
   title       String
-  description String?
+  description String?     @db.Text
   type        ProjectType
 
-  regionId           String
-  region             Region          @relation(fields: [regionId], references: [id])
+  regionId           String?
+  region             Region?         @relation(fields: [regionId], references: [id])
   localAuthorityId   String?
   localAuthority     LocalAuthority? @relation(fields: [localAuthorityId], references: [id])
   createdById        Int
@@ -106,7 +106,7 @@ model Project {
   expectedCompletion DateTime?
   status             ProjectStatus
   statusUpdatedAt    DateTime        @default(now())
-  statusRationale    String?
+  statusRationale    String?         @db.Text
 
   // Minimal geo fields; switch to PostGIS Point/Polygon if you enable the ext.
   latitude  Decimal? @db.Decimal(10, 7)

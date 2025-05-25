@@ -7,7 +7,9 @@ const prisma = new PrismaClient();
 async function main() {
   const args = process.argv.slice(2);
   if (args.length < 1) {
-    console.error('Usage: ts-node scripts/seedProjectsFromFile.ts <projects.seed.json>');
+    console.error(
+      'Usage: ts-node scripts/seedProjectsFromFile.ts <projects.seed.json>'
+    );
     process.exit(1);
   }
 
@@ -32,11 +34,19 @@ async function main() {
 
   for (const project of projects) {
     try {
+      // Ensure createdById is set to 1 if not provided
+      // Remove createdBy property if present
+      const { createdBy, ...rest } = project;
+      const projectData = {
+        ...rest,
+        createdById: project.createdById ?? 1,
+      };
+
       // Adjust the fields below to match your Prisma schema
       await prisma.project.upsert({
         where: { id: project.id },
         update: {},
-        create: project,
+        create: projectData,
       });
       console.log(`Seeded: ${project.title || project.id}`);
       successCount++;
@@ -45,7 +55,9 @@ async function main() {
       failCount++;
     }
   }
-  console.log(`\nSeeding complete. Success: ${successCount}, Failed: ${failCount}`);
+  console.log(
+    `\nSeeding complete. Success: ${successCount}, Failed: ${failCount}`
+  );
   await prisma.$disconnect();
 }
 

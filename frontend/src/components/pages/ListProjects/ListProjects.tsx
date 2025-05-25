@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
+import { sortBy } from 'lodash';
 import Header from '../../organisms/Header';
+import { SearchBar } from '../../molecules/SearchBar';
 import useAuth from '../../../hooks/useAuth';
-import Logout from '../../molecules/Logout';
 import useUserStore from '../../../store/userStore';
 import { Link } from 'react-router-dom';
 import axiosInstance from '../../../config/axiosConfig';
@@ -35,7 +36,9 @@ const ListProjects: React.FC = () => {
   const { user, setUser } = useUserStore();
 
   const [projectType, setProjectType] = useState<string>('');
-  const [projects, setProjects] = useState<Project[]>([]);
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [allProjects, setAllProjects] = useState<Project[]>([]);
+  const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -50,13 +53,30 @@ const ListProjects: React.FC = () => {
     // eslint-disable-next-line
   }, [projectType]);
 
+  useEffect(() => {
+    if (searchQuery.trim() === '') {
+      setFilteredProjects(sortBy(allProjects, 'title'));
+    } else {
+      const query = searchQuery.toLowerCase();
+      const filtered = allProjects.filter(
+        (project) =>
+          project.title.toLowerCase().includes(query) ||
+          (project.description &&
+            project.description.toLowerCase().includes(query))
+      );
+      setFilteredProjects(sortBy(filtered, 'title'));
+    }
+  }, [searchQuery, allProjects]);
+
   const fetchProjects = async () => {
     setLoading(true);
     setError(null);
     try {
       const url = `/api/v1/projects${projectType ? `?type=${projectType}` : ''}`;
       const response = await axiosInstance.get(url);
-      setProjects(response.data);
+      const projects = response.data;
+      setAllProjects(projects);
+      setFilteredProjects(sortBy(projects, 'title'));
     } catch (err: any) {
       setError(err.message || 'An error occurred');
     } finally {
@@ -116,14 +136,24 @@ const ListProjects: React.FC = () => {
         </div>
       </Header>
       <div className="flex-1 p-6 overflow-auto">
+        <div className="mb-6">
+          <SearchBar
+            placeholder="Search projects..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="mb-6"
+          />
+        </div>
         {loading && <div>Loading projects...</div>}
         {error && <div className="text-red-600">{error}</div>}
-        {!loading && !error && projects.length === 0 && (
-          <div>No projects found.</div>
+        {!loading && !error && filteredProjects.length === 0 && (
+          <div>
+            No projects found. {searchQuery && 'Try a different search term.'}
+          </div>
         )}
-        {!loading && !error && projects.length > 0 && (
+        {!loading && !error && filteredProjects.length > 0 && (
           <div className="project-list__card grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => {
+            {filteredProjects.map((project) => {
               let statusClass = '';
               switch (project.status) {
                 case 'RED':
@@ -142,33 +172,38 @@ const ListProjects: React.FC = () => {
                 <Link
                   key={project.id}
                   to={`/project/${project.id}`}
-                  className="bg-white shadow rounded p-4 flex flex-col relative hover:bg-gray-100 transition-colors cursor-pointer"
+                  className="project-card bg-white shadow rounded p-4 flex hover:bg-gray-100 transition-colors cursor-pointer"
                 >
-                  {/* RAG status icon */}
-                  <span
-                    className={`project-list__card-rag-status absolute top-4 right-4 ${statusClass}`}
-                    title={project.status}
-                    style={{ zIndex: 2 }}
-                  >
-                    <svg
-                      width="36"
-                      height="36"
-                      viewBox="0 0 36 36"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
+                  <div className="flex-1 pr-4">
+                    <div className="font-semibold text-lg mb-1">
+                      {project.title}
+                    </div>
+                    <div className="text-sm text-gray-600 mb-2">
+                      {project.type.replace('_', ' ')}
+                    </div>
+                    <div className="mb-2 text-gray-700">
+                      {project.description}
+                    </div>
+                    <div className="text-xs text-gray-400 mt-auto">
+                      Created:{' '}
+                      {new Date(project.createdAt).toLocaleDateString()}
+                    </div>
+                  </div>
+                  <div className="flex items-start justify-center w-12">
+                    <div
+                      className={`project-card__rag-status ${statusClass}`}
+                      title={project.status}
                     >
-                      <circle cx="18" cy="18" r="15" />
-                    </svg>
-                  </span>
-                  <div className="font-semibold text-lg mb-1">
-                    {project.title}
-                  </div>
-                  <div className="text-sm text-gray-600 mb-2">
-                    {project.type.replace('_', ' ')}
-                  </div>
-                  <div className="mb-2">{project.description}</div>
-                  <div className="text-xs text-gray-400 mt-auto">
-                    Created: {new Date(project.createdAt).toLocaleDateString()}
+                      <svg
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="18" cy="18" r="15" />
+                      </svg>
+                    </div>
                   </div>
                 </Link>
               );
