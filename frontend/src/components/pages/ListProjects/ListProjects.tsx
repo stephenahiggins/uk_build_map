@@ -8,8 +8,9 @@ import { LocalMapIcon } from '../../atoms/LocalMapIcon';
 import { SearchBar } from '../../molecules/SearchBar';
 import useAuth from '../../../hooks/useAuth';
 import useUserStore from '../../../store/userStore';
-import { Link } from 'react-router-dom';
+import { ListProjectsMap } from '../../atoms/ListProjectsMap';
 import axiosInstance from '../../../config/axiosConfig';
+import { Link } from 'react-router-dom';
 
 // ProjectType options
 const PROJECT_TYPES = [
@@ -87,6 +88,11 @@ const ListProjects: React.FC = () => {
     }
   };
 
+  // For responsive hiding of map on mobile
+  const hasMapProjects = filteredProjects.some(
+    (p) => p.latitude != null && p.longitude != null
+  );
+
   return (
     <div className="w-full h-full min-h-screen bg-gray-50 p-0 m-0 flex flex-col">
       <Header title="Projects">
@@ -141,72 +147,84 @@ const ListProjects: React.FC = () => {
             className="mb-6"
           />
         </div>
-        {loading && <div>Loading projects...</div>}
-        {error && <div className="text-red-600">{error}</div>}
-        {!loading && !error && filteredProjects.length === 0 && (
-          <div>
-            No projects found. {searchQuery && 'Try a different search term.'}
-          </div>
-        )}
-        {!loading && !error && filteredProjects.length > 0 && (
-          <div className="project-list__card grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {filteredProjects.map((project) => {
-              let statusClass = '';
-              switch (project.status) {
-                case 'RED':
-                  statusClass = 'red';
-                  break;
-                case 'AMBER':
-                  statusClass = 'amber';
-                  break;
-                case 'GREEN':
-                  statusClass = 'green';
-                  break;
-                default:
-                  statusClass = '';
-              }
-              return (
-                <Link
-                  key={project.id}
-                  to={`/project/${project.id}`}
-                  className="project-card bg-white shadow rounded p-4 flex hover:bg-gray-100 transition-colors cursor-pointer"
-                >
-                  <div className="flex-1 pr-4">
-                    <div className="font-semibold text-lg mb-1">
-                      {project.title}
-                    </div>
-                    <div className="text-sm text-gray-600 mb-2">
-                      {project.type.replace('_', ' ')}
-                    </div>
-                    <div className="mb-2 text-gray-700">
-                      {project.description}
-                    </div>
-                    <div className="text-xs text-gray-400 mt-auto">
-                      Created:{' '}
-                      {new Date(project.createdAt).toLocaleDateString()}
-                    </div>
-                  </div>
-                  <div className="flex items-start justify-center w-12">
-                    <div
-                      className={`project-card__rag-status ${statusClass}`}
-                      title={project.status}
+        <div className="flex flex-col md:flex-row gap-6 w-full">
+          {/* Project List */}
+          <div className={hasMapProjects ? 'w-full md:w-2/3' : 'w-full'}>
+            {loading && <div>Loading projects...</div>}
+            {error && <div className="text-red-600">{error}</div>}
+            {!loading && !error && filteredProjects.length === 0 && (
+              <div>
+                No projects found.{' '}
+                {searchQuery && 'Try a different search term.'}
+              </div>
+            )}
+            {!loading && !error && filteredProjects.length > 0 && (
+              <div className="project-list__card grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                {filteredProjects.map((project) => {
+                  let statusClass = '';
+                  switch (project.status) {
+                    case 'RED':
+                      statusClass = 'red';
+                      break;
+                    case 'AMBER':
+                      statusClass = 'amber';
+                      break;
+                    case 'GREEN':
+                      statusClass = 'green';
+                      break;
+                    default:
+                      statusClass = '';
+                  }
+                  return (
+                    <Link
+                      key={project.id}
+                      to={`/project/${project.id}`}
+                      className="project-card bg-white shadow rounded p-4 flex hover:bg-gray-100 transition-colors cursor-pointer"
                     >
-                      <svg
-                        width="36"
-                        height="36"
-                        viewBox="0 0 36 36"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="18" cy="18" r="15" />
-                      </svg>
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
+                      <div className="flex-1 pr-4">
+                        <div className="font-semibold text-lg mb-1">
+                          {project.title}
+                        </div>
+                        <div className="text-sm text-gray-600 mb-2">
+                          {project.type.replace('_', ' ')}
+                        </div>
+                        <div className="mb-2 text-gray-700">
+                          {project.description}
+                        </div>
+                        <div className="text-xs text-gray-400 mt-auto">
+                          Created:{' '}
+                          {new Date(project.createdAt).toLocaleDateString()}
+                        </div>
+                      </div>
+                      <div className="flex items-start justify-center w-12">
+                        <div
+                          className={`project-card__rag-status ${statusClass}`}
+                          title={project.status}
+                        >
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="18" cy="18" r="15" />
+                          </svg>
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
           </div>
-        )}
+          {/* Map Section */}
+          {hasMapProjects && (
+            <div className="hidden md:block md:w-1/3">
+              <ListProjectsMap projects={filteredProjects} />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

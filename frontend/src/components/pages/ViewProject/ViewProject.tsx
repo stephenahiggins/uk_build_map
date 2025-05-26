@@ -209,17 +209,17 @@ const ViewProject: React.FC = () => {
                   className={`w-full justify-center ${subscribeChecked ? 'highlight' : 'secondary'}`}
                 />
                 <Button
-                  text="Add an update"
-                  icon={<Plus size={18} />}
-                  className="highlight w-full"
-                  variant="primary"
-                  onClick={() => {}}
-                />
-                <Button
                   text="Make a difference"
                   icon={<Megaphone size={18} />}
                   className="secondary w-full"
                   variant="secondary"
+                  onClick={() => {}}
+                />
+                <Button
+                  text="Add an update"
+                  icon={<Plus size={18} />}
+                  className="highlight w-full"
+                  variant="primary"
                   onClick={() => {}}
                 />
               </section>

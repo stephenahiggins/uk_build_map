@@ -4,6 +4,7 @@ import usersRoute from '@/src/v1/controllers/auth/auth.routes';
 import regionRoute from '@/src/v1/controllers/region.controller';
 import localAuthoritiesRoute from '@/src/v1/routes/localAuthorities.routes';
 import projectRoute from '@/src/v1/routes/project.routes';
+import dataRoute from '@/src/v1/controllers/data.controller';
 
 const router: Router = Router();
 
@@ -16,5 +17,6 @@ router.use('/auth', usersRoute);
 router.use('/regions', regionRoute);
 router.use('/local-authorities', localAuthoritiesRoute);
 router.use('/projects', projectRoute);
+router.use('/data', dataRoute);
 
 export default router;
