@@ -95,28 +95,50 @@ const ViewProject: React.FC = () => {
             {/* Left: Details/Scorecard (9/12) */}
             <div className="flex-1 lg:w-9/12 space-y-6">
               <section className="bg-white rounded shadow p-6 mb-4">
-                <h2 className="text-xl font-semibold mb-2">
-                  Details / Scorecard
-                </h2>
-                <div className="mb-2">{project.description}</div>
-                <div className="flex flex-wrap gap-4 text-sm text-gray-700">
-                  <div>
-                    <strong>Type:</strong> {project.type.replace('_', ' ')}
+                <div className="flex flex-row items-center justify-between gap-6">
+                  {/* Left: Content */}
+                  <div className="flex-1 min-w-0">
+                    <h2 className="text-xl font-semibold mb-2 flex items-center">
+                      Details / Scorecard
+                    </h2>
+                    <div className="mb-2">{project.description}</div>
+                    <div className="flex flex-wrap gap-4 text-sm text-gray-700">
+                      <div>
+                        <strong>Type:</strong> {project.type.replace('_', ' ')}
+                      </div>
+                      <div>
+                        <strong>Status:</strong> {project.status}
+                      </div>
+                      <div>
+                        <strong>Expected Completion:</strong>{' '}
+                        {project.expectedCompletion
+                          ? new Date(
+                              project.expectedCompletion
+                            ).toLocaleDateString()
+                          : '-'}
+                      </div>
+                      <div>
+                        <strong>Created:</strong>{' '}
+                        {new Date(project.createdAt).toLocaleDateString()}
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <strong>Status:</strong> {project.status}
-                  </div>
-                  <div>
-                    <strong>Expected Completion:</strong>{' '}
-                    {project.expectedCompletion
-                      ? new Date(
-                          project.expectedCompletion
-                        ).toLocaleDateString()
-                      : '-'}
-                  </div>
-                  <div>
-                    <strong>Created:</strong>{' '}
-                    {new Date(project.createdAt).toLocaleDateString()}
+                  {/* Right: RAG Marker */}
+                  <div className="flex items-center justify-center min-w-[70px]">
+                    <span
+                      className={`relative -top-9 -right-2 project-card__rag-status ${project.status?.toLowerCase()}`}
+                      title={project.status}
+                    >
+                      <svg
+                        width="55"
+                        height="55"
+                        viewBox="0 0 36 36"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="18" cy="18" r="15" />
+                      </svg>
+                    </span>
                   </div>
                 </div>
               </section>
@@ -171,9 +193,9 @@ const ViewProject: React.FC = () => {
               {/* New section: Subscribe & Actions */}
               <section className="bg-white rounded shadow p-6 flex flex-col items-center justify-center gap-4">
                 <Button
-                  checked={subscribeChecked}
+                  checked={!subscribeChecked}
                   text={
-                    subscribeChecked
+                    !subscribeChecked
                       ? 'Subscribe to updates'
                       : 'Unsubscribe from updates'
                   }
@@ -202,9 +224,7 @@ const ViewProject: React.FC = () => {
                 />
               </section>
               <section className="bg-white rounded shadow p-6 flex flex-col items-center justify-center min-h-[180px]">
-                <h2 className="text-lg font-semibold mb-2">
-                  Map showing location
-                </h2>
+                <h2 className="text-lg font-semibold mb-2">Location</h2>
                 <div className="w-full">
                   <ProjectMap
                     latitude={project.latitude}

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import useAuth from '../../../hooks/useAuth';
-import Logout from '../../molecules/Logout';
 import useUserStore from '../../../store/userStore';
 
 const HomePage: React.FC = () => {
@@ -19,8 +18,8 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-2xl font-bold mb-4">Welcome {user?.user_name}</h1>
-      <Logout />
+      <h1 className="text-2xl font-bold mb-4">When will it get built?</h1>
+      <h2 className="text-1xl mb-4">UK National Infrastructure Tracker</h2>
     </div>
   );
 };

@@ -30,10 +30,10 @@ const Button: React.FC<ButtonProps> = ({
   checked = undefined,
 }) => {
   const baseStyles =
-    'rounded-lg font-semibold focus:outline-none focus:ring flex items-center justify-center';
+    'rounded-lg font-semibold focus:outline-none flex items-center justify-center border-none';
   const variantStyles = {
     primary:
-      'bg-neutral-800 text-white hover:bg-neutral-900 focus:ring-neutral-500',
+      'bg-neutral-800 text-white hover:bg-gray-700  focus:ring-neutral-500',
     secondary: 'bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500',
     danger: 'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500',
     link: 'text-blue-500 hover:underline focus:ring-transparent',
@@ -64,7 +64,7 @@ const Button: React.FC<ButtonProps> = ({
     className
   );
 
-  console.log('classes', text, classes);
+  console.log('FOO', checked);
 
   return (
     <button

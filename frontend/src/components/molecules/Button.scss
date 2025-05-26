@@ -2,11 +2,11 @@
 
 .button--unchecked {
   background: get-color('secondary');
-  color: get-color('white');
-  border: 2px solid get-color('secondary');
+  color: get-color(white);
+  border: none;
 }
 .button--checked {
   background: get-color('highlight');
-  color: get-color('white');
-  border: 2px solid get-color('highlight');
+  color: get-color(white);
+  border: none;
 }
