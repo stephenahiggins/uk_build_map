@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import { sortBy } from 'lodash';
 import Header from '../../organisms/Header';
+import { NationalMapIcon } from '../../atoms/NationalMapIcon';
+import { RegionalMapIcon } from '../../atoms/RegionalMapIcon';
+import { LocalMapIcon } from '../../atoms/LocalMapIcon';
 import { SearchBar } from '../../molecules/SearchBar';
 import useAuth from '../../../hooks/useAuth';
 import useUserStore from '../../../store/userStore';
@@ -114,21 +117,15 @@ const ListProjects: React.FC = () => {
               >
                 <span className="text-left">{btn.label}</span>
                 <span className="ml-4 w-8 h-8 flex items-center">
-                  {/* Simple UK outline SVG */}
-                  <svg
-                    viewBox="0 0 40 48"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-8 h-8"
-                  >
-                    <path
-                      d="M10 2 L30 8 L28 18 L36 24 L32 38 L22 46 L12 40 L8 28 L14 20 L10 10 Z"
-                      stroke="#222"
-                      strokeWidth="2"
-                      fill="none"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  {btn.value === 'NATIONAL_GOV' && (
+                    <NationalMapIcon className="w-8 h-8" />
+                  )}
+                  {btn.value === 'REGIONAL_GOV' && (
+                    <RegionalMapIcon className="w-8 h-8" />
+                  )}
+                  {btn.value === 'LOCAL_GOV' && (
+                    <LocalMapIcon className="w-8 h-8" />
+                  )}
                 </span>
               </button>
             ))}
