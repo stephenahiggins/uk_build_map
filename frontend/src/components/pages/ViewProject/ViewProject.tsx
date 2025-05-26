@@ -4,6 +4,8 @@ import axiosInstance from '../../../config/axiosConfig';
 
 import Header from '../../organisms/Header';
 import ProjectMap from '../../atoms/ProjectMap';
+import Button from '../../molecules/Button';
+import { Plus, Megaphone } from 'lucide-react';
 
 interface Evidence {
   id: string;
@@ -40,6 +42,7 @@ const ViewProject: React.FC = () => {
   const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [subscribeChecked, setSubscribeChecked] = useState(false);
 
   useEffect(() => {
     const fetchProject = async () => {
@@ -165,6 +168,39 @@ const ViewProject: React.FC = () => {
             </div>
             {/* Right: Map (3/12) and Similar Projects */}
             <div className="flex flex-col gap-6 lg:w-3/12 min-w-[260px]">
+              {/* New section: Subscribe & Actions */}
+              <section className="bg-white rounded shadow p-6 flex flex-col items-center justify-center gap-4">
+                <Button
+                  checked={subscribeChecked}
+                  text={
+                    subscribeChecked
+                      ? 'Subscribe to updates'
+                      : 'Unsubscribe from updates'
+                  }
+                  onClick={() => {
+                    setSubscribeChecked((prev) => {
+                      const next = !prev;
+                      console.log('Subscribe checked:', next);
+                      return next;
+                    });
+                  }}
+                  className={`w-full justify-center ${subscribeChecked ? 'highlight' : 'secondary'}`}
+                />
+                <Button
+                  text="Add an update"
+                  icon={<Plus size={18} />}
+                  className="highlight w-full"
+                  variant="primary"
+                  onClick={() => {}}
+                />
+                <Button
+                  text="Make a difference"
+                  icon={<Megaphone size={18} />}
+                  className="secondary w-full"
+                  variant="secondary"
+                  onClick={() => {}}
+                />
+              </section>
               <section className="bg-white rounded shadow p-6 flex flex-col items-center justify-center min-h-[180px]">
                 <h2 className="text-lg font-semibold mb-2">
                   Map showing location

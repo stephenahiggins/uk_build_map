@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
+    "@radix-ui/react-toggle": "^1.1.9",
     "@react-oauth/google": "^0.12.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.10",
@@ -54,7 +55,7 @@
     "build:staging": "env-cmd -f .env.staging react-scripts build",
     "build:prod": "env-cmd -f .env.production react-scripts build",
     "pre-commit": "lint-staged",
-    "prepare": "husky install",
+    "prepare": "cd .. && husky install [child-folder]/.husky",
     "lint": "npx eslint src --no-cache --fix",
     "format": "npx prettier --write src/**/*.{js,mjs,cjs,jsx,ts,tsx}"
   },

@@ -1,0 +1,12 @@
+@import '../../styles/functions.scss';
+
+.button--unchecked {
+  background: get-color('secondary');
+  color: get-color('white');
+  border: 2px solid get-color('secondary');
+}
+.button--checked {
+  background: get-color('highlight');
+  color: get-color('white');
+  border: 2px solid get-color('highlight');
+}
