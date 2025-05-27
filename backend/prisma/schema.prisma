@@ -158,7 +158,10 @@ model EvidenceItem {
   submittedBy     User            @relation("EvidenceItem_submittedBy", fields: [submittedById], references: [user_id])
   type            EvidenceType
   title           String
-  urlOrBlobId     String
+  summary         String?
+  source          String?
+  url             String?
+  datePublished   DateTime?
   description     String?
   createdAt       DateTime        @default(now())
   moderationState ModerationState @default(PENDING)

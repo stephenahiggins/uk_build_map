@@ -91,6 +91,134 @@ Optionally, you may assign a localAuthorityId from the following list. If you do
 | localAuthorityId                          | Local Authority Name                | Region Name                   | regionId                                 |
 |--------------------------------------------|-------------------------------------|-------------------------------|-------------------------------------------|
 | 027899bb-df8f-441e-bc73-0c72a2eebd1c      | Bath and North East Somerset        | South West                    | b89b48af-cea4-499e-84cf-d09df887cf1e     |
+
+---
+
+## LLM Prompt: Generate EvidenceItem Seed Data
+
+You can use the following prompt with an LLM (e.g. GPT-4, Claude, Gemini) to generate a JSON array of evidence items for UK projects. This is designed to fit the Prisma `EvidenceItem` model and your current seeding system.
+
+### Evidence Type Enum
+
+Each evidence item must include a `type` property. Allowed values are:
+
+```prisma
+enum EvidenceType {
+  PDF
+  URL
+  TEXT
+  DATE
+}
+```
+
+Set `type` to the appropriate value for each evidence item:
+- `URL`: For web articles, news, official online sources
+- `PDF`: For downloadable PDF documents
+- `TEXT`: For plain text, summaries, or transcriptions
+- `DATE`: For date-only evidence (rare)
+
+### LLM Prompt
+
+You are an expert research assistant. Your task is to collect credible, up-to-date evidence from the web for a list of UK infrastructure and public works projects. For each project, find at least 3–5 high-quality evidence items (such as news articles, official press releases, government documents, or reputable reports) that provide updates, context, challenges, progress, or outcomes related to the project.
+
+For each evidence item, output a JSON object with the following properties:
+- `projectId`: The ID of the project this evidence relates to.
+- `title`: Title of the evidence item (e.g., article headline).
+- `type`: The type of evidence. Must be one of: `URL`, `PDF`, `TEXT`, `DATE`.
+- `source`: Publisher or website name.
+- `url`: The URL of the evidence item (if applicable).
+- `datePublished`: Publication date (ISO string or 'YYYY-MM-DD').
+- `summary`: 1–2 sentence summary of the evidence and its relevance to the project.
+- `submittedById`: Always set this to `adminUser?.user_id ?? 1,` (required for seeding).
+
+**Example JSON:**
+```json
+[
+  {
+    "projectId": "fccb723d-b3b7-495a-a005-735092cc48d4",
+    "title": "Elland Rail Station project takes another step forward",
+    "type": "URL",
+    "source": "Calderdale Council News",
+    "url": "https://news.calderdale.gov.uk/10618-2/",
+    "datePublished": "2024-09-05",
+    "summary": "Progress on the new Elland Rail Station has taken a major step forward after a contractor was appointed to finalize the project’s detailed design. On-site surveys are underway and a full business case will follow by mid-2025, paving the way for final approval and the start of construction.",
+    "submittedById": "adminUser?.user_id ?? 1"
+  },
+  {
+    "projectId": "fccb723d-b3b7-495a-a005-735092cc48d4",
+    "title": "Elland Rail Station Moves Forward: West Yorkshire’s £25m Transport Boost on Track",
+    "type": "URL",
+    "source": "BDC Magazine",
+    "url": "https://bdcmagazine.com/2024/01/elland-rail-station-moves-forward-west-yorkshires-25m-transport-boost-on-track/",
+    "datePublished": "2024-01-03",
+    "summary": "Plans for the new £25 million Elland Rail Station are making significant progress, with completion now projected for late 2026. Contractor Keltbray is aiming to finish the final design stage by summer 2024, after which the West Yorkshire Combined Authority will review the full business case to move the project into the construction phase.",
+    "submittedById": "adminUser?.user_id ?? 1"
+  },
+  {
+    "projectId": "fccb723d-b3b7-495a-a005-735092cc48d4",
+    "title": "New train station moves a step closer",
+    "type": "URL",
+    "source": "BBC News (LDRS)",
+    "url": "https://www.bbc.com/news/articles/cred40g5v2qo",
+    "datePublished": "2024-09-06",
+    "summary": "A contractor has been appointed to oversee the final development stages of Elland’s new railway station, which will be added to the Calder Valley Line and is now expected to open in 2026. Keltbray Infrastructure Services will complete detailed design work by next summer, after which the project can proceed to final approval and then construction, according to local officials.",
+    "submittedById": "adminUser?.user_id ?? 1"
+  }
+]
+```
+
+---
+
+**Note:**
+- In your actual seed TypeScript file, use `datePublished: new Date('YYYY-MM-DD')` instead of a string.
+- The above is for LLM or JSON generation; when pasting into your seed file, convert date strings to `new Date('YYYY-MM-DD')` as shown in the working seed.ts examples below.
+
+### Real-World Example (TypeScript for seeding)
+
+```typescript
+{
+  projectId: 'fccb723d-b3b7-495a-a005-735092cc48d4',
+  title: 'Elland Rail Station project takes another step forward',
+  submittedById: adminUser?.user_id ?? 1,
+  type: 'URL',
+  source: 'Calderdale Council News',
+  datePublished: new Date('2024-09-05'),
+  url: 'https://news.calderdale.gov.uk/10618-2/',
+  summary:
+    'Progress on the new Elland Rail Station has taken a major step forward after a contractor was appointed to finalize the project’s detailed design. On-site surveys are underway and a full business case will follow by mid-2025, paving the way for final approval and the start of construction.',
+},
+{
+  projectId: 'fccb723d-b3b7-495a-a005-735092cc48d4',
+  title: 'Elland Rail Station Moves Forward: West Yorkshire’s £25m Transport Boost on Track',
+  submittedById: adminUser?.user_id ?? 1,
+  type: 'URL',
+  source: 'BDC Magazine',
+  datePublished: new Date('2024-01-03'),
+  url: 'https://bdcmagazine.com/2024/01/elland-rail-station-moves-forward-west-yorkshires-25m-transport-boost-on-track/',
+  summary:
+    'Plans for the new £25 million Elland Rail Station are making significant progress, with completion now projected for late 2026. Contractor Keltbray is aiming to finish the final design stage by summer 2024, after which the West Yorkshire Combined Authority will review the full business case to move the project into the construction phase.',
+},
+{
+  projectId: 'fccb723d-b3b7-495a-a005-735092cc48d4',
+  title: 'New train station moves a step closer',
+  submittedById: adminUser?.user_id ?? 1,
+  type: 'URL',
+  source: 'BBC News (LDRS)',
+  datePublished: new Date('2024-09-06'),
+  url: 'https://www.bbc.com/news/articles/cred40g5v2qo',
+  summary:
+    'A contractor has been appointed to oversee the final development stages of Elland’s new railway station, which will be added to the Calder Valley Line and is now expected to open in 2026. Keltbray Infrastructure Services will complete detailed design work by next summer, after which the project can proceed to final approval and then construction, according to local officials.',
+},
+```
+
+**Instructions:**
+- Use the web to gather the evidence.
+- Output a JSON array as above.
+- Ensure every evidence item includes the `type` property (see enum above) and `submittedById: adminUser?.user_id ?? 1,`.
+- Use the actual project IDs as shown in the project reference table above.
+- Use the actual publication date if available.
+- If a field is not available, leave it as `null` or omit it.
+
 | 0279267b-a734-480e-812b-bf54d5d897cb      | East Hertfordshire                  | East of England               | 64633c9f-8cfe-4a86-8879-bb94dd016fe8     |
 | 0497832d-d5ed-41ad-a3fc-63b0eb396cdc      | Mid Devon                           | South West                    | b89b48af-cea4-499e-84cf-d09df887cf1e     |
 | 062a6c42-92ff-4c20-a65b-b9a845dd12f9      | Gravesham                           | South East                    | ef368261-a5b7-415b-9b12-6edcce90ec3b     |

@@ -11,6 +11,7 @@ import useUserStore from '../../../store/userStore';
 import { ListProjectsMap } from '../../atoms/ListProjectsMap';
 import axiosInstance from '../../../config/axiosConfig';
 import { Link } from 'react-router-dom';
+import { projectStatusToSentenceCase } from '../../../utils/projectStatusHelpers';
 
 // ProjectType options
 const PROJECT_TYPES = [
@@ -199,7 +200,7 @@ const ListProjects: React.FC = () => {
                       <div className="flex items-start justify-center w-12">
                         <div
                           className={`project-card__rag-status ${statusClass}`}
-                          title={project.status}
+                          title={projectStatusToSentenceCase(project.status)}
                         >
                           <svg
                             width="36"

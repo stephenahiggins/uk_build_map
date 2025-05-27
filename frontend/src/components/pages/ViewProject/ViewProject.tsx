@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axiosInstance from '../../../config/axiosConfig';
 
 import Header from '../../organisms/Header';
+import { projectStatusToSentenceCase } from '../../../utils/projectStatusHelpers';
 import ProjectMap from '../../atoms/ProjectMap';
 import Button from '../../molecules/Button';
 import { Plus, Megaphone } from 'lucide-react';
@@ -13,7 +14,7 @@ interface Evidence {
   submittedById: number;
   type: string;
   title: string;
-  urlOrBlobId?: string;
+  url?: string;
   description?: string;
   createdAt: string;
   moderationState?: string;
@@ -62,6 +63,8 @@ const ViewProject: React.FC = () => {
 
   const navigate = useNavigate();
 
+  console.log('FOO', project);
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header title={project ? project.title : 'Loading...'} />
@@ -107,7 +110,8 @@ const ViewProject: React.FC = () => {
                         <strong>Type:</strong> {project.type.replace('_', ' ')}
                       </div>
                       <div>
-                        <strong>Status:</strong> {project.status}
+                        <strong>Status:</strong>{' '}
+                        {projectStatusToSentenceCase(project.status)}
                       </div>
                       <div>
                         <strong>Expected Completion:</strong>{' '}
@@ -127,7 +131,7 @@ const ViewProject: React.FC = () => {
                   <div className="flex items-center justify-center min-w-[70px]">
                     <span
                       className={`relative -top-9 -right-2 project-card__rag-status ${project.status?.toLowerCase()}`}
-                      title={project.status}
+                      title={projectStatusToSentenceCase(project.status)}
                     >
                       <svg
                         width="55"
@@ -170,9 +174,9 @@ const ViewProject: React.FC = () => {
                               {ev.description}
                             </p>
                           )}
-                          {ev.urlOrBlobId && (
+                          {ev.url && (
                             <a
-                              href={ev.urlOrBlobId}
+                              href={ev.url}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="inline-flex items-center px-2 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded hover:underline mt-1"

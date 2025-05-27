@@ -100,5 +100,4 @@ const AppRouter = createBrowserRouter([
   },
 ]);
 
-console.log('Foo', AppRouter);
 export default AppRouter;

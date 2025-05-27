@@ -64,8 +64,6 @@ const Button: React.FC<ButtonProps> = ({
     className
   );
 
-  console.log('FOO', checked);
-
   return (
     <button
       type={type}
