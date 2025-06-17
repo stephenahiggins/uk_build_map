@@ -151,7 +151,36 @@
         "status": "AMBER",
         "statusRationale": "Design approval stage; full business case submission planned mid‑2025.",
         "latitude": 53.685,
-        "longitude": -1.837
+        "longitude": -1.837,
+        "evidence": [
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "Elland Rail Station project takes another step forward",
+                "source": "Calderdale Council News",
+                "datePublished": "2024-09-05",
+                "url": "https://news.calderdale.gov.uk/10618-2/",
+                "summary": "Progress on the new Elland Rail Station has taken a major step forward after a contractor was appointed to finalize the project’s detailed design. On-site surveys are underway and a full business case will follow by mid-2025, paving the way for final approval and the start of construction."
+            },
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "Elland Rail Station Moves Forward: West Yorkshire’s £25m Transport Boost on Track",
+                "source": "BDC Magazine",
+                "datePublished": "2024-01-03",
+                "url": "https://bdcmagazine.com/2024/01/elland-rail-station-moves-forward-west-yorkshires-25m-transport-boost-on-track/",
+                "summary": "Plans for the new £25 million Elland Rail Station are making significant progress, with completion now projected for late 2026. Contractor Keltbray is aiming to finish the final design stage by summer 2024, after which the West Yorkshire Combined Authority will review the full business case to move the project into the construction phase."
+            },
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "New train station moves a step closer",
+                "source": "BBC News (LDRS)",
+                "datePublished": "2024-09-06",
+                "url": "https://www.bbc.com/news/articles/cred40g5v2qo",
+                "summary": "A contractor has been appointed to oversee the final development stages of Elland’s new railway station, which will be added to the Calder Valley Line and is now expected to open in 2026. Keltbray Infrastructure Services will complete detailed design work by next summer, after which the project can proceed to final approval and then construction, according to local officials."
+            }
+        ]
     },
     {
         "id": "a641-strategic-corridor",
@@ -168,18 +197,47 @@
         "longitude": -1.785
     },
     {
-        "id": "brighouse-town-deal-hub",
+        "id": "brighouse-town-deal",
         "title": "Brighouse Town Deal – Canalside & Market Hub",
-        "description": "Creation of a new waterfront public space and modern covered market as flagship projects of the £19 million Town Deal.",
+        "description": "Redevelopment of Brighouse Open Market and creation of new public spaces on the canalside and Thornton Square.",
         "type": "LOCAL_GOV",
         "regionId": "cdde5565-2090-4f98-9fbf-f990d7825dcc",
         "localAuthorityId": "fccb723d-b3b7-495a-a005-735092cc48d4",
         "createdById": 1,
-        "expectedCompletion": "2026-03-31T00:00:00Z",
+        "expectedCompletion": "2025-12-31T00:00:00Z",
         "status": "GREEN",
-        "statusRationale": "Contractor appointed; site mobilisation due August 2024.",
-        "latitude": 53.703,
-        "longitude": -1.781
+        "statusRationale": "Main works started; market relocation underway; completion expected late 2025.",
+        "latitude": 53.701,
+        "longitude": -1.779,
+        "evidence": [
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "On the move – Brighouse’s market prepares for temporary home",
+                "source": "Calderdale Council News",
+                "datePublished": "2024-08-21",
+                "url": "https://news.calderdale.gov.uk/on-the-move-brighouses-market-prepares-for-temporary-home/",
+                "summary": "Brighouse Open Market is relocating to a temporary site this autumn so that work can begin on constructing its new permanent market hall on the canalside as part of the £19.1 million Town Deal. After planning permission was secured in March 2024, Triton Construction was appointed as contractor for the market redevelopment, with the main construction phase set to start by late September 2024 and last around 12 months."
+            },
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "Milestone moment for Brighouse as Town Deal market transformation begins",
+                "source": "Calderdale Next Chapter News",
+                "datePublished": "2024-10-30",
+                "url": "https://www.calderdalenextchapter.co.uk/news/milestone-moment-brighouse-town-deal-market-transformation-begins",
+                "summary": "By late 2024, construction was underway on Brighouse’s Town Deal projects to revitalize the waterfront and market area. Demolition of the old canalside market building began in October, and West Yorkshire-based Triton Construction has been tasked with building the new covered market hall as a focal point for the town’s regeneration."
+            },
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "Brighouse Town Deal: Progress made on £19.1 million Government-funded projects in 2024 including Brighouse Market",
+                "source": "Halifax Courier",
+                "datePublished": "2024-12-29",
+                "url": "https://www.halifaxcourier.co.uk/heritage-and-retro/heritage/brighouse-town-deal-progress-made-on-ps191-million-government-funded-projects-in-2024-including-brighouse-market-4913547",
+                "summary": "According to a year-end 2024 update, Brighouse’s Town Deal scheme has reached key milestones in both the market and public realm projects. The old market site was cleared and construction of a modern market hall (with 21 fixed stalls and improved facilities) is in progress, on track for completion in late 2025. Meanwhile, £6 million of the Town Deal is dedicated to Canalside and Thornton Square improvements – creating a new waterfront public space and enhancing the town centre’s image to encourage recreation and community gatherings."
+            }
+        ]
     },
     {
         "id": "hebden-bridge-flood",
@@ -333,7 +391,36 @@
         "status": "AMBER",
         "statusRationale": "Signal‑equipment shortages causing procurement delays.",
         "latitude": 53.655,
-        "longitude": -1.779
+        "longitude": -1.779,
+        "evidence": [
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "On the right track: A62 Leeds Road Smart Corridor making progress and tipped to deliver on time",
+                "source": "Kirklees Council News",
+                "datePublished": "2022-11-22",
+                "url": "https://kirkleestogether.co.uk/2022/11/22/on-the-right-track-a62-leeds-road-smart-corridor-making-progress-and-tipped-deliver-on-time/",
+                "summary": "Kirklees Council reported that construction on the A62 Leeds Road “Smart Corridor” was progressing well in late 2022, with the main works on track to be completed by spring 2023. The scheme – part of West Yorkshire’s Corridor Improvement Programme – is designed to cut congestion and improve journey times with new bus lanes, cycle facilities and junction upgrades along the route."
+            },
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "Brand new £8m Yorkshire road dug up weeks later due to gas leak",
+                "source": "Yorkshire Post",
+                "datePublished": "2023-06-02",
+                "url": "https://www.yorkshirepost.co.uk/news/transport/brand-new-ps8m-yorkshire-road-dug-up-weeks-later-due-to-gas-leak-4166980",
+                "summary": "The £7.9 million A62 Leeds Road Smart Corridor scheme in Huddersfield reached completion in mid-April 2023, delivering major highway upgrades to tackle congestion and improve travel times and safety on this key route. (The project’s final resurfacing was finished in April, slightly later than originally planned due to earlier schedule adjustments and supply challenges.)"
+            },
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "Updates to schedule of upcoming A62 improvements will mean less disruption for residents and businesses",
+                "source": "Kirklees Council News",
+                "datePublished": "2022-04-01",
+                "url": "https://kirkleestogether.co.uk/2022/04/01/updates-to-schedule-of-upcoming-a62-improvements-will-mean-less-disruption-for-residents-and-businesses/",
+                "summary": "In 2022, the council revised the construction schedule for the A62 Smart Corridor project to accelerate works and reduce disruption. An intensified seven-week closure at a key junction was implemented so that overall roadworks could finish by early December 2022 – about two months sooner than originally planned. (Subsequent updates indicated the project’s final completion date slipped into spring 2023, partly due to challenges in obtaining new traffic signal equipment.)"
+            }
+        ]
     },
     {
         "id": "penistone-line-upgrades",
@@ -403,7 +490,27 @@
         "status": "AMBER",
         "statusRationale": "Contractor procurement ongoing; start on site expected late 2024.",
         "latitude": 53.789,
-        "longitude": -1.528
+        "longitude": -1.528,
+        "evidence": [
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "Aire Park Leeds: Housing developer found for “prime plot” on Meadow Lane in the city centre",
+                "source": "Yorkshire Evening Post",
+                "datePublished": "2024-05-24",
+                "url": "https://www.yorkshireeveningpost.co.uk/news/politics/council/aire-park-leeds-housing-developer-found-for-prime-plot-on-meadow-lane-in-the-city-centre-4639900",
+                "summary": "Leeds City Council has chosen developer Glenbrook as the preferred bidder for a prime 0.18-hectare plot at Meadow Lane, adjacent to the new City Park (Aire Park) in the South Bank. Glenbrook is expected to seek planning permission to deliver a high-quality residential development of around 350 apartments on the site, with a significant proportion of the homes designated as affordable housing."
+            },
+            {
+                "type": "URL",
+                "moderationState": "APPROVED",
+                "title": "£50m secured for Leeds South Bank apartment scheme",
+                "source": "Business Link Magazine",
+                "datePublished": "2025-05-21",
+                "url": "https://www.blmforum.net/mag/50m-secured-for-leeds-south-bank-apartment-scheme/",
+                "summary": "A major housing development in Leeds’s South Bank has secured a £50 million loan from Homes England, enabling construction of 375 apartments across two towers on Water Lane. The project, which also received £4.4 million from West Yorkshire’s Brownfield Housing Fund, commenced building work in May 2024 and is scheduled to complete by early 2027. The scheme supports regional goals for affordable, sustainable homes on brownfield land through a partnership of public and private investment."
+            }
+        ]
     },
     {
         "id": "brownlee-centre-expansion",

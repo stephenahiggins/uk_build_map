@@ -6,9 +6,10 @@ This guide explains how to seed national, regional, and local projects into your
 
 - The file should contain an array of project objects.
 - Each object must include all fields required by your Prisma `project` model.
+- **To attach evidence, add an `evidence` array inside each project object.**
 - Example (`projects.seed.json`):
 
-```
+```json
 [
   {
     "id": "hs2-proj-id",
@@ -22,12 +23,22 @@ This guide explains how to seed national, regional, and local projects into your
     "status": "AMBER",
     "statusRationale": "Delays due to funding and planning changes.",
     "latitude": 51.5074,
-    "longitude": -0.1278
+    "longitude": -0.1278,
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "HS2 construction update: Phase 1 progress",
+        "source": "BBC News",
+        "datePublished": "2024-05-01",
+        "url": "https://www.bbc.com/news/uk-12345678",
+        "summary": "Work on Phase 1 of HS2 continues with new tunnels completed in 2024."
+      }
+    ]
   }
 ]
 ```
 
-> You can generate this file using an LLM. Ensure all required fields match your Prisma schema.
+> You can generate this file using an LLM. Ensure all required fields match your Prisma schema. Evidence items are now nested inside each project.
 
 ## Running the Seeder
 
@@ -67,6 +78,45 @@ Or add to `package.json` scripts:
 ## LLM Prompt: Generate UK National Projects Seed File
 
 You can use the following prompt with an LLM (e.g. GPT-4, Claude, Gemini) to generate a JSON file of national UK government projects that fits the schema used by this seeding system.
+
+**Prompt:**
+
+> You are an expert research assistant. Your task is to collect credible, up-to-date evidence from the web for a list of UK infrastructure and public works projects. For each project, find at least 3–5 high-quality evidence items (such as news articles, official press releases, government documents, or reputable reports) that provide updates, context, challenges, progress, or outcomes related to the project.
+>
+> For each project, output a JSON object with all required project fields, and include an `evidence` array inside the project object. Each evidence item should be a JSON object with the following properties:
+> - `type`: The type of evidence (e.g. "URL", "PDF", "TEXT").
+> - `title`: Title of the evidence item (e.g., article headline).
+> - `source`: The source or publisher (e.g., "BBC News").
+> - `datePublished`: ISO 8601 date string for when the evidence was published (e.g., "2024-05-01").
+> - `url`: (for type URL) The web link to the evidence.
+> - `summary`: A 1–3 sentence summary of the evidence content.
+>
+> Do **not** include `projectId` or `submittedById` fields inside the evidence items. All evidence is nested within the relevant project object. Use static values only (no variables or code). Dates must be ISO 8601 strings.
+>
+> Example evidence array for a project:
+>
+> ```json
+> "evidence": [
+>   {
+>     "type": "URL",
+>     "title": "Elland Rail Station project takes another step forward",
+>     "source": "Calderdale Council News",
+>     "datePublished": "2024-09-05",
+>     "url": "https://news.calderdale.gov.uk/10618-2/",
+>     "summary": "Progress on the new Elland Rail Station has taken a major step forward after a contractor was appointed to finalize the project’s detailed design."
+>   },
+>   {
+>     "type": "URL",
+>     "title": "Elland Rail Station Moves Forward: West Yorkshire’s £25m Transport Boost on Track",
+>     "source": "BDC Magazine",
+>     "datePublished": "2024-01-03",
+>     "url": "https://bdcmagazine.com/2024/01/elland-rail-station-moves-forward-west-yorkshires-25m-transport-boost-on-track/",
+>     "summary": "Plans for the new £25 million Elland Rail Station are making significant progress, with completion now projected for late 2026."
+>   }
+> ]
+> ```
+>
+> For `createdById`, always use 1. For `expectedCompletion`, use the best available public estimate or leave as null. For `status` and `statusRationale`, use any available public reporting or leave as null. For `latitude` and `longitude`, use the main project location or centroid if available, otherwise leave as null.
 
 ### Reference: Assignable Region IDs
 

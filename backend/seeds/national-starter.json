@@ -11,7 +11,18 @@
         "status": "GREEN",
         "statusRationale": "Project complete.",
         "latitude": 51.5154,
-        "longitude": -0.0721
+        "longitude": -0.0721,
+        "evidence": [
+          {
+            "type": "PDF",
+            "title": "Crossrail Completion Report",
+            "url": "https://content.tfl.gov.uk/evidencing-the-value-of-the-elizabeth-line.pdf",
+            "description": "Final project report for the Elizabeth Line.",
+            "latitude": 51.5154,
+            "longitude": -0.0721,
+            "datePublished": "2024-05-01"
+          }
+        ]
     },
     {
         "id": "DFT_0040_2021-Q1",
@@ -25,7 +36,18 @@
         "status": "RED",
         "statusRationale": "Delivery confidence is low; the project is being re-baselined after scope reductions (Network North) and cost estimate updates.",
         "latitude": 52.5000,
-        "longitude": -1.3000
+        "longitude": -1.3000,
+        "evidence": [
+          {
+            "type": "URL",
+            "title": "HS2 Official Website",
+            "url": "https://www.hs2.org.uk/",
+            "description": "Official information and updates on HS2.",
+            "latitude": 51.5074,
+            "longitude": -0.1278,
+            "datePublished": "2025-05-27"
+          }
+        ]
     },
     {
         "id": "DFT_HS2_Phase_2b_IRP",
@@ -529,7 +551,18 @@
         "status": "AMBER",
         "statusRationale": "Now over 90% complete, the project is on course to be operational by around 2025. It remains Amber due to residual construction risks and the complex system commissioning phase, but overall is progressing within its revised schedule and budget:contentReference[oaicite:59]{index=59}.",
         "latitude": 51.4957,
-        "longitude": -0.2234
+        "longitude": -0.2234,
+        "evidence": [
+          {
+            "type": "TEXT",
+            "title": "Tideway Construction Update",
+            "summary": "Construction is progressing with some delays due to supply chain issues.",
+            "description": "Update as of May 2025.",
+            "latitude": 51.5079,
+            "longitude": -0.0877,
+            "datePublished": "2025-05-15"
+          }
+        ]
     },
     {
         "id": "HMRC_CDS",

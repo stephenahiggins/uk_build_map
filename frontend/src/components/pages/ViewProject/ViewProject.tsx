@@ -16,6 +16,9 @@ interface Evidence {
   title: string;
   url?: string;
   description?: string;
+  summary?: string;
+  source?: string;
+  datePublished?: string;
   createdAt: string;
   moderationState?: string;
   latitude?: number | null;
@@ -63,8 +66,6 @@ const ViewProject: React.FC = () => {
 
   const navigate = useNavigate();
 
-  console.log('FOO', project);
-
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header title={project ? project.title : 'Loading...'} />
@@ -102,7 +103,7 @@ const ViewProject: React.FC = () => {
                   {/* Left: Content */}
                   <div className="flex-1 min-w-0">
                     <h2 className="text-xl font-semibold mb-2 flex items-center">
-                      Details / Scorecard
+                      Details
                     </h2>
                     <div className="mb-2">{project.description}</div>
                     <div className="flex flex-wrap gap-4 text-sm text-gray-700">
@@ -152,26 +153,41 @@ const ViewProject: React.FC = () => {
                   <ol className="relative border-l border-gray-200 dark:border-gray-700">
                     {project.evidence
                       .slice()
-                      .sort(
-                        (a, b) =>
-                          new Date(a.createdAt).getTime() -
-                          new Date(b.createdAt).getTime()
-                      )
+                      .sort((a, b) => {
+                        if (!a.datePublished) return 1;
+                        if (!b.datePublished) return -1;
+                        return (
+                          new Date(b.datePublished).getTime() -
+                          new Date(a.datePublished).getTime()
+                        );
+                      })
                       .map((ev, idx) => (
                         <li className="mb-10 ml-4" key={ev.id}>
                           <div className="absolute w-3 h-3 bg-blue-200 rounded-full mt-1.5 -left-1.5 border border-blue-400" />
                           <time className="mb-1 text-xs font-normal leading-none text-gray-400">
-                            {new Date(ev.createdAt).toLocaleDateString()}
+                            {ev.datePublished
+                              ? new Date(ev.datePublished).toLocaleDateString()
+                              : 'No publish date'}
                           </time>
                           <h3 className="text-md font-semibold text-gray-900 flex items-center gap-2">
                             {ev.title}
-                            <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded ml-2">
-                              {ev.type}
-                            </span>
                           </h3>
+                          {ev.summary && (
+                            <p className="mb-1 text-sm text-gray-800">
+                              <span className="font-medium">Summary:</span>{' '}
+                              {ev.summary}
+                            </p>
+                          )}
                           {ev.description && (
-                            <p className="mb-2 text-sm font-normal text-gray-500">
+                            <p className="mb-1 text-sm text-gray-500">
+                              <span className="font-medium">Description:</span>{' '}
                               {ev.description}
+                            </p>
+                          )}
+                          {ev.source && (
+                            <p className="mb-1 text-sm text-gray-700">
+                              <span className="font-medium">Source:</span>{' '}
+                              {ev.source}
                             </p>
                           )}
                           {ev.url && (
@@ -181,7 +197,7 @@ const ViewProject: React.FC = () => {
                               rel="noopener noreferrer"
                               className="inline-flex items-center px-2 py-1 text-xs font-medium text-blue-700 bg-blue-100 rounded hover:underline mt-1"
                             >
-                              View Evidence
+                              {ev.source || ev.url}
                             </a>
                           )}
                         </li>
