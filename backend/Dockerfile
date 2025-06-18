@@ -14,6 +14,8 @@ RUN npm install -g ts-node
 # Copy the rest of the application code to the container
 COPY . .
 
+ENV CI=true
+
 # Copy the wait-for-it.sh script
 COPY wait-for-it.sh /app/wait-for-it.sh
 RUN chmod +x /app/wait-for-it.sh

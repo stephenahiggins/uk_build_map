@@ -1,0 +1,23 @@
+{
+  "id": "hs2-phase-2b",
+  "name": "HS2 Phase 2b",
+  "status": "amber",
+  "evidenceTimeline": [
+    {
+      "timestamp": "2025-06-15T09:00:00Z",
+      "excerpt": "Department for Transport confirms minor delays due to supply chain issues.",
+      "sourceUrl": "https://www.gov.uk/government/news/hs2-update-june-2025"
+    },
+    {
+      "timestamp": "2025-06-10T12:00:00Z",
+      "excerpt": "Committee report notes overall budget remains stable.",
+      "sourceUrl": "https://committees.parliament.uk/hs2-phase-2b/report-june-2025"
+    },
+    {
+      "timestamp": "2025-06-01T08:00:00Z",
+      "excerpt": "Local council expresses mixed sentiment from residents.",
+      "sourceUrl": "https://www.manchester.gov.uk/rss/hs2"
+    }
+  ],
+  "lastUpdated": "2025-06-17T15:20:36Z"
+}
