@@ -58,7 +58,6 @@ const ListProjects: React.FC = () => {
 
   useEffect(() => {
     fetchProjects();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [projectType, currentPage]);
 
   useEffect(() => {
