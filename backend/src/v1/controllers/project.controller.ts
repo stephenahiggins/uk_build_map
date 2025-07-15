@@ -122,7 +122,13 @@ export const getProjects = async (req: RequestWithProfile, res: Response) => {
       latitude,
       longitude,
       createdAt,
+      page: pageQuery,
+      limit: limitQuery,
     } = req.query;
+
+    const page = pageQuery ? parseInt(pageQuery as string, 10) : 1;
+    const limit = limitQuery ? parseInt(limitQuery as string, 10) : 10;
+    const skip = (page - 1) * limit;
 
     // Build Prisma 'where' filter dynamically
     const where: any = {};
@@ -156,14 +162,26 @@ export const getProjects = async (req: RequestWithProfile, res: Response) => {
       if (!isNaN(date.getTime())) where.createdAt = date;
     }
 
-    const projects = await prisma.project.findMany({
-      where,
-      orderBy: { createdAt: 'desc' },
-      include: {
-        evidence: true,
-      },
+    const [projects, total] = await Promise.all([
+      prisma.project.findMany({
+        where,
+        orderBy: { createdAt: 'desc' },
+        include: {
+          evidence: true,
+        },
+        skip,
+        take: limit,
+      }),
+      prisma.project.count({ where }),
+    ]);
+
+    res.json({
+      data: projects,
+      page,
+      limit,
+      total,
+      totalPages: Math.ceil(total / limit),
     });
-    res.json(projects);
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch projects', details: err });
   }

@@ -12,6 +12,7 @@ import { ListProjectsMap } from '../../atoms/ListProjectsMap';
 import axiosInstance from '../../../config/axiosConfig';
 import { Link } from 'react-router-dom';
 import { projectStatusToSentenceCase } from '../../../utils/projectStatusHelpers';
+import { Pagination } from '../../molecules/Pagination';
 
 // ProjectType options
 const PROJECT_TYPES = [
@@ -46,6 +47,8 @@ const ListProjects: React.FC = () => {
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [totalPages, setTotalPages] = useState<number>(1);
 
   useEffect(() => {
     if (data) {
@@ -55,7 +58,10 @@ const ListProjects: React.FC = () => {
 
   useEffect(() => {
     fetchProjects();
-    // eslint-disable-next-line
+  }, [projectType, currentPage]);
+
+  useEffect(() => {
+    setCurrentPage(1);
   }, [projectType]);
 
   useEffect(() => {
@@ -77,9 +83,14 @@ const ListProjects: React.FC = () => {
     setLoading(true);
     setError(null);
     try {
-      const url = `/api/v1/projects${projectType ? `?type=${projectType}` : ''}`;
+      const params = new URLSearchParams();
+      if (projectType) params.append('type', projectType);
+      params.append('page', currentPage.toString());
+      params.append('limit', '10');
+      const url = `/api/v1/projects?${params.toString()}`;
       const response = await axiosInstance.get(url);
-      const projects = response.data;
+      const projects = response.data.data;
+      setTotalPages(response.data.totalPages || 1);
       setAllProjects(projects);
       setFilteredProjects(sortBy(projects, 'title'));
     } catch (err: any) {
@@ -226,6 +237,11 @@ const ListProjects: React.FC = () => {
             </div>
           )}
         </div>
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
       </div>
     </div>
   );
