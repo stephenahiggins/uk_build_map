@@ -12,7 +12,11 @@ import useTokenStore from '../store/tokenStore';
 import ForgotPasswordPage from '../components/pages/ForgotPassword/ForgotPassword';
 import ResetPasswordPage from '../components/pages/ResetPassword/ResetPassword';
 import ListProjects from '../components/pages/ListProjects/ListProjects';
+import ProfilePage from '../components/pages/Profile/ProfilePage';
+import UpdateProjectPage from '../components/pages/UpdateProject/UpdateProjectPage';
+import AddEvidencePage from '../components/pages/AddEvidence/AddEvidencePage';
 import ViewProject from '../components/pages/ViewProject/ViewProject';
+import ModerationPage from '../components/pages/Moderation/ModerationPage';
 
 // Component to protect routes
 const ProtectedRoute = ({ element }: { element: React.JSX.Element }) => {
@@ -50,6 +54,14 @@ const AppRouter = createBrowserRouter([
         path: 'home',
         element: <HomePage />,
       },
+      {
+        path: 'profile',
+        element: <ProfilePage />,
+      },
+      {
+        path: 'moderation',
+        element: <ModerationPage />,
+      },
     ],
   },
   {
@@ -64,6 +76,14 @@ const AppRouter = createBrowserRouter([
       {
         path: ':id',
         element: <ViewProject />,
+      },
+      {
+        path: ':id/edit',
+        element: <UpdateProjectPage />,
+      },
+      {
+        path: ':id/add-evidence',
+        element: <AddEvidencePage />,
       },
       {
         path: 'list',

@@ -236,3 +236,47 @@ export const modifyProject = async (req: RequestWithProfile, res: Response) => {
     res.status(500).json({ error: 'Failed to modify project', details: err });
   }
 };
+
+// POST /projects/:id/evidence - Add evidence item to a project
+export const addEvidence = async (req: RequestWithProfile, res: Response) => {
+  try {
+    const { id } = req.params;
+    const userId = req.profile?.user_id;
+    if (!userId) return res.status(401).json({ error: 'Unauthorized' });
+
+    const project = await prisma.project.findUnique({ where: { id } });
+    if (!project) return res.status(404).json({ error: 'Project not found' });
+
+    const {
+      type,
+      title,
+      summary,
+      source,
+      url,
+      datePublished,
+      description,
+      latitude,
+      longitude,
+    } = req.body;
+
+    const evidence = await prisma.evidenceItem.create({
+      data: {
+        projectId: id,
+        submittedById: userId,
+        type,
+        title,
+        summary,
+        source,
+        url,
+        datePublished: datePublished ? new Date(datePublished) : undefined,
+        description,
+        latitude: latitude ? Number(latitude) : null,
+        longitude: longitude ? Number(longitude) : null,
+      },
+    });
+
+    res.status(201).json(evidence);
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to add evidence', details: err });
+  }
+};
