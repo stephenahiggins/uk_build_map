@@ -45,8 +45,11 @@ const ListProjects: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [allProjects, setAllProjects] = useState<Project[]>([]);
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
+  const [mapProjects, setMapProjects] = useState<Project[]>([]); // Projects for the map view
   const [loading, setLoading] = useState(false);
+  const [mapLoading, setMapLoading] = useState(false); // Separate loading state for map projects
   const [error, setError] = useState<string | null>(null);
+  const [mapError, setMapError] = useState<string | null>(null); // Separate error state for map projects
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
 
@@ -58,7 +61,12 @@ const ListProjects: React.FC = () => {
 
   useEffect(() => {
     fetchProjects();
-  }, [projectType, currentPage]);
+    fetchAllProjectsForMap(); // Fetch all projects for map separately
+  }, [projectType]);
+
+  useEffect(() => {
+    fetchProjects();
+  }, [currentPage]);
 
   useEffect(() => {
     setCurrentPage(1);
@@ -100,8 +108,29 @@ const ListProjects: React.FC = () => {
     }
   };
 
+  // Fetch all projects for map without pagination
+  const fetchAllProjectsForMap = async () => {
+    setMapLoading(true);
+    setMapError(null);
+    try {
+      const params = new URLSearchParams();
+      if (projectType) params.append('type', projectType);
+      params.append('limit', '1000'); // Request a high limit to get all projects
+      params.append('mapOnly', 'true'); // Optional: backend could use this to return minimal data
+
+      const url = `/api/v1/projects?${params.toString()}`;
+      const response = await axiosInstance.get(url);
+      const projects = response.data.data;
+      setMapProjects(projects);
+    } catch (err: any) {
+      setMapError(err.message || 'An error occurred loading map data');
+    } finally {
+      setMapLoading(false);
+    }
+  };
+
   // For responsive hiding of map on mobile
-  const hasMapProjects = filteredProjects.some(
+  const hasMapProjects = mapProjects.some(
     (p) => p.latitude != null && p.longitude != null
   );
 
@@ -230,10 +259,16 @@ const ListProjects: React.FC = () => {
               </div>
             )}
           </div>
-          {/* Map Section */}
+          {/* Map Section - Using mapProjects instead of filteredProjects */}
           {hasMapProjects && (
             <div className="hidden md:block md:w-1/3">
-              <ListProjectsMap projects={filteredProjects} />
+              {mapLoading ? (
+                <div>Loading map data...</div>
+              ) : mapError ? (
+                <div className="text-red-600">{mapError}</div>
+              ) : (
+                <ListProjectsMap projects={mapProjects} />
+              )}
             </div>
           )}
         </div>
