@@ -29,3 +29,8 @@ export const resetPasswordUser = Joi.object({
   token: Joi.string().required(),
   new_password: Joi.string().required(),
 });
+
+export const updateUserDetails = Joi.object({
+  user_name: Joi.string().optional(),
+  user_email: Joi.string().email().optional(),
+}).or('user_name', 'user_email');

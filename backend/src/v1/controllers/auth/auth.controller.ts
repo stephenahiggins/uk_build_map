@@ -12,6 +12,7 @@ import {
   googleLoginUser,
   requestPasswordResetUser,
   resetPasswordUser,
+  updateUserDetails,
 } from './auth.joi.model';
 import prisma from '@/src/db';
 import {
@@ -407,5 +408,38 @@ export async function getUser(
     return res
       .status(500)
       .json(errorResponse(res, 'Error in getUser', customError.message));
+  }
+}
+
+export async function updateUser(
+  req: RequestWithProfile,
+  res: Response
+): Promise<Response> {
+  try {
+    const { error } = updateUserDetails.validate(req.body);
+    if (error) {
+      return res.status(400).json(errorResponse(res, error.details[0].message));
+    }
+    const userId = req.profile?.user_id;
+    const updated = await prisma.user.update({
+      where: { user_id: userId },
+      data: {
+        user_name: req.body.user_name,
+        user_email: req.body.user_email,
+      },
+    });
+    return res
+      .status(200)
+      .json(successResponse('User updated successfully', updated));
+  } catch (error) {
+    const customError = error as CustomError;
+    logger.error({
+      message: customError.message,
+      stack: customError.stack,
+      apiEndpoint: req.originalUrl,
+    });
+    return res
+      .status(500)
+      .json(errorResponse(res, 'Error in updateUser', customError.message));
   }
 }

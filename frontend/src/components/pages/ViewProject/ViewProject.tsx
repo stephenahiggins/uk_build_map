@@ -7,6 +7,7 @@ import { projectStatusToSentenceCase } from '../../../utils/projectStatusHelpers
 import ProjectMap from '../../atoms/ProjectMap';
 import Button from '../../molecules/Button';
 import { Plus, Megaphone } from 'lucide-react';
+import useUserStore from '../../../store/userStore';
 
 interface Evidence {
   id: string;
@@ -43,6 +44,7 @@ interface Project {
 
 const ViewProject: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  const { user } = useUserStore();
   const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -68,7 +70,19 @@ const ViewProject: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <Header title={project ? project.title : 'Loading...'} />
+      <Header title={project ? project.title : 'Loading...'}>
+        {(user?.user_type === 'USER' ||
+          user?.user_type === 'ADMIN' ||
+          user?.user_type === 'MODERATOR') && (
+          <Button
+            text="Add Evidence"
+            icon={<Plus size={18} />}
+            className="highlight"
+            variant="primary"
+            onClick={() => navigate(`/project/${id}/add-evidence`)}
+          />
+        )}
+      </Header>
       <div className="p-4 pb-0 flex items-center">
         <button
           onClick={() => navigate('/project/list')}
@@ -235,13 +249,24 @@ const ViewProject: React.FC = () => {
                   variant="secondary"
                   onClick={() => {}}
                 />
-                <Button
-                  text="Add an update"
-                  icon={<Plus size={18} />}
-                  className="highlight w-full"
-                  variant="primary"
-                  onClick={() => {}}
-                />
+                {user?.user_type === 'USER' && (
+                  <Button
+                    text="Add Evidence"
+                    icon={<Plus size={18} />}
+                    className="highlight w-full"
+                    variant="primary"
+                    onClick={() => navigate(`/project/${id}/add-evidence`)}
+                  />
+                )}
+                {(user?.user_type === 'ADMIN' || user?.user_type === 'MODERATOR') && (
+                  <Button
+                    text="Update Project"
+                    icon={<Plus size={18} />}
+                    className="highlight w-full"
+                    variant="primary"
+                    onClick={() => navigate(`/project/${id}/edit`)}
+                  />
+                )}
               </section>
               <section className="bg-white rounded shadow p-6 flex flex-col items-center justify-center min-h-[180px]">
                 <h2 className="text-lg font-semibold mb-2">Location</h2>

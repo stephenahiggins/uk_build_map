@@ -8,6 +8,7 @@ import {
   googleLogin,
   requestPasswordReset,
   resetPassword,
+  updateUser,
 } from './auth.controller';
 import authMiddleware from '@/src/v1/middlewares/authMiddleware';
 
@@ -33,6 +34,9 @@ router.post('/reset-password', resetPassword);
 
 // logout
 router.post('/logout', authMiddleware, logout);
+
+// update user details
+router.put('/update', authMiddleware, updateUser);
 
 // get User Profile
 router.get('/', authMiddleware, getUser);
