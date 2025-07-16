@@ -10,6 +10,7 @@ These agents automate the collection of project evidence from the web and offici
 - Limit the number of returned results when debugging.
 - Integrate with the backend database via direct access or through an AI interface.
 - Remain cost conscious by batching requests and reusing context.
+- Evaluate each project's evidence to assign a RAG status.
 
 ## Features
 ### Web Scraping & API Integration
@@ -37,6 +38,9 @@ These agents automate the collection of project evidence from the web and offici
 ### Cost Management
 - Requests are batched when possible to reduce token usage.
 - Cached results avoid duplicate external calls.
+
+### RAG Scoring
+- A dedicated agent reviews a project's evidence and assigns a RED, AMBER or GREEN status which is written back to the project record.
 
 ## Architecture
 1. **Crawler Layer** – collects raw data via HTTP scraping or API requests.

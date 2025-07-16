@@ -22,4 +22,9 @@ Follow these steps to run the evidence collection agents locally.
 ```sh
 make run ARGS="--locale $LOCALE --limit $MAX_RESULTS"
 ```
-This will scrape sources, summarise them using the LLM and store the results in `data/evidence.json`.
+This will scrape sources, summarise them with the LLM and store the results in the database.
+
+To update project RAG statuses based on their evidence:
+```sh
+npx ts-node src/ragAgent.ts
+```
