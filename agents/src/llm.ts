@@ -1,7 +1,7 @@
 import Portkey from 'portkey-ai';
 
-/** Simple example that requests a summary from the AI Gateway */
-export async function summarise(text: string) {
+/** Summarise text using the PortKey gateway */
+export async function summarise(text: string): Promise<string> {
   const client = new Portkey({
     virtualKey: process.env.VIRTUAL_KEY || '',
     openAIApiKey: process.env.OPENAI_API_KEY,
@@ -15,8 +15,3 @@ export async function summarise(text: string) {
 
   return res.choices[0]?.message?.content ?? '';
 }
-
-if (require.main === module) {
-  summarise('Example project info').then(console.log).catch(console.error);
-}
-
