@@ -70,7 +70,19 @@ const ViewProject: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <Header title={project ? project.title : 'Loading...'} />
+      <Header title={project ? project.title : 'Loading...'}>
+        {(user?.user_type === 'USER' ||
+          user?.user_type === 'ADMIN' ||
+          user?.user_type === 'MODERATOR') && (
+          <Button
+            text="Add Evidence"
+            icon={<Plus size={18} />}
+            className="highlight"
+            variant="primary"
+            onClick={() => navigate(`/project/${id}/add-evidence`)}
+          />
+        )}
+      </Header>
       <div className="p-4 pb-0 flex items-center">
         <button
           onClick={() => navigate('/project/list')}
