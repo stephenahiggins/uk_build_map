@@ -4,6 +4,7 @@ import { NextFunction, Response } from 'express';
 import { errorResponse } from '../services/response';
 import prisma from '@/src/db';
 import config from '@/src/common/config/config';
+import { UserType } from '@prisma/client';
 
 export default async (
   req: RequestWithProfile,
@@ -16,8 +17,8 @@ export default async (
       user_id: 1,
       user_name: 'Dev User',
       user_email: 'dev@example.com',
-      user_type: 'admin',
-      user_refreshToken: null
+      user_type: UserType.ADMIN,
+      user_refreshToken: null,
     };
     return next();
   }

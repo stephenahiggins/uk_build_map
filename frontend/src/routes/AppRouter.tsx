@@ -12,7 +12,11 @@ import useTokenStore from '../store/tokenStore';
 import ForgotPasswordPage from '../components/pages/ForgotPassword/ForgotPassword';
 import ResetPasswordPage from '../components/pages/ResetPassword/ResetPassword';
 import ListProjects from '../components/pages/ListProjects/ListProjects';
+import ProfilePage from '../components/pages/Profile/ProfilePage';
+import UpdateProjectPage from '../components/pages/UpdateProject/UpdateProjectPage';
+import AddEvidencePage from '../components/pages/AddEvidence/AddEvidencePage';
 import ViewProject from '../components/pages/ViewProject/ViewProject';
+import ModerationPage from '../components/pages/Moderation/ModerationPage';
 
 // Component to protect routes
 const ProtectedRoute = ({ element }: { element: React.JSX.Element }) => {
@@ -38,7 +42,7 @@ const AppRouter = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: 'dashboard',
+    path: '/dashboard',
     element: <ProtectedRoute element={<DashboardTemplate />} />, // Protect dashboard route
     errorElement: <ErrorPage />,
     children: [
@@ -50,10 +54,18 @@ const AppRouter = createBrowserRouter([
         path: 'home',
         element: <HomePage />,
       },
+      {
+        path: 'profile',
+        element: <ProfilePage />,
+      },
+      {
+        path: 'moderation',
+        element: <ModerationPage />,
+      },
     ],
   },
   {
-    path: 'project',
+    path: '/project',
     element: <ProtectedRoute element={<ProjectTemplate />} />,
     errorElement: <ErrorPage />,
     children: [
@@ -66,13 +78,21 @@ const AppRouter = createBrowserRouter([
         element: <ViewProject />,
       },
       {
+        path: ':id/edit',
+        element: <UpdateProjectPage />,
+      },
+      {
+        path: ':id/add-evidence',
+        element: <AddEvidencePage />,
+      },
+      {
         path: 'list',
         element: <ListProjects />,
       },
     ],
   },
   {
-    path: 'auth',
+    path: '/auth',
     element: <PublicRoute element={<AuthTemplate />} />, // Protect login/register for authenticated users
     errorElement: <ErrorPage />,
     children: [

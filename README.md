@@ -7,6 +7,8 @@ This repository contains the codebase for the LFG OKR tracking platform, which p
 - `backend/` — Node.js/Express API, Prisma ORM, Dockerized, MySQL database
 - `frontend/` — React-based frontend (TypeScript)
 
+Recent updates include a profile management screen, evidence submission, and a moderation workflow for approving or rejecting evidence items.
+
 ## Getting Started
 
 ### Prerequisites
@@ -71,6 +73,12 @@ Copy `.env.example` to `.env` and fill in required values for both backend and f
 
 ## API Documentation
 - Swagger UI available at `/api-docs/:version` (when not in production)
+
+### Evidence Moderation Endpoints
+
+- `GET /api/v1/evidence` – list evidence items awaiting approval
+- `POST /api/v1/evidence/:id/approve` – mark an evidence item as approved
+- `POST /api/v1/evidence/:id/reject` – reject an evidence item
 
 ## Contributing
 Pull requests and issues are welcome! Please lint and test your code before submitting.
