@@ -17,7 +17,7 @@ async function main() {
     where: { user_email: 'admin@example.com' },
     update: {},
     create: {
-      user_name: 'Admin',
+      user_name: 'ADMIN',
       user_email: 'admin@example.com',
       user_password: hashedPassword,
       type: UserType.ADMIN,
@@ -29,7 +29,7 @@ async function main() {
     where: { user_email: 'user@example.com' },
     update: {},
     create: {
-      user_name: 'User',
+      user_name: 'USER',
       user_email: 'user@example.com',
       user_password: hashedPassword,
       type: UserType.USER,
@@ -41,7 +41,7 @@ async function main() {
     where: { user_email: 'moderator@example.com' },
     update: {},
     create: {
-      user_name: 'Moderator',
+      user_name: 'MODERATOR',
       user_email: 'moderator@example.com',
       user_password: hashedPassword,
       type: UserType.MODERATOR,

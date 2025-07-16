@@ -7,7 +7,11 @@ import { projectStatusToSentenceCase } from '../../../utils/projectStatusHelpers
 import ProjectMap from '../../atoms/ProjectMap';
 import Button from '../../molecules/Button';
 import { Plus, Megaphone } from 'lucide-react';
-import useUserStore from '../../../store/userStore';
+import useUserStore, {
+  USER_TYPE_ADMIN,
+  USER_TYPE_MODERATOR,
+  USER_TYPE_USER,
+} from '../../../store/userStore';
 
 interface Evidence {
   id: string;
@@ -67,13 +71,12 @@ const ViewProject: React.FC = () => {
   }, [id]);
 
   const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header title={project ? project.title : 'Loading...'}>
-        {(user?.user_type === 'USER' ||
-          user?.user_type === 'ADMIN' ||
-          user?.user_type === 'MODERATOR') && (
+        {(user?.user_type === USER_TYPE_USER ||
+          user?.user_type === USER_TYPE_ADMIN ||
+          user?.user_type === USER_TYPE_MODERATOR) && (
           <Button
             text="Add Evidence"
             icon={<Plus size={18} />}
@@ -249,7 +252,7 @@ const ViewProject: React.FC = () => {
                   variant="secondary"
                   onClick={() => {}}
                 />
-                {user?.user_type === 'USER' && (
+                {
                   <Button
                     text="Add Evidence"
                     icon={<Plus size={18} />}
@@ -257,8 +260,9 @@ const ViewProject: React.FC = () => {
                     variant="primary"
                     onClick={() => navigate(`/project/${id}/add-evidence`)}
                   />
-                )}
-                {(user?.user_type === 'ADMIN' || user?.user_type === 'MODERATOR') && (
+                }
+                {(user?.user_type === USER_TYPE_ADMIN ||
+                  user?.user_type === USER_TYPE_MODERATOR) && (
                   <Button
                     text="Update Project"
                     icon={<Plus size={18} />}

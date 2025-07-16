@@ -22,7 +22,7 @@ describe('POST /api/v1/auth/register', () => {
   it('should return 200 for a valid request', async () => {
     (prisma.user.findUnique as jest.Mock).mockResolvedValue(null); // No user found
     const response = await request(app).post('/api/v1/auth/register').send({
-      user_name: 'admin',
+      user_name: 'ADMIN',
       user_email: 'admin@example.com',
       user_password: '123456',
     });
@@ -39,7 +39,7 @@ describe('POST /api/v1/auth/register', () => {
     (prisma.user.findUnique as jest.Mock).mockResolvedValue({}); // Simulate user exists
 
     const response = await request(app).post('/api/v1/auth/register').send({
-      user_name: 'admin',
+      user_name: 'ADMIN',
       user_email: 'admin@example.com',
       user_password: '123456',
     });
