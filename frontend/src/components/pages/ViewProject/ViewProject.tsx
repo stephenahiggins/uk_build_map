@@ -6,7 +6,7 @@ import Header from '../../organisms/Header';
 import { projectStatusToSentenceCase } from '../../../utils/projectStatusHelpers';
 import ProjectMap from '../../atoms/ProjectMap';
 import Button from '../../molecules/Button';
-import { Plus, Megaphone } from 'lucide-react';
+import { Plus, Megaphone, Pencil } from 'lucide-react';
 import useUserStore, {
   USER_TYPE_ADMIN,
   USER_TYPE_MODERATOR,
@@ -264,8 +264,8 @@ const ViewProject: React.FC = () => {
                 {(user?.user_type === USER_TYPE_ADMIN ||
                   user?.user_type === USER_TYPE_MODERATOR) && (
                   <Button
-                    text="Update Project"
-                    icon={<Plus size={18} />}
+                    text="Edit Project"
+                    icon={<Pencil size={18} />}
                     className="highlight w-full"
                     variant="primary"
                     onClick={() => navigate(`/project/${id}/edit`)}
