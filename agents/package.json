@@ -5,8 +5,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
-    "rag": "ts-node src/ragAgent.ts",
+    "dev": "node src/run.mjs",
+    "rag": "node src/rag-run.mjs",
     "test": "echo \"No tests\""
   },
   "dependencies": {

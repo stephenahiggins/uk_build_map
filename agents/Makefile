@@ -5,10 +5,10 @@ build:
 	npm run build
 
 run:
-        npx ts-node src/index.ts $(ARGS)
+	node src/run.mjs $(ARGS)
 
 rag:
-        npx ts-node src/ragAgent.ts $(ARGS)
+	node src/rag-run.mjs $(ARGS)
 
 test:
 	npm test
