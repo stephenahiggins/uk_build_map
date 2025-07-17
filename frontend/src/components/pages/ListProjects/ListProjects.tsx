@@ -14,14 +14,6 @@ import { Link } from 'react-router-dom';
 import { projectStatusToSentenceCase } from '../../../utils/projectStatusHelpers';
 import { Pagination } from '../../molecules/Pagination';
 
-// ProjectType options
-const PROJECT_TYPES = [
-  { label: 'All', value: '' },
-  { label: 'Local Government', value: 'LOCAL_GOV' },
-  { label: 'National Government', value: 'NATIONAL_GOV' },
-  { label: 'Regional Government', value: 'REGIONAL_GOV' },
-];
-
 interface Project {
   id: string;
   title: string;
