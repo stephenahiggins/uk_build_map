@@ -74,6 +74,13 @@ Copy `.env.example` to `.env` and fill in required values for both backend and f
 ## API Documentation
 - Swagger UI available at `/api-docs/:version` (when not in production)
 
+### Project & Evidence Endpoints
+
+- `POST /api/v1/projects` – create a project (JWT required)
+- `POST /api/v1/projects/:id/evidence` – add evidence to a project (JWT required)
+  
+See [backend/docs/project-api.md](backend/docs/project-api.md) for payload details and example requests.
+
 ### Evidence Moderation Endpoints
 
 - `GET /api/v1/evidence` – list evidence items awaiting approval
