@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
 
+# Run Prisma migrations
 # Wait for the database to be available
 /app/wait-for-it.sh db:3307 -- echo "Database is up"
 
-# Run Prisma migrations
-npx prisma migrate dev --name init --skip-generate
+npx prisma migrate deploy
 
 # Seed the database
 npm run seed

@@ -44,6 +44,10 @@ const ListProjects: React.FC = () => {
   const [mapError, setMapError] = useState<string | null>(null); // Separate error state for map projects
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
+  const [searchLoading, setSearchLoading] = useState(false);
+  const [allProjectsForSearch, setAllProjectsForSearch] = useState<Project[]>(
+    []
+  );
 
   useEffect(() => {
     if (data) {
@@ -67,9 +71,19 @@ const ListProjects: React.FC = () => {
   useEffect(() => {
     if (searchQuery.trim() === '') {
       setFilteredProjects(sortBy(allProjects, 'title'));
+      setCurrentPage(1);
+    } else {
+      // When search query is entered, fetch all projects for search
+      fetchAllProjectsForSearch();
+    }
+  }, [searchQuery]);
+
+  useEffect(() => {
+    if (searchQuery.trim() === '') {
+      setFilteredProjects(sortBy(allProjects, 'title'));
     } else {
       const query = searchQuery.toLowerCase();
-      const filtered = allProjects.filter(
+      const filtered = allProjectsForSearch.filter(
         (project) =>
           project.title.toLowerCase().includes(query) ||
           (project.description &&
@@ -77,7 +91,7 @@ const ListProjects: React.FC = () => {
       );
       setFilteredProjects(sortBy(filtered, 'title'));
     }
-  }, [searchQuery, allProjects]);
+  }, [searchQuery, allProjects, allProjectsForSearch]);
 
   const fetchProjects = async () => {
     setLoading(true);
@@ -97,6 +111,25 @@ const ListProjects: React.FC = () => {
       setError(err.message || 'An error occurred');
     } finally {
       setLoading(false);
+    }
+  };
+
+  // Fetch all projects for search without pagination
+  const fetchAllProjectsForSearch = async () => {
+    setSearchLoading(true);
+    try {
+      const params = new URLSearchParams();
+      if (projectType) params.append('type', projectType);
+      params.append('limit', '1000'); // Request a high limit to get all projects for search
+
+      const url = `/api/v1/projects?${params.toString()}`;
+      const response = await axiosInstance.get(url);
+      const projects = response.data.data;
+      setAllProjectsForSearch(projects);
+    } catch (err: any) {
+      setError(err.message || 'An error occurred loading search data');
+    } finally {
+      setSearchLoading(false);
     }
   };
 
@@ -183,73 +216,79 @@ const ListProjects: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-6 w-full">
           {/* Project List */}
           <div className={hasMapProjects ? 'w-full md:w-2/3' : 'w-full'}>
-            {loading && <div>Loading projects...</div>}
+            {(loading || searchLoading) && <div>Loading projects...</div>}
             {error && <div className="text-red-600">{error}</div>}
-            {!loading && !error && filteredProjects.length === 0 && (
-              <div>
-                No projects found.{' '}
-                {searchQuery && 'Try a different search term.'}
-              </div>
-            )}
-            {!loading && !error && filteredProjects.length > 0 && (
-              <div className="project-list__card grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-                {filteredProjects.map((project) => {
-                  let statusClass = '';
-                  switch (project.status) {
-                    case 'RED':
-                      statusClass = 'red';
-                      break;
-                    case 'AMBER':
-                      statusClass = 'amber';
-                      break;
-                    case 'GREEN':
-                      statusClass = 'green';
-                      break;
-                    default:
-                      statusClass = '';
-                  }
-                  return (
-                    <Link
-                      key={project.id}
-                      to={`/project/${project.id}`}
-                      className="project-card bg-white shadow rounded p-4 flex hover:bg-gray-100 transition-colors cursor-pointer"
-                    >
-                      <div className="flex-1 pr-4">
-                        <div className="font-semibold text-lg mb-1">
-                          {project.title}
+            {!loading &&
+              !searchLoading &&
+              !error &&
+              filteredProjects.length === 0 && (
+                <div>
+                  No projects found.{' '}
+                  {searchQuery && 'Try a different search term.'}
+                </div>
+              )}
+            {!loading &&
+              !searchLoading &&
+              !error &&
+              filteredProjects.length > 0 && (
+                <div className="project-list__card grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                  {filteredProjects.map((project) => {
+                    let statusClass = '';
+                    switch (project.status) {
+                      case 'RED':
+                        statusClass = 'red';
+                        break;
+                      case 'AMBER':
+                        statusClass = 'amber';
+                        break;
+                      case 'GREEN':
+                        statusClass = 'green';
+                        break;
+                      default:
+                        statusClass = '';
+                    }
+                    return (
+                      <Link
+                        key={project.id}
+                        to={`/project/${project.id}`}
+                        className="project-card bg-white shadow rounded p-4 flex hover:bg-gray-100 transition-colors cursor-pointer"
+                      >
+                        <div className="flex-1 pr-4">
+                          <div className="font-semibold text-lg mb-1">
+                            {project.title}
+                          </div>
+                          <div className="text-sm text-gray-600 mb-2">
+                            {project.type.replace('_', ' ')}
+                          </div>
+                          <div className="mb-2 text-gray-700">
+                            {project.description}
+                          </div>
+                          <div className="text-xs text-gray-400 mt-auto">
+                            Created:{' '}
+                            {new Date(project.createdAt).toLocaleDateString()}
+                          </div>
                         </div>
-                        <div className="text-sm text-gray-600 mb-2">
-                          {project.type.replace('_', ' ')}
-                        </div>
-                        <div className="mb-2 text-gray-700">
-                          {project.description}
-                        </div>
-                        <div className="text-xs text-gray-400 mt-auto">
-                          Created:{' '}
-                          {new Date(project.createdAt).toLocaleDateString()}
-                        </div>
-                      </div>
-                      <div className="flex items-start justify-center w-12">
-                        <div
-                          className={`project-card__rag-status ${statusClass}`}
-                          title={projectStatusToSentenceCase(project.status)}
-                        >
-                          <svg
-                            width="36"
-                            height="36"
-                            viewBox="0 0 36 36"
-                            fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg"
+                        <div className="flex items-start justify-center w-12">
+                          <div
+                            className={`project-card__rag-status ${statusClass}`}
+                            title={projectStatusToSentenceCase(project.status)}
                           >
-                            <circle cx="18" cy="18" r="15" />
-                          </svg>
+                            <svg
+                              width="36"
+                              height="36"
+                              viewBox="0 0 36 36"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle cx="18" cy="18" r="15" />
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                    </Link>
-                  );
-                })}
-              </div>
-            )}
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
           </div>
           {/* Map Section - Using mapProjects instead of filteredProjects */}
           {hasMapProjects && (
@@ -264,11 +303,13 @@ const ListProjects: React.FC = () => {
             </div>
           )}
         </div>
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={setCurrentPage}
-        />
+        {!searchQuery.trim() && (
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
+        )}
       </div>
     </div>
   );

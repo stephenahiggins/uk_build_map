@@ -20,7 +20,7 @@
     "dist"
   ],
   "include": [
-    "src",
+    "src/**/*",
     "src/v1/types"
   ],
   "compileOnSave": true,

@@ -1,7 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import DashboardTemplate from '../components/templates/DashboardTemplate';
-import HomePage from '../components/pages/Home/HomePage';
 import AddProjectPage from '../components/pages/AddProject/AddProjectPage';
 import ProjectTemplate from '../components/templates/InitativeTemplate';
 import AuthTemplate from '../components/templates/AuthTemplate';
@@ -48,11 +47,7 @@ const AppRouter = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <Navigate to="home" />, // Redirect /dashboard to /dashboard/home
-      },
-      {
-        path: 'home',
-        element: <HomePage />,
+        element: <Navigate to="/project/list" />, // Redirect /dashboard to /project/list
       },
       {
         path: 'profile',

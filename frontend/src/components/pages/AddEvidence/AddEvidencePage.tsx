@@ -17,7 +17,15 @@ interface EvidenceForm {
 const AddEvidencePage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { register, handleSubmit, formState: { errors } } = useForm<EvidenceForm>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<EvidenceForm>({
+    defaultValues: {
+      datePublished: new Date().toISOString().split('T')[0], // Set to today's date
+    },
+  });
 
   const onSubmit = async (data: EvidenceForm) => {
     if (!id) return;
@@ -35,40 +43,57 @@ const AddEvidencePage: React.FC = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div>
           <label className="block font-medium">Title</label>
-          <input {...register('title', { required: true })} className="input input-bordered w-full" />
-          {errors.title && <span className="text-red-500">This field is required</span>}
+          <input
+            {...register('title', { required: true })}
+            className="input input-bordered w-full"
+          />
+          {errors.title && (
+            <span className="text-red-500">This field is required</span>
+          )}
         </div>
-        <div>
-          <label className="block font-medium">Type</label>
-          <select {...register('type', { required: true })} className="input input-bordered w-full">
+        {/* <div>
+          <label className="block font-medium">Type </label>
+          <select
+            {...register('type', { required: true })}
+            className="input input-bordered w-full"
+          >
             <option value="">Select type</option>
             <option value="PDF">PDF</option>
             <option value="URL">URL</option>
             <option value="TEXT">TEXT</option>
             <option value="DATE">DATE</option>
           </select>
-          {errors.type && <span className="text-red-500">This field is required</span>}
-        </div>
+          {errors.type && (
+            <span className="text-red-500">This field is required</span>
+          )}
+        </div> */}
         <div>
           <label className="block font-medium">Summary</label>
-          <textarea {...register('summary')} className="input input-bordered w-full h-24" />
+          <textarea
+            {...register('summary')}
+            className="input input-bordered w-full h-24"
+          />
         </div>
-        <div>
+        {/* <div>
           <label className="block font-medium">Source</label>
           <input {...register('source')} className="input input-bordered w-full" />
-        </div>
+        </div> */}
         <div>
           <label className="block font-medium">URL</label>
           <input {...register('url')} className="input input-bordered w-full" />
         </div>
         <div>
           <label className="block font-medium">Date Published</label>
-          <input type="date" {...register('datePublished')} className="input input-bordered w-full" />
+          <input
+            type="date"
+            {...register('datePublished')}
+            className="input input-bordered w-full"
+          />
         </div>
-        <div>
+        {/* <div>
           <label className="block font-medium">Description</label>
           <textarea {...register('description')} className="input input-bordered w-full h-24" />
-        </div>
+        </div> */}
         <Button type="submit" text="Submit Evidence" className="w-full" />
       </form>
     </div>

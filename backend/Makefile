@@ -20,7 +20,7 @@ restart:
 # --- Database & Prisma ---
 # See docs/seeding-projects.md (linked from README.md) for JSON seeding instructions.
 migrate:
-	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma migrate dev
+	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma migrate deploy
 
 prisma-generate:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma generate

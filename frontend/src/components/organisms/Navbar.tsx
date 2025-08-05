@@ -13,12 +13,6 @@ const Navbar: React.FC = () => {
     <nav className="flex items-center justify-between p-4 bg-white shadow">
       <div className="flex items-center gap-4">
         <Link
-          to="/dashboard/home"
-          className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
-        >
-          Home
-        </Link>
-        <Link
           to="/project/list"
           className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
         >
