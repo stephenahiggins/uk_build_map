@@ -22,11 +22,11 @@ restart:
 migrate:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma migrate dev
 
-prisma-generate:
+generate:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma generate
 
 update-schema:
-	$(MAKE) prisma-generate
+	$(MAKE) generate
 	$(MAKE) migrate
 
 seed:

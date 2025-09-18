@@ -92,7 +92,7 @@ model LocalAuthority {
 // ── Core Aggregates ─────────────────────────────────────────────────────────
 model Project {
   id          String      @id @default(uuid())
-  title       String
+  title       String      @db.Text
   description String?     @db.Text
   type        ProjectType
 
@@ -128,8 +128,8 @@ model Objective {
   id          String      @id @default(uuid())
   projectId   String
   project     Project     @relation(fields: [projectId], references: [id], onDelete: Cascade)
-  title       String
-  description String?
+  title       String      @db.Text
+  description String?     @db.Text
   orderIndex  Int
   keyResults  KeyResult[]
 
@@ -140,7 +140,7 @@ model KeyResult {
   id            String        @id @default(uuid())
   objectiveId   String
   objective     Objective     @relation(fields: [objectiveId], references: [id], onDelete: Cascade)
-  statement     String
+  statement     String        @db.Text
   targetMetric  Decimal?      @db.Decimal(20, 6)
   currentMetric Decimal?      @db.Decimal(20, 6)
   unit          String?
@@ -157,12 +157,12 @@ model EvidenceItem {
   submittedById   Int
   submittedBy     User            @relation("EvidenceItem_submittedBy", fields: [submittedById], references: [user_id])
   type            EvidenceType
-  title           String
-  summary         String?
-  source          String?
-  url             String?
+  title           String          @db.Text
+  summary         String?         @db.Text
+  source          String?         @db.Text
+  url             String?         @db.Text
   datePublished   DateTime?
-  description     String?
+  description     String?         @db.Text
   createdAt       DateTime        @default(now())
   moderationState ModerationState @default(PENDING)
 

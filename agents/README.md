@@ -64,7 +64,7 @@ Projects + evidence are upserted via Prisma. Duplicate detection is heuristic (t
 The CLI exposes a `migrate-backend` command that copies the SQLite data stored in `agents/prisma/storage/data.db` into the backend service database. The migration understands the backend Prisma schema (including decimal latitude/longitude fields) and can either replace or merge with existing backend projects.
 
 ```bash
-npm --prefix agents run migrate-backend -- --mode override
+make migrate-to-backend MODE=append BACKEND_URL="mysql://root:123456@localhost:3307/node_boilerplate"
 ```
 
 ### Migration Options
