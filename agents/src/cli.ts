@@ -1,13 +1,13 @@
 import { Command } from "commander";
 import { fileURLToPath } from "url";
-import { ragScore } from "./ragScorer";
 import { upsertProject } from "./store";
 import { ProjectStatus, ProjectFoundItem } from "./types/projectEvidence";
 import { searchInfrastructureProjects, gatherEvidenceWithGemini } from "./geminiService";
-import { validateEnvValues } from "./envValues";
+import { validateEnvValues, envValues } from "./envValues";
 import { migrateAgentsDataToBackend } from "./migrateBackend";
 import { log } from "./logger";
 import { normalizeProjectTitle } from "./utils/projectNormalization";
+import { evaluateProjectWithGemini } from "../../shared/projectEvaluation";
 
 type CliOptions = {
   locale?: string;
@@ -368,11 +368,50 @@ async function processSingleProject(
     lastUpdated: new Date().toISOString(),
   };
 
-  log(`RAG scoring project: ${project.title}...`);
-  projectStatus.status = await ragScore(projectStatus);
+  log(`Evaluating project status and location for: ${project.title}...`);
+  const evaluation = await evaluateProjectWithGemini(
+    {
+      projectName: project.title,
+      projectDescription: project.description,
+      locale,
+      evidence: evidenceResults.evidence.map((item) => ({
+        title: item.title,
+        summary: item.summary,
+        source: item.source,
+        sourceUrl: item.sourceUrl,
+        evidenceDate: item.evidenceDate,
+        rawText: item.rawText,
+      })),
+    },
+    {
+      apiKey: envValues.GEMINI_API_KEY,
+      model: envValues.MODEL,
+      mockResponse: envValues.MOCK_PROJECT_EVALUATION,
+    }
+  );
+
+  projectStatus.status = evaluation.ragStatus;
+  projectStatus.statusRationale = evaluation.ragRationale;
+  projectStatus.latitude = evaluation.latitude;
+  projectStatus.longitude = evaluation.longitude;
+  projectStatus.locationDescription = evaluation.locationDescription;
+  projectStatus.locationSource = evaluation.locationSource;
+  projectStatus.locationConfidence = evaluation.locationConfidence;
+
   await upsertProject(projectStatus);
   processedProjects.push(projectStatus);
-  log(`Project ${project.title} processed with status: ${projectStatus.status}`);
+  log(
+    `Project ${project.title} processed with status: ${projectStatus.status}${
+      projectStatus.statusRationale ? ` (rationale: ${projectStatus.statusRationale})` : ""
+    }`
+  );
+  if (projectStatus.latitude != null && projectStatus.longitude != null) {
+    log(
+      `Location resolved: ${projectStatus.latitude}, ${projectStatus.longitude}${
+        projectStatus.locationDescription ? ` (${projectStatus.locationDescription})` : ""
+      }`
+    );
+  }
   log(`Evidence gathered: ${evidenceItems.length} items`);
 }
 // end processSingleProject

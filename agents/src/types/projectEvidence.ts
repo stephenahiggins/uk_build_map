@@ -25,6 +25,12 @@ export type ProjectStatus = {
   name: string;
   description: string;
   status: "Red" | "Amber" | "Green";
+  statusRationale?: string;
+  latitude?: number | null;
+  longitude?: number | null;
   evidence: ProjectFoundItem[];
   lastUpdated: string;
+  locationDescription?: string;
+  locationSource?: string;
+  locationConfidence?: "LOW" | "MEDIUM" | "HIGH";
 };

@@ -30,6 +30,7 @@ export const envValues = {
   MOCK_PROJECT_STATUS: process.env.MOCK_PROJECT_STATUS === "true",
   MOCK_INFRASTRUCTURE_SEARCH: process.env.MOCK_INFRASTRUCTURE_SEARCH === "true",
   MOCK_EVIDENCE_GATHERING: process.env.MOCK_EVIDENCE_GATHERING === "true",
+  MOCK_PROJECT_EVALUATION: process.env.MOCK_PROJECT_EVALUATION === "true",
 } as const;
 
 // Validation function to ensure required environment variables are set
