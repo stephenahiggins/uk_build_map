@@ -21,7 +21,8 @@
   ],
   "include": [
     "src/**/*",
-    "src/v1/types"
+    "src/v1/types",
+    "scripts/**/*"
   ],
   "compileOnSave": true,
   "typeAcquisition": {

@@ -84,6 +84,9 @@ Create a new project.
 | statusRationale   | string   | No       | Reason for project status                   |
 | latitude          | number   | No       | Project latitude                            |
 | longitude         | number   | No       | Project longitude                           |
+| locationDescription | string | No       | Short description of the primary project location |
+| locationSource    | string   | No       | Source citation for the location            |
+| locationConfidence| string   | No       | Confidence in the location (`LOW`, `MEDIUM`, `HIGH`) |
 
 **Response:**  
 Returns the created project object.
@@ -111,6 +114,9 @@ Retrieve a list of projects. All parameters are optional and can be used as filt
 | statusRationale   | string   | Filter by status rationale (case-insensitive, partial) |
 | latitude          | number   | Filter by latitude                                 |
 | longitude         | number   | Filter by longitude                                |
+| locationDescription | string | Filter by location description (case-insensitive)  |
+| locationSource    | string   | Filter by location source (case-insensitive)       |
+| locationConfidence| string   | Filter by location confidence (`LOW`, `MEDIUM`, `HIGH`) |
 | createdAt         | string   | Filter by creation date (ISO 8601)                 |
 
 **Response:**  

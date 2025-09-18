@@ -1,6 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { ProjectFoundItem, ProjectStatus } from "./types/projectEvidence";
 import { envValues } from "./envValues";
+import { evaluateProjectWithGemini as evaluateProjectInsights } from "../../backend/src/lib/projectEvaluation";
 
 // Initialize Gemini client
 const ai = new GoogleGenAI({
@@ -327,6 +328,9 @@ export async function createProjectWithLocation(
     status?: "RED" | "AMBER" | "GREEN";
     statusRationale?: string;
     imageUrl?: string;
+    locationDescription?: string;
+    locationSource?: string;
+    locationConfidence?: "LOW" | "MEDIUM" | "HIGH";
   },
   createdById?: number
 ) {
@@ -368,6 +372,9 @@ export async function createProjectWithLocation(
         expectedCompletion: projectData.expectedCompletion,
         latitude: projectData.latitude ? parseFloat(projectData.latitude.toString()) : null,
         longitude: projectData.longitude ? parseFloat(projectData.longitude.toString()) : null,
+        locationDescription: projectData.locationDescription ?? null,
+        locationSource: projectData.locationSource ?? null,
+        locationConfidence: projectData.locationConfidence ?? null,
         imageUrl: projectData.imageUrl,
         regionId: regionId,
         localAuthorityId: localAuthorityId,
@@ -466,15 +473,41 @@ export async function createProjectWithEvidence(
       maxEvidencePieces
     );
 
-    // Step 2: Create the project
+    // Step 2: Evaluate project status and primary location
+    const evaluation = await evaluateProjectInsights(
+      {
+        projectName: projectTitle,
+        projectDescription,
+        locale,
+        evidence: evidenceResults.evidence.map((item) => ({
+          title: item.title,
+          summary: item.summary,
+          source: item.source,
+          sourceUrl: item.sourceUrl,
+          evidenceDate: item.evidenceDate,
+          rawText: item.rawText,
+        })),
+      },
+      {
+        apiKey: envValues.GEMINI_API_KEY,
+        model: envValues.MODEL,
+        mockResponse: envValues.MOCK_PROJECT_EVALUATION,
+      }
+    );
+
     const projectData = {
       title: projectTitle,
       description: projectDescription,
       type: "LOCAL_GOV" as const,
-      latitude: evidenceResults.projectLocation?.latitude,
-      longitude: evidenceResults.projectLocation?.longitude,
+      latitude: evaluation.latitude ?? undefined,
+      longitude: evaluation.longitude ?? undefined,
       localAuthority: evidenceResults.projectLocation?.localAuthority,
       region: evidenceResults.projectLocation?.region,
+      status: evaluation.ragStatus.toUpperCase() as "RED" | "AMBER" | "GREEN",
+      statusRationale: evaluation.ragRationale,
+      locationDescription: evaluation.locationDescription ?? undefined,
+      locationSource: evaluation.locationSource ?? undefined,
+      locationConfidence: evaluation.locationConfidence ?? undefined,
     };
 
     const project = await createProjectWithLocation(prisma, projectData, createdById);
@@ -495,6 +528,7 @@ export async function createProjectWithEvidence(
       project,
       evidence: evidenceResults.evidence,
       summary: evidenceResults.summary,
+      evaluation,
     };
   } catch (error) {
     console.error("Error in createProjectWithEvidence:", error);

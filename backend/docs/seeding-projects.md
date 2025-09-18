@@ -116,7 +116,7 @@ You can use the following prompt with an LLM (e.g. GPT-4, Claude, Gemini) to gen
 > ]
 > ```
 >
-> For `createdById`, always use 1. For `expectedCompletion`, use the best available public estimate or leave as null. For `status` and `statusRationale`, use any available public reporting or leave as null. For `latitude` and `longitude`, use the main project location or centroid if available, otherwise leave as null.
+> For `createdById`, always use 1. For `expectedCompletion`, use the best available public estimate or leave as null. For `status` and `statusRationale`, use any available public reporting or leave as null. For `latitude` and `longitude`, use the main project location or centroid if available, otherwise leave as null. Where possible, populate `locationDescription`, `locationSource`, and `locationConfidence` to capture the provenance of any coordinates you store.
 
 ### Reference: Assignable Region IDs
 
@@ -301,7 +301,10 @@ I want you to search the web for all major national infrastructure projects curr
   "status": "string (e.g. GREEN, AMBER, RED, or other status if available)",
   "statusRationale": "string (reason for current status, if available)",
   "latitude": number (project centroid latitude, if available),
-  "longitude": number (project centroid longitude, if available)
+  "longitude": number (project centroid longitude, if available),
+  "locationDescription": "string (town or landmark describing the site, optional)",
+  "locationSource": "string (primary citation for the location, optional)",
+  "locationConfidence": "string (LOW, MEDIUM, HIGH, optional)"
 }
 
 - Output an array of such objects, in valid JSON format.
@@ -312,6 +315,7 @@ I want you to search the web for all major national infrastructure projects curr
 - For `expectedCompletion`, use the best available public estimate or leave as null.
 - For `status` and `statusRationale`, use any available public reporting or leave as null.
 - For `latitude` and `longitude`, use the main project location or centroid if available, otherwise leave as null.
+- If you provide coordinates, add a brief `locationDescription`, cite a `locationSource`, and set a `locationConfidence` that reflects the strength of the evidence.
 
 **How to generate the file:**
 1. Search the web for up-to-date lists of UK national government projects (e.g., gov.uk, National Audit Office, Infrastructure and Projects Authority, news sources).

@@ -1,9 +1,10 @@
-import { PrismaClient, CountryCode, UserType } from '@prisma/client';
+import { CountryCode, UserType } from '@prisma/client';
 import fetch from 'node-fetch';
 import { parse } from 'csv-parse/sync';
+import { createPrismaClient } from '../src/lib/createPrismaClient';
 const bcrypt = require('bcryptjs');
 
-const prisma = new PrismaClient();
+const prisma = createPrismaClient();
 
 const LAD_TO_REGION_CSV =
   'https://open-geography-portalx-ons.hub.arcgis.com/api/download/v1/items/3959874c514b470e9dd160acdc00c97a/csv?layers=0';

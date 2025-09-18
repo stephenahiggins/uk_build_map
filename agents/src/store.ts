@@ -29,6 +29,13 @@ export async function upsertProject(project: ProjectStatus) {
 
   const projectId = project.id || uuidv4();
   const status = project.status === "Red" ? "RED" : project.status === "Green" ? "GREEN" : "AMBER";
+  const latitude =
+    project.latitude === undefined || project.latitude === null ? null : Number(project.latitude);
+  const longitude =
+    project.longitude === undefined || project.longitude === null ? null : Number(project.longitude);
+  const locationDescription = project.locationDescription?.trim() || null;
+  const locationSource = project.locationSource?.trim() || null;
+  const locationConfidence = project.locationConfidence ?? null;
 
   // Attempt to find existing project
   const existing = await prisma.project.findUnique({ where: { id: projectId } });
@@ -41,6 +48,12 @@ export async function upsertProject(project: ProjectStatus) {
         title: project.name,
         description: project.description,
         status,
+        statusRationale: project.statusRationale,
+        latitude,
+        longitude,
+        locationDescription,
+        locationSource,
+        locationConfidence,
         statusUpdatedAt: new Date(),
       },
     });
@@ -53,6 +66,12 @@ export async function upsertProject(project: ProjectStatus) {
         type: PROJECT_TYPE.LOCAL_GOV,
         status,
         createdById: adminUser.user_id,
+        statusRationale: project.statusRationale,
+        latitude,
+        longitude,
+        locationDescription,
+        locationSource,
+        locationConfidence,
       },
     });
   }

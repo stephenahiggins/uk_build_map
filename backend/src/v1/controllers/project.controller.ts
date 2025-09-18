@@ -4,6 +4,8 @@ import prisma from '@/src/db';
 import { UserType } from '@prisma/client';
 import { getFileUrl } from '@/src/common/utils/fileUpload';
 
+const VALID_LOCATION_CONFIDENCE = new Set(['LOW', 'MEDIUM', 'HIGH']);
+
 // POST /projects - Create a project
 export const createProject = async (req: RequestWithProfile, res: Response) => {
   try {
@@ -21,6 +23,9 @@ export const createProject = async (req: RequestWithProfile, res: Response) => {
       statusRationale,
       latitude,
       longitude,
+      locationDescription,
+      locationSource,
+      locationConfidence,
     } = req.body;
 
     // Get the uploaded file path if it exists
@@ -57,6 +62,16 @@ export const createProject = async (req: RequestWithProfile, res: Response) => {
     const derivedLocalAuthorityId =
       !localAuthorityId || localAuthorityId === '' ? null : localAuthorityId;
 
+    const normalizedLocationConfidence =
+      typeof locationConfidence === 'string'
+        ? (() => {
+            const upper = locationConfidence.trim().toUpperCase();
+            return VALID_LOCATION_CONFIDENCE.has(upper)
+              ? (upper as 'LOW' | 'MEDIUM' | 'HIGH')
+              : undefined;
+          })()
+        : undefined;
+
     const project = await prisma.project.create({
       data: {
         title,
@@ -69,6 +84,9 @@ export const createProject = async (req: RequestWithProfile, res: Response) => {
         statusRationale,
         latitude,
         longitude,
+        locationDescription,
+        locationSource,
+        locationConfidence: normalizedLocationConfidence,
         imageUrl,
         createdById: userId,
       },
@@ -99,6 +117,9 @@ export const getProjectById = async (
       ...rest,
       latitude: latitude ?? null,
       longitude: longitude ?? null,
+      locationDescription: project.locationDescription ?? null,
+      locationSource: project.locationSource ?? null,
+      locationConfidence: project.locationConfidence ?? null,
     });
   } catch (err) {
     res.status(500).json({ error: 'Failed to retrieve project', details: err });
@@ -121,6 +142,9 @@ export const getProjects = async (req: RequestWithProfile, res: Response) => {
       statusRationale,
       latitude,
       longitude,
+      locationDescription,
+      locationSource,
+      locationConfidence,
       createdAt,
       page: pageQuery,
       limit: limitQuery,
@@ -157,6 +181,24 @@ export const getProjects = async (req: RequestWithProfile, res: Response) => {
     }
     if (latitude) where.latitude = Number(latitude);
     if (longitude) where.longitude = Number(longitude);
+    if (locationDescription) {
+      where.locationDescription = {
+        contains: locationDescription as string,
+        mode: 'insensitive',
+      };
+    }
+    if (locationSource) {
+      where.locationSource = {
+        contains: locationSource as string,
+        mode: 'insensitive',
+      };
+    }
+    if (locationConfidence && typeof locationConfidence === 'string') {
+      const upper = locationConfidence.trim().toUpperCase();
+      if (VALID_LOCATION_CONFIDENCE.has(upper)) {
+        where.locationConfidence = upper as 'LOW' | 'MEDIUM' | 'HIGH';
+      }
+    }
     if (createdAt) {
       const date = new Date(createdAt as string);
       if (!isNaN(date.getTime())) where.createdAt = date;
@@ -223,6 +265,9 @@ export const modifyProject = async (req: RequestWithProfile, res: Response) => {
       statusRationale,
       latitude,
       longitude,
+      locationDescription,
+      locationSource,
+      locationConfidence,
     } = req.body;
 
     // Get the current project to check for existing image
@@ -232,6 +277,16 @@ export const modifyProject = async (req: RequestWithProfile, res: Response) => {
     const imageUrl = req.file
       ? getFileUrl(req, req.file.filename)
       : currentProject?.imageUrl || null;
+
+    const normalizedLocationConfidence =
+      typeof locationConfidence === 'string'
+        ? (() => {
+            const upper = locationConfidence.trim().toUpperCase();
+            return VALID_LOCATION_CONFIDENCE.has(upper)
+              ? (upper as 'LOW' | 'MEDIUM' | 'HIGH')
+              : undefined;
+          })()
+        : undefined;
 
     const updated = await prisma.project.update({
       where: { id },
@@ -247,6 +302,9 @@ export const modifyProject = async (req: RequestWithProfile, res: Response) => {
         statusRationale,
         latitude,
         longitude,
+        locationDescription,
+        locationSource,
+        locationConfidence: normalizedLocationConfidence,
       },
     });
     res.json(updated);

@@ -47,6 +47,27 @@ Copy `.env.example` to `.env` and fill in required values for both backend and f
    make test
    ```
 
+### Recomputing Project RAG Status & Location
+
+The shared Gemini-powered evaluator can be run against existing MySQL data to refresh
+stored RAG statuses, rationales, and latitude/longitude coordinates.
+
+1. Ensure the backend dependencies are installed and the database is accessible (e.g. via `make up`).
+2. Set the required environment variables (at minimum `GEMINI_API_KEY`, plus optionally `GEMINI_MODEL` or `MOCK_PROJECT_EVALUATION=true` for dry runs).
+3. From the `backend/` directory run:
+   ```sh
+   npm run recompute:evaluations
+   ```
+   This executes `scripts/recomputeProjectEvaluations.ts`, iterating over all projects and
+   persisting the refreshed evaluation results.
+
+You can execute the command either on your host machine (with access to the database) or inside the backend Docker container via `make shell`. For Docker-based workflows there's also a convenience wrapper:
+
+```sh
+cd backend
+make recompute-evaluations
+```
+
 ### Frontend Development
 
 1. Install dependencies and run the dev server:

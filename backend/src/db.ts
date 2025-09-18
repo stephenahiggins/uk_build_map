@@ -1,5 +1,6 @@
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient({
+import { createPrismaClient } from './lib/createPrismaClient';
+
+const prisma = createPrismaClient({
   log: ['query', 'info', 'warn', 'error'],
 });
 

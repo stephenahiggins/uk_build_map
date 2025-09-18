@@ -14,6 +14,7 @@ import {
   createProjectWithEvidence,
   findOrCreateSystemUser,
 } from "./src/geminiService";
+import { evaluateProjectWithGemini } from "../backend/src/lib/projectEvaluation";
 import {
   initializeDatabase,
   createProject,
@@ -62,15 +63,36 @@ async function exampleEvidenceGathering() {
     console.log("");
   });
 
-  if (evidenceResults.projectLocation) {
-    console.log("Project Location Summary:");
+  const evaluation = await evaluateProjectWithGemini({
+    projectName: "Transpennine Route Upgrade (TRU)",
+    projectDescription:
+      "A multi-billion-pound programme to upgrade the railway line between Manchester, Leeds, and York",
+    locale: "West Yorkshire",
+    evidence: evidenceResults.evidence.map((item) => ({
+      title: item.title,
+      summary: item.summary,
+      source: item.source,
+      sourceUrl: item.sourceUrl,
+      evidenceDate: item.evidenceDate,
+      rawText: item.rawText,
+    })),
+  });
+
+  console.log("Gemini evaluation summary:");
+  console.log(`   Status: ${evaluation.ragStatus}`);
+  console.log(`   Rationale: ${evaluation.ragRationale}`);
+  if (evaluation.latitude != null && evaluation.longitude != null) {
     console.log(
-      `   Coordinates: ${evidenceResults.projectLocation.latitude}, ${evidenceResults.projectLocation.longitude}`
+      `   Coordinates: ${evaluation.latitude}, ${evaluation.longitude}${
+        evaluation.locationDescription ? ` (${evaluation.locationDescription})` : ""
+      }`
     );
-    console.log(`   Local Authority: ${evidenceResults.projectLocation.localAuthority}`);
-    console.log(`   Region: ${evidenceResults.projectLocation.region}`);
-    console.log("");
+  } else {
+    console.log("   Coordinates: Unresolved");
   }
+  console.log(`   Source: ${evaluation.locationSource || "Unknown"}`);
+  console.log(`   Confidence: ${evaluation.locationConfidence}`);
+  console.log("");
 
   // 3. Example of using helper functions
   console.log("3. Using helper functions...");
@@ -176,6 +198,18 @@ async function exampleDatabaseWorkflow() {
     console.log(`Created project: ${projectResult.project.title}`);
     console.log(`Project ID: ${projectResult.project.id}`);
     console.log(`Evidence items: ${projectResult.evidence.length}`);
+    if (projectResult.evaluation) {
+      console.log(`Status: ${projectResult.evaluation.ragStatus}`);
+      console.log(`Rationale: ${projectResult.evaluation.ragRationale}`);
+      if (
+        projectResult.evaluation.latitude != null &&
+        projectResult.evaluation.longitude != null
+      ) {
+        console.log(
+          `Location: ${projectResult.evaluation.latitude}, ${projectResult.evaluation.longitude}`
+        );
+      }
+    }
 
     // 3. Get project with all data
     console.log("\n3. Fetching project with all data...");
