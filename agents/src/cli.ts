@@ -1,23 +1,13 @@
 import { Command } from "commander";
-import fs from "fs";
-import path from "path";
 import { fileURLToPath } from "url";
 import { ragScore } from "./ragScorer";
 import { upsertProject } from "./store";
 import { ProjectStatus, ProjectFoundItem } from "./types/projectEvidence";
 import { searchInfrastructureProjects, gatherEvidenceWithGemini } from "./geminiService";
 import { validateEnvValues } from "./envValues";
-
-// Global logging setup (truncated each run when main invoked directly)
-const globalLogFilePath = path.resolve(process.cwd(), "cli.log");
-fs.writeFileSync(globalLogFilePath, "");
-const globalLogStream = fs.createWriteStream(globalLogFilePath, { flags: "a" });
-function log(...args: any[]) {
-  const msg = args.map((a) => (typeof a === "string" ? a : JSON.stringify(a, null, 2))).join(" ");
-  console.log(...args);
-  globalLogStream.write(msg + "\n");
-}
-export { log };
+import { migrateAgentsDataToBackend } from "./migrateBackend";
+import { log } from "./logger";
+import { normalizeProjectTitle } from "./utils/projectNormalization";
 
 type CliOptions = {
   locale?: string;
@@ -30,6 +20,15 @@ type CliOptions = {
 type InfrastructureProject = Awaited<
   ReturnType<typeof searchInfrastructureProjects>
 >["projects"][number];
+
+function parseScrapeCliOptions(raw: Record<string, any>): CliOptions {
+  const parsed: CliOptions = { ...raw };
+  if (raw.limit !== undefined) parsed.limit = parseInt(raw.limit, 10);
+  if (raw.fetch !== undefined) parsed.fetch = parseInt(raw.fetch, 10);
+  if (raw.maxEvidence !== undefined) parsed.maxEvidence = parseInt(raw.maxEvidence, 10);
+  if (raw.concurrency !== undefined) parsed.concurrency = parseInt(raw.concurrency, 10);
+  return parsed;
+}
 
 const FOCUS_THEMES = [
   "road and transport upgrades",
@@ -75,16 +74,6 @@ function resolveSearchLocales(localeInput: string): string[] {
     }
   }
   return result;
-}
-
-function normalizeProjectTitle(title: string): string {
-  return title
-    ? title
-        .toLowerCase()
-        .replace(/&/g, "and")
-        .replace(/[^a-z0-9]+/g, " ")
-        .trim()
-    : "";
 }
 
 async function collectProjectsAcrossLocales(locales: string[], minFetch: number) {
@@ -209,6 +198,10 @@ const isDirectRun = fileURLToPath(import.meta.url) === process.argv[1];
 if (isDirectRun) {
   const program = new Command();
   program
+    .name("agents-cli")
+    .description("Infrastructure scraping and migration toolkit");
+
+  program
     .option(
       "-l, --locale <locale>",
       "local region to search for infrastructure projects",
@@ -229,15 +222,44 @@ if (isDirectRun) {
       "-c, --concurrency <number>",
       "number of projects to process concurrently (default: 3)",
       "3"
-    );
+    )
+    .action(async (rawOpts) => {
+      const parsed = parseScrapeCliOptions(rawOpts);
+      await main(parsed);
+    });
 
-  program.parse(process.argv);
-  const opts = program.opts();
-  if (opts.limit) opts.limit = parseInt(opts.limit, 10);
-  if (opts.fetch) opts.fetch = parseInt(opts.fetch, 10);
-  if (opts.maxEvidence) opts.maxEvidence = parseInt(opts.maxEvidence, 10);
-  if (opts.concurrency) opts.concurrency = parseInt(opts.concurrency, 10);
-  main(opts as CliOptions);
+  program
+    .command("migrate-backend")
+    .description("Copy the scraped SQLite data into the backend service database")
+    .option(
+      "--mode <mode>",
+      "append to or override backend data (append|override)",
+      "append"
+    )
+    .option(
+      "--backend-env <path>",
+      "path to the backend .env file used to resolve the DATABASE_URL"
+    )
+    .option(
+      "--backend-url <url>",
+      "explicit backend database connection string (overrides env file)"
+    )
+    .action(async (cmdOpts) => {
+      const normalizedMode =
+        typeof cmdOpts.mode === "string" && cmdOpts.mode.toLowerCase() === "override"
+          ? "override"
+          : "append";
+      await migrateAgentsDataToBackend({
+        mode: normalizedMode,
+        backendEnvPath: cmdOpts.backendEnv,
+        backendDatabaseUrl: cmdOpts.backendUrl,
+      });
+    });
+
+  program.parseAsync(process.argv).catch((err) => {
+    console.error(err);
+    process.exitCode = 1;
+  });
 }
 
 async function run(opts: CliOptions) {

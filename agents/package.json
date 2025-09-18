@@ -9,7 +9,8 @@
     "dev": "ts-node src/cli.ts",
     "debug": "ts-node --inspect-brk src/cli.ts",
     "convert-sqlite": "ts-node src/sqliteToPrismaSeed.ts",
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node prisma/seed.ts",
+    "migrate-backend": "ts-node src/cli.ts migrate-backend"
   },
   "dependencies": {
     "@google/genai": "^1.12.0",

@@ -59,6 +59,41 @@ tail -f cli.log
 ### Persistence
 Projects + evidence are upserted via Prisma. Duplicate detection is heuristic (title / summary / URL). Re‑running with same locale won’t spam identical evidence.
 
+## Migrating Scraped Data to the Backend Service
+
+The CLI exposes a `migrate-backend` command that copies the SQLite data stored in `agents/prisma/storage/data.db` into the backend service database. The migration understands the backend Prisma schema (including decimal latitude/longitude fields) and can either replace or merge with existing backend projects.
+
+```bash
+npm --prefix agents run migrate-backend -- --mode override
+```
+
+### Migration Options
+
+| Option | Description |
+|--------|-------------|
+| `--mode <append|override>` | `append` adds new projects/evidence without duplicating existing records (matched by project ID/title and evidence URL/source/title/summary). `override` clears backend projects and evidence before importing. |
+| `--backend-env <path>` | Optional path to a backend `.env` file to resolve the backend `DATABASE_URL`. Defaults to `../backend/.env` relative to the repo root. |
+| `--backend-url <url>` | Explicit backend database connection string. Takes precedence over environment files. |
+
+If neither `--backend-url` nor `--backend-env` are provided, the command falls back to the `BACKEND_DATABASE_URL` environment variable. The agents database connection is always taken from `agents/.env`.
+
+### Makefile Helper
+
+From the repository root you can run the migration via Make:
+
+```bash
+make migrate-to-backend MODE=append
+```
+
+Additional parameters are passed through the `MODE`, `BACKEND_ENV`, and `BACKEND_URL` variables, for example:
+
+```bash
+make migrate-to-backend MODE=override BACKEND_ENV=backend/.env
+make migrate-to-backend BACKEND_URL="mysql://user:pass@localhost:3306/node_boilerplate"
+```
+
+The migration ensures an admin user exists in the backend (creating one if needed) and logs its progress to `cli.log` alongside the scraping commands.
+
 ### Troubleshooting
 | Symptom | Cause | Fix |
 |---------|-------|-----|
