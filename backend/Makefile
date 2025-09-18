@@ -34,11 +34,11 @@ seed:
 
 # Usage: make seed-projects [SEED=seeds/projects.seed.json]
 seed-projects:
-        $(DOCKER_COMPOSE) exec $(SERVICE) ts-node scripts/seedProjectsFromFile.ts $(SEED)
+	$(DOCKER_COMPOSE) exec $(SERVICE) ts-node scripts/seedProjectsFromFile.ts $(SEED)
 
 recompute-evaluations:
-        $(DOCKER_COMPOSE) exec $(SERVICE) npm run recompute:evaluations
+	$(DOCKER_COMPOSE) exec $(SERVICE) npm run recompute:evaluations
 
 # --- Testing ---
 test:
-        $(DOCKER_COMPOSE) exec $(SERVICE) npm test
+	$(DOCKER_COMPOSE) exec $(SERVICE) npm test
