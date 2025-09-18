@@ -24,12 +24,7 @@ const Navbar: React.FC = () => {
         >
           Add Project
         </Link>
-        <Link
-          to="/dashboard/profile"
-          className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
-        >
-          Profile
-        </Link>
+
         {(user?.user_type === USER_TYPE_ADMIN ||
           user?.user_type === USER_TYPE_MODERATOR) && (
           <Link
@@ -39,6 +34,12 @@ const Navbar: React.FC = () => {
             Moderation
           </Link>
         )}
+        <Link
+          to="/dashboard/profile"
+          className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
+        >
+          Profile
+        </Link>
       </div>
       <div className="flex items-center">
         <Logout />

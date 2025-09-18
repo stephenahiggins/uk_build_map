@@ -1,0 +1,41 @@
+{
+  "name": "lfg_agents",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsup src/cli.ts --format esm,cjs --dts --sourcemap",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "debug": "ts-node --inspect-brk src/cli.ts",
+    "convert-sqlite": "ts-node src/sqliteToPrismaSeed.ts",
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^1.12.0",
+    "@prisma/client": "^6.13.0",
+    "axios": "^1.6.8",
+    "bullmq": "^4.9.2",
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^11.1.0",
+    "dotenv": "^16.4.5",
+    "knex": "^2.5.1",
+    "lodash": "^4.17.21",
+    "pg": "^8.11.3",
+    "prisma": "^6.13.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "uuid": "^11.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.20",
+    "@types/node": "^20.11.30",
+    "@types/sqlite3": "^3.1.11",
+    "@types/uuid": "^10.0.0",
+    "source-map-support": "^0.5.21",
+    "ts-node": "^10.9.2",
+    "tsup": "^7.2.0",
+    "typescript": "^5.9.2"
+  }
+}

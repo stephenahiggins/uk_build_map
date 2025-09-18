@@ -70,7 +70,7 @@ Copy `.env.example` to `.env` and fill in required values for both backend and f
 | make prisma-generate | Generate Prisma client             |
 | make seed        | Run Prisma seed script                 |
 | make test        | Run backend tests                      |
-
+ |make seed-projects SEED=seeds/national-starter.json | Seed files |
 ## API Documentation
 - Swagger UI available at `/api-docs/:version` (when not in production)
 

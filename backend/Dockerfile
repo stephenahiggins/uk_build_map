@@ -9,7 +9,7 @@ COPY package*.json ./
 
 # Install project dependencies
 RUN npm install --force
-RUN npm install -g ts-node
+RUN npm install -g -D ts-node --legacy-peer-dep
 
 # Copy the rest of the application code to the container
 COPY . .

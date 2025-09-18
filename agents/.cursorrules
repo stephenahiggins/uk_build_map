@@ -1,0 +1,114 @@
+# Cursor Rules for LFG Agents Project
+
+## Project Overview
+This is a TypeScript/Node.js project for managing local government projects with AI-powered evidence analysis. The project uses Prisma for database operations, Google Gemini AI for analysis, and includes web scraping and RAG (Retrieval-Augmented Generation) capabilities.
+
+## Critical Security Rules
+- **NEVER** access, read, write, or modify `.env` files or environment variables
+- Except `.env.example`, which you can treat as the `.env` file. 
+- **NEVER** suggest hardcoding API keys, database URLs, or sensitive credentials
+- **NEVER** expose sensitive configuration in code comments or documentation
+- Always use environment variables for configuration and suggest users set them up
+
+## Code Style & Architecture
+- Use TypeScript with strict type checking
+- Follow ES modules syntax (import/export)
+- Use async/await for asynchronous operations
+- Implement proper error handling with try/catch blocks
+- Use Zod for runtime type validation
+- Follow Prisma best practices for database operations
+
+## Database & Prisma
+- Always use Prisma Client for database operations
+- Respect the existing schema structure in `prisma/schema.prisma`
+- Use proper TypeScript types from Prisma generated types
+- Implement proper error handling for database operations
+- Use transactions when multiple operations need to be atomic
+
+## AI & Gemini Integration
+- Follow the existing patterns in `geminiService.ts`
+- Use proper error handling for AI API calls
+- Implement rate limiting and retry logic where appropriate
+- Validate AI responses before processing
+- Use structured prompts for consistent AI interactions
+
+## File Structure & Organization
+- Keep source code in `src/` directory
+- Use descriptive file names that reflect their purpose
+- Group related functionality in appropriate modules
+- Maintain separation of concerns between services
+
+## Testing & Development
+- Write tests for critical functionality
+- Use `ts-node` for development
+- Use `tsup` for building production code
+- Follow the existing build and dev scripts in package.json
+
+## Environment & Configuration
+- Always use `envValues.ts` for environment variable access
+- Validate environment variables on startup
+- Provide clear error messages for missing configuration
+- Use dotenv for local development
+
+## CLI & User Interface
+- Follow the existing CLI patterns in `cli.ts`
+- Use Commander.js for CLI argument parsing
+- Provide helpful error messages and usage instructions
+- Implement proper logging for debugging
+
+## Web Scraping & Data Fetching
+- Follow the patterns in `scraper.ts` and `fetcher.ts`
+- Implement proper rate limiting
+- Handle network errors gracefully
+- Respect robots.txt and website terms of service
+- Use appropriate user agents
+
+## RAG & Evidence Processing
+- Follow the patterns in `ragAgent.ts` and `ragScorer.ts`
+- Implement proper text processing and chunking
+- Use appropriate embedding strategies
+- Validate evidence data before processing
+
+## Error Handling
+- Use descriptive error messages
+- Implement proper logging
+- Handle edge cases gracefully
+- Provide fallback behavior where appropriate
+
+## Performance Considerations
+- Use efficient database queries
+- Implement caching where appropriate
+- Optimize AI API calls
+- Use streaming for large data processing
+
+## Documentation
+- Write clear comments for complex logic
+- Document API interfaces
+- Provide usage examples
+- Keep README.md updated
+
+## Dependencies
+- Respect the existing dependency versions
+- Suggest updates only when necessary
+- Use the exact versions specified in package.json
+- Follow the existing dependency structure
+
+## Security Best Practices
+- Validate all user inputs
+- Sanitize data before database operations
+- Use parameterized queries
+- Implement proper access controls
+- Never log sensitive information
+
+## Code Quality
+- Use meaningful variable and function names
+- Keep functions focused and single-purpose
+- Maintain consistent code formatting
+- Use TypeScript strict mode features
+- Implement proper null checking
+
+## Project-Specific Patterns
+- Follow the existing evidence processing workflow
+- Use the established project status and type enums
+- Maintain the timeline merging functionality
+- Respect the existing data models and relationships 

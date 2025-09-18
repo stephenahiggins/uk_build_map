@@ -1,0 +1,176 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-arm64-openssl-3.0.x"] // Add the binary target here
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum ProjectType {
+  LOCAL_GOV
+  NATIONAL_GOV
+  REGIONAL_GOV
+}
+
+enum ProjectStatus {
+  RED
+  AMBER
+  GREEN
+}
+
+enum EvidenceType {
+  PDF
+  URL
+  TEXT
+  DATE
+}
+
+enum ModerationState {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum UserType {
+  ADMIN
+  MODERATOR
+  USER
+}
+
+enum CountryCode {
+  ENGLAND
+  SCOTLAND
+  WALES
+  NORTHERN_IRELAND
+}
+
+model User {
+  user_id                Int       @id @default(autoincrement())
+  user_name              String
+  user_email             String    @unique
+  user_password          String
+  user_refreshToken      String?
+  reset_token            String? // For storing the password reset token
+  reset_token_expiration DateTime? // For storing when the token expires
+  user_active            Boolean   @default(true)
+  user_deleted           Boolean   @default(false)
+  user_created_at        DateTime  @default(now())
+  user_updated_at        DateTime  @updatedAt
+  type                   UserType  @default(USER)
+
+  // Relations for previous CitizenAccount
+  evidenceSubmitted EvidenceItem[] @relation("EvidenceItem_submittedBy")
+  projectsCreated   Project[]      @relation("ProjectCreator")
+
+  @@index([user_active])
+  @@index([user_deleted])
+}
+
+// ===== PROJECTS =====
+
+model LocalAuthority {
+  id          String      @id @default(uuid())
+  name        String
+  code        String      @unique
+  website     String?
+  countryCode CountryCode
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  regionId    String
+
+  projects Project[]
+}
+
+// ── Core Aggregates ─────────────────────────────────────────────────────────
+model Project {
+  id          String      @id @default(uuid())
+  title       String
+  description String?
+  type        ProjectType
+
+  regionId           String?
+  region             Region?         @relation(fields: [regionId], references: [id])
+  localAuthorityId   String?
+  localAuthority     LocalAuthority? @relation(fields: [localAuthorityId], references: [id])
+  createdById        Int
+  createdBy          User            @relation("ProjectCreator", fields: [createdById], references: [user_id])
+  createdAt          DateTime        @default(now())
+  expectedCompletion DateTime?
+  status             ProjectStatus
+  statusUpdatedAt    DateTime        @default(now())
+  statusRationale    String?
+
+  // Minimal geo fields; switch to PostGIS Point/Polygon if you enable the ext.
+  latitude  Float?
+  longitude Float?
+  imageUrl  String?
+
+  // Relationships
+  objectives Objective[]
+  evidence   EvidenceItem[]
+  // discoveredLinks removed
+
+  @@index([regionId])
+  @@index([status])
+  @@index([localAuthorityId])
+  @@map("Project")
+}
+
+model Objective {
+  id          String      @id @default(uuid())
+  projectId   String
+  project     Project     @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  title       String
+  description String?
+  orderIndex  Int
+  keyResults  KeyResult[]
+
+  @@index([projectId, orderIndex])
+}
+
+model KeyResult {
+  id            String        @id @default(uuid())
+  objectiveId   String
+  objective     Objective     @relation(fields: [objectiveId], references: [id], onDelete: Cascade)
+  statement     String
+  targetMetric  Float?
+  currentMetric Float?
+  unit          String?
+  dueDate       DateTime?
+  ragStatus     ProjectStatus
+
+  @@index([objectiveId])
+}
+
+model EvidenceItem {
+  id              String          @id @default(uuid())
+  projectId       String
+  project         Project         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  submittedById   Int
+  submittedBy     User            @relation("EvidenceItem_submittedBy", fields: [submittedById], references: [user_id])
+  type            EvidenceType
+  title           String
+  summary         String?
+  source          String?
+  url             String?
+  datePublished   DateTime?
+  description     String?
+  createdAt       DateTime        @default(now())
+  moderationState ModerationState @default(PENDING)
+
+  // Latitude/Longitude removed: evidence inherits location from its parent Project
+
+  @@index([projectId])
+  @@index([submittedById])
+  @@index([moderationState])
+}
+
+model Region {
+  id              String    @id @default(uuid())
+  name            String    @unique
+  // Store complex shapes as GeoJSON until migrate to PostGIS Polygon
+  boundingPolygon Json?
+  projects        Project[]
+}

@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "javascript.format.enable": true,
+    "typescript.format.enable": true,
+    "debug.javascript.autoAttachFilter": "smart",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "yaml.schemas": {
+        "https://www.schemastore.org/prisma.json": "file:///Users/stephenhiggins/Code/lfg_agents_2/prisma/schema.prisma"
+    }
+}

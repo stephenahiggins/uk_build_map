@@ -1,0 +1,1025 @@
+[
+    {
+        "id": "infrastructure-openreach-full-fibre-rollout---leeds",
+        "title": "Openreach Full Fibre Rollout - Leeds",
+        "description": "The ongoing deployment of full fibre broadband infrastructure across Leeds, providing faster and more reliable internet connectivity to homes and businesses. As of July 2025, over 315,000 properties in Leeds (more than 80% coverage) can access this technology, forming part of a wider rollout across West Yorkshire.",
+        "type": "LOCAL_GOV",
+        "regionId": null,
+        "localAuthorityId": null,
+        "createdById": 1,
+        "expectedCompletion": null,
+        "status": "GREEN",
+        "statusRationale": null,
+        "latitude": null,
+        "longitude": null,
+        "evidence": [
+            {
+                "type": "TEXT",
+                "title": "Openreach announced that over 100,000 homes and businesses in and around Leeds could now access full fibre broadband.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEd6B4G5o0L5GnxWEm1p5C3CjF3-7NiwKwGHYb2UDlvWd3rsQ6Ay2BifkZocC9sSN2Y7burQomI0UJ80MHY6Fc6AMyRRTo5Qcac_hD2bhIpwFNkVxAA0MHWP9yQ3SQdZ-69PeHAe5c9ahtBY7ykd6MKHKJBbW28mQ4CsYYJOcotSn0COViYBQxCpQGEp8ri8UI=",
+                "description": "This milestone was achieved by Openreach engineers who continued building the new Fibre-to-the-Premises (FTTP) network during the COVID-19 lockdown, highlighting the economic benefits this infrastructure brings to the region.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Leeds City Council and BT, with Openreach as the build partner, launched a £20.3 million partnership to upgrade council and health service buildings to full fibre connectivity.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYWhklCQXWMihPFLqFsNZkhaFBGe1TSoD_9xJp9EFQrIUx5RRNdWIbLs5QGI9MVRp1yVYWgLRSc3GyEEno1OPzbRHDQwKupL3rlyr50XQIIZ5oC7KGJtjCzpmjJOUN2-tXy5mK_0u4rXPB_hBojNfs2__omvyqpDjcVwC6QqrohzkPZasTcKgEIu86AweieCw8X7oiMjE=",
+                "description": "This program is intended to accelerate wider full fibre broadband rollout to nearby residential and commercial properties, aiming to make Leeds the largest gigabit and '5G capable' city outside London.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Around 285,000 more homes and businesses across West Yorkshire, including areas like Hipperholme and Illingworth in Calderdale, are set to benefit from Openreach's £114 million investment in full fibre broadband.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYm4-GzBUL6Lx0byOnyzSAD9tGjqbqR5yyAOg2FHuVT5HazetZIOkre--s7dhzAnVtOGGwYHzGeuBuP7-wg6N5TGW3XWMNfYdZTe-4WonhBuPxtC0mLKcS2Ngu34DZgFlAG9owYZrlb6D9MSkMasRpSvc0bi12Lpc-KnG3pmaW69C6bBetWqYqKUyXPsIwLrgJ-2yveKkmxvvLwcBAh_3MTOmPZftF8c6fSK5b0-iRszru9_lvd-g==",
+                "description": "This builds on previous plans to reach 160,000 premises in harder-to-serve areas.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The first 250 homes and businesses in Todmorden, Calderdale, gained access to 'full fibre' broadband speeds as part of the Superfast West Yorkshire and York programme, a partnership between West Yorkshire Combined Authority and Openreach.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErBJvoxUWWKQzVJSmUSyEYHrAnxD5nfh-N_-ofUL4J5FgpKdPQNqOcY8BN_iE6tLIxoYDJ9DoWqEzBQBHQzB33J3Vm9Dvh8kAxQxhLi4fJeik6TLSOyGr0E04bfisZF6KYf3kdNzXjij1tXQIR2ZX0jP0o00SDU2K68lT4su_QvXo3jnqd4V-gNaJi7NKmG3pmaW69C6bBetWqYqKUxPsIwLrgJ-2yveKkmxvvLwcBAh_3MTOmPZftF8c6fSK5b0-iRszru9_lvd-g==",
+                "description": "This marked a significant upgrade for the rural town, with hundreds more properties in Calderdale expected to benefit.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Openreach announced full fibre broadband expansion to an additional 34 towns and villages across Yorkshire and the Humber, impacting around 185,000 people.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElAqbE2cZ8uT5OkTmWTF-ZiV8PKQFTKvUezEM4Kgfs4MaaaI-cWM8b3Ud-O0dNBQxKYsPbQvJWHoDkLyu_WTEqUdn3zFM5F-ncqY138GCsfxW5fYAZFHvjrDXCUiaOfbyntzZvOsVVgI_833aHUOByydxoOxvxb_kjhM56V9nNBPKrgk4NNQCDL0vbLcGFXT5iyA8uHmmqaa39f0IUPw==",
+                "description": "This builds on existing coverage for over 1.2 million homes and businesses in the region. Openreach also refreshed its online map and postcode checker to provide clearer updates on their progress towards connecting 25 million UK premises by 2026.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Openreach announced a new phase of its national full fibre broadband rollout, investing £30 million across 13 new locations in Yorkshire, benefiting over 100,000 homes and businesses.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQED8w4DN5VcfLc0H6gVHx5drDZYgxwKgUT__MIbV9PqA7hqseeN5un1reAIeJSwzDbbfotel8AXvhjOkzGSNRa2_2vIZQ6WwP8zpYrxyIeMNIxTxuuN7Q7nugBPSlpuRmNfs-xc7oTp7h6ZHzpFD0yEHwpeUF1y7bCN-I07RypERDerKTkmIKrFwipElfj5UNt4WPPyA2O07A2ih4E-u7CMVCFhIA_UOxYdDef1IgnYJ6iCBch6dloR79MlsGxBcw==",
+                "description": "This is part of Openreach's plan to reach 25 million premises by the end of 2026, reaching 12.5 million nationwide.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Openreach confirmed that over 315,000 homes and businesses in Leeds can now access full fibre broadband, achieving more than 80% coverage in the city.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8KAJedH3FRrPX8Da5sAFJg6XDLyd1q2Fvzc48tJ7qnJ_pTGx85LeKtc25zwxhqStqmFDiAte8wdYQKG8Y4zRkI7ZOD8mtrnv8J25HYS1Is2oLMhjBtAfDCIidlShTVcdk_djI1PGpEzJ-zJZ1WOV1aL9HcfcH0b94qDD-J9HZblY=",
+                "description": "Across West Yorkshire, 820,000 homes and businesses are able to upgrade. This forms part of Openreach's wider UK rollout aiming for 25 million premises by the end of 2026.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Openreach announced a £42 million investment to bring its Full Fibre network to 70% of homes and businesses in Kirklees.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe5alncW3FklZDXyCkNSk70vX2EUucIi_PgD022PTDn8v4xNWoStyHtBsyUeKLUhstTySpvGmFTNZjxqK8stsMhr7jKAdC0QQzX0I1l-9IqVBxFiGYepWbH7BC4jlwpE3bjJEroi2MQO5v9S2xgEwPxulet3q53IfEyLXrCvSFtYMVPP9lYvQDaJZTkK8AUK-based%20telecommunications%20company%20Openreach%20said%20it%20has%20invested%20GBP%2042%20million%20to%20bring%20its%20Full%20Fibre%20broadband%20network%20to%2070%20percent%20of%20homes%20and%20businesses%20in%20Kirklees.",
+                "description": "This includes areas such as Batley, Cleckheaton, Dewsbury, Heckmondwike, Honley, Huddersfield, Kirkburton, Meltham, and Milnsbridge. Despite the rollout, only 23% of eligible households had upgraded.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "This report, commissioned by Openreach, details the economic, social, and environmental benefits of the full fibre rollout across the UK.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxBWcDclZjyt9OiEV42J-Kyn67JzdMt5sUINTlY8qerEdn4GDWZxAlkawk27MbsJA72noLfb8QdKXfGfkitNgdJLmhCLA5qUZutywAYKyGTYMgOTIBnN9sOllaxW9JFZl-e-IfLRviPdBqchYkXDPZp7lQXVpVh6_7cV6Guz0FY2oP2A_noSKRf-JeFJcwDAZAQzs0ULwSns3uofDTVQDS0fum7S7ZX14h57dBRUmF6TxX_WaYWA==",
+                "description": "It estimates significant boosts to the local economy (e.g., £3.8 billion for Yorkshire and the Humber) and workforce (over 620,000 people back into work by 2029), and also highlights environmental benefits from reduced commuting.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "As of July 12, 2025, Openreach's total full fibre footprint reached 18,922,497 premises across the UK.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu0VWsrybDR2uuvOtBdrOVfHcEh6rDSj-FkDLoWYHJKIP2MERxr7EDHj6Egkq-ozZCVTceU6dyzwKayS3C6iBk7leJFSObzIh6qc88KmuwKDm_6HtwQkWa9AKAY_9Fa6Tq1MJ2nTMt82AyOa2xAN7eiQUODyr7MoJUteOcUMxLPUBbmyurKY3jwSqM_0pZE78=",
+                "description": "This indicates the ongoing and rapid pace of the national rollout, contributing to the coverage targets in regions like Yorkshire and the Humber. The report projects Openreach to reach 25 million premises by November or December 2026.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            }
+        ]
+    },
+    {
+        "id": "infrastructure-west-yorkshire-mass-transit-project",
+        "title": "West Yorkshire Mass Transit Project",
+        "description": "A transformative £2.5 billion initiative to connect West Yorkshire's five core urban centres – Leeds, Bradford, Wakefield, Huddersfield, and Halifax – with an integrated, high-capacity transport network. The project proposes a combination of modern light rail (tram and tram-train) solutions, high-capacity zero-emission buses, and smart mobility corridors with dedicated lanes and priority signalling.",
+        "type": "LOCAL_GOV",
+        "regionId": null,
+        "localAuthorityId": null,
+        "createdById": 1,
+        "expectedCompletion": null,
+        "status": "GREEN",
+        "statusRationale": null,
+        "latitude": null,
+        "longitude": null,
+        "evidence": [
+            {
+                "type": "TEXT",
+                "title": "In 2021, a public engagement was held on the Mass Transit Vision 2040 as part of the wider Connectivity Infrastructure Plan.",
+                "url": "https://www.westyorks-ca.gov.uk/mass-transit-vision-2040/",
+                "description": "The engagement showed strong support for the Vision, with around 80% of respondents indicating full or partial support. The feedback received informed a revised version of the Vision document.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On March 5, 2024, plans for a mass transit scheme, which could include a tram system connecting Huddersfield, Leeds, Halifax, Bradford, and Wakefield, received further confirmation of £2.5 billion in funding at the Convention of the North meeting.",
+                "url": "https://www.examinerlive.co.uk/news/local-news/25bn-tram-linking-huddersfield-leeds-28741366",
+                "description": "This marked another boost for the long-awaited project, though it still awaited final budget sign-off.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The UK government announced on October 4, 2023, as part of its 'Network North' plan, that £2.5 billion from HS2 savings would be allocated to ensure the delivery of a West Yorkshire Mass Transit System.",
+                "url": "https://www.gov.uk/government/news/yorkshire-and-the-humber-to-benefit-from-198-billion-transport-investment",
+                "description": "This funding aims to provide better connections for Leeds and the wider area, including Bradford and Wakefield, significantly boosting regional transport infrastructure.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "A statutory consultation on the revised West Yorkshire Mass Transit Vision 2040 was conducted from October 17, 2022, to January 16, 2023.",
+                "url": "https://www.westyorks-ca.gov.uk/mass-transit-vision-2040/",
+                "description": "This consultation invited statutory consultees, key stakeholders, and the public to share their views on the updated vision for the region's mass transit system.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The West Yorkshire Combined Authority initiated the early market engagement phase for the £2.5 billion Mass Transit Project on May 19, 2025.",
+                "url": "https://archup.com/west-yorkshire-mass-transit-2-5bn-infrastructure-project-launch/",
+                "description": "This crucial phase, extending until July 8, 2025, involves seeking input from suppliers and is a preparatory step for the formal procurement process, with construction targeted to commence in January 2029.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On February 20, 2025, a consultation report from the West Yorkshire Combined Authority indicated strong public support for the proposed Mass Transit network.",
+                "url": "https://www.railway-news.com/support-revealed-for-west-yorkshire-mass-transit-tram-network/",
+                "description": "Thousands of residents, along with business and education leaders, favored the initial phase, particularly the tram lines connecting Bradford and Leeds, and the line from St James's Hospital to the White Rose Shopping Centre.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The West Yorkshire Combined Authority launched an 11-week public consultation on July 15, 2024, presenting initial route options for the first phase of the mass transit system.",
+                "url": "https://www.transport-network.co.uk/Plans-unveiled-for-long-awaited-Leeds-tram-network/19904",
+                "description": "This phase proposes two tram lines: a Leeds Line (from St James's University Hospital through the city centre to White Rose Shopping Centre) and a Bradford Line (connecting Bradford and Leeds city centres). The consultation aimed to gather public views on these routes.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On July 9, 2025, Kirklees Council indicated its support for the joint production of a Mass Transit Spatial Development Framework Development Plan Document (SDF DPD).",
+                "url": "https://democracy.kirklees.gov.uk/documents/s99103/Joint%20West%20Yorkshire%20Mass%20Transit%20Spatial%20Development%20Framework%20Development%20Plan%20Document%20Reference%20to%20Council.pdf",
+                "description": "This document, coordinated by the West Yorkshire Combined Authority and involving other West Yorkshire councils, will provide a high-level vision and overarching framework to support the delivery and business case for the region-wide Mass Transit system.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On June 4, 2025, Chancellor Rachel Reeves announced the allocation of £2.1 billion in local transport funding to West Yorkshire.",
+                "url": "https://www.westyorks-ca.gov.uk/news-events/news/major-funding-boost-secured-for-west-yorkshire-trams/",
+                "description": "This significant investment will enable the West Yorkshire Combined Authority to begin construction on the tram project by 2028, with the funding covering the 2027-2032 period and supporting the Leeds and Bradford lines, as well as other regional transport improvements.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The Centre for Transport in Cities (Centric) partnership was launched on August 3, 2025, bringing together researchers from the University of Huddersfield and the University of Leeds with the West Yorkshire Combined Authority.",
+                "url": "https://www.railwaygazette.com/rail-business-uk/yorkshire-universities-launch-centric-partnership-to-provide-expertise-for-tram-scheme/66763.article",
+                "description": "Centric will provide independent expert advice and integrate cutting-edge academic research into the planning, economics, and engineering of the Mass Transit light rail programme.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The West Yorkshire Combined Authority published its Connectivity Infrastructure Plan and Mass Transit Vision 2040, outlining preliminary concepts for a light rail or bus rapid transit network.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8fzHfepR9hzrgFxjcTEda44tIOls1lj0YK6aVhmFNDKpz6iMujqY8ALb2UrZJPxFgfwsnId3arLr1EksBpKaidJ9-bo7KPCZP3Vu6kM8paZ8bAvUCCT2PkNpN4qMe8hn5xfU-GLH0P6SgXQwWcO99dhoXIYAe5-by888lNKRXCGUImowri_sDToKUV7QU6jSlVZrdhcbC43LBkw==",
+                "description": "This initial vision included potential phase one corridors connecting Leeds to Thorpe Park, Leeds to Bradford via Pudsey, and Bradford to Leeds via Dewsbury.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The West Yorkshire Combined Authority conducted two consultations related to the Mass Transit Vision 2040.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHg2wAqHshVIFDofj3YWffKTP9ArMiNLMCX7KOkF7gfeKumylldIbj96tQUHl6GfTeUyvxF1QBxzIGGzQQj9N3hbVP7pOqK6oJCTRnzwnT1QFzTAJyWjvqA6Gbj42Y32TML0XPkIQ8qGoI6zhMoUN2Z",
+                "description": "The initial public engagement on the Connectivity Plan was in 2021, followed by a revised Vision 2040 consultation from October 2022 to January 2023. Feedback from these consultations helped refine potential route options for the system.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The Mayor of West Yorkshire unveiled plans for a tram system connecting Leeds and Bradford, with proposals published ahead of a Combined Authority meeting.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZf5_OZ27r0fDw8nbvUsYUWjKt82VKaukDxnSpG6TkAir3TiJvSjbbnTcLAOTSKGRC9eikUAKt5sLfARz6pnvDHKB7dC0bVaIw-pa1kZtlN0QsCI9JBHHRfJK_xHBPClXziUCuCmTGAF4-R3XRPfqADexgnFFYcU_s0GHOTbcB5MPpcPbOMv6QKF1p",
+                "description": "Phase one is expected to include a Leeds Line (St James' Hospital to White Rose) and a Bradford Line (Leeds to Bradford city centre). Construction is hoped to begin in 2028, with a £1 million fund supporting the Dewsbury Line Development Project for future expansion.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The West Yorkshire Combined Authority officially launched a public consultation on the proposed route options for Phase One of the Mass Transit System.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF58HggLj9RNnao8F1AM6fXAbmlvVb1c-PSGqjIibQ1iTyMeUl__mkiIOslQIqQY7skW7RkBbAazUec_l6rXsQ5uORJBNFMP6sc9w6_Ht88xbuaKg_Ak9U5Nqt50LihLvIa29xl5NAGMDAviYFuaSUokrmwrdgX1g7D41iRu7JFDM6dO-qPO80",
+                "description": "This consultation focused on the Leeds Line and Bradford Line, with construction aimed to start by 2028.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "West Yorkshire Combined Authority formally set out plans for two tram lines (Leeds and Bradford), with the strategic outline case for the estimated £2bn+ project approved by members on March 14, 2024.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEm4B_f5z2brNHFEpbILkSa0Gpv-zW65lUVd4ra-dBOhZgG_8HbI8zOs-_2Jqvql9WBZF9xAcgoeNY6vtGlL5qgLsKLvN2mAg1hC4WlSmK4Eed_iUR0rCthlpI-aw8tvh857tAHqLXRYR7fVqoftwkbDayHIJGKwTnpXqODFNRur6fNYWP6MM90cZCML-qDsrxY8jlymZwJnybrReqMXQ9ybbMG6EvVtQ1NtIUQX0pqUK:",
+                "description": "Construction is projected to begin in 2028, with future phases aiming to extend the network to Wakefield, Kirklees, and Calderdale.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "An announcement was made regarding the impending closure of the public consultation for Phase One route options for the West Yorkshire Mass Transit System.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVM6H4t7WywtedHvhoFeUsD6Ydo2-cNfkPCw14xs_KxjR1K6qFYHsv1cQT_UDamobVkCObY6i14vDVl855isxrCwJprYVVupEtCtjnXw5tXu8LZwyOX4KewCSNELNjxJu1L81Km4b60Sj6cRUjPUMdFUAuy9O1LlCsMPiPrAGDDmXr_oCzJCNa4RK_Uo9oCp5c",
+                "description": "The consultation ran from July 15, 2024, to September 30, 2024, seeking public feedback on the proposed Leeds and Bradford Lines.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Leeds Civic Trust submitted its formal response to the West Yorkshire Combined Authority's Phase 1 Route Options consultation for the Mass Transit System.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEExhF1HiJvFGBJpAvYQdxkYHWKpsyu5AKNkbcglgX-POiOQAUGwN-NFyUDXx55cpItmrwpCy-6VfyCmDuRMgGIXo9XwWQ4duRljVg8g4WxG23SFYykJLEowCwwU6y1p2CWrGV8onkG222o643IURqp0rQ-lTX34_CUupVFugLs9wOh7a0APw==",
+                "description": "The Trust expressed support for the tram network's development and suggested a hybrid option for South Leeds routes to address specific concerns and improve service.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The West Yorkshire Combined Authority initiated the early market engagement phase for the £2.5 billion Mass Transit Project.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHS1PeXyFqDYI_www8lU6ihIrnkefHS1KOvFrXm-o0dg4rRavrSde6ZGLy9O8RmFadrENCTN-zrJd_IHcqXLQETIEMUyo2J3ypVA1SyBrQu0ARpNjZiMMrrM1Wxxt9_sJY-qAGBD7cLM_KxEMpuNvc1vI4=",
+                "description": "This phase, running until July 8, 2025, allows for supplier input. The overall project timeline outlines a construction start in 2029 and Phase One completion by 2033, aiming to connect major urban centers like Leeds, Bradford, Wakefield, Huddersfield, and Halifax.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "A consultation report released by the West Yorkshire Combined Authority indicated strong public support for the proposed Phase One tram system.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHewtrZizEv76nl9X0aP9ERL3ExIH-XO-7BDq8xuu8nxWWph-phJyOSjB-Z_eFpzA4JKT0H3JX3MXXGnLcwhfP1yXONLyM0Zf9vCXwK06L6XSw3InhI6BvifQbfqflipcOgNuvGIXJF5aP7vVLaNB4EnkjUtMJ_kjHAR0AgLaJDzplwZCm8-vdPf8XDVaFRSuzVWg=",
+                "description": "Over two-thirds of respondents favored the Leeds-Bradford line, and over 75% supported the St James' Hospital-White Rose connection. The feedback will inform the selection of the preferred scheme in late 2025, with a further detailed consultation planned for early 2026.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Chancellor Rachel Reeves announced a significant allocation of £2.1 billion in local transport funding for West Yorkshire.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaW4i1oUhaddf3FJNTVubFPmvoCJoBY3J8EsaPzQ_5pemNG5nMUIlT3tBBS1Y4hmULp_FguRSSfoHXdVISXDfXm00MnQilSWn2ux-eCdnE2ITFNyrWI_JwGCfcQkDzOIOvf9Ua7igkhbTdl44d_99LsJbPecU0uE3-EU1WxC2-vBYqu5v4hULAzo7eguujXX_kuKV7cs_t3u9TMGKV0D2fLr-EAm",
+                "description": "This funding is specifically designated to enable the West Yorkshire Mass Transit tram project to begin construction by 2028, forming a key part of the region's integrated transport network under the 'Weaver Network' brand.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The West Yorkshire Combined Authority announced a new partnership with the University of Huddersfield and the University of Leeds, forming the Centre for Transport in Cities (Centric).",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEV_Xaet7tM9CSp_Z1LJWyUzPsCvNLHUwdCWBvrfN_3UYdSRKsMmpvOjzcr2BR6hZ1C5AqccrTcukBcVh9MyuXcIuxRFXwo9nNueksKizqDMlpzC3CXnC7dBMyyDe81SrXGiwRnfoU=",
+                "description": "This collaboration aims to integrate cutting-edge research into the planning and execution of the £2.5 billion Mass Transit project, which intends to connect Leeds and Bradford via tram by the mid-2030s, with construction commencing in 2028.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            }
+        ]
+    },
+    {
+        "id": "infrastructure-kirklees-council-highways-and-transport-infrastructure-investment",
+        "title": "Kirklees Council Highways and Transport Infrastructure Investment",
+        "description": "A comprehensive £37.2 million investment plan over two years (starting 2025-05-14) to improve the borough's highways and transport infrastructure. This covers road surfacing, pothole repairs, traffic signals (e.g., A62 Corridor at Cooper Bridge), flood management, cycling facilities, street lighting, car parking, road safety, drainage systems, and public transport access. It includes maintenance of 1,900 km of roads, 2,333 km of pavements and cycleways, and 754 bridges.",
+        "type": "LOCAL_GOV",
+        "regionId": null,
+        "localAuthorityId": null,
+        "createdById": 1,
+        "expectedCompletion": null,
+        "status": "GREEN",
+        "statusRationale": null,
+        "latitude": null,
+        "longitude": null,
+        "evidence": [
+            {
+                "type": "TEXT",
+                "title": "The extensive A62 Leeds Road to Cooper Bridge Corridor Improvement Scheme, initially estimated at £75 million in 2021, will be phased due to soaring costs, reaching £94 million.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE169rig9V4rlp9V_GZGezG_aZX7ShfGvqhUZf9HgfgWd30kYFCCvtNGtj44zzrlUUp4EVz81qIi4yQeT4M7YGczVvT7p6gAFgDFN6o2ydZlIspI_Fv20FTB99s-3v6zTEGikZ7Vipy3AEyrIj774SwXKwk7oitbNcKI19VDv9Wa9LdIDk8z7dN71BxUzc3ALwMEEL5fwUg0-PSCDjlLhQjFqrt-egoefo=",
+                "description": "Phase 1 will prioritize improving the Cooper Bridge roundabout with a £53 million budget. This project is part of efforts to ease congestion.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Kirklees Council was awarded an additional £250,000 from the Department for Transport to upgrade and repair traffic signals across the borough, aiming to improve traffic flow, cut pollution, and reduce congestion.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFm1lq1Aa_qySmSRIeLCSvs33I97AYD5C-mXrisLD4pBAYfShggZIXhbTmVosJkoJrjyS0KlFEEcn4a0pOFsv_wAFXTk0xHmXANnYP-exuSGE7lvPX0KtN_q_Qmz7AUpnaNhb3IHcmaK4TFmQjf3TTIagYe57kyXwKu9dj9z0y1rhwx4FlcIeX6Dr3YM2AkTTus0bWj",
+                "description": "This was in addition to a £22 million investment in roads agreed by Cabinet in May.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Kirklees Council is working with West Yorkshire Combined Authority to address congestion in the Cooper Bridge area.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHztghdZhFUvykk3QxIlr60r_AoC20OXpNNxNzqf13OgRTxb9VVj_H5EBN2SavQTKpZPxHk3fEKr0zKIrBiMT44CTSLqIc0G_HBHQtug_H-IJpdpYfPeifu_of065pTXs-qNoI0Cy9F1jvgFRyDchXu6WGzwfXTZA9pXMjF7FhnoeW5NF0z",
+                "description": "Following public consultations in 2021, plans were modified. An additional public consultation focusing on Cooper Bridge took place in November 2024 and closed on December 8, 2024. The scheme is now in two phases due to inflation.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Kirklees Council's Cabinet approved the Highways Capital Plan for 2024-26 on July 9, 2024, detailing a £41 million investment over two years for essential highway works, including road surfacing, potholes, and traffic signals.",
+                "url": "https://vertexaisearch.cloud.com/grounding-api-redirect/AUZIYQFbCyFzu2veM_686XUzg3Bcb7P-ic0ZE5wPocb2RGQEflC2UIqhC_T-PS5lvNAJPY-8sG0BeXlH-aAZshMYJ-kG00ZzmyLLxXtVlYRSasLcKGrJqJVJ17DWULUnR4RbWUrIqLbpEHkwt6BCB0IyXq6dRmbwKy0pSW3-2UPApApWsFK4fuSCma_MEolGDXPmw2MA1BPABsj1bFKTCHA2ODBQgIuD9oXSMN0CkRLV2GiRmM4lIWUUX8FJiIsK1hunTC3RkZQ2GbkkFkxPxU=",
+                "description": "It also includes £500,000 from the DfT Green Light Fund for traffic signal improvements and £875,000 from the City Regional Sustainable Transport Settlement (CRSTS) for the Kirklees Speed Limit Review.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "This is the official decision document from Kirklees Council's Cabinet meeting on May 6, 2025.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaZY0c7aGjRQrWAY1nF0zaFMlOczlr_yYOP19HU_-G0PdWd7OmkDFc6SV1cERtk5o6DMmMVnQu4WgTgGC-872fJG-tHR5PoVmMkbvy5-7C4AeNrkVNiKejcep7g2u2gF9UHcc11xqxdVt-vgG9xji9HxWMYkeZK_cooh1k",
+                "description": "It formally approves the budget and programme allocations for the two-year Highways Capital Plan, totaling £37.2 million (£20,827,680 for 2025/26 and £16,453,364 for 2026/27).",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "This official report from Kirklees Council details the intended delivery programme for the Highways Capital Plan for 2025/26 and 2026/27, outlining a total investment of £37.2 million (£20.8 million for 2025/26 and £16.4 million for 2026/27).",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNah3OxZIA830sLc-caTpWjnTUAVL-1WOyNGv3GbKLkxOm_4Q_mjG5rEZxUZAsI4DOwM78BOv7wIHn_yi_TU-gB8xWK2Jyl02IR3JXyRKQLb63mOXthG3T96KYCiH9j44VI-D8HXUQoS8oTufYiWnwdW6cXyqZ6NzgyVptiKeAuLJyzu_QMgTsR0gnY64FKVdYk6YE2NmWNP54rFqKLvVj8tA2P6BYTNkMj1Ca7OkV",
+                "description": "It covers various highway assets and mentions additional grants from the Department for Transport and West Yorkshire Mayoral Combined Authority.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Kirklees Council's Cabinet agreed to the Highways Capital Plan for 2025-27, committing £37.2 million over two years.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrGj7Z6OjIWFd7Uqh6dhh7y0NuAcFr0_WoOfnGBVfLpzeYZdv_x6UXP1YHlDQKj2B2oDSPgJgq4MbXeFnf-xXkPeGQU-ueDzOZwW18yYsOFfem7S1YUrqIZejOU9nN4I3-t_PFOHslWAn5zlNTJsxA-D1bPa64gW54MK8zWB-yAHTI-SwP92p2e1aA0G7XTbGgrgEYgCY_xqw==",
+                "description": "The plan encompasses road surfacing, pothole repairs, street lighting, structures, road safety, flood management, drainage, traffic signals, car parking, and cycling facilities. It also highlights additional funding, including £500,000 for traffic signal improvements on the A62 Corridor at Cooper Bridge.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Kirklees Council approved a £37.2 million plan to improve the borough's highways over two years.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJvgdtXLkHlXIFnsI4Jgjh1jhG_ttlHOXiOysSZTejmJ6goCI9H-X49l63wOFdNxkWci3p1wVSIAXbbT6WcfYxG0fgZ7wUSgzIGqHCDD2wrvC7jl2Ec4DGBCn_C4vE5pb7XBVJsxUzrDo-2sqgTwdMd97LItn7k58bwbrlnMLhNJBdmA==",
+                "description": "The investment covers road surfacing, potholes, street lighting, road safety, flood management, drainage, traffic signals, car parking, cycling facilities, and public transport. It includes £500,000 from the DfT Green Light Fund for traffic signal improvements focusing on the A62 Corridor at Cooper Bridge.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Kirklees Council formally approved a £37.2 million investment to enhance the borough's highways over the next two years.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHK7vWopl4YSdCUNNkUaaGx_lIXZpgeet4Y7DsN7cHFdEiwRB2KWRRpmkrSCvDxVYwmJqImRfhivl6svpoANjbbFVsYuJhusFUmUa48manhO4F0j-PjB508SYoVanKuTv3zJfNjRoo3wC4ESxwHoJnR69UjARBf8R1Jpxnk8boAFDZPEYECPr6Zmw==",
+                "description": "The funding will support improvements in road surfacing, pothole repairs, street lighting, road safety, flood management, drainage, traffic signals, car parking, and cycling facilities. It also noted additional funding for traffic signal improvements on the A62 Corridor at Cooper Bridge.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Kirklees Council officially announced its comprehensive £37.2 million investment plan over two years (starting May 2025) for highways and transport infrastructure.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvYEfOBLurx9U41Su2hcB3FrZqj1EAdKODUzKjvgyZ5_hcQmQ00ZzmyLLxXtVlYRSasLcKGrJqJVJ17DWULUnR4RbWUrIqLbpEHkwt6BCB0IyXq6dRmbwKy0pSW3-2UPApWsFK4fuSCma_MEolGDXPmw2MA1BPABsj1bFKTCHA2ODBQgIuD9oXSMN0CkRLV2GiRmM4lIWUUX8FJiIsK1hunTC3RkZQ2GbkkFkxPxU=",
+                "description": "This includes broad improvements like road surfacing, pothole repairs, traffic signals, flood management, cycling facilities, street lighting, car parking, road safety, drainage systems, and public transport access, as well as specific government grants for schemes such as the A62 Corridor at Cooper Bridge.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Kirklees Council secured over £60 million from the Transforming Cities Fund to deliver an ambitious program of transport improvements, making it easier to walk, cycle, and use public transport.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7S8CKZqN7EbEed6SW2ObgMwGORMDhlbMpsdCw8OBC16FR2rWSppFUzCKKLrLTxWdbMTmGIJEbKMPhR6jbl1FtYbtq1XbgCTQpqJTWKMyK2rS3lzjKfpszdRnzx5S_tio3EhV8u8wwzNE2xvVibzZT7-zpdKNZnT4cZtXE070r5ryJ1FFpmqDk34ej8Jl7Lm_dULNuPYD4tfPhAkuEWwt9vzvCwcpiQQ==",
+                "description": "Work is expected to start on the A638 Dewsbury to Cleckheaton Sustainable Travel Corridor from July 14, and the first phase of the Huddersfield Rail Station Connections scheme later in July.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            }
+        ]
+    },
+    {
+        "id": "infrastructure-yorkshire-green-energy-enablement-project",
+        "title": "Yorkshire GREEN Energy Enablement Project",
+        "description": "A £400 million National Grid project to upgrade and reinforce the high-voltage power network between York (North Yorkshire) and areas east of Leeds (West Yorkshire). This project is part of The Great Grid Upgrade and aims to allow more renewable and low-carbon energy onto the electricity grid.",
+        "type": "LOCAL_GOV",
+        "regionId": null,
+        "localAuthorityId": null,
+        "createdById": 1,
+        "expectedCompletion": null,
+        "status": "GREEN",
+        "statusRationale": null,
+        "latitude": null,
+        "longitude": null,
+        "evidence": [
+            {
+                "type": "TEXT",
+                "title": "National Grid announced plans for a new electricity substation near York (south of Shipton-by-Beningbrough) and another near the existing Monk Fryston substation.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEA-YF4fG7-Kjnv8qu_b_orT6nBFqg6LiZlF07UkAfPQDOYaDdldfjq1tztNxEL2vFd1yltCyUi7Cu939fYgMGk2hYQ7rxD7rQeKZtgVoTW5xo9pDqfANSWXzq1CqkAsNe6cXMtoJBDdJRUN_pnV7BhddKi4-GcR5ig_UTVMlOlpH2pGX_oWi4r0INc6qYlC7TOEp7xf5Dx6duEcoGlng==",
+                "description": "This announcement coincided with the launch of a statutory public consultation, inviting community feedback until December 9, 2021, before the formal planning application submission for the Yorkshire Green Energy Enablement Project.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "National Grid published its Preliminary Environmental Information Report (PEIR) for the Yorkshire Green Energy Enablement Project, formerly known as the Central Yorkshire Reinforcement (CYR) project.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBl_4xBymMj7wLWMF3szwHsuoFEjJb-L6oSNcrw4hWK8S1El1L-4ohxLJy45HHeyFpqoK2BhGqAP1_10EgnVVwSsEAo7XT-qzxwPOMweRkMhbyG87BY4mh6ZUZ2CRaoIle457I0ViG5KrGgEBI-Nj7",
+                "description": "This report details the Environmental Impact Assessment (EIA) undertaken to date, outlining preliminary conclusions on likely significant effects and proposed environmental measures. It served to support statutory consultation prior to the Development Consent Order (DCO) application.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The Planning Inspectorate completed its examination of the Development Consent Order application for the Yorkshire Green Energy Enablement Project on September 15, 2023.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGporsnDpkzb6-RCn8-PhoLehA5YQDq7-eMDqDEVoIAOnXK3Va3SYWjOCFukCtOtmD7S_55GFAV-f9G7BSekBR6uMokKZwaXASMYmhC0EwyAHpwaeinjrbwCJkYFxcy34cpXuRLGPZ2qKKyUuNRCK5TKakbZM6J5xLgt2t-YoAiOrmEH6pjRXHCBAXn921-Q3TlaUuLbOsKb_XksrGuuYiyh4W58SBkt4pyY8jEev9fNH_nttZbERZpoohS7COKB5bQ",
+                "description": "This report, issued by the Examining Authority, details their findings, conclusions, and recommendation to the Secretary of State for Energy Security and Net Zero regarding the project.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "National Grid formally submitted its application for a Development Consent Order (DCO) for the Yorkshire Green Energy Enablement Project to the Planning Inspectorate.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwrtzvQeTcHZ-F4uNKtR7HIEwHOVgtS3zFqvZ5xGmetvLUrNMJEeBvpmZyIkJ_3WwelwirHimFS8kUcN8keNNrtND70rnC5QsLO4FkhMsZfoOaQSi-F2ExkRh_t60SbRnKI7q0FwCCKbPukfBAB3oh5GHqU2urDIz-tg0ZFfWbPYn0eYoSY1-X1sYAJ-4Wv1kxvLHUxdmahoPRqyTuwchOOeLeE62VF1X9tOIEPS_WFcbVMMEIa5QKuowte60gMyGh0lt2dfA-k-CCMT2zy-c8",
+                "description": "This marked a crucial step in the planning process for the proposed upgrade and reinforcement of the high-voltage power network, which is classified as a Nationally Significant Infrastructure Project.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Morrison Energy Services' Electricity Transmission division announced its selection to deliver key components of the Yorkshire GREEN Energy Enablement Project for National Grid.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfJ-6t-QjDDsSzx2Gnak331QERt75M63hzv8FVRxqP9Vgn0lhDZIjeyiVPi6OYM3TGcwbJ3KEt93niPk8FA7t4N5Pgji-SiXjE5CatXZTuQ9NkIBtGfcyqmo4MbNd4VH-b1A4RnMVLui_RFSXiW0Kslp2oUVCvx7EKT6198d18f3d3maQA2k8Dga7qPv-SA0f1A-ff_8QEnoP2jukmV_D7QOVUL2g-PSI7sWs=",
+                "description": "Their scope of work includes the installation of new overhead lines and the refurbishment of existing ones, particularly in areas near York, as part of the broader effort to enhance renewable energy integration into the UK's electricity grid.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The Secretary of State for Energy Security and Net Zero, Claire Coutinho, granted a Development Consent Order (DCO) for the Yorkshire GREEN Energy Enablement project.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZKa_U1lo6MZnlC1rxGCkUuCd7t2Scq_vRyX8gwrW3thVFsxkBMYjn5nfoqm051movHmKzHgXfnWqYxh4gHgffr2lVgpGqGvh53YFfgVCDbR7TLwC5g39PLjGKM3Uk_0McrU0_JBij4Yyh8Qp5YCOCdP7KkA10GAQaQ_gBletJ1Y50mb2rAVXhXuUTfRHd74DHCdOqp5xMPjrUBus=",
+                "description": "This decision allows National Grid to commence construction on the £400 million project, which will upgrade and reinforce the high-voltage power network between York, North Yorkshire, and areas east of Leeds, West Yorkshire, to facilitate more renewable energy.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Ofgem published a consultation document outlining its 'minded-to' position on the funding allowance for National Grid Electricity Transmission's Yorkshire GREEN project.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsoLXK5iqxsY92pcT7vNn1LTCKusKrs8kY1zgiO5hHut3Ne446LBLzCXXz5TssWuRPBH1IHu6OIj28OVsH3VdUKiocMnevgSNPADWFNV4U-dzs2F5Gk_njlXyMsR7_DNGdneo5BYeyDtHKu6Sg2798L6bbWxlWVL6ED-Lv9kKEKnWfBd_rG9tf6SrQj1GmnkjvkwW2EcemrDXPWotku-2FLRkaECnHVUHKzlW0gIg=",
+                "description": "Under the Accelerated Strategic Transmission Investment (ASTI) framework, Ofgem proposed an overall funding allowance of £294,801,307 (2018/19 prices) for the project's delivery.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "National Grid initiated construction on the £400 million Yorkshire Green Energy Enablement project.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxdPmP7KW20gtik8MulIqxEALIm4NkVy6DbrJ94ksvMa1yUdJjmw-3dugPFlmFj_gR-SOp-uNTA2WrMlJ3wwJAOr3tTMwpqH2b-fJzk6N6JOZ06uscjTKOIFh1BfGkts3xEfvTcrHbjS8RTNSeDrVLJcn8y7rnmBO5ssTfoM8vLfHdRv9_c_phUIlxQce4jlk3Zg1Arb1CsQ==",
+                "description": "This commencement involves enabling works at key sites including Overton and Monk Fryston substations, as well as Tadcaster Tee, Shipton Tee, and Moor Monkton. Main construction activities are projected to start in early 2025, with the project aiming to be operational by 2027.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The Yorkshire GREEN Energy Enablement project is slated to become operational by 2027.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHF074AP7YvszcWztYmpwWA9jQD88FKnDVthFqowQHe8hlqNMlw7Zzydv8T1fpRdwRmEdTmdLA_bWqns-uNMxJHm2UpYBgT0V4x3KDjwv1ZqkKc9yIeV3mRAsJ_dDtHjIgF6hZaZ2147V4xcqhmAF_pJYhiyN_5luAlYsH-POxbAepy1NA=",
+                "description": "The final construction works and reinstatement efforts are anticipated to be completed by the end of 2028. This timeline is critical for the project's contribution to the UK's net-zero targets and ensuring future energy security.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Ofgem issued its final decision on the project assessment for National Grid Electricity Transmission's Yorkshire GREEN project, within the Accelerated Strategic Transmission Investment (ASTI) mechanism.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjb_hR_zKAL2k5PFAPXo30dB0QN50Rv0aZtmob0XN1BSP6pVjUyxlpwxoScqBCN8LJhr3uGbjdfxq2c1XggfWZhZwnpqWNGg2cEQqVem3O_AzcC3tyeuaO4AaKjLm8o6VrllS67oigI_c4ORoIzHfiHAFb7T618Tisw59uJ6WBHMPFJQZt6al-C2jW_QNt__gaKewjlHLWB-QPr9mQkRKKj8tFfCI=",
+                "description": "The decision confirmed the efficient capital costs that National Grid is allowed to recover for the project's delivery, following a consultation process.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            }
+        ]
+    },
+    {
+        "id": "infrastructure-leeds-public-transport-investment-programme-lptip--connecting-leeds",
+        "title": "Leeds Public Transport Investment Programme (LPTIP) / Connecting Leeds",
+        "description": "A multi-year programme that has delivered significant improvements to public transport and active travel across Leeds. It includes Park & Ride schemes, bus priority corridors, cycle infrastructure, junction improvements to reduce congestion, and public realm works. Specific projects include Stourton Park & Ride, A61 and A646 Corridor Improvements, The Headrow Gateway, and new rail stations at proposed sites like Leeds Bradford Airport, Thorpe Park, and White Rose.",
+        "type": "LOCAL_GOV",
+        "regionId": null,
+        "localAuthorityId": null,
+        "createdById": 1,
+        "expectedCompletion": null,
+        "status": "GREEN",
+        "statusRationale": null,
+        "latitude": null,
+        "longitude": null,
+        "evidence": [
+            {
+                "type": "TEXT",
+                "title": "In 2017, the West Yorkshire Combined Authority (WYCA) secured £173.5 million in government funding from the Department for Transport.",
+                "url": "https://www.transportxtra.com/publications/local-transport-today/news/53413/leeds-gets-to-work-on-270m-transport-programme",
+                "description": "This funding was allocated for a comprehensive programme of public transport improvements in Leeds, including new park-and-ride sites, bus priority measures, and new rail stations at proposed sites like Stourton, Thorpe Park, White Rose, and Leeds Bradford Airport. This funding was crucial following the collapse of the Leeds trolleybus project, with the aim to redirect the allocated funds to alternative transport enhancements.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The Headrow Gateway project, a significant public realm, public transport, and active travel scheme in Leeds city centre, was completed by October 2020.",
+                "url": "https://news.leeds.gov.uk/news/headrow-gateway-scheme-set-for-completion",
+                "description": "This £20.7 million initiative aimed to transform The Headrow and surrounding streets by introducing protected cycle lanes, improved pedestrian crossings, new public spaces, and re-routing buses, contributing to a more pedestrian-friendly and well-connected city centre.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "In July 2018, as part of the Connecting Leeds Vision, detailed plans and public consultations were launched for proposed new railway stations at Thorpe Park and White Rose.",
+                "url": "https://en.wikipedia.org/wiki/White_Rose_railway_station",
+                "description": "These plans were later expanded to include a Leeds Bradford Airport Parkway station, inviting public feedback on these significant rail infrastructure developments aimed at improving connectivity across the city.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "An animation showcasing the design of the new £38.5 million Stourton Park & Ride facility was released in December 2020.",
+                "url": "https://www.leedsstar.co.uk/news/new-animation-shows-how-leeds-new-385million-park-and-ride-will-look-once-complete-136190",
+                "description": "This project, part of the Connecting Leeds programme, aims to improve the bus network, reduce carbon emissions, and provide 1,200 parking spaces. It was planned to be the UK's first fully solar-powered park and ride, with electric bus fleets and EV charging points, and was anticipated to open in autumn 2021.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The 'Connecting Leeds Transport Strategy' was published in December 2020, outlining Leeds City Council's vision for a city where car ownership is not essential, providing affordable, accessible, and zero-carbon travel choices.",
+                "url": "https://www.leeds.gov.uk/parking-roads-and-travel/improvement-schemes-and-plans/what-is-connecting-leeds",
+                "description": "This strategy integrates with the West Yorkshire Combined Authority's Transport Strategy 2040 and the UK government's decarbonisation plans, focusing on improved public transport, active travel, and reduced reliance on private cars.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The Stourton Park & Ride, the UK's first fully solar-powered park and ride facility, officially opened its doors to the public on September 6, 2021.",
+                "url": "https://southleedslife.com/stourton-park-ride-opens-on-monday/",
+                "description": "This 1,200-space site is served by a fleet of zero-emission electric buses and features solar panels and an innovative battery storage system to power the entire site, contributing significantly to Leeds' public transport and decarbonisation goals.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "In May 2021, the Department for Transport's New Stations Fund approved significant investment for a new train station at Thorpe Park Leeds, including associated park and ride facilities.",
+                "url": "https://www.leeds.gov.uk/planning/thorp-park",
+                "description": "This approval marked a key step towards providing direct rail access to Leeds city centre from the Thorpe Park development.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "In January 2021, a public consultation was launched for the proposed £42 million Leeds Bradford Airport Parkway Station.",
+                "url": "https://www.ilkleygazette.co.uk/news/18999464.consultation-begins-new-42m-parkway-railway-station-leeds-bradford-airport/",
+                "description": "This station, planned for the Leeds/Harrogate line, aims to improve public transport access to Leeds Bradford Airport and the North West Leeds Employment Hub, offering 350 parking spaces and a shuttle bus service to the airport terminal.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Construction work on the new £26.5 million White Rose Railway Station in south Leeds was temporarily halted on March 20, 2024, due to unforeseen increases in project costs.",
+                "url": "https://www.yorkshireeveningpost.co.uk/news/transport/white-rose-station-current-state-of-play-one-year-on-from-construction-pause-at-ps265m-leeds-train-station-4530009",
+                "description": "The station, planned to serve the White Rose Centre and Millshaw Business Park, was originally scheduled to open in early 2024. As of May 2025, discussions are ongoing among project partners (West Yorkshire Combined Authority, Munroe K, Leeds City Council, Network Rail, DfT) to secure additional funding and determine a new timeline, with a potential opening by January 2027.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "In October 2022, the 'Connecting Leeds' programme announced the completion of its unprecedented £270 million Leeds Public Transport Investment Programme.",
+                "url": "https://news.leeds.gov.uk/news/connecting-leeds-270-million-investment-in-the-transport-network-has-completed",
+                "description": "This multi-year initiative, launched in 2018, delivered significant improvements across the city's transport network, including enhancements to road, rail, bus services, park and ride facilities, and cycling and walking infrastructure, aiming to reduce congestion and improve air quality.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            }
+        ]
+    },
+    {
+        "id": "infrastructure-west-yorkshire-mass-transit-system",
+        "title": "West Yorkshire Mass Transit System",
+        "description": "A proposed £2.5 billion public transportation overhaul, the largest project of its kind in Europe without an existing urban network, aiming to create a modern, integrated mass transit system connecting Leeds, Bradford, Wakefield, Huddersfield, and Halifax. It is expected to deploy a combination of modern light rail (tram and tram-train) solutions, high-capacity zero-emission buses, and smart mobility corridors.",
+        "type": "LOCAL_GOV",
+        "regionId": null,
+        "localAuthorityId": null,
+        "createdById": 1,
+        "expectedCompletion": null,
+        "status": "GREEN",
+        "statusRationale": null,
+        "latitude": null,
+        "longitude": null,
+        "evidence": [
+            {
+                "type": "TEXT",
+                "title": "In 2021, the West Yorkshire Combined Authority (WYCA) conducted a public engagement on its Connectivity Plan, which included the initial Mass Transit Vision 2040.",
+                "url": "https://www.westyorks-ca.gov.uk/mass-transit/",
+                "description": "This consultation sought views on proposed transport corridors, with strong public support reported.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The UK government announced on October 4, 2023, that West Yorkshire would receive £2.5 billion for a Mass Transit System, with a £500 million downpayment, as part of £36 billion in savings redirected from the cancelled HS2 leg.",
+                "url": "https://www.gov.uk/government/news/yorkshire-and-the-humber-to-benefit-from-198-billion-transport-investment",
+                "description": "This funding aims to provide better connections to Bradford and Wakefield, with Leeds no longer being the largest European city without a mass transit system.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "A statutory consultation on the revised West Yorkshire Mass Transit 2040 Vision took place from October 2022 to January 2023.",
+                "url": "https://www.westyorks-ca.gov.uk/mass-transit/vision-2040/",
+                "description": "This consultation allowed statutory consultees, key stakeholders, and the public to provide feedback before the Vision was formally approved and implemented. The feedback received helped shape the updated Vision.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The public consultation on the proposed Phase One route options for the West Yorkshire Mass Transit system officially closed on September 30, 2024.",
+                "url": "https://leedscivictrust.org.uk/wyca-mass-transit-consultation-our-response/",
+                "description": "Over 4,800 individuals and organisations provided their feedback on the suggested routes for tram lines connecting Leeds and Bradford, and from south Leeds to the city centre.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On July 15, 2024, the West Yorkshire Combined Authority (WYCA) revealed initial route options for Phase One of the Mass Transit system, specifically focusing on connections between Bradford and Leeds, and from south Leeds to the city centre.",
+                "url": "https://www.railway-news.com/west-yorkshire-proposes-route-options-for-mass-transit-network/",
+                "description": "A public consultation on these options was launched, set to run until September 30, 2024.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On June 4, 2025, Chancellor Rachel Reeves announced the allocation of £2.1 billion in local transport funding to West Yorkshire.",
+                "url": "https://www.westyorks-ca.gov.uk/news-events/news/major-funding-boost-secured-for-west-yorkshire-trams/",
+                "description": "This significant investment, part of a larger £2.5 billion Mass Transit program, will enable the West Yorkshire Combined Authority to begin construction on the tram project by 2028, with initial operations expected by the mid-2030s. The funding also supports other vital transport projects like new bus stations in Bradford and Wakefield.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "A consultation report released on February 20, 2025, by the West Yorkshire Combined Authority (WYCA) indicated significant public support for the initial phase of the Mass Transit system.",
+                "url": "https://www.railway-news.com/support-revealed-for-west-yorkshire-mass-transit-tram-network/",
+                "description": "Over two-thirds of respondents favored the tram system, particularly connections between Bradford and Leeds, and over 75% supported a line connecting St James's Hospital to the White Rose Shopping Centre in Leeds.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On August 4, 2025, the Centre for Transport in Cities (CENTRIC) initiative was launched.",
+                "url": "https://www.railwaygazette.com/light-rail/yorkshire-universities-launch-centric-partnership-to-provide-expertise-for-tram-scheme/66736.article",
+                "description": "This strategic alliance brings together researchers from the University of Huddersfield and the University of Leeds with the West Yorkshire Combined Authority. CENTRIC will provide academic expertise in planning, economics, and engineering for the West Yorkshire Mass Transit light rail program, aiming to inform the development of a state-of-the-art transport system.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            }
+        ]
+    },
+    {
+        "id": "infrastructure-transpennine-route-upgrade-tru",
+        "title": "Transpennine Route Upgrade (TRU)",
+        "description": "A multi-billion-pound, transformative, long-term railway infrastructure programme aiming to improve connectivity, punctuality, and journey times between York and Manchester, via Leeds and Huddersfield. It involves doubling tracks in places, electrification, resignalling, and station improvements.",
+        "type": "LOCAL_GOV",
+        "regionId": null,
+        "localAuthorityId": null,
+        "createdById": 1,
+        "expectedCompletion": null,
+        "status": "GREEN",
+        "statusRationale": null,
+        "latitude": null,
+        "longitude": null,
+        "evidence": [
+            {
+                "type": "TEXT",
+                "title": "On July 15, 2024, the Transpennine Route Upgrade (TRU) launched a new £175,000 community fund.",
+                "url": "https://www.transpenninerouteupgrade.co.uk/news/tru-launches-new-175-000-community-fund",
+                "description": "This fund offers small grants (£1,000 to £5,000) and medium grants (£5,000 to £20,000) to local community groups, schools, and charities within five miles of the core TRU route, aiming to improve local spaces and services.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On July 19, 2022, the Secretary of State for Transport announced in the House of Commons that an additional £959 million of funding had been made available for the Transpennine Route Upgrade project.",
+                "url": "https://en.wikipedia.org/wiki/Transpennine_Route_Upgrade",
+                "description": "On July 19, 2022, the Secretary of State for Transport announced in the House of Commons that an additional £959 million of funding had been made available for the Transpennine Route Upgrade project.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On June 4, 2021, it was confirmed that an additional £317 million was being spent on the Transpennine Route Upgrade, supplementing the previously announced funding.",
+                "url": "https://en.wikipedia.org/wiki/Transpennine_Route_Upgrade",
+                "description": "This funding also confirmed the electrification of the line from Huddersfield to Leeds.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On March 31, 2021, Network Rail submitted a Transport and Works Act Order (TWAO) application to the Secretary of State for Transport for the Huddersfield to Westtown (Dewsbury) scheme.",
+                "url": "https://www.networkrail.co.uk/running-the-railway/our-major-programmes/transpennine-route-upgrade/",
+                "description": "This section proposes doubling tracks from two to four, electrification between Huddersfield and Dewsbury, and significant improvements to stations including Huddersfield, Deighton, Mirfield, and Ravensthorpe.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "In July 2020, the government announced an additional £589 million in funding to kickstart the Transpennine Route Upgrade (TRU) programme.",
+                "url": "https://www.networkrail.co.uk/running-the-railway/our-major-programmes/transpennine-route-upgrade/",
+                "description": "This investment was intended to enable contract awards for the next phase of design activity and engineering work, including early preparations and activities like vegetation management and surveying.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Starting August 2, 2025, three consecutive weekends of engineering work will take place between Stalybridge, Huddersfield, and Dewsbury.",
+                "url": "https://www.networkrail.co.uk/news/major-rail-upgrades-between-manchester-huddersfield-and-leeds-to-begin-this-weekend/",
+                "description": "These works include renewing almost 2km of track, installing overhead line equipment foundations, and major structural enhancements to bridges across West Yorkshire, such as a new bridge deck at Station Road bridge in Mirfield. This also paves the way for temporary closure of Deighton station (August 2025-2027) and a 30-day closure of Huddersfield station (starting August 30, 2025).",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "By June 20, 2025, Transpennine Route Upgrade engineers completed a significant series of upgrade work between Huddersfield and Leeds.",
+                "url": "https://www.railadvent.co.uk/2025/06/transpennine-route-upgrade-engineers-complete-another-series-of-work.html",
+                "description": "This included renewing over 3km of track, carrying out essential drainage and tunnel works, and installing foundations for 55 overhead line equipment masts to enable future electrification.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On March 28, 2025, the Prime Minister announced a new tranche of £415 million in funding for the Transpennine Route Upgrade.",
+                "url": "https://www.networkrail.co.uk/news/new-funding-boost-for-transpennine-route-upgrade/",
+                "description": "This additional investment brings the total approved funding for the programme to £7.3 billion, aimed at delivering faster, more frequent, and greener rail services between Manchester, Huddersfield, Leeds, and York.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On August 5, 2025, the Transpennine Route Upgrade celebrated a major milestone with the official running of the first electric passenger train between York (Colton Junction) and Church Fenton.",
+                "url": "https://www.networkrail.co.uk/news/watt-a-milestone-transpennine-route-upgrade-celebrates-as-25-of-the-route-is-electrified/",
+                "description": "This achievement means 25% of the 70-mile Transpennine main line is now electrified, laying the foundations for faster, greener, and more reliable railway services between Manchester, Huddersfield, Leeds, and York. This phase was completed on budget and ahead of schedule in several areas.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "On August 3, 2025, Network Rail unveiled a newly resurfaced canal towpath and upgraded footpath around the memorial garden in Mirfield, West Yorkshire.",
+                "url": "https://www.railadvent.co.uk/2025/08/better-route-to-west-yorkshire-rail-station-now-open.html",
+                "description": "This 'First and Last Mile' project, a collaboration between TRU, Kirklees Council, and the Canal & River Trust, offers a greener, safer, and more accessible route to Mirfield station. The station itself is also undergoing upgrades including a fully accessible footbridge with lifts and longer platforms.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            }
+        ]
+    },
+    {
+        "id": "infrastructure-project-gigabit-quickline-rollout",
+        "title": "Project Gigabit (Quickline Rollout)",
+        "description": "A UK Government-funded programme with Quickline Communications delivering gigabit-capable full fibre broadband to over 360,000 premises across rural communities in Yorkshire and Lincolnshire. The programme has a combined subsidy value of over £300 million for hard-to-reach areas.",
+        "type": "LOCAL_GOV",
+        "regionId": null,
+        "localAuthorityId": null,
+        "createdById": 1,
+        "expectedCompletion": null,
+        "status": "GREEN",
+        "statusRationale": null,
+        "latitude": null,
+        "longitude": null,
+        "evidence": [
+            {
+                "type": "TEXT",
+                "title": "Quickline Communications was awarded a £60 million Project Gigabit contract to deliver gigabit-capable broadband to approximately 28,000 premises in West Yorkshire and parts of North and East Yorkshire.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH48Fwa0q8Ff3PCwVxjVUteloVoVeIwWLM4vM9tHvmUn1XJWL-9EBvpT5bwUQeoj3xLMAEtEgsyfLjY3Ww7Bn3Tu2ygGSTx_oN9agTvAWJRYeZBukITJdrPHNvPk1PuMln1BIkBzD3hZIyeDu5urX7FBgvqsQthJkDGk52QG8qT6Wf9-y4b_is9awyv3xS1xucC5o7UMmJSlGjEiPTdZA2Wcg0Dmw==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHh3StskBD_rNTEwsPtJSTIN7B4tCaFsl7c2GbmF97M7Hp2-Yg3V1BKRhr6f2_2vcXaX6BuV8VnsJOMlvhy8omf50DiWEJqGV6g0EK9KJYnSqy1mspjNG2JpepNnU1n1EpzjHbipc_7SMW_bqGTB8j_afUE7qwT8pfw04A5ozCxTkAKPDx5rPMbRNsydQBTYaMORE%20than%2028,000%20homes%20in%20rural%20North%20and%20West%20Yorkshire%20are%20to%20receive%20full%20fibre%20broadband%20under%20the%20government's%20%C2%A35bn%20Project%20Gigabit%20programme.",
+                "description": "The contract was secured after a competitive public procurement process, with the network build anticipated to begin in 2024. This initiative aims to connect hard-to-reach areas that would otherwise miss out on high-speed broadband.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Quickline Communications secured a second Project Gigabit contract worth £44 million to bring full fibre broadband to up to 32,100 premises in rural South Yorkshire, East Yorkshire, North Lincolnshire, and Nottinghamshire.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFaJbGL-LXa3i5dRA08pFS18DPepi8ZYb4LKlSxyqPq6tojDvbRe4Bu06vHH5lo8HGIgwmFNjT_CEPGZqtdCviYjVxZBiGZC5BapjJRUPpfce8vSdcpjd3TUJ1W9jpWpCgSVOAjxxUurnnM3VNgRwv2ua4axWOrpVgs2LLN2gwgROQr1FezDcHvA3QdzEIuqYfNQ4olPj13vSV_ax-dr-eeG0Q9T1meo9onvNzsNzqNqER7A0BjBw98gTdLurlqwThwSThIHFoIA",
+                "description": "This new deal expands Quickline's Project Gigabit footprint, making them one of the few providers with multiple contracts, totaling over 60,000 premises and more than £104 million in public funding. The rollout targets communities around Barnsley, Doncaster, Goole, Maltby, Penistone, Rotherham, and Sheffield.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Quickline secured two new Project Gigabit contracts with a combined value of £190 million to connect approximately 108,000 hard-to-reach premises across parts of rural Yorkshire and Lincolnshire.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBedHmZ5eLMKQnbohzFlGzEe-lBflUhVBrEzMD5b7RpurTPElGdgv_l8Atsfz-wKuQyMPDWlEggiE3scWsmznFi2LlX0VCDXTU8y9UW6O3Lw3NXgr_ie6lfBfqDYiRigUPQ7a8F6_bs3axux8WkDLNcf_b6oQL99uO4d6eUx7tY-QBinMmh05k4oeZz5zgnM40EFGIlKkSSa-6fPUBCBRJcrSxBsW1e3sXoZjthSBeViiX8O2D3g6u-HCYww2lvn4I0PmBLHor1pw8IcDUlKd0_CSiMxqQxAFk4donphoM-N7hgCHVcKd70RKQwN4yUne8oyb4oim2",
+                "description": "Specifically, this covers around 72,000 premises in the East Riding of Yorkshire and Lincolnshire, and about 36,000 premises in North Yorkshire. This brings Quickline's total public investment under Project Gigabit to nearly £300 million, targeting almost 170,000 premises, with an additional 107,000 premises through associated commercial build.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Quickline extended its Project Gigabit broadband rollout, securing an additional £11 million in public funding.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6h3JFSQ-2yXVA4X3DsgVMAW18RkGvcdcSqhAUhiAXVtWXcjTNPDXf2qvH8qewkDpRdlQ8oTjzDU1ya6kSqfRJ1v6rEqu83Qpskzwem9n7NIaJRqj577CGf6DdJp25vhb1WqBUiPqkO-Wkl4Ha_HHsQb1LjJXZ1rz3ouqLJQydVNyCH-wJ7bdvae-KgXAciFZs-g4xozbTkGXEifAHAIN_1V8U2Yd6LBlIrVEb2g==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJtFA9M-eYpMXDkGlcY8cCLyFHfS-Y-FaxP2Dtx3vL9MqDIBRR7_--D1NFAmEh8DyUqlS8ByIzvDJuyR4AeONNiKta8_J7j1plAu_xKYNG2JpepNnU1n1EpzjHbipc_7SMW_bqGTB8j_afUE7qwT8pfw04A5ozCxTkAKPDx5rPMbRNsydQBTYa, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNI4Ql3EgAfHPK82U30dSdkqNBgQvOwyRgdpRT2ebWNCQeT7-ZZzW6c3vX4YsxE_HpI8dUkZssPjAqlnssT3MO9YDmmgOOWwoOL-Lm7N48HnSgqKCnYZMSrebk8A2EgvxB8u2XEPHHeSp050htE8TfdoHUFbVFZSP3wzGtMdJ4WabEUxIb4gY5lzfp5OzhWr4nE_Tda6hLEXw==Quickline's%20Project%20Gigabit%20Broadband%20Rollout%20Extended%20to%20Reach%20More%20Communities.",
+                "description": "This expansion will bring full fibre connectivity to an extra 6,000 hard-to-reach homes and businesses across Yorkshire and Lincolnshire. The newly added premises are spread across Quickline's existing Project Gigabit network, including West Yorkshire and the York area (Lot 8), North Yorkshire (Lot 31), and East Riding of Yorkshire and Lincolnshire (Lot 23). This adjustment ensures public funding targets areas with the greatest need for improved connectivity.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Quickline announced that it had surpassed its initial delivery targets for Project Gigabit contracts in West Yorkshire and the York area (Lot 8) and South Yorkshire (Lot 20).",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjWU-HGTDNseljqZoVEbTSQ2bsA8zYFTc-ZEdp1Zp-ssTcfSKhD8k878pIA1KOxhl5HnytJDSjKGFAGn89f7sr6njLy5frCEQMyzCKiy5ypYhia3LXbvPNkXA9yJ-hFYCElGafO0nxdXhMKr2-FCcfPOHDgVebXwHjAMw4EveIvrEx_V5aH27mYYia80NOm039Ma2O-BeOtIk0IQr7QboH-Mj9DXnET3baScNs-7ZTqHrmhZw022-PDCJGRvXnKRykcKQ==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEUL0K-baPS1fRfkSqCf4WuRdgKNpAml26cElcnJucrLjOSCkuW_Amx1iW2R630vsOxMBVPqV4vdY-wtQ9nOuX0u-TiKpYNEm1QVU4rIhWTiUeOe2MGqUxjaylmjUin47CWbgOQiyJjAP0lyDd4bxJH-aVbZaFLi497U4_u6I1udz3u6zHbm2i73XLB2wqvsaDdC9k7BmJbhA_V9feff4r_EK-rh199OGN02DHmAKCMuIB_B6MqJZg_dkVlnPKckITHVKr3Hwyg==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJPbuvlBD_uGYTf3QEkq_wzzsiF32NsCPq_hBCs5wZgCF256ob7mRRxUeLvSbxiNoi4QxjdIl_m5csHkiU7x2eZ-rTwwrWppqInZuNMUUrWmkUA3wZBd48mrVOjL2Nw0bwTsuShJmDUUW3Gvat3HybAstAH74tIlyCP-xIyWrXviHJ6QlSsUBjfyllOJYDEpKALnv8LSDDURN2OFRJfs1aIbtkm8ZPGKD4tAht0PBMhs8oRural%20internet%20provider%20Quickline%20has%20today%20announced%20a%20major%20milestone%20in%20its%20broadband%20rollout%20across%20South%20and%20West%20Yorkshire,%20with%20over%2010,000%20rural%20homes%20and%20businesses%20now%20connected.",
+                "description": "By the end of March 2025, 6,426 funded premises were connected in West Yorkshire and the York area (exceeding a target of 6,273), and the target of 3,621 premises in South Yorkshire was met ahead of its June deadline. In total, over 10,000 government-funded properties in these regions now have access to gigabit-capable broadband.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Quickline provided an update on its expanding broadband projects in Yorkshire under Project Gigabit, highlighting efforts to enhance connectivity in rural and underserved areas.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQAooBfyRtBszMWzfavjZGqWAfmVamO0K8PgK6cwu6la27_SIdTr1B-abIQpj_oNAXCMcKqsBqVAU3wRBR63-aJXwFxtx-o0gym9vC-FkuTe1tFPHf-cNpVotpeEUI9dRCkcbc9_Lymlasx4IHJq4gxgm60wg6qvrpO6ejzzdUXiibx5IIMcYzZLTABZvasN1Hz3pJoU0YQ21We-Gq6YbKMVvlWK3xgVlDjC80vw==",
+                "description": "The company utilizes a blend of fiber and wireless solutions. Key areas of focus include Scarborough, York, Driffield, and Bridlington, with specific initiatives like fiber-optic extensions and collaborations with local authorities.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Quickline unveiled its comprehensive three-year rural broadband rollout plan, aiming to bring gigabit-capable full fibre connectivity to a further 360,000 premises across thousands of rural communities in Yorkshire and Lincolnshire.",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCNtDUV0q4Q7k1WSeRXbr8uQofOmPpecXzRNMuzAsocQbpskNzHFDHMX5cQdsYtKZKIYKjnNSqgAk-nsWzNaD9gQxh0VW_O1gKCb-ITffLAXLmn5a-53JKs1lQv_FErhezvYZWW4qzUcSQdPSzdG_E_iVb88HF68MWHgZRbe8kDyHsCSj6C7ZBhLdTKbZO71AKALBIKcH5lO4dJgdEp6PyJzt0McgEqOhg2QlA9JzV437KxbAE6Rs-QMTKbY2U3aqL7uQBrkSDHPGco77M19OPYwp-K-zFJlFn, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKlEbeBE2XWN_WeYJKD0RByfYdNV5YvVV7O2o6ZR4pljqycFr5x246fQsALb-GTnxidugCGlAkxXtcHRNpfybU6NOtedPXpqt76kUl5hV3mG6v17ysk2oz6DEcX3QZQ4MDKQYgW1VTCZQl_ykyudOwQPwU7QTqqEIoSKMI56tEZmfHKrJmpCXhfI_ScE_5hU7_wyB-wNNAdoE1wcQmU6Ogc7pff_uGk5OCkWKcoINocB2tv81fSsUiFuPVBe-nQ7-EQNa1ptT3laXNbSMzfwcruIrEN5pDlI4=Rural%20broadband%20provider%20Quickline%20Communications%20has%20today%20unveiled%20the%20full%20list%20of%20communities%20set%20to%20benefit%20from%20its%20full%20fibre%20rollout%20over%20the%20next%20three%20years,%20bringing%20fast%20and%20reliable,%20gigabit-capable%20connectivity%20to%20a%20further%20360,000%20premises%20across%20thousands%20of%20rural%20communities.",
+                "description": "The ambitious programme is fully funded by a £250 million financing deal. It encompasses Quickline's delivery across all four Project Gigabit regions in which it operates: West Yorkshire and the York area, South Yorkshire, North Yorkshire, and the East Riding of Yorkshire and Lincolnshire, targeting over 170,000 hard-to-reach homes and businesses.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Quickline announced that it had more than doubled its first Project Gigabit delivery target in North Yorkshire (Lot 31).",
+                "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZOa07Ccz1ZjhBj_-jNZgHU8w0XuHM7BMbFiW_fnxOzy30iihD5QMPWO-qjhDhT5q2DBOxV5m72sfbslmjCTD_BJ66x-m1xWhMB7QN6xrLBTeqaj7t4t0_-wA-vR_DRzD3pf7dsNnoSdzqr962qfEBAzAlL05Yh41talSOepq5x17HfZV6dVURdJdWLyY0RIj0v0uCkZlwSU93F5TXXjFrGk__7mwwB8F6bR4mKCzpV9I==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF53_sUYMzkm-OTx6FTT002jI4z046AJjLilcFCQ0K8P0DlDy8_frfBtmpbOI-Gtdg_OO8KYxc47abMe97IbEvpB1tFBNRfQ9IIOnHUlZWhUewkLrliFBGJt8KxbwVvcxGLLCPP5_lMzWldgVUJJ2e3THRirf0_rTE2oXnkFhmHYKmuhfOpUPqLC8vp5mHodjf5LYJIjO89fXiurl5fApLgehQ==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHa4DHYCDA5a8xqwHCqUnGEhw8bMzgpuMLKREpWrg1jP7a_7e77KefpQ261Y3uRUwLkX32ealtB33njJ_Z3C_Zyjrf72ELZSJxw110YwEJyRVTJeFjg34CrHDaSYeRVYQWJHZYZa9ijQjjh9UzXncU03RljgszkDjc81omQVt6YL6CnuN-sC4fo6vZOW-CRqpE8Ckko1F9zgrnx1ULArmzWIrN1kzHX9Q6wW5tetIuX0tGxOLwnTbPrzpZwJQW_NsL6jaK-NAfSBw==, https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0IdeE39Lry6vzqXW8Utg3UhfTaQbpBiRTSY7vfdQuVzQpuDp2UkRcNjdegK29T1U4LyjD5NkubHUgv4nqnpeJVAtdX8HXp8I5utIselgjqoL-SPShhks-SHYiAsu6GF-TD7V1AdheDB8wzp6tlbEBk6eDLjbnkkF_JLApSVdV3EfCwz_socvPoKgDFW9gmJL67H76Jbf1z5mXtI6-fOg=Quickline%20Communications,%20UK%20rural%20broadband%20provider,%20said%20that%20over%202,000%20rural%20homes%20and%20businesses%20across%20North%20Yorkshire%20now%20have%20access%20to%20gigabit-enabled%20full-fibre%20broadband%20through%20a%20Project%20Gigabit%20contract%20awarded%20to%20the%20company%20in%20summer%202024.%20The%20network%20build%20for%20the%20contract%20started%20in%20December%202024,%20with%20Quickline%20already%20exceeding%20the%20first%20delivery%20target.",
+                "description": "By Yorkshire Day (August 1st), over 2,000 rural homes and businesses in North Yorkshire had gained access to gigabit-capable full-fibre broadband, surpassing the target of 866 premises due by the end of June 2025. The network build for this contract started in December 2024, with communities like Hutton Rudby, Muston, Reighton, Minskip, and Staveley benefiting.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            }
+        ]
+    },
+    {
+        "id": "infrastructure-yorkshire-energy-park",
+        "title": "Yorkshire Energy Park",
+        "description": "A proposed £200 million next-generation energy and technology business park located near Saltend, East Riding of Yorkshire. It is planned to bring together low carbon energy generation and storage, a 600-rack data centre, an energy centre, and an on-site educational campus. It is expected to create over 4,000 jobs.",
+        "type": "LOCAL_GOV",
+        "regionId": null,
+        "localAuthorityId": null,
+        "createdById": 1,
+        "expectedCompletion": null,
+        "status": "GREEN",
+        "statusRationale": null,
+        "latitude": null,
+        "longitude": null,
+        "evidence": [
+            {
+                "type": "TEXT",
+                "title": "East Riding of Yorkshire Council's Planning Committee approved the outline planning application for the £200 million Yorkshire Energy Park.",
+                "url": "https://www.hulldailymail.co.uk/news/hull-east-yorkshire-news/yorkshire-energy-park-approved-hedon-3563968",
+                "description": "The project, located on the former Hedon Aerodrome site, is expected to create up to 4,480 jobs and attract significant investment, including an energy centre, data centre, and educational facilities, alongside protected green spaces.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "This evidence details the submission of a formal Request for an Environmental Impact Assessment Scoping Opinion to East Riding of Yorkshire Council.",
+                "url": "https://yorkshireenergypark.co.uk/news-events/",
+                "description": "This report provides an in-depth account of ongoing survey work and potential environmental impacts, forming a crucial part of the pre-planning application process.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "The Yorkshire Energy Park awarded £20,000 in the first round of its Community Fund.",
+                "url": "https://www.sewell-group.co.uk/news/yorkshire-energy-park-awards-20000-in-grants-to-the-community/",
+                "description": "This fund supports local community groups and charities operating in the South West Holderness Ward, providing grants of £500 to £5,000 for projects promoting greener living, inspiring learning, and improving the local community. More applications are expected from April 2024.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Hull City Council's cabinet approved revised plans for the Yorkshire Energy Park, located on land owned by the council at the former Hedon Aerodrome.",
+                "url": "https://www.hullccnews.co.uk/thousands-of-jobs-to-be-created-at-multi-million-pound-green-energy-park/",
+                "description": "This decision allows for the implementation of the £200 million scheme, which is expected to create approximately 4,500 jobs and contribute to the Humber's status as a renewable energy leader.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "East Riding of Yorkshire Council granted planning permission for a series of detailed applications (Reserved Matters Applications) for the Yorkshire Energy Park.",
+                "url": "https://www.thegazette.uk/post/green-light-for-series-of-yorkshire-energy-park-plans",
+                "description": "This includes the construction of a 13.5MW energy centre, a 240-rack data centre, a new access road, and the establishment of an onsite Ecological Mitigation Zone, marking a significant step towards construction.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Following the planning committee's approval in November 2019, the Yorkshire Energy Park project received its formal decision notice for outline planning permission in late 2020.",
+                "url": "https://yorkshireenergypark.co.uk/",
+                "description": "This formalises the planning consent, allowing the project to proceed with more detailed plans.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "An international consortium, including a major shareholder in Yorkshire Energy Park, signed a Memorandum of Understanding to evaluate a modular nuclear fission reactor and a floating barge near Saltend Chemicals Park.",
+                "url": "https://thehullstory.co.uk/2025/07/10/nuclear-reactor-part-of-plans-for-major-clean-energy-project-at-saltend/",
+                "description": "Yorkshire Energy Park issued a clarification stating that this agreement is for a site near Saltend, not directly at the Yorkshire Energy Park site itself.",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            },
+            {
+                "type": "TEXT",
+                "title": "Vital Energi, a decarbonisation and energy distribution company, has joined the joint venture behind the Yorkshire Energy Park as a new investor, taking the lead on the development's energy strategy.",
+                "url": "https://yorkshireenergypark.co.uk/yorkshire-energy-park-welcomes-new-investors-as-work-to-bring-scheme-to-fruition-begins/",
+                "description": "Andrew Reynolds has also been appointed as Project Director. Works are anticipated to begin on site in the new year (2025).",
+                "latitude": null,
+                "longitude": null,
+                "datePublished": null
+            }
+        ]
+    },
+    {
+        "id": "infrastructure-kirklees-highways-capital-plan-2024-26",
+        "title": "Kirklees Highways Capital Plan 2024-26",
+        "description": "A £41 million investment plan spanning two years, focusing on essential highway works across Kirklees. This includes road surfacing, pothole repairs, street lighting upgrades (with 99% converted to LEDs as of March 2023), improvements to structures, road safety initiatives, flood management, drainage, traffic signals, car parking facilities, and cycling infrastructure.",
+        "type": "LOCAL_GOV",
+        "regionId": null,
+        "localAuthorityId": null,
+        "createdById": 1,
+        "expectedCompletion": null,
+        "status": "GREEN",
+        "statusRationale": null,
+        "latitude": null,
+        "longitude": null,
+        "evidence": []
+    }
+]

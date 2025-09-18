@@ -1,0 +1,16 @@
+{
+  "name": "Daily Sweep",
+  "nodes": [
+    {
+      "parameters": {
+        "functionCode": "import { main } from './dist/cli.js';\nawait main({ locale: 'England', limit: 5 });"
+      },
+      "id": "codeNode1",
+      "name": "Collect Evidence",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {}
+}
