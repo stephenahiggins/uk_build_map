@@ -10,6 +10,77 @@ This repository contains the codebase for the LFG OKR tracking platform, which p
 
 Recent updates include a profile management screen, evidence submission, and a moderation workflow for approving or rejecting evidence items.
 
+## Getting Started
+
+### Prerequisites
+- [Docker](https://www.docker.com/)
+- [Node.js](https://nodejs.org/) (for local development outside Docker)
+
+### Environment Variables
+Copy `.env.example` to `.env` and fill in required values for both backend and frontend as needed.
+
+### Backend Development
+
+1. **Start Services**
+   ```sh
+   cd backend
+   make up
+   ```
+2. **Apply Prisma Migrations**
+   ```sh
+   make migrate
+   ```
+3. **Open a Shell in the Container**
+   ```sh
+   make shell
+   ```
+4. **View Logs**
+   ```sh
+   make logs
+   ```
+5. **Seed the Database**
+   ```sh
+   make seed
+   ```
+6. **Run Tests**
+   ```sh
+   make test
+   ```
+
+### Frontend Development
+
+1. Install dependencies and run the dev server:
+   ```sh
+   cd frontend
+   npm install
+   npm start
+   ```
+
+## Database
+- Uses MySQL, managed via Docker Compose
+- Prisma ORM for schema and migrations
+
+## Useful Makefile Commands (in backend/)
+| Command          | Description                            |
+|------------------|----------------------------------------|
+| make up          | Start backend & db containers          |
+| make down        | Stop and remove containers             |
+| make logs        | Tail backend service logs              |
+| make shell       | Shell into backend container           |
+| make migrate     | Run Prisma migrations                  |
+| make prisma-generate | Generate Prisma client             |
+| make seed        | Run Prisma seed script                 |
+| make test        | Run backend tests                      |
+ |make seed-projects SEED=seeds/national-starter.json | Seed files |
+## API Documentation
+- Swagger UI available at `/api-docs/:version` (when not in production)
+
+### Evidence Moderation Endpoints
+
+- `GET /api/v1/evidence` – list evidence items awaiting approval
+- `POST /api/v1/evidence/:id/approve` – mark an evidence item as approved
+- `POST /api/v1/evidence/:id/reject` – reject an evidence item
+
 ## Agents
 
 The agents subsystem provides background automation to augment the core platform.
@@ -88,77 +159,6 @@ If an agent needs an external API:
 - Update README and `.env.example`
 
 (Adjust naming if your actual file structure differs.)
-
-## Getting Started
-
-### Prerequisites
-- [Docker](https://www.docker.com/)
-- [Node.js](https://nodejs.org/) (for local development outside Docker)
-
-### Environment Variables
-Copy `.env.example` to `.env` and fill in required values for both backend and frontend as needed.
-
-### Backend Development
-
-1. **Start Services**
-   ```sh
-   cd backend
-   make up
-   ```
-2. **Apply Prisma Migrations**
-   ```sh
-   make migrate
-   ```
-3. **Open a Shell in the Container**
-   ```sh
-   make shell
-   ```
-4. **View Logs**
-   ```sh
-   make logs
-   ```
-5. **Seed the Database**
-   ```sh
-   make seed
-   ```
-6. **Run Tests**
-   ```sh
-   make test
-   ```
-
-### Frontend Development
-
-1. Install dependencies and run the dev server:
-   ```sh
-   cd frontend
-   npm install
-   npm start
-   ```
-
-## Database
-- Uses MySQL, managed via Docker Compose
-- Prisma ORM for schema and migrations
-
-## Useful Makefile Commands (in backend/)
-| Command          | Description                            |
-|------------------|----------------------------------------|
-| make up          | Start backend & db containers          |
-| make down        | Stop and remove containers             |
-| make logs        | Tail backend service logs              |
-| make shell       | Shell into backend container           |
-| make migrate     | Run Prisma migrations                  |
-| make prisma-generate | Generate Prisma client             |
-| make seed        | Run Prisma seed script                 |
-| make test        | Run backend tests                      |
- |make seed-projects SEED=seeds/national-starter.json | Seed files |
-## API Documentation
-- Swagger UI available at `/api-docs/:version` (when not in production)
-
-### Evidence Moderation Endpoints
-
-- `GET /api/v1/evidence` – list evidence items awaiting approval
-- `POST /api/v1/evidence/:id/approve` – mark an evidence item as approved
-- `POST /api/v1/evidence/:id/reject` – reject an evidence item
 
 ## Contributing
 Pull requests and issues are welcome! Please lint and test your code before submitting.

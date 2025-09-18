@@ -11,6 +11,7 @@ help:
 	@echo "  make build                                                        Build the TypeScript project"
 	@echo "  make clean                                                        Clean build artifacts"
 	@echo "  make help                                                         Show this help message"
+	\echo "  make migrate-to-backend MODE=<mode> BACKEND_ENV=<env> BACKEND_URL=<url>  Migrate to backend"
 
 # Build the TypeScript project
 .PHONY: build
@@ -43,3 +44,7 @@ test:
 clean:
 	rm -rf dist
 	rm -rf node_modules/.cache
+
+.PHONY: migrate-to-backend
+migrate-to-backend:
+	npm --prefix agents run migrate-backend -- $(if $(MODE),--mode $(MODE),) $(if $(BACKEND_ENV),--backend-env $(BACKEND_ENV),) $(if $(BACKEND_URL),--backend-url $(BACKEND_URL),)
