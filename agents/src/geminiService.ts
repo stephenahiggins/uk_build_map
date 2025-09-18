@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { ProjectFoundItem, ProjectStatus } from "./types/projectEvidence";
 import { envValues } from "./envValues";
-import { evaluateProjectWithGemini as evaluateProjectInsights } from "../../shared/projectEvaluation";
+import { evaluateProjectWithGemini as evaluateProjectInsights } from "../../backend/src/lib/projectEvaluation";
 
 // Initialize Gemini client
 const ai = new GoogleGenAI({

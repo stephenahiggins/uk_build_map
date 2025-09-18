@@ -17,6 +17,6 @@
   },
   "include": [
     "src/**/*",
-    "../shared/**/*.ts"
+    "../backend/src/lib/**/*.ts"
   ]
 }

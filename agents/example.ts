@@ -14,7 +14,7 @@ import {
   createProjectWithEvidence,
   findOrCreateSystemUser,
 } from "./src/geminiService";
-import { evaluateProjectWithGemini } from "../shared/projectEvaluation";
+import { evaluateProjectWithGemini } from "../backend/src/lib/projectEvaluation";
 import {
   initializeDatabase,
   createProject,

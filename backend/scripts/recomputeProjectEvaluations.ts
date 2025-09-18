@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { PrismaClient, ProjectStatus as PrismaProjectStatus } from "@prisma/client";
-import { evaluateProjectWithGemini } from "../../shared/projectEvaluation";
+import { evaluateProjectWithGemini } from "../src/lib/projectEvaluation";
 
 const prisma = new PrismaClient();
 

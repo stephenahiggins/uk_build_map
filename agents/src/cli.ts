@@ -7,7 +7,7 @@ import { validateEnvValues, envValues } from "./envValues";
 import { migrateAgentsDataToBackend } from "./migrateBackend";
 import { log } from "./logger";
 import { normalizeProjectTitle } from "./utils/projectNormalization";
-import { evaluateProjectWithGemini } from "../../shared/projectEvaluation";
+import { evaluateProjectWithGemini } from "../../backend/src/lib/projectEvaluation";
 
 type CliOptions = {
   locale?: string;
