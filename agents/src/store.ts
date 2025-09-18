@@ -33,6 +33,9 @@ export async function upsertProject(project: ProjectStatus) {
     project.latitude === undefined || project.latitude === null ? null : Number(project.latitude);
   const longitude =
     project.longitude === undefined || project.longitude === null ? null : Number(project.longitude);
+  const locationDescription = project.locationDescription?.trim() || null;
+  const locationSource = project.locationSource?.trim() || null;
+  const locationConfidence = project.locationConfidence ?? null;
 
   // Attempt to find existing project
   const existing = await prisma.project.findUnique({ where: { id: projectId } });
@@ -48,6 +51,9 @@ export async function upsertProject(project: ProjectStatus) {
         statusRationale: project.statusRationale,
         latitude,
         longitude,
+        locationDescription,
+        locationSource,
+        locationConfidence,
         statusUpdatedAt: new Date(),
       },
     });
@@ -63,6 +69,9 @@ export async function upsertProject(project: ProjectStatus) {
         statusRationale: project.statusRationale,
         latitude,
         longitude,
+        locationDescription,
+        locationSource,
+        locationConfidence,
       },
     });
   }

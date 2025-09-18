@@ -17,7 +17,10 @@ router.get('/rag-status-by-region', async (req: Request, res: Response) => {
     });
 
     // Aggregate counts by region and status
-    const regionMap: Record<string, { name: string; RED: number; AMBER: number; GREEN: number }> = {};
+    const regionMap: Record<
+      string,
+      { name: string; RED: number; AMBER: number; GREEN: number }
+    > = {};
     regions.forEach((region) => {
       regionMap[region.id] = { name: region.name, RED: 0, AMBER: 0, GREEN: 0 };
     });

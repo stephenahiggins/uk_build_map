@@ -61,7 +61,12 @@ stored RAG statuses, rationales, and latitude/longitude coordinates.
    This executes `scripts/recomputeProjectEvaluations.ts`, iterating over all projects and
    persisting the refreshed evaluation results.
 
-You can execute the command either on your host machine (with access to the database) or inside the backend Docker container via `make shell`.
+You can execute the command either on your host machine (with access to the database) or inside the backend Docker container via `make shell`. For Docker-based workflows there's also a convenience wrapper:
+
+```sh
+cd backend
+make recompute-evaluations
+```
 
 ### Frontend Development
 

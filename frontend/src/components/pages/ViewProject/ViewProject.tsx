@@ -42,6 +42,9 @@ interface Project {
   statusRationale?: string;
   latitude?: number | null;
   longitude?: number | null;
+  locationDescription?: string | null;
+  locationSource?: string | null;
+  locationConfidence?: 'LOW' | 'MEDIUM' | 'HIGH' | null;
   createdAt: string;
   evidence?: Evidence[];
 }
@@ -131,6 +134,12 @@ const ViewProject: React.FC = () => {
                         <strong>Status:</strong>{' '}
                         {projectStatusToSentenceCase(project.status)}
                       </div>
+                      {project.statusRationale && (
+                        <div>
+                          <strong>Status rationale:</strong>{' '}
+                          {project.statusRationale}
+                        </div>
+                      )}
                       <div>
                         <strong>Expected Completion:</strong>{' '}
                         {project.expectedCompletion
@@ -139,6 +148,32 @@ const ViewProject: React.FC = () => {
                             ).toLocaleDateString()
                           : '-'}
                       </div>
+                      <div>
+                        <strong>Location:</strong>{' '}
+                        {project.latitude != null && project.longitude != null
+                          ? `${project.latitude.toFixed(5)}, ${project.longitude.toFixed(5)}`
+                          : 'Not yet determined'}
+                      </div>
+                      {project.locationDescription && (
+                        <div>
+                          <strong>Location description:</strong>{' '}
+                          {project.locationDescription}
+                        </div>
+                      )}
+                      {project.locationSource && (
+                        <div>
+                          <strong>Location source:</strong>{' '}
+                          {project.locationSource}
+                        </div>
+                      )}
+                      {project.locationConfidence && (
+                        <div>
+                          <strong>Location confidence:</strong>{' '}
+                          {`${project.locationConfidence.charAt(0)}${project.locationConfidence
+                            .slice(1)
+                            .toLowerCase()}`}
+                        </div>
+                      )}
                       <div>
                         <strong>Created:</strong>{' '}
                         {new Date(project.createdAt).toLocaleDateString()}

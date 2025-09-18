@@ -74,6 +74,9 @@ async function recompute() {
         statusUpdatedAt: new Date(),
         latitude: evaluation.latitude,
         longitude: evaluation.longitude,
+        locationDescription: evaluation.locationDescription || null,
+        locationSource: evaluation.locationSource || null,
+        locationConfidence: evaluation.locationConfidence ?? null,
       },
     });
   }

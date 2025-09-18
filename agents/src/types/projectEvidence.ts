@@ -32,5 +32,5 @@ export type ProjectStatus = {
   lastUpdated: string;
   locationDescription?: string;
   locationSource?: string;
-  locationConfidence?: "LOW" | "MEDIUM" | "HIGH";
+  locationConfidence?: "LOW" | "MEDIUM" | "HIGH" | null;
 };

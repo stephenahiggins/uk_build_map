@@ -3,7 +3,10 @@ import { RequestWithProfile } from '@/src/v1/types';
 import prisma from '@/src/db';
 import { ModerationState, UserType } from '@prisma/client';
 
-export const listPendingEvidence = async (req: RequestWithProfile, res: Response) => {
+export const listPendingEvidence = async (
+  req: RequestWithProfile,
+  res: Response
+) => {
   try {
     if (
       req.profile?.user_type !== UserType.ADMIN &&
@@ -17,11 +20,16 @@ export const listPendingEvidence = async (req: RequestWithProfile, res: Response
     });
     return res.json(items);
   } catch (err) {
-    return res.status(500).json({ error: 'Failed to fetch evidence', details: err });
+    return res
+      .status(500)
+      .json({ error: 'Failed to fetch evidence', details: err });
   }
 };
 
-export const approveEvidence = async (req: RequestWithProfile, res: Response) => {
+export const approveEvidence = async (
+  req: RequestWithProfile,
+  res: Response
+) => {
   try {
     if (
       req.profile?.user_type !== UserType.ADMIN &&
@@ -36,11 +44,16 @@ export const approveEvidence = async (req: RequestWithProfile, res: Response) =>
     });
     return res.json(updated);
   } catch (err) {
-    return res.status(500).json({ error: 'Failed to approve evidence', details: err });
+    return res
+      .status(500)
+      .json({ error: 'Failed to approve evidence', details: err });
   }
 };
 
-export const rejectEvidence = async (req: RequestWithProfile, res: Response) => {
+export const rejectEvidence = async (
+  req: RequestWithProfile,
+  res: Response
+) => {
   try {
     if (
       req.profile?.user_type !== UserType.ADMIN &&
@@ -55,6 +68,8 @@ export const rejectEvidence = async (req: RequestWithProfile, res: Response) => 
     });
     return res.json(updated);
   } catch (err) {
-    return res.status(500).json({ error: 'Failed to reject evidence', details: err });
+    return res
+      .status(500)
+      .json({ error: 'Failed to reject evidence', details: err });
   }
 };

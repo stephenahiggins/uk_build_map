@@ -20,6 +20,12 @@ enum ProjectStatus {
   GREEN
 }
 
+enum LocationConfidence {
+  LOW
+  MEDIUM
+  HIGH
+}
+
 enum EvidenceType {
   PDF
   URL
@@ -105,6 +111,9 @@ model Project {
   // Minimal geo fields; switch to PostGIS Point/Polygon if you enable the ext.
   latitude  Float?
   longitude Float?
+  locationDescription String?
+  locationSource      String?
+  locationConfidence  LocationConfidence?
   imageUrl  String?
 
   // Relationships

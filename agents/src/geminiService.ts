@@ -328,6 +328,9 @@ export async function createProjectWithLocation(
     status?: "RED" | "AMBER" | "GREEN";
     statusRationale?: string;
     imageUrl?: string;
+    locationDescription?: string;
+    locationSource?: string;
+    locationConfidence?: "LOW" | "MEDIUM" | "HIGH";
   },
   createdById?: number
 ) {
@@ -369,6 +372,9 @@ export async function createProjectWithLocation(
         expectedCompletion: projectData.expectedCompletion,
         latitude: projectData.latitude ? parseFloat(projectData.latitude.toString()) : null,
         longitude: projectData.longitude ? parseFloat(projectData.longitude.toString()) : null,
+        locationDescription: projectData.locationDescription ?? null,
+        locationSource: projectData.locationSource ?? null,
+        locationConfidence: projectData.locationConfidence ?? null,
         imageUrl: projectData.imageUrl,
         regionId: regionId,
         localAuthorityId: localAuthorityId,
@@ -499,6 +505,9 @@ export async function createProjectWithEvidence(
       region: evidenceResults.projectLocation?.region,
       status: evaluation.ragStatus.toUpperCase() as "RED" | "AMBER" | "GREEN",
       statusRationale: evaluation.ragRationale,
+      locationDescription: evaluation.locationDescription ?? undefined,
+      locationSource: evaluation.locationSource ?? undefined,
+      locationConfidence: evaluation.locationConfidence ?? undefined,
     };
 
     const project = await createProjectWithLocation(prisma, projectData, createdById);
