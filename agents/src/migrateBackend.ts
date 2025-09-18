@@ -254,6 +254,7 @@ function buildBackendProjectData(project: AgentsProjectWithEvidence, adminUserId
     latitude: project.latitude != null ? project.latitude.toString() : null,
     longitude: project.longitude != null ? project.longitude.toString() : null,
     imageUrl: project.imageUrl ?? null,
+    moderationState: "APPROVED",
   };
 
   const createData = {
@@ -280,6 +281,7 @@ function mapEvidenceForNestedCreate(evidence: AgentsEvidence, submittedById: num
     url: evidence.url ?? null,
     datePublished: evidence.datePublished ?? null,
     description: evidence.description ?? evidence.summary ?? null,
+    moderationState: "APPROVED",
   } satisfies Parameters<BackendPrisma["project"]["create"]>[0]["data"]["evidence"]["create"][number];
 }
 
@@ -299,6 +301,7 @@ function mapEvidenceForCreateMany(
     url: evidence.url ?? null,
     datePublished: evidence.datePublished ?? null,
     description: evidence.description ?? evidence.summary ?? null,
+    moderationState: "APPROVED",
   };
 }
 

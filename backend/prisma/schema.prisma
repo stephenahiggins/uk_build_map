@@ -106,17 +106,18 @@ model Project {
   expectedCompletion DateTime?
   status             ProjectStatus
   statusUpdatedAt    DateTime        @default(now())
-  statusRationale    String?         @db.Text
+  statusRationale    String?
+  moderationState    String          @default("PENDING")
+  updatedAt          DateTime        @updatedAt
 
   // Minimal geo fields; switch to PostGIS Point/Polygon if you enable the ext.
-  latitude  Decimal? @db.Decimal(10, 7)
-  longitude Decimal? @db.Decimal(10, 7)
-  imageUrl  String?  @db.Text
+  latitude           Decimal?        @db.Decimal(10, 7)
+  longitude          Decimal?        @db.Decimal(10, 7)
+  imageUrl           String?         @db.Text
 
   // Relationships
-  objectives      Objective[]
-  evidence        EvidenceItem[]
-  discoveredLinks DiscoveredProject[]
+  objectives Objective[]
+  evidence   EvidenceItem[]
 
   @@index([regionId])
   @@index([status])
@@ -159,12 +160,13 @@ model EvidenceItem {
   type            EvidenceType
   title           String          @db.Text
   summary         String?         @db.Text
-  source          String?         @db.Text
-  url             String?         @db.Text
+  source          String?
+  url             String?
   datePublished   DateTime?
-  description     String?         @db.Text
-  createdAt       DateTime        @default(now())
-  moderationState ModerationState @default(PENDING)
+  description     String?
+  moderationState String      @default("PENDING")
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
 
   // Geo-tag for where the evidence was captured
   latitude  Decimal? @db.Decimal(10, 7)
@@ -181,24 +183,4 @@ model Region {
   // Store complex shapes as GeoJSON until migrate to PostGIS Polygon
   boundingPolygon Json?
   projects        Project[]
-}
-
-model DiscoveredProject {
-  id              String       @id @default(uuid())
-  rawContentHash  String       @unique
-  sourceUrl       String
-  crawledAt       DateTime     @default(now())
-  linkedProjectId String?
-  linkedProject   Project?     @relation(fields: [linkedProjectId], references: [id])
-  llmSummaries    LLMSummary[]
-
-  @@index([linkedProjectId])
-}
-
-model LLMSummary {
-  id                  String            @id @default(uuid())
-  discoveredProjectId String
-  discoveredProject   DiscoveredProject @relation(fields: [discoveredProjectId], references: [id], onDelete: Cascade)
-  summaryJson         Json
-  confidence          Float
 }
