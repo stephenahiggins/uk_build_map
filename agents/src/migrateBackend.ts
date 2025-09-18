@@ -30,7 +30,8 @@ type MigrationResult = {
 };
 
 const require = createRequire(import.meta.url);
-const backendClientModule = require("../../backend/node_modules/@prisma/client") as typeof import("../../backend/node_modules/@prisma/client");
+const backendClientModule =
+  require("../../backend/node_modules/@prisma/client") as typeof import("../../backend/node_modules/@prisma/client");
 const BackendPrismaClient = backendClientModule.PrismaClient;
 
 type AgentsPrisma = AgentsPrismaClient;
@@ -45,9 +46,14 @@ type BackendProjectSummary = Pick<BackendProject, "id" | "title">;
 
 type EvidenceKeySource = Pick<AgentsEvidence, "id" | "url" | "source" | "title" | "summary">;
 
-type BackendEvidenceKeySource = Pick<BackendEvidenceItem, "id" | "url" | "source" | "title" | "summary">;
+type BackendEvidenceKeySource = Pick<
+  BackendEvidenceItem,
+  "id" | "url" | "source" | "title" | "summary"
+>;
 
-export async function migrateAgentsDataToBackend(options: MigrateOptions): Promise<MigrationResult> {
+export async function migrateAgentsDataToBackend(
+  options: MigrateOptions
+): Promise<MigrationResult> {
   const agentsDatabaseUrl = envValues.DATABASE_URL;
   if (!agentsDatabaseUrl) {
     throw new Error("Agents DATABASE_URL environment variable is not configured");
@@ -110,7 +116,10 @@ export async function migrateAgentsDataToBackend(options: MigrateOptions): Promi
             }
           }
           if (updatedNormalized) {
-            existingMaps.byTitle.set(updatedNormalized, { id: existing.id, title: updateData.title });
+            existingMaps.byTitle.set(updatedNormalized, {
+              id: existing.id,
+              title: updateData.title,
+            });
           }
           const evidenceAdded = await syncEvidenceForProject(
             backendPrisma,
@@ -128,7 +137,9 @@ export async function migrateAgentsDataToBackend(options: MigrateOptions): Promi
         data: {
           ...createData,
           evidence: {
-            create: project.evidence.map((item) => mapEvidenceForNestedCreate(item, adminUser.user_id)),
+            create: project.evidence.map((item) =>
+              mapEvidenceForNestedCreate(item, adminUser.user_id)
+            ),
           },
         },
       });
@@ -167,8 +178,8 @@ function resolveBackendDatabaseUrl(options: MigrateOptions): string | undefined 
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
   const defaultEnvPath = path.resolve(__dirname, "..", "..", "backend", ".env");
-  const candidatePaths = [options.backendEnvPath, defaultEnvPath].filter(
-    (value): value is string => Boolean(value)
+  const candidatePaths = [options.backendEnvPath, defaultEnvPath].filter((value): value is string =>
+    Boolean(value)
   );
 
   for (const candidate of candidatePaths) {
@@ -282,7 +293,9 @@ function mapEvidenceForNestedCreate(evidence: AgentsEvidence, submittedById: num
     datePublished: evidence.datePublished ?? null,
     description: evidence.description ?? evidence.summary ?? null,
     moderationState: "APPROVED",
-  } satisfies Parameters<BackendPrisma["project"]["create"]>[0]["data"]["evidence"]["create"][number];
+  } satisfies Parameters<
+    BackendPrisma["project"]["create"]
+  >[0]["data"]["evidence"]["create"][number];
 }
 
 function mapEvidenceForCreateMany(

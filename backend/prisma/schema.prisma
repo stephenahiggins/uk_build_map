@@ -111,9 +111,9 @@ model Project {
   updatedAt          DateTime        @updatedAt
 
   // Minimal geo fields; switch to PostGIS Point/Polygon if you enable the ext.
-  latitude           Decimal?        @db.Decimal(10, 7)
-  longitude          Decimal?        @db.Decimal(10, 7)
-  imageUrl           String?         @db.Text
+  latitude  Decimal? @db.Decimal(10, 7)
+  longitude Decimal? @db.Decimal(10, 7)
+  imageUrl  String?  @db.Text
 
   // Relationships
   objectives Objective[]
@@ -152,21 +152,21 @@ model KeyResult {
 }
 
 model EvidenceItem {
-  id              String          @id @default(uuid())
+  id              String       @id @default(uuid())
   projectId       String
-  project         Project         @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  project         Project      @relation(fields: [projectId], references: [id], onDelete: Cascade)
   submittedById   Int
-  submittedBy     User            @relation("EvidenceItem_submittedBy", fields: [submittedById], references: [user_id])
+  submittedBy     User         @relation("EvidenceItem_submittedBy", fields: [submittedById], references: [user_id])
   type            EvidenceType
-  title           String          @db.Text
-  summary         String?         @db.Text
+  title           String       @db.Text
+  summary         String?      @db.Text
   source          String?
   url             String?
   datePublished   DateTime?
   description     String?
-  moderationState String      @default("PENDING")
-  createdAt       DateTime    @default(now())
-  updatedAt       DateTime    @updatedAt
+  moderationState String       @default("PENDING")
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
 
   // Geo-tag for where the evidence was captured
   latitude  Decimal? @db.Decimal(10, 7)
