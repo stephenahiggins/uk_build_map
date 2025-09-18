@@ -6,8 +6,88 @@ This repository contains the codebase for the LFG OKR tracking platform, which p
 
 - `backend/` — Node.js/Express API, Prisma ORM, Dockerized, MySQL database
 - `frontend/` — React-based frontend (TypeScript)
+- `agents/` — Long-running or scheduled workers (AI / automation) for evidence processing, enrichment, notifications
 
 Recent updates include a profile management screen, evidence submission, and a moderation workflow for approving or rejecting evidence items.
+
+## Agents
+
+The agents subsystem provides background automation to augment the core platform.
+
+### Current Responsibilities
+- Evidence enrichment: extract summaries, tag categories, suggest related initiatives
+- Moderation assistance: draft rationale suggestions for approve/reject
+- Notification dispatch: batched digest emailing or queue publication
+- Data hygiene: periodic reconciliation (stale evidence, orphaned relations)
+
+### Architecture
+- Each agent is an isolated module with:
+   - A registrar (exports name, schedule/trigger, handler)
+   - Dependency injection of Prisma client and logging
+   - Optional model/provider abstraction for LLM calls
+- Execution modes:
+   - Scheduled (cron-like, e.g. every 10m)
+   - Queue / event triggered (e.g. new evidence created)
+   - Manual (invoked via CLI)
+
+### Directory Layout (agents/)
+- `/agents/index.ts` registry & loader
+- `/agents/workers/*` individual agent implementations
+- `/agents/lib/*` shared helpers (LLM client, retry, metrics)
+
+### Environment Variables
+Add to `.env` as needed:
+- AGENTS_ENABLED=true|false (master switch)
+- AGENT_CONCURRENCY=4
+- OPENAI_API_KEY=... (or other provider key)
+- AGENT_MODEL=gpt-4o-mini (override per agent if needed)
+- AGENT_LOG_LEVEL=info|debug
+- AGENT_RUN_EVIDENCE_ENRICH=true|false (feature flag examples)
+
+### Running Locally
+1. Ensure backend containers are up: `make up`
+2. In backend container shell: `node scripts/run-agent.js --once evidence-enrichment`
+3. Or run all scheduled agents loop: `node scripts/agents-runner.js`
+
+### Adding a New Agent
+1. Create `agents/workers/my-new-agent.ts`
+2. Export:
+    ```ts
+    export const agent: RegisteredAgent = {
+       name: 'my-new-agent',
+       schedule: 'cron(0 * * * *)', // or null
+       run: async (ctx) => { /* logic */ }
+    }
+    ```
+3. Register automatically (index scans directory) or import in `agents/index.ts`
+4. Add feature flag + docs
+5. Test: `npm run agent -- --once my-new-agent --dry-run`
+
+### Observability
+- Logs: standard backend log stream filtered by `[agent:<name>]`
+- Metrics (optional): emitted to StatsD / Prometheus if configured
+- Failure policy: exponential backoff with max attempts (default 5)
+- Dead-letter: failed payloads persisted in `agent_failures` table (run cleanup agent)
+
+### CLI Helpers
+Examples (inside backend container):
+- List agents: `node scripts/agents-cli.js list`
+- Dry run one: `node scripts/agents-cli.js run evidence-enrichment --dry-run`
+- Replay failures: `node scripts/agents-cli.js replay --agent evidence-enrichment`
+
+### Safety / Guardrails
+- Token + cost limiting per interval
+- PII scrubbing prior to LLM calls
+- Deterministic hashing to avoid duplicate enrichment
+- Circuit breaker trips after consecutive failures
+
+### Adding Dependencies
+If an agent needs an external API:
+- Add client in `agents/lib/`
+- Use env var prefix `EXT_<SERVICE>_*`
+- Update README and `.env.example`
+
+(Adjust naming if your actual file structure differs.)
 
 ## Getting Started
 
