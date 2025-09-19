@@ -1,3 +1,6 @@
+// Project seeding is now handled by migrateBackend.ts using the provided SQL file.
+// This file is intentionally left blank.
+
 import { CountryCode, UserType } from '@prisma/client';
 import fetch from 'node-fetch';
 import { parse } from 'csv-parse/sync';
