@@ -20,13 +20,16 @@ function toPrismaStatus(status: 'Red' | 'Amber' | 'Green'): PrismaStatus {
 
 async function recompute() {
   const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
+  const openAIApiKey = process.env.OPENAI_API_KEY;
+
+  if (!apiKey && !openAIApiKey) {
     throw new Error(
-      'GEMINI_API_KEY must be set to run the project evaluation recompute script.'
+      'An API key for either Gemini or OpenAI must be set to run the project evaluation recompute script.'
     );
   }
 
   const model = process.env.GEMINI_MODEL || process.env.MODEL;
+  const openAIModel = process.env.OPENAI_MODEL;
   const mock = process.env.MOCK_PROJECT_EVALUATION === 'true';
 
   const projects = await prisma.project.findMany({
@@ -66,7 +69,9 @@ async function recompute() {
         },
         {
           apiKey,
+          openAIApiKey,
           model: model || undefined,
+          openAIModel: openAIModel || undefined,
           mockResponse: mock,
         }
       );

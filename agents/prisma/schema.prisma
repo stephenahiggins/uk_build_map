@@ -109,12 +109,12 @@ model Project {
   statusRationale    String?
 
   // Minimal geo fields; switch to PostGIS Point/Polygon if you enable the ext.
-  latitude  Float?
-  longitude Float?
+  latitude            Float?
+  longitude           Float?
   locationDescription String?
   locationSource      String?
   locationConfidence  LocationConfidence?
-  imageUrl  String?
+  imageUrl            String?
 
   // Relationships
   objectives Objective[]

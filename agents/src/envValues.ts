@@ -15,6 +15,7 @@ dotenvConfig({ path: doteEnvPath });
 export const envValues = {
   // API Keys
   GEMINI_API_KEY: process.env.GEMINI_API_KEY,
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY,
 
   // Database
   DATABASE_URL: process.env.DATABASE_URL,
@@ -35,10 +36,13 @@ export const envValues = {
 
 // Validation function to ensure required environment variables are set
 export function validateEnvValues(): void {
-  const requiredVars = [
-    { key: "GEMINI_API_KEY", value: envValues.GEMINI_API_KEY },
-    { key: "DATABASE_URL", value: envValues.DATABASE_URL },
-  ];
+  if (!envValues.GEMINI_API_KEY && !envValues.OPENAI_API_KEY) {
+    throw new Error(
+      `Missing API Key: Please set either GEMINI_API_KEY or OPENAI_API_KEY in your .env file.`
+    );
+  }
+
+  const requiredVars = [{ key: "DATABASE_URL", value: envValues.DATABASE_URL }];
 
   const missingVars = requiredVars.filter(({ value }) => !value);
 

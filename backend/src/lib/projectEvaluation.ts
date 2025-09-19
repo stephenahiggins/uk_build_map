@@ -1,4 +1,5 @@
 import { GoogleGenAI } from '@google/genai';
+import OpenAI from 'openai';
 
 export type EvidenceForEvaluation = {
   title?: string;
@@ -28,26 +29,40 @@ export type ProjectEvaluationResult = {
 
 export type ProjectEvaluationOptions = {
   apiKey?: string;
+  openAIApiKey?: string;
   model?: string;
+  openAIModel?: string;
   enableGoogleSearch?: boolean;
   mockResponse?: boolean;
 };
 
-let cachedClient: GoogleGenAI | null = null;
-let cachedApiKey: string | null = null;
+let cachedGoogleClient: GoogleGenAI | null = null;
+let cachedGoogleApiKey: string | null = null;
+let cachedOpenAIClient: OpenAI | null = null;
+let cachedOpenAIApiKey: string | null = null;
 
-function getClient(apiKey?: string) {
+function getGoogleClient(apiKey?: string) {
   const resolvedKey = apiKey || process.env.GEMINI_API_KEY;
   if (!resolvedKey) {
-    throw new Error(
-      'Missing Gemini API key. Provide options.apiKey or set GEMINI_API_KEY in the environment.'
-    );
+    return null;
   }
-  if (!cachedClient || cachedApiKey !== resolvedKey) {
-    cachedClient = new GoogleGenAI({ apiKey: resolvedKey });
-    cachedApiKey = resolvedKey;
+  if (!cachedGoogleClient || cachedGoogleApiKey !== resolvedKey) {
+    cachedGoogleClient = new GoogleGenAI({ apiKey: resolvedKey });
+    cachedGoogleApiKey = resolvedKey;
   }
-  return cachedClient;
+  return cachedGoogleClient;
+}
+
+function getOpenAIClient(apiKey?: string) {
+  const resolvedKey = apiKey || process.env.OPENAI_API_KEY;
+  if (!resolvedKey) {
+    return null;
+  }
+  if (!cachedOpenAIClient || cachedOpenAIApiKey !== resolvedKey) {
+    cachedOpenAIClient = new OpenAI({ apiKey: resolvedKey });
+    cachedOpenAIApiKey = resolvedKey;
+  }
+  return cachedOpenAIClient;
 }
 
 function normaliseStatus(
@@ -100,6 +115,82 @@ function buildEvidenceNarrative(items: EvidenceForEvaluation[]): string {
     .join('\n\n');
 }
 
+async function evaluateProjectWithOpenAI(
+  request: ProjectEvaluationRequest,
+  options?: ProjectEvaluationOptions
+): Promise<ProjectEvaluationResult> {
+  const { projectName, projectDescription, locale, evidence } = request;
+  const {
+    openAIApiKey,
+    openAIModel = 'gpt-4-turbo',
+    mockResponse,
+  } = options || {};
+
+  if (mockResponse) {
+    return {
+      ragStatus: 'Amber',
+      ragRationale: 'Mock evaluation used; real OpenAI call skipped.',
+      latitude: null,
+      longitude: null,
+      locationDescription: 'Mock location',
+      locationSource: 'Mock',
+      locationConfidence: 'LOW',
+    };
+  }
+
+  const client = getOpenAIClient(openAIApiKey);
+  if (!client) {
+    throw new Error(
+      'Missing OpenAI API key. Provide options.openAIApiKey or set OPENAI_API_KEY in the environment.'
+    );
+  }
+
+  const evidenceNarrative = buildEvidenceNarrative(evidence);
+  const locationHint = locale ? `Primary search locale: ${locale}.` : '';
+
+  const prompt = `You are an infrastructure intelligence analyst verifying the real-world status and location of a project.\n\nProject name: ${
+    projectName || '(unknown)'
+  }\nProject description: ${projectDescription || '(not provided)'}\n${locationHint}\n\nEvidence timeline:\n${evidenceNarrative}\n\nTasks:\n1. Decide the current overall RAG status (Red, Amber or Green) using the evidence above. If not enough evidence exists, the status should be Amber.\n2. Provide a concise rationale (<=60 words) referencing the strongest evidence.\n3. Identify the best available latitude and longitude for the primary project site. Use the evidence and, if needed, a quick web search of the project name plus location.\n4. Provide a short location description (e.g., town/landmark) and cite the main public source used.\n5. Provide your confidence in the coordinates as HIGH, MEDIUM or LOW.\n\nReturn only a single, valid JSON object with no other text or explanation. The JSON should conform to this exact schema:\n{\n  "ragStatus": "Red|Amber|Green",\n  "ragRationale": "text",\n  "latitude": number|null,\n  "longitude": number|null,\n  "locationDescription": "text",\n  "locationSource": "text",\n  "locationConfidence": "HIGH|MEDIUM|LOW"\n}\nIf you cannot determine coordinates, set latitude and longitude to null and explain why in the rationale or location description.`;
+
+  const response = await client.chat.completions.create({
+    model: openAIModel,
+    messages: [{ role: 'user', content: prompt }],
+    response_format: { type: 'json_object' },
+  });
+
+  const text = response.choices[0].message.content || '';
+  let parsed: any;
+  try {
+    parsed = JSON.parse(text);
+  } catch (error) {
+    throw new Error(`Failed to parse OpenAI response as JSON: ${text}`);
+  }
+
+  const ragStatus = normaliseStatus(parsed.ragStatus);
+  const ragRationale = (parsed.ragRationale || parsed.rationale || '')
+    .toString()
+    .trim();
+  const latitude = parseCoordinate(parsed.latitude);
+  const longitude = parseCoordinate(parsed.longitude);
+  const locationDescription = parsed.locationDescription
+    ? parsed.locationDescription.toString().trim()
+    : undefined;
+  const locationSource = parsed.locationSource
+    ? parsed.locationSource.toString().trim()
+    : undefined;
+  const locationConfidence = normaliseConfidence(parsed.locationConfidence);
+
+  return {
+    ragStatus,
+    ragRationale,
+    latitude,
+    longitude,
+    locationDescription,
+    locationSource,
+    locationConfidence,
+  };
+}
+
 export async function evaluateProjectWithGemini(
   request: ProjectEvaluationRequest,
   options?: ProjectEvaluationOptions
@@ -124,7 +215,13 @@ export async function evaluateProjectWithGemini(
     };
   }
 
-  const client = getClient(apiKey);
+  const client = getGoogleClient(apiKey);
+  if (!client) {
+    console.log(
+      'Gemini client not available, attempting to fall back to OpenAI.'
+    );
+    return evaluateProjectWithOpenAI(request, options);
+  }
   const chosenModel = model || process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 
   const evidenceNarrative = buildEvidenceNarrative(evidence);
@@ -160,6 +257,10 @@ export async function evaluateProjectWithGemini(
       .trim();
     parsed = JSON.parse(cleaned);
   } catch (error) {
+    if (error instanceof Error && /quota/i.test(error.message)) {
+      console.warn('Google Gemini quota exceeded. Falling back to OpenAI.');
+      return evaluateProjectWithOpenAI(request, options);
+    }
     throw new Error(`Failed to parse Gemini response as JSON: ${text}`);
   }
 
