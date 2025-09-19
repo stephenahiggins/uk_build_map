@@ -13,3 +13,6 @@
 /logs
 /src/logs
 /coverage
+
+/scrips/recomputeProjectEvaluations.js
+/scripts/seedProjectsFromFile.js
