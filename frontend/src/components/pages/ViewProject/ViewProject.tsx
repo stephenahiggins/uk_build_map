@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axiosInstance from '../../../config/axiosConfig';
 
 import Header from '../../organisms/Header';
+import Banner from '../../molecules/Banner';
 import { projectStatusToSentenceCase } from '../../../utils/projectStatusHelpers';
 import ProjectMap from '../../atoms/ProjectMap';
 import Button from '../../molecules/Button';
@@ -57,6 +58,19 @@ const ViewProject: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [subscribeChecked, setSubscribeChecked] = useState(false);
 
+  // Helper to safely format coordinates (handles string or number inputs)
+  const formatLatLng = (
+    lat?: number | string | null,
+    lng?: number | string | null,
+    decimals: number = 5
+  ): string | null => {
+    if (lat == null || lng == null) return null;
+    const latNum = typeof lat === 'number' ? lat : parseFloat(lat);
+    const lngNum = typeof lng === 'number' ? lng : parseFloat(lng);
+    if (!Number.isFinite(latNum) || !Number.isFinite(lngNum)) return null;
+    return `${latNum.toFixed(decimals)}, ${lngNum.toFixed(decimals)}`;
+  };
+
   useEffect(() => {
     const fetchProject = async () => {
       setLoading(true);
@@ -89,113 +103,141 @@ const ViewProject: React.FC = () => {
           />
         )}
       </Header>
-      <div className="p-4 pb-0 flex items-center">
-        <button
-          onClick={() => navigate('/project/list')}
-          className="flex items-center text-blue-600 hover:text-blue-800 font-medium focus:outline-none"
-          aria-label="Back to Projects"
-        >
-          <svg
-            className="w-5 h-5 mr-2"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-          Back to Projects
-        </button>
+      <div className="p-4 pt-2 pb-0 flex flex-col gap-3">
+        <div className="flex flex-col lg:flex-row gap-3 lg:items-start">
+          <div className="flex items-center">
+            <button
+              onClick={() => navigate('/project/list')}
+              className="flex items-center text-blue-600 hover:text-blue-800 font-medium focus:outline-none"
+              aria-label="Back to Projects"
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              Back to Projects
+            </button>
+          </div>
+          <div className="flex-1">
+            <Banner
+              bgClassName="bg-indigo-50"
+              textClassName="text-indigo-900"
+              borderClassName="border-indigo-300"
+              githubUrl="https://github.com/stephenahiggins/lfg_build_map"
+            >
+              The data available is currently for the{' '}
+              <strong>West Yorkshire</strong> region. We will be progressively
+              adding more data. If you know your way around TypeScript, you can
+              help by pulling the GitHub repo.
+            </Banner>
+          </div>
+        </div>
       </div>
       <main className="flex flex-1 flex-col gap-6 p-6">
         {loading && <div>Loading project...</div>}
         {error && <div className="text-red-600">{error}</div>}
         {!loading && !error && project && (
           <div className="flex flex-col lg:flex-row gap-6 w-full">
-            {/* Left: Details/Scorecard (9/12) */}
             <div className="flex-1 lg:w-9/12 space-y-6">
               <section className="bg-white rounded shadow p-6 mb-4">
-                <div className="flex flex-row items-center justify-between gap-6">
-                  {/* Left: Content */}
-                  <div className="flex-1 min-w-0">
-                    <h2 className="text-xl font-semibold mb-2 flex items-center">
-                      Details
-                    </h2>
-                    <div className="mb-2">{project.description}</div>
-                    <div className="flex flex-wrap gap-4 text-sm text-gray-700">
-                      <div>
-                        <strong>Type:</strong> {project.type.replace('_', ' ')}
-                      </div>
-                      <div>
-                        <strong>Status:</strong>{' '}
-                        {projectStatusToSentenceCase(project.status)}
-                      </div>
-                      {project.statusRationale && (
-                        <div>
-                          <strong>Status rationale:</strong>{' '}
-                          {project.statusRationale}
+                <div
+                  className="lfg-project-container"
+                  style={{ position: 'relative' }}
+                >
+                  <div className="rag-marker">
+                    {/* RAG status moved inline with Status below */}
+                  </div>
+                  <div className="flex flex-row items-center justify-between gap-6">
+                    <div className="flex-1 min-w-0">
+                      <h2 className="text-xl font-semibold mb-2 flex items-center">
+                        Details
+                      </h2>
+                      <div className="mb-2">{project.description}</div>
+                      <div className="flex flex-wrap gap-4 text-sm text-gray-700">
+                        {/* <div>
+                          <strong>Type:</strong>{' '}
+                          {project.type.replace('_', ' ')}
+                        </div> */}
+                        <div className="flex items-center gap-2">
+                          <strong>Status:</strong>{' '}
+                          <span
+                            className={`project-card__rag-status ${project.status?.toLowerCase()}`}
+                            title={projectStatusToSentenceCase(project.status)}
+                            style={{
+                              display: 'inline-flex',
+                              position: 'relative',
+                              verticalAlign: 'middle',
+                            }}
+                          >
+                            <svg
+                              width="32"
+                              height="32"
+                              viewBox="0 0 36 36"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style={{ marginRight: '4px' }}
+                            >
+                              <circle cx="18" cy="18" r="15" />
+                            </svg>
+                          </span>
+                          {projectStatusToSentenceCase(project.status)}
                         </div>
-                      )}
-                      <div>
-                        <strong>Expected Completion:</strong>{' '}
-                        {project.expectedCompletion
-                          ? new Date(
-                              project.expectedCompletion
-                            ).toLocaleDateString()
-                          : '-'}
-                      </div>
-                      <div>
-                        <strong>Location:</strong>{' '}
-                        {project.latitude != null && project.longitude != null
-                          ? `${project.latitude.toFixed(5)}, ${project.longitude.toFixed(5)}`
-                          : 'Not yet determined'}
-                      </div>
-                      {project.locationDescription && (
-                        <div>
-                          <strong>Location description:</strong>{' '}
-                          {project.locationDescription}
-                        </div>
-                      )}
-                      {project.locationSource && (
-                        <div>
-                          <strong>Location source:</strong>{' '}
-                          {project.locationSource}
-                        </div>
-                      )}
-                      {project.locationConfidence && (
-                        <div>
-                          <strong>Location confidence:</strong>{' '}
-                          {`${project.locationConfidence.charAt(0)}${project.locationConfidence
-                            .slice(1)
-                            .toLowerCase()}`}
-                        </div>
-                      )}
-                      <div>
-                        <strong>Created:</strong>{' '}
-                        {new Date(project.createdAt).toLocaleDateString()}
+                        {project.statusRationale && (
+                          <div>
+                            <strong>Status rationale:</strong>{' '}
+                            {project.statusRationale}
+                          </div>
+                        )}
+                        {/* <div>
+                          <strong>Expected Completion:</strong>{' '}
+                          {project.expectedCompletion
+                            ? new Date(
+                                project.expectedCompletion
+                              ).toLocaleDateString()
+                            : '-'}
+                        </div> */}
+                        {/* <div>
+                          <strong>Location:</strong>{' '}
+                          {formatLatLng(
+                            project.latitude as any,
+                            project.longitude as any
+                          ) || 'Not yet determined'}
+                        </div> */}
+                        {project.locationDescription && (
+                          <div>
+                            <strong>Location:</strong>{' '}
+                            {project.locationDescription}
+                          </div>
+                        )}
+                        {/* {project.locationSource && (
+                          <div>
+                            <strong>Location source:</strong>{' '}
+                            {project.locationSource}
+                          </div>
+                        )} */}
+                        {/* {project.locationConfidence && (
+                          <div>
+                            <strong>Location confidence:</strong>{' '}
+                            {`${project.locationConfidence.charAt(0)}${project.locationConfidence
+                              .slice(1)
+                              .toLowerCase()}`}
+                          </div>
+                        )} */}
+                        {/* <div>
+                          <strong>Created:</strong>{' '}
+                          {new Date(project.createdAt).toLocaleDateString()}
+                        </div> */}
                       </div>
                     </div>
-                  </div>
-                  {/* Right: RAG Marker */}
-                  <div className="flex items-center justify-center min-w-[70px]">
-                    <span
-                      className={`relative -top-9 -right-2 project-card__rag-status ${project.status?.toLowerCase()}`}
-                      title={projectStatusToSentenceCase(project.status)}
-                    >
-                      <svg
-                        width="55"
-                        height="55"
-                        viewBox="0 0 36 36"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="18" cy="18" r="15" />
-                      </svg>
-                    </span>
                   </div>
                 </div>
               </section>
@@ -280,22 +322,6 @@ const ViewProject: React.FC = () => {
                   }}
                   className={`w-full justify-center ${subscribeChecked ? 'highlight' : 'secondary'}`}
                 />
-                <Button
-                  text="Make a difference"
-                  icon={<Megaphone size={18} />}
-                  className="secondary w-full"
-                  variant="secondary"
-                  onClick={() => {}}
-                />
-                {
-                  <Button
-                    text="Add Evidence"
-                    icon={<Plus size={18} />}
-                    className="highlight w-full"
-                    variant="primary"
-                    onClick={() => navigate(`/project/${id}/add-evidence`)}
-                  />
-                }
                 {(user?.user_type === USER_TYPE_ADMIN ||
                   user?.user_type === USER_TYPE_MODERATOR) && (
                   <Button

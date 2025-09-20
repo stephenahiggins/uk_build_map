@@ -37,7 +37,7 @@ const PublicRoute = ({ element }: { element: React.JSX.Element }) => {
 const AppRouter = createBrowserRouter([
   {
     path: '/',
-    element: <Navigate to="/dashboard" />,
+    element: <Navigate to="/project/list" />,
     errorElement: <ErrorPage />,
   },
   {
@@ -61,7 +61,7 @@ const AppRouter = createBrowserRouter([
   },
   {
     path: '/project',
-    element: <ProtectedRoute element={<ProjectTemplate />} />,
+    element: <ProjectTemplate />,
     errorElement: <ErrorPage />,
     children: [
       {

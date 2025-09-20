@@ -8,7 +8,11 @@ import useUserStore, {
 
 const Navbar: React.FC = () => {
   const { user } = useUserStore();
-  console.log('FOO', user);
+  const isLoggedIn = !!user;
+  const canModerate =
+    user?.user_type === USER_TYPE_ADMIN ||
+    user?.user_type === USER_TYPE_MODERATOR;
+
   return (
     <nav className="flex items-center justify-between p-4 bg-white shadow">
       <div className="flex items-center gap-4">
@@ -24,9 +28,7 @@ const Navbar: React.FC = () => {
         >
           Add Project
         </Link>
-
-        {(user?.user_type === USER_TYPE_ADMIN ||
-          user?.user_type === USER_TYPE_MODERATOR) && (
+        {canModerate && (
           <Link
             to="/dashboard/moderation"
             className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
@@ -34,16 +36,16 @@ const Navbar: React.FC = () => {
             Moderation
           </Link>
         )}
-        <Link
-          to="/dashboard/profile"
-          className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
-        >
-          Profile
-        </Link>
+        {isLoggedIn && (
+          <Link
+            to="/dashboard/profile"
+            className="font-semibold text-lg text-neutral-800 hover:text-neutral-600"
+          >
+            Profile
+          </Link>
+        )}
       </div>
-      <div className="flex items-center">
-        <Logout />
-      </div>
+      <div className="flex items-center">{isLoggedIn && <Logout />}</div>
     </nav>
   );
 };

@@ -12,10 +12,6 @@ const HomePage: React.FC = () => {
     }
   }, [data, setUser]);
 
-  useEffect(() => {
-    console.log(user);
-  }, [user]);
-
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <h2 className="text-1xl mb-4">

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import { sortBy } from 'lodash';
 import Header from '../../organisms/Header';
+import Banner from '../../molecules/Banner';
 import { NationalMapIcon } from '../../atoms/NationalMapIcon';
 import { RegionalMapIcon } from '../../atoms/RegionalMapIcon';
 import { LocalMapIcon } from '../../atoms/LocalMapIcon';
@@ -34,6 +35,7 @@ const ListProjects: React.FC = () => {
   const { user, setUser } = useUserStore();
 
   const [projectType, setProjectType] = useState<string>('');
+  const [availableTypes, setAvailableTypes] = useState<Set<string>>(new Set());
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [allProjects, setAllProjects] = useState<Project[]>([]);
   const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
@@ -107,6 +109,12 @@ const ListProjects: React.FC = () => {
       setTotalPages(response.data.totalPages || 1);
       setAllProjects(projects);
       setFilteredProjects(sortBy(projects, 'title'));
+      // Track available types for conditional buttons
+      const types = new Set<string>();
+      projects.forEach((p: Project) => {
+        if (p.type) types.add(p.type);
+      });
+      setAvailableTypes(types);
     } catch (err: any) {
       setError(err.message || 'An error occurred');
     } finally {
@@ -159,51 +167,77 @@ const ListProjects: React.FC = () => {
     (p) => p.latitude != null && p.longitude != null
   );
 
+  // Determine if we should show type filter buttons
+  const showTypeFilters = (() => {
+    if (availableTypes.size < 2) return false; // Need at least 2 categories to matter
+    // If only local present, already covered by size < 2 logic but explicit guard kept for clarity
+    if (availableTypes.size === 1 && availableTypes.has('LOCAL_GOV'))
+      return false;
+    return true;
+  })();
+
   return (
     <div className="w-full h-full min-h-screen bg-gray-50 p-0 m-0 flex flex-col">
       <Header title="Projects">
-        <div className="flex items-center space-x-4">
-          <div className="flex w-full space-x-4">
-            {[
-              { label: 'National', value: 'NATIONAL_GOV' },
-              { label: 'Regional', value: 'REGIONAL_GOV' },
-              { label: 'Local', value: 'LOCAL_GOV' },
-            ].map((btn) => (
-              <button
-                key={btn.value}
-                onClick={() =>
-                  setProjectType(projectType === btn.value ? '' : btn.value)
-                }
-                className={clsx(
-                  'sub-page-header',
-                  'flex items-center justify-between flex-1 min-w-0 px-6 py-4 border-2 rounded-2xl sketchy-outline transition-colors duration-150 hover:bg-blue-50',
-                  {
-                    'bg-blue-100 border-blue-400': projectType === btn.value,
-                    'bg-white border-gray-400': projectType !== btn.value,
-                  }
-                )}
-                style={{
-                  fontFamily: 'Handwritten, sans-serif',
-                  fontSize: '1.25rem',
-                }}
-              >
-                <span className="text-left">{btn.label}</span>
-                <span className="ml-4 w-8 h-8 flex items-center">
-                  {btn.value === 'NATIONAL_GOV' && (
-                    <NationalMapIcon className="w-8 h-8" />
-                  )}
-                  {btn.value === 'REGIONAL_GOV' && (
-                    <RegionalMapIcon className="w-8 h-8" />
-                  )}
-                  {btn.value === 'LOCAL_GOV' && (
-                    <LocalMapIcon className="w-8 h-8" />
-                  )}
-                </span>
-              </button>
-            ))}
+        {showTypeFilters && (
+          <div className="flex items-center space-x-4">
+            <div className="flex w-full space-x-4">
+              {[
+                { label: 'National', value: 'NATIONAL_GOV' },
+                { label: 'Regional', value: 'REGIONAL_GOV' },
+                { label: 'Local', value: 'LOCAL_GOV' },
+              ]
+                .filter((btn) => availableTypes.has(btn.value))
+                .map((btn) => (
+                  <button
+                    key={btn.value}
+                    onClick={() =>
+                      setProjectType(projectType === btn.value ? '' : btn.value)
+                    }
+                    className={clsx(
+                      'sub-page-header',
+                      'flex items-center justify-between flex-1 min-w-0 px-6 py-4 border-2 rounded-2xl sketchy-outline transition-colors duration-150 hover:bg-blue-50',
+                      {
+                        'bg-blue-100 border-blue-400':
+                          projectType === btn.value,
+                        'bg-white border-gray-400': projectType !== btn.value,
+                      }
+                    )}
+                    style={{
+                      fontFamily: 'Handwritten, sans-serif',
+                      fontSize: '1.25rem',
+                    }}
+                  >
+                    <span className="text-left">{btn.label}</span>
+                    <span className="ml-4 w-8 h-8 flex items-center">
+                      {btn.value === 'NATIONAL_GOV' && (
+                        <NationalMapIcon className="w-8 h-8" />
+                      )}
+                      {btn.value === 'REGIONAL_GOV' && (
+                        <RegionalMapIcon className="w-8 h-8" />
+                      )}
+                      {btn.value === 'LOCAL_GOV' && (
+                        <LocalMapIcon className="w-8 h-8" />
+                      )}
+                    </span>
+                  </button>
+                ))}
+            </div>
           </div>
-        </div>
+        )}
       </Header>
+      <div className="px-6 pt-4">
+        <Banner
+          bgClassName="bg-blue-50"
+          textClassName="text-blue-900"
+          borderClassName="border-blue-300"
+        >
+          Can't find a project, or something not right?{' '}
+          <a href="/project/add" className="underline font-medium">
+            Let us know or add it.
+          </a>
+        </Banner>
+      </div>
       <div className="flex-1 p-6 overflow-auto">
         <div className="mb-6">
           <SearchBar
@@ -212,6 +246,17 @@ const ListProjects: React.FC = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="mb-6"
           />
+        </div>
+        <div className="mb-8 bg-white rounded-md border border-gray-200 p-6 shadow-sm">
+          <h2 className="text-lg font-semibold mb-2">About these projects</h2>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            This catalogue brings together infrastructure and civic improvement
+            projects across governance levels. Data will expand over time and
+            may currently focus on specific regions. Use the filters (when
+            available) or search to narrow down results. You can help improve
+            the dataset by adding projects that are missing or updating existing
+            ones with new evidence.
+          </p>
         </div>
         <div className="flex flex-col md:flex-row gap-6 w-full">
           {/* Project List */}

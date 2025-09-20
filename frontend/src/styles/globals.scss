@@ -29,6 +29,9 @@ body {
   min-height: 130px;
 }
 
-.sub-page-header {
-  //
+.rag-marker {
+  position: absolute;
+  top: -51px;
+  right: -33px;
+  z-index: 10;
 }
