@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axiosInstance from '../../../config/axiosConfig';
 
 import Header from '../../organisms/Header';
-import Banner from '../../molecules/Banner';
 import { projectStatusToSentenceCase } from '../../../utils/projectStatusHelpers';
 import ProjectMap from '../../atoms/ProjectMap';
 import Button from '../../molecules/Button';
@@ -104,42 +103,27 @@ const ViewProject: React.FC = () => {
         )}
       </Header>
       <div className="p-4 pt-2 pb-0 flex flex-col gap-3">
-        <div className="flex flex-col lg:flex-row gap-3 lg:items-start">
-          <div className="flex items-center">
-            <button
-              onClick={() => navigate('/project/list')}
-              className="flex items-center text-blue-600 hover:text-blue-800 font-medium focus:outline-none"
-              aria-label="Back to Projects"
+        <div className="flex items-center">
+          <button
+            onClick={() => navigate('/project/list')}
+            className="flex items-center text-blue-600 hover:text-blue-800 font-medium focus:outline-none"
+            aria-label="Back to Projects"
+          >
+            <svg
+              className="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
             >
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-              Back to Projects
-            </button>
-          </div>
-          <div className="flex-1">
-            <Banner
-              bgClassName="bg-indigo-50"
-              textClassName="text-indigo-900"
-              borderClassName="border-indigo-300"
-              githubUrl="https://github.com/stephenahiggins/lfg_build_map"
-            >
-              The data available is currently for the{' '}
-              <strong>West Yorkshire</strong> region. We will be progressively
-              adding more data. If you know your way around TypeScript, you can
-              help by pulling the GitHub repo.
-            </Banner>
-          </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+            Back to Projects
+          </button>
         </div>
       </div>
       <main className="flex flex-1 flex-col gap-6 p-6">

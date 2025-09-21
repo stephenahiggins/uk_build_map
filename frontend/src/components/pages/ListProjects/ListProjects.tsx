@@ -227,16 +227,23 @@ const ListProjects: React.FC = () => {
         )}
       </Header>
       <div className="px-6 pt-4">
-        <Banner
-          bgClassName="bg-blue-50"
-          textClassName="text-blue-900"
-          borderClassName="border-blue-300"
-        >
+        <Banner className="banner banner-info">
           Can't find a project, or something not right?{' '}
           <a href="/project/add" className="underline font-medium">
             Let us know or add it.
           </a>
         </Banner>
+        <div className="mt-3">
+          <Banner
+            className="banner banner-highlight text-xs"
+            githubUrl="https://github.com/stephenahiggins/lfg_build_map"
+          >
+            The data available is currently for the{' '}
+            <strong>West Yorkshire</strong> region. We will be progressively
+            adding more data. If you know your way around TypeScript, you can
+            help by pulling the GitHub repo.
+          </Banner>
+        </div>
       </div>
       <div className="flex-1 p-6 overflow-auto">
         <div className="mb-6">

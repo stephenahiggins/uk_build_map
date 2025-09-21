@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logout from '../molecules/Logout';
+import Button from '../molecules/Button';
 import useUserStore, {
   USER_TYPE_ADMIN,
   USER_TYPE_MODERATOR,
@@ -45,7 +46,25 @@ const Navbar: React.FC = () => {
           </Link>
         )}
       </div>
-      <div className="flex items-center">{isLoggedIn && <Logout />}</div>
+      <div className="flex items-center gap-3">
+        {isLoggedIn ? (
+          <div className="flex items-center gap-3">
+            <span className="text-sm text-gray-600 hidden sm:block">
+              Welcome, {user.user_name}
+            </span>
+            <Logout />
+          </div>
+        ) : (
+          <div className="flex items-center gap-2">
+            <Link to="/auth/login">
+              <Button text="Login" variant="link" size="small" />
+            </Link>
+            <Link to="/auth/register">
+              <Button text="Register" variant="primary" size="small" />
+            </Link>
+          </div>
+        )}
+      </div>
     </nav>
   );
 };

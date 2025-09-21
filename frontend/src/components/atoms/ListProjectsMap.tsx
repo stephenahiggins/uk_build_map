@@ -1,5 +1,11 @@
-import React from 'react';
-import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet';
+import React, { useEffect } from 'react';
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Tooltip,
+  useMap,
+} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -17,6 +23,40 @@ interface ListProjectsMapProps {
 
 const DEFAULT_POSITION = { lat: 54, lng: -3 };
 const DEFAULT_ZOOM = 5.5;
+
+// Adjust the map boundaries to focus on the given projects
+// This is just a UX helper to avoid the user having to zoom out/in manually
+const FitBounds: React.FC<{ projects: Project[] }> = ({ projects }) => {
+  const map = useMap();
+
+  useEffect(() => {
+    const filtered = projects.filter(
+      (p) => p.latitude != null && p.longitude != null
+    );
+
+    if (filtered.length === 0) return;
+
+    if (filtered.length === 1) {
+      // If only one marker, center on it with a reasonable zoom
+      const project = filtered[0];
+      map.setView([project.latitude!, project.longitude!], 10);
+      return;
+    }
+
+    // Create bounds from all marker positions
+    const bounds = L.latLngBounds(
+      filtered.map((project) => [project.latitude!, project.longitude!])
+    );
+
+    // Fit the map to show all markers with padding
+    map.fitBounds(bounds, {
+      padding: [20, 20], // Add 20px padding on all sides
+      maxZoom: 12, // Prevent zooming in too far for better context
+    });
+  }, [map, projects]);
+
+  return null;
+};
 
 const getMarkerColor = (status: string) => {
   switch (status) {
@@ -36,7 +76,7 @@ const ListProjectsMap: React.FC<ListProjectsMapProps> = ({ projects }) => {
     (p) => p.latitude != null && p.longitude != null
   );
 
-  // Always center the map on DEFAULT_POSITION
+  // Use default center, but the FitBounds component will adjust it
   const center = DEFAULT_POSITION;
 
   return (
@@ -51,6 +91,7 @@ const ListProjectsMap: React.FC<ListProjectsMapProps> = ({ projects }) => {
         attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+      <FitBounds projects={projects} />
       {filtered.map((project) => {
         const markerIcon = new L.DivIcon({
           html: `<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'><circle cx='16' cy='16' r='10' fill='${getMarkerColor(
