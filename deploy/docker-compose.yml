@@ -1,0 +1,74 @@
+version: "3.9"
+
+services:
+  backend:
+    image: ${BACKEND_IMAGE}:${IMAGE_TAG}
+    restart: unless-stopped
+    env_file:
+      - ./env/backend.env
+    environment:
+      NODE_ENV: production
+      PORT: "5002"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - uploads:/app/uploads
+
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    env_file:
+      - ./env/mysql.env
+    command: ["mysqld", "--default-authentication-plugin=mysql_native_password", "--innodb-buffer-pool-size=256M"]
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 30s
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  caddy:
+    image: ${FRONTEND_IMAGE}:${IMAGE_TAG}
+    restart: unless-stopped
+    depends_on:
+      - backend
+    env_file:
+      - ./env/caddy.env
+    environment:
+      BACKEND_ORIGIN: http://backend:5002
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+      - uploads:/srv/uploads:ro
+
+volumes:
+  mysql_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /opt/lfg/data/mysql
+  uploads:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /opt/lfg/data/uploads
+  caddy_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /opt/lfg/data/caddy-data
+  caddy_config:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /opt/lfg/data/caddy-config
