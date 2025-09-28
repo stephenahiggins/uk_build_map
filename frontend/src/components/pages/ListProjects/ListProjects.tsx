@@ -178,7 +178,7 @@ const ListProjects: React.FC = () => {
 
   return (
     <div className="w-full h-full min-h-screen bg-gray-50 p-0 m-0 flex flex-col">
-      <Header title="Projects">
+      <Header title="Growth Spots">
         {showTypeFilters && (
           <div className="flex items-center space-x-4">
             <div className="flex w-full space-x-4">
@@ -226,14 +226,34 @@ const ListProjects: React.FC = () => {
           </div>
         )}
       </Header>
-      <div className="px-6 pt-4">
-        <Banner className="banner banner-info">
-          Can't find a project, or something not right?{' '}
-          <a href="/project/add" className="underline font-medium">
-            Let us know or add it.
-          </a>
-        </Banner>
-        <div className="mt-3">
+
+      <div className="flex-1 p-6 overflow-auto">
+        <div className="mb-1">
+          <SearchBar
+            placeholder="Search projects..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="mb-1"
+          />
+        </div>
+        <div className="mb-1 bg-white rounded-md border border-gray-200 p-6 shadow-sm">
+          <h2 className="text-lg font-semibold mb-2">About Growth Spots</h2>
+          <p className="text-sm text-gray-700 leading-relaxed">
+            This catalogue uses nationally available data to bring together
+            national infrastructure and civic improvement projects across
+            governance levels. Data will expand over time and may currently
+            focus on specific regions.
+          </p>
+        </div>
+        <div className="mb-1">
+          <Banner className="banner banner-info">
+            Can't find a project, or something not right?{' '}
+            <a href="/project/add" className="underline font-medium">
+              Let us know or add it.
+            </a>
+          </Banner>
+        </div>
+        <div className="mb-1">
           <Banner
             className="banner banner-highlight text-xs"
             githubUrl="https://github.com/stephenahiggins/lfg_build_map"
@@ -244,28 +264,7 @@ const ListProjects: React.FC = () => {
             help by pulling the GitHub repo.
           </Banner>
         </div>
-      </div>
-      <div className="flex-1 p-6 overflow-auto">
-        <div className="mb-6">
-          <SearchBar
-            placeholder="Search projects..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="mb-6"
-          />
-        </div>
-        <div className="mb-8 bg-white rounded-md border border-gray-200 p-6 shadow-sm">
-          <h2 className="text-lg font-semibold mb-2">About these projects</h2>
-          <p className="text-sm text-gray-700 leading-relaxed">
-            This catalogue brings together infrastructure and civic improvement
-            projects across governance levels. Data will expand over time and
-            may currently focus on specific regions. Use the filters (when
-            available) or search to narrow down results. You can help improve
-            the dataset by adding projects that are missing or updating existing
-            ones with new evidence.
-          </p>
-        </div>
-        <div className="flex flex-col md:flex-row gap-6 w-full">
+        <div className="flex flex-col md:flex-row gap-6 w-full mt-3">
           {/* Project List */}
           <div className={hasMapProjects ? 'w-full md:w-2/3' : 'w-full'}>
             {(loading || searchLoading) && <div>Loading projects...</div>}

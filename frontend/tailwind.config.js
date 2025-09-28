@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./components/**/*.{ts,tsx,js,jsx}",
-    "./node_modules/shadcn-ui/dist/**/*.{js,ts,jsx,tsx}",
+    './src/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{ts,tsx,js,jsx}',
+    './node_modules/shadcn-ui/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -14,6 +14,11 @@ module.exports = {
           dark: '#000000',
         },
       },
+      fontFamily: {
+        heading: ['Montserrat', 'sans-serif'],
+        content: ['Open Sans', 'sans-serif'],
+        sans: ['Open Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [
@@ -22,4 +27,4 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/line-clamp'),
   ],
-}
+};
