@@ -178,7 +178,10 @@ const ListProjects: React.FC = () => {
 
   return (
     <div className="w-full h-full min-h-screen bg-gray-50 p-0 m-0 flex flex-col">
-      <Header title="Growth Spots">
+      <Header
+        title="Growth Spots 🚀"
+        callout="This catalogue uses nationally available data to bring together national infrastructure and civic improvement projects across governance levels. Data will expand over time and may currently focus on specific regions."
+      >
         {showTypeFilters && (
           <div className="flex items-center space-x-4">
             <div className="flex w-full space-x-4">
@@ -235,15 +238,6 @@ const ListProjects: React.FC = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="mb-1"
           />
-        </div>
-        <div className="mb-1 bg-white rounded-md border border-gray-200 p-6 shadow-sm">
-          <h2 className="text-lg font-semibold mb-2">About Growth Spots</h2>
-          <p className="text-sm text-gray-700 leading-relaxed">
-            This catalogue uses nationally available data to bring together
-            national infrastructure and civic improvement projects across
-            governance levels. Data will expand over time and may currently
-            focus on specific regions.
-          </p>
         </div>
         <div className="mb-1">
           <Banner className="banner banner-info">
