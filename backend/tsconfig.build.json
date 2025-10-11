@@ -15,6 +15,9 @@
     "**/*.spec.ts",
     "**/*.spec.js",
     "*.spec.ts",
-    "**/spec.ts"
+    "**/spec.ts",
+    "**/*.test.ts",
+    "*.test.ts",
+    "**/test.ts"
   ]
 }

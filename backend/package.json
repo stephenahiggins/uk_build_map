@@ -19,7 +19,7 @@
     "recompute:evaluations": "ts-node scripts/recomputeProjectEvaluations.ts"
   },
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "npx ts-node --project tsnode.json prisma/seed.ts"
   },
   "_moduleAliases": {
     "@/src": "src/"
@@ -87,6 +87,7 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.2.0",
     "uuid": "^10.0.0",

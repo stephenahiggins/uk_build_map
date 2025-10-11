@@ -3,20 +3,14 @@ set -e
 
 # Run Prisma migrations
 # Wait for the database to be available
-/app/wait-for-it.sh db:3307 -- echo "Database is up"
+/app/wait-for-it.sh db:3306 -- echo "Database is up"
 
+# Deploy migrations without running seed (to avoid module-alias issues during deploy)
 npx prisma migrate deploy
 
-# Seed the database
-npm run seed
+# Run seed separately with proper node modules setup if needed
+# (Optional - remove this line if you don't want to seed on startup)
+# npx ts-node --project tsnode.json prisma/seed.ts
 
-# TypeScript build step (output errors to log)
-npm run build
-BUILD_STATUS=$?
-if [ $BUILD_STATUS -ne 0 ]; then
-	echo "TypeScript build failed with exit code $BUILD_STATUS"
-	exit $BUILD_STATUS
-fi
-
-# Start the application
-exec npm run dev
+# Start the pre-built application
+exec node dist/server.js

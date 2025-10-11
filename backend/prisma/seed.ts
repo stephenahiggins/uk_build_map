@@ -5,7 +5,7 @@ import { CountryCode, UserType } from '@prisma/client';
 import fetch from 'node-fetch';
 import { parse } from 'csv-parse/sync';
 import { createPrismaClient } from '../src/lib/createPrismaClient';
-const bcrypt = require('bcryptjs');
+import * as bcrypt from 'bcryptjs';
 
 const prisma = createPrismaClient();
 

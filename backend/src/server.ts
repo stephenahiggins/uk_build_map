@@ -1,4 +1,7 @@
-require('module-alias/register');
+// Only require module-alias if not in Docker
+if (!process.env.CI) {
+  require('module-alias/register');
+}
 import { Server } from 'http';
 import app from '@/src/app';
 import logger from '@/src/common/utils/logger';

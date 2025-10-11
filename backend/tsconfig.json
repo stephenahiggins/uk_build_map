@@ -9,6 +9,13 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "ES2020"
+    ],
     "paths": {
       "@/src/*": [
         "./src/*"
