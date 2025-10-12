@@ -18,25 +18,25 @@ const Header: React.FC<HeaderProps> = ({
   calloutComponent,
   calloutTextSize = 'text-sm',
 }) => (
-  <div className="w-full bg-white shadow p-6 flex flex-col md:flex-row md:items-start md:justify-between">
-    <div className="flex flex-col md:flex-row md:items-start gap-4 flex-1">
-      <h1 className="text-5xl font-bold mb-2 md:mb-0">{title}</h1>
+  <div className="w-full bg-white shadow p-6 flex flex-col lg:flex-row lg:items-start lg:justify-between">
+    <div className="flex flex-col lg:flex-row lg:items-start gap-4 flex-1">
+      <h1 className="text-5xl font-bold mb-2 lg:mb-0">{title}</h1>
       {callout && (
         <div
-          className={`${calloutTextSize} text-gray-600 flex-1 leading-relaxed pl-0 md:pl-6  pr-2 ${calloutComponent ? 'mb-4 md:mb-0' : ''}`}
+          className={`${calloutTextSize} text-gray-600 flex-1 leading-relaxed pl-0 lg:pl-6 pr-2 ${calloutComponent ? 'mb-4 lg:mb-0' : ''}`}
         >
           {callout}
         </div>
       )}
       {banner && (
-        <div className="hidden md:block flex-1 max-w-lg">{banner}</div>
+        <div className="hidden lg:block flex-1 max-w-lg">{banner}</div>
       )}
     </div>
     <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
       {calloutComponent}
       {children}
     </div>
-    {banner && <div className="md:hidden mt-4">{banner}</div>}
+    {banner && <div className="lg:hidden mt-4">{banner}</div>}
   </div>
 );
 
