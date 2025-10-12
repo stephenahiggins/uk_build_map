@@ -183,6 +183,32 @@ const ListProjects: React.FC = () => {
         <Header
           title="Growth Spots 🇬🇧"
           callout="Growth Spots shows you where the UK government is investing in local growth."
+          calloutTextSize="text-base"
+          calloutComponent={
+            <Callout
+              variant="info"
+              size="lg"
+              fontSize="base"
+              className="max-w-sm -ml-2"
+            >
+              <div>
+                <span>Data available for </span>
+                <strong>West Yorkshire</strong>
+                <span>
+                  {' '}
+                  region. We will be progressively adding more data.{' '}
+                </span>
+                <a
+                  href="https://github.com/stephenahiggins/lfg_build_map"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline font-medium hover:text-blue-600 transition-colors"
+                >
+                  Contribute on GitHub
+                </a>
+              </div>
+            </Callout>
+          }
         >
           {showTypeFilters && (
             <div className="flex items-center space-x-4">
@@ -233,31 +259,6 @@ const ListProjects: React.FC = () => {
             </div>
           )}
         </Header>
-
-        {/* West Yorkshire Data Callout - positioned as sticker */}
-        <div className="absolute top-4 right-4 z-10">
-          <Callout
-            icon="FiMapPin"
-            variant="info"
-            size="lg"
-            fontSize="base"
-            className="max-w-sm"
-          >
-            <div>
-              <span>Data available for </span>
-              <strong>West Yorkshire</strong>
-              <span> region. We will be progressively adding more data. </span>
-              <a
-                href="https://github.com/stephenahiggins/lfg_build_map"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline font-medium hover:text-blue-600 transition-colors"
-              >
-                Contribute on GitHub
-              </a>
-            </div>
-          </Callout>
-        </div>
       </div>
 
       <div className="flex-1 p-6 overflow-auto">
