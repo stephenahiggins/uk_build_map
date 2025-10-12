@@ -29,7 +29,8 @@
   "include": [
     "src/**/*",
     "src/v1/types",
-    "scripts/**/*"
+    "scripts/**/*",
+    "prisma/**/*.ts"
   ],
   "compileOnSave": true,
   "typeAcquisition": {

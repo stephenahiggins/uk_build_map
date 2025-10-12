@@ -12,5 +12,9 @@ npx prisma migrate deploy
 # (Optional - remove this line if you don't want to seed on startup)
 # npx ts-node --project tsnode.json prisma/seed.ts
 
+# Seed projects from LFG.sql file
+echo "Seeding projects from LFG.sql..."
+mysql -h db -u root -prootpassword node_boilerplate < /app/prisma/seed/LFG.sql || echo "Warning: Failed to seed from LFG.sql (may already be seeded)"
+
 # Start the pre-built application
 exec node dist/server.js
