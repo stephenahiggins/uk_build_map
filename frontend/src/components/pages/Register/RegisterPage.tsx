@@ -3,7 +3,6 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import Icon from '../../atoms/Icon';
-import { LogoIcon } from '../../../assets/icons/Icons';
 import Card from '../../atoms/Card';
 import Input from '../../atoms/Input';
 import Button from '../../molecules/Button';
@@ -67,7 +66,6 @@ const RegisterPage: React.FC = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="p-8 flex flex-col items-center justify-center gap-5">
-        <Icon src={LogoIcon} />
         <p>Create your account</p>
         <Card size="large" className="bg-gray-10 flex flex-col gap-5 p-10">
           <form

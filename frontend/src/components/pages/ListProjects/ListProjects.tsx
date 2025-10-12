@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { sortBy } from 'lodash';
 import Header from '../../organisms/Header';
 import Banner from '../../molecules/Banner';
+import Callout from '../../molecules/Callout';
 import { NationalMapIcon } from '../../atoms/NationalMapIcon';
 import { RegionalMapIcon } from '../../atoms/RegionalMapIcon';
 import { LocalMapIcon } from '../../atoms/LocalMapIcon';
@@ -178,57 +179,87 @@ const ListProjects: React.FC = () => {
 
   return (
     <div className="w-full h-full min-h-screen bg-gray-50 p-0 m-0 flex flex-col">
-      <Header
-        title="Growth Spots 🚀"
-        callout="This catalogue uses nationally available data to bring together national infrastructure and civic improvement projects across governance levels. Data will expand over time and may currently focus on specific regions."
-      >
-        {showTypeFilters && (
-          <div className="flex items-center space-x-4">
-            <div className="flex w-full space-x-4">
-              {[
-                { label: 'National', value: 'NATIONAL_GOV' },
-                { label: 'Regional', value: 'REGIONAL_GOV' },
-                { label: 'Local', value: 'LOCAL_GOV' },
-              ]
-                .filter((btn) => availableTypes.has(btn.value))
-                .map((btn) => (
-                  <button
-                    key={btn.value}
-                    onClick={() =>
-                      setProjectType(projectType === btn.value ? '' : btn.value)
-                    }
-                    className={clsx(
-                      'sub-page-header',
-                      'flex items-center justify-between flex-1 min-w-0 px-6 py-4 border-2 rounded-2xl sketchy-outline transition-colors duration-150 hover:bg-blue-50',
-                      {
-                        'bg-blue-100 border-blue-400':
-                          projectType === btn.value,
-                        'bg-white border-gray-400': projectType !== btn.value,
+      <div className="relative">
+        <Header
+          title="Growth Spots 🇬🇧"
+          callout="Growth Spots shows you where the UK government is investing in local growth."
+          calloutTextSize="text-base"
+          calloutComponent={
+            <Callout
+              variant="info"
+              size="lg"
+              fontSize="base"
+              className="max-w-sm -ml-2"
+            >
+              <div>
+                <span>Data available for </span>
+                <strong>West Yorkshire</strong>
+                <span>
+                  {' '}
+                  region. We will be progressively adding more data.{' '}
+                </span>
+                <a
+                  href="https://github.com/stephenahiggins/lfg_build_map"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline font-medium hover:text-blue-600 transition-colors"
+                >
+                  Contribute on GitHub
+                </a>
+              </div>
+            </Callout>
+          }
+        >
+          {showTypeFilters && (
+            <div className="flex items-center space-x-4">
+              <div className="flex w-full space-x-4">
+                {[
+                  { label: 'National', value: 'NATIONAL_GOV' },
+                  { label: 'Regional', value: 'REGIONAL_GOV' },
+                  { label: 'Local', value: 'LOCAL_GOV' },
+                ]
+                  .filter((btn) => availableTypes.has(btn.value))
+                  .map((btn) => (
+                    <button
+                      key={btn.value}
+                      onClick={() =>
+                        setProjectType(
+                          projectType === btn.value ? '' : btn.value
+                        )
                       }
-                    )}
-                    style={{
-                      fontFamily: 'Handwritten, sans-serif',
-                      fontSize: '1.25rem',
-                    }}
-                  >
-                    <span className="text-left">{btn.label}</span>
-                    <span className="ml-4 w-8 h-8 flex items-center">
-                      {btn.value === 'NATIONAL_GOV' && (
-                        <NationalMapIcon className="w-8 h-8" />
+                      className={clsx(
+                        'sub-page-header',
+                        'flex items-center justify-between flex-1 min-w-0 px-6 py-4 border-2 rounded-2xl sketchy-outline transition-colors duration-150 hover:bg-blue-50',
+                        {
+                          'bg-blue-100 border-blue-400':
+                            projectType === btn.value,
+                          'bg-white border-gray-400': projectType !== btn.value,
+                        }
                       )}
-                      {btn.value === 'REGIONAL_GOV' && (
-                        <RegionalMapIcon className="w-8 h-8" />
-                      )}
-                      {btn.value === 'LOCAL_GOV' && (
-                        <LocalMapIcon className="w-8 h-8" />
-                      )}
-                    </span>
-                  </button>
-                ))}
+                      style={{
+                        fontFamily: 'Handwritten, sans-serif',
+                        fontSize: '1.25rem',
+                      }}
+                    >
+                      <span className="text-left">{btn.label}</span>
+                      <span className="ml-4 w-8 h-8 flex items-center">
+                        {btn.value === 'NATIONAL_GOV' && (
+                          <NationalMapIcon className="w-8 h-8" />
+                        )}
+                        {btn.value === 'REGIONAL_GOV' && (
+                          <RegionalMapIcon className="w-8 h-8" />
+                        )}
+                        {btn.value === 'LOCAL_GOV' && (
+                          <LocalMapIcon className="w-8 h-8" />
+                        )}
+                      </span>
+                    </button>
+                  ))}
+              </div>
             </div>
-          </div>
-        )}
-      </Header>
+          )}
+        </Header>
+      </div>
 
       <div className="flex-1 p-6 overflow-auto">
         <div className="mb-1">
@@ -239,14 +270,7 @@ const ListProjects: React.FC = () => {
             className="mb-1"
           />
         </div>
-        <div className="mb-1">
-          <Banner className="banner banner-info">
-            Can't find a project, or something not right?{' '}
-            <a href="/project/add" className="underline font-medium">
-              Let us know or add it.
-            </a>
-          </Banner>
-        </div>
+        <div className="mb-1"></div>
         <div className="mb-1">
           <Banner
             className="banner banner-highlight text-xs"

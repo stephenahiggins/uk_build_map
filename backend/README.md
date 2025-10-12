@@ -183,6 +183,16 @@ DATABASE_URL="mysql://root:password@localhost:3306/node_boilerplate" #for local 
 docker-compose up --build
 ```
 
+**Note on Database Seeding:**  
+The application automatically seeds the database on startup:
+- **Users, Regions, and Local Authorities** are seeded via `prisma/seed.ts`
+- **Projects and Evidence** are seeded from `prisma/seed/LFG.sql`
+
+Both seeding operations run during container startup via `entrypoint.sh`. If you need to manually re-seed projects, run:
+```bash
+docker-compose exec db mysql -u root -prootpassword node_boilerplate < prisma/seed/LFG.sql
+```
+
 ### 4. Accessing the Application
 
 Once the containers are up and running, you can access the application at: http://localhost:5002
