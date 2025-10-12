@@ -114,14 +114,18 @@ const Callout: React.FC<CalloutProps> = ({
     if (typeof icon === 'string') {
       const IconComponent = Icons[icon as keyof typeof Icons];
       return IconComponent ? (
-        <IconComponent 
-          className={`${iconSizeClass} mr-2`} 
+        <IconComponent
+          className={`${iconSizeClass} mr-2`}
           style={iconSizeStyle}
         />
       ) : null;
     }
 
-    return <span className="mr-2" style={iconSizeStyle}>{icon}</span>;
+    return (
+      <span className="mr-2" style={iconSizeStyle}>
+        {icon}
+      </span>
+    );
   };
 
   return (

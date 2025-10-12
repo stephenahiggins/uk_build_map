@@ -47,10 +47,20 @@ const CalloutExamples: React.FC = () => {
 
           {/* Custom pixel size examples */}
           <div className="flex flex-wrap gap-2">
-            <Callout icon="FiSettings" variant="info" fontSize={12} iconSize={16}>
+            <Callout
+              icon="FiSettings"
+              variant="info"
+              fontSize={12}
+              iconSize={16}
+            >
               Custom 12px font, 16px icon
             </Callout>
-            <Callout icon="FiMapPin" variant="success" fontSize={18} iconSize={24}>
+            <Callout
+              icon="FiMapPin"
+              variant="success"
+              fontSize={18}
+              iconSize={24}
+            >
               Custom 18px font, 24px icon
             </Callout>
             <Callout icon="FiZap" variant="warning" fontSize={14} iconSize={20}>
