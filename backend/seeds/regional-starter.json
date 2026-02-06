@@ -278,13 +278,7 @@
             "statusRationale": "Government funding agreement in principle (CRSTS) 2022; procurement and detailed design under way with staged renewals through the 2020s.",
             "latitude": 53.381,
             "longitude": -1.47
-        }
-
-        "status": "DELIVERY",
-        "statusRationale": "Government approval granted December 2022; site infrastructure works under way.",
-        "latitude": 50.377,
-        "longitude": -4.174
-    },
+        },
     {
         "id": "leeds-station-improvement",
         "title": "Leeds Integrated Station Masterplan",

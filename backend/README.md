@@ -186,11 +186,16 @@ docker-compose up --build
 **Note on Database Seeding:**  
 The application automatically seeds the database on startup:
 - **Users, Regions, and Local Authorities** are seeded via `prisma/seed.ts`
-- **Projects and Evidence** are seeded from `prisma/seed/LFG.sql`
+- **Projects and Evidence** can be seeded from JSON files in `seeds/` using `scripts/seedProjectsFromFile.ts`
 
-Both seeding operations run during container startup via `entrypoint.sh`. If you need to manually re-seed projects, run:
+To seed everything manually (including the default `seeds/projects.seed.json`), run:
 ```bash
-docker-compose exec db mysql -u root -prootpassword node_boilerplate < prisma/seed/LFG.sql
+make seed
+```
+
+To seed projects from a specific JSON file, run:
+```bash
+make seed-projects SEED=seeds/national-starter.json
 ```
 
 ### 4. Accessing the Application
@@ -203,7 +208,6 @@ To stop and remove the containers, use:
 ```
 docker-compose down
 ```
-
 
 
 

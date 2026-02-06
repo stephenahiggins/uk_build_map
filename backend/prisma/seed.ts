@@ -1,7 +1,7 @@
 // Project seeding is now done from prisma/seed/LFG.sql
 // To seed projects, run: docker-compose exec db mysql -u root -prootpassword node_boilerplate < prisma/seed/LFG.sql
 // This seed file only handles users, regions, and local authorities.
-
+/// <reference path="./bcryptjs.d.ts" />
 import { CountryCode, UserType } from '@prisma/client';
 // Removed CSV download + parsing; authorities are now hard-coded.
 import { createPrismaClient } from '../src/lib/createPrismaClient';
