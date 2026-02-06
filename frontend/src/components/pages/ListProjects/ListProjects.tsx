@@ -199,7 +199,7 @@ const ListProjects: React.FC = () => {
                   region. We will be progressively adding more data.{' '}
                 </span>
                 <a
-                  href="https://github.com/stephenahiggins/lfg_build_map"
+                  href="https://github.com/stephenahiggins/uk_build_map"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline font-medium hover:text-blue-600 transition-colors"
@@ -274,7 +274,7 @@ const ListProjects: React.FC = () => {
         <div className="mb-1">
           <Banner
             className="banner banner-highlight text-xs"
-            githubUrl="https://github.com/stephenahiggins/lfg_build_map"
+            githubUrl="https://github.com/stephenahiggins/uk_build_map"
           >
             The data available is currently for the{' '}
             <strong>West Yorkshire</strong> region. We will be progressively

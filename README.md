@@ -1,6 +1,6 @@
-# LFG Project
+# UK Growth Map
 
-This repository contains the codebase for the LFG OKR tracking platform, which provides a platform for tracking local government projects and user engagement.
+A map of UK growth projects. This project use an agentic LLM to harvest data and an express backend and custom frontend. 
 
 ## Project Structure
 
