@@ -1,5 +1,7 @@
 # UK Growth Map
 
+![UK Growth Map logo](frontend/public/logo192.png)
+
 A map of UK growth projects. This project use an agentic LLM to harvest data and an express backend and custom frontend. 
 
 ## Project Structure
