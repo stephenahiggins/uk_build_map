@@ -1,6 +1,6 @@
 import { Command } from "commander";
 import { fileURLToPath } from "url";
-import { upsertProject } from "./store";
+import { getExistingProjectTitleMap, upsertProject } from "./store";
 import { ProjectStatus, ProjectFoundItem } from "./types/projectEvidence";
 import { searchInfrastructureProjects, gatherEvidenceWithGemini } from "./geminiService";
 import { validateEnvValues, envValues } from "./envValues";
@@ -8,6 +8,15 @@ import { migrateAgentsDataToBackend } from "./migrateBackend";
 import { log } from "./logger";
 import { normalizeProjectTitle } from "./utils/projectNormalization";
 import { evaluateProjectWithGemini } from "../../backend/src/lib/projectEvaluation";
+import { createLlmBudget } from "./llmBudget";
+import {
+  getGeminiApiKey,
+  handleGeminiRateLimit,
+  isGeminiRateLimitError,
+} from "./geminiRuntime";
+import { fetchFromConnectors, resolveConnectorNames } from "./connectors";
+import type { ConnectorProject, ConnectorEvidence } from "./connectors/types";
+import { listStageFiles, readStageFile, writeStageFile } from "./staging";
 
 type CliOptions = {
   locale?: string;
@@ -15,6 +24,13 @@ type CliOptions = {
   fetch?: number; // minimum projects to fetch
   maxEvidence?: number; // evidence items per project
   concurrency?: number; // parallel workers
+  noLlm?: boolean;
+  llmBudget?: number;
+  ukWide?: boolean;
+  connectors?: string;
+  connectorsOnly?: boolean;
+  since?: string;
+  stage?: boolean;
 };
 
 type InfrastructureProject = Awaited<
@@ -27,6 +43,13 @@ function parseScrapeCliOptions(raw: Record<string, any>): CliOptions {
   if (raw.fetch !== undefined) parsed.fetch = parseInt(raw.fetch, 10);
   if (raw.maxEvidence !== undefined) parsed.maxEvidence = parseInt(raw.maxEvidence, 10);
   if (raw.concurrency !== undefined) parsed.concurrency = parseInt(raw.concurrency, 10);
+  if (raw.llmBudget !== undefined) parsed.llmBudget = parseInt(raw.llmBudget, 10);
+  if (raw.noLlm !== undefined) parsed.noLlm = Boolean(raw.noLlm);
+  if (raw.ukWide !== undefined) parsed.ukWide = Boolean(raw.ukWide);
+  if (raw.connectors !== undefined) parsed.connectors = String(raw.connectors);
+  if (raw.connectorsOnly !== undefined) parsed.connectorsOnly = Boolean(raw.connectorsOnly);
+  if (raw.since !== undefined) parsed.since = String(raw.since);
+  if (raw.stage !== undefined) parsed.stage = Boolean(raw.stage);
   return parsed;
 }
 
@@ -45,8 +68,27 @@ const FOCUS_THEMES = [
 const MIN_PASS_TARGET = 25;
 const MAX_ATTEMPTS_PER_LOCALE = 4;
 const EXISTING_TITLE_PROMPT_COUNT = 60;
+const UK_WIDE_LOCALES = [
+  "United Kingdom",
+  "England",
+  "Scotland",
+  "Wales",
+  "Northern Ireland",
+  "North East",
+  "North West",
+  "Yorkshire and the Humber",
+  "East Midlands",
+  "West Midlands",
+  "East of England",
+  "London",
+  "South East",
+  "South West",
+];
 
-function resolveSearchLocales(localeInput: string): string[] {
+function resolveSearchLocales(localeInput: string, useUkWide: boolean): string[] {
+  if (useUkWide) {
+    return UK_WIDE_LOCALES;
+  }
   const trimmed = localeInput.trim();
   const segments = trimmed
     .split(",")
@@ -76,7 +118,11 @@ function resolveSearchLocales(localeInput: string): string[] {
   return result;
 }
 
-async function collectProjectsAcrossLocales(locales: string[], minFetch: number) {
+async function collectProjectsAcrossLocales(
+  locales: string[],
+  minFetch: number,
+  llmBudget: ReturnType<typeof createLlmBudget>
+) {
   const searchLocales = locales.map((locale) => locale.trim()).filter(Boolean);
   if (!searchLocales.length) {
     throw new Error("No valid locales provided for search");
@@ -134,7 +180,10 @@ async function collectProjectsAcrossLocales(locales: string[], minFetch: number)
         focusHint ? ` (focus: ${focusHint})` : ""
       } excluding ${existing.length} known titles`
     );
-    const result = await searchInfrastructureProjects(trimmedLocale, target, existing, focusHint);
+    const canSearch = llmBudget.consume(`project search (${trimmedLocale})`);
+    const result = await searchInfrastructureProjects(trimmedLocale, target, existing, focusHint, {
+      forceMock: !canSearch,
+    });
     log(`[Search] ${trimmedLocale} returned ${result.projects.length} project(s)`);
     appendSummary(trimmedLocale, result.summary);
     absorbProjects(trimmedLocale, result.projects);
@@ -207,6 +256,7 @@ if (isDirectRun) {
       "local region to search for infrastructure projects",
       "West Yorkshire"
     )
+    .option("--uk-wide", "run a UK-wide search across nations and English regions")
     .option("-n, --limit <number>", "max projects to process (default: all fetched)")
     .option(
       "-f, --fetch <number>",
@@ -223,11 +273,106 @@ if (isDirectRun) {
       "number of projects to process concurrently (default: 3)",
       "3"
     )
+    .option("--no-llm", "disable LLM calls and use mock outputs where possible")
+    .option(
+      "--llm-budget <number>",
+      "max LLM calls to spend before falling back to mock outputs"
+    )
+    .option(
+      "--connectors <list>",
+      "comma-separated connector list (e.g. local-json); falls back to CONNECTORS env"
+    )
+    .option("--connectors-only", "skip LLM discovery and rely on connectors only")
+    .option("--since <date>", "incremental pull: only use connector data since YYYY-MM-DD")
+    .option("--stage", "write results to staging instead of committing to the database")
     .action(async (rawOpts) => {
       const parsed = parseScrapeCliOptions(rawOpts);
       await main(parsed);
     });
 
+  program
+    .command("loop")
+    .description("Run a UK-wide backfill followed by incremental refresh cycles")
+    .option("--uk-wide", "run a UK-wide search across nations and English regions")
+    .option("--backfill-fetch <number>", "backfill fetch target", "200")
+    .option("--incremental-fetch <number>", "incremental fetch target", "50")
+    .option(
+      "--interval-hours <number>",
+      "repeat incremental runs every N hours (omit to run once)"
+    )
+    .option("--no-llm", "disable LLM calls and use mock outputs where possible")
+    .option(
+      "--llm-budget <number>",
+      "max LLM calls to spend before falling back to mock outputs"
+    )
+    .option(
+      "--connectors <list>",
+      "comma-separated connector list (e.g. local-json); falls back to CONNECTORS env"
+    )
+    .option("--connectors-only", "skip LLM discovery and rely on connectors only")
+    .option("-e, --max-evidence <number>", "max evidence items to gather per project", "5")
+    .option("-c, --concurrency <number>", "number of projects to process concurrently", "3")
+    .action(async (rawOpts) => {
+      const parsed = parseScrapeCliOptions(rawOpts);
+      const backfillFetch = rawOpts.backfillFetch ? parseInt(rawOpts.backfillFetch, 10) : 200;
+      const incrementalFetch = rawOpts.incrementalFetch
+        ? parseInt(rawOpts.incrementalFetch, 10)
+        : 50;
+      const intervalHours = rawOpts.intervalHours
+        ? parseFloat(rawOpts.intervalHours)
+        : undefined;
+
+      const baseOpts: CliOptions = {
+        ...parsed,
+        ukWide: Boolean(rawOpts.ukWide ?? parsed.ukWide),
+      };
+
+      log("Starting backfill run...");
+      await main({
+        ...baseOpts,
+        fetch: backfillFetch,
+      });
+
+      const runIncremental = async () => {
+        log("Starting incremental refresh run...");
+        await main({
+          ...baseOpts,
+          fetch: incrementalFetch,
+          since: baseOpts.since,
+        });
+      };
+
+      if (intervalHours && intervalHours > 0) {
+        const intervalMs = intervalHours * 60 * 60 * 1000;
+        log(`Scheduling incremental runs every ${intervalHours} hour(s)`);
+        await runIncremental();
+        setInterval(runIncremental, intervalMs);
+        return;
+      }
+
+      await runIncremental();
+    });
+
+  program
+    .command("commit-staged")
+    .description("Commit staged scrape data into the database with duplicate checks")
+    .option("--file <path>", "path to a specific staged file")
+    .option("--all", "commit all staged files in the staging directory")
+    .action(async (cmdOpts) => {
+      const files: string[] = [];
+      if (cmdOpts.file) {
+        files.push(cmdOpts.file);
+      }
+      if (cmdOpts.all || !files.length) {
+        const stagedFiles = await listStageFiles();
+        files.push(...stagedFiles);
+      }
+      if (!files.length) {
+        log("No staged files found to commit.");
+        return;
+      }
+      await commitStagedFiles(files);
+    });
   program
     .command("migrate-backend")
     .description("Copy the scraped SQLite data into the backend service database")
@@ -264,31 +409,53 @@ if (isDirectRun) {
 
 async function run(opts: CliOptions) {
   if (!opts.locale) throw new Error("You must specify a locale using --locale or -l");
-  const locale = opts.locale;
-  const searchLocales = resolveSearchLocales(locale);
+  const locale = opts.ukWide ? "United Kingdom" : opts.locale;
+  const llmBudget = createLlmBudget({
+    noLlm: Boolean(opts.noLlm ?? envValues.NO_LLM),
+    maxCalls: opts.llmBudget ?? envValues.LLM_BUDGET,
+  });
+  const searchLocales = resolveSearchLocales(locale, Boolean(opts.ukWide));
   if (!searchLocales.length) throw new Error("No valid locale segments derived from input");
 
-  log("Searching for infrastructure projects in", locale);
+  log(
+    "Searching for infrastructure projects in",
+    opts.ukWide ? "United Kingdom (UK-wide)" : locale
+  );
+  log(llmBudget.summary());
   if (searchLocales.length > 1) {
     log("Derived search areas:", searchLocales.join(", "));
   }
 
   const minFetch = opts.fetch ?? opts.limit ?? 100;
   log(`Targeting at least ${minFetch} unique projects`);
-  const searchResults = await collectProjectsAcrossLocales(searchLocales, minFetch);
+  const connectorNames = resolveConnectorNames(opts.connectors);
+  const sinceDate = opts.since ? new Date(opts.since) : null;
+  const connectorProjects = connectorNames.length
+    ? await fetchFromConnectors(connectorNames, sinceDate)
+    : [];
+
+  if (connectorNames.length) {
+    log(
+      `[Connectors] Loaded ${connectorProjects.length} project(s) from ${connectorNames.join(", ")}`
+    );
+  }
+
+  const searchResults = opts.connectorsOnly
+    ? { projects: [], summary: "connectors-only run" }
+    : await collectProjectsAcrossLocales(searchLocales, minFetch, llmBudget);
   log(`Found ${searchResults.projects.length} unique infrastructure projects`);
 
   const processedProjects: ProjectStatus[] = [];
+  const combinedProjects = mergeConnectorProjects(connectorProjects, searchResults.projects);
   const toProcess =
-    opts.limit && opts.limit > 0
-      ? searchResults.projects.slice(0, opts.limit)
-      : searchResults.projects;
+    opts.limit && opts.limit > 0 ? combinedProjects.slice(0, opts.limit) : combinedProjects;
   const maxEvidencePerProject = opts.maxEvidence ?? 10;
   const concurrency = Math.max(1, Math.min(opts.concurrency ?? 3, 10));
   log(
     `Processing ${toProcess.length} projects (concurrency=${concurrency}, maxEvidence=${maxEvidencePerProject})`
   );
 
+  const connectorEvidenceMap = buildConnectorEvidenceMap(connectorProjects);
   const queue = [...toProcess];
   async function worker(id: number) {
     while (queue.length) {
@@ -296,7 +463,15 @@ async function run(opts: CliOptions) {
       if (!project) break;
       log(`[W${id}] Gathering ${maxEvidencePerProject} evidence pieces for ${project.title}`);
       try {
-        await processSingleProject(project, locale, maxEvidencePerProject, processedProjects);
+        await processSingleProject(
+          project,
+          locale,
+          maxEvidencePerProject,
+          processedProjects,
+          llmBudget,
+          connectorEvidenceMap.get(normalizeProjectTitle(project.title)),
+          !opts.stage
+        );
       } catch (e: any) {
         log(`[W${id}] Error processing ${project.title}:`, e?.message || e);
       }
@@ -306,6 +481,14 @@ async function run(opts: CliOptions) {
 
   log(`\nCompleted processing ${processedProjects.length} infrastructure projects`);
   log("Search summary:", searchResults.summary);
+
+  if (opts.stage) {
+    const stageFile = await writeStageFile(
+      processedProjects,
+      opts.ukWide ? "UK-wide" : locale
+    );
+    log(`Staged ${processedProjects.length} project(s) to ${stageFile}`);
+  }
 }
 
 async function processSingleProject(
@@ -318,26 +501,37 @@ async function processSingleProject(
   },
   locale: string,
   maxEvidence: number,
-  processedProjects: ProjectStatus[]
+  processedProjects: ProjectStatus[],
+  llmBudget: ReturnType<typeof createLlmBudget>,
+  seedEvidence?: ProjectFoundItem[],
+  commitToDb: boolean = true
 ) {
-  const evidenceResults = await gatherEvidenceWithGemini(
-    project.title,
-    project.description,
-    locale,
-    maxEvidence
-  );
-  const evidenceItems: ProjectFoundItem[] = evidenceResults.evidence.map((e) => ({
-    timestamp: e.gatheredDate,
-    sourceUrl: e.sourceUrl,
-    summary: e.summary,
-    sentiment: "Neutral",
-    rawText: e.rawText,
-    source: e.source,
-    title: e.title,
-    evidenceDate: e.evidenceDate,
-    gatheredDate: e.gatheredDate,
-    gatheredBy: e.gatheredBy,
-  }));
+  let evidenceItems: ProjectFoundItem[] = seedEvidence && seedEvidence.length ? seedEvidence : [];
+  let evidenceResultsSummary = "";
+
+  if (!evidenceItems.length) {
+    const canGatherEvidence = llmBudget.consume("evidence gathering");
+    const evidenceResults = await gatherEvidenceWithGemini(
+      project.title,
+      project.description,
+      locale,
+      maxEvidence,
+      { forceMock: !canGatherEvidence }
+    );
+    evidenceResultsSummary = evidenceResults.summary;
+    evidenceItems = evidenceResults.evidence.map((e) => ({
+      timestamp: e.gatheredDate,
+      sourceUrl: e.sourceUrl,
+      summary: e.summary,
+      sentiment: "Neutral",
+      rawText: e.rawText,
+      source: e.source,
+      title: e.title,
+      evidenceDate: e.evidenceDate,
+      gatheredDate: e.gatheredDate,
+      gatheredBy: e.gatheredBy,
+    }));
+  }
 
   log(`\nEvidence gathered for ${project.title}:`);
   log(`\nNumber of evidence items: ${evidenceItems.length}`);
@@ -369,12 +563,13 @@ async function processSingleProject(
   };
 
   log(`Evaluating project status and location for: ${project.title}...`);
-  const evaluation = await evaluateProjectWithGemini(
+  const canEvaluate = llmBudget.consume("project evaluation");
+  const evaluation = await evaluateProjectWithRetry(
     {
       projectName: project.title,
       projectDescription: project.description,
       locale,
-      evidence: evidenceResults.evidence.map((item) => ({
+      evidence: evidenceItems.map((item) => ({
         title: item.title,
         summary: item.summary,
         source: item.source,
@@ -384,9 +579,9 @@ async function processSingleProject(
       })),
     },
     {
-      apiKey: envValues.GEMINI_API_KEY,
+      apiKey: getGeminiApiKey(),
       model: envValues.MODEL,
-      mockResponse: envValues.MOCK_PROJECT_EVALUATION,
+      mockResponse: envValues.MOCK_PROJECT_EVALUATION || !canEvaluate,
     }
   );
 
@@ -398,7 +593,9 @@ async function processSingleProject(
   projectStatus.locationSource = evaluation.locationSource;
   projectStatus.locationConfidence = evaluation.locationConfidence;
 
-  await upsertProject(projectStatus);
+  if (commitToDb) {
+    await upsertProject(projectStatus);
+  }
   processedProjects.push(projectStatus);
   log(
     `Project ${project.title} processed with status: ${projectStatus.status}${
@@ -413,5 +610,131 @@ async function processSingleProject(
     );
   }
   log(`Evidence gathered: ${evidenceItems.length} items`);
+  if (evidenceResultsSummary) {
+    log(`Evidence summary: ${evidenceResultsSummary}`);
+  }
 }
 // end processSingleProject
+
+async function commitStagedFiles(files: string[]) {
+  const existingTitleMap = await getExistingProjectTitleMap();
+  const seenTitles = new Set<string>();
+  let committed = 0;
+  let skipped = 0;
+
+  for (const file of files) {
+    const payload = await readStageFile(file);
+    log(
+      `Committing ${payload.projects.length} staged project(s) from ${file} (created ${payload.createdAt})`
+    );
+
+    for (const project of payload.projects) {
+      const normalized = normalizeProjectTitle(project.name);
+      if (normalized && seenTitles.has(normalized)) {
+        skipped += 1;
+        continue;
+      }
+      if (normalized) {
+        const existingId = existingTitleMap.get(normalized);
+        if (existingId) {
+          project.id = existingId;
+        } else {
+          existingTitleMap.set(normalized, project.id);
+        }
+        seenTitles.add(normalized);
+      }
+      await upsertProject(project);
+      committed += 1;
+    }
+  }
+
+  log(`Committed ${committed} project(s). Skipped ${skipped} duplicate(s) in staging.`);
+}
+
+function mergeConnectorProjects(
+  connectors: ConnectorProject[],
+  discovered: InfrastructureProject[]
+): InfrastructureProject[] {
+  const merged: InfrastructureProject[] = [];
+  const seen = new Set<string>();
+
+  const add = (project: InfrastructureProject) => {
+    const normalized = normalizeProjectTitle(project.title);
+    if (!normalized || seen.has(normalized)) return;
+    seen.add(normalized);
+    merged.push(project);
+  };
+
+  connectors.forEach((project) => add(connectorToInfrastructure(project)));
+  discovered.forEach((project) => add(project));
+
+  return merged;
+}
+
+function connectorToInfrastructure(project: ConnectorProject): InfrastructureProject {
+  return {
+    title: project.title,
+    description: project.description,
+    status: project.status || "Planning",
+    source: project.source,
+    url: project.url,
+    latitude: project.latitude,
+    longitude: project.longitude,
+    localAuthority: project.localAuthority,
+    region: project.region,
+  };
+}
+
+function buildConnectorEvidenceMap(projects: ConnectorProject[]) {
+  const map = new Map<string, ProjectFoundItem[]>();
+  for (const project of projects) {
+    if (!project.evidence || !project.evidence.length) continue;
+    const normalized = normalizeProjectTitle(project.title);
+    if (!normalized) continue;
+    map.set(normalized, project.evidence.map(toProjectFoundItem));
+  }
+  return map;
+}
+
+function toProjectFoundItem(evidence: ConnectorEvidence): ProjectFoundItem {
+  return {
+    timestamp: evidence.evidenceDate,
+    sourceUrl: evidence.sourceUrl,
+    summary: evidence.summary,
+    sentiment: "Neutral",
+    rawText: evidence.rawText ?? "",
+    source: evidence.source,
+    title: evidence.title,
+    evidenceDate: evidence.evidenceDate,
+    gatheredDate: evidence.evidenceDate,
+    gatheredBy: "connector",
+  };
+}
+
+async function evaluateProjectWithRetry(
+  input: Parameters<typeof evaluateProjectWithGemini>[0],
+  options: Parameters<typeof evaluateProjectWithGemini>[1]
+) {
+  const mutableOptions = {
+    ...options,
+    apiKey: options?.apiKey ?? "",
+  };
+  while (true) {
+    try {
+      return await evaluateProjectWithGemini(input, mutableOptions);
+    } catch (err) {
+      if (!isGeminiRateLimitError(err)) {
+        throw err;
+      }
+      const action = await handleGeminiRateLimit("project evaluation");
+      if (action === "abort") {
+        throw err;
+      }
+      const nextKey = getGeminiApiKey();
+      if (!nextKey) {
+        throw err;
+      }
+      mutableOptions.apiKey = nextKey;
+    }
+  }
+}

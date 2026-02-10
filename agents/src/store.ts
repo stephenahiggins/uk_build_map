@@ -3,6 +3,7 @@ import { ProjectStatus } from "./types/projectEvidence";
 import { v4 as uuidv4 } from "uuid";
 import { PROJECT_TYPE, EVIDENCE_TYPE } from "./constants";
 import crypto from "node:crypto";
+import { normalizeProjectTitle } from "./utils/projectNormalization";
 
 const prisma = new PrismaClient();
 
@@ -108,4 +109,17 @@ export async function upsertProject(project: ProjectStatus) {
   }
 
   return persistedProject;
+}
+
+export async function getExistingProjectTitleMap() {
+  const projects = await prisma.project.findMany({
+    select: { id: true, title: true },
+  });
+  const map = new Map<string, string>();
+  for (const project of projects) {
+    const title = project.title ? normalizeProjectTitle(project.title) : "";
+    if (!title) continue;
+    map.set(title, project.id);
+  }
+  return map;
 }

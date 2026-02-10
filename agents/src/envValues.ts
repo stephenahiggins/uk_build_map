@@ -25,6 +25,8 @@ export const envValues = {
   PROVIDER: process.env.PROVIDER || "google",
   LOCALE: process.env.LOCALE || "West Yorkshire",
   MAX_RESULTS: Number(process.env.MAX_RESULTS) || 5,
+  CONNECTORS: process.env.CONNECTORS,
+  LOCAL_PROJECTS_JSON: process.env.LOCAL_PROJECTS_JSON,
 
   // Testing and Development
   MOCK_EVIDENCE_ANALYSIS: process.env.MOCK_EVIDENCE_ANALYSIS === "true",
@@ -32,11 +34,13 @@ export const envValues = {
   MOCK_INFRASTRUCTURE_SEARCH: process.env.MOCK_INFRASTRUCTURE_SEARCH === "true",
   MOCK_EVIDENCE_GATHERING: process.env.MOCK_EVIDENCE_GATHERING === "true",
   MOCK_PROJECT_EVALUATION: process.env.MOCK_PROJECT_EVALUATION === "true",
+  NO_LLM: process.env.NO_LLM === "true",
+  LLM_BUDGET: process.env.LLM_BUDGET ? Number(process.env.LLM_BUDGET) : undefined,
 } as const;
 
 // Validation function to ensure required environment variables are set
 export function validateEnvValues(): void {
-  if (!envValues.GEMINI_API_KEY && !envValues.OPENAI_API_KEY) {
+  if (!envValues.NO_LLM && !envValues.GEMINI_API_KEY && !envValues.OPENAI_API_KEY) {
     throw new Error(
       `Missing API Key: Please set either GEMINI_API_KEY or OPENAI_API_KEY in your .env file.`
     );
