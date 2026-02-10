@@ -1,12 +1,7 @@
-import { GoogleGenAI } from "@google/genai";
 import { ProjectFoundItem, ProjectStatus } from "./types/projectEvidence";
 import { envValues } from "./envValues";
 import { evaluateProjectWithGemini as evaluateProjectInsights } from "../../backend/src/lib/projectEvaluation";
-
-// Initialize Gemini client
-const ai = new GoogleGenAI({
-  apiKey: envValues.GEMINI_API_KEY,
-});
+import { generateContentWithRetry } from "./geminiRuntime";
 
 /**
  * Map of English regions for validation and lookup
@@ -631,7 +626,8 @@ export async function searchInfrastructureProjects(
   locale: string,
   minResults: number = 50,
   existingTitles: string[] = [],
-  focusTheme?: string
+  focusTheme?: string,
+  options?: { forceMock?: boolean }
 ): Promise<{
   projects: Array<{
     title: string;
@@ -647,7 +643,7 @@ export async function searchInfrastructureProjects(
   summary: string;
 }> {
   // Check if mock response is enabled
-  if (envValues.MOCK_INFRASTRUCTURE_SEARCH) {
+  if (options?.forceMock || envValues.MOCK_INFRASTRUCTURE_SEARCH) {
     console.log(
       "⚠️ ⚠️ Using mock response for infrastructure projects search. To use real results, set MOCK_INFRASTRUCTURE_SEARCH ⚠️ ⚠️"
     );
@@ -683,7 +679,7 @@ ${dedupeTitles.map((title) => `- ${title}`).join("\n")}`
     tools: [groundingTool],
   };
 
-  const model = ai.models.generateContent({
+  const response = await generateContentWithRetry("project search", {
     model: "gemini-2.5-flash",
     contents: `You are collecting a comprehensive structured dataset of infrastructure projects in ${locale}.
 
@@ -745,7 +741,6 @@ Return JSON object shape:
     config: modelConfig,
   });
   try {
-    const response = await model;
     let responseText = response.text || "";
     console.log("Raw response text:", responseText);
 
@@ -795,7 +790,7 @@ export async function analyseEvidenceWithGemini(evidenceItems: ProjectFoundItem[
     return getMockEvidenceAnalysis(evidenceItems);
   }
 
-  const model = ai.models.generateContent({
+  const response = await generateContentWithRetry("evidence analysis", {
     model: "gemini-2.5-flash",
     contents: `Analyze the following government announcements and evidence items. 
     For each item, provide a brief summary and determine the overall sentiment and project status.
@@ -822,7 +817,6 @@ export async function analyseEvidenceWithGemini(evidenceItems: ProjectFoundItem[
   });
 
   try {
-    const response = await model;
     let responseText = response.text || "";
 
     // Clean the response text - remove markdown code blocks if present
@@ -924,7 +918,7 @@ export async function getProjectStatusWithGemini(
     })
     .join("\n\n");
 
-  const model = ai.models.generateContent({
+  const response = await generateContentWithRetry("project status", {
     model: "gemini-2.5-flash",
     contents: `You are an expert infrastructure project analyst. Analyze the following project and its evidence to determine the project status.
 
@@ -970,7 +964,6 @@ Return only one word: Red, Amber, or Green.`,
   });
 
   try {
-    const response = await model;
     const status = (response.text || "").trim().toLowerCase();
 
     if (status.includes("red")) return "Red";
@@ -1154,7 +1147,8 @@ export async function gatherEvidenceWithGemini(
   projectTitle: string,
   projectDescription: string,
   locale: string,
-  maxEvidencePieces: number = 10
+  maxEvidencePieces: number = 10,
+  options?: { forceMock?: boolean }
 ): Promise<{
   evidence: Array<{
     title: string;
@@ -1179,7 +1173,7 @@ export async function gatherEvidenceWithGemini(
   };
 }> {
   // Check if mock response is enabled
-  if (envValues.MOCK_EVIDENCE_GATHERING) {
+  if (options?.forceMock || envValues.MOCK_EVIDENCE_GATHERING) {
     console.log(
       "⚠️ ⚠️ Using mock response for evidence gathering. To use real results, set MOCK_EVIDENCE_GATHERING ⚠️ ⚠️"
     );
@@ -1196,7 +1190,7 @@ export async function gatherEvidenceWithGemini(
     tools: [groundingTool],
   };
 
-  const model = ai.models.generateContent({
+  const response = await generateContentWithRetry("evidence gathering", {
     model: "gemini-2.5-flash",
     contents: `Search for evidence and information about the infrastructure project: "${projectTitle}" in ${locale}.
     
@@ -1273,7 +1267,6 @@ export async function gatherEvidenceWithGemini(
   });
 
   try {
-    const response = await model;
     let responseText = response.text || "";
     console.log("Raw evidence gathering response text:", responseText);
 

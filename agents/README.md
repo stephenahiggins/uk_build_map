@@ -6,25 +6,49 @@ A TypeScript/Node.js project for managing local government projects with AI-powe
 
 The project ships with a CLI (`src/cli.ts`) that can search for infrastructure projects in a locale, gather evidence, RAG score them, and persist results to the database.
 
-### Basic Run
+### Basic Run (from `agents/` only)
 ```bash
-make run ARGS="--locale 'West Yorkshire'"
-```
-
-If you prefer without `make`:
-```bash
+cd agents
 npm run build
 node dist/cli.js --locale "West Yorkshire"
+```
+
+UK-wide:
+```bash
+cd agents
+npm run build
+node dist/cli.js --uk-wide
+```
+
+### Staged Run (no DB writes)
+```bash
+cd agents
+npm run build
+node dist/cli.js --uk-wide --stage
+```
+
+### Commit Staged Data
+```bash
+cd agents
+npm run build
+node dist/cli.js commit-staged --all
 ```
 
 ### Key Flags
 | Flag | Description | Default |
 |------|-------------|---------|
 | `--locale <string>` | Geographic area / region / list of authorities | `West Yorkshire` |
+| `--uk-wide` | Run a UK-wide search across nations and English regions | off |
 | `--fetch <number>` | Minimum number of projects to retrieve from the model (prompt target) | `100` |
 | `--limit <number>` | Maximum number of projects to process (omit = process all fetched) | all fetched |
 | `--max-evidence <number>` | Evidence items to gather per project | `10` |
 | `--concurrency <number>` | Parallel project workers (1–10) | `3` |
+| `--no-llm` | Disable LLM calls and use mock outputs where possible | off |
+| `--llm-budget <number>` | Max LLM calls before falling back to mock outputs | unlimited |
+| `--connectors <list>` | Comma-separated connector list (e.g. `local-json`) | from `CONNECTORS` |
+| `--connectors-only` | Skip LLM discovery and rely on connectors only | off |
+| `--since <date>` | Incremental pull from connectors since `YYYY-MM-DD` | off |
+| `--stage` | Write results to staging instead of committing to the database | off |
 
 > **Tip:** Pass a comma-separated list to `--locale` (e.g. `"Bradford, Calderdale, Kirklees"`) and the CLI will treat each area as its own search pass (plus the combined region), rotating through themed prompts until it accumulates at least the requested `--fetch` unique projects while deduplicating titles between passes.
 
@@ -32,6 +56,28 @@ node dist/cli.js --locale "West Yorkshire"
 ```bash
 make run ARGS="--locale 'Bradford, Calderdale, Kirklees, Leeds and Wakefield, West Yorkshire Combined Authority' \
   --fetch 120 --limit 40 --max-evidence 8 --concurrency 5"
+```
+
+### UK-wide Discovery Run
+```bash
+make run ARGS="--uk-wide --fetch 200 --limit 50 --max-evidence 5 --concurrency 5"
+```
+
+### Connectors-only Run
+```bash
+make run ARGS="--connectors local-json --connectors-only --since 2025-01-01 --limit 50"
+```
+
+### Backfill + Incremental Loop
+```bash
+npm run build
+node dist/cli.js loop --uk-wide --backfill-fetch 200 --incremental-fetch 50 --interval-hours 24 --connectors local-json
+```
+
+### Commit Staged Runs
+```bash
+npm run build
+node dist/cli.js commit-staged --all
 ```
 
 ### Process All Returned Projects
@@ -55,6 +101,10 @@ tail -f cli.log
 - `--concurrency` > 5 may hit rate limits depending on your API quota.
 - High `--max-evidence` multiplies total model calls (one per project).
 - Start small, then scale.
+- Use `--llm-budget` to cap LLM usage for a run and `--no-llm` for mock-only runs.
+  - Note: mock-only runs do not pull real web evidence.
+- If a Gemini rate limit/quota error occurs, the CLI will prompt you to enter a new API key or pause and retry.
+- Staged commits deduplicate by normalized project title before writing to the database.
 
 ### Persistence
 Projects + evidence are upserted via Prisma. Duplicate detection is heuristic (title / summary / URL). Re‑running with same locale won’t spam identical evidence.
@@ -332,7 +382,13 @@ MOCK_INFRASTRUCTURE_SEARCH=false
 MOCK_EVIDENCE_GATHERING=false
 MOCK_EVIDENCE_ANALYSIS=false
 MOCK_PROJECT_STATUS=false
+NO_LLM=false
+LLM_BUDGET=0
+CONNECTORS=local-json
+LOCAL_PROJECTS_JSON=./data/local-projects.json
 ```
+
+`LLM_BUDGET` is optional. Set it to a positive integer to cap total LLM calls in a run. If unset, the budget is unlimited. `NO_LLM=true` skips API key validation and forces mock outputs where possible.
 
 ## Installation and Setup
 
