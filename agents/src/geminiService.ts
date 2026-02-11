@@ -1,7 +1,7 @@
 import { ProjectFoundItem, ProjectStatus } from "./types/projectEvidence";
 import { envValues } from "./envValues";
 import { evaluateProjectWithGemini as evaluateProjectInsights } from "../../backend/src/lib/projectEvaluation";
-import { generateContentWithRetry } from "./geminiRuntime";
+import { generateContentWithRetry } from "./llmRuntime";
 
 /**
  * Map of English regions for validation and lookup
@@ -17,6 +17,66 @@ export const ENGLISH_REGIONS = [
   "South East",
   "South West",
 ] as const;
+
+function tryParseJson(text: string) {
+  try {
+    return JSON.parse(text);
+  } catch {
+    return null;
+  }
+}
+
+function cleanResponseText(text: string): string {
+  let cleaned = text || "";
+  if (cleaned.includes("```json")) {
+    cleaned = cleaned.replace(/```json\s*/i, "").replace(/```\s*$/i, "");
+  } else if (cleaned.includes("```")) {
+    cleaned = cleaned.replace(/```\s*/i, "").replace(/```\s*$/i, "");
+  }
+  return cleaned;
+}
+
+function repairJson(text: string) {
+  const trimmed = text.trim();
+  const firstBrace = trimmed.indexOf("{");
+  const lastBrace = trimmed.lastIndexOf("}");
+  if (firstBrace === -1 || lastBrace === -1 || lastBrace <= firstBrace) {
+    return trimmed;
+  }
+  const sliced = trimmed.slice(firstBrace, lastBrace + 1);
+  return sliced
+    .replace(/[“”]/g, "\"")
+    .replace(/[’]/g, "'")
+    .replace(/,\s*([}\]])/g, "$1");
+}
+
+function parseJsonWithRepair(text: string) {
+  const direct = tryParseJson(text);
+  if (direct) return direct;
+  const repaired = repairJson(text);
+  return tryParseJson(repaired);
+}
+
+async function parseJsonResponseWithRetry<T>(
+  label: string,
+  request: { contents: string; config?: { tools?: Array<Record<string, unknown>> } },
+  responseText: string,
+  attempts: number = 1
+): Promise<T | null> {
+  const cleaned = cleanResponseText(responseText);
+  const parsed = parseJsonWithRepair(cleaned);
+  if (parsed) return parsed as T;
+  if (attempts <= 0) return null;
+
+  const retryResponse = await generateContentWithRetry(`${label} (retry json)`, {
+    contents: `${request.contents}\n\nIMPORTANT: Return ONLY valid JSON. Do not include commentary or code fences.`,
+    ...(request.config ? { config: request.config } : {}),
+    enforceJson: true,
+  });
+  const retryText = cleanResponseText(retryResponse.text || "");
+  const retryParsed = parseJsonWithRepair(retryText);
+  return retryParsed ? (retryParsed as T) : null;
+}
 
 /**
  * Helper function to validate and normalize region names
@@ -620,7 +680,7 @@ export async function getProjectsByRegion(prisma: any, regionName: string) {
 }
 
 /**
- * Search for infrastructure projects in a specific locale using Gemini with Google Search grounding
+ * Search for infrastructure projects in a specific locale using the configured LLM with web search
  */
 export async function searchInfrastructureProjects(
   locale: string,
@@ -669,7 +729,7 @@ ${dedupeTitles.map((title) => `- ${title}`).join("\n")}`
     ? `PRIORITY FOCUS FOR THIS PASS: ${sanitizedFocus}. Surface additional ${sanitizedFocus.toLowerCase()} initiatives within ${locale}, including smaller funded schemes, enabling works, or recently announced proposals.`
     : "";
 
-  // Define the grounding tool for Google Search
+  // Define the grounding tool for web search (mapped per provider)
   const groundingTool = {
     googleSearch: {},
   };
@@ -679,9 +739,7 @@ ${dedupeTitles.map((title) => `- ${title}`).join("\n")}`
     tools: [groundingTool],
   };
 
-  const response = await generateContentWithRetry("project search", {
-    model: "gemini-2.5-flash",
-    contents: `You are collecting a comprehensive structured dataset of infrastructure projects in ${locale}.
+  const prompt = `You are collecting a comprehensive structured dataset of infrastructure projects in ${locale}.
 
 ${focusPrompt ? `${focusPrompt}\n\n` : ""}${dedupePrompt ? `${dedupePrompt}\n\n` : ""}Collect projects across these categories (expand each):
 - Road & transport (junction upgrades, bypasses, active travel corridors, maintenance programmes)
@@ -737,23 +795,31 @@ Return JSON object shape:
         }
       ],
       "summary": "Overall summary of infrastructure activity in the area"
-    }`,
-    config: modelConfig,
-  });
-  try {
-    let responseText = response.text || "";
-    console.log("Raw response text:", responseText);
+    }`;
 
-    // Clean the response text - remove markdown code blocks if present
-    if (responseText.includes("```json")) {
-      responseText = responseText.replace(/```json\s*/, "").replace(/```\s*$/, "");
-    } else if (responseText.includes("```")) {
-      responseText = responseText.replace(/```\s*/, "").replace(/```\s*$/, "");
-    }
+  const request = { contents: prompt, config: modelConfig };
+  const response = await generateContentWithRetry("project search", request);
+  try {
+    const responseText = response.text || "";
+    console.log("Raw response text:", responseText);
 
     // Try to parse JSON response
     try {
-      const parsed = JSON.parse(responseText.trim());
+      const parsed = await parseJsonResponseWithRetry<{
+        projects?: Array<{
+          title: string;
+          description: string;
+          status: string;
+          source: string;
+          url?: string;
+          latitude?: number;
+          longitude?: number;
+          localAuthority?: string;
+          region?: string;
+        }>;
+        summary?: string;
+      }>("project search", request, responseText);
+      if (!parsed) throw new Error("Unable to parse JSON after retry.");
       console.log("Parsed response:", parsed);
       return {
         projects: parsed.projects || [],
@@ -761,7 +827,7 @@ Return JSON object shape:
       };
     } catch (parseError) {
       console.warn("Failed to parse JSON response from infrastructure search:", parseError);
-      console.warn("Cleaned response text:", responseText);
+      console.warn("Cleaned response text:", cleanResponseText(responseText));
       return {
         projects: [],
         summary: `Search completed for ${locale} but parsing failed`,
@@ -777,7 +843,7 @@ Return JSON object shape:
 }
 
 /**
- * Analyze evidence items using Gemini with Google Search grounding
+ * Analyze evidence items using the configured LLM
  */
 export async function analyseEvidenceWithGemini(evidenceItems: ProjectFoundItem[]): Promise<{
   summaries: string[];
@@ -790,9 +856,7 @@ export async function analyseEvidenceWithGemini(evidenceItems: ProjectFoundItem[
     return getMockEvidenceAnalysis(evidenceItems);
   }
 
-  const response = await generateContentWithRetry("evidence analysis", {
-    model: "gemini-2.5-flash",
-    contents: `Analyze the following government announcements and evidence items. 
+  const prompt = `Analyze the following government announcements and evidence items. 
     For each item, provide a brief summary and determine the overall sentiment and project status.
     
     Evidence items:
@@ -813,22 +877,21 @@ export async function analyseEvidenceWithGemini(evidenceItems: ProjectFoundItem[
       "summaries": ["summary1", "summary2", ...],
       "sentiment": "Positive|Negative|Neutral",
       "status": "Red|Amber|Green"
-    }`,
-  });
+    }`;
+  const request = { contents: prompt };
+  const response = await generateContentWithRetry("evidence analysis", request);
 
   try {
-    let responseText = response.text || "";
-
-    // Clean the response text - remove markdown code blocks if present
-    if (responseText.includes("```json")) {
-      responseText = responseText.replace(/```json\s*/, "").replace(/```\s*$/, "");
-    } else if (responseText.includes("```")) {
-      responseText = responseText.replace(/```\s*/, "").replace(/```\s*$/, "");
-    }
+    const responseText = response.text || "";
 
     // Try to parse JSON response
     try {
-      const parsed = JSON.parse(responseText.trim());
+      const parsed = await parseJsonResponseWithRetry<{
+        summaries?: string[];
+        sentiment?: "Positive" | "Negative" | "Neutral";
+        status?: "Red" | "Amber" | "Green";
+      }>("evidence analysis", request, responseText);
+      if (!parsed) throw new Error("Unable to parse JSON after retry.");
       return {
         summaries: parsed.summaries || [],
         sentiment: parsed.sentiment || "Neutral",
@@ -837,11 +900,11 @@ export async function analyseEvidenceWithGemini(evidenceItems: ProjectFoundItem[
     } catch (parseError) {
       // Fallback parsing if JSON parsing fails
       console.warn("Failed to parse JSON response, using fallback parsing:", parseError);
-      console.warn("Cleaned response text:", responseText);
-      return parseFallbackResponse(responseText, evidenceItems.length);
+      console.warn("Cleaned response text:", cleanResponseText(responseText));
+      return parseFallbackResponse(cleanResponseText(responseText), evidenceItems.length);
     }
   } catch (error) {
-    console.error("Error calling Gemini API:", error);
+    console.error("Error calling LLM API:", error);
     return {
       summaries: evidenceItems.map(() => "Analysis failed"),
       sentiment: "Neutral",
@@ -893,7 +956,7 @@ function getMockEvidenceAnalysis(evidenceItems: ProjectFoundItem[]) {
 }
 
 /**
- * Get project status using Gemini with Google Search grounding
+ * Get project status using the configured LLM
  */
 export async function getProjectStatusWithGemini(
   project: ProjectStatus
@@ -919,7 +982,6 @@ export async function getProjectStatusWithGemini(
     .join("\n\n");
 
   const response = await generateContentWithRetry("project status", {
-    model: "gemini-2.5-flash",
     contents: `You are an expert infrastructure project analyst. Analyze the following project and its evidence to determine the project status.
 
 PROJECT DETAILS:
@@ -1140,7 +1202,7 @@ function getMockInfrastructureResponse(locale: string, minResults: number = 5) {
 }
 
 /**
- * Gather evidence for a specific infrastructure project using Gemini with Google Search grounding
+ * Gather evidence for a specific infrastructure project using the configured LLM with web search
  * This creates a timeline of news, documents, and information about the project
  */
 export async function gatherEvidenceWithGemini(
@@ -1180,7 +1242,7 @@ export async function gatherEvidenceWithGemini(
     return getMockEvidenceGathering(projectTitle, projectDescription, locale);
   }
 
-  // Define the grounding tool for Google Search
+  // Define the grounding tool for web search (mapped per provider)
   const groundingTool = {
     googleSearch: {},
   };
@@ -1190,9 +1252,7 @@ export async function gatherEvidenceWithGemini(
     tools: [groundingTool],
   };
 
-  const response = await generateContentWithRetry("evidence gathering", {
-    model: "gemini-2.5-flash",
-    contents: `Search for evidence and information about the infrastructure project: "${projectTitle}" in ${locale}.
+  const prompt = `Search for evidence and information about the infrastructure project: "${projectTitle}" in ${locale}.
     
     Project Description: ${projectDescription}
     
@@ -1262,24 +1322,41 @@ export async function gatherEvidenceWithGemini(
     
     IMPORTANT: Every evidence item MUST have a valid evidenceDate in YYYY-MM-DD format. This date should represent when the actual event, announcement, or report occurred, not when it was discovered or gathered.
     
-    CRITICAL: Ensure all JSON strings are properly quoted and closed. Do not include any text before or after the JSON.`,
-    config: modelConfig,
-  });
+    CRITICAL: Ensure all JSON strings are properly quoted and closed. Do not include any text before or after the JSON.`;
+
+  const request = { contents: prompt, config: modelConfig };
+  const response = await generateContentWithRetry("evidence gathering", request);
 
   try {
-    let responseText = response.text || "";
+    const responseText = response.text || "";
     console.log("Raw evidence gathering response text:", responseText);
-
-    // Clean the response text - remove markdown code blocks if present
-    if (responseText.includes("```json")) {
-      responseText = responseText.replace(/```json\s*/, "").replace(/```\s*$/, "");
-    } else if (responseText.includes("```")) {
-      responseText = responseText.replace(/```\s*/, "").replace(/```\s*$/, "");
-    }
 
     // Try to parse JSON response
     try {
-      const parsed = JSON.parse(responseText.trim());
+      const parsed = await parseJsonResponseWithRetry<{
+        evidence?: Array<{
+          title: string;
+          summary: string;
+          source: string;
+          sourceUrl: string;
+          evidenceDate: string;
+          gatheredDate: string;
+          gatheredBy: string;
+          rawText: string;
+          latitude?: number;
+          longitude?: number;
+          localAuthority?: string;
+          region?: string;
+        }>;
+        summary?: string;
+        projectLocation?: {
+          latitude: number;
+          longitude: number;
+          localAuthority: string;
+          region: string;
+        };
+      }>("evidence gathering", request, responseText);
+      if (!parsed) throw new Error("Unable to parse JSON after retry.");
       console.log("Parsed evidence gathering response:", parsed);
       return {
         evidence: parsed.evidence || [],
@@ -1288,41 +1365,11 @@ export async function gatherEvidenceWithGemini(
       };
     } catch (parseError) {
       console.warn("Failed to parse JSON response from evidence gathering:", parseError);
-      console.warn("Cleaned response text:", responseText);
-
-      // Try to fix common JSON issues
-      try {
-        // Fix unterminated strings by adding missing quotes
-        let fixedResponse = responseText;
-
-        // Find and fix unterminated strings in rawText fields
-        const rawTextRegex = /"rawText"\s*:\s*"([^"]*(?:\\.[^"]*)*)"?/g;
-        fixedResponse = fixedResponse.replace(rawTextRegex, (match, content) => {
-          if (!match.endsWith('"')) {
-            return match + '"';
-          }
-          return match;
-        });
-
-        // Fix other common JSON issues
-        fixedResponse = fixedResponse.replace(/([^"])\s*}\s*$/g, '$1"}\n}');
-        fixedResponse = fixedResponse.replace(/([^"])\s*]\s*$/g, '$1"]\n]');
-
-        console.log("Attempting to parse fixed JSON...");
-        const parsed = JSON.parse(fixedResponse.trim());
-        console.log("Successfully parsed fixed evidence gathering response:", parsed);
-        return {
-          evidence: parsed.evidence || [],
-          summary: parsed.summary || `Evidence gathering completed for ${projectTitle}`,
-          projectLocation: parsed.projectLocation,
-        };
-      } catch (secondParseError) {
-        console.warn("Failed to parse even after fixing JSON:", secondParseError);
-        return {
-          evidence: [],
-          summary: `Evidence gathering completed for ${projectTitle} but parsing failed`,
-        };
-      }
+      console.warn("Cleaned response text:", cleanResponseText(responseText));
+      return {
+        evidence: [],
+        summary: `Evidence gathering completed for ${projectTitle} but parsing failed`,
+      };
     }
   } catch (error) {
     console.error("Error gathering evidence for project:", error);

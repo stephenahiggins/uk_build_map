@@ -1,6 +1,6 @@
 # LFG Agents Project
 
-A TypeScript/Node.js project for managing local government projects with AI-powered evidence analysis. The project uses Prisma for database operations, Google Gemini AI for analysis, and includes web scraping and RAG (Retrieval-Augmented Generation) capabilities.
+A TypeScript/Node.js project for managing local government projects with AI-powered evidence analysis. The project uses Prisma for database operations, defaults to OpenAI (GPT-5 mini) for analysis, and includes web scraping and RAG (Retrieval-Augmented Generation) capabilities. Gemini is also supported.
 
 ## CLI Usage (Infrastructure Discovery & Evidence Gathering)
 
@@ -49,6 +49,7 @@ node dist/cli.js commit-staged --all
 | `--connectors-only` | Skip LLM discovery and rely on connectors only | off |
 | `--since <date>` | Incremental pull from connectors since `YYYY-MM-DD` | off |
 | `--stage` | Write results to staging instead of committing to the database | off |
+| `--provider <provider>` | LLM provider override (`openai` or `gemini`) | from `PROVIDER` |
 
 > **Tip:** Pass a comma-separated list to `--locale` (e.g. `"Bradford, Calderdale, Kirklees"`) and the CLI will treat each area as its own search pass (plus the combined region), rotating through themed prompts until it accumulates at least the requested `--fetch` unique projects while deduplicating titles between passes.
 
@@ -58,9 +59,19 @@ make run ARGS="--locale 'Bradford, Calderdale, Kirklees, Leeds and Wakefield, We
   --fetch 120 --limit 40 --max-evidence 8 --concurrency 5"
 ```
 
+### Switch Provider (Gemini)
+```bash
+make run ARGS="--provider gemini --locale 'West Yorkshire' --fetch 50"
+```
+
 ### UK-wide Discovery Run
 ```bash
 make run ARGS="--uk-wide --fetch 200 --limit 50 --max-evidence 5 --concurrency 5"
+```
+
+### UK-wide Discovery Run (OpenAI via Make)
+```bash
+make run ARGS="--uk-wide --provider openai"
 ```
 
 ### Connectors-only Run
@@ -103,7 +114,7 @@ tail -f cli.log
 - Start small, then scale.
 - Use `--llm-budget` to cap LLM usage for a run and `--no-llm` for mock-only runs.
   - Note: mock-only runs do not pull real web evidence.
-- If a Gemini rate limit/quota error occurs, the CLI will prompt you to enter a new API key or pause and retry.
+- If an OpenAI or Gemini rate limit/quota error occurs, the CLI will prompt you to enter a new API key or pause and retry.
 - Staged commits deduplicate by normalized project title before writing to the database.
 
 ### Persistence
@@ -376,7 +387,12 @@ For testing purposes, the system includes comprehensive mock data with realistic
 Make sure to set the following environment variables:
 
 ```bash
+PROVIDER=openai
+OPENAI_API_KEY=your_openai_api_key
 GEMINI_API_KEY=your_gemini_api_key
+MODEL=gpt-5-mini
+OPENAI_MODEL=gpt-4o-mini
+GEMINI_MODEL=gemini-2.5-flash
 DATABASE_URL=your_database_url
 MOCK_INFRASTRUCTURE_SEARCH=false
 MOCK_EVIDENCE_GATHERING=false

@@ -3,17 +3,31 @@ import { fileURLToPath } from "url";
 import { getExistingProjectTitleMap, upsertProject } from "./store";
 import { ProjectStatus, ProjectFoundItem } from "./types/projectEvidence";
 import { searchInfrastructureProjects, gatherEvidenceWithGemini } from "./geminiService";
-import { validateEnvValues, envValues } from "./envValues";
+import {
+  applyRuntimeOverrides,
+  envValues,
+  resolveProvider,
+  type LlmProvider,
+  validateEnvValues,
+} from "./envValues";
 import { migrateAgentsDataToBackend } from "./migrateBackend";
 import { log } from "./logger";
 import { normalizeProjectTitle } from "./utils/projectNormalization";
-import { evaluateProjectWithGemini } from "../../backend/src/lib/projectEvaluation";
+import {
+  evaluateProjectWithGemini,
+  evaluateProjectWithOpenAI,
+} from "../../backend/src/lib/projectEvaluation";
 import { createLlmBudget } from "./llmBudget";
 import {
   getGeminiApiKey,
   handleGeminiRateLimit,
   isGeminiRateLimitError,
 } from "./geminiRuntime";
+import {
+  getOpenAIApiKey,
+  handleOpenAIRateLimit,
+  isOpenAIRateLimitError,
+} from "./openaiRuntime";
 import { fetchFromConnectors, resolveConnectorNames } from "./connectors";
 import type { ConnectorProject, ConnectorEvidence } from "./connectors/types";
 import { listStageFiles, readStageFile, writeStageFile } from "./staging";
@@ -31,11 +45,31 @@ type CliOptions = {
   connectorsOnly?: boolean;
   since?: string;
   stage?: boolean;
+  provider?: string;
 };
 
 type InfrastructureProject = Awaited<
   ReturnType<typeof searchInfrastructureProjects>
 >["projects"][number];
+
+async function loadStagedTitleSet(): Promise<Set<string>> {
+  const stagedTitles = new Set<string>();
+  const files = await listStageFiles();
+  for (const file of files) {
+    try {
+      const payload = await readStageFile(file);
+      for (const project of payload.projects) {
+        const normalized = normalizeProjectTitle(project.name);
+        if (normalized) {
+          stagedTitles.add(normalized);
+        }
+      }
+    } catch (err) {
+      log(`[Stage] Failed to read staged file ${file}:`, err);
+    }
+  }
+  return stagedTitles;
+}
 
 function parseScrapeCliOptions(raw: Record<string, any>): CliOptions {
   const parsed: CliOptions = { ...raw };
@@ -50,6 +84,7 @@ function parseScrapeCliOptions(raw: Record<string, any>): CliOptions {
   if (raw.connectorsOnly !== undefined) parsed.connectorsOnly = Boolean(raw.connectorsOnly);
   if (raw.since !== undefined) parsed.since = String(raw.since);
   if (raw.stage !== undefined) parsed.stage = Boolean(raw.stage);
+  if (raw.provider !== undefined) parsed.provider = String(raw.provider);
   return parsed;
 }
 
@@ -121,7 +156,8 @@ function resolveSearchLocales(localeInput: string, useUkWide: boolean): string[]
 async function collectProjectsAcrossLocales(
   locales: string[],
   minFetch: number,
-  llmBudget: ReturnType<typeof createLlmBudget>
+  llmBudget: ReturnType<typeof createLlmBudget>,
+  knownTitles: string[] = []
 ) {
   const searchLocales = locales.map((locale) => locale.trim()).filter(Boolean);
   if (!searchLocales.length) {
@@ -131,6 +167,14 @@ async function collectProjectsAcrossLocales(
   const uniqueProjects: InfrastructureProject[] = [];
   const seenTitles = new Set<string>();
   const seenOriginalTitles: string[] = [];
+  for (const title of knownTitles) {
+    const normalized = normalizeProjectTitle(title) || title.trim();
+    if (!normalized) continue;
+    if (!seenTitles.has(normalized)) {
+      seenTitles.add(normalized);
+      seenOriginalTitles.push(title);
+    }
+  }
   const summaryByLocale = new Map<string, string[]>();
   const countsByLocale = new Map<string, number>();
 
@@ -238,8 +282,15 @@ async function collectProjectsAcrossLocales(
 }
 
 export async function main(cliOpts?: CliOptions) {
+  if (cliOpts?.provider) {
+    applyRuntimeOverrides({ PROVIDER: resolveProvider(cliOpts.provider) });
+  }
   validateEnvValues();
-  log("Starting CLI with options:", cliOpts);
+  if (cliOpts?.ukWide) {
+    log("Starting CLI with options:", { ...cliOpts, locale: "United Kingdom" });
+  } else {
+    log("Starting CLI with options:", cliOpts);
+  }
   await run(cliOpts || {});
 }
 
@@ -285,6 +336,10 @@ if (isDirectRun) {
     .option("--connectors-only", "skip LLM discovery and rely on connectors only")
     .option("--since <date>", "incremental pull: only use connector data since YYYY-MM-DD")
     .option("--stage", "write results to staging instead of committing to the database")
+    .option(
+      "--provider <provider>",
+      "LLM provider to use (openai|gemini); overrides PROVIDER env var"
+    )
     .action(async (rawOpts) => {
       const parsed = parseScrapeCliOptions(rawOpts);
       await main(parsed);
@@ -310,6 +365,10 @@ if (isDirectRun) {
       "comma-separated connector list (e.g. local-json); falls back to CONNECTORS env"
     )
     .option("--connectors-only", "skip LLM discovery and rely on connectors only")
+    .option(
+      "--provider <provider>",
+      "LLM provider to use (openai|gemini); overrides PROVIDER env var"
+    )
     .option("-e, --max-evidence <number>", "max evidence items to gather per project", "5")
     .option("-c, --concurrency <number>", "number of projects to process concurrently", "3")
     .action(async (rawOpts) => {
@@ -414,6 +473,8 @@ async function run(opts: CliOptions) {
     noLlm: Boolean(opts.noLlm ?? envValues.NO_LLM),
     maxCalls: opts.llmBudget ?? envValues.LLM_BUDGET,
   });
+  const existingTitleMap = await getExistingProjectTitleMap();
+  const stagedTitleSet = await loadStagedTitleSet();
   const searchLocales = resolveSearchLocales(locale, Boolean(opts.ukWide));
   if (!searchLocales.length) throw new Error("No valid locale segments derived from input");
 
@@ -442,13 +503,27 @@ async function run(opts: CliOptions) {
 
   const searchResults = opts.connectorsOnly
     ? { projects: [], summary: "connectors-only run" }
-    : await collectProjectsAcrossLocales(searchLocales, minFetch, llmBudget);
+    : await collectProjectsAcrossLocales(searchLocales, minFetch, llmBudget, [
+        ...existingTitleMap.keys(),
+        ...stagedTitleSet,
+      ]);
   log(`Found ${searchResults.projects.length} unique infrastructure projects`);
 
   const processedProjects: ProjectStatus[] = [];
   const combinedProjects = mergeConnectorProjects(connectorProjects, searchResults.projects);
+  const filteredProjects = combinedProjects.filter((project) => {
+    const normalized = normalizeProjectTitle(project.title);
+    if (!normalized) return true;
+    return !existingTitleMap.has(normalized) && !stagedTitleSet.has(normalized);
+  });
+  const skippedCount = combinedProjects.length - filteredProjects.length;
+  if (skippedCount > 0) {
+    log(`[Dedup] Skipped ${skippedCount} project(s) already in DB or staging.`);
+  }
   const toProcess =
-    opts.limit && opts.limit > 0 ? combinedProjects.slice(0, opts.limit) : combinedProjects;
+    opts.limit && opts.limit > 0
+      ? filteredProjects.slice(0, opts.limit)
+      : filteredProjects;
   const maxEvidencePerProject = opts.maxEvidence ?? 10;
   const concurrency = Math.max(1, Math.min(opts.concurrency ?? 3, 10));
   log(
@@ -564,6 +639,18 @@ async function processSingleProject(
 
   log(`Evaluating project status and location for: ${project.title}...`);
   const canEvaluate = llmBudget.consume("project evaluation");
+  const provider = resolveProvider();
+  const evaluationOptions =
+    provider === "gemini"
+      ? {
+          apiKey: getGeminiApiKey(),
+          model: envValues.GEMINI_MODEL || (process.env.MODEL ? envValues.MODEL : "gemini-2.5-flash"),
+        }
+      : {
+          openAIApiKey: getOpenAIApiKey() || envValues.OPENAI_API_KEY,
+          openAIModel: envValues.OPENAI_MODEL || (process.env.MODEL ? envValues.MODEL : "gpt-5-mini"),
+        };
+
   const evaluation = await evaluateProjectWithRetry(
     {
       projectName: project.title,
@@ -579,10 +666,10 @@ async function processSingleProject(
       })),
     },
     {
-      apiKey: getGeminiApiKey(),
-      model: envValues.MODEL,
+      ...evaluationOptions,
       mockResponse: envValues.MOCK_PROJECT_EVALUATION || !canEvaluate,
-    }
+    },
+    provider
   );
 
   projectStatus.status = evaluation.ragStatus;
@@ -713,16 +800,33 @@ function toProjectFoundItem(evidence: ConnectorEvidence): ProjectFoundItem {
 
 async function evaluateProjectWithRetry(
   input: Parameters<typeof evaluateProjectWithGemini>[0],
-  options: Parameters<typeof evaluateProjectWithGemini>[1]
+  options: Parameters<typeof evaluateProjectWithGemini>[1],
+  provider: LlmProvider
 ) {
-  const mutableOptions = {
-    ...options,
-    apiKey: options?.apiKey ?? "",
-  };
+  const mutableOptions = { ...options };
   while (true) {
     try {
+      if (provider === "openai") {
+        return await evaluateProjectWithOpenAI(input, mutableOptions);
+      }
       return await evaluateProjectWithGemini(input, mutableOptions);
     } catch (err) {
+      if (provider === "openai") {
+        if (!isOpenAIRateLimitError(err)) {
+          throw err;
+        }
+        const action = await handleOpenAIRateLimit("project evaluation");
+        if (action === "abort") {
+          throw err;
+        }
+        const nextKey = getOpenAIApiKey();
+        if (!nextKey) {
+          throw err;
+        }
+        mutableOptions.openAIApiKey = nextKey;
+        continue;
+      }
+
       if (!isGeminiRateLimitError(err)) {
         throw err;
       }
