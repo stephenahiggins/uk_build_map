@@ -115,7 +115,7 @@ function buildEvidenceNarrative(items: EvidenceForEvaluation[]): string {
     .join('\n\n');
 }
 
-async function evaluateProjectWithOpenAI(
+export async function evaluateProjectWithOpenAI(
   request: ProjectEvaluationRequest,
   options?: ProjectEvaluationOptions
 ): Promise<ProjectEvaluationResult> {

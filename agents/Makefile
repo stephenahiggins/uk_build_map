@@ -11,6 +11,7 @@ help:
 	@echo "  make build                                                        Build the TypeScript project"
 	@echo "  make clean                                                        Clean build artifacts"
 	@echo "  make help                                                         Show this help message"
+	@echo "  make commit-staged FILE=<path> ALL=1                               Commit staged files to agents DB (deduped)"
 	\echo "  make migrate-to-backend MODE=<mode> BACKEND_ENV=<env> BACKEND_URL=<url>  Migrate to backend"
 
 # Build the TypeScript project
@@ -44,6 +45,10 @@ test:
 clean:
 	rm -rf dist
 	rm -rf node_modules/.cache
+
+.PHONY: commit-staged
+commit-staged: build
+	node dist/cli.js commit-staged $(if $(FILE),--file $(FILE),) $(if $(ALL),--all,)
 
 .PHONY: migrate-to-backend
 migrate-to-backend:
