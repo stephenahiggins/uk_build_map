@@ -84,6 +84,30 @@ export async function migrateAgentsDataToBackend(
 
     log(`[Migrate] Found ${projects.length} project(s) in the agents datastore`);
 
+    const fallbackVarcharLength = 191;
+    const resolvedDescriptionMax = await resolveColumnMaxLength(
+      backendPrisma,
+      "Project",
+      "description"
+    );
+    const resolvedStatusRationaleMax = await resolveColumnMaxLength(
+      backendPrisma,
+      "Project",
+      "statusRationale"
+    );
+    if (resolvedDescriptionMax == null) {
+      log(
+        `[Migrate] Unable to resolve Project.description max length; defaulting to ${fallbackVarcharLength}.`
+      );
+    }
+    if (resolvedStatusRationaleMax == null) {
+      log(
+        `[Migrate] Unable to resolve Project.statusRationale max length; defaulting to ${fallbackVarcharLength}.`
+      );
+    }
+    const descriptionMaxLength = resolvedDescriptionMax ?? fallbackVarcharLength;
+    const statusRationaleMaxLength = resolvedStatusRationaleMax ?? fallbackVarcharLength;
+
     if (options.mode === "override") {
       await clearBackendProjects(backendPrisma);
     }
@@ -97,7 +121,10 @@ export async function migrateAgentsDataToBackend(
 
     for (const project of projects) {
       const normalizedTitle = normalizeProjectTitle(project.title);
-      const { createData, updateData } = buildBackendProjectData(project, adminUser.user_id);
+      const { createData, updateData } = buildBackendProjectData(project, adminUser.user_id, {
+        descriptionMaxLength,
+        statusRationaleMaxLength,
+      });
 
       if (options.mode === "append" && existingMaps) {
         const existingById = existingMaps.byId.get(project.id);
@@ -250,10 +277,19 @@ async function loadExistingProjectMaps(prisma: BackendPrisma) {
   return { byId, byTitle };
 }
 
-function buildBackendProjectData(project: AgentsProjectWithEvidence, adminUserId: number) {
+type BackendTextLimits = {
+  descriptionMaxLength?: number | null;
+  statusRationaleMaxLength?: number | null;
+};
+
+function buildBackendProjectData(
+  project: AgentsProjectWithEvidence,
+  adminUserId: number,
+  limits: BackendTextLimits
+) {
   const base = {
     title: project.title,
-    description: project.description ?? null,
+    description: truncateText(project.description ?? null, limits.descriptionMaxLength),
     type: project.type,
     regionId: project.regionId,
     localAuthorityId: project.localAuthorityId,
@@ -261,7 +297,7 @@ function buildBackendProjectData(project: AgentsProjectWithEvidence, adminUserId
     expectedCompletion: project.expectedCompletion,
     status: project.status,
     statusUpdatedAt: project.statusUpdatedAt ?? new Date(),
-    statusRationale: project.statusRationale ?? null,
+    statusRationale: truncateText(project.statusRationale ?? null, limits.statusRationaleMaxLength),
     latitude: project.latitude != null ? project.latitude.toString() : null,
     longitude: project.longitude != null ? project.longitude.toString() : null,
     imageUrl: project.imageUrl ?? null,
@@ -279,6 +315,42 @@ function buildBackendProjectData(project: AgentsProjectWithEvidence, adminUserId
   } satisfies Parameters<BackendPrisma["project"]["update"]>[0]["data"];
 
   return { createData, updateData };
+}
+
+function truncateText(value: string | null, maxLength?: number | null) {
+  if (!value || !maxLength || maxLength <= 0) return value;
+  if (value.length <= maxLength) return value;
+  return value.slice(0, maxLength);
+}
+
+async function resolveColumnMaxLength(
+  prisma: BackendPrisma,
+  tableName: string,
+  columnName: string
+) {
+  try {
+    const rows = (await (prisma as any).$queryRaw`
+      SELECT DATA_TYPE AS dataType, CHARACTER_MAXIMUM_LENGTH AS maxLength
+      FROM INFORMATION_SCHEMA.COLUMNS
+      WHERE TABLE_SCHEMA = DATABASE()
+        AND TABLE_NAME = ${tableName}
+        AND COLUMN_NAME = ${columnName}
+      LIMIT 1
+    `) as Array<{ dataType?: string; maxLength?: number | null }>;
+    const row = rows?.[0];
+    if (!row?.dataType) return null;
+    const dataType = row.dataType.toLowerCase();
+    if (dataType === "varchar" || dataType === "char") {
+      return row.maxLength ?? null;
+    }
+    return null;
+  } catch (error) {
+    log(
+      `[Migrate] Failed to resolve max length for ${tableName}.${columnName}; proceeding without truncation.`,
+      error
+    );
+    return null;
+  }
 }
 
 function mapEvidenceForNestedCreate(evidence: AgentsEvidence, submittedById: number) {
