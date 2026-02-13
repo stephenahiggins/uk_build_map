@@ -85,29 +85,34 @@ export async function migrateAgentsDataToBackend(
     log(`[Migrate] Found ${projects.length} project(s) in the agents datastore`);
 
     const fallbackVarcharLength = 191;
-    const resolvedDescriptionMax = await resolveColumnMaxLength(
+    const resolvedDescription = await resolveColumnMaxLength(
       backendPrisma,
       "Project",
       "description"
     );
-    const resolvedStatusRationaleMax = await resolveColumnMaxLength(
+    const resolvedStatusRationale = await resolveColumnMaxLength(
       backendPrisma,
       "Project",
       "statusRationale"
     );
-    if (resolvedDescriptionMax == null) {
+    if (resolvedDescription == null) {
       log(
-        `[Migrate] Unable to resolve Project.description max length; defaulting to ${fallbackVarcharLength}.`
+        `[Migrate] Unable to resolve Project.description max length; defaulting to ${fallbackVarcharLength} chars.`
       );
     }
-    if (resolvedStatusRationaleMax == null) {
+    if (resolvedStatusRationale == null) {
       log(
-        `[Migrate] Unable to resolve Project.statusRationale max length; defaulting to ${fallbackVarcharLength}.`
+        `[Migrate] Unable to resolve Project.statusRationale max length; defaulting to ${fallbackVarcharLength} chars.`
       );
     }
-    const descriptionMaxLength = resolvedDescriptionMax ?? fallbackVarcharLength;
-    const statusRationaleMaxLength = resolvedStatusRationaleMax ?? fallbackVarcharLength;
-
+    const descriptionLimit = resolvedDescription ?? {
+      maxLength: fallbackVarcharLength,
+      inBytes: false,
+    };
+    const statusRationaleLimit = resolvedStatusRationale ?? {
+      maxLength: fallbackVarcharLength,
+      inBytes: false,
+    };
     if (options.mode === "override") {
       await clearBackendProjects(backendPrisma);
     }
@@ -122,8 +127,10 @@ export async function migrateAgentsDataToBackend(
     for (const project of projects) {
       const normalizedTitle = normalizeProjectTitle(project.title);
       const { createData, updateData } = buildBackendProjectData(project, adminUser.user_id, {
-        descriptionMaxLength,
-        statusRationaleMaxLength,
+        descriptionMaxLength: descriptionLimit.maxLength,
+        descriptionMaxInBytes: descriptionLimit.inBytes,
+        statusRationaleMaxLength: statusRationaleLimit.maxLength,
+        statusRationaleMaxInBytes: statusRationaleLimit.inBytes,
       });
 
       if (options.mode === "append" && existingMaps) {
@@ -160,15 +167,32 @@ export async function migrateAgentsDataToBackend(
         }
       }
 
-      await backendPrisma.project.create({
-        data: {
-          ...createData,
-          evidence: {
-            create: project.evidence.map((item) =>
-              mapEvidenceForNestedCreate(item, adminUser.user_id)
-            ),
-          },
+      const safeData = {
+        ...createData,
+        description:
+          createData.description != null
+            ? truncateText(
+                createData.description,
+                descriptionLimit.maxLength,
+                descriptionLimit.inBytes
+              )
+            : null,
+        statusRationale:
+          createData.statusRationale != null
+            ? truncateText(
+                createData.statusRationale,
+                statusRationaleLimit.maxLength,
+                statusRationaleLimit.inBytes
+              )
+            : null,
+        evidence: {
+          create: project.evidence.map((item) =>
+            mapEvidenceForNestedCreate(item, adminUser.user_id)
+          ),
         },
+      };
+      await backendPrisma.project.create({
+        data: safeData,
       });
       if (existingMaps) {
         const summary = { id: createData.id, title: createData.title };
@@ -279,7 +303,9 @@ async function loadExistingProjectMaps(prisma: BackendPrisma) {
 
 type BackendTextLimits = {
   descriptionMaxLength?: number | null;
+  descriptionMaxInBytes?: boolean;
   statusRationaleMaxLength?: number | null;
+  statusRationaleMaxInBytes?: boolean;
 };
 
 function buildBackendProjectData(
@@ -289,7 +315,11 @@ function buildBackendProjectData(
 ) {
   const base = {
     title: project.title,
-    description: truncateText(project.description ?? null, limits.descriptionMaxLength),
+    description: truncateText(
+      project.description ?? null,
+      limits.descriptionMaxLength,
+      limits.descriptionMaxInBytes ?? false
+    ),
     type: project.type,
     regionId: project.regionId,
     localAuthorityId: project.localAuthorityId,
@@ -297,7 +327,11 @@ function buildBackendProjectData(
     expectedCompletion: project.expectedCompletion,
     status: project.status,
     statusUpdatedAt: project.statusUpdatedAt ?? new Date(),
-    statusRationale: truncateText(project.statusRationale ?? null, limits.statusRationaleMaxLength),
+    statusRationale: truncateText(
+      project.statusRationale ?? null,
+      limits.statusRationaleMaxLength,
+      limits.statusRationaleMaxInBytes ?? false
+    ),
     latitude: project.latitude != null ? project.latitude.toString() : null,
     longitude: project.longitude != null ? project.longitude.toString() : null,
     imageUrl: project.imageUrl ?? null,
@@ -317,32 +351,95 @@ function buildBackendProjectData(
   return { createData, updateData };
 }
 
-function truncateText(value: string | null, maxLength?: number | null) {
-  if (!value || !maxLength || maxLength <= 0) return value;
-  if (value.length <= maxLength) return value;
-  return value.slice(0, maxLength);
+const MYSQL_TEXT_MAX_BYTES = 65535;
+/** Slightly under limit to avoid any DB/driver rounding or metadata. */
+const MYSQL_TEXT_SAFE_BYTES = 65532;
+/** LONGTEXT max (4GB); used so we don't truncate when column is LongText. */
+const MYSQL_LONGTEXT_MAX_BYTES = 4_294_967_295;
+
+/** Truncate by character length (for VARCHAR) or byte length (for MySQL TEXT). Always caps at MYSQL_TEXT_MAX_BYTES. */
+function truncateText(
+  value: string | null,
+  maxLength?: number | null,
+  maxLengthInBytes?: boolean
+) {
+  if (!value) return value;
+  const encoding = "utf8";
+  if (!maxLength || maxLength <= 0) {
+    return truncateToBytes(value, MYSQL_TEXT_SAFE_BYTES, encoding);
+  }
+  if (maxLengthInBytes) {
+    const cap =
+      maxLength <= MYSQL_TEXT_MAX_BYTES
+        ? Math.min(maxLength, MYSQL_TEXT_SAFE_BYTES)
+        : Math.min(maxLength, MYSQL_LONGTEXT_MAX_BYTES);
+    if (Buffer.byteLength(value, encoding) <= cap) return value;
+    return truncateToBytes(value, cap, encoding);
+  }
+  if (value.length <= maxLength) {
+    const out = value.slice(0, maxLength);
+    const maxBytes = MYSQL_TEXT_SAFE_BYTES;
+    return Buffer.byteLength(out, encoding) <= maxBytes ? out : truncateToBytes(out, maxBytes, encoding);
+  }
+  let out = value.slice(0, maxLength);
+  return Buffer.byteLength(out, encoding) <= MYSQL_TEXT_SAFE_BYTES
+    ? out
+    : truncateToBytes(out, MYSQL_TEXT_SAFE_BYTES, encoding);
 }
+
+function truncateToBytes(value: string, maxBytes: number, encoding: BufferEncoding): string {
+  if (Buffer.byteLength(value, encoding) <= maxBytes) return value;
+  const buf = Buffer.from(value, encoding);
+  let end = Math.min(maxBytes, buf.length);
+  while (end > 0) {
+    const b = buf[end - 1];
+    if ((b & 0x80) === 0) break;
+    if ((b & 0xc0) === 0x80) {
+      end--;
+      continue;
+    }
+    break;
+  }
+  const out = buf.subarray(0, end).toString(encoding);
+  if (Buffer.byteLength(out, encoding) > maxBytes) {
+    return truncateToBytes(out, end - 1, encoding);
+  }
+  return out;
+}
+
+type ColumnMaxLengthResult = { maxLength: number; inBytes: boolean } | null;
 
 async function resolveColumnMaxLength(
   prisma: BackendPrisma,
   tableName: string,
   columnName: string
-) {
-  try {
+): Promise<ColumnMaxLengthResult> {
+  const tryTable = async (name: string) => {
     const rows = (await (prisma as any).$queryRaw`
       SELECT DATA_TYPE AS dataType, CHARACTER_MAXIMUM_LENGTH AS maxLength
       FROM INFORMATION_SCHEMA.COLUMNS
       WHERE TABLE_SCHEMA = DATABASE()
-        AND TABLE_NAME = ${tableName}
+        AND TABLE_NAME = ${name}
         AND COLUMN_NAME = ${columnName}
       LIMIT 1
     `) as Array<{ dataType?: string; maxLength?: number | null }>;
-    const row = rows?.[0];
+    return rows?.[0];
+  };
+  try {
+    let row = await tryTable(tableName);
+    if (!row?.dataType && tableName !== tableName.toLowerCase()) {
+      row = await tryTable(tableName.toLowerCase());
+    }
     if (!row?.dataType) return null;
     const dataType = row.dataType.toLowerCase();
     if (dataType === "varchar" || dataType === "char") {
-      return row.maxLength ?? null;
+      const max = row.maxLength ?? null;
+      return max != null ? { maxLength: max, inBytes: false } : null;
     }
+    // MySQL TEXT/MEDIUMTEXT/LONGTEXT limits are in bytes (utf8mb4)
+    if (dataType === "text") return { maxLength: 65535, inBytes: true };
+    if (dataType === "mediumtext") return { maxLength: 16_777_215, inBytes: true };
+    if (dataType === "longtext") return { maxLength: 4_294_967_295, inBytes: true };
     return null;
   } catch (error) {
     log(
@@ -353,17 +450,33 @@ async function resolveColumnMaxLength(
   }
 }
 
+const EVIDENCE_VARCHAR_MAX = 191;
+
+function truncateForVarchar(value: string | null | undefined): string | null {
+  if (value == null) return null;
+  if (value.length <= EVIDENCE_VARCHAR_MAX) return value;
+  return value.slice(0, EVIDENCE_VARCHAR_MAX);
+}
+
 function mapEvidenceForNestedCreate(evidence: AgentsEvidence, submittedById: number) {
+  const rawDesc = evidence.description ?? evidence.summary ?? null;
+  const description = truncateForVarchar(rawDesc ?? undefined);
   return {
     id: evidence.id,
     submittedById,
     type: evidence.type,
-    title: evidence.title || evidence.summary?.substring(0, 80) || "Untitled Evidence",
-    summary: evidence.summary ?? null,
-    source: evidence.source ?? evidence.url ?? null,
-    url: evidence.url ?? null,
+    title: (evidence.title || evidence.summary?.substring(0, 80) || "Untitled Evidence").slice(
+      0,
+      EVIDENCE_VARCHAR_MAX
+    ),
+    summary:
+      evidence.summary != null && evidence.summary.length > 65535
+        ? truncateText(evidence.summary, 16000, true)
+        : evidence.summary ?? null,
+    source: truncateForVarchar(evidence.source ?? evidence.url ?? undefined),
+    url: truncateForVarchar(evidence.url ?? undefined),
     datePublished: evidence.datePublished ?? null,
-    description: evidence.description ?? evidence.summary ?? null,
+    description,
     moderationState: "APPROVED",
   } satisfies Parameters<
     BackendPrisma["project"]["create"]
@@ -375,17 +488,25 @@ function mapEvidenceForCreateMany(
   submittedById: number,
   projectId: string
 ): Parameters<BackendPrisma["evidenceItem"]["createMany"]>[0]["data"][number] {
+  const rawTitle = evidence.title || evidence.summary?.substring(0, 80) || "Untitled Evidence";
+  const rawSummary = evidence.summary ?? null;
+  const rawSource = evidence.source ?? evidence.url ?? null;
+  const rawUrl = evidence.url ?? null;
+  const rawDesc = evidence.description ?? evidence.summary ?? null;
   return {
     id: evidence.id,
     projectId,
     submittedById,
     type: evidence.type,
-    title: evidence.title || evidence.summary?.substring(0, 80) || "Untitled Evidence",
-    summary: evidence.summary ?? null,
-    source: evidence.source ?? evidence.url ?? null,
-    url: evidence.url ?? null,
+    title: rawTitle.length > EVIDENCE_VARCHAR_MAX ? rawTitle.slice(0, EVIDENCE_VARCHAR_MAX) : rawTitle,
+    summary:
+      rawSummary != null && rawSummary.length > 16000
+        ? truncateText(rawSummary, 16000, true)
+        : rawSummary,
+    source: truncateForVarchar(rawSource ?? undefined),
+    url: truncateForVarchar(rawUrl ?? undefined),
     datePublished: evidence.datePublished ?? null,
-    description: evidence.description ?? evidence.summary ?? null,
+    description: truncateForVarchar(rawDesc ?? undefined),
     moderationState: "APPROVED",
   };
 }

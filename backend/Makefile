@@ -31,10 +31,7 @@ update-schema:
 
 seed:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma db seed
-	@for seed in seeds/*.json; do \
-		[ -e "$$seed" ] || continue; \
-		$(DOCKER_COMPOSE) exec $(SERVICE) ts-node scripts/seedProjectsFromFile.ts "$$seed"; \
-	done
+	$(DOCKER_COMPOSE) exec $(SERVICE) ts-node scripts/seedProjectsFromFile.ts seeds/projects.seed.json
 
 # Usage: make seed-projects [SEED=seeds/projects.seed.json]
 seed-projects:
