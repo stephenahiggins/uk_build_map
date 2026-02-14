@@ -192,12 +192,10 @@ const ListProjects: React.FC = () => {
               className="max-w-sm -ml-2"
             >
               <div>
-                <span>Data available for </span>
-                <strong>West Yorkshire</strong>
                 <span>
-                  {' '}
-                  region. We will be progressively adding more data.{' '}
-                </span>
+                  Limited data is currently available. We will progressively add
+                  more data as we go.
+                </span>{' '}
                 <a
                   href="https://github.com/stephenahiggins/uk_build_map"
                   target="_blank"
@@ -271,17 +269,7 @@ const ListProjects: React.FC = () => {
           />
         </div>
         <div className="mb-1"></div>
-        <div className="mb-1">
-          <Banner
-            className="banner banner-highlight text-xs"
-            githubUrl="https://github.com/stephenahiggins/uk_build_map"
-          >
-            The data available is currently for the{' '}
-            <strong>West Yorkshire</strong> region. We will be progressively
-            adding more data. If you know your way around TypeScript, you can
-            help by pulling the GitHub repo.
-          </Banner>
-        </div>
+
         <div className="flex flex-col md:flex-row gap-6 w-full mt-3">
           {/* Project List */}
           <div className={hasMapProjects ? 'w-full md:w-2/3' : 'w-full'}>
