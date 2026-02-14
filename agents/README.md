@@ -19,6 +19,7 @@ cd agents
 npm run build
 node dist/cli.js --uk-wide
 ```
+The UK-wide mode now includes all local authorities in addition to nations and English regions.
 
 ### Staged Run (no DB writes)
 ```bash
@@ -83,6 +84,17 @@ make run ARGS="--connectors local-json --connectors-only --since 2025-01-01 --li
 ```bash
 npm run build
 node dist/cli.js loop --uk-wide --backfill-fetch 200 --incremental-fetch 50 --interval-hours 24 --connectors local-json
+```
+
+### Compile National (Stage -> Commit -> Migrate)
+```bash
+make compile-national
+```
+Defaults can be overridden with env vars:
+```bash
+ITERATIONS=0 SLEEP_SECONDS=3600 FETCH=200 MAX_EVIDENCE=5 CONCURRENCY=4 PROVIDER=openai SINCE_DAYS=30 \
+DATABASE_USER=root DATABASE_PASSWORD=123456 DATABASE_HOST=db DATABASE_PORT=3306 DATABASE_NAME=node_boilerplate \
+make compile-national
 ```
 
 ### Commit Staged Runs

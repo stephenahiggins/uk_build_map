@@ -13,7 +13,8 @@ help:
 	@echo "  make help                                                         Show this help message"
 	@echo "  make commit-staged FILE=<path> ALL=1                               Commit staged files to agents DB (deduped)"
 	@echo "  make migrate-staged-to-backend MODE=<mode> BACKEND_ENV=<env> BACKEND_URL=<url> FILE=<path> ALL=1  Commit staged JSONs then migrate to backend DB"
-	\echo "  make migrate-to-backend MODE=<mode> BACKEND_ENV=<env> BACKEND_URL=<url>  Migrate to backend"
+	@echo "  make migrate-to-backend MODE=<mode> BACKEND_ENV=<env> BACKEND_URL=<url>  Migrate to backend"
+	@echo "  make compile-national                                         Continuous UK-wide scrape -> stage -> commit -> migrate"
 
 # Build the TypeScript project
 .PHONY: build
@@ -59,3 +60,7 @@ migrate-to-backend:
 .PHONY: migrate-staged-to-backend
 migrate-staged-to-backend:
 	BACKEND_URL=$(BACKEND_URL) ./scripts/migrate-staged-to-backend.sh $(if $(MODE),--mode $(MODE),) $(if $(BACKEND_ENV),--backend-env $(BACKEND_ENV),) $(if $(FILE),--file $(FILE),) $(if $(ALL),--all,)
+
+.PHONY: compile-national
+compile-national:
+	./scripts/compile-national.sh

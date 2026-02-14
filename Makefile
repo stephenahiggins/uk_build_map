@@ -1,4 +1,4 @@
-.PHONY: help backend-% frontend-% agents-% recompute-evaluations
+.PHONY: help backend-% frontend-% agents-% recompute-evaluations compile-national
 
 help:
 	@echo "Available commands:"
@@ -6,6 +6,7 @@ help:
 	@echo "  make frontend-<target>   Run a frontend Make target (e.g. frontend-start)"
 	@echo "  make agents-<target>     Run an agents Make target (e.g. agents-build)"
 	@echo "  make recompute-evaluations  Recompute project evaluations via backend helper"
+	@echo "  make compile-national   Continuous UK-wide scrape -> stage -> commit -> migrate"
 
 backend-%:
 	$(MAKE) -C backend $*
@@ -18,3 +19,6 @@ agents-%:
 
 recompute-evaluations:
 	$(MAKE) -C backend recompute-evaluations
+
+compile-national:
+	$(MAKE) -C agents compile-national
