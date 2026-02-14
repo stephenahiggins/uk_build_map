@@ -99,7 +99,7 @@ model LocalAuthority {
 model Project {
   id          String      @id @default(uuid())
   title       String      @db.Text
-  description String?     @db.Text
+  description String?     @db.LongText
   type        ProjectType
 
   regionId           String?
@@ -112,7 +112,7 @@ model Project {
   expectedCompletion DateTime?
   status             ProjectStatus
   statusUpdatedAt    DateTime        @default(now())
-  statusRationale    String?
+  statusRationale    String?     @db.LongText
   moderationState    ModerationState @default(PENDING)
   updatedAt          DateTime        @updatedAt
 
