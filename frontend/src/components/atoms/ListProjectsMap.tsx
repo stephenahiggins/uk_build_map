@@ -23,6 +23,12 @@ interface ListProjectsMapProps {
 
 const DEFAULT_POSITION = { lat: 54, lng: -3 };
 const DEFAULT_ZOOM = 5.5;
+const UK_BOUNDS = {
+  south: 49.5,
+  west: -8.7,
+  north: 60.9,
+  east: 2.1,
+};
 
 // Adjust the map boundaries to focus on the given projects
 // This is just a UX helper to avoid the user having to zoom out/in manually
@@ -34,18 +40,39 @@ const FitBounds: React.FC<{ projects: Project[] }> = ({ projects }) => {
       (p) => p.latitude != null && p.longitude != null
     );
 
-    if (filtered.length === 0) return;
+    const ukFiltered = filtered.filter((project) => {
+      const lat = project.latitude!;
+      const lng = project.longitude!;
+      return (
+        lat >= UK_BOUNDS.south &&
+        lat <= UK_BOUNDS.north &&
+        lng >= UK_BOUNDS.west &&
+        lng <= UK_BOUNDS.east
+      );
+    });
 
-    if (filtered.length === 1) {
-      // If only one marker, center on it with a reasonable zoom
-      const project = filtered[0];
+    if (ukFiltered.length === 0) {
+      const ukBounds = L.latLngBounds(
+        [UK_BOUNDS.south, UK_BOUNDS.west],
+        [UK_BOUNDS.north, UK_BOUNDS.east]
+      );
+      map.fitBounds(ukBounds, {
+        padding: [20, 20],
+        maxZoom: 7,
+      });
+      return;
+    }
+
+    if (ukFiltered.length === 1) {
+      // If only one UK marker, center on it with a reasonable zoom
+      const project = ukFiltered[0];
       map.setView([project.latitude!, project.longitude!], 10);
       return;
     }
 
     // Create bounds from all marker positions
     const bounds = L.latLngBounds(
-      filtered.map((project) => [project.latitude!, project.longitude!])
+      ukFiltered.map((project) => [project.latitude!, project.longitude!])
     );
 
     // Fit the map to show all markers with padding
