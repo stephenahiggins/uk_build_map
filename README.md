@@ -108,6 +108,20 @@ make recompute-evaluations
 
 The agents subsystem provides background automation to augment the core platform.
 
+### How to Pick Up Where You Left Off
+1. Commit any staged files (deduped by project title):
+   ```sh
+   make agents-commit-staged
+   ```
+2. Migrate into the backend database:
+   ```sh
+   make agents-migrate-to-backend MODE=append
+   ```
+3. Restart the national run:
+   ```sh
+   make compile-national
+   ```
+
 ### Current Responsibilities
 - Evidence enrichment: extract summaries, tag categories, suggest related initiatives
 - Moderation assistance: draft rationale suggestions for approve/reject
@@ -137,6 +151,7 @@ Add to `.env` as needed:
 - AGENT_MODEL=gpt-4o-mini (override per agent if needed)
 - AGENT_LOG_LEVEL=info|debug
 - AGENT_RUN_EVIDENCE_ENRICH=true|false (feature flag examples)
+- MIGRATE_DATABASE_URL=mysql://user:pass@host:3306/db (backend DB target for agents migration)
 
 ### Running Locally
 1. Ensure backend containers are up: `make up`

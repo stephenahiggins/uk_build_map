@@ -222,6 +222,10 @@ function resolveBackendDatabaseUrl(options: MigrateOptions): string | undefined 
     return options.backendDatabaseUrl;
   }
 
+  if (process.env.MIGRATE_DATABASE_URL) {
+    return process.env.MIGRATE_DATABASE_URL;
+  }
+
   if (process.env.BACKEND_URL) {
     return process.env.BACKEND_URL;
   }
@@ -242,6 +246,9 @@ function resolveBackendDatabaseUrl(options: MigrateOptions): string | undefined 
     }
     try {
       const parsed = parseDotenv(fs.readFileSync(resolved));
+      if (parsed.MIGRATE_DATABASE_URL) {
+        return parsed.MIGRATE_DATABASE_URL;
+      }
       if (parsed.BACKEND_URL) {
         return parsed.BACKEND_URL;
       }

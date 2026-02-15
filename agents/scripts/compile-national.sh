@@ -18,14 +18,14 @@ MIGRATE_MODE="${MIGRATE_MODE:-append}"
 SINCE_DAYS="${SINCE_DAYS:-30}"
 EXTRA_ARGS="${EXTRA_ARGS:-}"
 
-# Backend DB connection (override with BACKEND_URL directly if desired)
-DATABASE_USER="${DATABASE_USER:-root}"
-DATABASE_PASSWORD="${DATABASE_PASSWORD:-123456}"
-DATABASE_HOST="${DATABASE_HOST:-db}"
-DATABASE_PORT="${DATABASE_PORT:-3306}"
-DATABASE_NAME="${DATABASE_NAME:-node_boilerplate}"
-
-BACKEND_URL="${BACKEND_URL:-mysql://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}}"
+# Backend DB connection from agents/.env
+if [[ -f "$ROOT_DIR/.env" ]]; then
+  set -a
+  # shellcheck source=../.env
+  source "$ROOT_DIR/.env"
+  set +a
+fi
+BACKEND_URL="${BACKEND_URL:-${MIGRATE_DATABASE_URL:-$DATABASE_URL}}"
 export BACKEND_URL
 
 SINCE_DATE="$(python3 - <<PY
