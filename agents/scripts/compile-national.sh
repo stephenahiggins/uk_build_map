@@ -18,15 +18,15 @@ MIGRATE_MODE="${MIGRATE_MODE:-append}"
 SINCE_DAYS="${SINCE_DAYS:-30}"
 EXTRA_ARGS="${EXTRA_ARGS:-}"
 
-# Backend DB connection (override with BACKEND_DATABASE_URL directly if desired)
+# Backend DB connection (override with BACKEND_URL directly if desired)
 DATABASE_USER="${DATABASE_USER:-root}"
 DATABASE_PASSWORD="${DATABASE_PASSWORD:-123456}"
 DATABASE_HOST="${DATABASE_HOST:-db}"
 DATABASE_PORT="${DATABASE_PORT:-3306}"
 DATABASE_NAME="${DATABASE_NAME:-node_boilerplate}"
 
-BACKEND_DATABASE_URL="${BACKEND_DATABASE_URL:-mysql://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}}"
-export BACKEND_DATABASE_URL
+BACKEND_URL="${BACKEND_URL:-mysql://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}}"
+export BACKEND_URL
 
 SINCE_DATE="$(python3 - <<PY
 from datetime import datetime, timedelta
@@ -53,7 +53,7 @@ run_cycle() {
   node dist/cli.js commit-staged --all
 
   echo "[compile-national] Migrating agents data into backend DB..."
-  node dist/cli.js migrate-backend --mode "$MIGRATE_MODE" --backend-url "$BACKEND_DATABASE_URL"
+  node dist/cli.js migrate-backend --mode "$MIGRATE_MODE" --backend-url "$BACKEND_URL"
 }
 
 if [[ "$ITERATIONS" -gt 0 ]]; then

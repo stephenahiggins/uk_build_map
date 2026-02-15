@@ -52,12 +52,12 @@ export async function handleOpenAIRateLimit(label: string): Promise<"retry" | "a
   const rl = createInterface({ input, output });
   try {
     const answer = await rl.question(
-      `OpenAI rate limit hit during ${label}. Enter a new API key, or type "pause" (optionally "pause 120"), or "exit": `
+      `OpenAI rate limit hit during ${label}. Press Enter to retry, enter a new API key, or type "pause" (optionally "pause 120"), or "exit": `
     );
     const trimmed = answer.trim();
     if (!trimmed) {
-      log("[LLM] No input provided, pausing for 60s.");
-      await pause(60_000);
+      log("[LLM] Retrying after 5s.");
+      await pause(5_000);
       return "retry";
     }
     if (trimmed.toLowerCase().startsWith("pause")) {
@@ -89,11 +89,15 @@ export async function handleOpenAIQuota(label: string): Promise<"retry" | "abort
   const rl = createInterface({ input, output });
   try {
     const answer = await rl.question(
-      `OpenAI credits exhausted during ${label}. Top up your OpenAI account, then press Enter to retry, or type \"exit\": `
+      `OpenAI credits exhausted during ${label}. Top up your OpenAI account, then press Enter to retry, enter a new API key, or type \"exit\": `
     );
     const trimmed = answer.trim().toLowerCase();
     if (trimmed === "exit") {
       return "abort";
+    }
+    if (trimmed && trimmed !== "exit") {
+      setOpenAIApiKey(trimmed);
+      log("[LLM] Updated OpenAI API key.");
     }
     return "retry";
   } finally {

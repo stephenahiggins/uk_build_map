@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import { PROJECT_TYPE, EVIDENCE_TYPE } from "./constants";
 import crypto from "node:crypto";
 import { normalizeProjectTitle } from "./utils/projectNormalization";
+import { validateEvidenceDate } from "./geminiService";
 
 const prisma = new PrismaClient();
 
@@ -92,6 +93,10 @@ export async function upsertProject(project: ProjectStatus) {
     });
     if (existingEvidence) continue;
 
+    const validatedDate = evidence.evidenceDate
+      ? validateEvidenceDate(evidence.evidenceDate)
+      : null;
+
     await prisma.evidenceItem.create({
       data: {
         id: uuidv4(),
@@ -102,7 +107,7 @@ export async function upsertProject(project: ProjectStatus) {
         summary: evidence.summary,
         source: evidence.source || evidence.sourceUrl || undefined,
         url: evidence.sourceUrl || undefined,
-        datePublished: evidence.evidenceDate ? new Date(evidence.evidenceDate) : undefined,
+        datePublished: validatedDate ? new Date(validatedDate) : undefined,
         description: evidence.rawText,
       },
     });

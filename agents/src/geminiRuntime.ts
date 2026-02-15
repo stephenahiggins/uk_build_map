@@ -50,12 +50,12 @@ export async function handleGeminiRateLimit(
   const rl = createInterface({ input, output });
   try {
     const answer = await rl.question(
-      `Gemini limit hit during ${label}. Enter a new API key, or type "pause" (optionally "pause 120"), "openai" to switch providers, or "exit": `
+      `Gemini limit hit during ${label}. Press Enter to retry, enter a new API key, or type "pause" (optionally "pause 120"), "openai" to switch providers, or "exit": `
     );
     const trimmed = answer.trim();
     if (!trimmed) {
-      log("[LLM] No input provided, pausing for 60s.");
-      await pause(60_000);
+      log("[LLM] Retrying after 5s.");
+      await pause(5_000);
       return "retry";
     }
     if (trimmed.toLowerCase() === "openai") {

@@ -103,6 +103,20 @@ npm run build
 node dist/cli.js commit-staged --all
 ```
 
+### How to Pickup Where You Left Off
+1. Commit any staged files (deduped by project title):
+```bash
+make agents-commit-staged
+```
+2. Migrate into the backend database:
+```bash
+make agents-migrate-to-backend MODE=append
+```
+3. Restart the national run:
+```bash
+make compile-national
+```
+
 ### Process All Returned Projects
 ```bash
 make run ARGS="--locale 'Greater Manchester' --fetch 150"
@@ -148,7 +162,7 @@ make migrate-to-backend MODE=append BACKEND_URL="mysql://root:123456@localhost:3
 | `--backend-env <path>` | Optional path to a backend `.env` file to resolve the backend `DATABASE_URL`. Defaults to `../backend/.env` relative to the repo root. |
 | `--backend-url <url>` | Explicit backend database connection string. Takes precedence over environment files. |
 
-If neither `--backend-url` nor `--backend-env` are provided, the command falls back to the `BACKEND_DATABASE_URL` environment variable. The agents database connection is always taken from `agents/.env`.
+If neither `--backend-url` nor `--backend-env` are provided, the command falls back to the `BACKEND_URL` environment variable. The agents database connection is always taken from `agents/.env`.
 
 ### Makefile Helper
 
