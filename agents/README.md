@@ -1,5 +1,14 @@
 # LFG Agents
 
+- Run initial UK-wide scrape to staging (SQLite):
+  ```bash
+  make run ARGS="--uk-wide --stage --since 30 --fetch 200 --max-evidence 5 --concurrency 4"
+  ```
+- Migrate staged data into production DB:
+  ```bash
+  make migrate-to-backend MODE=append
+  ```
+
 TypeScript CLI for discovering local government infrastructure projects, gathering evidence, and syncing to the backend. Uses Prisma (SQLite in `agents/`), optional OpenAI or Gemini, and supports staging then committing data.
 
 Run everything from the `agents/` directory.

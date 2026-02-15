@@ -151,7 +151,7 @@ Add to `.env` as needed:
 - AGENT_MODEL=gpt-4o-mini (override per agent if needed)
 - AGENT_LOG_LEVEL=info|debug
 - AGENT_RUN_EVIDENCE_ENRICH=true|false (feature flag examples)
-- MIGRATE_DATABASE_URL=mysql://user:pass@host:3306/db (backend DB target for agents migration)
+- BACKEND_DATABASE_URL=mysql://user:pass@host:3306/db (backend DB target for agents migration)
 
 ### Running Locally
 1. Ensure backend containers are up: `make up`

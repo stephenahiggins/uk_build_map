@@ -25,7 +25,11 @@ if [[ -f "$ROOT_DIR/.env" ]]; then
   source "$ROOT_DIR/.env"
   set +a
 fi
-BACKEND_URL="${BACKEND_URL:-${MIGRATE_DATABASE_URL:-$DATABASE_URL}}"
+BACKEND_URL="${BACKEND_URL:-${BACKEND_DATABASE_URL:-${MIGRATE_DATABASE_URL:-}}}"
+if [[ -z "${BACKEND_URL:-}" ]]; then
+  echo "[compile-national] Missing backend database URL. Set BACKEND_DATABASE_URL (preferred) or MIGRATE_DATABASE_URL." >&2
+  exit 1
+fi
 export BACKEND_URL
 
 SINCE_DATE="$(python3 - <<PY
