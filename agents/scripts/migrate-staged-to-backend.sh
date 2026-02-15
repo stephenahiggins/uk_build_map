@@ -38,10 +38,14 @@ while [[ $# -gt 0 ]]; do
       echo "Unknown arg: $1" >&2
       exit 1
       ;;
-  esac
- done
+ esac
+done
 
 cd "$ROOT_DIR"
+
+if [[ -n "${MIGRATE_DATABASE_URL:-}" && -z "${BACKEND_URL:-}" ]]; then
+  export BACKEND_URL="$MIGRATE_DATABASE_URL"
+fi
 
 # Build first
 npm run build

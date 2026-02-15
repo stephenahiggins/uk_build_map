@@ -31,6 +31,7 @@ import {
 import { fetchFromConnectors, resolveConnectorNames } from "./connectors";
 import type { ConnectorProject, ConnectorEvidence } from "./connectors/types";
 import { listStageFiles, readStageFile, writeStageFile } from "./staging";
+import { UK_LOCAL_AUTHORITIES } from "./data/ukLocalAuthorities";
 
 type CliOptions = {
   locale?: string;
@@ -103,7 +104,8 @@ const FOCUS_THEMES = [
 const MIN_PASS_TARGET = 25;
 const MAX_ATTEMPTS_PER_LOCALE = 4;
 const EXISTING_TITLE_PROMPT_COUNT = 60;
-const UK_WIDE_LOCALES = [
+const MAX_SEARCH_RETRIES = 3;
+const UK_WIDE_BASE_LOCALES = [
   "United Kingdom",
   "England",
   "Scotland",
@@ -119,6 +121,10 @@ const UK_WIDE_LOCALES = [
   "South East",
   "South West",
 ];
+
+const UK_WIDE_LOCALES = Array.from(
+  new Set([...UK_WIDE_BASE_LOCALES, ...UK_LOCAL_AUTHORITIES])
+);
 
 function resolveSearchLocales(localeInput: string, useUkWide: boolean): string[] {
   if (useUkWide) {
@@ -225,12 +231,34 @@ async function collectProjectsAcrossLocales(
       } excluding ${existing.length} known titles`
     );
     const canSearch = llmBudget.consume(`project search (${trimmedLocale})`);
-    const result = await searchInfrastructureProjects(trimmedLocale, target, existing, focusHint, {
-      forceMock: !canSearch,
-    });
-    log(`[Search] ${trimmedLocale} returned ${result.projects.length} project(s)`);
-    appendSummary(trimmedLocale, result.summary);
-    absorbProjects(trimmedLocale, result.projects);
+    for (let attempt = 1; attempt <= MAX_SEARCH_RETRIES; attempt += 1) {
+      try {
+        const result = await searchInfrastructureProjects(
+          trimmedLocale,
+          target,
+          existing,
+          focusHint,
+          { forceMock: !canSearch }
+        );
+        log(`[Search] ${trimmedLocale} returned ${result.projects.length} project(s)`);
+        appendSummary(trimmedLocale, result.summary);
+        absorbProjects(trimmedLocale, result.projects);
+        return;
+      } catch (err: any) {
+        const message = err?.message || String(err);
+        const causeCode = err?.cause?.code || err?.cause?.errno;
+        log(
+          `[Search] Error for ${trimmedLocale} (attempt ${attempt}/${MAX_SEARCH_RETRIES}):`,
+          message,
+          causeCode ? `cause=${causeCode}` : ""
+        );
+        if (attempt >= MAX_SEARCH_RETRIES) {
+          log(`[Search] Skipping ${trimmedLocale} after ${MAX_SEARCH_RETRIES} failed attempts.`);
+          return;
+        }
+        await new Promise((resolve) => setTimeout(resolve, 2000 * attempt));
+      }
+    }
   };
 
   for (const locale of searchLocales) {

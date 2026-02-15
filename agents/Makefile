@@ -12,8 +12,11 @@ help:
 	@echo "  make clean                                                        Clean build artifacts"
 	@echo "  make help                                                         Show this help message"
 	@echo "  make commit-staged FILE=<path> ALL=1                               Commit staged files to agents DB (deduped)"
+	@echo "  make commit-latest                                                Commit newest staged file to agents DB (deduped)"
 	@echo "  make migrate-staged-to-backend MODE=<mode> BACKEND_ENV=<env> BACKEND_URL=<url> FILE=<path> ALL=1  Commit staged JSONs then migrate to backend DB"
-	\echo "  make migrate-to-backend MODE=<mode> BACKEND_ENV=<env> BACKEND_URL=<url>  Migrate to backend"
+	@echo "  make migrate-to-backend MODE=<mode> BACKEND_ENV=<env> BACKEND_URL=<url>  Migrate to backend"
+	@echo "  make compile-national                                         Continuous UK-wide scrape -> stage -> commit -> migrate"
+	@echo "  make recompute-evaluations                                    Recompute project evaluations via backend helper"
 
 # Build the TypeScript project
 .PHONY: build
@@ -51,6 +54,15 @@ clean:
 commit-staged: build
 	node dist/cli.js commit-staged $(if $(FILE),--file $(FILE),) $(if $(ALL),--all,)
 
+.PHONY: commit-latest
+commit-latest: build
+	@LATEST_FILE=$$(ls -t staging/*.json 2>/dev/null | head -n1); \
+	if [ -z "$$LATEST_FILE" ]; then \
+		echo "No staged files found in staging/"; \
+		exit 1; \
+	fi; \
+	node dist/cli.js commit-staged --file "$$LATEST_FILE"
+
 .PHONY: migrate-to-backend
 migrate-to-backend:
 	make build
@@ -59,3 +71,11 @@ migrate-to-backend:
 .PHONY: migrate-staged-to-backend
 migrate-staged-to-backend:
 	BACKEND_URL=$(BACKEND_URL) ./scripts/migrate-staged-to-backend.sh $(if $(MODE),--mode $(MODE),) $(if $(BACKEND_ENV),--backend-env $(BACKEND_ENV),) $(if $(FILE),--file $(FILE),) $(if $(ALL),--all,)
+
+.PHONY: compile-national
+compile-national:
+	./scripts/compile-national.sh
+
+.PHONY: recompute-evaluations
+recompute-evaluations:
+	$(MAKE) -C ../backend recompute-evaluations
