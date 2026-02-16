@@ -62,7 +62,7 @@ export async function migrateAgentsDataToBackend(
   const backendDatabaseUrl = resolveBackendDatabaseUrl(options);
   if (!backendDatabaseUrl) {
     throw new Error(
-      "Unable to determine backend DATABASE_URL. Provide --backend-url, set BACKEND_URL, or create backend/.env."
+      "Unable to determine backend DATABASE_URL. Provide --backend-url, set BACKEND_DATABASE_URL (preferred) or BACKEND_URL, or create backend/.env."
     );
   }
 
@@ -222,6 +222,10 @@ function resolveBackendDatabaseUrl(options: MigrateOptions): string | undefined 
     return options.backendDatabaseUrl;
   }
 
+  if (process.env.BACKEND_DATABASE_URL) {
+    return process.env.BACKEND_DATABASE_URL;
+  }
+
   if (process.env.MIGRATE_DATABASE_URL) {
     return process.env.MIGRATE_DATABASE_URL;
   }
@@ -246,6 +250,9 @@ function resolveBackendDatabaseUrl(options: MigrateOptions): string | undefined 
     }
     try {
       const parsed = parseDotenv(fs.readFileSync(resolved));
+      if (parsed.BACKEND_DATABASE_URL) {
+        return parsed.BACKEND_DATABASE_URL;
+      }
       if (parsed.MIGRATE_DATABASE_URL) {
         return parsed.MIGRATE_DATABASE_URL;
       }

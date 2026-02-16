@@ -1,5 +1,15 @@
 # LFG Agents
 
+- Run initial UK-wide scrape to staging (SQLite):
+  ```bash
+  make run ARGS="--uk-wide --stage --since 2025-01-16 --fetch 200 --max-evidence 5 --concurrency 4"
+  ```
+  (Use a YYYY-MM-DD date for `--since`; e.g. 30 days ago: `$(date -v-30d +%Y-%m-%d)` on macOS.)
+- Migrate staged data into production DB:
+  ```bash
+  make migrate-to-backend MODE=append
+  ```
+
 TypeScript CLI for discovering local government infrastructure projects, gathering evidence, and syncing to the backend. Uses Prisma (SQLite in `agents/`), optional OpenAI or Gemini, and supports staging then committing data.
 
 Run everything from the `agents/` directory.
@@ -72,6 +82,8 @@ make migrate-to-backend MODE=append BACKEND_URL="mysql://user:pass@host:3306/dbn
 - `--fetch <n>` — Target number of projects to fetch (default 100)
 - `--limit <n>` — Max projects to process (default: all)
 - `--max-evidence <n>` — Evidence items per project (default 10)
+- `--concurrency <n>` — Projects to process concurrently (default 3)
+- `--since <YYYY-MM-DD>` — Incremental pull: only use connector data since this date
 - `--stage` — Write to `staging/` only, don’t commit to DB
 - `--provider openai|gemini` — LLM provider
 

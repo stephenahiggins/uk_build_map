@@ -43,7 +43,9 @@ done
 
 cd "$ROOT_DIR"
 
-if [[ -n "${MIGRATE_DATABASE_URL:-}" && -z "${BACKEND_URL:-}" ]]; then
+if [[ -n "${BACKEND_DATABASE_URL:-}" && -z "${BACKEND_URL:-}" ]]; then
+  export BACKEND_URL="$BACKEND_DATABASE_URL"
+elif [[ -n "${MIGRATE_DATABASE_URL:-}" && -z "${BACKEND_URL:-}" ]]; then
   export BACKEND_URL="$MIGRATE_DATABASE_URL"
 fi
 

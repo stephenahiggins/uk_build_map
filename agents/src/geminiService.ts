@@ -740,6 +740,7 @@ ${dedupeTitles.map((title) => `- ${title}`).join("\n")}`
   };
 
   const prompt = `You are collecting a comprehensive structured dataset of infrastructure projects in ${locale}.
+Only return projects that are located within the United Kingdom. If a project is outside the UK, exclude it.
 
 ${focusPrompt ? `${focusPrompt}\n\n` : ""}${dedupePrompt ? `${dedupePrompt}\n\n` : ""}Collect projects across these categories (expand each):
 - Road & transport (junction upgrades, bypasses, active travel corridors, maintenance programmes)
