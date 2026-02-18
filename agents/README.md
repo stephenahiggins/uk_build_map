@@ -79,12 +79,13 @@ make migrate-to-backend MODE=append BACKEND_URL="mysql://user:pass@host:3306/dbn
 
 - `--locale <string>` — Area or comma-separated list (default: West Yorkshire)
 - `--uk-wide` — Run across nations and English regions
-- `--fetch <n>` — Target number of projects to fetch (default 100)
+- `--fetch <n>` — Target number of projects to fetch (default 10)
 - `--limit <n>` — Max projects to process (default: all)
 - `--max-evidence <n>` — Evidence items per project (default 10)
 - `--concurrency <n>` — Projects to process concurrently (default 3)
 - `--since <YYYY-MM-DD>` — Incremental pull: only use connector data since this date
 - `--stage` — Write to `staging/` only, don’t commit to DB
 - `--provider openai|gemini` — LLM provider
+- `--local [baseUrl]` — Use a local OpenAI-compatible endpoint (default `http://localhost:11434/v1`). If set and `OPENAI_API_KEY` is present, the CLI will use OpenAI web search but perform analysis locally.
 
 Logs go to `cli.log`; use `tail -f cli.log` while running.

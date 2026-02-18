@@ -47,6 +47,8 @@ type CliOptions = {
   since?: string;
   stage?: boolean;
   provider?: string;
+  local?: boolean;
+  localBaseUrl?: string;
 };
 
 type InfrastructureProject = Awaited<
@@ -86,6 +88,12 @@ function parseScrapeCliOptions(raw: Record<string, any>): CliOptions {
   if (raw.since !== undefined) parsed.since = String(raw.since);
   if (raw.stage !== undefined) parsed.stage = Boolean(raw.stage);
   if (raw.provider !== undefined) parsed.provider = String(raw.provider);
+  if (raw.local !== undefined) {
+    parsed.local = Boolean(raw.local);
+    if (typeof raw.local === "string" && raw.local.trim().length > 0) {
+      parsed.localBaseUrl = raw.local.trim();
+    }
+  }
   return parsed;
 }
 
@@ -101,7 +109,6 @@ const FOCUS_THEMES = [
   "utilities, waste management and environmental infrastructure",
 ] as const;
 
-const MIN_PASS_TARGET = 25;
 const MAX_ATTEMPTS_PER_LOCALE = 4;
 const EXISTING_TITLE_PROMPT_COUNT = 60;
 const MAX_SEARCH_RETRIES = 3;
@@ -741,7 +748,7 @@ async function collectProjectsAcrossLocales(
   const countsByLocale = new Map<string, number>();
 
   const baseTarget = Math.max(
-    MIN_PASS_TARGET,
+    1,
     searchLocales.length ? Math.ceil(minFetch / searchLocales.length) : minFetch
   );
 
@@ -835,7 +842,7 @@ async function collectProjectsAcrossLocales(
   while (uniqueProjects.length < minFetch && fallbackAttempts < searchLocales.length) {
     const locale = searchLocales[fallbackAttempts % searchLocales.length];
     const remaining = minFetch - uniqueProjects.length;
-    await requestBatch(locale, Math.max(MIN_PASS_TARGET, remaining), null);
+    await requestBatch(locale, Math.max(1, remaining), null);
     fallbackAttempts += 1;
   }
 
@@ -869,6 +876,14 @@ export async function main(cliOpts?: CliOptions) {
   if (cliOpts?.provider) {
     applyRuntimeOverrides({ PROVIDER: resolveProvider(cliOpts.provider) });
   }
+  if (cliOpts?.local || cliOpts?.localBaseUrl) {
+    applyRuntimeOverrides({
+      PROVIDER: "openai" satisfies LlmProvider,
+      OPENAI_BASE_URL: cliOpts.localBaseUrl || "http://localhost:11434/v1",
+      OPENAI_COMPAT_MODE: "ollama",
+      OPENAI_API_KEY: envValues.OPENAI_API_KEY || "ollama",
+    });
+  }
   validateEnvValues();
   if (cliOpts?.ukWide) {
     log("Starting CLI with options:", { ...cliOpts, locale: "United Kingdom" });
@@ -895,8 +910,8 @@ if (isDirectRun) {
     .option("-n, --limit <number>", "max projects to process (default: all fetched)")
     .option(
       "-f, --fetch <number>",
-      "minimum number of projects to fetch from model (default: 100)",
-      "100"
+      "minimum number of projects to fetch from model (default: 10)",
+      "10"
     )
     .option(
       "-e, --max-evidence <number>",
@@ -923,6 +938,10 @@ if (isDirectRun) {
     .option(
       "--provider <provider>",
       "LLM provider to use (openai|gemini); overrides PROVIDER env var"
+    )
+    .option(
+      "--local [baseUrl]",
+      "use a local OpenAI-compatible endpoint (default: http://localhost:11434/v1)"
     )
     .action(async (rawOpts) => {
       const parsed = parseScrapeCliOptions(rawOpts);
@@ -952,6 +971,10 @@ if (isDirectRun) {
     .option(
       "--provider <provider>",
       "LLM provider to use (openai|gemini); overrides PROVIDER env var"
+    )
+    .option(
+      "--local [baseUrl]",
+      "use a local OpenAI-compatible endpoint (default: http://localhost:11434/v1)"
     )
     .option("-e, --max-evidence <number>", "max evidence items to gather per project", "5")
     .option("-c, --concurrency <number>", "number of projects to process concurrently", "3")
@@ -1071,7 +1094,7 @@ async function run(opts: CliOptions) {
     log("Derived search areas:", searchLocales.join(", "));
   }
 
-  const minFetch = opts.fetch ?? opts.limit ?? 100;
+  const minFetch = opts.fetch ?? opts.limit ?? 10;
   log(`Targeting at least ${minFetch} unique projects`);
   const connectorNames = resolveConnectorNames(opts.connectors);
   const sinceDate = opts.since ? new Date(opts.since) : null;

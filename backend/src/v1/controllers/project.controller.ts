@@ -126,83 +126,89 @@ export const getProjectById = async (
   }
 };
 
+const buildProjectWhere = (query: RequestWithProfile['query']) => {
+  // Extract all possible filterable fields from query
+  const {
+    id,
+    title,
+    description,
+    type,
+    regionId,
+    localAuthorityId,
+    expectedCompletion,
+    status,
+    statusRationale,
+    latitude,
+    longitude,
+    locationDescription,
+    locationSource,
+    locationConfidence,
+    createdAt,
+  } = query;
+
+  // Build Prisma 'where' filter dynamically
+  const where: any = {};
+  if (id) where.id = id;
+  if (title) where.title = { contains: title as string, mode: 'insensitive' };
+  if (description) {
+    where.description = {
+      contains: description as string,
+      mode: 'insensitive',
+    };
+  }
+  if (type) where.type = type;
+  if (regionId) where.regionId = regionId;
+  if (localAuthorityId) where.localAuthorityId = localAuthorityId;
+  if (expectedCompletion) {
+    // Accept exact date or ISO string
+    const date = new Date(expectedCompletion as string);
+    if (!isNaN(date.getTime())) where.expectedCompletion = date;
+  }
+  if (status) where.status = status;
+  if (statusRationale) {
+    where.statusRationale = {
+      contains: statusRationale as string,
+      mode: 'insensitive',
+    };
+  }
+  if (latitude) where.latitude = Number(latitude);
+  if (longitude) where.longitude = Number(longitude);
+  if (locationDescription) {
+    where.locationDescription = {
+      contains: locationDescription as string,
+      mode: 'insensitive',
+    };
+  }
+  if (locationSource) {
+    where.locationSource = {
+      contains: locationSource as string,
+      mode: 'insensitive',
+    };
+  }
+  if (locationConfidence && typeof locationConfidence === 'string') {
+    const upper = locationConfidence.trim().toUpperCase();
+    if (VALID_LOCATION_CONFIDENCE.has(upper)) {
+      where.locationConfidence = upper as 'LOW' | 'MEDIUM' | 'HIGH';
+    }
+  }
+  if (createdAt) {
+    const date = new Date(createdAt as string);
+    if (!isNaN(date.getTime())) where.createdAt = date;
+  }
+
+  return where;
+};
+
 // GET /projects - List all projects (optionally filtered by any parameter)
 export const getProjects = async (req: RequestWithProfile, res: Response) => {
   try {
-    // Extract all possible filterable fields from query
-    const {
-      id,
-      title,
-      description,
-      type,
-      regionId,
-      localAuthorityId,
-      expectedCompletion,
-      status,
-      statusRationale,
-      latitude,
-      longitude,
-      locationDescription,
-      locationSource,
-      locationConfidence,
-      createdAt,
-      page: pageQuery,
-      limit: limitQuery,
-    } = req.query;
+    const { page: pageQuery, limit: limitQuery } = req.query;
 
     const page = pageQuery ? parseInt(pageQuery as string, 10) : 1;
     const limit = limitQuery ? parseInt(limitQuery as string, 10) : 10;
     const skip = (page - 1) * limit;
 
-    // Build Prisma 'where' filter dynamically
-    const where: any = {};
-    if (id) where.id = id;
-    if (title) where.title = { contains: title as string, mode: 'insensitive' };
-    if (description) {
-      where.description = {
-        contains: description as string,
-        mode: 'insensitive',
-      };
-    }
-    if (type) where.type = type;
-    if (regionId) where.regionId = regionId;
-    if (localAuthorityId) where.localAuthorityId = localAuthorityId;
-    if (expectedCompletion) {
-      // Accept exact date or ISO string
-      const date = new Date(expectedCompletion as string);
-      if (!isNaN(date.getTime())) where.expectedCompletion = date;
-    }
-    if (status) where.status = status;
-    if (statusRationale) {
-      where.statusRationale = {
-        contains: statusRationale as string,
-        mode: 'insensitive',
-      };
-    }
-    if (latitude) where.latitude = Number(latitude);
-    if (longitude) where.longitude = Number(longitude);
-    if (locationDescription) {
-      where.locationDescription = {
-        contains: locationDescription as string,
-        mode: 'insensitive',
-      };
-    }
-    if (locationSource) {
-      where.locationSource = {
-        contains: locationSource as string,
-        mode: 'insensitive',
-      };
-    }
-    if (locationConfidence && typeof locationConfidence === 'string') {
-      const upper = locationConfidence.trim().toUpperCase();
-      if (VALID_LOCATION_CONFIDENCE.has(upper)) {
-        where.locationConfidence = upper as 'LOW' | 'MEDIUM' | 'HIGH';
-      }
-    }
-    if (createdAt) {
-      const date = new Date(createdAt as string);
-      if (!isNaN(date.getTime())) where.createdAt = date;
-    }
+    const where = buildProjectWhere(req.query);
 
     const [projects, total] = await Promise.all([
       prisma.project.findMany({
@@ -226,6 +232,35 @@ export const getProjects = async (req: RequestWithProfile, res: Response) => {
     });
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch projects', details: err });
+  }
+};
+
+// GET /projects/summary - summary counts for projects page
+export const getProjectSummary = async (
+  req: RequestWithProfile,
+  res: Response
+) => {
+  try {
+    const where = buildProjectWhere(req.query);
+
+    const [projectCount, evidenceCount, localAuthorityCount] =
+      await Promise.all([
+        prisma.project.count({ where }),
+        prisma.evidenceItem.count({
+          where: {
+            project: where,
+          },
+        }),
+        prisma.localAuthority.count(),
+      ]);
+
+    res.json({
+      projectCount,
+      evidenceCount,
+      localAuthorityCount,
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch summary', details: err });
   }
 };
 
