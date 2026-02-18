@@ -1,5 +1,5 @@
-// Only require module-alias if not in Docker
-if (!process.env.CI) {
+// Only skip module-alias in CI builds
+if (process.env.CI !== 'true') {
   require('module-alias/register');
 }
 import { Server } from 'http';

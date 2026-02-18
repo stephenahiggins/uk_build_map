@@ -51,6 +51,12 @@ const ListProjects: React.FC = () => {
   const [allProjectsForSearch, setAllProjectsForSearch] = useState<Project[]>(
     []
   );
+  const [summary, setSummary] = useState<{
+    projectCount: number;
+    evidenceCount: number;
+    localAuthorityCount: number;
+  } | null>(null);
+  const [summaryError, setSummaryError] = useState<string | null>(null);
 
   useEffect(() => {
     if (data) {
@@ -61,6 +67,7 @@ const ListProjects: React.FC = () => {
   useEffect(() => {
     fetchProjects();
     fetchAllProjectsForMap(); // Fetch all projects for map separately
+    fetchProjectSummary();
   }, [projectType]);
 
   useEffect(() => {
@@ -123,6 +130,20 @@ const ListProjects: React.FC = () => {
     }
   };
 
+  const fetchProjectSummary = async () => {
+    setSummaryError(null);
+    try {
+      const params = new URLSearchParams();
+      if (projectType) params.append('type', projectType);
+
+      const url = `/api/v1/projects/summary?${params.toString()}`;
+      const response = await axiosInstance.get(url);
+      setSummary(response.data);
+    } catch (err: any) {
+      setSummaryError(err.message || 'An error occurred loading summary data');
+    }
+  };
+
   // Fetch all projects for search without pagination
   const fetchAllProjectsForSearch = async () => {
     setSearchLoading(true);
@@ -177,12 +198,33 @@ const ListProjects: React.FC = () => {
     return true;
   })();
 
+  const totalProjectsCount = summary?.projectCount ?? 0;
+  const totalEvidenceCount = summary?.evidenceCount ?? 0;
+  const localAuthoritiesCount = summary?.localAuthorityCount ?? 0;
+
   return (
     <div className="w-full h-full min-h-screen bg-gray-50 p-0 m-0 flex flex-col">
       <div className="relative">
         <Header
           title="Growth Spots 🇬🇧"
-          callout="Growth Spots shows you where the UK government is investing in local growth."
+          callout={
+            <div className="flex flex-col gap-1">
+              <div>
+                Growth Spots shows you where the UK government is investing in
+                local growth.
+              </div>
+              {!summaryError && summary && (
+                <div className="text-sm text-gray-500">
+                  Showing {totalProjectsCount} number of projects with{' '}
+                  {totalEvidenceCount} number of evidence pieces across{' '}
+                  {localAuthoritiesCount} number of local authorities
+                </div>
+              )}
+              {!summaryError && !summary && (
+                <div className="text-sm text-gray-500">Loading counts...</div>
+              )}
+            </div>
+          }
           calloutTextSize="text-base"
           calloutComponent={
             <Callout

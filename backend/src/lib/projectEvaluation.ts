@@ -40,6 +40,7 @@ let cachedGoogleClient: GoogleGenAI | null = null;
 let cachedGoogleApiKey: string | null = null;
 let cachedOpenAIClient: OpenAI | null = null;
 let cachedOpenAIApiKey: string | null = null;
+let cachedOpenAIBaseURL: string | null = null;
 
 function getGoogleClient(apiKey?: string) {
   const resolvedKey = apiKey || process.env.GEMINI_API_KEY;
@@ -54,13 +55,23 @@ function getGoogleClient(apiKey?: string) {
 }
 
 function getOpenAIClient(apiKey?: string) {
-  const resolvedKey = apiKey || process.env.OPENAI_API_KEY;
+  const baseURL = process.env.OPENAI_BASE_URL || null;
+  const resolvedKey =
+    apiKey || process.env.OPENAI_API_KEY || (baseURL ? 'ollama' : undefined);
   if (!resolvedKey) {
     return null;
   }
-  if (!cachedOpenAIClient || cachedOpenAIApiKey !== resolvedKey) {
-    cachedOpenAIClient = new OpenAI({ apiKey: resolvedKey });
+  if (
+    !cachedOpenAIClient ||
+    cachedOpenAIApiKey !== resolvedKey ||
+    cachedOpenAIBaseURL !== baseURL
+  ) {
+    cachedOpenAIClient = new OpenAI({
+      apiKey: resolvedKey,
+      ...(baseURL ? { baseURL } : {}),
+    });
     cachedOpenAIApiKey = resolvedKey;
+    cachedOpenAIBaseURL = baseURL;
   }
   return cachedOpenAIClient;
 }
@@ -155,7 +166,9 @@ export async function evaluateProjectWithOpenAI(
   const response = await client.chat.completions.create({
     model: openAIModel,
     messages: [{ role: 'user', content: prompt }],
-    response_format: { type: 'json_object' },
+    ...(process.env.OPENAI_COMPAT_MODE?.toLowerCase() === 'ollama'
+      ? {}
+      : { response_format: { type: 'json_object' } }),
   });
 
   const text = response.choices[0].message.content || '';

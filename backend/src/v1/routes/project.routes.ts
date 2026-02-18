@@ -5,6 +5,7 @@ import {
   modifyProject,
   getProjects,
   addEvidence,
+  getProjectSummary,
 } from '@/src/v1/controllers/project.controller';
 import { upload } from '@/src/common/utils/fileUpload';
 import authMiddleware from '@/src/v1/middlewares/authMiddleware';
@@ -19,6 +20,7 @@ const router = Router();
 
 router.post('/', authMiddleware, upload.single('image'), createProject);
 router.get('/', authMiddleware, getProjects);
+router.get('/summary', authMiddleware, getProjectSummary);
 router.get('/:id', authMiddleware, getProjectById);
 router.post('/:id', authMiddleware, modifyProject);
 router.post('/:id/evidence', authMiddleware, addEvidence);

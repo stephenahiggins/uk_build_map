@@ -5,7 +5,7 @@ interface HeaderProps {
   title: string;
   children?: ReactNode;
   banner?: ReactNode;
-  callout?: string;
+  callout?: ReactNode;
   calloutComponent?: ReactNode;
   calloutTextSize?: string;
 }

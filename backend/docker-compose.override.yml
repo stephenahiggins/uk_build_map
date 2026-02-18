@@ -1,0 +1,13 @@
+services:
+  app:
+    environment:
+      CI: "false"
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"
+    entrypoint:
+      - /bin/sh
+      - -c
+      - "chmod +x /app/entrypoint.dev.sh && /app/entrypoint.dev.sh"
+    volumes:
+      - ./:/app
+      - /app/node_modules

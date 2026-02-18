@@ -17,6 +17,9 @@ export type LlmProvider = "openai" | "gemini";
 export type EnvValues = {
   GEMINI_API_KEY?: string;
   OPENAI_API_KEY?: string;
+  OPENAI_BASE_URL?: string;
+  OPENAI_COMPAT_MODE?: string;
+  OPENAI_WEB_SEARCH_MODEL?: string;
   DATABASE_URL?: string;
   MODEL: string;
   GEMINI_MODEL?: string;
@@ -39,6 +42,9 @@ export const envValues: EnvValues = {
   // API Keys
   GEMINI_API_KEY: process.env.GEMINI_API_KEY,
   OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+  OPENAI_BASE_URL: process.env.OPENAI_BASE_URL,
+  OPENAI_COMPAT_MODE: process.env.OPENAI_COMPAT_MODE,
+  OPENAI_WEB_SEARCH_MODEL: process.env.OPENAI_WEB_SEARCH_MODEL,
 
   // Database
   DATABASE_URL: process.env.DATABASE_URL,
@@ -78,6 +84,15 @@ export function applyRuntimeOverrides(overrides: Partial<EnvValues>): void {
   }
   if (overrides.OPENAI_API_KEY !== undefined) {
     process.env.OPENAI_API_KEY = overrides.OPENAI_API_KEY || "";
+  }
+  if (overrides.OPENAI_BASE_URL !== undefined) {
+    process.env.OPENAI_BASE_URL = overrides.OPENAI_BASE_URL || "";
+  }
+  if (overrides.OPENAI_COMPAT_MODE !== undefined) {
+    process.env.OPENAI_COMPAT_MODE = overrides.OPENAI_COMPAT_MODE || "";
+  }
+  if (overrides.OPENAI_WEB_SEARCH_MODEL !== undefined) {
+    process.env.OPENAI_WEB_SEARCH_MODEL = overrides.OPENAI_WEB_SEARCH_MODEL || "";
   }
   if (overrides.MODEL !== undefined) {
     process.env.MODEL = overrides.MODEL;

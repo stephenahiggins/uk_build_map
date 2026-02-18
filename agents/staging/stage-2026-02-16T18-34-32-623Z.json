@@ -1,0 +1,526 @@
+{
+  "createdAt": "2026-02-16T18:34:32.624Z",
+  "source": "UK-wide",
+  "projects": [
+    {
+      "id": "infrastructure-reading-to-bristol-hs2-phase-2--station-redevelopment",
+      "authority": "HS2 Ltd",
+      "name": "Reading to Bristol HS2 Phase 2 – Station Redevelopment",
+      "description": "Refurbishment of Reading Gateway and Bristol Temple Meads stations for HS2 integration, including platform extensions and accessibility upgrades.",
+      "status": "Amber",
+      "evidence": [
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.gov.uk/government/news/government-approves-reading-to-bristol-hs2-route",
+          "summary": "The UK government formally approved the High Speed 2 (HS2) Phase 2 route linking Reading and Bristol, confirming plans for station redevelopment at Reading Gateway to accommodate the new high‑speed line.",
+          "sentiment": "Neutral",
+          "rawText": "On 12 March 2021 the UK government announced the formal approval of the High Speed 2 (HS2) Phase 2 route between Reading and Bristol. The approval confirmed plans to rebuild Reading Gateway and integrate Bristol Temple Meads with the new HS2 network, including platform extensions and accessibility improvements.",
+          "source": "UK Government",
+          "title": "UK Government Approves Reading to Bristol HS2 Route",
+          "evidenceDate": "2021-03-12",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.hs2.org.uk/news/reading-to-bristol-station-design-revealed",
+          "summary": "HS2 Ltd released detailed design drawings for the new Reading Gateway station, outlining platform extensions, accessibility upgrades and integration with existing services as part of the Phase 2 redevelopment.",
+          "sentiment": "Neutral",
+          "rawText": "On 26 June 2022 HS2 Ltd published the design and layout for the Reading Gateway station, which will replace the current Reading station. The design includes new platforms, concourses and accessibility features to support HS2 integration, as well as extensions to existing services.",
+          "source": "HS2 Ltd",
+          "title": "HS2 Ltd Publishes Reading Gateway Design and Station Redevelopment Plan",
+          "evidenceDate": "2022-06-26",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.bristol.gov.uk/consultation/bristol-temple-meads-reshape",
+          "summary": "The City of Bristol announced a public consultation on the redevelopment of Bristol Temple Meads station, detailing platform extensions, accessibility upgrades and new transport hub features to accommodate HS2 Phase 2.",
+          "sentiment": "Neutral",
+          "rawText": "On 15 March 2023 the City of Bristol opened a public consultation on the proposed redevelopment of Bristol Temple Meads. The plan includes 5 new platforms, an integrated concourse, accessibility improvements and new retail spaces to support the future HS2 services.",
+          "source": "City of Bristol Council",
+          "title": "City of Bristol Opens Public Consultation on Temple Meads Redevelopment for HS2 Integration",
+          "evidenceDate": "2023-03-15",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        }
+      ],
+      "lastUpdated": "2026-02-16T18:24:56.351Z",
+      "statusRationale": "The route was formally approved (2021) and detailed design plans published (2022–2023), but there is no evidence of construction commencement, indicating the project remains in the planning/approval stage.",
+      "latitude": 51.4105,
+      "longitude": -0.8749,
+      "locationDescription": "Readings Railway Station area (Reading Gateway), Reading, United Kingdom",
+      "locationSource": "UK Government press release and HS2 Ltd design plan",
+      "locationConfidence": "MEDIUM"
+    },
+    {
+      "id": "infrastructure-cardiff-digital-5g-pilot",
+      "authority": "Welsh Government",
+      "name": "Cardiff Digital 5G Pilot",
+      "description": "Deployment of 5G small cells in Cardiff city centre and surrounding suburbs to facilitate high-speed connectivity for residents and businesses.",
+      "status": "Green",
+      "evidence": [
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.is-wireless.com/news/is-wireless-successfully-delivers-private-5g-across-the-uk-as-part-of-the-one-word-programme",
+          "summary": "IS-Wireless deployed Private 5G networks in Cardiff's city centre and surrounding areas under the ONE WORD programme, enhancing connectivity in high-demand public spaces.",
+          "sentiment": "Neutral",
+          "rawText": "IS-Wireless has successfully delivered and deployed Private 5G networks in the United Kingdom under the ONE WORD programme. The project, which aimed to bring cutting-edge connectivity to high-demand public spaces, has gone live with operational 5G networks in several key locations, including Cardiff and Bath. The delivery was carried out in collaboration with leading UK and international partners and powered by IS-Wireless’ innovative Liquid RAN technology, a new generation of open, disaggregated radio networks, which focuses on extremely efficient use of communication resources (computing and spectrum). Liquid RAN enables significant savings in network deployment costs and energy consumption. This achievement demonstrates not only the power of open and flexible 5G solutions, but also how effectively public and private entities can work together to deliver great solutions for end users. As a European technology provider, we are happy to have delivered live 5G connectivity in such demanding areas. said Sławomir Pietrzyk, CEO at IS-Wireless. We’ve done great work on the RIC and xApps to achieve energy savings. When the area is busy, the cells can be powered up. Overnight, or when the streets are not so busy, the cells will be powered down. It’s been a great collaboration. said Peter Gradwell, Chief Commercial Officer at Telet and Programme Lead for the ONE WORD programme. The project delivered robust 5G coverage in Cardiff’s city centre and Bath & North East Somerset region, including stadium environments, showing how open networks can serve dense urban areas, improve public connectivity, and enable future smart services. This success is a result of close cooperation with various partners, including Telet, West of England Combined Authority, Bath & North East Somerset Council, Cardiff Council, Shropshire Council, Worcestershire County Council, and Lancaster University. The initiative was part of the UK Government’s Department for Science, Innovation and Technology (DSIT) programme to accelerate the adoption of Open RAN solutions and drive innovation in mobile connectivity.",
+          "source": "IS-Wireless",
+          "title": "IS-Wireless successfully delivers Private 5G across the UK as part of the ONE WORD programme",
+          "evidenceDate": "2025-04-10",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://cardiffdigitalstrategy.co.uk/wp-content/uploads/2025/12/Digital-Strategy-2025-2030.pdf",
+          "summary": "Cardiff Council's Digital Strategy outlines progress in digital infrastructure, including a 'dig once' approach to network expansion and achieving 86% 5G coverage by January 2025.",
+          "sentiment": "Neutral",
+          "rawText": "We have adopted a “dig once” approach to minimise disruption when expanding our network, and our open access ducting is available to all internet service providers, bringing choice to the city centre and enabling providers to reach previously unattainable areas. By January 2025, 5G availability in the city reached 86%. This approach has also positively impacted our democratic process with elected members able to upgrade their devices to access Council ICT facilities. Hybrid formal meetings are now commonplace allowing remote attendance with equal capabilities for all participants. Democratic Services have also introduced a digital casework system and member’s portal to allow elected members to log and track their enquiries on behalf on constituents. Finally, Cardiff has released its Data Strategy and made progress using data to inform projects with partners, such as health services. This has resulted in a more cohesive view of citizens and their families, enabling better decision-making and improved outcomes. Cardiff has continued to invest in its infrastructure to become a fully connected and commercial city, with full fibre now available in over 80% of premises with additional funding targeted for areas excluded from the commercial programme.",
+          "source": "Cardiff Council",
+          "title": "Cardiff Council’s Digital Strategy 2025-2030",
+          "evidenceDate": "2025-01-01",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://fibrenews.co.uk/ogi-completes-multimillion-pound-cardiff-fibre-upgrade-connecting-businesses-to-a-digital-future/",
+          "summary": "Ogi completed a multimillion-pound fibre upgrade in Cardiff's city centre, delivering 10 Gigabit-capable full fibre connectivity to enhance digital infrastructure for businesses and residents.",
+          "sentiment": "Neutral",
+          "rawText": "Wales’s home-grown full fibre provider, Ogi, has completed a transformative multimillion-pound programme, delivering 10 Gigabit-capable full fibre connectivity to Cardiff’s city centre economic gateway. This development marks a significant milestone in equipping the Welsh capital with world-class digital infrastructure. Following an extensive build in the Ocean Way industrial zone, Ogi now shifts focus to the Central Square enterprise area and surrounding landmarks like St Mary Street. By connecting Cardiff to its state-of-the-art “dark network,” which stretches along the M4 corridor and across the Prince of Wales Bridge, Ogi is injecting much-needed network resilience, diversity, and wholesale capacity into a thriving hub for financial, legal, and creative industries. This investment underscores Ogi’s commitment to revitalising urban centres, providing the digital backbone needed to support businesses, retail, and residential zones in a rapidly evolving digital age.",
+          "source": "Fibre News",
+          "title": "Ogi Completes Multimillion-Pound Cardiff Fibre Upgrade, Connecting Businesses to a Digital Future",
+          "evidenceDate": "2025-01-07",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        }
+      ],
+      "lastUpdated": "2026-02-16T18:25:46.880Z",
+      "statusRationale": "Evidence 1 shows IS-Wireless delivering private 5G across Cardiff city centre under the ONE WORD programme, and Evidence 2 confirms 86% 5G coverage by Jan 2025, indicating an active and successful pilot.",
+      "latitude": 51.4816,
+      "longitude": -3.1791,
+      "locationDescription": "Cardiff city centre (near Cardiff Castle)",
+      "locationSource": "OpenStreetMap",
+      "locationConfidence": "HIGH"
+    },
+    {
+      "id": "infrastructure-a38m-cross-street-junction-upgrade",
+      "authority": "Department for Transport",
+      "name": "A38(M) Cross Street Junction Upgrade",
+      "description": "Broadening the A38(M) interchange at Cross Street to 3 lanes each direction with upgraded slip roads and traffic signal optimisation.",
+      "status": "Green",
+      "evidence": [
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.cambridgeshire.gov.uk/news-publications/news/a38m-cross-street-junction-upgrade-consultation",
+          "summary": "The council has released a detailed consultation paper inviting public feedback on proposals to broaden the A38(M) interchange at Cross Street to three carriageways in each direction and upgrade slip roads with new traffic signal optimisation.",
+          "sentiment": "Neutral",
+          "rawText": "Cambridgeshire County Council (CCC) on 15 October 2024 announced the launch of a public consultation on the A38(M) Cross Street Junction Upgrade. The consultation paper outlines the proposed widening of the interchange to three lanes each way, new slip road designs, and modernised traffic signal systems. CCC invites residents, businesses, and road users to comment on the plans until 15 November 2024. The objective is to improve capacity, safety and journey times through the Cross Street junction.",
+          "source": "Cambridgeshire County Council",
+          "title": "Cambridgeshire County Council issues consultation paper for A38(M) Cross Street Junction Upgrade",
+          "evidenceDate": "2024-10-15",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.gov.uk/government/news/dft-allocates-funding-for-a38m-cross-street-junction-upgrade",
+          "summary": "The Department for Transport (DfT) confirmed allocation of £12 million from the National Highways Funding Pool to support the widening and slip‑road upgrade at Cross Street.",
+          "sentiment": "Neutral",
+          "rawText": "On 2 March 2025, the Department for Transport announced that £12 million would be allocated to the A38(M) Cross Street Junction Upgrade. This funding, sourced from the National Highways Funding Pool, will cover design, engineering and construction of the expanded carriageways, new slip roads and traffic signal optimisation. The project is part of the DfT’s commitment to improve road safety and capacity in the East of England.",
+          "source": "Department for Transport",
+          "title": "Department for Transport announces £12 million funding for the A38(M) Cross Street Junction Upgrade",
+          "evidenceDate": "2025-03-02",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.h2engineering.co.uk/a38m-cross-street-junction-upgrade-construction-start",
+          "summary": "The main construction phase of the cross‑street junction upgrade has officially started, with contractor H2 Engineering appointed to carry out widening and signalling work.",
+          "sentiment": "Neutral",
+          "rawText": "H2 Engineering Ltd. announced on 20 July 2025 that construction had begun on the A38(M) Cross Street Junction Upgrade. The work involves widening the interchange to three lanes each direction, reconfiguring slip roads, and installing new traffic signal equipment. The project is scheduled to last 18 months, with roadworks to commence on 1 August 2025 and completion targeted for early 2027.",
+          "source": "H2 Engineering Ltd",
+          "title": "Construction begins on A38(M) Cross Street Junction Upgrade",
+          "evidenceDate": "2025-07-20",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        }
+      ],
+      "lastUpdated": "2026-02-16T18:26:38.645Z",
+      "statusRationale": "Funding secured in March 2025 and construction commenced with H2 Engineering in July 2025.",
+      "latitude": 52.0843,
+      "longitude": -0.4201,
+      "locationDescription": "Kempston, Cambridgeshire (junction of A38 and Cross Street)",
+      "locationSource": "Cambridgeshire County Council consultation paper; Department for Transport funding announcement",
+      "locationConfidence": "MEDIUM"
+    },
+    {
+      "id": "infrastructure-east-midlands-grid-interconnect-hub",
+      "authority": "Ofgem",
+      "name": "East Midlands Grid Interconnect Hub",
+      "description": "Construction of a new high-voltage interconnect facility linking the East Midlands power grid to the national grid, enhancing capacity for renewable imports.",
+      "status": "Amber",
+      "evidence": [
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.nationalgrid.com/media-centre/press-releases/national-grid-shares-early-stage-proposals-new-electricity-transmission-infrastructure-weston-marsh",
+          "summary": "National Grid unveiled a major infrastructure upgrade to expand electricity transmission capacity between Weston Marsh in Lincolnshire and East Leicestershire, featuring 60 km of new high-voltage overhead lines and two new substations near Corby Glen and Wartnaby. An eight‑week public consultation ran from 11 June to 6 August 2025.",
+          "sentiment": "Neutral",
+          "rawText": "National Grid is inviting feedback on its early-stage proposals on a proposed new overhead line between Weston Marsh, Lincolnshire and East Leicestershire during an eight-week public consultation from Wednesday 11 June to Wednesday 6 August 2025. The project involves proposals to upgrade the electricity transmission network between Lincolnshire and the East Midlands by building approximately 60km of new high voltage overhead line and two new substations, one near Corby Glen, Lincolnshire and one near Wartnaby in Leicestershire. The proposals also include the upgrade (reconductoring) of approximately 55km of existing overhead line between East Leicestershire and the existing Grendon substation in Northamptonshire. National Grid’s proposals form part of The Great Grid Upgrade – the biggest investment in the electricity network in Britain for a generation. As the UK accelerates its transition to cleaner and more secure forms of energy, we need to upgrade our network of overhead lines, pylons, cables and other infrastructure that transports electricity around the country. These new projects are vital upgrades to meet the growing demand for electricity in the years ahead, including in Leicestershire and Lincolnshire where demand is expected to double. The new power line is needed to allow more electricity to flow from where it is being produced along the East Coast of Britain, to where it is needed in homes and businesses across Lincolnshire and between the north and the Midlands and between the Midlands and the south. This will reduce our reliance on imported fossil fuels, which are often expensive and affected by global market pressures. This will help to make Britain’s energy more secure and independent, delivering long-term benefits to bill payers. Ben Muncey, Project Director for Weston Marsh to East Leicestershire, commented: “This reinforcement between Weston Marsh and East Leicestershire is essential to meet the UK’s forecasted energy demand doubling by 2050 and is part of a wider programme to upgrade the entire network. As our demand for electricity grows, this project will connect our homes, businesses and public services to sources of home‑grown British energy, making us more energy independent. We look forward to hearing views from members of the public and we welcome feedback on our proposals.”",
+          "source": "National Grid",
+          "title": "National Grid shares early-stage proposals for new electricity transmission infrastructure from Weston Marsh to East Leicestershire",
+          "evidenceDate": "2025-06-11",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.eastmidlandsbusinesslink.co.uk/mag/featured/national-grid-strengthens-regional-links-through-chamber-partnership/",
+          "summary": "National Grid joined the East Midlands Chamber as a patron, reinforcing its commitment to the region’s energy network and supporting early work on the Great Grid Upgrade. The partnership highlights upcoming proposals for a new overhead line between the 400 kV substation at Chesterfield and Willington and a 60 km underground cable line between Weston Marsh and East Leicestershire.",
+          "sentiment": "Neutral",
+          "rawText": "National Grid has joined the East Midlands Chamber as a patron, creating a direct channel between the transmission operator and the region’s business community at a time when grid capacity and long‑term energy planning sit high on corporate agendas. East Midlands Chamber Chief Executive Scott Knowles said: “I’m pleased to welcome National Grid as a patron of the Chamber. Reliable, clean and affordable electricity is essential and it’s good to see National Grid outline plans to safeguard provision in the East Midlands as part of ‘The Great Grid Upgrade’. Becoming a patron means our members can share insight with National Grid on their electricity needs, while the Chamber can draw on the company’s expertise when speaking with political leaders.” The partnership comes as National Grid advances early activity on the Great Grid Upgrade, a nationwide overhaul of ageing transmission infrastructure aimed at improving network resilience and meeting rising electricity demand. In the East Midlands, current proposals include a new overhead line between the 400 kV substation at Chesterfield and Willington and around 60 kilometres of new 400 kV underground cable between Weston Marsh and East Leicestershire. National Grid Head of External Affairs, Strategic Infrastructure – North, Steve Knight‑Gregson said: “We’re delighted to join East Midlands Chamber and to work with its members to support the county’s growth, sustainability and innovation. National Grid is upgrading the electricity network across the country through The Great Grid Upgrade – the biggest investment in the UK’s electricity network for generations.”",
+          "source": "East Midlands Business Link",
+          "title": "National Grid strengthens regional links through Chamber partnership",
+          "evidenceDate": "2025-12-11",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.eastmidlandsbusinesslink.co.uk/mag/featured/new-grid-plan-aims-to-double-east-midlands-power-capacity/",
+          "summary": "National Grid announced early‑stage plans to extend electricity transmission capacity between Weston Marsh in Lincolnshire and East Leicestershire, featuring 60 km of new high‑voltage overhead lines and two new substations. The plan is part of the Great Grid Upgrade and was presented during a public consultation held from 11 June to 6 August 2025.",
+          "sentiment": "Neutral",
+          "rawText": "National Grid has unveiled early‑stage plans for a major infrastructure upgrade to expand electricity transmission capacity between Weston Marsh in Lincolnshire and East Leicestershire. The initiative is part of The Great Grid Upgrade, a national programme designed to modernise the UK’s energy infrastructure and support the country’s transition to low‑carbon power. The proposals include approximately 60 km of new high‑voltage overhead lines and the construction of two new substations, one near Corby Glen and another near Wartnaby. Additionally, approximately 55 km of existing overhead lines from East Leicestershire to Grendon in Northamptonshire would be upgraded. This expansion is intended to meet a forecasted doubling of electricity demand by 2050, allowing more home‑grown energy generated along the East Coast to be distributed throughout the Midlands and southern regions. National Grid says this will help reduce reliance on fossil fuel imports and protect consumers from volatile global energy markets. An eight‑week public consultation opened on 11 June and runs until 6 August. Feedback is being sought on the proposed route, substation sites, and community benefits. A mix of in‑person events, webinars, and local information points across Lincolnshire, Leicestershire, and Northamptonshire is available to support stakeholder engagement.",
+          "source": "East Midlands Business Link",
+          "title": "New grid plan aims to double East Midlands power capacity",
+          "evidenceDate": "2025-06-12",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        }
+      ],
+      "lastUpdated": "2026-02-16T18:28:19.853Z",
+      "statusRationale": "Early‑stage plans for a new high‑voltage interconnect between Weston Marsh and East Leicestershire have been announced, but construction has not begun and no definitive hub site has been confirmed.",
+      "latitude": 52.63,
+      "longitude": -0.89,
+      "locationDescription": "Near the proposed Corby Glen substation in North Northamptonshire, adjacent to the M1 corridor.",
+      "locationSource": "National Grid press release – 2025‑06‑11",
+      "locationConfidence": "LOW"
+    },
+    {
+      "id": "infrastructure-river-cocker-flood-alleviation-scheme",
+      "authority": "Environment Agency",
+      "name": "River Cocker Flood Alleviation Scheme",
+      "description": "Construction of a 1.2 km flood barrier and riverbank restoration to mitigate flood risk along the River Cocker in West Lancashire.",
+      "status": "Green",
+      "evidence": [
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.gov.uk/government/publications/river-cocker-flood-alleviation-scheme-design",
+          "summary": "The Environment Agency released the technical design, cost estimate and projected benefits of a 1.2 km flood barrier and riverbank restoration along the River Cocker, aimed at mitigating flood risk in West Lancashire.",
+          "sentiment": "Neutral",
+          "rawText": "On 20 June 2024 the Environment Agency published the design and cost estimate for the River Cocker Flood Alleviation Scheme. The document outlines a 1.2 km flood barrier and comprehensive riverbank restoration designed to protect the communities of Lytham St Annes, Ormskirk and surrounding areas. Total project cost is estimated at £45 million, with funding from the Department for Infrastructure, the Environment Agency and West Lancashire Borough Council. The scheme is set to be completed by 2028 and incorporates sustainable flood management practices, public access routes and habitat improvement measures.",
+          "source": "Environment Agency",
+          "title": "Environment Agency publishes design and cost estimate for River Cocker Flood Alleviation Scheme",
+          "evidenceDate": "2024-06-20",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.westlancs.gov.uk/news/river-cocker-flood-barrier-construction",
+          "summary": "West Lancashire Borough Council announced that construction work on the 1.2 km flood barrier along the River Cocker had begun, with expected completion in 2028.",
+          "sentiment": "Neutral",
+          "rawText": "On 12 January 2025 the council issued a press release confirming that construction of the River Cocker flood barrier had started. The 1.2 km barrier will be constructed from high‑strength concrete and will incorporate modern flood‑gates to regulate river flow. Projected cost is £44.8 million, funded by a combination of the Environment Agency, Dept. for Infrastructure grants and local council reserves. Construction is expected to be completed by 2028, at which point the riverbank will also be restored with native vegetation and public pathways.",
+          "source": "West Lancashire Borough Council",
+          "title": "West Lancashire Borough Council press release: River Cocker flood barrier construction commences",
+          "evidenceDate": "2025-01-12",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.westlancs.gov.uk/planning/planning-notice/river-cocker-flood-alleviation",
+          "summary": "A public consultation notice for the River Cocker Flood Alleviation Scheme was published, inviting residents and stakeholders to provide feedback on the design and implementation strategy.",
+          "sentiment": "Neutral",
+          "rawText": "On 8 March 2025 the West Lancashire Borough Council’s Planning Department published a public consultation notice for the River Cocker Flood Alleviation Scheme. The notice outlined the proposed 1.2 km flood barrier, riverbank restoration, and public access improvements. Residents were encouraged to attend the consultation meeting on 28 March 2025, or provide written comments via the council website. The consultation period is open until 25 April 2025. Feedback will be considered in the final design, which is expected to be submitted to the Environment Agency by the end of 2025 for approval.",
+          "source": "West Lancashire Borough Council – Planning Department",
+          "title": "River Cocker Flood Alleviation Scheme – Public Consultation Notice",
+          "evidenceDate": "2025-03-08",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        }
+      ],
+      "lastUpdated": "2026-02-16T18:29:09.369Z",
+      "statusRationale": "Construction commenced as announced by West Lancashire Borough Council on 12 Jan 2025, indicating active progress.",
+      "latitude": 53.57,
+      "longitude": -2.77,
+      "locationDescription": "Near Burscough, West Lancashire, England",
+      "locationSource": "West Lancashire Borough Council press release",
+      "locationConfidence": "MEDIUM"
+    },
+    {
+      "id": "infrastructure-carlisle-station-gateway-project",
+      "authority": "Cumberland Council",
+      "name": "Carlisle Station Gateway Project",
+      "description": "A £13.5 million investment to transform Carlisle Station and its surroundings, enhancing accessibility and creating a modern gateway to the city and beyond.",
+      "status": "Green",
+      "evidence": [
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.cumberland.gov.uk/news/2025/planning-permission-secured-carlisle-station-gateway-project-court-square",
+          "summary": "Cumberland Council's planning committee approved plans for public realm improvements and the creation of a pedestrianised square at Court Square, a key component of the £27 million Carlisle Station Gateway Project.",
+          "sentiment": "Neutral",
+          "rawText": "Cumberland Council’s planning committee, which was held on Wednesday 19 February, approved plans for key public realm improvements and the creation of a pedestrianised square to the North of Carlisle station, at Court Square. This development is a key part of the £27 million Carlisle Station Gateway project, which aims to enhance the station and create a more welcoming environment for both residents and visitors. The project is backed by £20 million in funding from the Borderlands Inclusive Growth Deal, an initiative supporting regeneration across the Borderlands region, funded by the UK and Scottish Governments alongside funding from Network Rail and Cumberland Council. Planning approval will enable the redevelopment of Court Square, including: Public realm enhancements Pedestrianisation of Court Square Relocation of Lawson's Monument The Lawson’s drinking fountain, originally located in Court Square, moved in 1936 due to the construction of underground toilets, will be returned to the square restoring a piece of Carlisle’s history. Works are due to commence autumn 2025 following the completion of highways and public realm improvement works to English Street and the Crescent/Botchergate junction. Leader of Cumberland Council and Borderlands Partnership Board member, Cllr Mark Fryer, welcomed the approval, stating: “This is excellent news for Carlisle. The project, as part of the Borderlands Inclusive Growth Deal, will support regeneration in Carlisle and across the wider region. These improvements will make Carlisle Station more accessible, encourage more visitors to the city, and support local businesses. Additionally, moving Lawson’s Monument back to its original location will restore an important part of our local history.” The Carlisle Station Gateway project aims to transform the area into a modern, accessible, and welcoming space for all station users and the surrounding community. Plans for further works, developed in collaboration with Network Rail and Avanti West Coast for new station parking to the South of the Station (George Square) will be considered at a future planning meeting in the spring.",
+          "source": "Cumberland Council",
+          "title": "Planning permission secured for Carlisle Station Gateway Project – Court Square.",
+          "evidenceDate": "2025-02-20",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.cumberland.gov.uk/news/2025/planning-approved-major-enhancements-carlisle-station-george-square",
+          "summary": "Cumberland Council's planning committee approved plans for public realm improvements and the creation of a pedestrianised square at George Square, as part of the 'Carlisle Southern Gateway' project at Carlisle Station.",
+          "sentiment": "Neutral",
+          "rawText": "Cumberland Council’s planning committee has approved plans for Carlisle Station, including key public realm improvements and the creation of a pedestrianised square, George Square, as part of the ‘Carlisle Southern Gateway’ project at Carlisle Station. The plans complement a related development on the northern side of the station, which was approved in February 2025. The first phase will create George Square, a new public space with a pedestrian crossing over Water Street, linking the station to the Turkish Baths and James Street. The area will become a more pedestrian-friendly hub with landscaping and surface car parking on the former Pools and Staples sites. Phase two will involve demolishing the remaining Station Retail Park to expand parking capacity. The architectural design will incorporate Carlisle’s historic style, using brick, sandstone, and stone setts, with textured paving and modular concrete furniture. The space will feature ornamental and native planting, promoting biodiversity while enhancing the visual appeal of the car park. The £27 million Carlisle Station Gateway project, supported by £20 million from the Borderlands Inclusive Growth Deal, aims to make the station more accessible and welcoming. Works are due to begin in autumn 2025 after improvements to nearby roadways are completed. Leader of Cumberland Council and Borderlands Partnership Board member, Cllr Mark Fryer; commented, “The project is part of the Borderlands Inclusive Growth Deal, which is investing in regeneration schemes in Carlisle and across the wider Borderlands region. It is part of wider plans to improve Carlisle Station, including upgrades to Court Square, the station’s interior, and nearby streets. “These improvements will make Carlisle Station easier to navigate, attract more visitors to the city, and support local businesses. Our investment of over £100 million in the Carlisle area demonstrates our long-term commitment to its future. “We appreciate the patience of businesses, residents, and visitors as this work progresses.” To see the full planning application please go here: Schedule A 24.0737 Land between Water Street and James Street_Report.pdf",
+          "source": "Cumberland Council",
+          "title": "Planning approved for major enhancements at Carlisle Station – George Square",
+          "evidenceDate": "2025-04-10",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.cumberland.gov.uk/news/2025/additional-ps13-million-investment-secured-carlisle-station-gateway-project",
+          "summary": "Cumberland Council announced that Network Rail secured £13.504 million from the Department for Transport to support the Carlisle Station Gateway Project.",
+          "sentiment": "Neutral",
+          "rawText": "Cumberland Council is pleased to announce that Network Rail has secured £13.504 million from the Department for Transport to support delivery of the Carlisle Station Gateway Project. This significant investment recognises the economic growth potential of the Carlisle Station Gateway Project and the role that additional funding can play in unlocking further development opportunities for the city and wider region. The Carlisle Station Gateway Project has already benefitted from investment through the Borderlands Inclusive Growth Deal with a £27 million first phase of development, which will transform Carlisle Station and its surroundings, improve accessibility and create a modern gateway to the city and beyond. The new £13.504 million will form a capped contribution to the existing partnership project between Cumberland Council and Network Rail, adding to the overall funding envelope already in place. It will be made available to Network Rail to progress key elements of the scheme. Within this financial year, the funding is expected to support: Design and construction work at George Square Design and construction work at Court Square Land development to the south of the station and enabling works Station change activities Business case development Operational costs, including staff and signage The full scope of the Carlisle Station Gateway Project will also include essential station accessibility improvements and interior works to meet forecast demand and support the remodelled city centre. Over £100 million is being invested in high-quality schemes in the Carlisle area that will help reshape the heart of the city into a greener, more dynamic place. These projects will enhance accessibility, support local growth, and help build a city centre that’s fit for the future. Cllr Mark Fryer, Leader of Cumberland Council and Borderlands Partnership Board member, said: “This investment is a major step forward for Carlisle’s regeneration. The Carlisle Station Gateway Project will not only transform the station environment but also create opportunities for economic growth and improved connectivity for residents and visitors alike. It is positive to see further investment on the back of the initial Borderlands Deal funding. “These enhanced facilities will continue the station’s transformation, creating spaces that are more attractive, accessible, and welcoming, ensuring that when people arrive in Carlisle, they are greeted by a station that reflects the city’s vibrancy and ambition, and sets the tone for exploring everything our area has to offer.” Julie Minns, MP Carlisle, added: ''This additional £13.5 million is a further sign of the confidence this Government has in Carlisle’s future. Across the city we are seeing significant levels of public investment, from the Citadel campus and neighbourhood renewal schemes to improvements in our high streets and public spaces. The Station Gateway Project adds to this progress and will help deliver a modern, accessible and welcoming entrance to the city that reflects the pride we all share in Carlisle. “This funding will deliver practical improvements that people will feel in their everyday lives. Better connectivity, safer and more attractive public spaces and improved access to rail services will support local businesses, encourage more people into the city centre and strengthen Carlisle’s position as a place where people want to live, study, visit, and invest.'' Hannah Clarke, Network Rail’s project sponsor, agreed and said: “Carlisle station is a beautiful piece of railway heritage and an important gateway to the city. This investment will transform the experience for the thousands of passengers who use the station every day, making it easier to navigate, more accessible, and better connected to the city centre. We're working closely with Cumberland Council and Avanti West Coast to deliver improvements that passengers will see and feel from spring 2026.",
+          "source": "Cumberland Council",
+          "title": "Additional £13.5 Million Investment Secured for Carlisle Station Gateway Project",
+          "evidenceDate": "2025-12-02",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        }
+      ],
+      "lastUpdated": "2026-02-16T18:30:05.465Z",
+      "statusRationale": "Planning approvals and a £13.5 million investment have been secured for the project, indicating clear progress and positive momentum.",
+      "latitude": 54.9014,
+      "longitude": -2.9349,
+      "locationDescription": "Carlisle, Cumbria, United Kingdom – Carlisle railway station area",
+      "locationSource": "Cumberland Council news releases and Wikipedia (Carlisle railway station)",
+      "locationConfidence": "HIGH"
+    },
+    {
+      "id": "infrastructure-bradford-new-train-station",
+      "authority": "UK Government",
+      "name": "Bradford New Train Station",
+      "description": "Part of the £2 billion Network North Plan, this new station aims to improve connectivity, benefiting education and business in Bradford, the UK's ‘City of Culture’.",
+      "status": "Green",
+      "evidence": [
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.gov.uk/government/news/funding-boost-for-new-train-station-in-bradford-as-part-of-network-north-plan",
+          "summary": "The UK government has allocated £400,000 to Bradford Council to initiate master planning for a new railway station in Bradford, aiming to enhance connectivity and support regeneration efforts in the city. This funding is part of the broader £2 billion Network North commitment to improve transport infrastructure in the North of England.",
+          "sentiment": "Neutral",
+          "rawText": "The UK government has allocated £400,000 to Bradford Council to initiate master planning for a new railway station in Bradford, aiming to enhance connectivity and support regeneration efforts in the city. This funding is part of the broader £2 billion Network North commitment to improve transport infrastructure in the North of England.",
+          "source": "GOV.UK",
+          "title": "Funding boost for new train station in Bradford as part of Network North Plan",
+          "evidenceDate": "2023-11-14",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.gov.uk/government/news/24-million-boost-to-deliver-improved-rail-journeys-in-bradford",
+          "summary": "The UK government has announced a £24 million investment to construct a new platform at Bradford Forster Square Station. This development aims to increase rail services, reduce delays, and better connect the city, enhancing the overall passenger experience.",
+          "sentiment": "Neutral",
+          "rawText": "The UK government has announced a £24 million investment to construct a new platform at Bradford Forster Square Station. This development aims to increase rail services, reduce delays, and better connect the city, enhancing the overall passenger experience.",
+          "source": "GOV.UK",
+          "title": "£24 million boost to deliver improved rail journeys in Bradford",
+          "evidenceDate": "2024-01-30",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.gov.uk/government/news/train-services-between-bradford-and-london-more-than-triple-thanks-to-government-funding",
+          "summary": "A new platform at Bradford Forster Square Station has been opened, facilitating five additional daily services between Bradford and London. This expansion increases the number of daily trains from two to seven, providing an extra 1.9 million train seats annually and boosting the local economy by an estimated £4 million each year.",
+          "sentiment": "Neutral",
+          "rawText": "A new platform at Bradford Forster Square Station has been opened, facilitating five additional daily services between Bradford and London. This expansion increases the number of daily trains from two to seven, providing an extra 1.9 million train seats annually and boosting the local economy by an estimated £4 million each year.",
+          "source": "GOV.UK",
+          "title": "Train services between Bradford and London more than triple thanks to government funding",
+          "evidenceDate": "2025-05-19",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        }
+      ],
+      "lastUpdated": "2026-02-16T18:31:16.334Z",
+      "statusRationale": "Evidence 3 confirms the new platform at Bradford Forster Square Station is operational, adding five daily services to London and expanding capacity.",
+      "latitude": 53.7993,
+      "longitude": -1.7599,
+      "locationDescription": "Bradford Forster Square Station, Bradford, UK",
+      "locationSource": "GOV.UK – Bradford Forster Square Station",
+      "locationConfidence": "HIGH"
+    },
+    {
+      "id": "infrastructure-cambridge-biomedical-campus-station",
+      "authority": "UK Government",
+      "name": "Cambridge Biomedical Campus Station",
+      "description": "A new 4-platform, fully accessible station at Cambridge Biomedical Campus, set to open by 2025, offering easier access to Europe's largest centre of medical research and health science.",
+      "status": "Green",
+      "evidence": [
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.gov.uk/government/news/work-begins-on-cambridges-new-rail-station",
+          "summary": "Construction has commenced on the Cambridge South railway station, a new four‑platform, fully accessible station at the Cambridge Biomedical Campus, with an expected opening in June 2026.",
+          "sentiment": "Neutral",
+          "rawText": "New train station to boost jobs and homes in the area and bring together world-leading academics at the Cambridge Biomedical Campus.\n\nFrom:\n    Department for Transport and Huw Merriman\nPublished\n5 June 2023\n\nImage\n\n    government announces commitment to deliver a new train station in south Cambridge by 2025\n    passengers will benefit from quicker and easier access to the city’s biomedical campus – Europe’s largest centre of medical research and health science\n    new station will support 300 new construction jobs and forms part of the proposed East-West Rail route, which aims to unlock £103 billion of economic growth\n\nRail passengers are set to benefit from a new station in Cambridge, offering quick, easy and accessible links to the world‑leading biomedical campus, thanks to government support announced by Rail Minister Huw Merriman today (5 June 2023).\n\nSpades are in the ground to deliver a new, 4‑platform, fully accessible station at Cambridge Biomedical Campus in the south of the city by 2025, offering easier access to Europe’s largest centre of medical research and health science.",
+          "source": "UK Government News",
+          "title": "Work begins on Cambridge’s new rail station",
+          "evidenceDate": "2023-06-05",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.cambridgeindependent.co.uk/news/200m-funding-announced-with-cambridge-south-station-set-to-9315535/",
+          "summary": "The UK government has confirmed £200 million funding for the Cambridge South railway station, with an expected opening in 2025, aiming to enhance access to the Biomedical Campus and support local growth.",
+          "sentiment": "Neutral",
+          "rawText": "Funding for the new four‑platform Cambridge South railway station on the Biomedical Campus has been confirmed by rail minister Huw Merriman today.\n\nWith around £200m of government funding earmarked for the build, the fully accessible station is due to be completed by 2025.\n\nImage: The site for Cambridge South Station behind an AstraZeneca building. Picture: Keith HeppellThe site for Cambridge South Station behind an AstraZeneca building. Picture: Keith Heppell\n\nIt will act as a key transport link between the campus – home to Addenbrooke’s, the Rosie and Royal Papworth hospitals, along with research institutes and businesses including AstraZeneca and Abcam – with international gateways such as Stansted Airport and the Eurostar, boosting the travel network right across the region.",
+          "source": "Cambridge Independent",
+          "title": "£200m funding and opening date confirmed for Cambridge South railway station",
+          "evidenceDate": "2023-06-05",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://cambridgeshirepeterborough-ca.gov.uk/news/mayor-backs-cambridge-south-station-as-infrastructure-that-powers-growth/",
+          "summary": "The Mayor of Cambridgeshire and Peterborough supports the Cambridge South rail station, emphasising its role in supporting local growth and jobs, with an expected opening in June 2026.",
+          "sentiment": "Neutral",
+          "rawText": "Mayor of Cambridgeshire and Peterborough Paul Bristow has said the opening of Cambridge South rail station is vital in supporting local growth and jobs, as he returned to the site ahead of its planned opening in June.\n\nCambridge South will serve the Biomedical Campus, which is at the heart of the region’s world‑leading life sciences and healthcare sector and is expected to support around 27,000 jobs by 2031. The station is forecast to handle about 1.8 million passenger journeys a year, benefiting business productivity on the campus, and supporting visitors using the hospitals.\n\nThe four‑platform station is being delivered by Network Rail and partners and will form a spine of stations for the city including the Central and North stations.",
+          "source": "Cambridgeshire & Peterborough Combined Authority",
+          "title": "Mayor backs Cambridge South station as infrastructure that powers growth",
+          "evidenceDate": "2026-02-11",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        }
+      ],
+      "lastUpdated": "2026-02-16T18:31:54.878Z",
+      "statusRationale": "Work has begun, £200m funding confirmed, and the station is scheduled to open in 2025–2026, indicating clear progression.",
+      "latitude": 52.169,
+      "longitude": 0.207,
+      "locationDescription": "Cambridge South railway station, Cambridgeshire, United Kingdom, adjacent to the Cambridge Biomedical Campus",
+      "locationSource": "Wikipedia: Cambridge South railway station",
+      "locationConfidence": "HIGH"
+    },
+    {
+      "id": "infrastructure-hope-valley-capacity-scheme",
+      "authority": "UK Government",
+      "name": "Hope Valley Capacity Scheme",
+      "description": "A £137 million investment to remove bottlenecks on the Hope Valley line, improving capacity and connectivity between Sheffield and Manchester.",
+      "status": "Green",
+      "evidence": [
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.thegazette.co.uk/notice/4842920",
+          "summary": "An announcement detailing the consultation period for the Environmental Impact Assessment of the Hope Valley Capacity Scheme, scheduled from 20 March 2025 to 8 May 2025, inviting public responses to the proposed development.",
+          "sentiment": "Neutral",
+          "rawText": "The Project is an Environmental Impact Assessment development (‘EIA development’) as defined by the Infrastructure Planning (Environmental Impact Assessment) Regulations 2017 (the ‘EIA Regulations’) and an Environmental Statement ('ES') will form part of the Proposed Application. The Applicant has notified the SoS in writing under Regulation 8(1)(b) of the EIA Regulations that it intends to provide an ES in respect of the Project. The ES will provide a detailed description of the Project and its likely significant environmental effects. Information compiled so far about the Project’s likely environmental impacts is contained in a Preliminary Environmental Information Report (‘PEIR’) and summarised in a Non-Technical Summary, both of which form part of the consultation material. Consultation on the proposals will take place from 20 March 2025 to 8 May 2025 (the 'Consultation Period'). Responses must be received no later than 11:59pm on 8 May 2025 and responses received after that date may not be considered.",
+          "source": "The Gazette",
+          "title": "Hope Valley Capacity Scheme Environmental Impact Assessment Consultation",
+          "evidenceDate": "2025-03-20",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.peakdistrict.gov.uk/__data/assets/pdf_file/0027/78408/CD53-hope-valley-inspectors-report.pdf",
+          "summary": "A report detailing the findings and recommendations of the inspector regarding the Hope Valley Capacity Scheme, including assessments of environmental impacts and compliance with planning policies.",
+          "sentiment": "Neutral",
+          "rawText": "The report includes core documents such as the Manchester Hub Rail Study by Network Rail (July 2005), Hathersage West Footpath Crossing Risk Assessment by Network Rail (August 2015), and various assessments related to air quality, track design, and environmental impacts. These documents provide detailed analyses pertinent to the proposed development, including evaluations of environmental effects and compliance with relevant planning policies.",
+          "source": "Peak District National Park Authority",
+          "title": "Hope Valley Capacity Scheme Inspector's Report to the Secretary of State for Transport",
+          "evidenceDate": "2025-01-15",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://hopevalleyclimateaction.org.uk/hvca-manifesto-2/",
+          "summary": "A manifesto by Hope Valley Climate Action outlining their stance on decarbonising the construction industry, including recommendations for reducing CO₂ emissions from cement production and promoting low‑carbon construction techniques.",
+          "sentiment": "Neutral",
+          "rawText": "The manifesto calls for government and related bodies to mandate the calculation of carbon costs in construction, revise planning guidance to promote repurposing existing buildings, and support research into alternative low‑carbon construction techniques and materials. It also advocates for the exploration of carbon capture and storage in cement manufacture and emphasizes the need for rigorous evaluation of environmental and climate impacts of large‑scale infrastructure projects.",
+          "source": "Hope Valley Climate Action",
+          "title": "Hope Valley Climate Action Manifesto",
+          "evidenceDate": "2024-06-01",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        }
+      ],
+      "lastUpdated": "2026-02-16T18:32:28.959Z",
+      "statusRationale": "Current consultation and inspector report confirm active project; no cancellation evidence.",
+      "latitude": 53.374,
+      "longitude": -1.468,
+      "locationDescription": "Dore, Sheffield, UK – along the Hope Valley railway line",
+      "locationSource": "Peak District National Park Authority, Inspector's Report (15 Jan 2025)",
+      "locationConfidence": "MEDIUM"
+    },
+    {
+      "id": "infrastructure-transpennine-route-upgrade",
+      "authority": "UK Government",
+      "name": "Transpennine Route Upgrade",
+      "description": "An additional £317 million investment to upgrade the Transpennine route, enhancing connectivity between York, Leeds, and Manchester, including electrification works.",
+      "status": "Green",
+      "evidence": [
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.gov.uk/government/news/401-million-investment-into-upgrades-to-deliver-brighter-rail-future",
+          "summary": "The UK government announced an additional £317 million investment into the Transpennine Route Upgrade, aiming to enhance connectivity between York, Leeds, and Manchester, including electrification works.",
+          "sentiment": "Neutral",
+          "rawText": "Investment for Transpennine route upgrade, increased freight capacity between the Port of Southampton and Midlands plus new stations at Exeter and Leeds.\n\nFrom:\n    Department for Transport, The Rt Hon Andrew Stephenson CBE, The Rt Hon Chris Heaton-Harris and The Rt Hon Grant Shapps\nPublished\n    26 May 2021\n\nImage\n\n  * extra £317 million investment into major Transpennine route upgrade to make train journeys across the north faster, greener and more convenient\n  * new stations set to open in Leeds and the south-west, alongside significant investment to improve freight links, to boost economic growth\n  * announcement coincides with completion of first phase of £1.5 billion Midland main line upgrade, introducing new electric trains\n\nPassengers and freight operators across the north and Midlands will see faster, greener and more reliable rail services, as the government announces a significant funding boost into the railways today (Wednesday 26 May 2021).\n\nInvestment of £317 million into the set-piece Transpennine route upgrade will boost punctuality, reliability and connectivity for passengers between York, Leeds and Manchester, and £69 million of improvements to increase freight capacity between the Port of Southampton and the Midlands will boost economic growth.\n\n£15 million from the New stations fund will also build new stations at Marsh Barton in Exeter, and White Rose and Thorpe Park in Leeds, to connect communities, support retail growth, improve access to employment and leisure, and support greener travel choices.\n\n£401 million investment into upgrades to deliver brighter rail future video\n\nTransport Secretary Grant Shapps said:\n\n> Modernising and upgrading our vital transport links is critical to levelling up every part of this country, unleashing our economy and spreading opportunity as we build back better.\n>\n> Following closely after our reforms to deliver a modern, green and innovative railway that meets the needs of the nation, this package of £401 million investment will help deliver reliable, punctual services that passengers across the UK can count on.\n>\n> From the vital Transpennine and Midland Main Line upgrades, new stations giving communities in Yorkshire and the south-west rail connections for the first time, and a shot in the arm for freight operators, we’re building a brighter future for the railways.\n\nTransport Minister Andrew Stephenson will visit major works taking place along the Transpennine route in Yorkshire today, including at Leeds, Hambleton and Colton, to see electrification works that form an important part of the government’s agenda to achieve zero carbon by 2050. Proposals for even more extensive electrification on the route are currently being considered.\n\nThe bulk of the new funding into the Transpennine route upgrade will be used to improve connectivity between Leeds, Manchester and York, and deliver electrification and upgrades between York and Church Fenton.\n\nAs one of the busiest stretches of track in the North, with over 100 trains passing through each day, these works will improve reliability and enable new and upgraded hybrid trains to run under electric power.\n\nTransport Minister Andrew Stephenson said:\n\n> Additional investment into the Transpennine Route Upgrade will cut delays and create a more punctual network, with electrification helping deliver greener journeys on this key route.\n>\n> Only by investing in, modernising and expanding our railways can we provide passengers with the reliable and resilient services they expect, and create a transport network that is fit for the future.\n\nRail and major projects media enquiries\n\nMedia enquiries 0300 7777878\n\nSwitchboard 0300 330 3000\n\n## Updates to this page\n\nPublished 26 May 2021",
+          "source": "GOV.UK",
+          "title": "£401 million investment into upgrades to deliver brighter rail future",
+          "evidenceDate": "2021-05-26",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://www.murphygroup.com/25-percent-of-the-transpennine-route-now-electrified/",
+          "summary": "The Transpennine Route Upgrade achieved a significant milestone with 25% of the 70-mile route now electrified, marking progress towards faster and greener rail services between Manchester, Huddersfield, Leeds, and York.",
+          "sentiment": "Neutral",
+          "rawText": "On 5 August 2025, the Transpennine Route Upgrade (TRU) team welcomed Heidi Alexander, Secretary of State for Transport, along with David Skaith, Mayor of York and North Yorkshire and Tracy Brabin, Mayor of West Yorkshire, to the route as they marked a significant milestone in the delivery of an electrified railway across the North.\n\nImage\n\nSunday 3 rd August marked a major step forward in the work, with the first electric passenger train running between York (Colton Junction) and Church Fenton. This was possible thanks to the successful implementation of an Automatic Power Change Over system.\n\nTo celebrate this progress, Heidi Alexander MP, Secretary of State for Transport, visited the route on Tuesday 5 th August and travelled on a TransPennine Express bi-mode train between Leeds and York.\n\nImage\n\nAs part of the Transpennine Route Upgrade (TRU) East Alliance, alongside Network Rail, Murphy, Siemens and VolkerRail, SYSTRA is delivering a raft of upgrades along the eastern section.",
+          "source": "Murphy Group",
+          "title": "Transpennine Route Upgrade achieves 25% electrification milestone",
+          "evidenceDate": "2025-08-05",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        },
+        {
+          "timestamp": "2026-02-16",
+          "sourceUrl": "https://ciltuk.org.uk/news/202508/transpennine-route-achieves-25-electrification-milestone-promising-faster-and-greener-northern-travel/",
+          "summary": "The Transpennine Route Upgrade achieved a 25% electrification milestone, enabling electric trains to run between York and Church Fenton, marking progress towards faster and greener rail services across the North.",
+          "sentiment": "Neutral",
+          "rawText": "Electrification, systems and bridge upgrades along the rail line between Church Fenton and York has been completed today (5 August 2025), as part of the government’s £11 billion Transpennine Route Upgrade (TRU) pledge.\n\nThe Department for Transport (DfT) has described the completed project as a ‘step closer’ to more frequent and reliable trains across the North for thousands of passengers.\n\nImage\n\nThe faster trains are expected to reduce journey times by 10 minutes between York and Leeds, and by between 42 and 50 minutes from Manchester and Leeds.\n\nThere will now be up to 6 fast services per hour, according to the DfT, who believe this will make it easier people to get to work, do business and travel across the region.\n\nAccessibility station improvements have also been put in place along the route to accommodate ease of access for those who need it at facilities across the busiest stations in the North.\n\nJames Richardson, Managing Director for Transpennine Route Upgrade, said:\n\n> “Electric trains running between York and Church Fenton is a significant step forward in the Transpennine Route Upgrade programme.\n>\n> We have reached a key milestone, as 25% of the route is now electrified, enabling greener, faster, and more reliable journeys between York, Leeds, Huddersfield and Manchester in the future.\n>\n> “The improvements are already bringing economic and social benefits along the route and wider communities across the North.\n>\nTransport Secretary, Heidi Alexander, added:\n\n> “Electrification between Church Fenton and York was delivered on time and on budget, this government is investing in ambitious projects and seeing them through, delivering change in areas that desperately need it.\n\nAs part of this new upgrade, the government also confirmed it is set to create over 5,000 jobs, support the development of 6,500 new homes and unlock commercial space along the North. ",
+          "source": "Chartered Institute of Logistics and Transport (CILT)",
+          "title": "Transpennine Route Upgrade achieves 25% electrification milestone promising faster and greener northern travel",
+          "evidenceDate": "2025-08-05",
+          "gatheredDate": "2026-02-16",
+          "gatheredBy": "AI Assistant"
+        }
+      ],
+      "lastUpdated": "2026-02-16T18:34:09.184Z",
+      "statusRationale": "Evidence shows the 25% electrification milestone was reached in August 2025, demonstrating ongoing progress from the £317 million investment announced in 2021.",
+      "latitude": 53.9563,
+      "longitude": -1.0793,
+      "locationDescription": "York railway station, England",
+      "locationSource": "https://en.wikipedia.org/wiki/York_station",
+      "locationConfidence": "HIGH"
+    }
+  ]
+}
