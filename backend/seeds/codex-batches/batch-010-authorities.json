@@ -1,0 +1,146 @@
+[
+  {
+    "id": "bc246478-db44-4c02-960d-150ab71d3489",
+    "name": "Tendring",
+    "code": "E07000076",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "e3bdde60-ea37-41f7-8d12-9cc4cf638269",
+    "name": "Blackburn with Darwen",
+    "code": "E06000008",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "b473e5d1-c527-4a0a-bee1-1c33f8e2dcef",
+    "name": "East Hampshire",
+    "code": "E07000085",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "6bc0c4b9-2b38-4cae-b800-87874214b5c2",
+    "name": "Havant",
+    "code": "E07000090",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "501d6b6e-95b6-499b-8919-716b7279b3b9",
+    "name": "Stockton-on-Tees",
+    "code": "E06000004",
+    "countryCode": "ENGLAND",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
+  },
+  {
+    "id": "f743ffc1-562d-46b6-9cb8-037945f214c1",
+    "name": "Bedford",
+    "code": "E06000055",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "e9f58529-27d0-4f0e-b356-af551db11db7",
+    "name": "Cannock Chase",
+    "code": "E07000192",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "7184fc2b-ecd8-490e-865e-170a913d8697",
+    "name": "Chichester",
+    "code": "E07000225",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "fed86ed5-9e42-484a-b5ac-4ef62f89ede9",
+    "name": "Lewisham",
+    "code": "E09000023",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "5494ba48-d1d8-423a-ba0c-02ebf4a01583",
+    "name": "Westmorland and Furness",
+    "code": "E06000064",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "407fd101-ad0e-478b-8d24-c05523cb01de",
+    "name": "Winchester",
+    "code": "E07000094",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "f6040ad0-c71e-404a-a786-556eaa80f7f9",
+    "name": "York",
+    "code": "E06000014",
+    "countryCode": "ENGLAND",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "regionName": "Yorkshire and the Humber"
+  },
+  {
+    "id": "0356dfcd-5214-4e70-a247-027613d0779e",
+    "name": "Cornwall",
+    "code": "E06000052",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "55a6a888-b4fd-4c08-862a-5193175639cc",
+    "name": "Derby",
+    "code": "E06000015",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "4355cf65-9905-4235-8b4e-a825ee60e029",
+    "name": "Hounslow",
+    "code": "E09000018",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "fdd05462-2dff-4fae-b2fa-9b266bc309ad",
+    "name": "Rochford",
+    "code": "E07000075",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "56fd119b-5daa-45bf-ac3f-9bb0eb748d0c",
+    "name": "Windsor and Maidenhead",
+    "code": "E06000040",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "2e5d0cc7-ccef-46a8-8b4c-43847d55590c",
+    "name": "Babergh",
+    "code": "E07000200",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  }
+]

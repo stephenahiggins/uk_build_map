@@ -1,0 +1,178 @@
+[
+  {
+    "id": "12849c58-4a1e-41db-b3cf-b2696170e4cd",
+    "name": "Castle Point",
+    "code": "E07000069",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "fa731498-63b7-42ae-99a1-113526fb7b4b",
+    "name": "Central Bedfordshire",
+    "code": "E06000056",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "d5a915ae-2b4f-4d3f-98ce-364ebc2a1e87",
+    "name": "Charnwood",
+    "code": "E07000130",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "41bb52e2-1c91-4c1f-ac76-96aa169068b7",
+    "name": "Chelmsford",
+    "code": "E07000070",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5d888fca-fb02-4c1d-913d-9eb1a57c32fe",
+    "name": "Cheltenham",
+    "code": "E07000078",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "88edbc2c-c927-4f71-9179-f6e2d1886ef1",
+    "name": "Cherwell",
+    "code": "E07000177",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3416b16a-946a-4bed-b1ef-d0f6bb219530",
+    "name": "Cheshire East",
+    "code": "E06000049",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "bc9d43a6-2bc0-4037-8bfe-2ff5e657c160",
+    "name": "Cheshire West and Chester",
+    "code": "E06000050",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "ec85a970-c47d-44d0-b364-f299c48263ec",
+    "name": "Chesterfield",
+    "code": "E07000034",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "7184fc2b-ecd8-490e-865e-170a913d8697",
+    "name": "Chichester",
+    "code": "E07000225",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5fb44e2e-f5a4-444c-86de-228564de50f6",
+    "name": "Chorley",
+    "code": "E07000118",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "625db3b5-baeb-42c9-9fc7-03427e0cae2d",
+    "name": "City of London",
+    "code": "E09000001",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5debc648-a144-4627-aac6-84e5b9973a9f",
+    "name": "Colchester",
+    "code": "E07000071",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "0356dfcd-5214-4e70-a247-027613d0779e",
+    "name": "Cornwall",
+    "code": "E06000052",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "b6b03ea9-7fd5-47cc-83e5-cb923aa2bba2",
+    "name": "Cotswold",
+    "code": "E07000079",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1f94fb79-1821-46be-b1e2-7f22bd0d7af1",
+    "name": "County Durham",
+    "code": "E06000047",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "861eed51-03df-41c1-bf31-c834ccb4bd5f",
+    "name": "Coventry",
+    "code": "E08000026",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "9d25a482-0d07-49da-b6f1-521ec3ad62c5",
+    "name": "Crawley",
+    "code": "E07000226",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c24a9e15-f34c-4d4a-acf5-362522d5db93",
+    "name": "Croydon",
+    "code": "E09000008",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "7bd12193-1e9d-48e3-a51a-e66f29db6e47",
+    "name": "Cumberland",
+    "code": "E06000063",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "dfa0cab3-b5ed-4352-8df2-0a5e42065d78",
+    "name": "Dacorum",
+    "code": "E07000096",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "929b6c99-e2d5-437e-ae6a-60cfb16f0060",
+    "name": "Darlington",
+    "code": "E06000005",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

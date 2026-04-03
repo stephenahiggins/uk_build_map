@@ -1,6 +1,3 @@
-import { GoogleGenAI } from '@google/genai';
-import OpenAI from 'openai';
-
 export type EvidenceForEvaluation = {
   title?: string;
   summary?: string;
@@ -32,272 +29,282 @@ export type ProjectEvaluationOptions = {
   openAIApiKey?: string;
   model?: string;
   openAIModel?: string;
-  enableGoogleSearch?: boolean;
   mockResponse?: boolean;
 };
 
-let cachedGoogleClient: GoogleGenAI | null = null;
-let cachedGoogleApiKey: string | null = null;
-let cachedOpenAIClient: OpenAI | null = null;
-let cachedOpenAIApiKey: string | null = null;
-let cachedOpenAIBaseURL: string | null = null;
+type EvaluatedEvidence = {
+  item: EvidenceForEvaluation;
+  ageDays: number | null;
+  recencyScore: number;
+  sourceScore: number;
+  positiveSignals: string[];
+  cautionSignals: string[];
+  negativeSignals: string[];
+  signalScore: number;
+};
 
-function getGoogleClient(apiKey?: string) {
-  const resolvedKey = apiKey || process.env.GEMINI_API_KEY;
-  if (!resolvedKey) {
-    return null;
-  }
-  if (!cachedGoogleClient || cachedGoogleApiKey !== resolvedKey) {
-    cachedGoogleClient = new GoogleGenAI({ apiKey: resolvedKey });
-    cachedGoogleApiKey = resolvedKey;
-  }
-  return cachedGoogleClient;
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+
+const POSITIVE_PATTERNS = [
+  /\bcompleted\b/i,
+  /\bopened\b/i,
+  /\bopening\b/i,
+  /\boperational\b/i,
+  /\bconstruction (?:has )?started\b/i,
+  /\bwork (?:has )?started\b/i,
+  /\bon track\b/i,
+  /\bapproved\b/i,
+  /\bawarded\b/i,
+  /\bcontract awarded\b/i,
+  /\bfunding secured\b/i,
+  /\bplanning permission granted\b/i,
+  /\bprocurement underway\b/i,
+];
+
+const CAUTION_PATTERNS = [
+  /\bconsultation\b/i,
+  /\bplanned\b/i,
+  /\bproposed\b/i,
+  /\boutline\b/i,
+  /\bbusiness case\b/i,
+  /\bsubject to\b/i,
+  /\bawaiting\b/i,
+  /\bseeking approval\b/i,
+  /\bpreferred bidder\b/i,
+  /\bunder review\b/i,
+  /\bdelayed\b/i,
+  /\bslipped\b/i,
+  /\brisk\b/i,
+];
+
+const NEGATIVE_PATTERNS = [
+  /\bcancelled\b/i,
+  /\bcanceled\b/i,
+  /\bwithdrawn\b/i,
+  /\bscrapped\b/i,
+  /\babandoned\b/i,
+  /\bhalted\b/i,
+  /\bpaused indefinitely\b/i,
+  /\bjudicial review\b/i,
+  /\binsolven/i,
+  /\bfunding withdrawn\b/i,
+];
+
+const HIGH_CONFIDENCE_DOMAINS = [
+  '.gov.uk',
+  '.gov.scot',
+  '.gov.wales',
+  '.gov.ie',
+  '.nhs.uk',
+  'theplanner.co.uk',
+  'planninginspectorate.gov.uk',
+  'find-tender.service.gov.uk',
+  'contractsfinder.service.gov.uk',
+];
+
+function normalizeWhitespace(value: string | undefined): string {
+  return (value || '').replace(/\s+/g, ' ').trim();
 }
 
-function getOpenAIClient(apiKey?: string) {
-  const baseURL = process.env.OPENAI_BASE_URL || null;
-  const resolvedKey =
-    apiKey || process.env.OPENAI_API_KEY || (baseURL ? 'ollama' : undefined);
-  if (!resolvedKey) {
-    return null;
-  }
-  if (
-    !cachedOpenAIClient ||
-    cachedOpenAIApiKey !== resolvedKey ||
-    cachedOpenAIBaseURL !== baseURL
-  ) {
-    cachedOpenAIClient = new OpenAI({
-      apiKey: resolvedKey,
-      ...(baseURL ? { baseURL } : {}),
-    });
-    cachedOpenAIApiKey = resolvedKey;
-    cachedOpenAIBaseURL = baseURL;
-  }
-  return cachedOpenAIClient;
+function toDate(value?: string): Date | null {
+  if (!value) return null;
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
 }
 
-function normaliseStatus(
-  value: string | undefined | null
-): 'Red' | 'Amber' | 'Green' {
-  const cleaned = (value || '').trim().toLowerCase();
-  if (cleaned.includes('red')) return 'Red';
-  if (cleaned.includes('green')) return 'Green';
-  return 'Amber';
+function ageInDays(value?: string): number | null {
+  const parsed = toDate(value);
+  if (!parsed) return null;
+  return Math.max(0, Math.round((Date.now() - parsed.getTime()) / MS_PER_DAY));
 }
 
-function parseCoordinate(value: unknown): number | null {
-  if (value === null || value === undefined) return null;
-  if (typeof value === 'number' && Number.isFinite(value)) return value;
-  if (typeof value === 'string') {
-    const trimmed = value.trim();
-    if (!trimmed) return null;
-    const parsed = Number.parseFloat(trimmed);
-    return Number.isFinite(parsed) ? parsed : null;
+function scoreRecency(days: number | null): number {
+  if (days === null) return -1;
+  if (days <= 180) return 3;
+  if (days <= 365) return 2;
+  if (days <= 540) return 1;
+  if (days <= 730) return 0;
+  return -2;
+}
+
+function scoreSource(item: EvidenceForEvaluation): number {
+  const sourceText = `${item.sourceUrl || ''} ${item.source || ''}`.toLowerCase();
+  if (HIGH_CONFIDENCE_DOMAINS.some((domain) => sourceText.includes(domain))) {
+    return 3;
   }
-  return null;
-}
-
-function normaliseConfidence(value: unknown): 'LOW' | 'MEDIUM' | 'HIGH' {
-  if (typeof value !== 'string') return 'LOW';
-  const cleaned = value.trim().toUpperCase();
-  if (cleaned.includes('HIGH')) return 'HIGH';
-  if (cleaned.includes('MED')) return 'MEDIUM';
-  if (cleaned.includes('LOW')) return 'LOW';
-  return 'LOW';
-}
-
-function buildEvidenceNarrative(items: EvidenceForEvaluation[]): string {
-  if (!items.length) {
-    return 'No evidence provided.';
+  if (sourceText.includes('.org.uk') || sourceText.includes('.co.uk')) {
+    return 2;
   }
-  return items
-    .map((item, index) => {
-      const title = item.title ? `Title: ${item.title}` : 'Title: (unknown)';
-      const source = item.source
-        ? `Source: ${item.source}`
-        : 'Source: (unknown)';
-      const url = item.sourceUrl ? `URL: ${item.sourceUrl}` : 'URL: (unknown)';
-      const date = item.evidenceDate
-        ? `Date: ${item.evidenceDate}`
-        : 'Date: (unknown)';
-      const summary = item.summary || item.rawText || 'No summary provided.';
-      return `Evidence ${index + 1}:\n${title}\n${source}\n${url}\n${date}\nSummary: ${summary}`;
+  if (sourceText.includes('.com') || sourceText.includes('.org')) {
+    return 1;
+  }
+  return 0;
+}
+
+function collectSignals(text: string, patterns: RegExp[]): string[] {
+  return patterns
+    .filter((pattern) => pattern.test(text))
+    .map((pattern) => pattern.source.replace(/\\b|\(\?:|\)|\\/g, ' ').trim());
+}
+
+function evaluateEvidence(item: EvidenceForEvaluation): EvaluatedEvidence {
+  const text = normalizeWhitespace(
+    [item.title, item.summary, item.rawText].filter(Boolean).join(' ')
+  );
+  const ageDays = ageInDays(item.evidenceDate);
+  const recencyScore = scoreRecency(ageDays);
+  const sourceScore = scoreSource(item);
+  const positiveSignals = collectSignals(text, POSITIVE_PATTERNS);
+  const cautionSignals = collectSignals(text, CAUTION_PATTERNS);
+  const negativeSignals = collectSignals(text, NEGATIVE_PATTERNS);
+  const signalScore =
+    positiveSignals.length * 2 + cautionSignals.length * -1 + negativeSignals.length * -4;
+
+  return {
+    item,
+    ageDays,
+    recencyScore,
+    sourceScore,
+    positiveSignals,
+    cautionSignals,
+    negativeSignals,
+    signalScore,
+  };
+}
+
+function extractCoordinates(evidence: EvidenceForEvaluation[]): {
+  latitude: number | null;
+  longitude: number | null;
+  locationSource?: string;
+} {
+  const coordinatePattern =
+    /\b(-?[1-8]?\d(?:\.\d+)?)\s*,\s*(-?(?:1[0-7]\d|[1-9]?\d)(?:\.\d+)?)\b/;
+
+  for (const item of evidence) {
+    const haystack = `${item.summary || ''} ${item.rawText || ''} ${item.title || ''}`;
+    const match = haystack.match(coordinatePattern);
+    if (!match) continue;
+    const latitude = Number(match[1]);
+    const longitude = Number(match[2]);
+    if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) continue;
+    if (latitude < 49 || latitude > 61 || longitude < -9 || longitude > 3) continue;
+    return {
+      latitude,
+      longitude,
+      locationSource: item.sourceUrl || item.source || 'evidence text',
+    };
+  }
+
+  return { latitude: null, longitude: null };
+}
+
+function inferLocationDescription(
+  request: ProjectEvaluationRequest,
+  sortedEvidence: EvaluatedEvidence[]
+): string | undefined {
+  const bestLocale = normalizeWhitespace(request.locale);
+  if (bestLocale) return bestLocale;
+
+  const top = sortedEvidence[0]?.item;
+  const evidenceText = normalizeWhitespace(top?.title || top?.summary || top?.rawText);
+  if (!evidenceText) return undefined;
+  return evidenceText.slice(0, 80);
+}
+
+function buildRationale(
+  status: 'Red' | 'Amber' | 'Green',
+  scored: EvaluatedEvidence[],
+  totalScore: number
+): string {
+  const strongest = scored.slice(0, 2);
+  const evidenceRefs = strongest
+    .map((entry, index) => {
+      const age =
+        entry.ageDays === null ? 'undated' : `${Math.round(entry.ageDays / 30) || 0}mo old`;
+      const source = normalizeWhitespace(entry.item.source || entry.item.sourceUrl) || 'unknown source';
+      return `Evidence ${index + 1} (${source}, ${age})`;
     })
-    .join('\n\n');
+    .join('; ');
+
+  if (status === 'Green') {
+    return `${evidenceRefs}. Recent credible delivery signals outweigh caution flags (score ${totalScore}).`;
+  }
+  if (status === 'Red') {
+    return `${evidenceRefs}. Negative delivery signals dominate and no fresher counter-evidence offsets them (score ${totalScore}).`;
+  }
+  return `${evidenceRefs}. Evidence is mixed, stale, or incomplete, so the project remains amber (score ${totalScore}).`;
+}
+
+export function evaluateProjectDeterministically(
+  request: ProjectEvaluationRequest,
+  options?: ProjectEvaluationOptions
+): ProjectEvaluationResult {
+  if (options?.mockResponse) {
+    return {
+      ragStatus: 'Amber',
+      ragRationale: 'Mock evaluation used; deterministic scoring skipped.',
+      latitude: null,
+      longitude: null,
+      locationDescription: request.locale || 'Unknown location',
+      locationSource: 'mock',
+      locationConfidence: 'LOW',
+    };
+  }
+
+  const scored = request.evidence.map(evaluateEvidence);
+  const sortedEvidence = [...scored].sort((left, right) => {
+    const leftScore = left.signalScore + left.recencyScore + left.sourceScore;
+    const rightScore = right.signalScore + right.recencyScore + right.sourceScore;
+    return rightScore - leftScore;
+  });
+
+  const totalScore = scored.reduce(
+    (sum, entry) => sum + entry.signalScore + entry.recencyScore + entry.sourceScore,
+    0
+  );
+  const negativeCount = scored.reduce((sum, entry) => sum + entry.negativeSignals.length, 0);
+  const positiveCount = scored.reduce((sum, entry) => sum + entry.positiveSignals.length, 0);
+  const freshStrongEvidence = scored.some(
+    (entry) =>
+      entry.ageDays !== null &&
+      entry.ageDays <= 365 &&
+      entry.sourceScore >= 2 &&
+      entry.positiveSignals.length > 0
+  );
+
+  let ragStatus: 'Red' | 'Amber' | 'Green' = 'Amber';
+  if (negativeCount >= 2 || totalScore <= -4) {
+    ragStatus = 'Red';
+  } else if (freshStrongEvidence && positiveCount >= negativeCount && totalScore >= 5) {
+    ragStatus = 'Green';
+  }
+
+  const coordinates = extractCoordinates(request.evidence);
+  const locationDescription = inferLocationDescription(request, sortedEvidence);
+  const locationConfidence =
+    coordinates.latitude !== null && coordinates.longitude !== null ? 'MEDIUM' : 'LOW';
+
+  return {
+    ragStatus,
+    ragRationale: buildRationale(ragStatus, sortedEvidence, totalScore),
+    latitude: coordinates.latitude,
+    longitude: coordinates.longitude,
+    locationDescription,
+    locationSource: coordinates.locationSource || locationDescription,
+    locationConfidence,
+  };
 }
 
 export async function evaluateProjectWithOpenAI(
   request: ProjectEvaluationRequest,
   options?: ProjectEvaluationOptions
 ): Promise<ProjectEvaluationResult> {
-  const { projectName, projectDescription, locale, evidence } = request;
-  const {
-    openAIApiKey,
-    openAIModel = 'gpt-4-turbo',
-    mockResponse,
-  } = options || {};
-
-  if (mockResponse) {
-    return {
-      ragStatus: 'Amber',
-      ragRationale: 'Mock evaluation used; real OpenAI call skipped.',
-      latitude: null,
-      longitude: null,
-      locationDescription: 'Mock location',
-      locationSource: 'Mock',
-      locationConfidence: 'LOW',
-    };
-  }
-
-  const client = getOpenAIClient(openAIApiKey);
-  if (!client) {
-    throw new Error(
-      'Missing OpenAI API key. Provide options.openAIApiKey or set OPENAI_API_KEY in the environment.'
-    );
-  }
-
-  const evidenceNarrative = buildEvidenceNarrative(evidence);
-  const locationHint = locale ? `Primary search locale: ${locale}.` : '';
-
-  const prompt = `You are an infrastructure intelligence analyst verifying the real-world status and location of a project.\n\nProject name: ${
-    projectName || '(unknown)'
-  }\nProject description: ${projectDescription || '(not provided)'}\n${locationHint}\n\nEvidence timeline:\n${evidenceNarrative}\n\nTasks:\n1. Decide the current overall RAG status (Red, Amber or Green) using the evidence above. If not enough evidence exists, the status should be Amber.\n2. Provide a concise rationale (<=60 words) referencing the strongest evidence.\n3. Identify the best available latitude and longitude for the primary project site. Use the evidence and, if needed, a quick web search of the project name plus location.\n4. Provide a short location description (e.g., town/landmark) and cite the main public source used.\n5. Provide your confidence in the coordinates as HIGH, MEDIUM or LOW.\n\nReturn only a single, valid JSON object with no other text or explanation. The JSON should conform to this exact schema:\n{\n  "ragStatus": "Red|Amber|Green",\n  "ragRationale": "text",\n  "latitude": number|null,\n  "longitude": number|null,\n  "locationDescription": "text",\n  "locationSource": "text",\n  "locationConfidence": "HIGH|MEDIUM|LOW"\n}\nIf you cannot determine coordinates, set latitude and longitude to null and explain why in the rationale or location description.`;
-
-  const response = await client.chat.completions.create({
-    model: openAIModel,
-    messages: [{ role: 'user', content: prompt }],
-    ...(process.env.OPENAI_COMPAT_MODE?.toLowerCase() === 'ollama'
-      ? {}
-      : { response_format: { type: 'json_object' } }),
-  });
-
-  const text = response.choices[0].message.content || '';
-  let parsed: any;
-  try {
-    parsed = JSON.parse(text);
-  } catch (error) {
-    throw new Error(`Failed to parse OpenAI response as JSON: ${text}`);
-  }
-
-  const ragStatus = normaliseStatus(parsed.ragStatus);
-  const ragRationale = (parsed.ragRationale || parsed.rationale || '')
-    .toString()
-    .trim();
-  const latitude = parseCoordinate(parsed.latitude);
-  const longitude = parseCoordinate(parsed.longitude);
-  const locationDescription = parsed.locationDescription
-    ? parsed.locationDescription.toString().trim()
-    : undefined;
-  const locationSource = parsed.locationSource
-    ? parsed.locationSource.toString().trim()
-    : undefined;
-  const locationConfidence = normaliseConfidence(parsed.locationConfidence);
-
-  return {
-    ragStatus,
-    ragRationale,
-    latitude,
-    longitude,
-    locationDescription,
-    locationSource,
-    locationConfidence,
-  };
+  return evaluateProjectDeterministically(request, options);
 }
 
 export async function evaluateProjectWithGemini(
   request: ProjectEvaluationRequest,
   options?: ProjectEvaluationOptions
 ): Promise<ProjectEvaluationResult> {
-  const { projectName, projectDescription, locale, evidence } = request;
-  const {
-    apiKey,
-    model,
-    enableGoogleSearch = true,
-    mockResponse,
-  } = options || {};
-
-  if (mockResponse || process.env.MOCK_PROJECT_EVALUATION === 'true') {
-    return {
-      ragStatus: 'Amber',
-      ragRationale: 'Mock evaluation used; real Gemini call skipped.',
-      latitude: null,
-      longitude: null,
-      locationDescription: 'Mock location',
-      locationSource: 'Mock',
-      locationConfidence: 'LOW',
-    };
-  }
-
-  const client = getGoogleClient(apiKey);
-  if (!client) {
-    console.log(
-      'Gemini client not available, attempting to fall back to OpenAI.'
-    );
-    return evaluateProjectWithOpenAI(request, options);
-  }
-  const chosenModel = model || process.env.GEMINI_MODEL || 'gemini-2.5-flash';
-
-  const evidenceNarrative = buildEvidenceNarrative(evidence);
-  const locationHint = locale ? `Primary search locale: ${locale}.` : '';
-
-  const contents = `You are an infrastructure intelligence analyst verifying the real-world status and location of a project.\n\nProject name: ${
-    projectName || '(unknown)'
-  }\nProject description: ${projectDescription || '(not provided)'}\n${locationHint}\n\nEvidence timeline:\n${evidenceNarrative}\n\nTasks:\n1. Decide the current overall RAG status (Red, Amber or Green) using the evidence above. If not enough evidence exists, the status should be Amber.\n2. Provide a concise rationale (<=60 words) referencing the strongest evidence.\n3. Identify the best available latitude and longitude for the primary project site. Use the evidence and, if needed, a quick web search of the project name plus location.\n4. Provide a short location description (e.g., town/landmark) and cite the main public source used.\n5. Provide your confidence in the coordinates as HIGH, MEDIUM or LOW.\n\nReturn only a single, valid JSON object with no other text or explanation. The JSON should conform to this exact schema:\n{\n  "ragStatus": "Red|Amber|Green",\n  "ragRationale": "text",\n  "latitude": number|null,\n  "longitude": number|null,\n  "locationDescription": "text",\n  "locationSource": "text",\n  "locationConfidence": "HIGH|MEDIUM|LOW"\n}\nIf you cannot determine coordinates, set latitude and longitude to null and explain why in the rationale or location description.`;
-
-  const config = enableGoogleSearch
-    ? {
-        tools: [
-          {
-            googleSearch: {},
-          },
-        ],
-      }
-    : undefined;
-
-  const response = await client.models.generateContent({
-    model: chosenModel,
-    contents,
-    ...(config ? { config } : {}),
-  });
-
-  const text = (response.text || '').trim();
-  let parsed: any;
-  try {
-    const cleaned = text
-      .replace(/^```json\s*/i, '')
-      .replace(/^```/i, '')
-      .replace(/```$/i, '')
-      .trim();
-    parsed = JSON.parse(cleaned);
-  } catch (error) {
-    if (error instanceof Error && /quota/i.test(error.message)) {
-      console.warn('Google Gemini quota exceeded. Falling back to OpenAI.');
-      return evaluateProjectWithOpenAI(request, options);
-    }
-    throw new Error(`Failed to parse Gemini response as JSON: ${text}`);
-  }
-
-  const ragStatus = normaliseStatus(parsed.ragStatus);
-  const ragRationale = (parsed.ragRationale || parsed.rationale || '')
-    .toString()
-    .trim();
-  const latitude = parseCoordinate(parsed.latitude);
-  const longitude = parseCoordinate(parsed.longitude);
-  const locationDescription = parsed.locationDescription
-    ? parsed.locationDescription.toString().trim()
-    : undefined;
-  const locationSource = parsed.locationSource
-    ? parsed.locationSource.toString().trim()
-    : undefined;
-  const locationConfidence = normaliseConfidence(parsed.locationConfidence);
-
-  return {
-    ragStatus,
-    ragRationale,
-    latitude,
-    longitude,
-    locationDescription,
-    locationSource,
-    locationConfidence,
-  };
+  return evaluateProjectDeterministically(request, options);
 }

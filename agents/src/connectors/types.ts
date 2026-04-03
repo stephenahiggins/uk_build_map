@@ -5,6 +5,9 @@ export type ConnectorEvidence = {
   sourceUrl: string;
   evidenceDate: string;
   rawText?: string;
+  sourceType?: string;
+  sourceConfidence?: "LOW" | "MEDIUM" | "HIGH";
+  urlVerified?: boolean;
 };
 
 export type ConnectorProject = {
@@ -19,6 +22,11 @@ export type ConnectorProject = {
   region?: string;
   updatedAt?: string;
   evidence?: ConnectorEvidence[];
+  externalId?: string;
+  location?: string;
+  sourceType?: string;
+  sourceConfidence?: "LOW" | "MEDIUM" | "HIGH";
+  stagingOnly?: boolean;
 };
 
 export type ConnectorFetchResult = {

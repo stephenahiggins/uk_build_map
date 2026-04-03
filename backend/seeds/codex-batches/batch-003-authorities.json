@@ -1,0 +1,146 @@
+[
+  {
+    "id": "860739d8-e2a7-4dea-b4cd-a90584c29031",
+    "name": "South Oxfordshire",
+    "code": "E07000179",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "04b84554-6687-4755-852d-df78aadcdc31",
+    "name": "Stockport",
+    "code": "E08000007",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "c029a725-1c3e-431f-8dd3-d37c0af1755f",
+    "name": "Telford and Wrekin",
+    "code": "E06000020",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "2331c02a-6411-44c3-a795-128e08e9ee6d",
+    "name": "West Lancashire",
+    "code": "E07000127",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "78d875a9-73b6-4a30-b7b7-36b77a2bd359",
+    "name": "West Oxfordshire",
+    "code": "E07000181",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "b905e93e-1918-4ff8-b1af-e13ccabd7b68",
+    "name": "Worcester",
+    "code": "E07000237",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "3295781f-4494-4519-9479-002e6017a2cd",
+    "name": "Bexley",
+    "code": "E09000004",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "eab1fa0f-b6fd-4f3c-8230-f74d48588035",
+    "name": "Bury",
+    "code": "E08000002",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "99ed5a23-a490-40e5-bfc9-369398a40844",
+    "name": "Fylde",
+    "code": "E07000119",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "684166e5-794a-45e7-9b24-5ce898db4715",
+    "name": "Hart",
+    "code": "E07000089",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "3d764659-b3e6-4d0b-bc56-8ac1e07e3aaf",
+    "name": "Kensington and Chelsea",
+    "code": "E09000020",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "f192e426-9f23-4f03-a5be-08aa7e0a3699",
+    "name": "Maldon",
+    "code": "E07000074",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "b472768f-ae31-4358-b378-ddd3b9c41051",
+    "name": "North Warwickshire",
+    "code": "E07000218",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "91fe8b17-0c86-4f0e-9518-342da911a301",
+    "name": "South Kesteven",
+    "code": "E07000141",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "b287a159-9b3d-4d7e-a635-a0eb98650e2d",
+    "name": "Three Rivers",
+    "code": "E07000102",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "6d909733-2d4c-45f4-838c-bbbd3577e8cd",
+    "name": "Wirral",
+    "code": "E08000015",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "1344add6-5fe2-4e68-9a6f-8300a0238d83",
+    "name": "Rushmoor",
+    "code": "E07000092",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "e40fd0f5-a7d8-43c3-8b8a-e9b26d13fca9",
+    "name": "Wealden",
+    "code": "E07000065",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  }
+]

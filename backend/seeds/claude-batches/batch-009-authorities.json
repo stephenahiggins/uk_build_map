@@ -1,0 +1,178 @@
+[
+  {
+    "id": "814d26be-4a5a-4b6f-9c62-df6fbb1369c6",
+    "name": "Northumberland",
+    "code": "E06000057",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "4e9417bf-f787-4de4-b133-63cc43f724a1",
+    "name": "Norwich",
+    "code": "E07000148",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c0410e92-f833-49c2-8e5f-84f5d4754cd8",
+    "name": "Nottingham",
+    "code": "E06000018",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5dd82acf-6049-4194-a85b-edfc88d13d5c",
+    "name": "Nuneaton and Bedworth",
+    "code": "E07000219",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3314cd16-0cc0-485f-a181-f269151d20a4",
+    "name": "Oadby and Wigston",
+    "code": "E07000135",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "68c43f8b-b4b6-4aee-b567-95fc988b6078",
+    "name": "Oldham",
+    "code": "E08000004",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "8ce20ee0-fde4-4acf-9c26-32c471dab770",
+    "name": "Oxford",
+    "code": "E07000178",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5332eea4-682a-4e56-bb3d-909f4398b15b",
+    "name": "Pendle",
+    "code": "E07000122",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "e0439480-b49f-4636-8c37-9671272c7635",
+    "name": "Peterborough",
+    "code": "E06000031",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "4212bbed-8db0-4254-8477-908fbac7ccbf",
+    "name": "Plymouth",
+    "code": "E06000026",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "38d6224d-7d80-402f-8ae1-4927b7a3241f",
+    "name": "Portsmouth",
+    "code": "E06000044",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5e98d753-9efc-435b-af85-566487322ae2",
+    "name": "Preston",
+    "code": "E07000123",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "f0455ea9-5b2c-44f6-84ae-17d80f0ff54d",
+    "name": "Reading",
+    "code": "E06000038",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "f1ec1447-4992-41af-aaff-a9a2e97011f5",
+    "name": "Redbridge",
+    "code": "E09000026",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "85268d52-2dd4-48f8-a379-aa576f28c1d9",
+    "name": "Redcar and Cleveland",
+    "code": "E06000003",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "04ccc3be-b55d-4bff-8812-6f0788807d2f",
+    "name": "Redditch",
+    "code": "E07000236",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1ad44592-d118-4e3c-9390-c155ca91fca7",
+    "name": "Reigate and Banstead",
+    "code": "E07000211",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "9183543c-f7c6-469f-a856-e0446e9d3c99",
+    "name": "Ribble Valley",
+    "code": "E07000124",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "ee3cd39e-1937-41d8-8855-b137bfd735c0",
+    "name": "Richmond upon Thames",
+    "code": "E09000027",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "4df67854-7f50-4b8d-b431-93adfdd800dc",
+    "name": "Rochdale",
+    "code": "E08000005",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "fdd05462-2dff-4fae-b2fa-9b266bc309ad",
+    "name": "Rochford",
+    "code": "E07000075",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "32d2c506-e6e8-499e-b27f-adb92c1f34f3",
+    "name": "Rossendale",
+    "code": "E07000125",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

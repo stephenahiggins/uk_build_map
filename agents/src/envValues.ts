@@ -36,6 +36,7 @@ export type EnvValues = {
   MOCK_PROJECT_EVALUATION: boolean;
   NO_LLM: boolean;
   LLM_BUDGET?: number;
+  VALIDATE_EVIDENCE_URLS: boolean;
 };
 
 export const envValues: EnvValues = {
@@ -50,11 +51,11 @@ export const envValues: EnvValues = {
   DATABASE_URL: process.env.DATABASE_URL,
 
   // Application Configuration
-  MODEL: process.env.MODEL || "gpt-5-mini",
+  MODEL: process.env.MODEL || "gemini-2.5-flash",
   GEMINI_MODEL: process.env.GEMINI_MODEL,
   OPENAI_MODEL: process.env.OPENAI_MODEL,
-  PROVIDER: process.env.PROVIDER || "openai",
-  LOCALE: process.env.LOCALE || "West Yorkshire",
+  PROVIDER: process.env.PROVIDER || "gemini",
+  LOCALE: process.env.LOCALE || "United Kingdom",
   MAX_RESULTS: Number(process.env.MAX_RESULTS) || 5,
   CONNECTORS: process.env.CONNECTORS,
   LOCAL_PROJECTS_JSON: process.env.LOCAL_PROJECTS_JSON,
@@ -67,14 +68,18 @@ export const envValues: EnvValues = {
   MOCK_PROJECT_EVALUATION: process.env.MOCK_PROJECT_EVALUATION === "true",
   NO_LLM: process.env.NO_LLM === "true",
   LLM_BUDGET: process.env.LLM_BUDGET ? Number(process.env.LLM_BUDGET) : undefined,
+  VALIDATE_EVIDENCE_URLS: process.env.VALIDATE_EVIDENCE_URLS === "true",
 };
 
 export function resolveProvider(value?: string): LlmProvider {
   const normalized = (value || envValues.PROVIDER || "").trim().toLowerCase();
+  if (normalized.startsWith("openai")) {
+    throw new Error("OpenAI runtime is disabled. Use Gemini or connectors-only workflows.");
+  }
   if (normalized.startsWith("gemini") || normalized.startsWith("google")) {
     return "gemini";
   }
-  return "openai";
+  return "gemini";
 }
 
 export function applyRuntimeOverrides(overrides: Partial<EnvValues>): void {
@@ -114,12 +119,7 @@ export function validateEnvValues(): void {
     const provider = resolveProvider();
     if (provider === "gemini" && !envValues.GEMINI_API_KEY) {
       throw new Error(
-        `Missing API Key: Please set GEMINI_API_KEY in your .env file (or switch provider to OpenAI).`
-      );
-    }
-    if (provider === "openai" && !envValues.OPENAI_API_KEY) {
-      throw new Error(
-        `Missing API Key: Please set OPENAI_API_KEY in your .env file (or switch provider to Gemini).`
+        `Missing API Key: Please set GEMINI_API_KEY in your .env file or run with --no-llm / --connectors-only.`
       );
     }
   }

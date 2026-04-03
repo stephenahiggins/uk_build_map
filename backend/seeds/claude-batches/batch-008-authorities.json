@@ -1,0 +1,178 @@
+[
+  {
+    "id": "16483efb-f5b8-40b7-a5ee-92de3bb4daf4",
+    "name": "Mid Sussex",
+    "code": "E07000228",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "65ca3a9a-2d96-465c-bb8c-355d59246c6c",
+    "name": "Middlesbrough",
+    "code": "E06000002",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "41cb4145-8c3b-4bf4-a4fb-139f173b7b80",
+    "name": "Milton Keynes",
+    "code": "E06000042",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "0018cde8-819c-4320-ae8c-0a1ac18dd344",
+    "name": "Mole Valley",
+    "code": "E07000210",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "24bcacf3-12ba-4d90-8502-646007e983ed",
+    "name": "New Forest",
+    "code": "E07000091",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "de278ff3-97fd-4e36-9d36-498aaf3de9e8",
+    "name": "Newark and Sherwood",
+    "code": "E07000175",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "fcc7d3c8-0128-45b7-9f31-9c6bdc209cca",
+    "name": "Newcastle upon Tyne",
+    "code": "E08000021",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "4c223c00-c1eb-43d7-9c49-0e05626166bf",
+    "name": "Newcastle-under-Lyme",
+    "code": "E07000195",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3ef6ec68-3e98-4bee-8136-31abee8d9ce3",
+    "name": "Newham",
+    "code": "E09000025",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3c6b3bd7-4b20-473e-9760-149830f49231",
+    "name": "North Devon",
+    "code": "E07000043",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "54481931-acce-441c-ad13-792953123fc5",
+    "name": "North East Derbyshire",
+    "code": "E07000038",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "cef65a66-6ad5-444b-9f9e-64813743fbf2",
+    "name": "North East Lincolnshire",
+    "code": "E06000012",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "82b718ba-034c-41ff-beea-0631e38c5efe",
+    "name": "North Hertfordshire",
+    "code": "E07000099",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "87427552-d71f-47f8-9329-5edf90d6af12",
+    "name": "North Kesteven",
+    "code": "E07000139",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "8f566f13-8281-4167-8a26-eff47173c4b6",
+    "name": "North Lincolnshire",
+    "code": "E06000013",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "455ee169-1b26-48ec-bb4c-e27f54121c08",
+    "name": "North Norfolk",
+    "code": "E07000147",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "d78a5e12-ade7-47dd-8fee-deead8981365",
+    "name": "North Northamptonshire",
+    "code": "E06000061",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "eb713df5-5ed3-4ec7-be9a-ab8b8d0373dd",
+    "name": "North Somerset",
+    "code": "E06000024",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "d951ce9f-7115-411c-965c-102e236b37d1",
+    "name": "North Tyneside",
+    "code": "E08000022",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "b472768f-ae31-4358-b378-ddd3b9c41051",
+    "name": "North Warwickshire",
+    "code": "E07000218",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "15541f0a-5a34-489d-a3c5-7841be2f3ab2",
+    "name": "North West Leicestershire",
+    "code": "E07000134",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "26181f9a-8e89-4fef-8923-1e0ff3fecc12",
+    "name": "North Yorkshire",
+    "code": "E06000065",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

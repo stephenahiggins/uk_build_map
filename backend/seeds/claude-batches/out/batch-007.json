@@ -1,0 +1,496 @@
+[
+  {
+    "id": "kirklees-huddersfield-blueprint-2024",
+    "title": "Huddersfield Blueprint – Cultural Heart and Town Centre Regeneration",
+    "description": "Kirklees Council's flagship £250m+ programme to transform Huddersfield town centre, including demolition and redevelopment of the Piazza shopping centre, creation of a new Cultural Heart (library, gallery and creative space), and refurbishment of Queensgate Market with public realm improvements throughout.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "e33bf613-cde9-4964-9498-3789c9454360",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Piazza demolition completed 2024 and Cultural Heart planning application progressed, but revised timelines and value-engineering exercises have introduced delays to the wider programme.",
+    "latitude": 53.6451,
+    "longitude": -1.7819,
+    "locationDescription": "Huddersfield town centre, King Street and New Street area",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Huddersfield Blueprint – Kirklees Council",
+        "source": "Kirklees Council",
+        "url": "https://www.kirklees.gov.uk/beta/regeneration/huddersfield-blueprint.aspx",
+        "datePublished": "2024-03-01",
+        "summary": "Official Kirklees Council page for the Huddersfield Blueprint regeneration programme, covering the Cultural Heart, Piazza redevelopment and market improvements."
+      }
+    ]
+  },
+  {
+    "id": "knowsley-prescot-town-centre-regeneration-2024",
+    "title": "Prescot Town Centre Regeneration – Post-Shakespeare North Phase",
+    "description": "Following the opening of the Shakespeare North Playhouse in 2022, Knowsley Council is leading phase 2 of the Prescot town centre regeneration, including public realm improvements, heritage-led commercial development and new housing around the playhouse, funded by Levelling Up and UK Shared Prosperity Fund allocations.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "9432eb2d-c60a-471d-bb68-4fcde835d0ed",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council confirmed continued investment; phase 2 public realm and housing works are proceeding within programme with UKSPF and LUHBF support.",
+    "latitude": 53.4290,
+    "longitude": -2.8085,
+    "locationDescription": "Prescot town centre, Knowsley, Merseyside",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Knowsley Council",
+        "source": "Knowsley Council",
+        "url": "https://www.knowsley.gov.uk/residents/regeneration",
+        "datePublished": "2024-06-01",
+        "summary": "Knowsley Council regeneration hub covering ongoing investment in Prescot, Kirkby and Huyton town centres including the post-Shakespeare North phase."
+      }
+    ]
+  },
+  {
+    "id": "lambeth-brixton-town-centre-masterplan-2024",
+    "title": "Brixton Town Centre Masterplan",
+    "description": "Lambeth Council's Brixton Town Centre Masterplan guides investment in public realm, transport connectivity and housing across the Brixton area. It includes improvements to Brixton Market and covered arcades, Windrush Square enhancements, and key transport interchange upgrades, supported by the Greater London Authority.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "08dbbc19-7ecf-41af-ba5f-c324e8c6da65",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Masterplan adopted; public realm phases under delivery with GLA and UKSPF support; Windrush Square works completed in 2024.",
+    "latitude": 51.4613,
+    "longitude": -0.1156,
+    "locationDescription": "Brixton town centre, London Borough of Lambeth",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major Developments and Regeneration – Lambeth Council",
+        "source": "London Borough of Lambeth",
+        "url": "https://www.lambeth.gov.uk/planning-building-control/major-developments-and-regeneration",
+        "datePublished": "2024-06-01",
+        "summary": "Lambeth Council's major developments and regeneration hub, covering the Brixton Town Centre Masterplan and borough-wide investment schemes."
+      }
+    ]
+  },
+  {
+    "id": "lancaster-canal-corridor-north-2024",
+    "title": "Canal Corridor North Regeneration, Lancaster",
+    "description": "Lancaster City Council's Canal Corridor North regeneration scheme brings forward mixed-use development on former industrial land north of Lancaster city centre, alongside the Lancaster Canal. The allocated site will deliver housing, employment floorspace and public open space, requiring significant infrastructure investment.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "5fcfa4b5-237f-4277-bd7d-520622031cf0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Site allocated in adopted Local Plan; detailed masterplan work and infrastructure funding discussions ongoing; delivery timeline subject to resolution of transport interventions.",
+    "latitude": 54.0496,
+    "longitude": -2.8015,
+    "locationDescription": "Canal Corridor North, Lancaster city centre, Lancashire",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Canal Corridor North – Lancaster City Council",
+        "source": "Lancaster City Council",
+        "url": "https://www.lancaster.gov.uk/planning/planning-policy/canal-corridor-north",
+        "datePublished": "2024-04-01",
+        "summary": "Lancaster City Council planning policy page for the Canal Corridor North strategic regeneration site, covering allocations, masterplan principles and infrastructure requirements."
+      }
+    ]
+  },
+  {
+    "id": "leeds-west-yorkshire-mass-transit-2024",
+    "title": "West Yorkshire Mass Transit Programme",
+    "description": "West Yorkshire Combined Authority (WYCA) is developing a mass transit network for the Leeds City Region, with corridors connecting Leeds, Bradford, Halifax and beyond. The programme is examining tram-train or light rail technology and forms the centrepiece of the region's transport investment pipeline, backed by the Government's City Region Sustainable Transport Settlement.",
+    "type": "REGIONAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "d0af0b17-b849-47fd-b9bb-9e8644bf9254",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Outline Business Case progressing; preferred route options announced 2024 with development funding secured, but full funding commitment and statutory processes remain pending.",
+    "latitude": 53.7996,
+    "longitude": -1.5491,
+    "locationDescription": "Leeds city centre and West Yorkshire transport corridors",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Mass Transit – West Yorkshire Combined Authority",
+        "source": "West Yorkshire Combined Authority",
+        "url": "https://www.westyorks-ca.gov.uk/improving-the-region/transport/mass-transit/",
+        "datePublished": "2024-07-01",
+        "summary": "WYCA page detailing the West Yorkshire Mass Transit programme, preferred route options, investment scale and programme milestones."
+      }
+    ]
+  },
+  {
+    "id": "leicester-waterside-regeneration-2024",
+    "title": "Leicester Waterside Regeneration",
+    "description": "Leicester City Council's Waterside regeneration is transforming a former industrial area between the city centre and the River Soar, delivering over 1,000 new homes, offices, hotels and public spaces. The scheme includes new pedestrian and cycle bridges and extensive public realm along the river corridor.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "fe0e49eb-12d2-47cd-872d-67ac9ee31036",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Multiple phases completed or under construction; new residential buildings and public realm delivering to programme through 2024-25.",
+    "latitude": 52.6380,
+    "longitude": -1.1386,
+    "locationDescription": "Waterside area, west of Leicester city centre, alongside the River Soar",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Waterside Regeneration – Leicester City Council",
+        "source": "Leicester City Council",
+        "url": "https://www.leicester.gov.uk/your-community/regeneration/waterside/",
+        "datePublished": "2024-01-01",
+        "summary": "Leicester City Council's Waterside regeneration page covering masterplan, planning history, completed phases and ongoing development activity."
+      }
+    ]
+  },
+  {
+    "id": "lewes-newhaven-town-deal-2024",
+    "title": "Newhaven Town Deal Capital Programme",
+    "description": "Newhaven (within Lewes District) secured a £25.6 million Town Deal in 2021, with capital projects including the Newhaven Enterprise Centre, flood and coastal resilience works, Newhaven Fort heritage improvements, and transport and active travel upgrades. Delivery is continuing through to 2026 and is led by Lewes District Council.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "09d21c64-b66f-445b-bdc8-451819759789",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Multiple Town Deal projects delivered or under construction; Enterprise Centre opened 2024; coastal defence works progressing on programme.",
+    "latitude": 50.7955,
+    "longitude": 0.0579,
+    "locationDescription": "Newhaven, East Sussex (within Lewes District)",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Newhaven Town Deal – Lewes District Council",
+        "source": "Lewes District Council",
+        "url": "https://www.lewes-eastbourne.gov.uk/business-and-economy/newhaven-town-deal/",
+        "datePublished": "2024-03-01",
+        "summary": "Lewes District Council page for the Newhaven Town Deal programme, covering the £25.6m investment, funded projects and delivery milestones."
+      }
+    ]
+  },
+  {
+    "id": "lewisham-gateway-phase2-2024",
+    "title": "Lewisham Gateway Phase 2",
+    "description": "Lewisham Gateway is a major mixed-use regeneration scheme at Lewisham town centre, delivering over 600 homes, offices, retail and public realm. Phase 2 involves further residential towers and completion of the riverside public realm adjacent to Lewisham DLR and rail station, led by Lewisham Council in partnership with Muse Developments.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "fed86ed5-9e42-484a-b5ac-4ef62f89ede9",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Phase 1 complete and occupied; Phase 2 under construction and delivering to agreed programme.",
+    "latitude": 51.4636,
+    "longitude": -0.0139,
+    "locationDescription": "Lewisham town centre, adjacent to Lewisham DLR and National Rail station",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Lewisham Gateway – London Borough of Lewisham",
+        "source": "London Borough of Lewisham",
+        "url": "https://lewisham.gov.uk/myservices/planning/major-developments/lewisham-gateway",
+        "datePublished": "2024-02-01",
+        "summary": "Lewisham Council project page for the Lewisham Gateway mixed-use development covering housing, commercial and public realm delivery."
+      }
+    ]
+  },
+  {
+    "id": "lichfield-district-leisure-centre-2024",
+    "title": "Lichfield District Leisure Centre Replacement",
+    "description": "Lichfield District Council is progressing plans to replace the ageing Friary Grange Leisure Centre with a modern community leisure facility. The project includes a new swimming pool, sports halls and fitness facilities serving the district.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "5985813f-e96e-4c66-9ce7-dc752c7ac035",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Business case approved by council; procurement and detailed design underway but programme subject to cost review in the context of construction inflation.",
+    "latitude": 52.6835,
+    "longitude": -1.8279,
+    "locationDescription": "Lichfield, Staffordshire",
+    "locationSource": "MANUAL",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Leisure and Sport – Lichfield District Council",
+        "source": "Lichfield District Council",
+        "url": "https://www.lichfielddc.gov.uk/leisure-sport",
+        "datePublished": "2024-09-01",
+        "summary": "Lichfield District Council page covering leisure investment and the planned replacement community leisure centre."
+      }
+    ]
+  },
+  {
+    "id": "lincoln-cornhill-quarter-regeneration-2024",
+    "title": "Lincoln Cornhill Quarter Regeneration",
+    "description": "City of Lincoln Council's Cornhill Quarter programme has transformed the area around Lincoln's historic Cornhill, refurbishing the Victorian market hall, creating new public squares, a hotel and commercial units. Wider public realm improvements and connectivity works are continuing into 2025 under the council's city centre investment programme.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "45831c76-dafc-4769-8a03-85a7c1623627",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Core Cornhill Quarter works substantially complete; market hall operational; ongoing connectivity and public realm phases continuing to deliver.",
+    "latitude": 53.2285,
+    "longitude": -0.5405,
+    "locationDescription": "Cornhill Quarter, Lincoln city centre, Lincolnshire",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – City of Lincoln Council",
+        "source": "City of Lincoln Council",
+        "url": "https://www.lincoln.gov.uk/regeneration",
+        "datePublished": "2024-05-01",
+        "summary": "Lincoln Council regeneration page covering the Cornhill Quarter programme and wider city centre investment."
+      }
+    ]
+  },
+  {
+    "id": "liverpool-waters-central-docks-2024",
+    "title": "Liverpool Waters – Central Docks and Princes Dock Phases",
+    "description": "Liverpool Waters is Peel L&P's consented multi-decade regeneration of 60 hectares of northern docklands, backed by Liverpool City Council. The Central Docks and Princes Dock phases are delivering over 1,000 homes, offices, hotels and public waterfront spaces, forming a key component of the Liverpool City Region's growth agenda.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "fa88a510-40c0-4c85-b1cf-5d96f5a2fb2b",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Consistent delivery across multiple phases; residential buildings completing in 2024-25 and commercial occupiers progressing.",
+    "latitude": 53.4116,
+    "longitude": -2.9970,
+    "locationDescription": "Liverpool northern docklands, Princes Dock to Central Docks",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Liverpool Waters – Liverpool Vision",
+        "source": "Liverpool Vision (Liverpool City Council economic development company)",
+        "url": "https://www.liverpoolvision.co.uk/projects/liverpool-waters/",
+        "datePublished": "2024-04-01",
+        "summary": "Liverpool Vision project page for Liverpool Waters covering Northern Docks regeneration, investment pipeline and current phase delivery status."
+      }
+    ]
+  },
+  {
+    "id": "luton-dart-airport-transit-2024",
+    "title": "Luton DART – Direct Air-Rail Transit",
+    "description": "The Luton DART is the UK's first fully automated personal rapid transit system, connecting Luton Airport Parkway station to London Luton Airport terminal. The system opened in March 2024, delivering a 4-minute shuttle journey and replacing the legacy bus service as part of Luton Rising's wider airport growth strategy.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "c7768962-56cd-4510-a2ce-0069322984f0",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "System opened March 2024 and is in full commercial operation, delivering planned passenger connectivity to the airport.",
+    "latitude": 51.8759,
+    "longitude": -0.3730,
+    "locationDescription": "London Luton Airport, connecting Parkway rail station to airport terminal",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "DART – Luton Rising",
+        "source": "Luton Rising (London Luton Airport Ltd / Luton Borough Council)",
+        "url": "https://www.lutonrising.com/dart",
+        "datePublished": "2024-03-22",
+        "summary": "Luton Rising's DART page confirming the March 2024 opening and operational details of the automated people mover."
+      }
+    ]
+  },
+  {
+    "id": "maidstone-future-high-streets-town-centre-2024",
+    "title": "Maidstone Town Centre Future High Streets Investment",
+    "description": "Maidstone Borough Council secured Future High Streets Fund and UK Shared Prosperity Fund investment to revitalise Maidstone town centre, including public realm improvements at Week Street, enhanced pedestrian links, independent retail support and wayfinding improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "be6ef521-de3f-4f4c-8789-a17e67a3a905",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Town centre public realm works completed or substantially complete; programme largely delivered within the funding window.",
+    "latitude": 51.2727,
+    "longitude": 0.5225,
+    "locationDescription": "Maidstone town centre, Week Street and Market area, Kent",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Maidstone Borough Council",
+        "source": "Maidstone Borough Council",
+        "url": "https://www.maidstone.gov.uk/home/primary-services/planning-and-building/secondary-services/regeneration",
+        "datePublished": "2024-02-01",
+        "summary": "Maidstone Borough Council regeneration page covering Future High Streets Fund and UKSPF-funded town centre investment."
+      }
+    ]
+  },
+  {
+    "id": "manchester-northern-gateway-2024",
+    "title": "Manchester Northern Gateway",
+    "description": "Manchester Northern Gateway is one of the UK's largest urban regeneration schemes, covering 155 hectares north of Manchester city centre. Manchester City Council and Manchester City Football Group (MCFG) are collaborating on a 15,000-home development with significant employment land, new schools and major public infrastructure investment in Collyhurst and Miles Platting.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "0a32fab9-c39d-45f7-b09d-9bc0ef49919e",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Masterplan approved; early housing and infrastructure delivery underway in Collyhurst; full programme scale requires sustained long-term investment over 15+ years.",
+    "latitude": 53.4958,
+    "longitude": -2.2160,
+    "locationDescription": "North Manchester, Collyhurst and Miles Platting",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Northern Gateway – Manchester City Council",
+        "source": "Manchester City Council",
+        "url": "https://www.manchester.gov.uk/info/500002/regeneration/7582/northern_gateway",
+        "datePublished": "2024-06-01",
+        "summary": "Manchester City Council page for the Northern Gateway regeneration scheme, covering masterplan, housing delivery and infrastructure investment pipeline."
+      }
+    ]
+  },
+  {
+    "id": "mansfield-levelling-up-town-centre-2024",
+    "title": "Mansfield Town Centre Levelling Up Fund Regeneration",
+    "description": "Mansfield District Council received Levelling Up Fund investment to regenerate Mansfield town centre, including improvements to the Market Place public realm, the Four Seasons Shopping Centre environs, and transport connectivity enhancements supporting the wider town centre economy.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "d8f1b9fc-ffe3-49ca-a9f7-f1059c0e965d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Levelling Up funding awarded and projects scoped; public realm elements progressing but commercial regeneration elements face viability challenges in the current retail market.",
+    "latitude": 53.1440,
+    "longitude": -1.1980,
+    "locationDescription": "Mansfield town centre, Market Place, Nottinghamshire",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Mansfield District Council",
+        "source": "Mansfield District Council",
+        "url": "https://www.mansfield.gov.uk/info/1/residents/22/regeneration",
+        "datePublished": "2024-01-01",
+        "summary": "Mansfield District Council regeneration page covering Levelling Up Fund projects and town centre investment programme."
+      }
+    ]
+  },
+  {
+    "id": "medway-rochester-riverside-2024",
+    "title": "Rochester Riverside Mixed-Use Development",
+    "description": "Rochester Riverside is Medway Council's flagship regeneration project transforming 13 hectares of brownfield land on the south bank of the River Medway into a new mixed-use neighbourhood with over 1,400 homes, a new primary school, a riverside park and commercial space.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "e01658e6-54f1-4d6c-9948-0426515f110c",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Multiple residential phases completed and occupied; primary school open; later phases continuing to deliver to programme into 2025.",
+    "latitude": 51.3873,
+    "longitude": 0.5032,
+    "locationDescription": "Rochester Riverside, south bank of the River Medway, Rochester, Kent",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Rochester Riverside – Medway Council",
+        "source": "Medway Council",
+        "url": "https://www.medway.gov.uk/info/200175/regeneration/1078/rochester_riverside",
+        "datePublished": "2024-03-01",
+        "summary": "Medway Council page for Rochester Riverside covering phases, housing delivery, school and riverside park completion."
+      }
+    ]
+  },
+  {
+    "id": "melton-mowbray-northern-distributor-road-2024",
+    "title": "Melton Mowbray Northern Distributor Road",
+    "description": "A new northern distributor road around Melton Mowbray to relieve chronic congestion on the A607 and A606, unlock strategic housing allocations and improve freight routing. Promoted by Leicestershire County Council with strong support from Melton Borough Council, the scheme is identified as critical infrastructure for the town's growth.",
+    "type": "REGIONAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "f741388a-f4e2-49f5-977b-dcf17a75d0a3",
+    "createdById": 1,
+    "status": "RED",
+    "statusRationale": "Scheme has faced repeated funding gaps; full construction funding not yet secured as of 2024-25 and the programme has been significantly delayed.",
+    "latitude": 52.7700,
+    "longitude": -0.8830,
+    "locationDescription": "Northern fringe of Melton Mowbray, Leicestershire",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Melton Mowbray Northern Distributor Road – Leicestershire County Council",
+        "source": "Leicestershire County Council",
+        "url": "https://www.leicestershire.gov.uk/roads-and-travel/major-transport-projects/melton-mowbray-northern-distributor-road",
+        "datePublished": "2024-04-01",
+        "summary": "Leicestershire County Council page for the Melton Mowbray Northern Distributor Road covering route, funding status and programme timeline."
+      }
+    ]
+  },
+  {
+    "id": "merton-morden-town-centre-regeneration-2024",
+    "title": "Morden Town Centre Regeneration",
+    "description": "Merton Council is leading the regeneration of Morden town centre, working with developers to deliver new housing, improved public spaces and enhanced connectivity at Morden Underground station, building on the Mayor of London's Housing Zone designation for the area.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "74b00795-04f3-4525-9481-98487a7ae43d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Masterplan adopted and some development sites advancing through planning; overall delivery slower than originally projected due to viability challenges.",
+    "latitude": 51.4019,
+    "longitude": -0.1949,
+    "locationDescription": "Morden town centre, adjacent to Northern line terminus, London Borough of Merton",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Merton Council",
+        "source": "London Borough of Merton",
+        "url": "https://www.merton.gov.uk/planning/regeneration",
+        "datePublished": "2024-01-01",
+        "summary": "Merton Council regeneration page covering the Morden town centre programme and wider borough investment pipeline."
+      }
+    ]
+  },
+  {
+    "id": "mid-suffolk-gateway14-stowmarket-2024",
+    "title": "Gateway 14 Business Park, Stowmarket",
+    "description": "Gateway 14 is a major strategic employment development adjacent to the A14 at Stowmarket, Mid Suffolk, bringing forward over 200 hectares of logistics and employment land with strong occupier demand. The scheme was promoted by Mid Suffolk District Council and developer Jaynic and has delivered significant local job creation.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "2abc46ad-bb04-4cc4-8c75-840422b41ce3",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Planning permission granted; first major occupiers operational; further phases progressing with strong logistics sector demand.",
+    "latitude": 52.1873,
+    "longitude": 0.9801,
+    "locationDescription": "Adjacent to A14 Junction 50, Stowmarket, Mid Suffolk",
+    "locationSource": "MANUAL",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Gateway 14 Business Park",
+        "source": "Gateway 14 Ltd / Jaynic",
+        "url": "https://www.gateway14.co.uk/",
+        "datePublished": "2024-06-01",
+        "summary": "Gateway 14 project website covering the Stowmarket employment park, planning history, occupiers, infrastructure and further phase pipeline."
+      }
+    ]
+  }
+]

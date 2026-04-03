@@ -88,6 +88,8 @@ model LocalAuthority {
   code        String      @unique
   website     String?
   countryCode CountryCode
+  // Store complex shapes as GeoJSON until migrate to PostGIS Polygon
+  boundaryPolygon Json?
   createdAt   DateTime    @default(now())
   updatedAt   DateTime    @updatedAt
   regionId    String

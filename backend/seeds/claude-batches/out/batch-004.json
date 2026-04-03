@@ -1,0 +1,598 @@
+[
+  {
+    "id": "dartford-town-investment-plan",
+    "title": "Dartford Town Investment Plan",
+    "description": "Dartford Borough Council signed a £22.1 million Town Deal in 2021, funding a programme of regeneration projects across the town centre including improvements to the Lowfield Street area, public realm upgrades, skills and employment interventions, and active-travel connectivity. The investment aims to attract further private development and raise the quality of the town-centre offer for residents and businesses.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "ec7bacad-6fd4-49d8-b03b-f385edceae36",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Town Deal signed 2021; multiple workstreams in delivery as of 2024–25 with no single completion date set.",
+    "latitude": 51.4421,
+    "longitude": 0.2183,
+    "locationDescription": "Dartford Town Centre, Kent",
+    "locationSource": "Dartford Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Dartford Borough Council",
+        "source": "Dartford Borough Council",
+        "url": "https://www.dartford.gov.uk/regeneration",
+        "datePublished": "2024-01-01",
+        "summary": "Dartford Borough Council regeneration landing page covering the Town Investment Plan, Lowfield Street development, and town-centre improvements funded by the £22.1m Towns Fund allocation."
+      },
+      {
+        "type": "URL",
+        "title": "Towns Fund: Prospectus – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/towns-fund-prospectus",
+        "datePublished": "2019-09-06",
+        "summary": "UK Government Towns Fund prospectus setting out the programme under which Dartford and 100 other towns received investment to drive economic growth and regeneration."
+      }
+    ]
+  },
+  {
+    "id": "derby-becketwell-regeneration",
+    "title": "Becketwell Regeneration, Derby City Centre",
+    "description": "Derby City Council's flagship city-centre regeneration scheme covers a 1.7-hectare brownfield site in the heart of Derby. Phase 1 delivered 259 build-to-rent apartments (the Play House development), completed in 2022. Further phases are providing additional residential, commercial, and civic space as part of the broader renewal of the Becketwell quarter, underpinned by a council-led land deal with developer Urbo Regeneration.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "55a6a888-b4fd-4c08-862a-5193175639cc",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Phase 1 completed and occupied 2022; subsequent phases progressing through planning and early construction.",
+    "latitude": 52.9209,
+    "longitude": -1.4762,
+    "locationDescription": "Becketwell, Derby City Centre",
+    "locationSource": "Derby City Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Becketwell Regeneration – Derby City Council",
+        "source": "Derby City Council",
+        "url": "https://www.derby.gov.uk/environment-and-planning/regeneration/city-centre/becketwell/",
+        "datePublished": "2024-06-01",
+        "summary": "Derby City Council project page for the Becketwell regeneration scheme, covering Phase 1 completion and the programme of subsequent mixed-use phases in Derby city centre."
+      }
+    ]
+  },
+  {
+    "id": "derbyshire-dales-ukspf-investment-plan",
+    "title": "Derbyshire Dales UK Shared Prosperity Fund Investment Plan",
+    "description": "Derbyshire Dales District Council is delivering a programme of investments under the UK Shared Prosperity Fund (2022–25), covering rural connectivity, business support, heritage and visitor-economy improvements, and community facilities across the district's market towns of Matlock, Ashbourne, and Bakewell. The fund provides a three-year capital and revenue programme to boost local productivity and address rural disadvantage.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "477bad74-9175-4081-aa92-ba38262782bf",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "UKSPF programme fully operational 2022–25; projects being delivered across the district on schedule.",
+    "latitude": 53.1379,
+    "longitude": -1.5546,
+    "locationDescription": "Matlock and Derbyshire Dales District",
+    "locationSource": "Derbyshire Dales District Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "UK Shared Prosperity Fund – Derbyshire Dales District Council",
+        "source": "Derbyshire Dales District Council",
+        "url": "https://www.derbyshiredales.gov.uk/your-council/grants-and-funding/uk-shared-prosperity-fund",
+        "datePublished": "2023-04-01",
+        "summary": "Derbyshire Dales District Council page on the UK Shared Prosperity Fund investment plan, covering project priorities, funding allocations, and delivery progress across the district."
+      }
+    ]
+  },
+  {
+    "id": "doncaster-levelling-up-city-centre",
+    "title": "Doncaster City Centre Levelling Up Fund Investment",
+    "description": "Doncaster Council received £24.9 million from the UK Government's Levelling Up Fund Round 2 (announced January 2023) to fund transformational projects in the city centre, including the redevelopment of the Waterdale area, a new cinema and cultural venue, and public realm enhancements. The programme forms part of a wider regeneration agenda following Doncaster's award of city status in 2022.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "1a13033a-7cf6-40da-b7db-658832c3250d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding confirmed January 2023; projects in procurement and early delivery phases as of 2024–25.",
+    "latitude": 53.5228,
+    "longitude": -1.1286,
+    "locationDescription": "Doncaster City Centre, South Yorkshire",
+    "locationSource": "Doncaster Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Levelling Up Fund Round 2: Successful Bids – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/levelling-up-fund-round-2-successful-bids",
+        "datePublished": "2023-01-19",
+        "summary": "Government publication listing all successful Levelling Up Fund Round 2 bids, including Doncaster's £24.9m allocation for city-centre regeneration including the Waterdale area and a new cultural venue."
+      },
+      {
+        "type": "URL",
+        "title": "Regeneration – Doncaster Council",
+        "source": "Doncaster Council",
+        "url": "https://www.doncaster.gov.uk/services/planning-and-building-control/regeneration",
+        "datePublished": "2024-01-01",
+        "summary": "Doncaster Council overview of city-centre regeneration projects including the LUF-funded Waterdale scheme and the broader Doncaster City Vision programme."
+      }
+    ]
+  },
+  {
+    "id": "dorset-weymouth-towns-fund",
+    "title": "Weymouth Towns Fund",
+    "description": "Weymouth, the largest town in Dorset Council's area, was awarded £23.6 million through the UK Government's Towns Fund. Projects include harbour-side public realm improvements, a new skills and community hub, cycling and active travel routes, and regeneration of the town's historic quayside. Dorset Council leads delivery in partnership with the Weymouth Town Board.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "0a7eec36-8501-4ac4-94fa-b6307157e0c0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Several project strands delivered or near completion by 2024–25; remaining workstreams in later delivery phases.",
+    "latitude": 50.6135,
+    "longitude": -2.4572,
+    "locationDescription": "Weymouth Town Centre and Harbour, Dorset",
+    "locationSource": "Dorset Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Weymouth Towns Fund – Dorset Council",
+        "source": "Dorset Council",
+        "url": "https://www.dorsetcouncil.gov.uk/w/weymouth-towns-fund",
+        "datePublished": "2024-01-01",
+        "summary": "Dorset Council page on the Weymouth Towns Fund covering the £23.6m investment programme, individual project summaries, and Weymouth Town Board governance."
+      }
+    ]
+  },
+  {
+    "id": "dover-town-investment-plan",
+    "title": "Dover Town Investment Plan",
+    "description": "Dover District Council secured £9.9 million from the UK Government's Towns Fund to deliver a package of place-based improvements across Dover town centre. Key projects include the transformation of Pencester Gardens, improvements to York Street and the market area, heritage and cultural investment, and connectivity enhancements linking the town to the historic castle and port.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "11877e29-f3a9-48b6-adf0-d28cb5f5e2d6",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Town Deal signed; projects in varied stages of delivery as of 2024–25.",
+    "latitude": 51.1279,
+    "longitude": 1.3134,
+    "locationDescription": "Dover Town Centre, Kent",
+    "locationSource": "Dover District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Town Investment Plan – Dover District Council",
+        "source": "Dover District Council",
+        "url": "https://www.dover.gov.uk/Business/Economic-Development/Town-Investment-Plan.aspx",
+        "datePublished": "2024-01-01",
+        "summary": "Dover District Council's Town Investment Plan page, setting out the £9.9m programme of regeneration projects including Pencester Gardens transformation and public realm improvements."
+      }
+    ]
+  },
+  {
+    "id": "dudley-metro-brierley-hill-extension",
+    "title": "West Midlands Metro: Wednesbury–Dudley–Brierley Hill Extension",
+    "description": "Transport for West Midlands and the West Midlands Combined Authority are developing an 11-stop Metro extension from Wednesbury through Dudley town centre to Brierley Hill, covering approximately 5.5 miles. The scheme is expected to support regeneration of both Dudley and Brierley Hill town centres, cut car dependency, and connect communities in the Black Country to the broader metro network.",
+    "type": "REGIONAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "9bf7def2-da4b-4906-8de5-d6fb7c9b6570",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Scheme in development; detailed design and funding discussions ongoing as of 2024–25; delivery timeline subject to full funding agreement.",
+    "latitude": 52.5087,
+    "longitude": -2.0820,
+    "locationDescription": "Dudley and Brierley Hill, West Midlands",
+    "locationSource": "Transport for West Midlands",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Metro Expansion – Transport for West Midlands",
+        "source": "Transport for West Midlands",
+        "url": "https://www.tfwm.org.uk/plan-your-journey/ways-to-travel/metro/metro-expansion/",
+        "datePublished": "2024-01-01",
+        "summary": "Transport for West Midlands overview of the metro expansion programme, including the Wednesbury–Dudley–Brierley Hill route, scope, alignment, and programme status."
+      }
+    ]
+  },
+  {
+    "id": "ealing-southall-waterside-regeneration",
+    "title": "Southall Waterside Regeneration",
+    "description": "Ealing Council has backed the regeneration of the 88-acre former Southall Gasworks site as Southall Waterside, one of West London's largest brownfield redevelopments. The scheme will deliver over 3,750 new homes, employment and commercial space, a new park, and community facilities across phased development spanning more than a decade, with early residential phases already underway.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "1795b1c7-413a-444c-a9d3-30661cdf7ec9",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Early residential phases on site and progressing; later phases in detailed design and planning as of 2024–25.",
+    "latitude": 51.5034,
+    "longitude": -0.3758,
+    "locationDescription": "Southall Waterside (former Gasworks), Ealing, London",
+    "locationSource": "Ealing Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Southall Regeneration – Ealing Council",
+        "source": "Ealing Council",
+        "url": "https://www.ealing.gov.uk/info/201114/southall/876/southall_regeneration",
+        "datePublished": "2024-01-01",
+        "summary": "Ealing Council's Southall regeneration page, covering the Southall Waterside development on the former gasworks site and wider plans for the Southall area."
+      }
+    ]
+  },
+  {
+    "id": "east-cambs-ely-north-sustainable-urban-extension",
+    "title": "Ely North Sustainable Urban Extension",
+    "description": "East Cambridgeshire District Council's adopted Local Plan allocates land to the north of Ely for a major sustainable urban extension of approximately 3,000 new homes, employment land, schools, community facilities, and supporting transport infrastructure. The development is designed to meet housing need in this high-growth sub-region while maintaining the setting of the cathedral city.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "8d33ba9e-f1cb-489c-a7fa-83e2c53b1ce2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Allocation confirmed in adopted Local Plan; planning applications and infrastructure agreements progressing through the local planning system.",
+    "latitude": 52.4012,
+    "longitude": 0.2601,
+    "locationDescription": "North of Ely, East Cambridgeshire",
+    "locationSource": "East Cambridgeshire District Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Local Plan – East Cambridgeshire District Council",
+        "source": "East Cambridgeshire District Council",
+        "url": "https://www.eastcambs.gov.uk/planning/planning-policy/local-plan",
+        "datePublished": "2024-01-01",
+        "summary": "East Cambridgeshire District Council Local Plan page, setting out strategic allocations including the Ely North sustainable urban extension and associated infrastructure delivery requirements."
+      }
+    ]
+  },
+  {
+    "id": "east-devon-cranbrook-expansion",
+    "title": "Cranbrook New Town Expansion",
+    "description": "East Devon District Council continues to oversee the planned expansion of Cranbrook, Devon's newest town and one of England's few post-war new settlements, with over 3,500 homes delivered to date. The adopted Local Plan provides for continued phased growth with new community infrastructure, retail, and employment land. The town is served by Cranbrook railway station with direct connections to Exeter.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "bc34f0f3-2116-4264-8840-e806a29b7cba",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Town growing on schedule; housing delivery continuous; new community facilities and town centre progressing.",
+    "latitude": 50.7511,
+    "longitude": -3.4039,
+    "locationDescription": "Cranbrook, East Devon",
+    "locationSource": "East Devon District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Cranbrook – East Devon District Council",
+        "source": "East Devon District Council",
+        "url": "https://www.eastdevon.gov.uk/planning/planning-policy/our-local-plan/cranbrook/",
+        "datePublished": "2024-01-01",
+        "summary": "East Devon District Council planning policy page for Cranbrook, covering the town's expansion phases, infrastructure delivery, and Local Plan allocations for further growth."
+      }
+    ]
+  },
+  {
+    "id": "east-hampshire-whitehill-bordon-eco-town",
+    "title": "Whitehill and Bordon Eco-Town Regeneration",
+    "description": "East Hampshire District Council is leading the transformation of Whitehill and Bordon, a former army garrison town, into a thriving eco-town with 3,350 new homes, employment land, new schools, a sports hub, extensive green infrastructure, and improved transport links. The project is one of the UK's largest garrison-town regeneration programmes, with delivery ongoing since the military vacated the site in 2015.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "b473e5d1-c527-4a0a-bee1-1c33f8e2dcef",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Substantial housing delivery achieved; major community infrastructure including schools and Louisburg Barracks leisure hub delivered; later residential phases progressing to plan.",
+    "latitude": 51.1142,
+    "longitude": -0.8585,
+    "locationDescription": "Whitehill and Bordon, East Hampshire",
+    "locationSource": "East Hampshire District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Whitehill and Bordon – Project Website",
+        "source": "Whitehill and Bordon Regeneration",
+        "url": "https://www.whitehillandbordon.co.uk/",
+        "datePublished": "2024-01-01",
+        "summary": "Official project website for the Whitehill and Bordon eco-town regeneration programme, covering delivery progress on new homes, schools, community facilities, employment land, and green infrastructure."
+      }
+    ]
+  },
+  {
+    "id": "east-herts-harlow-gilston-garden-town",
+    "title": "Harlow and Gilston Garden Town",
+    "description": "Harlow and Gilston Garden Town is a nationally significant development of up to 23,000 new homes straddling East Hertfordshire and Harlow, centred on the Gilston Area to the north of the existing Harlow New Town. East Hertfordshire District Council co-leads delivery alongside Harlow Council and Hertfordshire County Council, with the scheme including major transport infrastructure, new schools, community facilities, and extensive green corridors.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "061f24d2-8db5-4afe-88c0-903d34abb795",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Garden Town status granted; master planning and infrastructure agreements progressing; first Gilston housing completions expected in the mid-2020s.",
+    "latitude": 51.7785,
+    "longitude": 0.0989,
+    "locationDescription": "Gilston Area, East Hertfordshire and Harlow",
+    "locationSource": "Harlow and Gilston Garden City Partnership",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Harlow and Gilston Garden City – Official Site",
+        "source": "Harlow and Gilston Garden City Partnership",
+        "url": "https://www.harlowgilstongardencity.co.uk/",
+        "datePublished": "2024-01-01",
+        "summary": "Official website for the Harlow and Gilston Garden Town, covering the vision, masterplan, phased development programme, infrastructure delivery, and partnership governance."
+      }
+    ]
+  },
+  {
+    "id": "east-lindsey-long-term-plan-for-towns",
+    "title": "Skegness and Mablethorpe Long-Term Plan for Towns",
+    "description": "Both Skegness and Mablethorpe in East Lindsey were included in the UK Government's Long-Term Plan for Towns programme (announced October 2023), each receiving a £20 million endowment to fund a 10-year regeneration programme. East Lindsey District Council is working with local town boards to develop investment plans covering high streets, housing, heritage, transport, leisure, and community facilities.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "83569b61-4cbf-469e-b2ce-0f29a4eedb30",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding confirmed and town boards established October 2023; investment plans in development and early spend as of 2024–25.",
+    "latitude": 53.1443,
+    "longitude": 0.3361,
+    "locationDescription": "Skegness and Mablethorpe, East Lindsey, Lincolnshire",
+    "locationSource": "UK Government / East Lindsey District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Long-Term Plan for Towns: The 100 Towns – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/long-term-plan-for-towns-the-100-towns",
+        "datePublished": "2023-10-04",
+        "summary": "UK Government publication announcing the 100 towns selected for the Long-Term Plan for Towns programme, including Skegness and Mablethorpe in East Lindsey, each receiving £20m over 10 years."
+      }
+    ]
+  },
+  {
+    "id": "east-riding-bridlington-town-deal",
+    "title": "Bridlington Town Deal",
+    "description": "East Riding of Yorkshire Council secured a £25.1 million Town Deal for Bridlington in 2021, funding regeneration of the Yorkshire seaside town's seafront, heritage, skills, and connectivity. Key projects include Bridlington Spa refurbishment, public realm improvements on the South Promenade, a learning and skills hub, and cycling infrastructure. The programme aims to boost the visitor economy and improve year-round services for residents.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "fd54eb81-620d-4f25-88f4-44d16c1dd5d2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Multiple project strands in delivery; Bridlington Spa works progressing; overall programme broadly on track.",
+    "latitude": 54.0826,
+    "longitude": -0.1891,
+    "locationDescription": "Bridlington, East Riding of Yorkshire",
+    "locationSource": "East Riding of Yorkshire Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bridlington Town Deal – East Riding of Yorkshire Council",
+        "source": "East Riding of Yorkshire Council",
+        "url": "https://www.eastriding.gov.uk/council/projects-and-initiatives/bridlington-town-deal/",
+        "datePublished": "2024-01-01",
+        "summary": "East Riding of Yorkshire Council page on the Bridlington Town Deal covering the £25.1m investment programme, project pipeline including Bridlington Spa, and town board governance."
+      }
+    ]
+  },
+  {
+    "id": "east-staffs-burton-upon-trent-town-deal",
+    "title": "Burton upon Trent Town Deal",
+    "description": "East Staffordshire Borough Council signed one of the largest Town Deals in England, receiving £37.5 million from the UK Government's Towns Fund for Burton upon Trent. The investment funds The Maltings regeneration (a new civic and skills hub), the Brewers Quarter mixed-use development, active travel and cycling improvements, and digital connectivity upgrades across the town.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "3a9d3532-ce84-41e9-a5a6-4ebcf29f2988",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Several projects completed or in final delivery; Town Deal programme broadly on track with major milestones met as of 2024–25.",
+    "latitude": 52.8017,
+    "longitude": -1.6417,
+    "locationDescription": "Burton upon Trent, East Staffordshire",
+    "locationSource": "East Staffordshire Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Towns Fund – East Staffordshire Borough Council",
+        "source": "East Staffordshire Borough Council",
+        "url": "https://www.eaststaffsbc.gov.uk/planning-and-development/towns-fund",
+        "datePublished": "2024-01-01",
+        "summary": "East Staffordshire Borough Council's Towns Fund page covering the £37.5m Town Deal for Burton upon Trent, including The Maltings, Brewers Quarter, and active travel schemes."
+      }
+    ]
+  },
+  {
+    "id": "east-suffolk-lowestoft-town-deal",
+    "title": "Lowestoft Town Deal",
+    "description": "East Suffolk Council secured £25 million through the UK Government's Towns Fund for Lowestoft, the UK's most easterly town. Key projects include the Tides Learning and Innovation Centre — a purpose-built higher and further education facility that opened in 2023 — alongside flood-risk management works, seafront regeneration, and arts and culture investment. The Town Deal forms part of a wider programme to diversify Lowestoft's economy beyond its traditional fishing and offshore-energy industries.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "167fa00f-0939-45ce-aae4-bc2a52e23b22",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Tides Learning and Innovation Centre opened 2023; other workstreams in delivery; programme broadly on schedule.",
+    "latitude": 52.4823,
+    "longitude": 1.7509,
+    "locationDescription": "Lowestoft, East Suffolk",
+    "locationSource": "East Suffolk Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Lowestoft Town Deal – East Suffolk Council",
+        "source": "East Suffolk Council",
+        "url": "https://www.eastsuffolk.gov.uk/business/lowestoft-town-deal/",
+        "datePublished": "2024-01-01",
+        "summary": "East Suffolk Council's page on the Lowestoft Town Deal covering the £25m investment programme including the Tides Learning and Innovation Centre, flood-risk management, and seafront improvements."
+      }
+    ]
+  },
+  {
+    "id": "eastbourne-devonshire-park-congress-theatre",
+    "title": "Devonshire Park Restoration and Congress Theatre Redevelopment",
+    "description": "Eastbourne Borough Council led a multi-phase Heritage Lottery Fund and council-funded restoration of Devonshire Park, centred on the Congress Theatre and Winter Garden. The Congress Theatre's £42 million restoration involved full internal refurbishment, accessible upgrades, and restoration of its Art Deco exterior. The theatre reopened in 2024 as a flagship cultural venue for the South East coast, anchoring the wider regeneration of Eastbourne's Devonshire Quarter.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "8877dc28-1f35-4641-9e18-e378ae0c1ee4",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Congress Theatre restoration completed and reopened 2024; Devonshire Park quarter fully operational.",
+    "latitude": 50.7642,
+    "longitude": 0.2914,
+    "locationDescription": "Devonshire Park, Eastbourne, East Sussex",
+    "locationSource": "Eastbourne Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Devonshire Park – Official Venue Website",
+        "source": "Devonshire Park",
+        "url": "https://www.devonshirepark.co.uk/",
+        "datePublished": "2024-01-01",
+        "summary": "Official website for Devonshire Park, Eastbourne, covering the restored Congress Theatre, Winter Garden, and the Devonshire Quarter cultural regeneration project led by Eastbourne Borough Council."
+      }
+    ]
+  },
+  {
+    "id": "eastleigh-town-centre-masterplan",
+    "title": "Eastleigh Town Centre Regeneration Masterplan",
+    "description": "Eastleigh Borough Council has adopted a Town Centre Masterplan to guide the regeneration of Eastleigh town centre, improving the public realm around the railway station and high street, supporting mixed-use redevelopment, and enhancing pedestrian and cycle connectivity. The programme is supported by UK Shared Prosperity Fund investment and planning policy interventions to attract private development.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "3061db65-662a-42ce-98d4-662b8829abe2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Masterplan adopted and UKSPF projects under way; major development sites in pre-application and planning stages as of 2024–25.",
+    "latitude": 50.9663,
+    "longitude": -1.3514,
+    "locationDescription": "Eastleigh Town Centre, Hampshire",
+    "locationSource": "Eastleigh Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning Policy – Eastleigh Borough Council",
+        "source": "Eastleigh Borough Council",
+        "url": "https://www.eastleigh.gov.uk/planning/planning-policy/",
+        "datePublished": "2024-01-01",
+        "summary": "Eastleigh Borough Council planning policy page covering the Town Centre Masterplan, site allocations, and regeneration strategies for Eastleigh town centre."
+      }
+    ]
+  },
+  {
+    "id": "elmbridge-ukspf-investment-plan",
+    "title": "Elmbridge UK Shared Prosperity Fund Investment Plan",
+    "description": "Elmbridge Borough Council is delivering a programme of investments under the UK Shared Prosperity Fund (2022–25), supporting local businesses, community facilities, public realm improvements, and active-travel routes across the borough's towns including Walton-on-Thames, Esher, and Cobham.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "24578131-915e-4e3e-a16c-bf08b745e434",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "UKSPF programme operational 2022–25; projects being delivered across the borough on schedule.",
+    "latitude": 51.3862,
+    "longitude": -0.4073,
+    "locationDescription": "Walton-on-Thames and Elmbridge Borough, Surrey",
+    "locationSource": "Elmbridge Borough Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "UK Shared Prosperity Fund – Elmbridge Borough Council",
+        "source": "Elmbridge Borough Council",
+        "url": "https://www.elmbridge.gov.uk/council/bids-and-funding/uk-shared-prosperity-fund/",
+        "datePublished": "2023-04-01",
+        "summary": "Elmbridge Borough Council page on the UK Shared Prosperity Fund investment plan, covering business support, community facilities, and public realm projects across the borough."
+      }
+    ]
+  },
+  {
+    "id": "enfield-meridian-water",
+    "title": "Meridian Water Regeneration, Enfield",
+    "description": "Meridian Water is one of London's largest regeneration schemes, led by Enfield Council on an 85-hectare brownfield site along the River Lee in north-east Enfield. The 20-year programme will deliver 10,000 new homes and 6,000 jobs across a series of phased mixed-use neighbourhoods. Phase 1 housing is occupied; Phase 2 planning consents have been secured; the council has committed over £600m in public investment to unlock the site and provide infrastructure.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "89197ab7-89a3-4a38-86fb-f72f21f3e521",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Phase 1 residential completed and occupied; Phase 2 construction and infrastructure works under way; long-term programme with complex ongoing land assembly.",
+    "latitude": 51.6091,
+    "longitude": -0.0315,
+    "locationDescription": "Meridian Water, Lee Valley, Enfield, London",
+    "locationSource": "Enfield Council / Meridian Water",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Meridian Water – Official Project Website",
+        "source": "Meridian Water",
+        "url": "https://meridianwater.co.uk/",
+        "datePublished": "2024-01-01",
+        "summary": "Official website for the Meridian Water regeneration programme, led by Enfield Council, covering the 10,000-home, 6,000-job scheme, phased development plans, and community engagement."
+      },
+      {
+        "type": "URL",
+        "title": "Meridian Water – Enfield Council",
+        "source": "London Borough of Enfield",
+        "url": "https://www.enfield.gov.uk/services/planning-and-building-control/meridian-water",
+        "datePublished": "2024-06-01",
+        "summary": "Enfield Council's Meridian Water information page providing planning background, council investment commitments, and links to planning applications and project-progress updates."
+      }
+    ]
+  },
+  {
+    "id": "epping-forest-north-weald-airfield-allocation",
+    "title": "Epping Forest Local Plan: North Weald Airfield Strategic Allocation",
+    "description": "Epping Forest District Council adopted its Local Plan in 2023 after an extended examination, allocating the former North Weald Airfield site for approximately 1,630 new homes alongside employment, community facilities, and green infrastructure. The airfield site is the district's largest single development allocation and is a central element of meeting the borough's housing need within a predominantly Green Belt authority.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "9c5d53b8-ee3d-4ad0-8e23-be31d153e006",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Local Plan adopted 2023; site in early planning-application stages; delivery expected over the next decade.",
+    "latitude": 51.7216,
+    "longitude": 0.1561,
+    "locationDescription": "North Weald Airfield, Epping Forest District, Essex",
+    "locationSource": "Epping Forest District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Adopted Local Plan – Epping Forest District Council",
+        "source": "Epping Forest District Council",
+        "url": "https://www.eppingforestdc.gov.uk/planning/local-plan/adopted-local-plan/",
+        "datePublished": "2023-05-01",
+        "summary": "Epping Forest District Council adopted Local Plan page, setting out strategic allocations including the North Weald Airfield site and supporting infrastructure and delivery frameworks."
+      }
+    ]
+  },
+  {
+    "id": "epsom-ewell-town-centre-vision",
+    "title": "Epsom Town Centre Vision",
+    "description": "Epsom and Ewell Borough Council has published a Town Centre Vision to guide the long-term regeneration of Epsom town centre, focusing on the area around the Ashley Centre, the Clock Tower, and the station gateway. The vision identifies opportunities for mixed-use redevelopment, public realm enhancement, improved pedestrian and cycling links, and a diversified retail and leisure offer to sustain the town centre's viability.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "eb069eae-ca05-473e-bbde-02c3f3e2a85a",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Town Centre Vision published; individual sites in pre-application discussions and early planning stages as of 2024–25.",
+    "latitude": 51.3358,
+    "longitude": -0.2691,
+    "locationDescription": "Epsom Town Centre, Surrey",
+    "locationSource": "Epsom and Ewell Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning Policy – Epsom and Ewell Borough Council",
+        "source": "Epsom and Ewell Borough Council",
+        "url": "https://www.epsom-ewell.gov.uk/planning/planning-policy",
+        "datePublished": "2024-01-01",
+        "summary": "Epsom and Ewell Borough Council planning policy page covering the Epsom Town Centre Vision, site allocations, and regeneration strategies for the town centre area."
+      }
+    ]
+  }
+]

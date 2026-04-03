@@ -1,0 +1,146 @@
+[
+  {
+    "id": "fcc7d3c8-0128-45b7-9f31-9c6bdc209cca",
+    "name": "Newcastle upon Tyne",
+    "code": "E08000021",
+    "countryCode": "ENGLAND",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
+  },
+  {
+    "id": "bbcdedd5-a1fa-4555-94e4-7bc38591a29d",
+    "name": "Bromley",
+    "code": "E09000006",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "0a7eec36-8501-4ac4-94fa-b6307157e0c0",
+    "name": "Dorset",
+    "code": "E06000059",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "e01658e6-54f1-4d6c-9948-0426515f110c",
+    "name": "Medway",
+    "code": "E06000035",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "5e98d753-9efc-435b-af85-566487322ae2",
+    "name": "Preston",
+    "code": "E07000123",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "ce54087d-802c-47e1-8a93-7a92394a5bb1",
+    "name": "Stafford",
+    "code": "E07000197",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "d946cf16-c1dd-48f0-8ad1-b1f5605f43d8",
+    "name": "Hinckley and Bosworth",
+    "code": "E07000132",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "c8342b98-d53e-4234-b1a5-3103487c2009",
+    "name": "Sheffield",
+    "code": "E08000019",
+    "countryCode": "ENGLAND",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "regionName": "Yorkshire and the Humber"
+  },
+  {
+    "id": "991a2631-5af6-4f86-bd50-5031229ec62d",
+    "name": "Bournemouth, Christchurch and Poole",
+    "code": "E06000058",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "39c841e8-274c-4a3d-b0ce-ff7218c2c6c3",
+    "name": "Wyre Forest",
+    "code": "E07000239",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "fe0e49eb-12d2-47cd-872d-67ac9ee31036",
+    "name": "Leicester",
+    "code": "E06000016",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "9ad351cc-4523-4686-a05c-1caf186c0083",
+    "name": "Gateshead",
+    "code": "E08000037",
+    "countryCode": "ENGLAND",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
+  },
+  {
+    "id": "90d5f587-9e3a-4439-ba00-fb44ebd20573",
+    "name": "Hackney",
+    "code": "E09000012",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "c0410e92-f833-49c2-8e5f-84f5d4754cd8",
+    "name": "Nottingham",
+    "code": "E06000018",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "0192253e-0ea6-4a2b-a195-1065b63f5acb",
+    "name": "Wakefield",
+    "code": "E08000036",
+    "countryCode": "ENGLAND",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "regionName": "Yorkshire and the Humber"
+  },
+  {
+    "id": "ae2526bd-34ae-489f-a153-bcbdeca3f463",
+    "name": "Barnsley",
+    "code": "E08000016",
+    "countryCode": "ENGLAND",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "regionName": "Yorkshire and the Humber"
+  },
+  {
+    "id": "f34a541e-702a-4cf2-92a9-eb6660ad8483",
+    "name": "Basildon",
+    "code": "E07000066",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "aae3ef62-d578-4f92-ab26-fdf1fd4826c1",
+    "name": "Bristol, City of",
+    "code": "E06000023",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  }
+]

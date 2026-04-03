@@ -1,0 +1,178 @@
+[
+  {
+    "id": "684166e5-794a-45e7-9b24-5ce898db4715",
+    "name": "Hart",
+    "code": "E07000089",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1e7725f8-ed24-485b-8ad8-98cd209ebfd0",
+    "name": "Hartlepool",
+    "code": "E06000001",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "368988bf-37ca-48cc-9fb7-24d510bed8fb",
+    "name": "Hastings",
+    "code": "E07000062",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "6bc0c4b9-2b38-4cae-b800-87874214b5c2",
+    "name": "Havant",
+    "code": "E07000090",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "4da24c01-f0c0-4b74-aff3-0244727668a9",
+    "name": "Havering",
+    "code": "E09000016",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "9119ac8b-0ee8-4123-a063-eff4ba04e654",
+    "name": "Herefordshire, County of",
+    "code": "E06000019",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "b06217cc-29da-4991-90d2-7c1c2ae08ee9",
+    "name": "Hertsmere",
+    "code": "E07000098",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "9b977417-5e3a-4c47-bba7-ea1bfb7fc7cf",
+    "name": "High Peak",
+    "code": "E07000037",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "fdc9a069-655c-42a5-8f80-818a34506c18",
+    "name": "Hillingdon",
+    "code": "E09000017",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "d946cf16-c1dd-48f0-8ad1-b1f5605f43d8",
+    "name": "Hinckley and Bosworth",
+    "code": "E07000132",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "bf43c2c4-faec-4bba-b278-42c7b3d7f27d",
+    "name": "Horsham",
+    "code": "E07000227",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "4355cf65-9905-4235-8b4e-a825ee60e029",
+    "name": "Hounslow",
+    "code": "E09000018",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "4c20d442-3d63-4ea2-9056-ce2042c0b583",
+    "name": "Huntingdonshire",
+    "code": "E07000011",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "80db8ea7-c47b-4285-90a3-80975ddb2f24",
+    "name": "Hyndburn",
+    "code": "E07000120",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "915008de-38ff-4771-ab2b-fa5efaacb74c",
+    "name": "Ipswich",
+    "code": "E07000202",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "56afd3c8-b958-4620-9d00-42a26319154f",
+    "name": "Isle of Wight",
+    "code": "E06000046",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "27c18fd5-c335-4cda-881f-9422c60481d7",
+    "name": "Isles of Scilly",
+    "code": "E06000053",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "894c5daa-df59-4b85-a87a-1b3f768ca0d3",
+    "name": "Islington",
+    "code": "E09000019",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3d764659-b3e6-4d0b-bc56-8ac1e07e3aaf",
+    "name": "Kensington and Chelsea",
+    "code": "E09000020",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "df6cbde2-ce09-4567-a4bf-c6f5b08524e5",
+    "name": "King's Lynn and West Norfolk",
+    "code": "E07000146",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "10dd16a9-49ca-45a6-b344-63bae1021561",
+    "name": "Kingston upon Hull, City of",
+    "code": "E06000010",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "e4cf69d7-f5c7-48e0-b646-4c46773f5bb7",
+    "name": "Kingston upon Thames",
+    "code": "E09000021",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

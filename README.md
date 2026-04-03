@@ -147,7 +147,7 @@ The agents subsystem provides background automation to augment the core platform
 Add to `.env` as needed:
 - AGENTS_ENABLED=true|false (master switch)
 - AGENT_CONCURRENCY=4
-- OPENAI_API_KEY=... (or other provider key)
+- GEMINI_API_KEY=... (optional, only for live discovery)
 - AGENT_MODEL=gpt-4o-mini (override per agent if needed)
 - AGENT_LOG_LEVEL=info|debug
 - AGENT_RUN_EVIDENCE_ENRICH=true|false (feature flag examples)

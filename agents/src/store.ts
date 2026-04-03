@@ -2,11 +2,26 @@ import { PrismaClient } from "@prisma/client";
 import { ProjectStatus } from "./types/projectEvidence";
 import { v4 as uuidv4 } from "uuid";
 import { PROJECT_TYPE, EVIDENCE_TYPE } from "./constants";
+import { envValues } from "./envValues";
 import crypto from "node:crypto";
 import { normalizeProjectTitle } from "./utils/projectNormalization";
 import { validateEvidenceDate } from "./geminiService";
+import { isUrlReachable } from "./utils/urlReachability";
 
 const prisma = new PrismaClient();
+
+function resolveEvidencePrismaType(
+  sourceUrl: string | undefined
+): (typeof EVIDENCE_TYPE)[keyof typeof EVIDENCE_TYPE] {
+  const u = sourceUrl?.trim();
+  if (!u || !/^https?:\/\//i.test(u)) {
+    return EVIDENCE_TYPE.TEXT;
+  }
+  if (/\.pdf(\?|$)/i.test(u)) {
+    return EVIDENCE_TYPE.PDF;
+  }
+  return EVIDENCE_TYPE.URL;
+}
 
 // Create or fetch an ADMIN user using provided credentials pattern
 async function getOrCreateAdminUser() {
@@ -97,12 +112,24 @@ export async function upsertProject(project: ProjectStatus) {
       ? validateEvidenceDate(evidence.evidenceDate)
       : null;
 
+    const url = evidence.sourceUrl?.trim();
+    if (
+      envValues.VALIDATE_EVIDENCE_URLS &&
+      url &&
+      /^https?:\/\//i.test(url) &&
+      !(await isUrlReachable(url))
+    ) {
+      continue;
+    }
+
+    const evidenceType = resolveEvidencePrismaType(evidence.sourceUrl);
+
     await prisma.evidenceItem.create({
       data: {
         id: uuidv4(),
         projectId: persistedProject.id,
         submittedById: adminUser.user_id,
-        type: EVIDENCE_TYPE.TEXT,
+        type: evidenceType,
         title: evidence.title || evidence.summary?.substring(0, 80) || "Untitled Evidence",
         summary: evidence.summary,
         source: evidence.source || evidence.sourceUrl || undefined,

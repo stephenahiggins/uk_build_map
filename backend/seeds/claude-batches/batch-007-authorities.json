@@ -1,0 +1,178 @@
+[
+  {
+    "id": "e33bf613-cde9-4964-9498-3789c9454360",
+    "name": "Kirklees",
+    "code": "E08000034",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "9432eb2d-c60a-471d-bb68-4fcde835d0ed",
+    "name": "Knowsley",
+    "code": "E08000011",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "08dbbc19-7ecf-41af-ba5f-c324e8c6da65",
+    "name": "Lambeth",
+    "code": "E09000022",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5fcfa4b5-237f-4277-bd7d-520622031cf0",
+    "name": "Lancaster",
+    "code": "E07000121",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "d0af0b17-b849-47fd-b9bb-9e8644bf9254",
+    "name": "Leeds",
+    "code": "E08000035",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "fe0e49eb-12d2-47cd-872d-67ac9ee31036",
+    "name": "Leicester",
+    "code": "E06000016",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "09d21c64-b66f-445b-bdc8-451819759789",
+    "name": "Lewes",
+    "code": "E07000063",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "fed86ed5-9e42-484a-b5ac-4ef62f89ede9",
+    "name": "Lewisham",
+    "code": "E09000023",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5985813f-e96e-4c66-9ce7-dc752c7ac035",
+    "name": "Lichfield",
+    "code": "E07000194",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "45831c76-dafc-4769-8a03-85a7c1623627",
+    "name": "Lincoln",
+    "code": "E07000138",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "fa88a510-40c0-4c85-b1cf-5d96f5a2fb2b",
+    "name": "Liverpool",
+    "code": "E08000012",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c7768962-56cd-4510-a2ce-0069322984f0",
+    "name": "Luton",
+    "code": "E06000032",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "be6ef521-de3f-4f4c-8789-a17e67a3a905",
+    "name": "Maidstone",
+    "code": "E07000110",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "f192e426-9f23-4f03-a5be-08aa7e0a3699",
+    "name": "Maldon",
+    "code": "E07000074",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "0dad54f9-8dab-4f70-9a8e-0f6e7cf768c0",
+    "name": "Malvern Hills",
+    "code": "E07000235",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "0a32fab9-c39d-45f7-b09d-9bc0ef49919e",
+    "name": "Manchester",
+    "code": "E08000003",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "d8f1b9fc-ffe3-49ca-a9f7-f1059c0e965d",
+    "name": "Mansfield",
+    "code": "E07000174",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "e01658e6-54f1-4d6c-9948-0426515f110c",
+    "name": "Medway",
+    "code": "E06000035",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "f741388a-f4e2-49f5-977b-dcf17a75d0a3",
+    "name": "Melton",
+    "code": "E07000133",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "74b00795-04f3-4525-9481-98487a7ae43d",
+    "name": "Merton",
+    "code": "E09000024",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "b33ec5d9-8112-4793-b540-961ba09d1fc5",
+    "name": "Mid Devon",
+    "code": "E07000042",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "2abc46ad-bb04-4cc4-8c75-840422b41ce3",
+    "name": "Mid Suffolk",
+    "code": "E07000203",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

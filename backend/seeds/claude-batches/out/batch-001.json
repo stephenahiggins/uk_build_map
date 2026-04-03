@@ -1,0 +1,443 @@
+[
+  {
+    "id": "ashfield-towns-fund-kirkby-sutton",
+    "title": "Ashfield Towns Fund — Kirkby and Sutton regeneration",
+    "description": "Ashfield District Council secured £62.6 million from the Towns Fund for 16 regeneration projects in Kirkby-in-Ashfield and Sutton-in-Ashfield, including transport, skills, digital and town-centre improvements. A separate £6.27 million Future High Streets Fund grant supports Sutton town centre. Kirkby-in-Ashfield also receives up to £19.5 million through the Pride in Place programme (formerly Plan for Neighbourhoods), delivered over ten years to 2035/36.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "311939d0-af21-4e6b-adbe-14f6b57b15a8",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "£62.6m Towns Fund and £6.27m FHSF secured; Pride in Place £19.5m approved. Multiple projects under active delivery as at March 2026.",
+    "latitude": 53.0972,
+    "longitude": -1.2465,
+    "locationDescription": "Kirkby-in-Ashfield and Sutton-in-Ashfield town centres, Ashfield District",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Ashfield District Council — Regeneration and Funding",
+        "source": "Ashfield District Council",
+        "url": "https://www.ashfield.gov.uk/regeneration/",
+        "datePublished": "2024-04-01",
+        "summary": "Council page confirms £62.6m Towns Fund (16 projects in Kirkby and Sutton), £6.27m Future High Streets Fund, and Pride in Place £19.5m for Kirkby-in-Ashfield. Projects actively underway."
+      }
+    ]
+  },
+  {
+    "id": "lbbd-gascoigne-estate-redevelopment",
+    "title": "Gascoigne Estate Redevelopment — Barking and Dagenham",
+    "description": "London Borough of Barking and Dagenham is redeveloping the Gascoigne Estate in phased delivery on both the eastern and western sides. The eastern-side Phase 1 (Weavers Quarter: 421 new homes and Greatfields school) is complete. Phases 2 and 3 will deliver a further 1,160 homes in a mix of affordable rent, shared ownership and open-market sale, alongside community facilities. The western side is under a separate redevelopment programme.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "8657c8e6-ce23-40e6-9055-8b88c395525e",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Phase 1 (421 homes) complete; architects appointed for Phase 2 (500 homes). CPOs and demolition orders issued, active construction pipeline confirmed.",
+    "latitude": 51.5362,
+    "longitude": 0.0753,
+    "locationDescription": "Gascoigne Estate, Barking, London Borough of Barking and Dagenham",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "LBBD — Gascoigne Estate Eastern Side Redevelopment",
+        "source": "London Borough of Barking and Dagenham",
+        "url": "https://www.lbbd.gov.uk/housing/council-tenant-services/your-neighbourhood/estates-renewal/gascoigne-estate-eastern-side",
+        "datePublished": "2024-01-01",
+        "summary": "Council confirms Phase 1 (Weavers Quarter, 421 homes plus new school) complete; architects appointed for Phase 2 (500 homes); total phased delivery of 1,575+ new homes."
+      },
+      {
+        "type": "URL",
+        "title": "LBBD — Gascoigne Estate Western Side Redevelopment",
+        "source": "London Borough of Barking and Dagenham",
+        "url": "https://www.lbbd.gov.uk/housing/council-tenant-services/your-neighbourhood/estates-renewal/gascoigne-estate-western-side",
+        "datePublished": "2024-01-01",
+        "summary": "Council page covering the parallel western-side estates renewal programme alongside the eastern redevelopment."
+      }
+    ]
+  },
+  {
+    "id": "barnet-brent-cross-town",
+    "title": "Brent Cross Town — First Residents and Ongoing Delivery",
+    "description": "Brent Cross Town is an £8 billion mixed-use regeneration of the Brent Cross Cricklewood area in the London Borough of Barnet, delivered by Related Argent and Barnet Council. The development will eventually provide 6,700 new homes, offices, retail and a new high street. In 2024, Brent Cross Town welcomed its first residents, marking a major delivery milestone. Construction of the new spine road, Brent Cross Town Park and early residential phases is ongoing.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "5ac3471e-3804-4aa6-93ae-e20f0806ce27",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "First residents moved in 2024; £8bn scheme actively delivering homes, park and infrastructure. Barnet Council confirms ongoing progress.",
+    "latitude": 51.5761,
+    "longitude": -0.2235,
+    "locationDescription": "Brent Cross Town, Brent Cross, London Borough of Barnet",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Barnet Council — Brent Cross Town Welcomes Its First Residents",
+        "source": "London Borough of Barnet",
+        "url": "https://www.barnet.gov.uk/news/brent-cross-town-welcomes-its-first-residents",
+        "datePublished": "2024-01-01",
+        "summary": "Barnet Council news confirming Brent Cross Town's first residents have moved in, marking a key milestone in the £8bn regeneration scheme."
+      }
+    ]
+  },
+  {
+    "id": "barnet-grahame-park-regeneration-jv",
+    "title": "Grahame Park Estate Regeneration — Barnet Joint Venture",
+    "description": "Barnet Council approved a joint venture with Lovell Partnerships for the next stage of Grahame Park estate regeneration in Colindale. The programme replaces outdated council homes with thousands of new mixed-tenure homes and community facilities. The JV approval represents a major step forward in the long-running estate regeneration, unlocking investment in new affordable and market-rate housing.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "5ac3471e-3804-4aa6-93ae-e20f0806ce27",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Cabinet approved Lovell JV for next regeneration phases. Scheme unlocks further housing delivery at one of North London's largest estate regeneration programmes.",
+    "latitude": 51.5958,
+    "longitude": -0.2361,
+    "locationDescription": "Grahame Park Estate, Colindale, London Borough of Barnet",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Barnet Council — Joint Venture Approved for Grahame Park Regeneration",
+        "source": "London Borough of Barnet",
+        "url": "https://www.barnet.gov.uk/news/barnet-council-approves-joint-venture-next-stage-grahame-park-regeneration",
+        "datePublished": "2024-06-01",
+        "summary": "Council news confirming Cabinet approval of joint venture with Lovell Partnerships to deliver next stage of Grahame Park estate regeneration."
+      }
+    ]
+  },
+  {
+    "id": "barnsley-goldthorpe-towns-fund-deal",
+    "title": "Goldthorpe Towns Fund Deal — Dearne Valley Regeneration",
+    "description": "Barnsley Metropolitan Borough Council secured £23.1 million through the Towns Fund for regeneration of Goldthorpe, Thurnscoe and Bolton upon Dearne in the Dearne Valley. Five major projects were approved including a new access roundabout at the ES10 employment site on the A635/Dearne Valley Parkway junction (now complete), housing regeneration, digital infrastructure and skills projects. The scheme aims to unlock employment land and improve connectivity across the Dearne Valley economic corridor.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "ae2526bd-34ae-489f-a153-bcbdeca3f463",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "£23.1m secured; five business cases approved by Cabinet and government. ES10 roundabout complete; other projects in delivery as at 2024.",
+    "latitude": 53.5376,
+    "longitude": -1.3241,
+    "locationDescription": "Goldthorpe, Thurnscoe and Bolton upon Dearne, Dearne Valley, Barnsley",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Barnsley MBC — Goldthorpe Towns Fund Deal",
+        "source": "Barnsley Metropolitan Borough Council",
+        "url": "https://www.barnsley.gov.uk/services/regeneration/goldthorpe-towns-fund-deal/",
+        "datePublished": "2024-03-01",
+        "summary": "Council page confirms £23.1m Towns Fund for five projects including ES10 employment site access roundabout (complete), housing and digital infrastructure in the Dearne Valley."
+      }
+    ]
+  },
+  {
+    "id": "barnsley-seam-digital-campus",
+    "title": "The Seam Digital Campus — Barnsley Innovation and Tech Hub",
+    "description": "Barnsley Metropolitan Borough Council is developing The Seam Digital Campus as part of the South Yorkshire Regional Investment Zone. The existing campus hosts two Digital Media Centres (DMC01 and DMC02) and Barnsley College's SciTech Digital Innovation Hub. Phase 1 development includes a new 4,700 sqm urban park, biodiversity and digital gardens, and a town-centre link. The Seam supports TECH SY, a South Yorkshire Mayoral Combined Authority project growing the regional tech start-up and scale-up ecosystem.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "ae2526bd-34ae-489f-a153-bcbdeca3f463",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Phase 1 (urban park and connectivity) in design and delivery; DMCs operational. Part of the Regional Investment Zone with ongoing government backing.",
+    "latitude": 53.5527,
+    "longitude": -1.4797,
+    "locationDescription": "The Seam, Barnsley town centre, South Yorkshire",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Barnsley MBC — The Seam Digital Campus",
+        "source": "Barnsley Metropolitan Borough Council",
+        "url": "https://www.barnsley.gov.uk/services/regeneration/the-seam-digital-campus/",
+        "datePublished": "2024-06-01",
+        "summary": "Council page describes Regional Investment Zone campus with two operational Digital Media Centres, Barnsley College hub, and Phase 1 plans for a 4,700 sqm urban park and town-centre link."
+      }
+    ]
+  },
+  {
+    "id": "basildon-five-links-estate-redevelopment",
+    "title": "Five Links Estate Redevelopment — Basildon",
+    "description": "Basildon Borough Council is redeveloping the Five Links Estate, one of the borough's major housing regeneration programmes. The scheme involves replacing older council housing stock with new mixed-tenure homes and improved community infrastructure. The project is part of Basildon's wider regeneration and housing renewal agenda for the borough's post-war estates.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "f34a541e-702a-4cf2-92a9-eb6660ad8483",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Redevelopment programme confirmed on council website; phased delivery ongoing. Exact phase completion dates subject to planning and procurement timelines.",
+    "latitude": 51.5781,
+    "longitude": 0.4555,
+    "locationDescription": "Five Links Estate, Basildon, Essex",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Basildon Borough Council — Five Links Estate Redevelopment",
+        "source": "Basildon Borough Council",
+        "url": "https://www.basildon.gov.uk/article/2226/Five-Links-estate-redevelopment",
+        "datePublished": "2024-01-01",
+        "summary": "Council page confirming the Five Links estate redevelopment programme as part of Basildon's housing regeneration agenda."
+      }
+    ]
+  },
+  {
+    "id": "banes-bath-quays-north-partnership",
+    "title": "Bath Quays North Regeneration — BaNES and University of Bath Partnership",
+    "description": "Bath and North East Somerset Council and the University of Bath signed a Memorandum of Understanding in July 2024 to jointly develop a vision for Bath Quays North, a 2.2-hectare brownfield site in the Bath City Riverside Enterprise Zone. The partnership will explore uses including research, innovation and enterprise space building on the existing outline planning permission. Bath Quays South is already near-fully let, generating hundreds of jobs.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "5d6ab247-42b5-4f3a-8aef-227771b99e68",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "MoU signed July 2024; outline planning permission in place. Partnership conversations underway to develop delivery model for the 2.2ha brownfield site.",
+    "latitude": 51.3817,
+    "longitude": -2.3630,
+    "locationDescription": "Bath Quays North, riverside brownfield site, Bath city centre, Bath and North East Somerset",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "BaNES — Bath Quays North Regeneration Partnership Announced",
+        "source": "Bath and North East Somerset Council",
+        "url": "https://www.bathnes.gov.uk/bath-quays-north",
+        "datePublished": "2024-07-22",
+        "summary": "Council announces MoU with University of Bath to develop vision for Bath Quays North, 2.2ha brownfield site in the Bath City Riverside Enterprise Zone. Outline planning permission already secured."
+      }
+    ]
+  },
+  {
+    "id": "bedford-east-west-rail-dco",
+    "title": "East West Rail — Bedford Borough Proposals and DCO Process",
+    "description": "East West Rail Company is progressing a nationally significant infrastructure project to deliver a new rail connection between Oxford and Cambridge, passing through Bedford Borough. Within Bedford, current proposals include new stations and line alignments. The Development Consent Order (DCO) process is underway: Consultation 3 ran November 2024–January 2025. DCO submission is anticipated in 2026 with a decision expected in 2027. Bedford Borough Council is a statutory consultee and has challenged elements affecting communities.",
+    "type": "NATIONAL_GOV",
+    "localAuthorityId": "f743ffc1-562d-46b6-9cb8-037945f214c1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "DCO consultation completed Jan 2025; DCO submission anticipated 2026, decision 2027. Nationally significant infrastructure project at advanced pre-application stage.",
+    "latitude": 52.1377,
+    "longitude": -0.4681,
+    "locationDescription": "Bedford Borough — East West Rail corridor, Bedford Station and surrounding area",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bedford Borough Council — East West Rail Proposals",
+        "source": "Bedford Borough Council",
+        "url": "https://www.bedford.gov.uk/parking-roads-and-travel/strategies-and-major-projects/east-west-rail-proposals",
+        "datePublished": "2025-11-19",
+        "summary": "Council page confirms DCO process underway; Consultation 3 ran Nov 2024–Jan 2025; EWR published You Said, We Did report Nov 2025; DCO submission anticipated 2026, decision 2027."
+      },
+      {
+        "type": "URL",
+        "title": "Bedford Borough Council — Towns Fund",
+        "source": "Bedford Borough Council",
+        "url": "https://www.bedford.gov.uk/business/invest-bedford/towns-fund",
+        "datePublished": "2024-01-01",
+        "summary": "Bedford was one of 101 towns selected to bid for up to £25m via the Towns Fund. Town Investment Plan submitted covering skills, digital and transport connectivity projects within the town deal boundary."
+      }
+    ]
+  },
+  {
+    "id": "birmingham-perry-barr-regeneration",
+    "title": "Perry Barr Regeneration — Birmingham £700m+ Transformation",
+    "description": "Perry Barr, 15 minutes north-west of Birmingham city centre, has received over £700 million of public sector investment focused on infrastructure, new homes and community spaces, catalysed by the 2022 Commonwealth Games. Birmingham City Council has produced the Perry Barr 2040: A Vision for Legacy masterplan, setting out the 20-year regeneration framework for the Perry Barr Urban Centre. The scheme targets improved transport connectivity, housing delivery and community infrastructure in one of Birmingham's most diverse districts.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "414e7c46-6756-491a-b12d-c705f016670c",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "£700m+ public investment confirmed; Commonwealth Games 2022 catalyst delivered. Perry Barr 2040 masterplan adopted; ongoing delivery of infrastructure and housing.",
+    "latitude": 52.5285,
+    "longitude": -1.9002,
+    "locationDescription": "Perry Barr, Birmingham — centred on the Alexander Stadium and Perry Barr town centre",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Birmingham City Council — Perry Barr Regeneration",
+        "source": "Birmingham City Council",
+        "url": "https://www.birmingham.gov.uk/info/50253/perry_barr_regeneration",
+        "datePublished": "2024-01-01",
+        "summary": "Council page confirms £700m+ public investment, Commonwealth Games legacy, and Perry Barr 2040 masterplan as the 20-year regeneration framework for the area."
+      }
+    ]
+  },
+  {
+    "id": "blackpool-talbot-gateway",
+    "title": "Talbot Gateway — Major Mixed-Use Regeneration, Blackpool Town Centre",
+    "description": "Talbot Gateway is Blackpool Council's flagship mixed-use regeneration scheme transforming the heart of Blackpool town centre around Blackpool North station. Completed and in-progress elements include a tram extension, Holiday Inn hotel with Marco Pierre White restaurant, a new office building, and a DWP office. The Multiversity education facility is a planned phase. The scheme is a joint venture between Blackpool Council and Muse Developments.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "0871ae5f-12f0-4fdd-a225-31464ca0a2ae",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Tram extension, hotel and DWP office phases delivered or near-complete. Scheme progressing through multiple phases with continued council and private sector investment.",
+    "latitude": 53.8152,
+    "longitude": -3.0537,
+    "locationDescription": "Talbot Gateway, Blackpool North station area, Blackpool town centre",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Blackpool Council — Talbot Gateway",
+        "source": "Blackpool Council",
+        "url": "https://www.blackpool.gov.uk/Your-Council/Creating-a-better-Blackpool/Talbot-Gateway.aspx",
+        "datePublished": "2024-06-01",
+        "summary": "Council page describes Talbot Gateway as a major mixed-use regeneration scheme including Multiversity, DWP office, Holiday Inn hotel, new office building and tram extension."
+      }
+    ]
+  },
+  {
+    "id": "blackpool-central-housing-regeneration",
+    "title": "Transforming Blackpool's Housing — Central Area Regeneration",
+    "description": "Blackpool Council is undertaking a major housing regeneration programme in the Central Area, targeting the replacement of poor-quality private-rented housing stock with new affordable homes and improved public realm. Phase 1 development is underway, involving site assembly, compulsory purchase, demolition and new-build residential construction. The programme is supported by Homes England funding.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "0871ae5f-12f0-4fdd-a225-31464ca0a2ae",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Phase 1 under construction; land assembly and CPO process ongoing. Homes England-backed programme; delivery trajectory confirmed by council as at 2024.",
+    "latitude": 53.8171,
+    "longitude": -3.0535,
+    "locationDescription": "Central Area, Blackpool — between the seafront and town centre",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Blackpool Council — Transforming Blackpool's Housing",
+        "source": "Blackpool Council",
+        "url": "https://www.blackpool.gov.uk/Your-Council/Creating-a-better-Blackpool/Regeneration/Housing-regeneration/Transforming-Blackpools-housing.aspx",
+        "datePublished": "2024-03-01",
+        "summary": "Council page confirms Phase 1 of the central housing regeneration programme, with plans for new affordable housing to replace poor-quality private rented stock. Homes England-backed scheme."
+      }
+    ]
+  },
+  {
+    "id": "bassetlaw-worksop-pride-in-place-20m",
+    "title": "Worksop Town Centre — £20 Million Pride in Place Regeneration Plan",
+    "description": "Bassetlaw District Council and the Worksop Together Board received government approval in March 2026 for a £20 million, 10-year Pride in Place (formerly Plan for Neighbourhoods) regeneration plan for Worksop town centre and surrounding areas. The vision and regeneration plan was shaped by nearly 700 residents, businesses and partners following independent consultation in summer 2025. Priorities include safer streets, revitalised public spaces, a vibrant town centre, opportunities for young people and stronger neighbourhoods. Funding is delivered in annual instalments over 10 years.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "29e30f64-1b2e-4e30-9959-b90c23b7807a",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Government approval confirmed March 2026; 10-year £20m plan to commence. 700+ residents consulted; Worksop Together Board and council ready to begin delivery.",
+    "latitude": 53.3040,
+    "longitude": -1.1267,
+    "locationDescription": "Worksop town centre and surrounding areas, Bassetlaw District, Nottinghamshire",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bassetlaw District Council — £20m Regeneration Plan for Worksop Approved",
+        "source": "Bassetlaw District Council",
+        "url": "https://www.bassetlaw.gov.uk/media-centre/news/latest-news/20million-regeneration-plan-for-worksop-approved/",
+        "datePublished": "2026-03-25",
+        "summary": "Government approves £20m Pride in Place plan for Worksop town centre, developed by Worksop Together Board and Bassetlaw DC with input from 700+ community members. 10-year delivery programme."
+      }
+    ]
+  },
+  {
+    "id": "bassetlaw-step-fusion-west-burton",
+    "title": "STEP Fusion Programme — West Burton, Bassetlaw",
+    "description": "The Spherical Tokamak for Energy Production (STEP) fusion programme — UK prototype fusion power plant — is being delivered at the West Burton site in Bassetlaw by UK Industrial Fusion Solutions (soon renamed UK Fusion Energy Ltd). In March 2026, the ILIOS consortium (Kier/Nuvia JV with AECOM, AL_A and Turner and Townsend) was appointed as Construction Partner on a £200 million contract. The programme is expected to support up to 8,000 on-site construction jobs at peak, with up to 10,000 total jobs linked to the wider supply chain. It forms part of the Trent Supercluster, positioning Bassetlaw as a national clean-energy leader.",
+    "type": "NATIONAL_GOV",
+    "localAuthorityId": "29e30f64-1b2e-4e30-9959-b90c23b7807a",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "£200m construction partner (ILIOS) appointed March 2026. Government fusion strategy published. Programme entering next phase from planning into delivery.",
+    "latitude": 53.3774,
+    "longitude": -0.8427,
+    "locationDescription": "West Burton Energy Park, Bassetlaw, Nottinghamshire",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bassetlaw District Council — ILIOS Appointed as STEP Fusion Construction Partner",
+        "source": "Bassetlaw District Council",
+        "url": "https://www.bassetlaw.gov.uk/media-centre/news/latest-news/appointment-of-ilios-accelerates-delivery-of-step-fusion-at-west-burton/",
+        "datePublished": "2026-03-16",
+        "summary": "£200m construction partner appointment confirmed for STEP fusion prototype plant at West Burton. ILIOS consortium led by Kier/Nuvia JV; up to 8,000 construction jobs at peak; part of Trent Supercluster."
+      }
+    ]
+  },
+  {
+    "id": "bolton-farnworth-town-centre-redevelopment",
+    "title": "Farnworth Town Centre Redevelopment — Bolton",
+    "description": "Bolton Council is supporting Capital and Centric's plans to redevelop the former market precinct in Farnworth town centre on King Street, creating a new mixed-use destination for living, shopping, working and leisure. Located adjacent to the refurbished bus station and within walking distance of Farnworth railway station, the scheme is part of Bolton's wider town-centre regeneration programme. Public consultation has been completed and planning work is progressing.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "e21e1cf3-bcd3-4e79-ac36-9caef4b2f05e",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Public consultation completed. Capital and Centric partnership confirmed; delivery timeline subject to planning approval and market conditions.",
+    "latitude": 53.5446,
+    "longitude": -2.3936,
+    "locationDescription": "King Street, Farnworth town centre, Bolton, Greater Manchester",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bolton Council — Farnworth Town Centre Redevelopment",
+        "source": "Bolton Council",
+        "url": "https://www.bolton.gov.uk/directory-record/2108/farnworth-town-centre-redevelopment",
+        "datePublished": "2024-01-01",
+        "summary": "Council page confirms Capital and Centric partnership to redevelop former market precinct on King Street, Farnworth, into a mixed-use live/work/retail destination adjacent to refurbished bus station."
+      }
+    ]
+  },
+  {
+    "id": "bolton-town-centre-mayoral-development-corporation",
+    "title": "Bolton Town Centre Mayoral Development Corporation — GMCA",
+    "description": "Greater Manchester Combined Authority (GMCA) is proposing a Mayoral Development Corporation (MDC) for Bolton Town Centre to act as a single institutional platform for regeneration activity across 13 key development sites. The MDC boundary covers Bolton town centre within the ring road plus two western and southern extensions. GMCA's consultation identified the MDC as the vehicle to amplify Bolton's profile regionally and nationally to attract investment, delivering modern employment spaces and high-quality homes.",
+    "type": "REGIONAL_GOV",
+    "localAuthorityId": "e21e1cf3-bcd3-4e79-ac36-9caef4b2f05e",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "GMCA consultation on MDC completed; formal designation process underway. MDC boundary confirmed covering 13 key development sites within and adjacent to the town centre ring road.",
+    "latitude": 53.5779,
+    "longitude": -2.4284,
+    "locationDescription": "Bolton town centre and extensions within the ring road, Bolton, Greater Manchester",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bolton Council — Mayoral Development Corporation for Bolton Town Centre",
+        "source": "Bolton Council / GMCA",
+        "url": "https://www.bolton.gov.uk/directory-record/6927/mayoral-development-corporation-for-bolton-town-centre",
+        "datePublished": "2024-06-01",
+        "summary": "GMCA consultation on proposed Bolton Town Centre MDC covering 13 development sites. MDC aims to attract investment, deliver housing and employment space as a single regeneration platform for the town centre."
+      }
+    ]
+  },
+  {
+    "id": "ashford-former-odeon-cultural-venue",
+    "title": "Former Odeon/Mecca Cultural Venue Conversion — Ashford Town Centre",
+    "description": "Ashford Borough Council is progressing plans to convert the art deco former Odeon/Mecca Bingo building (built 1936) on Ashford High Street into a flexible cultural and community theatre venue. Detailed feasibility work, architectural studies and business planning support a Phase 1 proposal to restore the High Street frontage, foyer and first-floor spaces. Essential works including asbestos removal and structural stabilisation are also planned. The project responds to proven demand in the Council's Arts and Cultural Industries Strategy and Local Plan.",
+    "type": "LOCAL_GOV",
+    "localAuthorityId": "3537dd5a-0b7e-4775-b7dd-3342d54de939",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Feasibility, architectural and business planning complete as of March 2026. Phase 1 design concept approved by Council Leader. Procurement and planning consent still required.",
+    "latitude": 51.1456,
+    "longitude": 0.8730,
+    "locationDescription": "Former Odeon/Mecca Bingo, High Street, Ashford town centre, Kent",
+    "locationSource": "COUNCIL_WEBSITE",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Ashford Borough Council — Plans for Former Odeon/Mecca Cultural Venue",
+        "source": "Ashford Borough Council",
+        "url": "https://www.ashford.gov.uk/news/latest-news/curtain-raised-on-plans-to-bring-ashford-s-former-odeonmecca-back-to-life-as-a-flexible-cultural-and-community-venue/",
+        "datePublished": "2026-03-26",
+        "summary": "Council announces Phase 1 plans to convert the 1936 art deco Odeon/Mecca building into a cultural and community theatre venue. Feasibility, contamination surveys and business planning complete."
+      }
+    ]
+  }
+]

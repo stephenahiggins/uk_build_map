@@ -1,0 +1,702 @@
+[
+  {
+    "id": "mid-sussex-northern-arc-burgess-hill-2024",
+    "title": "Burgess Hill Northern Arc – Strategic Growth Programme",
+    "description": "Mid Sussex District Council is delivering the Northern Arc strategic allocation on the northern edge of Burgess Hill, providing approximately 3,500 new homes alongside new primary roads, primary schools, employment land and significant green infrastructure. Infrastructure delivery agreements are in place with housebuilders and the council is coordinating the phased delivery of roads and community facilities. The programme represents the most significant planned expansion of Burgess Hill in a generation.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "16483efb-f5b8-40b7-a5ee-92de3bb4daf4",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Outline consents and infrastructure agreements are in place; early enabling works have commenced but developer viability negotiations and Section 106 contributions have caused phasing delays.",
+    "latitude": 51.0135,
+    "longitude": -0.1322,
+    "locationDescription": "Northern Arc strategic growth area, north of Burgess Hill town centre, West Sussex",
+    "locationSource": "Mid Sussex District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major Projects – Mid Sussex District Council",
+        "source": "Mid Sussex District Council",
+        "url": "https://www.midsussex.gov.uk/housing-planning/planning/major-projects/",
+        "datePublished": "2024-05-01",
+        "summary": "Mid Sussex District Council planning portal for strategic major projects including the Burgess Hill Northern Arc growth programme and associated infrastructure delivery."
+      },
+      {
+        "type": "URL",
+        "title": "UK Shared Prosperity Fund Prospectus – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/uk-shared-prosperity-fund-prospectus",
+        "datePublished": "2022-04-13",
+        "summary": "UKSPF prospectus under which Mid Sussex and other district councils received investment funding to support place-based improvements and infrastructure enabling development."
+      }
+    ]
+  },
+  {
+    "id": "middlesbrough-centre-square-phase3-2024",
+    "title": "Centre Square Phase 3 – Middlesbrough Office Quarter",
+    "description": "Middlesbrough Council has been developing Centre Square as the town's flagship commercial business district through successive phases; Phase 3 delivers further Grade-A office floorspace, associated public realm and connectivity to the wider town centre. The council acts as landowner and enabling partner, having attracted major occupiers including HMRC and NHS Business Services Authority to earlier phases, and is progressing Phase 3 planning and enabling works through 2024–25.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "65ca3a9a-2d96-465c-bb8c-355d59246c6c",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Phases 1 and 2 successfully delivered with major occupiers in place; Phase 3 planning consented and enabling works progressing on programme with continued commercial demand.",
+    "latitude": 54.5730,
+    "longitude": -1.2363,
+    "locationDescription": "Centre Square, Middlesbrough town centre, Teesside",
+    "locationSource": "Middlesbrough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Middlesbrough Council",
+        "source": "Middlesbrough Council",
+        "url": "https://www.middlesbrough.gov.uk/regeneration",
+        "datePublished": "2024-09-01",
+        "summary": "Middlesbrough Council regeneration hub covering Centre Square phases, the town centre masterplan and wider investment programme for Teesside."
+      }
+    ]
+  },
+  {
+    "id": "milton-keynes-east-west-rail-bletchley-2024",
+    "title": "East West Rail – Milton Keynes and Bletchley Station Improvements",
+    "description": "Milton Keynes City Council is a key delivery partner for the East West Rail programme restoring direct rail connections between Oxford, Milton Keynes, Bedford and Cambridge. The council is working with the East West Rail Company and Network Rail on infrastructure improvements at Bletchley station and the surrounding transport interchange to ensure the corridor delivers maximum benefit for MK residents and businesses. The government confirmed in 2024 that the full Oxford–Cambridge route would proceed.",
+    "type": "NATIONAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "41cb4145-8c3b-4bf4-a4fb-139f173b7b80",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Government confirmed programme proceeding in 2024 following strategic review, but revised cost estimates and timetable adjustments for the Bedford–Cambridge section introduce schedule uncertainty.",
+    "latitude": 51.9942,
+    "longitude": -0.7374,
+    "locationDescription": "Bletchley station and interchange, Milton Keynes",
+    "locationSource": "East West Rail Company",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "East West Rail Company",
+        "source": "East West Rail Company",
+        "url": "https://eastwestrail.co.uk/",
+        "datePublished": "2024-10-01",
+        "summary": "Official East West Rail Company website covering the programme to deliver new rail services between Oxford, Milton Keynes, Bedford and Cambridge, including infrastructure works at Bletchley."
+      },
+      {
+        "type": "URL",
+        "title": "East West Rail – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/collections/east-west-rail",
+        "datePublished": "2024-05-01",
+        "summary": "Government collection page for East West Rail programme, including ministerial statements and programme updates confirming the route and delivery approach."
+      }
+    ]
+  },
+  {
+    "id": "mole-valley-leatherhead-town-centre-regeneration-2024",
+    "title": "Leatherhead Town Centre Area Action Plan – Regeneration Implementation",
+    "description": "Mole Valley District Council is implementing regeneration of Leatherhead town centre under its adopted Area Action Plan, which allocates key sites for mixed-use redevelopment including the Leatherhead Gateway and Swan Centre sites. The council is working with landowners and developers to bring forward comprehensive schemes combining retail, residential, public realm and active travel improvements, aligned with Surrey's wider strategic investment narrative.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "0018cde8-819c-4320-ae8c-0a1ac18dd344",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Area Action Plan adopted; several key development sites remain in protracted landowner negotiations, and the wider programme is subject to developer market conditions in the Surrey commuter belt.",
+    "latitude": 51.2962,
+    "longitude": -0.3288,
+    "locationDescription": "Leatherhead town centre, Mole Valley, Surrey",
+    "locationSource": "Mole Valley District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning Policy – Mole Valley District Council",
+        "source": "Mole Valley District Council",
+        "url": "https://www.molevalley.gov.uk/home/planning-and-building/planning-policy",
+        "datePublished": "2024-06-01",
+        "summary": "Mole Valley District Council planning policy page covering the Leatherhead Area Action Plan and key regeneration site allocations in the district."
+      }
+    ]
+  },
+  {
+    "id": "new-forest-ukspf-town-centre-improvements-2024",
+    "title": "New Forest District UKSPF Town Centre and Place-Making Programme",
+    "description": "New Forest District Council is delivering a programme of place-based investment under the UK Shared Prosperity Fund (2022–25), targeting improvements to town centres and high streets across the district including Totton, Fordingbridge, Hythe and New Milton. The programme funds public realm enhancements, active travel infrastructure, business support and community facilities. Works completed in 2024 include high-street environmental improvements and cycle-way extensions.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "24bcacf3-12ba-4d90-8502-646007e983ed",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "UKSPF funding confirmed through to 2025; programme milestones being met with multiple town-centre improvement schemes completed or in final delivery.",
+    "latitude": 50.9109,
+    "longitude": -1.5963,
+    "locationDescription": "Multiple town centres across New Forest district, Hampshire",
+    "locationSource": "New Forest District Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Economy and Business – New Forest District Council",
+        "source": "New Forest District Council",
+        "url": "https://www.newforest.gov.uk/article/1100/Economy-and-business",
+        "datePublished": "2023-04-01",
+        "summary": "New Forest District Council economy and business hub covering UKSPF programmes and place-based investments in town centres across the district through 2025."
+      },
+      {
+        "type": "URL",
+        "title": "UK Shared Prosperity Fund Prospectus – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/uk-shared-prosperity-fund-prospectus",
+        "datePublished": "2022-04-13",
+        "summary": "UKSPF prospectus setting out the programme under which New Forest and other councils received investment for local place improvements."
+      }
+    ]
+  },
+  {
+    "id": "newark-sherwood-towns-fund-castle-quarter-2024",
+    "title": "Newark Towns Fund – Castle Quarter and Town Centre Regeneration",
+    "description": "Newark and Sherwood District Council signed a £21.7 million Town Deal for Newark in 2021, funding a portfolio of regeneration projects including Castle Quarter public realm improvements, the Gilstrap Centre heritage facility and active travel connectivity in the historic town centre. Works progressed through 2024–25 include streetscape enhancements around Newark Castle, improved pedestrian routes and investment in cultural and civic assets.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "de278ff3-97fd-4e36-9d36-498aaf3de9e8",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Town Deal signed and programme in active delivery; multiple projects completed and remaining workstreams on programme for 2025 completion.",
+    "latitude": 53.0753,
+    "longitude": -0.8028,
+    "locationDescription": "Newark Castle Quarter and town centre, Newark-on-Trent, Nottinghamshire",
+    "locationSource": "Newark and Sherwood District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Newark and Sherwood District Council",
+        "source": "Newark and Sherwood District Council",
+        "url": "https://www.newark-sherwooddc.gov.uk/regeneration/",
+        "datePublished": "2024-03-01",
+        "summary": "Newark and Sherwood District Council regeneration hub covering the Newark Town Deal, Castle Quarter improvements and associated town centre investment programme."
+      },
+      {
+        "type": "URL",
+        "title": "Towns Fund: Prospectus – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/towns-fund-prospectus",
+        "datePublished": "2019-09-06",
+        "summary": "UK Government Towns Fund prospectus under which Newark received £21.7m to fund regeneration and place-making improvements in the town centre."
+      }
+    ]
+  },
+  {
+    "id": "newcastle-upon-tyne-pilgrim-street-regeneration-2024",
+    "title": "Pilgrim Street Mixed-Use Regeneration, Newcastle upon Tyne",
+    "description": "Newcastle City Council has been enabling the comprehensive regeneration of Pilgrim Street in the city centre, a major mixed-use development delivering over 500,000 sq ft of Grade-A offices, hotels, retail and public realm on a long-underused brownfield site. Developer partners secured planning permission and commenced infrastructure works, with first commercial buildings completing in 2024. The scheme is flagship for the city's economic growth ambitions and the wider Newcastle-Gateshead investment narrative.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "fcc7d3c8-0128-45b7-9f31-9c6bdc209cca",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Planning consented and infrastructure works commenced; first office buildings delivered in 2024 with subsequent phases on programme, confirming strong developer and occupier confidence.",
+    "latitude": 54.9710,
+    "longitude": -1.6108,
+    "locationDescription": "Pilgrim Street, Newcastle city centre, Tyne and Wear",
+    "locationSource": "Newcastle City Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major Projects – Newcastle City Council",
+        "source": "Newcastle City Council",
+        "url": "https://www.newcastle.gov.uk/planning-and-buildings/major-projects",
+        "datePublished": "2024-06-01",
+        "summary": "Newcastle City Council major projects hub covering Pilgrim Street and other significant development and regeneration schemes in the city centre."
+      }
+    ]
+  },
+  {
+    "id": "newcastle-under-lyme-town-centre-levelling-up-2024",
+    "title": "Newcastle-under-Lyme Town Centre Levelling Up Fund Programme",
+    "description": "Newcastle-under-Lyme Borough Council secured Levelling Up Fund investment to regenerate the historic town centre, focused on the Ryecroft area and public market, alongside improvements to pedestrian connectivity, the historic streetscape and civic spaces. Works are being delivered in phases through 2024–25 and complement the council's wider Economic Development Strategy, which includes employment site development at Kingsfield and inward investment support.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "4c223c00-c1eb-43d7-9c49-0e05626166bf",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Levelling Up funding allocated and initial works under way; some elements have encountered procurement and programme management delays in 2024.",
+    "latitude": 53.0110,
+    "longitude": -2.2274,
+    "locationDescription": "Newcastle-under-Lyme town centre, Staffordshire",
+    "locationSource": "Newcastle-under-Lyme Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration and Economy – Newcastle-under-Lyme Borough Council",
+        "source": "Newcastle-under-Lyme Borough Council",
+        "url": "https://www.newcastle-staffs.gov.uk/regeneration",
+        "datePublished": "2024-04-01",
+        "summary": "Newcastle-under-Lyme Borough Council regeneration page covering the Levelling Up Fund town centre programme, Ryecroft improvements and borough-wide economic development."
+      },
+      {
+        "type": "URL",
+        "title": "Levelling Up Fund – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/collections/levelling-up-fund",
+        "datePublished": "2021-10-27",
+        "summary": "Government Levelling Up Fund collection page covering the programme under which Newcastle-under-Lyme and other councils received town-centre regeneration investment."
+      }
+    ]
+  },
+  {
+    "id": "newham-east-bank-stratford-waterfront-2024",
+    "title": "East Bank – Stratford Waterfront Cultural Quarter, Newham",
+    "description": "The London Borough of Newham and the Greater London Authority are co-delivering the East Bank programme, a transformational new cultural and educational district on the Stratford Waterfront adjacent to the Olympic Park. The programme brings together the V&A East Museum, UCL East campus, Sadler's Wells East theatre, BBC Music Studios and the surrounding public realm into a cohesive new urban quarter. Major buildings have been completing progressively from 2023 to 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "3ef6ec68-3e98-4bee-8136-31abee8d9ce3",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Programme progressing well; V&A East Storehouse opened 2023, UCL East operational, Sadler's Wells East and V&A main museum on track for 2025–26 completion.",
+    "latitude": 51.5406,
+    "longitude": -0.0124,
+    "locationDescription": "Stratford Waterfront / Queen Elizabeth Olympic Park, London Borough of Newham",
+    "locationSource": "Greater London Authority",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "East Bank – Greater London Authority",
+        "source": "Greater London Authority",
+        "url": "https://www.london.gov.uk/programmes-strategies/arts-and-culture/east-bank",
+        "datePublished": "2024-05-01",
+        "summary": "GLA programme page for East Bank covering the V&A, UCL East, Sadler's Wells East and BBC Music Studios development on the Stratford Waterfront."
+      },
+      {
+        "type": "URL",
+        "title": "Regeneration – London Borough of Newham",
+        "source": "London Borough of Newham",
+        "url": "https://www.newham.gov.uk/planning-buildings-land/regeneration",
+        "datePublished": "2024-06-01",
+        "summary": "Newham Council regeneration hub covering East Bank, Royal Docks Enterprise Zone and the council's strategic development programmes."
+      }
+    ]
+  },
+  {
+    "id": "north-devon-barnstaple-transport-public-realm-2024",
+    "title": "Barnstaple Town Centre Transport and Public Realm Package",
+    "description": "North Devon Council has been progressing a package of transport and public realm improvements in Barnstaple, the district's main commercial and service centre, including improvements to the bus interchange, pedestrian connectivity and active travel routes linked to the Tarka Trail. The council is also supporting delivery of strategic housing growth sites on the edge of Barnstaple that require associated road junction and infrastructure upgrades funded through Section 106 agreements.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "3c6b3bd7-4b20-473e-9760-149830f49231",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Infrastructure works partially under way; full transport package delivery is dependent on phased housing site development and contributions from multiple developers across several planning permissions.",
+    "latitude": 51.0826,
+    "longitude": -4.0583,
+    "locationDescription": "Barnstaple town centre and northern growth area, North Devon",
+    "locationSource": "North Devon Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning and Building – North Devon Council",
+        "source": "North Devon Council",
+        "url": "https://www.northdevon.gov.uk/planning-and-building/",
+        "datePublished": "2024-04-01",
+        "summary": "North Devon Council planning and development hub covering strategic housing and infrastructure programmes around Barnstaple and the wider district."
+      }
+    ]
+  },
+  {
+    "id": "north-east-derbyshire-markham-vale-enterprise-zone-2024",
+    "title": "Markham Vale Enterprise Zone – Phase 3 Infrastructure",
+    "description": "North East Derbyshire District Council is a delivery partner for the Markham Vale Enterprise Zone, built on the site of the former Markham Colliery near Chesterfield. Phase 3 extends employment and logistics floorspace, supported by A632 junction upgrades and enhanced freight routing. The zone has attracted major logistics and manufacturing operators since opening and continues to deliver significant employment in the former coalfield area.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "54481931-acce-441c-ad13-792953123fc5",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Enterprise zone fully operational through earlier phases; Phase 3 site infrastructure consented and progressing to programme with strong occupier demand from logistics operators.",
+    "latitude": 53.2551,
+    "longitude": -1.3956,
+    "locationDescription": "Markham Vale Enterprise Zone, near Duckmanton, North East Derbyshire",
+    "locationSource": "Markham Vale Enterprise Zone",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Markham Vale",
+        "source": "Markham Vale Enterprise Zone",
+        "url": "https://www.markhamvale.com/",
+        "datePublished": "2024-03-01",
+        "summary": "Official Markham Vale Enterprise Zone website covering development on the former Markham Colliery site, Phase 3 infrastructure and employment land delivery."
+      },
+      {
+        "type": "URL",
+        "title": "Business – North East Derbyshire District Council",
+        "source": "North East Derbyshire District Council",
+        "url": "https://www.ne-derbyshire.gov.uk/planning-and-development",
+        "datePublished": "2024-04-01",
+        "summary": "North East Derbyshire District Council planning and development page covering the Markham Vale Enterprise Zone and wider economic development programme."
+      }
+    ]
+  },
+  {
+    "id": "north-east-lincolnshire-grimsby-town-investment-plan-2024",
+    "title": "Grimsby Town Investment Plan – Waterfront and Town Centre",
+    "description": "North East Lincolnshire Council is leading delivery of the Grimsby Town Investment Plan, which secured £25 million in Towns Fund investment for projects including refurbishment of the historic fishing heritage quarter, improvements to Grimsby town centre public realm, active travel infrastructure and digital connectivity. The plan also supports development of the South Humber Bank as a nationally significant energy and offshore wind manufacturing cluster.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "cef65a66-6ad5-444b-9f9e-64813743fbf2",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Town Investment Plan signed; multiple projects in active delivery with town centre public realm improvements completed and further heritage and transport workstreams progressing on programme.",
+    "latitude": 53.5683,
+    "longitude": -0.0796,
+    "locationDescription": "Grimsby town centre and South Humber Bank, North East Lincolnshire",
+    "locationSource": "North East Lincolnshire Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration and Investment – North East Lincolnshire Council",
+        "source": "North East Lincolnshire Council",
+        "url": "https://www.nelincs.gov.uk/residents/regeneration-and-planning/regeneration/",
+        "datePublished": "2024-06-01",
+        "summary": "North East Lincolnshire Council regeneration hub covering the Grimsby Town Investment Plan, South Humber Bank development and wider investment programme."
+      },
+      {
+        "type": "URL",
+        "title": "Towns Fund: Prospectus – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/towns-fund-prospectus",
+        "datePublished": "2019-09-06",
+        "summary": "Government Towns Fund prospectus under which Grimsby received £25m to fund heritage, public realm and transport improvements."
+      }
+    ]
+  },
+  {
+    "id": "north-hertfordshire-hitchin-churchgate-redevelopment-2024",
+    "title": "Hitchin Churchgate Shopping Centre Redevelopment",
+    "description": "North Hertfordshire District Council has been working with landowners and developers to bring forward the comprehensive redevelopment of the Churchgate shopping centre in Hitchin town centre, a 1960s retail precinct identified as a priority regeneration site. The proposed scheme delivers a mixed-use replacement with housing, retail, public space and an improved market area, preserving the town's historic character. Masterplanning and planning application preparation work advanced through 2024.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "82b718ba-034c-41ff-beea-0631e38c5efe",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Masterplan under development and pre-application consultations ongoing; delivery remains dependent on commercial development market conditions and complex ownership structures.",
+    "latitude": 51.9479,
+    "longitude": -0.2809,
+    "locationDescription": "Churchgate Shopping Centre, Hitchin town centre, North Hertfordshire",
+    "locationSource": "North Hertfordshire District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning and Building Control – North Hertfordshire District Council",
+        "source": "North Hertfordshire District Council",
+        "url": "https://www.north-herts.gov.uk/home/planning-and-building-control",
+        "datePublished": "2024-05-01",
+        "summary": "North Hertfordshire District Council planning hub covering major regeneration sites including Hitchin Churchgate and town centre planning policy."
+      }
+    ]
+  },
+  {
+    "id": "north-kesteven-sleaford-ukspf-public-realm-2024",
+    "title": "Sleaford Public Realm and Town Centre Investment Programme",
+    "description": "North Kesteven District Council is investing in Sleaford town centre through the UK Shared Prosperity Fund and its own capital programme, delivering streetscape improvements, improved market square facilities, active travel links and enhancements to the town's historic environment. The programme builds on earlier Towns Fund investments and aims to increase footfall, support local businesses and improve the visitor offer in this Lincolnshire market town.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "87427552-d71f-47f8-9329-5edf90d6af12",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "UKSPF programme in active delivery through 2025; multiple public realm and town-centre improvement schemes on programme.",
+    "latitude": 52.9965,
+    "longitude": -0.4137,
+    "locationDescription": "Sleaford town centre, North Kesteven, Lincolnshire",
+    "locationSource": "North Kesteven District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Business and Economy – North Kesteven District Council",
+        "source": "North Kesteven District Council",
+        "url": "https://www.n-kesteven.org.uk/business",
+        "datePublished": "2024-04-01",
+        "summary": "North Kesteven District Council business and investment hub covering UKSPF programmes and town centre improvement schemes in Sleaford and across the district."
+      },
+      {
+        "type": "URL",
+        "title": "UK Shared Prosperity Fund Prospectus – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/uk-shared-prosperity-fund-prospectus",
+        "datePublished": "2022-04-13",
+        "summary": "UKSPF prospectus under which North Kesteven received place investment funding for Sleaford and other community improvements."
+      }
+    ]
+  },
+  {
+    "id": "north-lincolnshire-humber-freeport-south-humber-bank-2024",
+    "title": "Humber Freeport – South Humber Bank Tax Site and Energy Investment",
+    "description": "North Lincolnshire Council is a key partner in the Humber Freeport, with the South Humber Bank identified as a principal investment tax site for energy transition, offshore wind manufacturing, clean hydrogen and associated port logistics. The council is working with Associated British Ports and the Freeport Board to deliver enabling infrastructure including road improvements, utilities and digital connectivity to accelerate inward investment around Immingham and North Lincolnshire.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "8f566f13-8281-4167-8a26-eff47173c4b6",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Humber Freeport operational since 2022; South Humber Bank tax site attracting significant energy-transition investment and infrastructure enabling works progressing on programme.",
+    "latitude": 53.6328,
+    "longitude": -0.3023,
+    "locationDescription": "South Humber Bank / Immingham area, North Lincolnshire",
+    "locationSource": "Humber Freeport Board",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Humber Freeport",
+        "source": "Humber Freeport Board",
+        "url": "https://www.humberfreeport.co.uk/",
+        "datePublished": "2024-04-01",
+        "summary": "Official Humber Freeport website covering the tax site designations, investment pipeline and infrastructure programme for the South Humber Bank and wider Humber estuary area."
+      },
+      {
+        "type": "URL",
+        "title": "Investment and Business – North Lincolnshire Council",
+        "source": "North Lincolnshire Council",
+        "url": "https://www.northlincs.gov.uk/your-council/investment/",
+        "datePublished": "2024-06-01",
+        "summary": "North Lincolnshire Council investment and business hub covering Humber Freeport, South Humber Bank development and the council's economic growth programme."
+      }
+    ]
+  },
+  {
+    "id": "north-norfolk-north-walsham-heritage-action-zone-2024",
+    "title": "North Walsham Heritage Action Zone",
+    "description": "North Norfolk District Council and Historic England have been delivering the North Walsham Heritage Action Zone (HAZ), a programme of heritage-led regeneration in the market town's historic core. The HAZ includes grants to bring vacant upper floors back into use, shopfront improvement grants, public realm works and skills training for traditional building techniques. The programme has leveraged private investment and improved the town centre's conservation area.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "455ee169-1b26-48ec-bb4c-e27f54121c08",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Heritage Action Zone in active delivery with Historic England funding; grant schemes oversubscribed and multiple heritage assets restored or brought back into active use.",
+    "latitude": 52.8217,
+    "longitude": 1.3873,
+    "locationDescription": "North Walsham town centre conservation area, North Norfolk",
+    "locationSource": "Historic England",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "North Walsham Heritage Action Zone – Historic England",
+        "source": "Historic England",
+        "url": "https://historicengland.org.uk/historic-environment/heritage-action-zones/regenerating-historic-high-streets/north-walsham/",
+        "datePublished": "2024-03-01",
+        "summary": "Historic England programme page for the North Walsham Heritage Action Zone covering heritage-led regeneration with North Norfolk District Council."
+      },
+      {
+        "type": "URL",
+        "title": "Planning and Building – North Norfolk District Council",
+        "source": "North Norfolk District Council",
+        "url": "https://www.north-norfolk.gov.uk/topics/planning-and-building/",
+        "datePublished": "2024-04-01",
+        "summary": "North Norfolk District Council planning hub including the Heritage Action Zone programme and wider regeneration investment in the district."
+      }
+    ]
+  },
+  {
+    "id": "north-northamptonshire-corby-wellingborough-towns-fund-2024",
+    "title": "Corby and Wellingborough Town Investment Plans",
+    "description": "North Northamptonshire Council is overseeing delivery of Town Deal investments in both Corby (£19.9 million) and Wellingborough (£21.9 million), covering town centre regeneration, transport improvements, skills infrastructure and cultural facilities. Key projects include the Corby Cube cultural hub investment, Wellingborough town centre public realm, improved cycling and walking links and employment workspace development. Delivery has continued through 2024–25 with the council acting as accountable body.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "d78a5e12-ade7-47dd-8fee-deead8981365",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Both Town Deals in delivery; some project workstreams have been revised or resequenced following post-pandemic cost increases and the 2021 council reorganisation.",
+    "latitude": 52.4883,
+    "longitude": -0.6989,
+    "locationDescription": "Corby and Wellingborough town centres, North Northamptonshire",
+    "locationSource": "North Northamptonshire Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – North Northamptonshire Council",
+        "source": "North Northamptonshire Council",
+        "url": "https://www.northnorthants.gov.uk/planning-and-building/regeneration",
+        "datePublished": "2024-04-01",
+        "summary": "North Northamptonshire Council regeneration hub covering Town Deal investments in Corby and Wellingborough and the wider economic growth programme."
+      },
+      {
+        "type": "URL",
+        "title": "Towns Fund: Prospectus – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/towns-fund-prospectus",
+        "datePublished": "2019-09-06",
+        "summary": "Government Towns Fund prospectus under which Corby and Wellingborough received a combined £41.8m Town Deal investment."
+      }
+    ]
+  },
+  {
+    "id": "north-somerset-weston-super-mare-seafront-regeneration-2024",
+    "title": "Weston-super-Mare Seafront and Winter Gardens Regeneration",
+    "description": "North Somerset Council is leading long-term regeneration of Weston-super-Mare's seafront and town centre, including Levelling Up Fund investment in the historic Winter Gardens Pavilion and improvements to the Beach Lawns and central seafront zone. The council is also progressing a wider town centre masterplan to enhance the resort offer and attract new investment, and has been working on the Sovereign Centre leisure complex replacement scheme.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "eb713df5-5ed3-4ec7-be9a-ab8b8d0373dd",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Levelling Up Fund allocated for Winter Gardens; design and procurement timelines have extended into 2025, and the wider masterplan remains at consultation stage.",
+    "latitude": 51.3462,
+    "longitude": -2.9772,
+    "locationDescription": "Weston-super-Mare seafront and town centre, North Somerset",
+    "locationSource": "North Somerset Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration and Development – North Somerset Council",
+        "source": "North Somerset Council",
+        "url": "https://www.n-somerset.gov.uk/planning-development/regeneration-development",
+        "datePublished": "2024-06-01",
+        "summary": "North Somerset Council regeneration and development page covering the Weston-super-Mare seafront programme, Winter Gardens investment and wider town centre masterplan."
+      },
+      {
+        "type": "URL",
+        "title": "Levelling Up Fund – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/collections/levelling-up-fund",
+        "datePublished": "2021-10-27",
+        "summary": "Government Levelling Up Fund collection under which North Somerset received investment for the Winter Gardens heritage regeneration in Weston-super-Mare."
+      }
+    ]
+  },
+  {
+    "id": "north-tyneside-murton-gap-strategic-housing-2024",
+    "title": "Murton Gap Strategic Housing and Infrastructure Scheme",
+    "description": "North Tyneside Council has allocated the Murton Gap site near Whitley Bay as a major strategic growth location, providing approximately 2,500 new homes alongside primary roads, schools and community infrastructure. The council is progressing planning applications for the first residential phases and coordinating with Homes England and developers to ensure timely infrastructure delivery. The scheme is a key component of North Tyneside's Local Plan and the North East's housing growth agenda.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "d951ce9f-7115-411c-965c-102e236b37d1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Site allocated in adopted Local Plan; planning applications for first phases submitted but highway infrastructure and ecological mitigation requirements are extending pre-commencement timescales.",
+    "latitude": 55.0448,
+    "longitude": -1.4453,
+    "locationDescription": "Murton Gap, Whitley Bay, North Tyneside",
+    "locationSource": "North Tyneside Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning and Development – North Tyneside Council",
+        "source": "North Tyneside Council",
+        "url": "https://www.northtyneside.gov.uk/planning-and-building/planning",
+        "datePublished": "2024-05-01",
+        "summary": "North Tyneside Council planning hub covering the Murton Gap strategic allocation, Local Plan delivery and major development sites across the borough."
+      }
+    ]
+  },
+  {
+    "id": "north-warwickshire-atherstone-active-travel-ukspf-2024",
+    "title": "Atherstone Town Centre Active Travel and Public Realm Improvements",
+    "description": "North Warwickshire Borough Council has been delivering active travel and public realm improvements in Atherstone town centre, the borough's principal market town, using UK Shared Prosperity Fund allocations. Works include new cycling and walking routes, pavement resurfacing and enhancements to the historic Long Street shopping area. The programme supports the council's ambitions to improve local high streets and encourage sustainable transport in this largely rural Warwickshire district.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "b472768f-ae31-4358-b378-ddd3b9c41051",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "UKSPF-funded works delivered through 2024 with active travel and public realm improvements completed in Atherstone on programme.",
+    "latitude": 52.5775,
+    "longitude": -1.5418,
+    "locationDescription": "Atherstone town centre, North Warwickshire",
+    "locationSource": "North Warwickshire Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning and Economic Development – North Warwickshire Borough Council",
+        "source": "North Warwickshire Borough Council",
+        "url": "https://www.northwarks.gov.uk/planning",
+        "datePublished": "2024-04-01",
+        "summary": "North Warwickshire Borough Council planning and economic development hub covering UKSPF investment, Atherstone improvements and the Local Plan infrastructure programme."
+      },
+      {
+        "type": "URL",
+        "title": "UK Shared Prosperity Fund Prospectus – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/uk-shared-prosperity-fund-prospectus",
+        "datePublished": "2022-04-13",
+        "summary": "UKSPF prospectus under which North Warwickshire received investment for place-based improvements including active travel and town centre works in Atherstone."
+      }
+    ]
+  },
+  {
+    "id": "north-west-leicestershire-coalville-town-centre-masterplan-2024",
+    "title": "Coalville Town Centre Masterplan and UKSPF Investment",
+    "description": "North West Leicestershire District Council has adopted a Masterplan for Coalville town centre and is delivering investment through the UK Shared Prosperity Fund targeting the High Street, market facilities and connectivity improvements. The programme addresses long-standing vacancy and decline in the former mining town's commercial core, and includes shopfront grant schemes, public realm improvements and feasibility work for anchor building redevelopment.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "15541f0a-5a34-489d-a3c5-7841be2f3ab2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Masterplan adopted and UKSPF investment in delivery; anchor site redevelopment remains subject to market and funding conditions, limiting transformation pace.",
+    "latitude": 52.7245,
+    "longitude": -1.3688,
+    "locationDescription": "Coalville town centre, North West Leicestershire",
+    "locationSource": "North West Leicestershire District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Economic Development – North West Leicestershire District Council",
+        "source": "North West Leicestershire District Council",
+        "url": "https://www.nwleicestershire.gov.uk/business-and-licensing/economic-development/",
+        "datePublished": "2024-04-01",
+        "summary": "North West Leicestershire District Council economic development hub covering the Coalville Town Centre Masterplan, UKSPF investment and wider growth programmes."
+      },
+      {
+        "type": "URL",
+        "title": "UK Shared Prosperity Fund Prospectus – GOV.UK",
+        "source": "UK Government",
+        "url": "https://www.gov.uk/government/publications/uk-shared-prosperity-fund-prospectus",
+        "datePublished": "2022-04-13",
+        "summary": "UKSPF prospectus under which North West Leicestershire received investment to address town centre decline in Coalville and support economic recovery."
+      }
+    ]
+  },
+  {
+    "id": "north-yorkshire-a64-dualling-programme-2024",
+    "title": "A64 York to Scarborough Improvement and Safety Programme",
+    "description": "North Yorkshire Council, working with National Highways and the Department for Transport, is progressing improvement proposals for the A64 between York and Scarborough, including dualling of key single-carriageway sections and safety interventions at high-risk junctions. The council adopted A64 improvements as a strategic transport priority following the 2023 unitarisation, and has been undertaking route development, stakeholder engagement and pre-application work with National Highways through 2024.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "26181f9a-8e89-4fef-8923-1e0ff3fecc12",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Pre-application engagement and route development under way; full development consent order submission and funding commitment remain outstanding, creating programme uncertainty.",
+    "latitude": 54.0015,
+    "longitude": -0.9875,
+    "locationDescription": "A64 corridor between York and Scarborough, North Yorkshire",
+    "locationSource": "North Yorkshire Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Roads and Transport – North Yorkshire Council",
+        "source": "North Yorkshire Council",
+        "url": "https://www.northyorks.gov.uk/roads-and-transport",
+        "datePublished": "2024-06-01",
+        "summary": "North Yorkshire Council roads and transport hub covering the A64 improvement programme, strategic transport studies and capital investment in the county's road network."
+      },
+      {
+        "type": "URL",
+        "title": "A64 – National Highways",
+        "source": "National Highways",
+        "url": "https://nationalhighways.co.uk/our-roads/yorkshire-and-north-east/a64/",
+        "datePublished": "2024-04-01",
+        "summary": "National Highways page for the A64 route covering current improvement studies, safety schemes and the development consent order process for long-term dualling proposals."
+      }
+    ]
+  }
+]

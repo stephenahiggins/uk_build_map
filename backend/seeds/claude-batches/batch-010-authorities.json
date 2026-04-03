@@ -1,0 +1,178 @@
+[
+  {
+    "id": "8a75c1ed-7176-4dba-803c-e03aaeea310e",
+    "name": "Rother",
+    "code": "E07000064",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "129ae05e-849f-4e94-8dfb-46eb4da97f83",
+    "name": "Rotherham",
+    "code": "E08000018",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "20509f09-89e9-4ccf-a48b-f36af473e37c",
+    "name": "Rugby",
+    "code": "E07000220",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5308ed4d-331a-49ef-b207-e0dbd90130d1",
+    "name": "Runnymede",
+    "code": "E07000212",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "47f68eb2-2bd2-4740-9ff6-d5b8437f453b",
+    "name": "Rushcliffe",
+    "code": "E07000176",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1344add6-5fe2-4e68-9a6f-8300a0238d83",
+    "name": "Rushmoor",
+    "code": "E07000092",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "19becee2-f033-432c-8680-77ab35773e74",
+    "name": "Rutland",
+    "code": "E06000017",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "f9e5f7df-73a6-47ad-a033-4ff9199ee374",
+    "name": "Salford",
+    "code": "E08000006",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "ef751ea7-5965-4415-9e1e-f84dfe31d207",
+    "name": "Sandwell",
+    "code": "E08000028",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "b6363a2d-dd76-4bc4-b220-a333fe3cce0e",
+    "name": "Sefton",
+    "code": "E08000014",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "a0087b01-90e7-45ed-8563-f065eb387081",
+    "name": "Sevenoaks",
+    "code": "E07000111",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c8342b98-d53e-4234-b1a5-3103487c2009",
+    "name": "Sheffield",
+    "code": "E08000019",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1a8a9bca-852d-4a65-8574-54cf638079b5",
+    "name": "Shropshire",
+    "code": "E06000051",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "14085765-b2f6-4bde-9ea5-6f7ae0dbba30",
+    "name": "Slough",
+    "code": "E06000039",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c43f0394-ce3e-44bd-b757-872975fd6cd2",
+    "name": "Solihull",
+    "code": "E08000029",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "ebc3c1e0-496e-4ae6-a066-5d6f3d65a565",
+    "name": "Somerset",
+    "code": "E06000066",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "6161bc31-3a78-42d3-88b6-d87511894f49",
+    "name": "South Cambridgeshire",
+    "code": "E07000012",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "31455f7b-45c1-43a5-98ef-9c65fd7472ca",
+    "name": "South Derbyshire",
+    "code": "E07000039",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "594ce1a6-620d-427d-902a-d84b7e921ac1",
+    "name": "South Gloucestershire",
+    "code": "E06000025",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3a6d9613-ba44-4884-826e-4dd5a898d1ce",
+    "name": "South Hams",
+    "code": "E07000044",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "0f33e97f-93e5-4f97-b690-b2731f378c3a",
+    "name": "South Holland",
+    "code": "E07000140",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "91fe8b17-0c86-4f0e-9518-342da911a301",
+    "name": "South Kesteven",
+    "code": "E07000141",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "79fd5cc0-d051-4fff-b14d-2b091a17ae1f",
+    "name": "Swale",
+    "code": "E07000113",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "65a306aa-86ab-49c7-a9b2-3d50d232db7e",
+    "name": "Swindon",
+    "code": "E06000030",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1782fb1e-571c-4131-882c-1852f829e384",
+    "name": "Tameside",
+    "code": "E08000008",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c9e5ea3e-c751-4789-bb68-580befd37617",
+    "name": "Tamworth",
+    "code": "E07000199",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "342d04fd-d711-44d1-811d-2dd7a28bc365",
+    "name": "Tandridge",
+    "code": "E07000215",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "e689fd0a-47d4-496b-9d20-293836d5bae7",
+    "name": "Teignbridge",
+    "code": "E07000045",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c029a725-1c3e-431f-8dd3-d37c0af1755f",
+    "name": "Telford and Wrekin",
+    "code": "E06000020",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "bc246478-db44-4c02-960d-150ab71d3489",
+    "name": "Tendring",
+    "code": "E07000076",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c3069c84-6135-4764-8f30-cbbe22981484",
+    "name": "Test Valley",
+    "code": "E07000093",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3fc2ec4a-f23a-4ef0-b677-c009c475238f",
+    "name": "Tewkesbury",
+    "code": "E07000083",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1fc80db5-b0c9-48f6-b8a3-c4ab3bcf5ec1",
+    "name": "Thanet",
+    "code": "E07000114",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "b287a159-9b3d-4d7e-a635-a0eb98650e2d",
+    "name": "Three Rivers",
+    "code": "E07000102",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "bf52a64d-21cd-4601-b294-7f218f0cadc4",
+    "name": "Thurrock",
+    "code": "E06000034",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "bb526d3d-dbca-4b62-8a9e-19f03a3b1a6b",
+    "name": "Tonbridge and Malling",
+    "code": "E07000115",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "82cc34ae-9c27-4790-b415-124b6faf1593",
+    "name": "Torbay",
+    "code": "E06000027",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "04db7ce9-76cf-4ad6-ac66-c762d67cb0ee",
+    "name": "Torridge",
+    "code": "E07000046",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "6f235cd3-f603-4c15-b42c-d567c200a3b8",
+    "name": "Tower Hamlets",
+    "code": "E09000030",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "2a6eb4bc-cd1f-4c14-ae0d-647ae499dfdc",
+    "name": "Trafford",
+    "code": "E08000009",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "aa18f7ef-eb31-485f-9978-0d841adc80aa",
+    "name": "Tunbridge Wells",
+    "code": "E07000116",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "46a55cc5-6a96-41ac-8398-423f26511831",
+    "name": "Uttlesford",
+    "code": "E07000077",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "57fdb475-af3a-4bef-96c8-447b65bd627e",
+    "name": "Vale of White Horse",
+    "code": "E07000180",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "0192253e-0ea6-4a2b-a195-1065b63f5acb",
+    "name": "Wakefield",
+    "code": "E08000036",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

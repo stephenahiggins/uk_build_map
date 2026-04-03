@@ -1,7 +1,11 @@
+import 'dotenv/config';
 import { createPrismaClient } from '../src/lib/createPrismaClient';
 import { Prisma, ProjectType, ProjectStatus, EvidenceType } from '@prisma/client';
 import * as fs from 'fs';
 import * as path from 'path';
+import { resolveDatabaseUrlForHostScripts } from './lib/resolveDatabaseUrlForHostScripts';
+
+resolveDatabaseUrlForHostScripts();
 
 const prisma = createPrismaClient();
 

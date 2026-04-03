@@ -292,8 +292,6 @@ async function clearBackendProjects(prisma: BackendPrisma) {
     prisma.evidenceItem.deleteMany({}),
     prisma.keyResult.deleteMany({}),
     prisma.objective.deleteMany({}),
-    prisma.lLMSummary.deleteMany({}),
-    prisma.discoveredProject.deleteMany({}),
     prisma.project.deleteMany({}),
   ]);
 }

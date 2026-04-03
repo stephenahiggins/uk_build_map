@@ -42,12 +42,16 @@ This guide explains how to seed national, regional, and local projects into your
 
 ## Running the Seeder
 
-1. Place your JSON file in the `seeds/` directory (recommended), e.g., `seeds/national-starter.json`.
+1. Place your JSON file in the `seeds/` directory (recommended), e.g., `seeds/national-starter.json` or `seeds/staging.seed.json`.
 2. Run the seeder using the Makefile, specifying the path to your JSON file with the `SEED` variable:
 
 **Example command:**
 ```sh
 make seed-projects SEED=seeds/national-starter.json
+
+Or for staging:
+
+make seed-projects SEED=seeds/staging.seed.json
 ```
 
 This will run the seeding script inside your Docker container, using the specified JSON file.
@@ -60,6 +64,10 @@ You can also run the script directly (outside Docker):
 
 ```
 npx ts-node scripts/seedProjectsFromFile.ts seeds/national-starter.json
+
+Or for staging:
+
+npx ts-node scripts/seedProjectsFromFile.ts seeds/staging.seed.json
 ```
 
 Or add to `package.json` scripts:
@@ -72,6 +80,64 @@ Or add to `package.json` scripts:
 - The script uses `upsert`, so existing projects with the same `id` will not be duplicated.
 - This script can be adapted for other models by changing the Prisma call and JSON structure.
 - Make sure referenced IDs (e.g., `regionId`, `localAuthorityId`, `createdById`) exist in your database.
+
+## Codex batch workflow
+
+Use this when you want human-in-the-loop research with IDE tools instead of paid API discovery.
+
+1. Ensure your **host** can reach MySQL. If `backend/.env` uses `DATABASE_URL=...@db:3306` (Docker-only hostname), add **`BACKEND_DATABASE_URL=mysql://USER:PASS@127.0.0.1:3307/DATABASE`** to **`backend/.env`** so `npm run seed:export-local-authorities` (and similar scripts) use your mapped port. Alternatively set **`LOCAL_DATABASE_URL`** to override everything.
+
+2. From **`agents/`** (or repo root `./agents/make go`):
+
+   ```sh
+   make go
+   ```
+
+   This runs `seed:export-local-authorities` and can be followed by `npm run coverage:authorities` plus `npm run seed:generate-codex-batches -- --authorities-json seeds/local-authorities.json`, producing `seeds/local-authorities.json`, `seeds/authority-coverage.snapshot.json`, and `seeds/codex-batches/batch-*-PROMPT.md`.
+
+3. Open each `batch-*-PROMPT.md` in **Codex**, research the listed under-covered authorities, and save the resulting JSON array as `backend/seeds/codex-batches/out/batch-NNN.json` (matching the batch number).
+
+4. Merge and seed:
+
+   ```sh
+   npm run seed:merge-codex-outputs
+   make -C ../backend seed-projects SEED=seeds/merged-from-codex.json
+   ```
+
+Optional: `npm run seed:merge-codex-outputs -- --allow-failed-urls` only for explicit staging workflows. Normal imports should keep URL validation enabled.
+
+## Overnight automated run
+
+From `agents/`, you can run the whole Codex-credit pipeline overnight:
+
+```sh
+make overnight-growth-map ARGS="--yes --import --model gpt-5.2"
+```
+
+This chains:
+
+1. `npm run coverage:authorities`
+2. `npm run seed:export-local-authorities`
+3. `npm run seed:generate-codex-batches -- --authorities-json seeds/local-authorities.json`
+4. `./agents/scripts/run-codex-seed-batches.sh`
+5. `npm run seed:merge-codex-outputs`
+6. optional import, `npm run sync:geo`, `npm run recompute:evaluations:all`, and a fresh authority coverage snapshot
+
+For acceptance testing, verify the overnight output picks up known projects such as HS2 and the Stonehenge tunnel, and that the Stonehenge tunnel remains classified as `RED`.
+
+## Geo sync after migrate
+
+After migrating projects from agents (or seeding JSON with lat/lng), assign **region** and **local authority** from official boundaries:
+
+```sh
+cd backend && npm run sync:geo
+```
+
+Use `scripts/syncGeoBoundaries.ts --projects-only` if region/LAD polygons are already loaded.
+
+## Future: structured public sources (IPA, planning registers)
+
+For more even UK coverage at lower cost, prefer **connectors** that ingest free government datasets (e.g. Infrastructure and Projects Authority GMPP, Planning Inspectorate) into the same JSON shape as above. That work is tracked separately from this seeding flow.
 
 ---
 

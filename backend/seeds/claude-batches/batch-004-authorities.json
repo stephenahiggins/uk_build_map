@@ -1,0 +1,178 @@
+[
+  {
+    "id": "ec7bacad-6fd4-49d8-b03b-f385edceae36",
+    "name": "Dartford",
+    "code": "E07000107",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "55a6a888-b4fd-4c08-862a-5193175639cc",
+    "name": "Derby",
+    "code": "E06000015",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "477bad74-9175-4081-aa92-ba38262782bf",
+    "name": "Derbyshire Dales",
+    "code": "E07000035",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1a13033a-7cf6-40da-b7db-658832c3250d",
+    "name": "Doncaster",
+    "code": "E08000017",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "0a7eec36-8501-4ac4-94fa-b6307157e0c0",
+    "name": "Dorset",
+    "code": "E06000059",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "11877e29-f3a9-48b6-adf0-d28cb5f5e2d6",
+    "name": "Dover",
+    "code": "E07000108",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "9bf7def2-da4b-4906-8de5-d6fb7c9b6570",
+    "name": "Dudley",
+    "code": "E08000027",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1795b1c7-413a-444c-a9d3-30661cdf7ec9",
+    "name": "Ealing",
+    "code": "E09000009",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "8d33ba9e-f1cb-489c-a7fa-83e2c53b1ce2",
+    "name": "East Cambridgeshire",
+    "code": "E07000009",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "bc34f0f3-2116-4264-8840-e806a29b7cba",
+    "name": "East Devon",
+    "code": "E07000040",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "b473e5d1-c527-4a0a-bee1-1c33f8e2dcef",
+    "name": "East Hampshire",
+    "code": "E07000085",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "061f24d2-8db5-4afe-88c0-903d34abb795",
+    "name": "East Hertfordshire",
+    "code": "E07000242",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "83569b61-4cbf-469e-b2ce-0f29a4eedb30",
+    "name": "East Lindsey",
+    "code": "E07000137",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "fd54eb81-620d-4f25-88f4-44d16c1dd5d2",
+    "name": "East Riding of Yorkshire",
+    "code": "E06000011",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3a9d3532-ce84-41e9-a5a6-4ebcf29f2988",
+    "name": "East Staffordshire",
+    "code": "E07000193",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "167fa00f-0939-45ce-aae4-bc2a52e23b22",
+    "name": "East Suffolk",
+    "code": "E07000244",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "8877dc28-1f35-4641-9e18-e378ae0c1ee4",
+    "name": "Eastbourne",
+    "code": "E07000061",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3061db65-662a-42ce-98d4-662b8829abe2",
+    "name": "Eastleigh",
+    "code": "E07000086",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "24578131-915e-4e3e-a16c-bf08b745e434",
+    "name": "Elmbridge",
+    "code": "E07000207",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "89197ab7-89a3-4a38-86fb-f72f21f3e521",
+    "name": "Enfield",
+    "code": "E09000010",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "9c5d53b8-ee3d-4ad0-8e23-be31d153e006",
+    "name": "Epping Forest",
+    "code": "E07000072",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "eb069eae-ca05-473e-bbde-02c3f3e2a85a",
+    "name": "Epsom and Ewell",
+    "code": "E07000208",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

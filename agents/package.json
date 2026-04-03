@@ -4,13 +4,14 @@
   "type": "module",
   "main": "dist/cli.js",
   "scripts": {
-    "build": "tsup src/cli.ts --format esm,cjs --dts --sourcemap",
+    "build": "tsup src/cli.ts src/ragAgent.ts --format esm,cjs --dts --sourcemap",
     "start": "node dist/cli.js",
     "dev": "ts-node src/cli.ts",
     "debug": "ts-node --inspect-brk src/cli.ts",
     "convert-sqlite": "ts-node src/sqliteToPrismaSeed.ts",
     "seed": "ts-node prisma/seed.ts",
-    "migrate-backend": "ts-node src/cli.ts migrate-backend"
+    "migrate-backend": "ts-node src/cli.ts migrate-backend",
+    "rag": "ts-node src/ragAgent.ts"
   },
   "dependencies": {
     "@google/genai": "^1.12.0",

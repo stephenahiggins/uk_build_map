@@ -1,0 +1,146 @@
+[
+  {
+    "id": "5debc648-a144-4627-aac6-84e5b9973a9f",
+    "name": "Colchester",
+    "code": "E07000071",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "16483efb-f5b8-40b7-a5ee-92de3bb4daf4",
+    "name": "Mid Sussex",
+    "code": "E07000228",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "455ee169-1b26-48ec-bb4c-e27f54121c08",
+    "name": "North Norfolk",
+    "code": "E07000147",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "9db29c9f-fb30-42d5-b6a2-4de7303bc610",
+    "name": "St. Helens",
+    "code": "E08000013",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "b5c82f1a-f6dd-455c-b215-d179931976f7",
+    "name": "Stoke-on-Trent",
+    "code": "E06000021",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "79fd5cc0-d051-4fff-b14d-2b091a17ae1f",
+    "name": "Swale",
+    "code": "E07000113",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "342d04fd-d711-44d1-811d-2dd7a28bc365",
+    "name": "Tandridge",
+    "code": "E07000215",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "76c1ad20-5680-40ad-9485-cd47cfd4fdd3",
+    "name": "Watford",
+    "code": "E07000103",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "c9e5ea3e-c751-4789-bb68-580befd37617",
+    "name": "Tamworth",
+    "code": "E07000199",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "175678cf-60cf-473c-8ddc-ddf99e6c46ae",
+    "name": "Burnley",
+    "code": "E07000117",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "477bad74-9175-4081-aa92-ba38262782bf",
+    "name": "Derbyshire Dales",
+    "code": "E07000035",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "57fdb475-af3a-4bef-96c8-447b65bd627e",
+    "name": "Vale of White Horse",
+    "code": "E07000180",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "dfa0cab3-b5ed-4352-8df2-0a5e42065d78",
+    "name": "Dacorum",
+    "code": "E07000096",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "f5a751c5-f5ae-432d-a898-4cff1275795a",
+    "name": "Hammersmith and Fulham",
+    "code": "E09000013",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "fdc9a069-655c-42a5-8f80-818a34506c18",
+    "name": "Hillingdon",
+    "code": "E09000017",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "31455f7b-45c1-43a5-98ef-9c65fd7472ca",
+    "name": "South Derbyshire",
+    "code": "E07000039",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "4913c47e-4926-4305-ba51-1f01707f1d0b",
+    "name": "Sutton",
+    "code": "E09000029",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "5d1ac344-2735-4c65-8dab-54b3e922fcb7",
+    "name": "West Berkshire",
+    "code": "E06000037",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  }
+]

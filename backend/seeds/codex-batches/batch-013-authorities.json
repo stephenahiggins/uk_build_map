@@ -1,0 +1,146 @@
+[
+  {
+    "id": "0871ae5f-12f0-4fdd-a225-31464ca0a2ae",
+    "name": "Blackpool",
+    "code": "E06000009",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "c43f0394-ce3e-44bd-b757-872975fd6cd2",
+    "name": "Solihull",
+    "code": "E08000029",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "1f94fb79-1821-46be-b1e2-7f22bd0d7af1",
+    "name": "County Durham",
+    "code": "E06000047",
+    "countryCode": "ENGLAND",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
+  },
+  {
+    "id": "3416b16a-946a-4bed-b1ef-d0f6bb219530",
+    "name": "Cheshire East",
+    "code": "E06000049",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "4c20d442-3d63-4ea2-9056-ce2042c0b583",
+    "name": "Huntingdonshire",
+    "code": "E07000011",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "a000dccd-285c-4e72-a57f-4913f58c5a31",
+    "name": "West Lindsey",
+    "code": "E07000142",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "9f137a19-a0df-49f7-afd2-4069462499b3",
+    "name": "Wigan",
+    "code": "E08000010",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "1d315c4c-7ac6-4fa3-a378-db6108e709bf",
+    "name": "Blaby",
+    "code": "E07000129",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "56733ec9-49f1-401a-8d5b-5cc99d6485d0",
+    "name": "Brent",
+    "code": "E09000005",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "f9e5f7df-73a6-47ad-a033-4ff9199ee374",
+    "name": "Salford",
+    "code": "E08000006",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "929b6c99-e2d5-437e-ae6a-60cfb16f0060",
+    "name": "Darlington",
+    "code": "E06000005",
+    "countryCode": "ENGLAND",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
+  },
+  {
+    "id": "eb713df5-5ed3-4ec7-be9a-ab8b8d0373dd",
+    "name": "North Somerset",
+    "code": "E06000024",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "de278ff3-97fd-4e36-9d36-498aaf3de9e8",
+    "name": "Newark and Sherwood",
+    "code": "E07000175",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "814d26be-4a5a-4b6f-9c62-df6fbb1369c6",
+    "name": "Northumberland",
+    "code": "E06000057",
+    "countryCode": "ENGLAND",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
+  },
+  {
+    "id": "8877dc28-1f35-4641-9e18-e378ae0c1ee4",
+    "name": "Eastbourne",
+    "code": "E07000061",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "a8c9f880-1b45-4f30-aa1a-fa1d63f0bc01",
+    "name": "Waltham Forest",
+    "code": "E09000031",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "5d6ab247-42b5-4f3a-8aef-227771b99e68",
+    "name": "Bath and North East Somerset",
+    "code": "E06000022",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "a5680ade-8bd2-4ab7-9acf-e72fe75a27c6",
+    "name": "Harrow",
+    "code": "E09000015",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  }
+]

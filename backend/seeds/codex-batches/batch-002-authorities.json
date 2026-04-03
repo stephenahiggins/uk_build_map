@@ -1,0 +1,146 @@
+[
+  {
+    "id": "00bc7835-970c-4876-8d81-e6a5c9595f5c",
+    "name": "Wandsworth",
+    "code": "E09000032",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "6f34243b-9c71-47a7-bafd-3b077c0e8730",
+    "name": "Wyre",
+    "code": "E07000128",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "09fa2982-ea4f-4206-a9c3-0577830ce00c",
+    "name": "Broxbourne",
+    "code": "E07000095",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "625db3b5-baeb-42c9-9fc7-03427e0cae2d",
+    "name": "City of London",
+    "code": "E09000001",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "b06217cc-29da-4991-90d2-7c1c2ae08ee9",
+    "name": "Hertsmere",
+    "code": "E07000098",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "5308ed4d-331a-49ef-b207-e0dbd90130d1",
+    "name": "Runnymede",
+    "code": "E07000212",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "d62b55cf-3543-4cf8-a982-aaac041ea7c7",
+    "name": "Surrey Heath",
+    "code": "E07000214",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "04db7ce9-76cf-4ad6-ac66-c762d67cb0ee",
+    "name": "Torridge",
+    "code": "E07000046",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "587654ed-f27c-43bf-8a88-1e5a0e3f1760",
+    "name": "Warwick",
+    "code": "E07000222",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "6148e973-871b-48b6-bf49-96d74a448450",
+    "name": "Waverley",
+    "code": "E07000216",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "2bc5e6ac-fa4e-476d-a18e-dc61b02c48ea",
+    "name": "Wychavon",
+    "code": "E07000238",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "53ac3a0e-fa9e-4874-8801-2209272aab5f",
+    "name": "Broadland",
+    "code": "E07000144",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "30428149-cba0-4d0f-925a-84428a8245d0",
+    "name": "Canterbury",
+    "code": "E07000106",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "3061db65-662a-42ce-98d4-662b8829abe2",
+    "name": "Eastleigh",
+    "code": "E07000086",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "9b977417-5e3a-4c47-bba7-ea1bfb7fc7cf",
+    "name": "High Peak",
+    "code": "E07000037",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "e4cf69d7-f5c7-48e0-b646-4c46773f5bb7",
+    "name": "Kingston upon Thames",
+    "code": "E09000021",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "f741388a-f4e2-49f5-977b-dcf17a75d0a3",
+    "name": "Melton",
+    "code": "E07000133",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "20509f09-89e9-4ccf-a48b-f36af473e37c",
+    "name": "Rugby",
+    "code": "E07000220",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  }
+]

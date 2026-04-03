@@ -1,0 +1,178 @@
+[
+  {
+    "id": "991a2631-5af6-4f86-bd50-5031229ec62d",
+    "name": "Bournemouth, Christchurch and Poole",
+    "code": "E06000058",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "89ba0b58-baf3-4a7c-9ca9-d82c41059681",
+    "name": "Bracknell Forest",
+    "code": "E06000036",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "4228d1cd-c9f6-4824-bb60-7656f06612a4",
+    "name": "Bradford",
+    "code": "E08000032",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "90db78e8-e501-4aac-abd9-8a5d46562cfe",
+    "name": "Braintree",
+    "code": "E07000067",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c77a8255-6252-4556-920a-2b0d111748aa",
+    "name": "Breckland",
+    "code": "E07000143",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "56733ec9-49f1-401a-8d5b-5cc99d6485d0",
+    "name": "Brent",
+    "code": "E09000005",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "95924b8c-df87-4994-89c9-1ec1e8cb21ef",
+    "name": "Brentwood",
+    "code": "E07000068",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "b95e88d6-0f9e-4e02-8844-7d7b84748104",
+    "name": "Brighton and Hove",
+    "code": "E06000043",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "aae3ef62-d578-4f92-ab26-fdf1fd4826c1",
+    "name": "Bristol, City of",
+    "code": "E06000023",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "53ac3a0e-fa9e-4874-8801-2209272aab5f",
+    "name": "Broadland",
+    "code": "E07000144",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "bbcdedd5-a1fa-4555-94e4-7bc38591a29d",
+    "name": "Bromley",
+    "code": "E09000006",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c01c2169-8b2d-4633-82fa-bfc58e817882",
+    "name": "Bromsgrove",
+    "code": "E07000234",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "09fa2982-ea4f-4206-a9c3-0577830ce00c",
+    "name": "Broxbourne",
+    "code": "E07000095",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1a375801-aa11-4183-b770-50ddf8da615b",
+    "name": "Broxtowe",
+    "code": "E07000172",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "75d44285-e9d2-4622-936b-4036a76da7d0",
+    "name": "Buckinghamshire",
+    "code": "E06000060",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "175678cf-60cf-473c-8ddc-ddf99e6c46ae",
+    "name": "Burnley",
+    "code": "E07000117",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "eab1fa0f-b6fd-4f3c-8230-f74d48588035",
+    "name": "Bury",
+    "code": "E08000002",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "8025f679-fb6f-49fb-8b1e-0f9a9396b8cf",
+    "name": "Calderdale",
+    "code": "E08000033",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "6bd33e35-4bc1-45d1-8ccc-3bff8fdebd3d",
+    "name": "Cambridge",
+    "code": "E07000008",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "81c87fa4-2637-4f67-88fd-1bdda7237ae7",
+    "name": "Camden",
+    "code": "E09000007",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "e9f58529-27d0-4f0e-b356-af551db11db7",
+    "name": "Cannock Chase",
+    "code": "E07000192",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "30428149-cba0-4d0f-925a-84428a8245d0",
+    "name": "Canterbury",
+    "code": "E07000106",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

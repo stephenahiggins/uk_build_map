@@ -14,8 +14,8 @@ import { migrateAgentsDataToBackend } from "./migrateBackend";
 import { log } from "./logger";
 import { normalizeProjectTitle } from "./utils/projectNormalization";
 import {
+  evaluateProjectDeterministically,
   evaluateProjectWithGemini,
-  evaluateProjectWithOpenAI,
 } from "../../backend/src/lib/projectEvaluation";
 import { createLlmBudget } from "./llmBudget";
 import {
@@ -23,11 +23,6 @@ import {
   handleGeminiRateLimit,
   isGeminiRateLimitError,
 } from "./geminiRuntime";
-import {
-  getOpenAIApiKey,
-  handleOpenAIRateLimit,
-  isOpenAIRateLimitError,
-} from "./openaiRuntime";
 import { fetchFromConnectors, resolveConnectorNames } from "./connectors";
 import type { ConnectorProject, ConnectorEvidence } from "./connectors/types";
 import { listStageFiles, readStageFile, writeStageFile } from "./staging";
@@ -88,12 +83,7 @@ function parseScrapeCliOptions(raw: Record<string, any>): CliOptions {
   if (raw.since !== undefined) parsed.since = String(raw.since);
   if (raw.stage !== undefined) parsed.stage = Boolean(raw.stage);
   if (raw.provider !== undefined) parsed.provider = String(raw.provider);
-  if (raw.local !== undefined) {
-    parsed.local = Boolean(raw.local);
-    if (typeof raw.local === "string" && raw.local.trim().length > 0) {
-      parsed.localBaseUrl = raw.local.trim();
-    }
-  }
+  if (raw.local !== undefined) parsed.local = Boolean(raw.local);
   return parsed;
 }
 
@@ -877,14 +867,11 @@ export async function main(cliOpts?: CliOptions) {
     applyRuntimeOverrides({ PROVIDER: resolveProvider(cliOpts.provider) });
   }
   if (cliOpts?.local || cliOpts?.localBaseUrl) {
-    applyRuntimeOverrides({
-      PROVIDER: "openai" satisfies LlmProvider,
-      OPENAI_BASE_URL: cliOpts.localBaseUrl || "http://localhost:11434/v1",
-      OPENAI_COMPAT_MODE: "ollama",
-      OPENAI_API_KEY: envValues.OPENAI_API_KEY || "ollama",
-    });
+    throw new Error("Local OpenAI-compatible runtime support has been removed.");
   }
-  validateEnvValues();
+  if (!cliOpts?.noLlm && !cliOpts?.connectorsOnly) {
+    validateEnvValues();
+  }
   if (cliOpts?.ukWide) {
     log("Starting CLI with options:", { ...cliOpts, locale: "United Kingdom" });
   } else {
@@ -904,7 +891,7 @@ if (isDirectRun) {
     .option(
       "-l, --locale <locale>",
       "local region to search for infrastructure projects",
-      "West Yorkshire"
+      "United Kingdom"
     )
     .option("--uk-wide", "run a UK-wide search across nations and English regions")
     .option("-n, --limit <number>", "max projects to process (default: all fetched)")
@@ -915,8 +902,8 @@ if (isDirectRun) {
     )
     .option(
       "-e, --max-evidence <number>",
-      "max evidence items to gather per project (default: 10)",
-      "10"
+      "max evidence items to gather per project (default: 3)",
+      "3"
     )
     .option(
       "-c, --concurrency <number>",
@@ -937,11 +924,7 @@ if (isDirectRun) {
     .option("--stage", "write results to staging instead of committing to the database")
     .option(
       "--provider <provider>",
-      "LLM provider to use (openai|gemini); overrides PROVIDER env var"
-    )
-    .option(
-      "--local [baseUrl]",
-      "use a local OpenAI-compatible endpoint (default: http://localhost:11434/v1)"
+      "LLM provider to use (gemini only for live discovery); connector/manual workflows remain supported without an LLM"
     )
     .action(async (rawOpts) => {
       const parsed = parseScrapeCliOptions(rawOpts);
@@ -970,13 +953,9 @@ if (isDirectRun) {
     .option("--connectors-only", "skip LLM discovery and rely on connectors only")
     .option(
       "--provider <provider>",
-      "LLM provider to use (openai|gemini); overrides PROVIDER env var"
+      "LLM provider to use (gemini only for live discovery); connector/manual workflows remain supported without an LLM"
     )
-    .option(
-      "--local [baseUrl]",
-      "use a local OpenAI-compatible endpoint (default: http://localhost:11434/v1)"
-    )
-    .option("-e, --max-evidence <number>", "max evidence items to gather per project", "5")
+    .option("-e, --max-evidence <number>", "max evidence items to gather per project", "3")
     .option("-c, --concurrency <number>", "number of projects to process concurrently", "3")
     .action(async (rawOpts) => {
       const parsed = parseScrapeCliOptions(rawOpts);
@@ -1137,7 +1116,7 @@ async function run(opts: CliOptions) {
     opts.limit && opts.limit > 0
       ? ukProjects.slice(0, opts.limit)
       : ukProjects;
-  const maxEvidencePerProject = opts.maxEvidence ?? 10;
+  const maxEvidencePerProject = opts.maxEvidence ?? 3;
   const concurrency = Math.max(1, Math.min(opts.concurrency ?? 3, 10));
   log(
     `Processing ${toProcess.length} projects (concurrency=${concurrency}, maxEvidence=${maxEvidencePerProject})`
@@ -1253,37 +1232,36 @@ async function processSingleProject(
   log(`Evaluating project status and location for: ${project.title}...`);
   const canEvaluate = llmBudget.consume("project evaluation");
   const provider = resolveProvider();
-  const evaluationOptions =
-    provider === "gemini"
-      ? {
-          apiKey: getGeminiApiKey(),
-          model: envValues.GEMINI_MODEL || (process.env.MODEL ? envValues.MODEL : "gemini-2.5-flash"),
-        }
-      : {
-          openAIApiKey: getOpenAIApiKey() || envValues.OPENAI_API_KEY,
-          openAIModel: envValues.OPENAI_MODEL || (process.env.MODEL ? envValues.MODEL : "gpt-5-mini"),
-        };
+  const evaluationInput = {
+    projectName: project.title,
+    projectDescription: project.description,
+    locale,
+    evidence: evidenceItems.map((item) => ({
+      title: item.title,
+      summary: item.summary,
+      source: item.source,
+      sourceUrl: item.sourceUrl,
+      evidenceDate: item.evidenceDate,
+      rawText: item.rawText,
+    })),
+  };
 
-  const evaluation = await evaluateProjectWithRetry(
-    {
-      projectName: project.title,
-      projectDescription: project.description,
-      locale,
-      evidence: evidenceItems.map((item) => ({
-        title: item.title,
-        summary: item.summary,
-        source: item.source,
-        sourceUrl: item.sourceUrl,
-        evidenceDate: item.evidenceDate,
-        rawText: item.rawText,
-      })),
-    },
-    {
-      ...evaluationOptions,
-      mockResponse: envValues.MOCK_PROJECT_EVALUATION || !canEvaluate,
-    },
-    provider
-  );
+  const evaluation =
+    provider === "gemini" && canEvaluate
+      ? await evaluateProjectWithRetry(
+          evaluationInput,
+          {
+            apiKey: getGeminiApiKey(),
+            model:
+              envValues.GEMINI_MODEL ||
+              (process.env.MODEL ? envValues.MODEL : "gemini-2.5-flash"),
+            mockResponse: envValues.MOCK_PROJECT_EVALUATION,
+          },
+          provider
+        )
+      : evaluateProjectDeterministically(evaluationInput, {
+          mockResponse: envValues.MOCK_PROJECT_EVALUATION || !canEvaluate,
+        });
 
   projectStatus.status = evaluation.ragStatus;
   projectStatus.statusRationale = evaluation.ragRationale;
@@ -1359,9 +1337,15 @@ function mergeConnectorProjects(
   const seen = new Set<string>();
 
   const add = (project: InfrastructureProject) => {
-    const normalized = normalizeProjectTitle(project.title);
-    if (!normalized || seen.has(normalized)) return;
-    seen.add(normalized);
+    const normalizedTitle = normalizeProjectTitle(project.title);
+    const fingerprint = [
+      normalizedTitle,
+      normalizeProjectTitle(project.localAuthority || ""),
+      normalizeProjectTitle(project.region || ""),
+      normalizeProjectTitle(project.url || ""),
+    ].join("|");
+    if (!normalizedTitle || seen.has(fingerprint)) return;
+    seen.add(fingerprint);
     merged.push(project);
   };
 
@@ -1419,27 +1403,11 @@ async function evaluateProjectWithRetry(
   const mutableOptions = { ...options };
   while (true) {
     try {
-      if (provider === "openai") {
-        return await evaluateProjectWithOpenAI(input, mutableOptions);
+      if (provider !== "gemini") {
+        return evaluateProjectDeterministically(input, mutableOptions);
       }
       return await evaluateProjectWithGemini(input, mutableOptions);
     } catch (err) {
-      if (provider === "openai") {
-        if (!isOpenAIRateLimitError(err)) {
-          throw err;
-        }
-        const action = await handleOpenAIRateLimit("project evaluation");
-        if (action === "abort") {
-          throw err;
-        }
-        const nextKey = getOpenAIApiKey();
-        if (!nextKey) {
-          throw err;
-        }
-        mutableOptions.openAIApiKey = nextKey;
-        continue;
-      }
-
       if (!isGeminiRateLimitError(err)) {
         throw err;
       }

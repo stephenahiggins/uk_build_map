@@ -16,7 +16,13 @@ help:
 	@echo "  make migrate-staged-to-backend MODE=<mode> BACKEND_ENV=<env> BACKEND_URL=<url> FILE=<path> ALL=1  Commit staged JSONs then migrate to backend DB"
 	@echo "  make migrate-to-backend MODE=<mode> BACKEND_ENV=<env> BACKEND_URL=<url>  Migrate to backend"
 	@echo "  make compile-national                                         Continuous UK-wide scrape -> stage -> commit -> migrate"
-	@echo "  make recompute-evaluations                                    Recompute project evaluations via backend helper"
+	@echo "  make recompute-evaluations                                    Fill missing coords + RAG via backend (coords-only mode)"
+	@echo "  make recompute-rag                                            Re-evaluate project RAG status in agents DB"
+	@echo "  make go                                                         Export LAs + generate Codex batch prompts (see README)"
+	@echo "  make go-codex ARGS=\"--yes --model gpt-5.2\"                      Run Codex CLI on each batch-*-PROMPT.md"
+	@echo "  make go-merge                                                   Merge Codex batch JSON outputs into seeds/merged-from-codex.json"
+	@echo "  make overnight-growth-map ARGS=\"--yes --import\"                Run full overnight coverage -> Codex -> merge -> import pipeline"
+	@echo "  ./agents/make go                                                Same as \"make go\" from repo root"
 
 # Build the TypeScript project
 .PHONY: build
@@ -79,3 +85,30 @@ compile-national:
 .PHONY: recompute-evaluations
 recompute-evaluations:
 	$(MAKE) -C ../backend recompute-evaluations
+
+.PHONY: recompute-rag
+recompute-rag: build
+	node dist/ragAgent.js $(ARGS)
+
+# Capped-cost seed prep: export authorities from DB, emit Codex prompt batches (requires backend DATABASE_URL / npm from host)
+.PHONY: go
+go:
+	cd ../backend && npm run coverage:authorities && npm run seed:export-local-authorities && npm run seed:generate-codex-batches -- --authorities-json seeds/local-authorities.json --out-dir seeds/codex-batches
+	@echo ""
+	@echo "Next: make go-codex (runs codex exec per batch), or open batch-*-PROMPT.md manually."
+	@echo "Then: make go-merge (or ./agents/make go-merge)"
+
+.PHONY: go-codex
+go-codex:
+	./scripts/run-codex-seed-batches.sh $(ARGS)
+
+.PHONY: go-merge
+go-merge:
+	cd ../backend && npm run seed:merge-codex-outputs
+	@echo ""
+	@echo "Seed merged file (from repo root): make -C backend seed-projects SEED=seeds/merged-from-codex.json"
+	@echo "(Uses docker-compose per backend/Makefile if that is how you run the API.)"
+
+.PHONY: overnight-growth-map
+overnight-growth-map:
+	./scripts/overnight-growth-map.sh $(ARGS)

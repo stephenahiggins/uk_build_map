@@ -16,7 +16,15 @@
     "format": "npx prettier --write src/**/*.{js,ts,json}",
     "loglevel:change": "runtime-node-refresh",
     "seed": "ts-node prisma/seed.ts",
-    "recompute:evaluations": "ts-node scripts/recomputeProjectEvaluations.ts"
+    "recompute:evaluations": "ts-node scripts/recomputeProjectEvaluations.ts --mode coords-only",
+    "recompute:evaluations:all": "ts-node scripts/recomputeProjectEvaluations.ts --mode evaluation",
+    "coverage:authorities": "ts-node scripts/computeAuthorityCoverage.ts",
+    "seed:export-local-authorities": "ts-node scripts/exportLocalAuthoritiesJson.ts",
+    "seed:generate-codex-batches": "ts-node scripts/generateCodexSeedBatches.ts",
+    "seed:merge-codex-outputs": "ts-node scripts/mergeCodexSeedOutputs.ts",
+    "seed:generate-claude-batches": "ts-node scripts/generateClaudeSeedBatches.ts",
+    "seed:merge-claude-outputs": "ts-node scripts/mergeClaudeSeedOutputs.ts",
+    "sync:geo": "ts-node scripts/syncGeoBoundaries.ts"
   },
   "prisma": {
     "seed": "npx ts-node --project tsconfig.json prisma/seed.ts"
@@ -35,6 +43,8 @@
   "dependencies": {
     "@google/genai": "^1.20.0",
     "@prisma/client": "^5.18.0",
+    "@turf/boolean-point-in-polygon": "^6.5.0",
+    "@turf/helpers": "^6.5.0",
     "@types/cookie-parser": "^1.4.7",
     "@types/morgan": "^1.9.3",
     "@types/swagger-ui-express": "^4.1.6",

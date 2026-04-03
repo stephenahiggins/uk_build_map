@@ -1,0 +1,564 @@
+[
+  {
+    "id": "swindon-theatre-concert-venue-2026",
+    "title": "Swindon Transformational Theatre and Concert Venue",
+    "description": "A new theatre and concert venue for Swindon town centre, backed by £20 million from the Government's Growth Mission Fund. Construction work began in early 2026, representing the largest cultural infrastructure investment in Swindon for decades.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "65a306aa-86ab-49c7-a9b2-3d50d232db7e",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Works commenced March 2026 following £20m Growth Mission Fund award; council press release confirms construction underway.",
+    "latitude": 51.5558,
+    "longitude": -1.7797,
+    "locationDescription": "Swindon town centre",
+    "locationSource": "Council press release",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Work begins to deliver transformational theatre and concert venue in Swindon",
+        "source": "Swindon Borough Council",
+        "url": "https://www.swindon.gov.uk/news/article/1354/work_begins_to_deliver_transformational_theatre_and_concert_venue_in_swindon",
+        "datePublished": "2026-03-01",
+        "summary": "Swindon Borough Council announces construction has started on a new theatre and concert venue funded by £20 million from the Government's Growth Mission Fund."
+      }
+    ]
+  },
+  {
+    "id": "swindon-roads-investment-2025-2029",
+    "title": "Swindon £29m Roads Investment Programme 2025–2029",
+    "description": "Swindon Borough Council has committed over £29 million to road maintenance, resurfacing, and highway improvements across the borough over four years, targeting the most deteriorated routes.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "65a306aa-86ab-49c7-a9b2-3d50d232db7e",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Confirmed four-year programme with council announcement and budget allocation; works ongoing.",
+    "latitude": 51.5558,
+    "longitude": -1.7797,
+    "locationDescription": "Borough-wide, Swindon",
+    "locationSource": "Council press release",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "More than £29m to be spent on Swindon's roads in next four years",
+        "source": "Swindon Borough Council",
+        "url": "https://www.swindon.gov.uk/news/article/1335/more_than_29m_to_be_spent_on_swindons_roads_in_next_four_years",
+        "datePublished": "2025-04-01",
+        "summary": "Swindon Borough Council outlines a four-year, £29m+ investment in highway maintenance and resurfacing across the borough."
+      }
+    ]
+  },
+  {
+    "id": "tameside-bee-network-rail-integration",
+    "title": "Tameside Bee Network Rail Integration",
+    "description": "Tameside is a key beneficiary of Transport for Greater Manchester's Bee Network expansion, integrating local rail services into the unified Bee Network alongside buses and Metrolink. The programme aims to transform public transport across Greater Manchester including the Tameside corridor.",
+    "type": "REGIONAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "1782fb1e-571c-4131-882c-1852f829e384",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Bee Network rail integration is live and progressing; council newsroom confirms Tameside's role in the transport transformation.",
+    "latitude": 53.4899,
+    "longitude": -2.0979,
+    "locationDescription": "Tameside borough, Greater Manchester",
+    "locationSource": "Council newsroom",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Tameside on track for transport transformation",
+        "source": "Tameside Metropolitan Borough Council",
+        "url": "https://www.tameside.gov.uk/Newsroom/Articles/Tameside-on-track-for-transport-transformation",
+        "datePublished": "2025-09-01",
+        "summary": "Tameside Council confirms participation in the Bee Network rail integration programme, bringing local rail services under the unified Greater Manchester transport brand."
+      }
+    ]
+  },
+  {
+    "id": "tamworth-future-high-streets-fund-regeneration",
+    "title": "Tamworth Town Centre Future High Streets Fund Regeneration",
+    "description": "Tamworth is delivering a £21.65 million Future High Streets Fund programme to regenerate the town centre, including public realm improvements, the refurbishment of key heritage buildings, and new commercial and community space in the heart of the town.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "c9e5ea3e-c751-4789-bb68-580befd37617",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "£21.65m FHSF award confirmed; multiple council articles document ongoing milestones and programme delivery.",
+    "latitude": 52.6333,
+    "longitude": -1.6928,
+    "locationDescription": "Tamworth town centre",
+    "locationSource": "Council website",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Delight as Tamworth awarded game-changing £21.65m town centre regeneration",
+        "source": "Tamworth Borough Council",
+        "url": "https://www.tamworth.gov.uk/delight-tamworth-awarded-game-changing-ps2165m-town-centre-regeneration",
+        "datePublished": "2024-06-01",
+        "summary": "Tamworth Borough Council announces it has been awarded £21.65 million through the Future High Streets Fund to deliver transformational regeneration of Tamworth town centre."
+      },
+      {
+        "type": "URL",
+        "title": "Major milestone in Tamworth's regeneration",
+        "source": "Tamworth Borough Council",
+        "url": "https://www.tamworth.gov.uk/major-milestone-tamworths-regeneration",
+        "datePublished": "2025-10-01",
+        "summary": "Tamworth Borough Council marks a major construction milestone in the town centre regeneration programme funded by the Future High Streets Fund."
+      }
+    ]
+  },
+  {
+    "id": "teignbridge-newton-abbot-future-high-street-fund",
+    "title": "Newton Abbot Future High Street Fund",
+    "description": "Teignbridge District Council is delivering the Newton Abbot Future High Street Fund programme, investing in the regeneration of Newton Abbot town centre to improve the public realm, support independent businesses and attract new footfall.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "e689fd0a-47d4-496b-9d20-293836d5bae7",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Programme active and delivery under way; dedicated project page on council website confirms ongoing delivery but full completion not yet reported.",
+    "latitude": 50.5282,
+    "longitude": -3.6128,
+    "locationDescription": "Newton Abbot town centre, Devon",
+    "locationSource": "Council website project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Future High Street Fund – Newton Abbot",
+        "source": "Teignbridge District Council",
+        "url": "https://www.teignbridge.gov.uk/community-and-people/major-projects-and-regeneration/future-high-street-fund/",
+        "datePublished": "2024-01-01",
+        "summary": "Teignbridge District Council's dedicated project page for the Newton Abbot Future High Street Fund programme, outlining investment in town centre regeneration."
+      }
+    ]
+  },
+  {
+    "id": "telford-wellington-regeneration",
+    "title": "Wellington Town Centre Regeneration",
+    "description": "Telford & Wrekin Council is investing in the regeneration of Wellington town centre, with improvements to the public realm, market infrastructure, and key gateway sites to revitalise the historic market town.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "c029a725-1c3e-431f-8dd3-d37c0af1755f",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Dedicated project page on council's investment portal confirms active programme delivery.",
+    "latitude": 52.7028,
+    "longitude": -2.5143,
+    "locationDescription": "Wellington town centre, Telford",
+    "locationSource": "Council website project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Investing in Telford and Wrekin – Wellington",
+        "source": "Telford & Wrekin Council",
+        "url": "https://www.telford.gov.uk/investing-in-telford-and-wrekin/projects/wellington/",
+        "datePublished": "2024-01-01",
+        "summary": "Telford & Wrekin Council's project page detailing the Wellington town centre regeneration programme including public realm and market improvements."
+      }
+    ]
+  },
+  {
+    "id": "telford-oakengates-theatre-regeneration",
+    "title": "Oakengates Theatre and Town Centre Regeneration",
+    "description": "Telford & Wrekin Council is investing in the regeneration of Oakengates, including improvements to the theatre and town centre, to bring new life to this community hub.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "c029a725-1c3e-431f-8dd3-d37c0af1755f",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Dedicated project page on council's investment portal confirms active programme delivery.",
+    "latitude": 52.6993,
+    "longitude": -2.4477,
+    "locationDescription": "Oakengates, Telford",
+    "locationSource": "Council website project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Investing in Telford and Wrekin – Oakengates",
+        "source": "Telford & Wrekin Council",
+        "url": "https://www.telford.gov.uk/investing-in-telford-and-wrekin/projects/oakengates/",
+        "datePublished": "2024-01-01",
+        "summary": "Telford & Wrekin Council's project page for the Oakengates theatre and town centre regeneration scheme."
+      }
+    ]
+  },
+  {
+    "id": "tendring-love-clacton-vision-20m",
+    "title": "Love Clacton Vision – £20m Town Investment",
+    "description": "Tendring District Council has secured Government approval for the Love Clacton Vision, a £20 million investment programme to regenerate Clacton-on-Sea town centre, improve the seafront offer, support businesses and deliver public realm works.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "bc246478-db44-4c02-960d-150ab71d3489",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Government approval confirmed March 2026; council press release announces formal sign-off of the £20m investment plan.",
+    "latitude": 51.7912,
+    "longitude": 1.1498,
+    "locationDescription": "Clacton-on-Sea town centre, Essex",
+    "locationSource": "Council press release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Love Clacton Vision and £20million investment approved by Government",
+        "source": "Tendring District Council",
+        "url": "https://www.tendringdc.gov.uk/news/love-clacton-vision-and-ps20million-investment-approved-by-government",
+        "datePublished": "2026-03-23",
+        "summary": "Tendring District Council announces Government approval of the Love Clacton Vision, unlocking £20m for Clacton-on-Sea town centre regeneration."
+      }
+    ]
+  },
+  {
+    "id": "test-valley-andover-new-theatre",
+    "title": "Andover New Theatre – £18.3m Replacement Venue",
+    "description": "Test Valley Borough Council is delivering a new £18.3 million theatre for Andover to replace the demolished Savoy Theatre. Demolition of the former site completed in early 2026, clearing the way for construction of a modern community theatre.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "c3069c84-6135-4764-8f30-cbbe22981484",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Demolition completed March 2026; council confirms project is on track and construction phase is imminent.",
+    "latitude": 51.2083,
+    "longitude": -1.4833,
+    "locationDescription": "Andover town centre, Hampshire",
+    "locationSource": "Council press release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "A new act begins: site cleared for Andover's theatre as demolition completes",
+        "source": "Test Valley Borough Council",
+        "url": "https://www.testvalley.gov.uk/news/2026/mar/a-new-act-begins-site-cleared-for-andover-s-theatre-as-demolition-completes",
+        "datePublished": "2026-03-01",
+        "summary": "Test Valley Borough Council announces completion of demolition at the former Savoy Theatre site in Andover, clearing the way for a new £18.3m community theatre."
+      }
+    ]
+  },
+  {
+    "id": "tewkesbury-m5-junction-10-improvements",
+    "title": "M5 Junction 10 Improvements and Infrastructure CIL Fund",
+    "description": "Tewkesbury Borough Council has agreed £4 million towards the M5 Junction 10 all-movements improvement scheme, a major transport infrastructure project that will unlock significant housing and commercial development in the area. The council also approved £6.6 million from the Community Infrastructure Levy for local infrastructure projects.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "3fc2ec4a-f23a-4ef0-b677-c009c475238f",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council formally agreed the £4m M5 Junction 10 contribution and £6.6m CIL allocation in February 2026.",
+    "latitude": 51.9910,
+    "longitude": -2.1598,
+    "locationDescription": "M5 Junction 10, near Tewkesbury, Gloucestershire",
+    "locationSource": "Council press release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Councils agree £6.6 million funding for infrastructure projects and approve £4 million for M5 Junction 10 improvements",
+        "source": "Tewkesbury Borough Council",
+        "url": "https://tewkesbury.gov.uk/councils-agree-6-6-million-funding-opportunities-for-infrastructure-projects-and-approve-4-million-for-m5-junction-10-improvements-scheme/",
+        "datePublished": "2026-02-13",
+        "summary": "Tewkesbury Borough Council agrees a £4m contribution to the M5 Junction 10 all-movements scheme and approves £6.6m CIL funding for local infrastructure projects."
+      }
+    ]
+  },
+  {
+    "id": "thanet-margate-town-deal",
+    "title": "Margate Town Deal",
+    "description": "Thanet District Council is delivering the Margate Town Deal, a multi-million pound government investment programme to level up Margate through regeneration, cultural investment, skills, and transport improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "1fc80db5-b0c9-48f6-b8a3-c4ab3bcf5ec1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Town Deal programme active and multiple projects in delivery; some elements completed, others still in progress.",
+    "latitude": 51.3813,
+    "longitude": 1.3862,
+    "locationDescription": "Margate, Isle of Thanet, Kent",
+    "locationSource": "Council website",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Margate Town Deal",
+        "source": "Thanet District Council",
+        "url": "https://www.thanet.gov.uk/info-pages/margate-town-deal/",
+        "datePublished": "2024-01-01",
+        "summary": "Thanet District Council's information page on the Margate Town Deal, outlining the government investment programme and constituent projects for Margate's regeneration."
+      }
+    ]
+  },
+  {
+    "id": "thurrock-youth-zone-thames-gateway",
+    "title": "Thurrock Youth Zone – Thames Gateway",
+    "description": "A new Youth Zone facility is under construction in Thurrock as part of the Thames Gateway growth area, providing young people with sport, arts, and social space. Construction began in early 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "bf52a64d-21cd-4601-b294-7f218f0cadc4",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Construction underway as of March 2026; council press release confirms works started on site.",
+    "latitude": 51.4750,
+    "longitude": 0.3240,
+    "locationDescription": "Grays, Thurrock, Essex",
+    "locationSource": "Council press release",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Construction underway for Thurrock's new Youth Zone",
+        "source": "Thurrock Council",
+        "url": "https://www.thurrock.gov.uk/news/construction-underway-for-thurrock%E2%80%99s-new-youth-zone",
+        "datePublished": "2026-03-23",
+        "summary": "Thurrock Council announces the start of construction on a new Youth Zone facility, providing sport, arts, and social facilities for young people in Thurrock."
+      }
+    ]
+  },
+  {
+    "id": "thurrock-council-house-building-programme",
+    "title": "Thurrock Council House Building Programme",
+    "description": "Thurrock Council is delivering a council house building programme to add new affordable homes to the borough's social housing stock, with construction on multiple sites progressing through 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "bf52a64d-21cd-4601-b294-7f218f0cadc4",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Active construction confirmed by council press release March 2026.",
+    "latitude": 51.4750,
+    "longitude": 0.3240,
+    "locationDescription": "Various sites across Thurrock, Essex",
+    "locationSource": "Council press release",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Council house building over summer",
+        "source": "Thurrock Council",
+        "url": "https://www.thurrock.gov.uk/news/council-house-building-over-summer",
+        "datePublished": "2026-03-26",
+        "summary": "Thurrock Council provides an update on its council house building programme, with multiple sites progressing through construction phases."
+      }
+    ]
+  },
+  {
+    "id": "tonbridge-malling-new-angel-centre",
+    "title": "New Angel Centre, Tonbridge",
+    "description": "Tonbridge & Malling Borough Council is redeveloping the Angel Centre leisure complex in Tonbridge, with plans for a new-look facility following public consultation. Design proposals have been revealed and positive community feedback received.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "bb526d3d-dbca-4b62-8a9e-19f03a3b1a6b",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Design stage complete with public consultation completed; planning and build procurement ongoing.",
+    "latitude": 51.1957,
+    "longitude": 0.2742,
+    "locationDescription": "Angel Centre, Tonbridge, Kent",
+    "locationSource": "Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Design reveal: See proposed new Angel Centre",
+        "source": "Tonbridge & Malling Borough Council",
+        "url": "https://www.tmbc.gov.uk/news/article/193/design-reveal-see-proposed-new-angel-centre",
+        "datePublished": "2025-11-01",
+        "summary": "Tonbridge & Malling Borough Council reveals design proposals for the new Angel Centre leisure complex in Tonbridge."
+      },
+      {
+        "type": "URL",
+        "title": "Positive feedback for new-look Angel Centre",
+        "source": "Tonbridge & Malling Borough Council",
+        "url": "https://www.tmbc.gov.uk/news/article/196/positive-feedback-for-new-look-angel-centre",
+        "datePublished": "2026-01-01",
+        "summary": "Tonbridge & Malling Borough Council reports overwhelmingly positive public response to plans for the new Angel Centre."
+      }
+    ]
+  },
+  {
+    "id": "torbay-brixham-harbour-levelling-up",
+    "title": "Brixham Harbour £20m Levelling Up Fund Improvements",
+    "description": "Torbay Council is delivering a £20 million Levelling Up Fund investment in Brixham Harbour, one of England's most productive fishing ports, with infrastructure upgrades to support the fishing industry, tourism, and the local economy.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "82cc34ae-9c27-4790-b415-124b6faf1593",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Project confirmed March 2026 with Levelling Up Fund award and work programme announced.",
+    "latitude": 50.3955,
+    "longitude": -3.5185,
+    "locationDescription": "Brixham Harbour, Torbay, Devon",
+    "locationSource": "Council press release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Brixham Harbour set for £20m transformation",
+        "source": "Torbay Council",
+        "url": "https://www.torbay.gov.uk/news/pr9462/",
+        "datePublished": "2026-03-16",
+        "summary": "Torbay Council announces £20 million Levelling Up Fund investment in Brixham Harbour to upgrade infrastructure and support the fishing industry and tourism economy."
+      }
+    ]
+  },
+  {
+    "id": "torbay-electric-buses-zebra-scheme",
+    "title": "Torbay Electric Bus Fleet – £29.3m ZEBRA Scheme",
+    "description": "Torbay Council has secured £29.3 million through the Zero Emission Bus Regional Areas (ZEBRA) scheme to replace the local bus fleet with electric vehicles, delivering a zero-emission public transport network across the Bay.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "82cc34ae-9c27-4790-b415-124b6faf1593",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "ZEBRA funding confirmed March 2026; council press release announces £29.3m award for electric bus fleet.",
+    "latitude": 50.4619,
+    "longitude": -3.5248,
+    "locationDescription": "Torbay (Torquay, Paignton, Brixham), Devon",
+    "locationSource": "Council press release",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Torbay secures £29.3m for electric bus fleet through ZEBRA scheme",
+        "source": "Torbay Council",
+        "url": "https://www.torbay.gov.uk/news/pr9463/",
+        "datePublished": "2026-03-17",
+        "summary": "Torbay Council announces £29.3 million ZEBRA funding award to replace the entire local bus fleet with zero-emission electric vehicles."
+      }
+    ]
+  },
+  {
+    "id": "torridge-bideford-regeneration-masterplan-2026",
+    "title": "Bideford Regeneration Strategy and Masterplan 2026–2031",
+    "description": "Torridge District Council has launched a new Bideford Regeneration Strategy and Masterplan covering 2026 to 2031, setting out a framework for investment in Bideford town centre, the quay, heritage assets, and local economy.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "04db7ce9-76cf-4ad6-ac66-c762d67cb0ee",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Masterplan launched March 2026; implementation phase beginning but individual projects subject to funding.",
+    "latitude": 51.0168,
+    "longitude": -4.2068,
+    "locationDescription": "Bideford town centre and quay, Devon",
+    "locationSource": "Council announcement",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bideford Masterplan Launch",
+        "source": "Torridge District Council",
+        "url": "https://www.torridge.gov.uk/bidefordmasterplanlaunch",
+        "datePublished": "2026-03-27",
+        "summary": "Torridge District Council launches the Bideford Regeneration Strategy and Masterplan 2026–2031, setting out investment priorities for the town centre, quay, and local economy."
+      }
+    ]
+  },
+  {
+    "id": "tower-hamlets-st-georges-leisure-centre-67m",
+    "title": "St George's Leisure Centre Redevelopment – £67m",
+    "description": "Tower Hamlets Council is progressing plans for a £67 million redevelopment of St George's Leisure Centre in Shadwell, combining upgraded sports and leisure facilities with new affordable homes on the site.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "6f235cd3-f603-4c15-b42c-d567c200a3b8",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Plans progressed and publicly announced March 2026; planning application and procurement stages ahead.",
+    "latitude": 51.5099,
+    "longitude": -0.0561,
+    "locationDescription": "St George's Leisure Centre, Shadwell, Tower Hamlets",
+    "locationSource": "Council press release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Investing in health and homes: Tower Hamlets progresses plans to upgrade leisure facilities and build new homes",
+        "source": "Tower Hamlets Council",
+        "url": "https://www.towerhamlets.gov.uk/News_events/2026/March/Investing-in-health-and-homes-Tower-Hamlets-progresses-plans-to-upgrade-leisure-facilities-and-build-new-homes.aspx",
+        "datePublished": "2026-03-17",
+        "summary": "Tower Hamlets Council announces £67m plans to redevelop St George's Leisure Centre in Shadwell, combining upgraded leisure facilities with new affordable homes."
+      }
+    ]
+  },
+  {
+    "id": "trafford-chester-house-1200-homes",
+    "title": "Chester House – Proposed 1,200-Home Neighbourhood, Stretford",
+    "description": "Trafford Council has reached a major milestone in proposals for a new 1,200-home neighbourhood at the former Greater Manchester Police headquarters (Chester House) in Stretford, with plans for homes, community facilities, and public open space on the brownfield site.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "2a6eb4bc-cd1f-4c14-ae0d-647ae499dfdc",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Milestone reached March 2026 on planning and design stage; full planning consent and construction not yet confirmed.",
+    "latitude": 53.4468,
+    "longitude": -2.2960,
+    "locationDescription": "Chester House (former GMP HQ), Stretford, Trafford",
+    "locationSource": "Council press release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Milestone reached: proposed new 1,200-home neighbourhood",
+        "source": "Trafford Council",
+        "url": "https://www.trafford.gov.uk/news/2026/milestone-reached-proposed-new-1200-home-neighbourhood",
+        "datePublished": "2026-03-27",
+        "summary": "Trafford Council announces a milestone in the Chester House regeneration proposals, advancing plans for a 1,200-home neighbourhood on the brownfield site of the former Greater Manchester Police headquarters in Stretford."
+      }
+    ]
+  },
+  {
+    "id": "vale-of-white-horse-science-vale-enterprise-zones",
+    "title": "Science Vale Enterprise Zones",
+    "description": "Vale of White Horse District Council supports the Science Vale Enterprise Zones around Harwell and Milton Park in Oxfordshire, major nationally-significant research and innovation campuses attracting investment in science, technology, and high-value employment.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "57fdb475-af3a-4bef-96c8-447b65bd627e",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Enterprise Zones are established and operational with ongoing inward investment; council maintains a dedicated web presence.",
+    "latitude": 51.5744,
+    "longitude": -1.3097,
+    "locationDescription": "Harwell and Milton Park, Vale of White Horse, Oxfordshire",
+    "locationSource": "Council website",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Science Vale Enterprise Zones",
+        "source": "Vale of White Horse District Council",
+        "url": "https://www.whitehorsedc.gov.uk/vale-of-white-horse-district-council/business-and-economy/science-vale/",
+        "datePublished": "2024-01-01",
+        "summary": "Vale of White Horse District Council's page on the Science Vale Enterprise Zones at Harwell and Milton Park, major science and technology campuses in Oxfordshire."
+      }
+    ]
+  },
+  {
+    "id": "wakefield-cathedral-quarter-transformation",
+    "title": "Wakefield Cathedral Quarter Transformation",
+    "description": "Wakefield Council is delivering the Cathedral Quarter Transformation programme to regenerate the historic heart of Wakefield city centre, improving public realm, connectivity, and heritage assets around the cathedral precinct.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "0192253e-0ea6-4a2b-a195-1065b63f5acb",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Dedicated project page on council's regeneration portal confirms active delivery of the Cathedral Quarter programme.",
+    "latitude": 53.6833,
+    "longitude": -1.5000,
+    "locationDescription": "Cathedral Quarter, Wakefield city centre",
+    "locationSource": "Council website",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Cathedral Quarter Transformation",
+        "source": "Wakefield Council",
+        "url": "https://www.wakefield.gov.uk/regeneration/wakefield-city/cathedral-quarter-transformation",
+        "datePublished": "2024-01-01",
+        "summary": "Wakefield Council's project page for the Cathedral Quarter Transformation, outlining regeneration plans for the historic heart of Wakefield city centre."
+      }
+    ]
+  }
+]

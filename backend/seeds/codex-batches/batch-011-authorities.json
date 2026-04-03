@@ -1,0 +1,146 @@
+[
+  {
+    "id": "9119ac8b-0ee8-4123-a063-eff4ba04e654",
+    "name": "Herefordshire, County of",
+    "code": "E06000019",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "d78a5e12-ade7-47dd-8fee-deead8981365",
+    "name": "North Northamptonshire",
+    "code": "E06000061",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "bf52a64d-21cd-4601-b294-7f218f0cadc4",
+    "name": "Thurrock",
+    "code": "E06000034",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "e21e1cf3-bcd3-4e79-ac36-9caef4b2f05e",
+    "name": "Bolton",
+    "code": "E08000001",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "36234393-4bb0-4840-838e-27fa1f6750fd",
+    "name": "Fareham",
+    "code": "E07000087",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "5985813f-e96e-4c66-9ce7-dc752c7ac035",
+    "name": "Lichfield",
+    "code": "E07000194",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "3c567233-40ed-48a2-8b08-65eadf2efb09",
+    "name": "South Norfolk",
+    "code": "E07000149",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "405554dd-518f-4ff2-a895-d96048221270",
+    "name": "Walsall",
+    "code": "E08000030",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "4228d1cd-c9f6-4824-bb60-7656f06612a4",
+    "name": "Bradford",
+    "code": "E08000032",
+    "countryCode": "ENGLAND",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "regionName": "Yorkshire and the Humber"
+  },
+  {
+    "id": "167fa00f-0939-45ce-aae4-bc2a52e23b22",
+    "name": "East Suffolk",
+    "code": "E07000244",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "9432eb2d-c60a-471d-bb68-4fcde835d0ed",
+    "name": "Knowsley",
+    "code": "E08000011",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "8f566f13-8281-4167-8a26-eff47173c4b6",
+    "name": "North Lincolnshire",
+    "code": "E06000013",
+    "countryCode": "ENGLAND",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "regionName": "Yorkshire and the Humber"
+  },
+  {
+    "id": "6161bc31-3a78-42d3-88b6-d87511894f49",
+    "name": "South Cambridgeshire",
+    "code": "E07000012",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "65a306aa-86ab-49c7-a9b2-3d50d232db7e",
+    "name": "Swindon",
+    "code": "E06000030",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "b95e88d6-0f9e-4e02-8844-7d7b84748104",
+    "name": "Brighton and Hove",
+    "code": "E06000043",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "291f15d8-fca2-41ba-8b3f-0259a8fbcff3",
+    "name": "Wokingham",
+    "code": "E06000041",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "a6f8c820-5f90-4624-8461-489a3518595e",
+    "name": "Stroud",
+    "code": "E07000082",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "19becee2-f033-432c-8680-77ab35773e74",
+    "name": "Rutland",
+    "code": "E06000017",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  }
+]

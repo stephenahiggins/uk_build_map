@@ -1,0 +1,146 @@
+[
+  {
+    "id": "915008de-38ff-4771-ab2b-fa5efaacb74c",
+    "name": "Ipswich",
+    "code": "E07000202",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "09d21c64-b66f-445b-bdc8-451819759789",
+    "name": "Lewes",
+    "code": "E07000063",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "d25e8559-1e76-43ec-8d85-ad2bb9b5196d",
+    "name": "Spelthorne",
+    "code": "E07000213",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "3314cd16-0cc0-485f-a181-f269151d20a4",
+    "name": "Oadby and Wigston",
+    "code": "E07000135",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "fa88a510-40c0-4c85-b1cf-5d96f5a2fb2b",
+    "name": "Liverpool",
+    "code": "E08000012",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "84371d60-45d9-4dc3-a0e9-423ceb3c90ef",
+    "name": "West Northamptonshire",
+    "code": "E06000062",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "2abc46ad-bb04-4cc4-8c75-840422b41ce3",
+    "name": "Mid Suffolk",
+    "code": "E07000203",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "1795b1c7-413a-444c-a9d3-30661cdf7ec9",
+    "name": "Ealing",
+    "code": "E09000009",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "08dbbc19-7ecf-41af-ba5f-c324e8c6da65",
+    "name": "Lambeth",
+    "code": "E09000022",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "4212bbed-8db0-4254-8477-908fbac7ccbf",
+    "name": "Plymouth",
+    "code": "E06000026",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "c207efea-0c63-426d-98d6-c8baee48e656",
+    "name": "Fenland",
+    "code": "E07000010",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "332aa2ed-bb95-45e0-a548-5bb2caf8c5f6",
+    "name": "Greenwich",
+    "code": "E09000011",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "46a55cc5-6a96-41ac-8398-423f26511831",
+    "name": "Uttlesford",
+    "code": "E07000077",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "10dd16a9-49ca-45a6-b344-63bae1021561",
+    "name": "Kingston upon Hull, City of",
+    "code": "E06000010",
+    "countryCode": "ENGLAND",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "regionName": "Yorkshire and the Humber"
+  },
+  {
+    "id": "4bb74bfa-a03e-424f-9b82-74e5adbb23d2",
+    "name": "St Albans",
+    "code": "E07000240",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "9bf7def2-da4b-4906-8de5-d6fb7c9b6570",
+    "name": "Dudley",
+    "code": "E08000027",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "861eed51-03df-41c1-bf31-c834ccb4bd5f",
+    "name": "Coventry",
+    "code": "E08000026",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "24578131-915e-4e3e-a16c-bf08b745e434",
+    "name": "Elmbridge",
+    "code": "E07000207",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  }
+]

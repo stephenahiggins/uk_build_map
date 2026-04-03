@@ -3,15 +3,42 @@
 // This seed file only handles users, regions, and local authorities.
 /// <reference path="./bcryptjs.d.ts" />
 import { CountryCode, UserType } from '@prisma/client';
-// Removed CSV download + parsing; authorities are now hard-coded.
+import * as fs from 'fs';
+import * as path from 'path';
 import { createPrismaClient } from '../src/lib/createPrismaClient';
 import * as bcrypt from 'bcryptjs';
 
 const prisma = createPrismaClient();
 
-// NOTE: Region mapping data wasn't supplied with the request. To keep seeding simple,
-// we add an "Unassigned" region and attach all authorities to it. Provide a mapping
-// later if granular region linkage is required.
+type SeedAuthority = {
+  name: string;
+  code: string;
+  countryCode: CountryCode;
+  regionName: string;
+  website?: string | null;
+};
+
+function loadSeedAuthorities(): SeedAuthority[] {
+  const filePath = path.resolve(__dirname, '..', 'seeds', 'local-authorities.json');
+  const raw = fs.readFileSync(filePath, 'utf-8');
+  const parsed = JSON.parse(raw) as Array<Record<string, unknown>>;
+
+  return parsed
+    .map((row) => ({
+      name: String(row.name || '').trim(),
+      code: String(row.code || '').trim(),
+      countryCode: String(row.countryCode || '').trim().toUpperCase() as CountryCode,
+      regionName: String(row.regionName || '').trim(),
+      website: row.website ? String(row.website) : null,
+    }))
+    .filter(
+      (row) =>
+        row.name &&
+        row.code &&
+        row.regionName &&
+        Object.values(CountryCode).includes(row.countryCode)
+    );
+}
 
 // Hard-coded English Local Authorities (code & name only)
 const LOCAL_AUTHORITIES: { code: string; name: string }[] = [
@@ -354,19 +381,12 @@ async function main() {
   });
   console.log('Seeded moderator:', moderator.user_email);
 
-  // --- Seed English Regions ---
-  const regionsData = [
-    { name: 'North East' },
-    { name: 'North West' },
-    { name: 'Yorkshire and the Humber' },
-    { name: 'East Midlands' },
-    { name: 'West Midlands' },
-    { name: 'East of England' },
-    { name: 'London' },
-    { name: 'South East' },
-    { name: 'South West' },
-    { name: 'Unassigned' },
-  ];
+  const seedAuthorities = loadSeedAuthorities();
+  const regionsData = Array.from(
+    new Set(seedAuthorities.map((authority) => authority.regionName))
+  )
+    .sort()
+    .map((name) => ({ name }));
 
   const regionRecords: { [key: string]: string } = {};
   for (const region of regionsData) {
@@ -380,7 +400,7 @@ async function main() {
   console.log('Seeded regions:', Object.keys(regionRecords).length);
 
   // --- Seed Local Authorities from hard-coded list ---
-  console.log('Seeding English local authorities from hard-coded list...');
+  console.log(`Seeding ${seedAuthorities.length} UK local authorities from JSON reference data...`);
   let seededCount = 0;
   let skippedCount = 0;
 
@@ -465,22 +485,28 @@ async function main() {
   });
   */
 
-  const unassignedRegionId = regionRecords['unassigned'];
-  for (const row of LOCAL_AUTHORITIES) {
-    const code = row.code?.trim();
-    const name = row.name?.trim();
+  for (const row of seedAuthorities) {
+    const code = row.code;
+    const name = row.name;
+    const regionId = regionRecords[row.regionName.trim().toLowerCase()];
     if (!code || !name) {
       skippedCount++;
       continue;
     }
     await prisma.localAuthority.upsert({
       where: { code },
-      update: {},
+      update: {
+        name,
+        regionId,
+        countryCode: row.countryCode,
+        website: row.website,
+      },
       create: {
         name,
         code,
-        regionId: unassignedRegionId,
-        countryCode: CountryCode.ENGLAND,
+        regionId,
+        countryCode: row.countryCode,
+        website: row.website,
       },
     });
     seededCount++;

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "83569b61-4cbf-469e-b2ce-0f29a4eedb30",
+    "name": "East Lindsey",
+    "code": "E07000137",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "9c5d53b8-ee3d-4ad0-8e23-be31d153e006",
+    "name": "Epping Forest",
+    "code": "E07000072",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "65ca3a9a-2d96-465c-bb8c-355d59246c6c",
+    "name": "Middlesbrough",
+    "code": "E06000002",
+    "countryCode": "ENGLAND",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
+  },
+  {
+    "id": "85268d52-2dd4-48f8-a379-aa576f28c1d9",
+    "name": "Redcar and Cleveland",
+    "code": "E06000003",
+    "countryCode": "ENGLAND",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
+  },
+  {
+    "id": "061f24d2-8db5-4afe-88c0-903d34abb795",
+    "name": "East Hertfordshire",
+    "code": "E07000242",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "15541f0a-5a34-489d-a3c5-7841be2f3ab2",
+    "name": "North West Leicestershire",
+    "code": "E07000134",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "5dd82acf-6049-4194-a85b-edfc88d13d5c",
+    "name": "Nuneaton and Bedworth",
+    "code": "E07000219",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "ef751ea7-5965-4415-9e1e-f84dfe31d207",
+    "name": "Sandwell",
+    "code": "E08000028",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "1b158d1b-185f-4751-9999-86bc44dfdf18",
+    "name": "South Tyneside",
+    "code": "E08000023",
+    "countryCode": "ENGLAND",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
+  },
+  {
+    "id": "1782fb1e-571c-4131-882c-1852f829e384",
+    "name": "Tameside",
+    "code": "E08000008",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "bb526d3d-dbca-4b62-8a9e-19f03a3b1a6b",
+    "name": "Tonbridge and Malling",
+    "code": "E07000115",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "5d888fca-fb02-4c1d-913d-9eb1a57c32fe",
+    "name": "Cheltenham",
+    "code": "E07000078",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "0d41e09c-c374-4867-aaee-8fb8d3dd16e8",
+    "name": "Guildford",
+    "code": "E07000209",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "38d6224d-7d80-402f-8ae1-4927b7a3241f",
+    "name": "Portsmouth",
+    "code": "E06000044",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "a0087b01-90e7-45ed-8563-f065eb387081",
+    "name": "Sevenoaks",
+    "code": "E07000111",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "3fc2ec4a-f23a-4ef0-b677-c009c475238f",
+    "name": "Tewkesbury",
+    "code": "E07000083",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "29e30f64-1b2e-4e30-9959-b90c23b7807a",
+    "name": "Bassetlaw",
+    "code": "E07000171",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "572c1490-ae94-4374-b165-5a16dc43f668",
+    "name": "Southend-on-Sea",
+    "code": "E06000033",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  }
+]

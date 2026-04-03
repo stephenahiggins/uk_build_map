@@ -1,0 +1,374 @@
+[
+  {
+    "id": "bcp-bournemouth-town-centre-regeneration",
+    "title": "Bournemouth Town Centre Regeneration",
+    "description": "BCP Council's programme to revitalise Bournemouth town centre through public realm improvements, meanwhile uses, and commercial regeneration across the core retail and leisure quarter, supported by the BCP Local Plan 2020–2038 and Levelling Up bids.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "991a2631-5af6-4f86-bd50-5031229ec62d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Multiple workstreams in planning and early delivery phases as of 2024–25; no single completion date set.",
+    "latitude": 50.7211,
+    "longitude": -1.8795,
+    "locationDescription": "Bournemouth Town Centre, BCP",
+    "locationSource": "BCP Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – BCP Council",
+        "source": "BCP Council",
+        "url": "https://www.bcpcouncil.gov.uk/planning-and-building/regeneration",
+        "datePublished": "2024-01-01",
+        "summary": "BCP Council's regeneration landing page covering town centre, coastal, and neighbourhood regeneration initiatives across Bournemouth, Christchurch and Poole."
+      }
+    ]
+  },
+  {
+    "id": "bradford-city-of-culture-2025",
+    "title": "Bradford UK City of Culture 2025",
+    "description": "Bradford was designated UK City of Culture 2025. The programme includes major capital investments in cultural venues and public realm, neighbourhood regeneration legacy projects, and economic development across the district, backed by £15m from DCMS and substantial council and private co-investment.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "4228d1cd-c9f6-4824-bb60-7656f06612a4",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Programme launched on schedule January 2025; capital projects progressing and events programme running throughout the year.",
+    "latitude": 53.7938,
+    "longitude": -1.7526,
+    "locationDescription": "Bradford City Centre and District, West Yorkshire",
+    "locationSource": "Bradford 2025 / Bradford MDC",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bradford 2025 UK City of Culture – Official Site",
+        "source": "Bradford 2025",
+        "url": "https://www.bradford2025.co.uk/",
+        "datePublished": "2025-01-01",
+        "summary": "Official site for Bradford's UK City of Culture 2025 programme, setting out capital investments, events, and regeneration legacy commitments across the Bradford district."
+      },
+      {
+        "type": "URL",
+        "title": "Bradford City Centre Regeneration – Bradford MDC",
+        "source": "Bradford Metropolitan District Council",
+        "url": "https://www.bradford.gov.uk/regeneration/city-centre-regeneration/",
+        "datePublished": "2024-06-01",
+        "summary": "Bradford Council's city centre regeneration page covering the Bradford City Village project, public realm improvements and cultural infrastructure linked to City of Culture 2025."
+      }
+    ]
+  },
+  {
+    "id": "brent-south-kilburn-regeneration",
+    "title": "South Kilburn Regeneration Programme",
+    "description": "A large-scale phased estate regeneration in South Kilburn led by Brent Council, replacing post-war housing stock with approximately 2,400 new mixed-tenure homes, new schools, health facilities, and public open space across multiple delivery phases spanning more than a decade.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "56733ec9-49f1-401a-8d5b-5cc99d6485d0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Earlier phases delivered; later phases in procurement and planning as of 2024–25; overall programme on track.",
+    "latitude": 51.5344,
+    "longitude": -0.2054,
+    "locationDescription": "South Kilburn, London Borough of Brent",
+    "locationSource": "London Borough of Brent",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "South Kilburn Regeneration – Brent Council",
+        "source": "London Borough of Brent",
+        "url": "https://www.brent.gov.uk/regeneration/south-kilburn-regeneration/",
+        "datePublished": "2024-03-01",
+        "summary": "Brent Council's programme page for South Kilburn regeneration, covering completed and upcoming delivery phases, housing numbers, and community investment."
+      }
+    ]
+  },
+  {
+    "id": "brighton-valley-gardens-phase3",
+    "title": "Valley Gardens Phase 3 – Public Realm and Active Travel",
+    "description": "Brighton & Hove City Council's scheme to transform the historic Valley Gardens corridor through the city centre into high-quality public space, reducing motor-traffic lanes, restoring the Victorian garden setting, and delivering segregated cycling and improved pedestrian infrastructure.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "b95e88d6-0f9e-4e02-8844-7d7b84748104",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Phase 3 construction completed and scheme fully open; active travel improvements operational.",
+    "latitude": 50.8225,
+    "longitude": -0.1388,
+    "locationDescription": "Valley Gardens / Old Steine, Brighton",
+    "locationSource": "Brighton & Hove City Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Valley Gardens – Brighton & Hove City Council",
+        "source": "Brighton & Hove City Council",
+        "url": "https://www.brighton-hove.gov.uk/transport-and-streets/roads/valley-gardens",
+        "datePublished": "2024-01-01",
+        "summary": "Council page covering all three phases of the Valley Gardens scheme, including completion of Phase 3 and the new cycling and pedestrian layout."
+      }
+    ]
+  },
+  {
+    "id": "bristol-temple-quarter-regeneration",
+    "title": "Bristol Temple Quarter Regeneration",
+    "description": "A major regeneration programme covering 130 hectares around Bristol Temple Meads station, including a new University of Bristol Enterprise Campus, up to 10,000 new homes, significant employment floorspace and public realm improvements. One of the largest urban regeneration projects in Europe.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "aae3ef62-d578-4f92-ab26-fdf1fd4826c1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Masterplan adopted; Enterprise Campus under construction; wider regeneration phased over 20+ years.",
+    "latitude": 51.4490,
+    "longitude": -2.5858,
+    "locationDescription": "Temple Meads, Bristol",
+    "locationSource": "Bristol City Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Temple Quarter – Bristol City Council",
+        "source": "Bristol City Council",
+        "url": "https://www.bristol.gov.uk/planning-development/temple-quarter",
+        "datePublished": "2024-06-01",
+        "summary": "Bristol City Council's programme page for Temple Quarter, covering the Enterprise Campus, housing sites, and transport improvements around Temple Meads station."
+      }
+    ]
+  },
+  {
+    "id": "broadland-norwich-western-link",
+    "title": "Norwich Western Link Road",
+    "description": "A new dual-carriageway road linking the A47 at Easton to the A1067 Fakenham Road, bypassing the western fringe of Norwich. Led by Norfolk County Council and running largely through Broadland District, the scheme is intended to relieve congestion and support planned housing growth west of Norwich.",
+    "type": "REGIONAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "53ac3a0e-fa9e-4874-8801-2209272aab5f",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Development Consent Order submitted; scheme in planning/examination phase as of 2024.",
+    "latitude": 52.6463,
+    "longitude": 1.1968,
+    "locationDescription": "West of Norwich, Broadland / Norfolk",
+    "locationSource": "Norfolk County Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Norwich Western Link – Norfolk County Council",
+        "source": "Norfolk County Council",
+        "url": "https://www.norfolk.gov.uk/roads-and-transport/major-projects/norwich-western-link/",
+        "datePublished": "2024-05-01",
+        "summary": "Norfolk County Council's project page for the Norwich Western Link, covering the route, DCO process, and programme timeline."
+      }
+    ]
+  },
+  {
+    "id": "buckinghamshire-aylesbury-garden-town",
+    "title": "Aylesbury Garden Town",
+    "description": "Buckinghamshire Council's government-designated Garden Town programme to deliver up to 16,000 new homes and supporting infrastructure in and around Aylesbury, including transport, green infrastructure, employment land, and community facilities across multiple strategic sites.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "75d44285-e9d2-4622-936b-4036a76da7d0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Multiple sites in various delivery stages; housing completions ongoing; wider infrastructure phased to 2033.",
+    "latitude": 51.8168,
+    "longitude": -0.8108,
+    "locationDescription": "Aylesbury, Buckinghamshire",
+    "locationSource": "Buckinghamshire Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Aylesbury Garden Town – Buckinghamshire Council",
+        "source": "Buckinghamshire Council",
+        "url": "https://www.buckinghamshire.gov.uk/planning-and-environment/planning-policy/aylesbury-garden-town/",
+        "datePublished": "2024-04-01",
+        "summary": "Buckinghamshire Council's Aylesbury Garden Town programme page, outlining housing delivery, infrastructure investment phases, and the governance framework."
+      }
+    ]
+  },
+  {
+    "id": "burnley-town-deal-weavers-triangle",
+    "title": "Burnley Town Deal – Weavers' Triangle and Town Centre",
+    "description": "Burnley Borough Council's £22.1m Town Deal (signed 2021) funds regeneration of the historic Weavers' Triangle canalside heritage area, a new active travel bridge, town centre public realm improvements, and skills and employment infrastructure, delivered through the Burnley Town Deal Board.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "175678cf-60cf-473c-8ddc-ddf99e6c46ae",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Town Deal projects in active delivery; Weavers' Triangle and active travel works ongoing as of 2024.",
+    "latitude": 53.7886,
+    "longitude": -2.2465,
+    "locationDescription": "Weavers' Triangle and Town Centre, Burnley, Lancashire",
+    "locationSource": "Burnley Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Burnley Borough Council",
+        "source": "Burnley Borough Council",
+        "url": "https://www.burnley.gov.uk/community/regeneration/",
+        "datePublished": "2024-01-01",
+        "summary": "Burnley Council's regeneration page covering Town Deal projects including the Weavers' Triangle canalside scheme and town centre active travel improvements."
+      }
+    ]
+  },
+  {
+    "id": "bury-town-centre-rock-regeneration",
+    "title": "Bury Town Centre Regeneration (The Rock)",
+    "description": "Bury Metropolitan Borough Council's programme to transform Bury town centre, anchored by the redevelopment of the former Millgate Shopping Centre as 'The Rock' retail and leisure destination, alongside public realm improvements and residential development to increase town-centre footfall.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "eab1fa0f-b6fd-4f3c-8230-f74d48588035",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Phased delivery ongoing; initial units open, further phases in planning and procurement as of 2024.",
+    "latitude": 53.5930,
+    "longitude": -2.2973,
+    "locationDescription": "Bury Town Centre, Greater Manchester",
+    "locationSource": "Bury Metropolitan Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Bury Metropolitan Borough Council",
+        "source": "Bury Metropolitan Borough Council",
+        "url": "https://www.bury.gov.uk/property-planning-and-building/regeneration/",
+        "datePublished": "2024-01-01",
+        "summary": "Bury MBC's regeneration programme page covering The Rock town centre development, public realm investment, and wider regeneration strategy."
+      }
+    ]
+  },
+  {
+    "id": "calderdale-flood-alleviation-phase2",
+    "title": "Calderdale Flood Alleviation Scheme Phase 2",
+    "description": "A major programme of flood risk management works along the River Calder and tributaries in Calderdale following the Boxing Day 2015 floods. Phase 2 delivers new flood walls, channel improvements, and property flood resilience measures in Halifax, Sowerby Bridge, Mytholmroyd, and Hebden Bridge, jointly funded by the Environment Agency and Calderdale Council.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "8025f679-fb6f-49fb-8b1e-0f9a9396b8cf",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Phase 2 works progressing; some schemes complete, others in construction or design as of 2024–25.",
+    "latitude": 53.7245,
+    "longitude": -1.8602,
+    "locationDescription": "Halifax, Sowerby Bridge, Mytholmroyd – Calder Valley, Calderdale",
+    "locationSource": "Calderdale MBC / Environment Agency",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Flood Risk Management – Calderdale Council",
+        "source": "Calderdale Metropolitan Borough Council",
+        "url": "https://www.calderdale.gov.uk/v2/residents/environment-and-planning/flood-risk-management",
+        "datePublished": "2024-04-01",
+        "summary": "Calderdale Council's flood risk management page covering Phase 2 flood alleviation schemes in Halifax, Sowerby Bridge, and Mytholmroyd."
+      }
+    ]
+  },
+  {
+    "id": "cambridge-south-station",
+    "title": "Cambridge South Station",
+    "description": "A new railway station on the West Anglia Main Line at Cambridge Biomedical Campus, delivered by Network Rail as part of the East West Rail programme. The station serves one of the UK's largest concentrations of health and science employers and provides a new southern gateway to Cambridge, reducing car dependency.",
+    "type": "NATIONAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "6bd33e35-4bc1-45d1-8ccc-3bff8fdebd3d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Station under construction as of 2024; Network Rail targeting opening in 2025.",
+    "latitude": 52.1734,
+    "longitude": 0.1399,
+    "locationDescription": "Cambridge Biomedical Campus, south Cambridge",
+    "locationSource": "Network Rail",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Cambridge South Station – Network Rail",
+        "source": "Network Rail",
+        "url": "https://www.networkrail.co.uk/running-the-railway/our-regions/anglia/projects-and-improvements/cambridge-south/",
+        "datePublished": "2024-09-01",
+        "summary": "Network Rail project page for Cambridge South station covering construction progress, expected opening, and connectivity improvements to Cambridge Biomedical Campus."
+      }
+    ]
+  },
+  {
+    "id": "camden-euston-hs2-station",
+    "title": "Euston Station Transformation (HS2 Phase 1)",
+    "description": "The redevelopment and expansion of London Euston station as the southern terminus of HS2 Phase 1, requiring demolition and reconstruction of the existing station and enabling over-station mixed-use development. Camden Council is a statutory partner in the planning and wider regeneration of the Euston area.",
+    "type": "NATIONAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "81c87fa4-2637-4f67-88fd-1bdda7237ae7",
+    "createdById": 1,
+    "status": "RED",
+    "statusRationale": "HS2 north of Birmingham cancelled Oct 2023; Euston station scope under review; revised delivery timeline not confirmed.",
+    "latitude": 51.5281,
+    "longitude": -0.1338,
+    "locationDescription": "Euston Station, Camden, London",
+    "locationSource": "HS2 Ltd",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "HS2 London Euston Station",
+        "source": "HS2 Ltd",
+        "url": "https://www.hs2.org.uk/stations/london-euston/",
+        "datePublished": "2024-10-01",
+        "summary": "HS2 Ltd's official page for London Euston, covering scope changes following the October 2023 cancellation of HS2 north of Birmingham and the revised programme."
+      }
+    ]
+  },
+  {
+    "id": "cannock-chase-levelling-up-town-centre",
+    "title": "Cannock Town Centre Levelling Up Fund Investment",
+    "description": "Cannock Chase District Council secured Levelling Up Fund investment to regenerate Cannock town centre, including public realm improvements around the Market Hall and Beecroft Road, improved active travel connections, and commercial premises refurbishment to attract footfall and investment.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "e9f58529-27d0-4f0e-b356-af551db11db7",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "LUF-funded projects in delivery; some public realm works complete, further phases ongoing as of 2024.",
+    "latitude": 52.6908,
+    "longitude": -2.0289,
+    "locationDescription": "Cannock Town Centre, Cannock Chase, Staffordshire",
+    "locationSource": "Cannock Chase District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Cannock Chase District Council",
+        "source": "Cannock Chase District Council",
+        "url": "https://www.cannockchasedc.gov.uk/residents/community/regeneration/",
+        "datePublished": "2024-01-01",
+        "summary": "Cannock Chase DC's regeneration page covering Levelling Up Fund town centre improvements and wider regeneration in Cannock and Rugeley."
+      }
+    ]
+  },
+  {
+    "id": "canterbury-riverside-regeneration",
+    "title": "Canterbury Riverside (Kingsmead) Regeneration",
+    "description": "Canterbury City Council's regeneration of the Kingsmead area beside the River Stour, transforming a former industrial and retail site into a mixed-use neighbourhood with new housing, leisure, and public riverside spaces, improving connectivity between the city centre and the waterfront.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "30428149-cba0-4d0f-925a-84428a8245d0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning consent granted; phased construction underway as of 2024.",
+    "latitude": 51.2792,
+    "longitude": 1.0784,
+    "locationDescription": "Kingsmead / Riverside, Canterbury, Kent",
+    "locationSource": "Canterbury City Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration Projects – Canterbury City Council",
+        "source": "Canterbury City Council",
+        "url": "https://www.canterbury.gov.uk/planning/regeneration-projects/",
+        "datePublished": "2024-03-01",
+        "summary": "Canterbury City Council's regeneration projects page covering Canterbury Riverside, Kingsmead, and supporting transport and public realm infrastructure."
+      }
+    ]
+  }
+]

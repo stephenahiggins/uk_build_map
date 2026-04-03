@@ -1,0 +1,178 @@
+[
+  {
+    "id": "68b15a6a-4fef-4c8e-af8e-42b21fab15f5",
+    "name": "Adur",
+    "code": "E07000223",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "9878daec-1cee-4b83-a68e-ce03d8b1d2de",
+    "name": "Amber Valley",
+    "code": "E07000032",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "4b50870d-6c3a-4878-bc51-d13eb7b443fa",
+    "name": "Arun",
+    "code": "E07000224",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "311939d0-af21-4e6b-adbe-14f6b57b15a8",
+    "name": "Ashfield",
+    "code": "E07000170",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3537dd5a-0b7e-4775-b7dd-3342d54de939",
+    "name": "Ashford",
+    "code": "E07000105",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "2e5d0cc7-ccef-46a8-8b4c-43847d55590c",
+    "name": "Babergh",
+    "code": "E07000200",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "8657c8e6-ce23-40e6-9055-8b88c395525e",
+    "name": "Barking and Dagenham",
+    "code": "E09000002",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5ac3471e-3804-4aa6-93ae-e20f0806ce27",
+    "name": "Barnet",
+    "code": "E09000003",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "ae2526bd-34ae-489f-a153-bcbdeca3f463",
+    "name": "Barnsley",
+    "code": "E08000016",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "f34a541e-702a-4cf2-92a9-eb6660ad8483",
+    "name": "Basildon",
+    "code": "E07000066",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "6efae1bf-b2cc-4638-b91c-2a80d407c9a2",
+    "name": "Basingstoke and Deane",
+    "code": "E07000084",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "29e30f64-1b2e-4e30-9959-b90c23b7807a",
+    "name": "Bassetlaw",
+    "code": "E07000171",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "5d6ab247-42b5-4f3a-8aef-227771b99e68",
+    "name": "Bath and North East Somerset",
+    "code": "E06000022",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "f743ffc1-562d-46b6-9cb8-037945f214c1",
+    "name": "Bedford",
+    "code": "E06000055",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3295781f-4494-4519-9479-002e6017a2cd",
+    "name": "Bexley",
+    "code": "E09000004",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "414e7c46-6756-491a-b12d-c705f016670c",
+    "name": "Birmingham",
+    "code": "E08000025",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "1d315c4c-7ac6-4fa3-a378-db6108e709bf",
+    "name": "Blaby",
+    "code": "E07000129",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "e3bdde60-ea37-41f7-8d12-9cc4cf638269",
+    "name": "Blackburn with Darwen",
+    "code": "E06000008",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "0871ae5f-12f0-4fdd-a225-31464ca0a2ae",
+    "name": "Blackpool",
+    "code": "E06000009",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "7cacddfe-642c-423a-82f6-bca2c378799a",
+    "name": "Bolsover",
+    "code": "E07000033",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "e21e1cf3-bcd3-4e79-ac36-9caef4b2f05e",
+    "name": "Bolton",
+    "code": "E08000001",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "3696dbbc-1ac8-4b07-b1fc-0dbf1b09801f",
+    "name": "Boston",
+    "code": "E07000136",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

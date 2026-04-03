@@ -1,6 +1,5 @@
 import { envValues, resolveProvider, type LlmProvider } from "./envValues";
 import { generateContentWithRetry as generateGeminiContentWithRetry } from "./geminiRuntime";
-import { generateOpenAIContentWithRetry } from "./openaiRuntime";
 
 export type GenerateContentRequest = {
   model?: string;
@@ -16,10 +15,10 @@ export function resolveModelForProvider(provider: LlmProvider, override?: string
     return override.trim();
   }
   const explicitModel = process.env.MODEL ? envValues.MODEL : undefined;
-  if (provider === "gemini") {
-    return envValues.GEMINI_MODEL || explicitModel || "gemini-2.5-flash";
+  if (provider === "openai") {
+    throw new Error("OpenAI runtime is disabled. Use Gemini or connector-only workflows.");
   }
-  return envValues.OPENAI_MODEL || explicitModel || "gpt-5-mini";
+  return envValues.GEMINI_MODEL || explicitModel || "gemini-2.5-flash";
 }
 
 function wantsWebSearch(request?: GenerateContentRequest): boolean {
@@ -36,12 +35,7 @@ export async function generateContentWithRetry(
   const model = resolveModelForProvider(provider, request.model);
 
   if (provider === "openai") {
-    return generateOpenAIContentWithRetry(label, {
-      model,
-      contents: request.contents,
-      enableWebSearch: wantsWebSearch(request),
-      enforceJson: request.enforceJson,
-    });
+    throw new Error("OpenAI runtime is disabled. Use Gemini or connector-only workflows.");
   }
 
   try {
@@ -51,13 +45,6 @@ export async function generateContentWithRetry(
       ...(request.config ? { config: request.config } : {}),
     });
   } catch (err) {
-    if (err instanceof Error && err.message === "SWITCH_TO_OPENAI") {
-      return generateOpenAIContentWithRetry(label, {
-        model: resolveModelForProvider("openai"),
-        contents: request.contents,
-        enableWebSearch: wantsWebSearch(request),
-      });
-    }
     throw err;
   }
 }

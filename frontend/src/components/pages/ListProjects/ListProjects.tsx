@@ -26,8 +26,8 @@ interface Project {
   expectedCompletion?: string;
   status: string;
   statusRationale?: string;
-  latitude?: number;
-  longitude?: number;
+  latitude?: number | null;
+  longitude?: number | null;
   createdAt: string;
 }
 
@@ -36,6 +36,7 @@ const ListProjects: React.FC = () => {
   const { user, setUser } = useUserStore();
 
   const [projectType, setProjectType] = useState<string>('');
+  const [ragStatuses, setRagStatuses] = useState<Set<string>>(new Set());
   const [availableTypes, setAvailableTypes] = useState<Set<string>>(new Set());
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [allProjects, setAllProjects] = useState<Project[]>([]);
@@ -68,7 +69,7 @@ const ListProjects: React.FC = () => {
     fetchProjects();
     fetchAllProjectsForMap(); // Fetch all projects for map separately
     fetchProjectSummary();
-  }, [projectType]);
+  }, [projectType, ragStatuses]);
 
   useEffect(() => {
     fetchProjects();
@@ -76,7 +77,7 @@ const ListProjects: React.FC = () => {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [projectType]);
+  }, [projectType, ragStatuses]);
 
   useEffect(() => {
     if (searchQuery.trim() === '') {
@@ -86,14 +87,18 @@ const ListProjects: React.FC = () => {
       // When search query is entered, fetch all projects for search
       fetchAllProjectsForSearch();
     }
-  }, [searchQuery]);
+  }, [searchQuery, projectType, ragStatuses]);
 
   useEffect(() => {
+    const ragFiltered =
+      ragStatuses.size === 0
+        ? allProjectsForSearch
+        : allProjectsForSearch.filter((p) => ragStatuses.has(p.status));
     if (searchQuery.trim() === '') {
       setFilteredProjects(sortBy(allProjects, 'title'));
     } else {
       const query = searchQuery.toLowerCase();
-      const filtered = allProjectsForSearch.filter(
+      const filtered = ragFiltered.filter(
         (project) =>
           project.title.toLowerCase().includes(query) ||
           (project.description &&
@@ -101,7 +106,7 @@ const ListProjects: React.FC = () => {
       );
       setFilteredProjects(sortBy(filtered, 'title'));
     }
-  }, [searchQuery, allProjects, allProjectsForSearch]);
+  }, [searchQuery, allProjects, allProjectsForSearch, ragStatuses]);
 
   const fetchProjects = async () => {
     setLoading(true);
@@ -109,14 +114,31 @@ const ListProjects: React.FC = () => {
     try {
       const params = new URLSearchParams();
       if (projectType) params.append('type', projectType);
-      params.append('page', currentPage.toString());
-      params.append('limit', '10');
+      const ragStatusList = Array.from(ragStatuses);
+      const useServerRagFilter = ragStatusList.length <= 1;
+      if (useServerRagFilter && ragStatusList.length === 1) {
+        params.append('status', ragStatusList[0]);
+      }
+      if (useServerRagFilter) {
+        params.append('page', currentPage.toString());
+        params.append('limit', '10');
+      } else {
+        params.append('limit', '1000');
+      }
       const url = `/api/v1/projects?${params.toString()}`;
       const response = await axiosInstance.get(url);
       const projects = response.data.data;
-      setTotalPages(response.data.totalPages || 1);
+      if (useServerRagFilter) {
+        setTotalPages(response.data.totalPages || 1);
+      } else {
+        setTotalPages(1);
+      }
       setAllProjects(projects);
-      setFilteredProjects(sortBy(projects, 'title'));
+      const filteredByRag =
+        ragStatusList.length === 0
+          ? projects
+          : projects.filter((p: Project) => ragStatuses.has(p.status));
+      setFilteredProjects(sortBy(filteredByRag, 'title'));
       // Track available types for conditional buttons
       const types = new Set<string>();
       projects.forEach((p: Project) => {
@@ -135,6 +157,10 @@ const ListProjects: React.FC = () => {
     try {
       const params = new URLSearchParams();
       if (projectType) params.append('type', projectType);
+      const ragStatusList = Array.from(ragStatuses);
+      if (ragStatusList.length <= 1 && ragStatusList.length === 1) {
+        params.append('status', ragStatusList[0]);
+      }
 
       const url = `/api/v1/projects/summary?${params.toString()}`;
       const response = await axiosInstance.get(url);
@@ -150,6 +176,10 @@ const ListProjects: React.FC = () => {
     try {
       const params = new URLSearchParams();
       if (projectType) params.append('type', projectType);
+      const ragStatusList = Array.from(ragStatuses);
+      if (ragStatusList.length <= 1 && ragStatusList.length === 1) {
+        params.append('status', ragStatusList[0]);
+      }
       params.append('limit', '1000'); // Request a high limit to get all projects for search
 
       const url = `/api/v1/projects?${params.toString()}`;
@@ -170,6 +200,10 @@ const ListProjects: React.FC = () => {
     try {
       const params = new URLSearchParams();
       if (projectType) params.append('type', projectType);
+      const ragStatusList = Array.from(ragStatuses);
+      if (ragStatusList.length <= 1 && ragStatusList.length === 1) {
+        params.append('status', ragStatusList[0]);
+      }
       params.append('limit', '1000'); // Request a high limit to get all projects
       params.append('mapOnly', 'true'); // Optional: backend could use this to return minimal data
 
@@ -184,8 +218,13 @@ const ListProjects: React.FC = () => {
     }
   };
 
+  const filteredMapProjects =
+    ragStatuses.size === 0
+      ? mapProjects
+      : mapProjects.filter((p) => ragStatuses.has(p.status));
+
   // For responsive hiding of map on mobile
-  const hasMapProjects = mapProjects.some(
+  const hasMapProjects = filteredMapProjects.some(
     (p) => p.latitude != null && p.longitude != null
   );
 
@@ -215,9 +254,9 @@ const ListProjects: React.FC = () => {
               </div>
               {!summaryError && summary && (
                 <div className="text-sm text-gray-500">
-                  Showing {totalProjectsCount} number of projects with{' '}
-                  {totalEvidenceCount} number of evidence pieces across{' '}
-                  {localAuthoritiesCount} number of local authorities
+                  Showing {totalProjectsCount} projects with{' '}
+                  {totalEvidenceCount} evidence items across{' '}
+                  {localAuthoritiesCount} local authorities in this view
                 </div>
               )}
               {!summaryError && !summary && (
@@ -302,15 +341,67 @@ const ListProjects: React.FC = () => {
       </div>
 
       <div className="flex-1 p-6 overflow-auto">
-        <div className="mb-1">
-          <SearchBar
-            placeholder="Search projects..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="mb-1"
-          />
+        <div className="mb-1 flex flex-col gap-3 md:flex-row md:items-end md:gap-4">
+          <div className="flex-1">
+            <SearchBar
+              placeholder="Search projects..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="mb-1"
+            />
+          </div>
+          <div className="w-full md:w-auto md:h-12">
+            <div className="inline-flex flex-wrap gap-2 h-full items-stretch">
+              {[
+                { label: 'Red', value: 'RED', statusClass: 'red' },
+                { label: 'Amber', value: 'AMBER', statusClass: 'amber' },
+                { label: 'Green', value: 'GREEN', statusClass: 'green' },
+              ].map((option) => {
+                const isActive = ragStatuses.has(option.value);
+                return (
+                  <button
+                    key={option.label}
+                    type="button"
+                    onClick={() => {
+                      setRagStatuses((prev) => {
+                        const next = new Set(prev);
+                        if (next.has(option.value)) {
+                          next.delete(option.value);
+                        } else {
+                          next.add(option.value);
+                        }
+                        return next;
+                      });
+                    }}
+                    aria-pressed={isActive}
+                    className={clsx(
+                      'flex items-center gap-2 rounded-full border px-3 py-3 text-sm transition-colors h-full',
+                      isActive
+                        ? 'border-gray-700 bg-gray-100 text-gray-900'
+                        : 'border-gray-300 bg-white text-gray-700 hover:bg-gray-50'
+                    )}
+                  >
+                    <span
+                      className={`project-card__rag-status ${option.statusClass}`}
+                      title={option.label}
+                    >
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 36 36"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="18" cy="18" r="15" />
+                      </svg>
+                    </span>
+                    <span>{option.label}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
-        <div className="mb-1"></div>
 
         <div className="flex flex-col md:flex-row gap-6 w-full mt-3">
           {/* Project List */}
@@ -397,7 +488,7 @@ const ListProjects: React.FC = () => {
               ) : mapError ? (
                 <div className="text-red-600">{mapError}</div>
               ) : (
-                <ListProjectsMap projects={mapProjects} />
+                <ListProjectsMap projects={filteredMapProjects} />
               )}
             </div>
           )}

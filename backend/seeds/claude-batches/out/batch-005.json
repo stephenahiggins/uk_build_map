@@ -1,0 +1,530 @@
+[
+  {
+    "id": "erewash-long-eaton-town-deal-galaxy-row",
+    "title": "Long Eaton Town Deal – Galaxy Row Redevelopment",
+    "description": "The £25 million Long Eaton Town Deal is transforming the derelict Galaxy cinema site on Derby Road into a mixed-use scheme delivering 16 flats, 4 townhouses and 3 commercial units. Demolition of the Galaxy Row buildings was completed in March 2025, with construction by partners Mypad and Tuntum Housing expected over approximately 4 months.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "ecb73cb6-20fb-4a6c-97a5-4361fe4a3e3a",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Demolition milestone reached March 2025; construction underway with confirmed partners and funding in place.",
+    "latitude": 52.8726,
+    "longitude": -1.2986,
+    "locationDescription": "Galaxy Row / Derby Road, Long Eaton, Erewash",
+    "locationSource": "Council news article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Rebirth of Galaxy Row: demolition marks major Town Deal milestone",
+        "source": "Erewash Borough Council",
+        "url": "https://www.erewash.gov.uk/news/2025/rebirth-galaxy-row-demolition-marks-major-town-deal-milestone",
+        "datePublished": "2025-03-20",
+        "summary": "Demolition of the derelict Galaxy cinema on Derby Road, Long Eaton, completed as part of the £25m Long Eaton Town Deal. The site will deliver 16 flats, 4 townhouses and 3 commercial units."
+      }
+    ]
+  },
+  {
+    "id": "exeter-pride-in-place-whipton-heavitree",
+    "title": "Exeter Pride in Place – Whipton and Heavitree Neighbourhood Investment",
+    "description": "Exeter City Council has been awarded £20 million in Pride in Place funding from central government to invest in the Whipton and Heavitree neighbourhoods over 10 years. A new Neighbourhood Board will be established with residents, councillors and local organisations to co-create a Pride in Place Plan determining how the funding is spent on improvements to local communities and places.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "678a997b-6a4e-4a74-a304-af6ba65bae29",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Funding formally awarded March 2026; Neighbourhood Board being established to begin delivery planning.",
+    "latitude": 50.7255,
+    "longitude": -3.5035,
+    "locationDescription": "Whipton and Heavitree neighbourhoods, Exeter",
+    "locationSource": "Council news article",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Exeter awarded £20m Pride in Place funding for neighbourhoods",
+        "source": "Exeter City Council News",
+        "url": "https://news.exeter.gov.uk/exeter-awarded-20m-pride-in-place-funding-for-neighbourhoods/",
+        "datePublished": "2026-03-20",
+        "summary": "Exeter awarded £20 million Pride in Place funding to be spent over 10 years in Whipton and Heavitree. A Neighbourhood Board will co-create an investment plan with local residents."
+      }
+    ]
+  },
+  {
+    "id": "fareham-town-centre-regeneration-strategy",
+    "title": "Fareham Town Centre Regeneration Strategy",
+    "description": "Fareham Borough Council published a 10-year Town Centre Regeneration Strategy in February 2025, setting out a bold vision for the future of Fareham town centre. Shaped by community engagement, the strategy is underpinned by four pillars – Pride, Purpose, Perception and Personality – and aims to create more homes, new public spaces, and a diverse retail, leisure and entertainment offer. A public masterplan consultation ran to April 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "36234393-4bb0-4840-838e-27fa1f6750fd",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Strategy published and masterplan consultation underway; delivery and funding for individual projects not yet confirmed.",
+    "latitude": 50.8509,
+    "longitude": -1.1788,
+    "locationDescription": "Fareham Town Centre, Hampshire",
+    "locationSource": "Council planning page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Fareham Town Centre Regeneration",
+        "source": "Fareham Borough Council",
+        "url": "https://www.fareham.gov.uk/planning/regeneration/farehamtowncentreregeneration.aspx",
+        "datePublished": "2025-02-01",
+        "summary": "10-year Fareham Town Centre Regeneration Strategy published February 2025. Four key pillars; seeks new homes, improved public spaces, diverse retail and leisure, shaped by community engagement. Masterplan consultation open to April 2026."
+      }
+    ]
+  },
+  {
+    "id": "fenland-march-future-high-streets-fund",
+    "title": "March Future High Streets Fund Town Centre Transformation",
+    "description": "Fenland District Council secured funding through the Government's Future High Streets Fund to transform March town centre. Projects include public realm improvements, refurbishment of the historic town hall, new market infrastructure and cycling and walking enhancements. A contractor was appointed and key projects are being delivered as part of the March Masterplan.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "c207efea-0c63-426d-98d6-c8baee48e656",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Contractor appointed and projects in delivery; multiple phases of work underway or complete.",
+    "latitude": 52.5563,
+    "longitude": 0.0946,
+    "locationDescription": "March Town Centre, Fenland, Cambridgeshire",
+    "locationSource": "Council article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "March Future High Streets Fund Projects",
+        "source": "Fenland District Council",
+        "url": "https://www.fenland.gov.uk/article/16514/March-Future-High-Streets-Fund-Projects",
+        "datePublished": "2023-01-01",
+        "summary": "Overview of Future High Streets Fund projects being delivered in March town centre, including public realm improvements, heritage building refurbishment and active travel infrastructure."
+      }
+    ]
+  },
+  {
+    "id": "folkestone-hythe-otterpool-park",
+    "title": "Otterpool Park Garden Town",
+    "description": "Otterpool Park is a new garden town being developed on approximately 770 hectares in the Folkestone and Hythe district. The council-owned development aims to deliver up to 10,000 homes alongside schools, community facilities, employment land and extensive green space. It is one of the Government's designated garden communities and is being brought forward by Otterpool Park LLP, a joint venture between Folkestone & Hythe District Council and Homes England.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "42efa97b-cf9c-4ae4-b7ce-f0ef1f5518e4",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Outline planning permission secured; detailed planning and infrastructure works in early stages of delivery.",
+    "latitude": 51.0840,
+    "longitude": 1.1121,
+    "locationDescription": "Otterpool Park, near Sellindge, Folkestone and Hythe, Kent",
+    "locationSource": "Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Otterpool Park",
+        "source": "Folkestone & Hythe District Council",
+        "url": "https://www.folkestone-hythe.gov.uk/otterpool-park",
+        "datePublished": "2024-01-01",
+        "summary": "Council project page for Otterpool Park garden town: up to 10,000 new homes on 770 hectares, joint venture between the council and Homes England, one of the Government's designated garden communities."
+      }
+    ]
+  },
+  {
+    "id": "forest-of-dean-cinderford-northern-quarter",
+    "title": "Cinderford Northern Quarter Regeneration",
+    "description": "The Cinderford Northern Quarter is a major regeneration scheme transforming a formerly derelict industrial site in Cinderford town centre into a new mixed-use quarter. The Forest of Dean District Council, working with Gloucestershire College and other partners, is delivering new educational facilities, housing, business space and public realm across a substantial brownfield site.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "7cd0b671-8334-47f0-bcee-a2ffa243b813",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Active regeneration programme with multiple phases; Gloucestershire College campus delivered and further phases ongoing.",
+    "latitude": 51.8219,
+    "longitude": -2.4975,
+    "locationDescription": "Cinderford Northern Quarter, Cinderford, Forest of Dean",
+    "locationSource": "Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Cinderford Northern Quarter",
+        "source": "Forest of Dean District Council",
+        "url": "https://www.fdean.gov.uk/planning-and-building/sustainable-economy/cinderford-northern-quarter/",
+        "datePublished": "2024-01-01",
+        "summary": "Council project page for the Cinderford Northern Quarter regeneration scheme – transforming derelict industrial land in Cinderford town centre with education, housing, employment and public realm."
+      }
+    ]
+  },
+  {
+    "id": "fylde-kirkham-futures-programme",
+    "title": "Kirkham Futures Programme",
+    "description": "The Kirkham Futures Programme is a multi-million pound regeneration of Kirkham town centre funded through the Government's £6.29 million Future High Street Fund and £3.27 million High Streets Heritage Action Zone award. The programme has delivered new public realm in Market Square and Poulton Street, refurbishment of 25+ shopfronts, heritage building restoration and installation of heritage lighting. In November 2024, Fylde Council approved the final £289,678 capital allocation to complete the shopfront improvement phase.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "99ed5a23-a490-40e5-bfc9-369398a40844",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Final phase funded and in delivery; programme substantially complete with public realm and shopfronts delivered.",
+    "latitude": 53.7799,
+    "longitude": -2.8730,
+    "locationDescription": "Market Square and Poulton Street, Kirkham, Fylde, Lancashire",
+    "locationSource": "Council news article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Fylde Council Approves Final Capital Expenditure for Kirkham Futures Programme",
+        "source": "Fylde Council",
+        "url": "https://new.fylde.gov.uk/fylde-council-approves-final-capital-expenditure-for-kirkham-futures-programme-to-revitalise-town-centre/",
+        "datePublished": "2024-11-07",
+        "summary": "Final £289,678 capital expenditure approved for Kirkham Futures shopfront improvements. Total programme funded by £6.29m Future High Streets Fund and £3.27m Heritage Action Zone. Over 25 shopfronts and properties revitalised."
+      }
+    ]
+  },
+  {
+    "id": "gedling-greater-carlton-regeneration-plan",
+    "title": "Greater Carlton £20 Million Regeneration Plan",
+    "description": "Gedling Borough Council and the Greater Carlton Neighbourhood Board unveiled a landmark 10-year, £20 million regeneration plan for Greater Carlton in November 2025. Shaped by hundreds of residents through surveys, workshops and community engagement, the plan has five missions: raising skill levels, improving youth provision, tackling health inequalities, improving the environment, and strengthening community cohesion. Key areas receiving targeted support include Netherfield, Carlton Hill and Cavendish. Delivery is set to begin April 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "655643b4-044b-4423-b4c9-e16bb75c0244",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Plan formally adopted; delivery confirmed to begin April 2026 with East Midlands Combined County Authority as key partner.",
+    "latitude": 52.9640,
+    "longitude": -1.0940,
+    "locationDescription": "Greater Carlton (Netherfield, Carlton Hill, Cavendish), Gedling, Nottinghamshire",
+    "locationSource": "Council news article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Greater Carlton: A 10-Year, £20 Million Transformation Plan Unveiled",
+        "source": "Gedling Borough Council",
+        "url": "https://www.gedling.gov.uk/newsroom/2025/greater-carlton-10-year-ps20-million-transformation-plan-unveiled",
+        "datePublished": "2025-11-18",
+        "summary": "Gedling Borough Council and Greater Carlton Neighbourhood Board unveil £20m 10-year regeneration plan with five missions covering skills, youth, health, environment and community. Delivery begins April 2026."
+      }
+    ]
+  },
+  {
+    "id": "gloucester-the-forum-regeneration",
+    "title": "The Forum – Gloucester City Centre Regeneration",
+    "description": "The Forum is a landmark mixed-use regeneration development in Gloucester city centre, transforming the former Kings Square area. Developed by Gloucester City Council, it includes a new university campus, library, offices, hotel, residential units and public realm. The development won the Regeneration Project of the Year at the Michelmores Property Awards 2025. A luxury Hotel Indigo opened in 2026 as part of the scheme.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "a775e6b5-e0c0-4259-8c92-d9a3b9510068",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Development substantially complete; Hotel Indigo opened 2026; won national Regeneration Project of the Year 2025.",
+    "latitude": 51.8668,
+    "longitude": -2.2444,
+    "locationDescription": "Kings Square / Forum site, Gloucester city centre",
+    "locationSource": "Council news article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Gloucester's Forum wins Regeneration Project of the Year",
+        "source": "Gloucester City Council",
+        "url": "https://www.gloucester.gov.uk/news/2025-news/frankly-brilliant-gloucester-s-forum-wins-regeneration-project-of-the-year/",
+        "datePublished": "2025-07-10",
+        "summary": "The Forum crowned Regeneration Project of the Year at Michelmores Property Awards 2025. Judges described it as 'frankly brilliant' – mixed-use city centre development with university, library, hotel and public realm."
+      }
+    ]
+  },
+  {
+    "id": "gosport-waterfront-regeneration",
+    "title": "Regenerating Gosport's Waterfront",
+    "description": "Gosport Borough Council is leading a once-in-a-generation opportunity to revitalise and maximise the potential of Gosport's historic waterfront. The programme aims to create a vibrant waterfront destination with new homes, commercial uses, improved public realm and better connectivity between the waterfront and town centre, capitalising on the town's unique harbour setting opposite Portsmouth.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "0f79e13f-e088-45c6-8e6a-ba611cbad87f",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Waterfront vision and strategy established; detailed project delivery timelines and funding not yet fully confirmed.",
+    "latitude": 50.7960,
+    "longitude": -1.1216,
+    "locationDescription": "Gosport Waterfront, Hampshire",
+    "locationSource": "Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regenerating Gosport's Waterfront",
+        "source": "Gosport Borough Council",
+        "url": "https://www.gosport.gov.uk/waterfront",
+        "datePublished": "2024-01-01",
+        "summary": "Council waterfront regeneration programme page. Described as a 'once-in-a-generation opportunity' to revitalise Gosport's waterfront with new homes, commercial uses and improved public realm."
+      }
+    ]
+  },
+  {
+    "id": "gravesham-transport-quarter",
+    "title": "Gravesend Transport Quarter",
+    "description": "Gravesham Borough Council, working with Kent County Council and the South-East Local Enterprise Partnership, delivered the Gravesend Transport Quarter in three phases, improving rail, bus, cycling and pedestrian links in the town centre. Phase 1 created a Community Square and upgraded Gravesend Railway Station (new platforms, accessible bridge, cycle hub). Phase 2 built the new Rathmore Road link and station forecourt. Phase 3 added four new bus stops, Fastrack BRT stops and electric bus charging on Garrick Street.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "6b3bdaf4-2dc0-4491-b5ec-ef9426d998fc",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "All three phases delivered and substantially complete; funded by SELEP Local Growth Fund and Strategic Transport Infrastructure Programme.",
+    "latitude": 51.4438,
+    "longitude": 0.3750,
+    "locationDescription": "Gravesend Town Centre and Railway Station, Gravesham, Kent",
+    "locationSource": "Council major projects page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Transport Quarter – Major Projects and Regeneration",
+        "source": "Gravesham Borough Council",
+        "url": "https://www.gravesham.gov.uk/regeneration/major-projects-regeneration/3",
+        "datePublished": "2024-01-01",
+        "summary": "Three-phase Transport Quarter delivering rail, bus, cycling and pedestrian improvements in Gravesend town centre, funded by SELEP Local Growth Fund. Includes upgraded railway station, new Rathmore Road link, bus interchange and Fastrack BRT stops."
+      }
+    ]
+  },
+  {
+    "id": "greenwich-charlton-riverside-regeneration",
+    "title": "Charlton Riverside Regeneration",
+    "description": "The Royal Borough of Greenwich is leading the comprehensive regeneration of Charlton Riverside, a major brownfield Thames-side site. The programme aims to deliver thousands of new homes including affordable housing, employment space, improved riverside open space and new community infrastructure, transforming a former industrial area into a sustainable new neighbourhood.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "332aa2ed-bb95-45e0-a548-5bb2caf8c5f6",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Masterplan and supplementary planning document in place; individual development sites at varying stages of planning and delivery.",
+    "latitude": 51.4859,
+    "longitude": 0.0580,
+    "locationDescription": "Charlton Riverside, Royal Borough of Greenwich, London",
+    "locationSource": "Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Charlton Riverside",
+        "source": "Royal Borough of Greenwich",
+        "url": "https://www.royalgreenwich.gov.uk/charlton-riverside",
+        "datePublished": "2024-01-01",
+        "summary": "Council's Charlton Riverside regeneration programme page. Major Thames-side brownfield regeneration delivering new homes, employment and riverside improvements on a former industrial site."
+      }
+    ]
+  },
+  {
+    "id": "guildford-north-street-regeneration",
+    "title": "North Street Regeneration, Guildford",
+    "description": "St Edward (Berkeley Homes Group) is developing the North Street Regeneration scheme on approximately 4 acres in Guildford town centre. The project will deliver 477 highly sustainable new homes (including 47 affordable), 2.2 acres of public realm with a wellness garden and new town square, a refurbished bus station, pedestrianisation of North Street, 115 new trees and new medical centre premises. Demolition was completed by early 2026 and construction works are underway.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "0d41e09c-c374-4867-aaee-8fb8d3dd16e8",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Demolition complete; utility diversions and road changes underway as at early 2026; construction progressing.",
+    "latitude": 51.2365,
+    "longitude": -0.5702,
+    "locationDescription": "North Street / Commercial Road / Leapale Road, Guildford town centre, Surrey",
+    "locationSource": "Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Find out about North Street Regeneration",
+        "source": "Guildford Borough Council",
+        "url": "https://www.guildford.gov.uk/article/27349/Find-out-about-North-Street-Regeneration",
+        "datePublished": "2025-01-01",
+        "summary": "477 new homes, 2.2 acres of public realm, refurbished bus station, pedestrianised North Street, 115 new trees and medical centre. Developer St Edward (Berkeley Group). Demolition complete; construction commenced early 2026."
+      }
+    ]
+  },
+  {
+    "id": "hackney-woodberry-down-regeneration",
+    "title": "Woodberry Down Estate Regeneration",
+    "description": "The Woodberry Down regeneration is one of Europe's largest estate regeneration programmes. Hackney Council, working with Berkeley Group and Notting Hill Genesis, is transforming a 1950s estate near Finsbury Park into a new neighbourhood delivering approximately 5,500 new homes alongside schools, community facilities and improved parkland around the Woodberry Wetlands. The regeneration is being delivered in phases over approximately 25 years.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "90d5f587-9e3a-4439-ba00-fb44ebd20573",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Multiple phases complete; delivery continuing with strong partnership and confirmed phasing programme.",
+    "latitude": 51.5675,
+    "longitude": -0.0700,
+    "locationDescription": "Woodberry Down Estate, Manor House / Finsbury Park, Hackney, London",
+    "locationSource": "Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Woodberry Down regeneration",
+        "source": "Hackney Council",
+        "url": "https://www.hackney.gov.uk/woodberry-down",
+        "datePublished": "2024-01-01",
+        "summary": "One of Europe's largest estate regeneration programmes: approximately 5,500 new homes replacing a 1950s estate near Finsbury Park, delivered in phases by Hackney Council with Berkeley Group and Notting Hill Genesis."
+      }
+    ]
+  },
+  {
+    "id": "halton-runcorn-station-quarter",
+    "title": "Runcorn Station Quarter – Mersey Gateway Regeneration",
+    "description": "Runcorn Station Quarter is one of 14 areas within Halton Borough Council's £1 billion Mersey Gateway Regeneration Plus Plan. The project removes the 'trumpet loop' road around the Silver Jubilee Bridge, replaces it with a new five-arm roundabout improving connections between the bridge, Runcorn Town Centre and the railway station. A new public piazza is being constructed outside the station. The Silver Jubilee Bridge has been reopened to cyclists, pedestrians and vehicles following significant maintenance.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "c40c4dac-6ca9-43e3-a0c5-e7ed00589331",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "New roundabout and station forecourt constructed; Silver Jubilee Bridge reopened; further development phases progressing as part of the £1bn Mersey Gateway Regeneration Plus Plan.",
+    "latitude": 53.3419,
+    "longitude": -2.7289,
+    "locationDescription": "Runcorn Station / Silver Jubilee Bridge area, Halton, Cheshire",
+    "locationSource": "Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Runcorn Station Quarter",
+        "source": "Halton Borough Council",
+        "url": "https://www3.halton.gov.uk/Pages/business/regen/runcornstationqrtr.aspx",
+        "datePublished": "2024-01-01",
+        "summary": "Part of the £1bn Mersey Gateway Regeneration Plus Plan. Trumpet loop removed, new five-arm roundabout built, Silver Jubilee Bridge reopened to all users, new station piazza under construction."
+      }
+    ]
+  },
+  {
+    "id": "lbhf-white-city-regeneration-area",
+    "title": "White City Regeneration Area",
+    "description": "The White City Regeneration Area in Hammersmith & Fulham covers 110 hectares including Shepherds Bush town centre, the BBC Television Centre and Queen's Park Rangers Football Club. The council is focused on attracting new homes and jobs east of Wood Lane and north of Westfield London, with a particular emphasis on creative industries and bio-medical innovation. BBC Television Centre has been transformed. An Affordable Workspace Strategy 2026-2031 with over £8 million of developer-secured funding supports STEM and creative businesses in the district.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "f5a751c5-f5ae-432d-a898-4cff1275795a",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Active regeneration programme with BBC Television Centre transformation complete; continued investment in innovation and residential development.",
+    "latitude": 51.5117,
+    "longitude": -0.2225,
+    "locationDescription": "White City / Wood Lane / Shepherds Bush, Hammersmith and Fulham, London",
+    "locationSource": "Council planning page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "White City Regeneration Area",
+        "source": "London Borough of Hammersmith & Fulham",
+        "url": "https://www.lbhf.gov.uk/planning/regeneration-transforming-our-borough/white-city-opportunity-area",
+        "datePublished": "2024-01-01",
+        "summary": "110-hectare regeneration area including Shepherds Bush, BBC Television Centre and QPR. Focus on new homes, creative industries and bio-medical innovation east of Wood Lane."
+      },
+      {
+        "type": "URL",
+        "title": "Investing in new affordable workspaces so local businesses can succeed",
+        "source": "London Borough of Hammersmith & Fulham",
+        "url": "https://www.lbhf.gov.uk/news/2026/03/investing-new-affordable-workspaces-so-local-businesses-can-succeed",
+        "datePublished": "2026-03-24",
+        "summary": "Over £8m secured from developers for affordable workspaces in the White City Innovation District and other regeneration areas, as part of the Upstream London industrial strategy."
+      }
+    ]
+  },
+  {
+    "id": "harborough-ukspf-town-centre-masterplans",
+    "title": "Lutterworth and Market Harborough Town Centre Masterplans",
+    "description": "Harborough District Council secured £2.17 million from the UK Shared Prosperity Fund to deliver investment across the district. A £1 million allocation is being used to deliver the Lutterworth and Market Harborough town centre masterplans, including improvements to cycling and walking infrastructure and enhancements to four larger village centres: Broughton Astley, Kibworth, Fleckney and Great Glen. Works in Broughton Astley were completed in 2023 with further phases ongoing.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "f81f5051-60cc-47d8-aa4c-c7b98bfa74af",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "UKSPF investment plan formally approved; works delivered in Broughton Astley; further village improvements continuing to 2025.",
+    "latitude": 52.4768,
+    "longitude": -0.9218,
+    "locationDescription": "Market Harborough and Lutterworth town centres; Broughton Astley, Kibworth, Fleckney, Great Glen – Harborough District, Leicestershire",
+    "locationSource": "Council news article",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Harborough district to benefit from Government funding",
+        "source": "Harborough District Council",
+        "url": "https://www.harborough.gov.uk/news/article/1574/harborough_district_to_benefit_f",
+        "datePublished": "2022-12-07",
+        "summary": "£2.17m UK Shared Prosperity Fund award confirmed. £1m allocated to Lutterworth and Market Harborough town centre masterplans including cycling, walking and public realm improvements."
+      }
+    ]
+  },
+  {
+    "id": "haringey-tottenham-regeneration",
+    "title": "Tottenham Regeneration Programme",
+    "description": "Haringey Council is leading a major long-term regeneration programme across Tottenham, one of the largest regeneration areas in London. The programme covers multiple neighbourhoods including Tottenham Hale, High Road West, Love Lane and Bruce Grove, delivering thousands of new homes, improved public spaces, new employment space and enhanced transport connectivity. The High Road West scheme will deliver over 2,500 new homes around Tottenham Hotspur Stadium.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "f39f2f94-072a-40a0-babb-af97997f1a5f",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Multiple regeneration sites in active planning and delivery across the Tottenham area.",
+    "latitude": 51.5882,
+    "longitude": -0.0665,
+    "locationDescription": "Tottenham, Haringey, London (multiple sites including Tottenham Hale, High Road West)",
+    "locationSource": "Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Tottenham",
+        "source": "Haringey Council",
+        "url": "https://www.haringey.gov.uk/tottenham",
+        "datePublished": "2024-01-01",
+        "summary": "Council's Tottenham regeneration hub page covering Tottenham Hale, High Road West (2,500+ homes near Spurs stadium), Love Lane and Bruce Grove neighbourhood regeneration areas."
+      }
+    ]
+  },
+  {
+    "id": "harlow-innovation-park-final-phase",
+    "title": "Harlow Innovation Park – Final Phase",
+    "description": "Harlow Council secured an agreement for the final phase of Harlow Innovation Park, a major employment-led development on the former Templefields industrial area. The innovation park is part of the wider Harlow & Gilston Garden Town programme and aims to create a cluster of high-value science, technology and innovation businesses, delivering new jobs and investment in the town.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "ceffd80f-96a7-44d5-9f47-e50f18a41da1",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Final phase agreement announced; earlier phases delivered with established occupiers in place.",
+    "latitude": 51.7641,
+    "longitude": 0.1166,
+    "locationDescription": "Harlow Innovation Park, Templefields, Harlow, Essex",
+    "locationSource": "Council news article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Agreement announced for final phase of Harlow Innovation Park",
+        "source": "Harlow Council",
+        "url": "https://www.harlow.gov.uk/news/agreement-announced-final-phase-harlow-innovation-park",
+        "datePublished": "2024-01-01",
+        "summary": "Agreement secured for the final development phase of Harlow Innovation Park, delivering high-value science and technology employment space as part of the Harlow & Gilston Garden Town programme."
+      }
+    ]
+  },
+  {
+    "id": "harrow-grange-farm-estate-regeneration",
+    "title": "Grange Farm Estate Regeneration, South Harrow",
+    "description": "Harrow Council is transforming the 1960s Grange Farm Estate in South Harrow through a major long-term regeneration programme. Phase 2A demolition was completed in March 2026, clearing the way for 45 new affordable homes (including up to 36 council homes) across two blocks with wheelchair-accessible units and improved landscaping. The overall vision is to deliver approximately 500 new homes, a community centre and high-quality public spaces. 89 new homes were delivered in earlier phases. The programme has been closely co-designed with residents since 2015.",
+    "type": "LOCAL_GOV",
+    "regionId": "Unassigned",
+    "localAuthorityId": "a5680ade-8bd2-4ab7-9acf-e72fe75a27c6",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Phase 2A demolition complete March 2026; 45 new affordable homes now progressing to construction; 89 homes already delivered in earlier phases.",
+    "latitude": 51.5650,
+    "longitude": -0.3511,
+    "locationDescription": "Grange Farm Estate, South Harrow, London Borough of Harrow",
+    "locationSource": "Council news article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Next chapter for Grange Farm underway",
+        "source": "London Borough of Harrow",
+        "url": "https://www.harrow.gov.uk/news/article/11501/next-chapter-for-grange-farm-underway",
+        "datePublished": "2026-03-18",
+        "summary": "Phase 2A demolition complete. 45 new affordable homes including 36 council homes to be built in two blocks. Total vision: ~500 homes, community centre and high-quality public spaces. Council flagship action."
+      }
+    ]
+  }
+]

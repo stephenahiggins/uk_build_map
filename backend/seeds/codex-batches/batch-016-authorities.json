@@ -1,0 +1,146 @@
+[
+  {
+    "id": "5ac3471e-3804-4aa6-93ae-e20f0806ce27",
+    "name": "Barnet",
+    "code": "E09000003",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "3ef6ec68-3e98-4bee-8136-31abee8d9ce3",
+    "name": "Newham",
+    "code": "E09000025",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "0a32fab9-c39d-45f7-b09d-9bc0ef49919e",
+    "name": "Manchester",
+    "code": "E08000003",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "368988bf-37ca-48cc-9fb7-24d510bed8fb",
+    "name": "Hastings",
+    "code": "E07000062",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "8025f679-fb6f-49fb-8b1e-0f9a9396b8cf",
+    "name": "Calderdale",
+    "code": "E08000033",
+    "countryCode": "ENGLAND",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "regionName": "Yorkshire and the Humber"
+  },
+  {
+    "id": "678a997b-6a4e-4a74-a304-af6ba65bae29",
+    "name": "Exeter",
+    "code": "E07000041",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "6f235cd3-f603-4c15-b42c-d567c200a3b8",
+    "name": "Tower Hamlets",
+    "code": "E09000030",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "84546d10-3514-4002-b391-93ee787d4c5f",
+    "name": "Wolverhampton",
+    "code": "E08000031",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "f39f2f94-072a-40a0-babb-af97997f1a5f",
+    "name": "Haringey",
+    "code": "E09000014",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "bf43c2c4-faec-4bba-b278-42c7b3d7f27d",
+    "name": "Horsham",
+    "code": "E07000227",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "2a6eb4bc-cd1f-4c14-ae0d-647ae499dfdc",
+    "name": "Trafford",
+    "code": "E08000009",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "14085765-b2f6-4bde-9ea5-6f7ae0dbba30",
+    "name": "Slough",
+    "code": "E06000039",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "a775e6b5-e0c0-4259-8c92-d9a3b9510068",
+    "name": "Gloucester",
+    "code": "E07000081",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "54812331-ef56-4ee0-8aa2-308a16a39c82",
+    "name": "Great Yarmouth",
+    "code": "E07000145",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "ceffd80f-96a7-44d5-9f47-e50f18a41da1",
+    "name": "Harlow",
+    "code": "E07000073",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "81c87fa4-2637-4f67-88fd-1bdda7237ae7",
+    "name": "Camden",
+    "code": "E09000007",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  },
+  {
+    "id": "4e9417bf-f787-4de4-b133-63cc43f724a1",
+    "name": "Norwich",
+    "code": "E07000148",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
+    "id": "89197ab7-89a3-4a38-86fb-f72f21f3e521",
+    "name": "Enfield",
+    "code": "E09000010",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
+  }
+]

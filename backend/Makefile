@@ -31,14 +31,36 @@ update-schema:
 
 seed:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx prisma db seed
-	$(DOCKER_COMPOSE) exec $(SERVICE) ts-node scripts/seedProjectsFromFile.ts seeds/projects.seed.json
+	$(DOCKER_COMPOSE) exec $(SERVICE) npx ts-node scripts/seedProjectsFromFile.ts seeds/projects.seed.json
 
 # Usage: make seed-projects [SEED=seeds/projects.seed.json]
+# Use npx: ts-node lives in node_modules/.bin and is not on PATH for plain docker exec.
 seed-projects:
-	$(DOCKER_COMPOSE) exec $(SERVICE) ts-node scripts/seedProjectsFromFile.ts $(SEED)
+	$(DOCKER_COMPOSE) exec $(SERVICE) npx ts-node scripts/seedProjectsFromFile.ts $(SEED)
 
 recompute-evaluations:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npm run recompute:evaluations
+
+recompute-evaluations-all:
+	$(DOCKER_COMPOSE) exec $(SERVICE) npm run recompute:evaluations:all
+
+seed-export-las:
+	$(DOCKER_COMPOSE) exec $(SERVICE) npm run seed:export-local-authorities
+
+coverage-authorities:
+	$(DOCKER_COMPOSE) exec $(SERVICE) npm run coverage:authorities
+
+seed-codex-batches:
+	$(DOCKER_COMPOSE) exec $(SERVICE) npm run seed:generate-codex-batches -- --authorities-json seeds/local-authorities.json --out-dir seeds/codex-batches
+
+seed-merge-codex:
+	$(DOCKER_COMPOSE) exec $(SERVICE) npm run seed:merge-codex-outputs
+
+seed-claude-batches:
+	$(DOCKER_COMPOSE) exec $(SERVICE) npm run seed:generate-claude-batches -- --authorities-json seeds/local-authorities.json --out-dir seeds/claude-batches
+
+seed-merge-claude:
+	$(DOCKER_COMPOSE) exec $(SERVICE) npm run seed:merge-claude-outputs
 
 # --- Testing ---
 test:

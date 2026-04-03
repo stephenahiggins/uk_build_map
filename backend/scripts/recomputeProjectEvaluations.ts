@@ -1,11 +1,49 @@
 import 'dotenv/config';
-import { ProjectStatus as PrismaProjectStatus } from '@prisma/client';
+import { Prisma, ProjectStatus as PrismaProjectStatus } from '@prisma/client';
 import { createPrismaClient } from '../src/lib/createPrismaClient';
-import { evaluateProjectWithGemini } from '../src/lib/projectEvaluation';
+import { evaluateProjectDeterministically } from '../src/lib/projectEvaluation';
+import { resolveGeoAssignments } from '../src/lib/geoLookup';
+import { resolveDatabaseUrlForHostScripts } from './lib/resolveDatabaseUrlForHostScripts';
+
+resolveDatabaseUrlForHostScripts();
 
 const prisma = createPrismaClient();
 
 type PrismaStatus = PrismaProjectStatus;
+
+type Mode = 'coords-only' | 'evaluation';
+
+function parseMode(argv: string[]): Mode {
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a === '--help' || a === '-h') {
+      console.log(`
+Usage: ts-node scripts/recomputeProjectEvaluations.ts [options]
+
+Runs deterministic evaluation over projects and updates RAG status, rationale, coordinates, and geo fields.
+
+Options:
+  --mode coords-only   Only projects missing latitude or longitude (default).
+  --mode evaluation    All projects — full RAG recompute using existing evidence.
+
+MOCK_PROJECT_EVALUATION=true uses mock evaluation responses.
+`);
+      process.exit(0);
+    }
+    if (a === '--mode' && argv[i + 1]) {
+      const v = argv[i + 1].toLowerCase();
+      if (v === 'coords-only' || v === 'evaluation') return v as Mode;
+      throw new Error(`Unknown --mode value: ${argv[i + 1]}`);
+    }
+    const eq = a.match(/^--mode=(.+)$/);
+    if (eq) {
+      const v = eq[1].toLowerCase();
+      if (v === 'coords-only' || v === 'evaluation') return v as Mode;
+      throw new Error(`Unknown --mode value: ${eq[1]}`);
+    }
+  }
+  return 'coords-only';
+}
 
 function toPrismaStatus(status: 'Red' | 'Amber' | 'Green'): PrismaStatus {
   switch (status) {
@@ -18,24 +56,23 @@ function toPrismaStatus(status: 'Red' | 'Amber' | 'Green'): PrismaStatus {
   }
 }
 
-async function recompute() {
-  const apiKey = process.env.GEMINI_API_KEY;
-  const openAIApiKey = process.env.OPENAI_API_KEY;
-
-  if (!apiKey && !openAIApiKey) {
-    throw new Error(
-      'An API key for either Gemini or OpenAI must be set to run the project evaluation recompute script.'
-    );
+function projectWhereForMode(mode: Mode): Prisma.ProjectWhereInput {
+  if (mode === 'evaluation') {
+    return {};
   }
+  return {
+    OR: [{ latitude: null }, { longitude: null }],
+  };
+}
 
-  const model = process.env.GEMINI_MODEL || process.env.MODEL;
-  const openAIModel = process.env.OPENAI_MODEL;
+async function recompute() {
+  const mode = parseMode(process.argv.slice(2));
   const mock = process.env.MOCK_PROJECT_EVALUATION === 'true';
 
+  const where = projectWhereForMode(mode);
+
   const projects = await prisma.project.findMany({
-    where: {
-      OR: [{ latitude: null }, { longitude: null }],
-    },
+    where,
     include: {
       evidence: {
         orderBy: {
@@ -47,11 +84,13 @@ async function recompute() {
     },
   });
 
-  console.log(`Found ${projects.length} projects to evaluate.`);
+  console.log(
+    `Mode: ${mode}. Found ${projects.length} project(s) to evaluate.`
+  );
 
   for (const project of projects) {
     try {
-      const evaluation = await evaluateProjectWithGemini(
+      const evaluation = evaluateProjectDeterministically(
         {
           projectName: project.title,
           projectDescription: project.description || undefined,
@@ -68,10 +107,6 @@ async function recompute() {
           })),
         },
         {
-          apiKey,
-          openAIApiKey,
-          model: model || undefined,
-          openAIModel: openAIModel || undefined,
           mockResponse: mock,
         }
       );
@@ -80,17 +115,39 @@ async function recompute() {
         `Updating ${project.title} -> status ${evaluation.ragStatus} (${evaluation.ragRationale || 'no rationale'})`
       );
 
+      const existingLat =
+        project.latitude != null ? Number(project.latitude) : null;
+      const existingLng =
+        project.longitude != null ? Number(project.longitude) : null;
+
+      const nextLat =
+        mode === 'evaluation'
+          ? (evaluation.latitude ?? existingLat)
+          : evaluation.latitude;
+      const nextLng =
+        mode === 'evaluation'
+          ? (evaluation.longitude ?? existingLng)
+          : evaluation.longitude;
+
+      const derivedGeo = await resolveGeoAssignments(nextLat, nextLng);
+
       await prisma.project.update({
         where: { id: project.id },
         data: {
           status: toPrismaStatus(evaluation.ragStatus),
           statusRationale: evaluation.ragRationale,
           statusUpdatedAt: new Date(),
-          latitude: evaluation.latitude,
-          longitude: evaluation.longitude,
-          locationDescription: evaluation.locationDescription || null,
-          locationSource: evaluation.locationSource || null,
-          locationConfidence: evaluation.locationConfidence ?? null,
+          latitude: nextLat,
+          longitude: nextLng,
+          locationDescription:
+            evaluation.locationDescription || project.locationDescription || null,
+          locationSource:
+            evaluation.locationSource || project.locationSource || null,
+          locationConfidence:
+            evaluation.locationConfidence ?? project.locationConfidence ?? null,
+          regionId: derivedGeo.regionId ?? project.regionId,
+          localAuthorityId:
+            derivedGeo.localAuthorityId ?? project.localAuthorityId,
         },
       });
     } catch (error) {

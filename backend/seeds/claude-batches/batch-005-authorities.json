@@ -1,0 +1,178 @@
+[
+  {
+    "id": "ecb73cb6-20fb-4a6c-97a5-4361fe4a3e3a",
+    "name": "Erewash",
+    "code": "E07000036",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "678a997b-6a4e-4a74-a304-af6ba65bae29",
+    "name": "Exeter",
+    "code": "E07000041",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "36234393-4bb0-4840-838e-27fa1f6750fd",
+    "name": "Fareham",
+    "code": "E07000087",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c207efea-0c63-426d-98d6-c8baee48e656",
+    "name": "Fenland",
+    "code": "E07000010",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "42efa97b-cf9c-4ae4-b7ce-f0ef1f5518e4",
+    "name": "Folkestone and Hythe",
+    "code": "E07000112",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "7cd0b671-8334-47f0-bcee-a2ffa243b813",
+    "name": "Forest of Dean",
+    "code": "E07000080",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "99ed5a23-a490-40e5-bfc9-369398a40844",
+    "name": "Fylde",
+    "code": "E07000119",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "9ad351cc-4523-4686-a05c-1caf186c0083",
+    "name": "Gateshead",
+    "code": "E08000037",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "655643b4-044b-4423-b4c9-e16bb75c0244",
+    "name": "Gedling",
+    "code": "E07000173",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "a775e6b5-e0c0-4259-8c92-d9a3b9510068",
+    "name": "Gloucester",
+    "code": "E07000081",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "0f79e13f-e088-45c6-8e6a-ba611cbad87f",
+    "name": "Gosport",
+    "code": "E07000088",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "6b3bdaf4-2dc0-4491-b5ec-ef9426d998fc",
+    "name": "Gravesham",
+    "code": "E07000109",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "54812331-ef56-4ee0-8aa2-308a16a39c82",
+    "name": "Great Yarmouth",
+    "code": "E07000145",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "332aa2ed-bb95-45e0-a548-5bb2caf8c5f6",
+    "name": "Greenwich",
+    "code": "E09000011",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "0d41e09c-c374-4867-aaee-8fb8d3dd16e8",
+    "name": "Guildford",
+    "code": "E07000209",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "90d5f587-9e3a-4439-ba00-fb44ebd20573",
+    "name": "Hackney",
+    "code": "E09000012",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "c40c4dac-6ca9-43e3-a0c5-e7ed00589331",
+    "name": "Halton",
+    "code": "E06000006",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "f5a751c5-f5ae-432d-a898-4cff1275795a",
+    "name": "Hammersmith and Fulham",
+    "code": "E09000013",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "f81f5051-60cc-47d8-aa4c-c7b98bfa74af",
+    "name": "Harborough",
+    "code": "E07000131",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "f39f2f94-072a-40a0-babb-af97997f1a5f",
+    "name": "Haringey",
+    "code": "E09000014",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "ceffd80f-96a7-44d5-9f47-e50f18a41da1",
+    "name": "Harlow",
+    "code": "E07000073",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  },
+  {
+    "id": "a5680ade-8bd2-4ab7-9acf-e72fe75a27c6",
+    "name": "Harrow",
+    "code": "E09000015",
+    "countryCode": "ENGLAND",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "regionName": "Unassigned"
+  }
+]

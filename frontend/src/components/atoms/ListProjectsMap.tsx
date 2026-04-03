@@ -30,14 +30,12 @@ const UK_BOUNDS = {
   east: 2.1,
 };
 
-// Adjust the map boundaries to focus on the given projects
-// This is just a UX helper to avoid the user having to zoom out/in manually
 const FitBounds: React.FC<{ projects: Project[] }> = ({ projects }) => {
   const map = useMap();
 
   useEffect(() => {
     const filtered = projects.filter(
-      (p) => p.latitude != null && p.longitude != null
+      (project) => project.latitude != null && project.longitude != null
     );
 
     const ukFiltered = filtered.filter((project) => {
@@ -52,11 +50,11 @@ const FitBounds: React.FC<{ projects: Project[] }> = ({ projects }) => {
     });
 
     if (ukFiltered.length === 0) {
-      const ukBounds = L.latLngBounds(
+      const bounds = L.latLngBounds(
         [UK_BOUNDS.south, UK_BOUNDS.west],
         [UK_BOUNDS.north, UK_BOUNDS.east]
       );
-      map.fitBounds(ukBounds, {
+      map.fitBounds(bounds, {
         padding: [20, 20],
         maxZoom: 7,
       });
@@ -64,21 +62,17 @@ const FitBounds: React.FC<{ projects: Project[] }> = ({ projects }) => {
     }
 
     if (ukFiltered.length === 1) {
-      // If only one UK marker, center on it with a reasonable zoom
       const project = ukFiltered[0];
       map.setView([project.latitude!, project.longitude!], 10);
       return;
     }
 
-    // Create bounds from all marker positions
     const bounds = L.latLngBounds(
       ukFiltered.map((project) => [project.latitude!, project.longitude!])
     );
-
-    // Fit the map to show all markers with padding
     map.fitBounds(bounds, {
-      padding: [20, 20], // Add 20px padding on all sides
-      maxZoom: 12, // Prevent zooming in too far for better context
+      padding: [20, 20],
+      maxZoom: 12,
     });
   }, [map, projects]);
 
@@ -100,17 +94,14 @@ const getMarkerColor = (status: string) => {
 
 const ListProjectsMap: React.FC<ListProjectsMapProps> = ({ projects }) => {
   const filtered = projects.filter(
-    (p) => p.latitude != null && p.longitude != null
+    (project) => project.latitude != null && project.longitude != null
   );
-
-  // Use default center, but the FitBounds component will adjust it
-  const center = DEFAULT_POSITION;
 
   return (
     <MapContainer
-      center={center}
+      center={DEFAULT_POSITION}
       zoom={DEFAULT_ZOOM}
-      scrollWheelZoom={true}
+      scrollWheelZoom
       style={{ height: '500px', width: '100%', borderRadius: '12px' }}
       className="shadow-lg"
     >
@@ -129,13 +120,16 @@ const ListProjectsMap: React.FC<ListProjectsMapProps> = ({ projects }) => {
           iconAnchor: [16, 32],
           popupAnchor: [0, -32],
         });
+
         return (
           <Marker
             key={project.id}
             position={{ lat: project.latitude!, lng: project.longitude! }}
             icon={markerIcon}
             eventHandlers={{
-              click: () => (window.location.href = `/project/${project.id}`),
+              click: () => {
+                window.location.href = `/project/${project.id}`;
+              },
             }}
           >
             <Tooltip
@@ -171,3 +165,4 @@ const ListProjectsMap: React.FC<ListProjectsMapProps> = ({ projects }) => {
 };
 
 export { ListProjectsMap };
+export default ListProjectsMap;

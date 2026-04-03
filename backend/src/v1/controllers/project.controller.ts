@@ -3,6 +3,8 @@ import { RequestWithProfile } from '@/src/v1/types';
 import prisma from '@/src/db';
 import { UserType } from '@prisma/client';
 import { getFileUrl } from '@/src/common/utils/fileUpload';
+import { resolveGeoAssignments } from '@/src/lib/geoLookup';
+import { buildAuthorityCoverageSnapshot } from '@/src/lib/authorityCoverage';
 
 const VALID_LOCATION_CONFIDENCE = new Set(['LOW', 'MEDIUM', 'HIGH']);
 
@@ -72,18 +74,44 @@ export const createProject = async (req: RequestWithProfile, res: Response) => {
           })()
         : undefined;
 
+    const parsedLatitude =
+      latitude === '' || latitude === undefined || latitude === null
+        ? null
+        : Number(latitude);
+    const parsedLongitude =
+      longitude === '' || longitude === undefined || longitude === null
+        ? null
+        : Number(longitude);
+
+    const sanitizedLatitude =
+      parsedLatitude === null || Number.isNaN(parsedLatitude)
+        ? null
+        : parsedLatitude;
+    const sanitizedLongitude =
+      parsedLongitude === null || Number.isNaN(parsedLongitude)
+        ? null
+        : parsedLongitude;
+
+    const derivedGeo =
+      sanitizedLatitude !== null && sanitizedLongitude !== null
+        ? await resolveGeoAssignments(sanitizedLatitude, sanitizedLongitude)
+        : {};
+
+    const derivedRegionId =
+      !regionId || regionId === '' ? derivedGeo.regionId : regionId;
+
     const project = await prisma.project.create({
       data: {
         title,
         description,
         type,
-        regionId,
-        localAuthorityId: derivedLocalAuthorityId,
+        regionId: derivedRegionId,
+        localAuthorityId: derivedLocalAuthorityId ?? derivedGeo.localAuthorityId,
         expectedCompletion: isoExpectedCompletion,
         status,
         statusRationale,
-        latitude,
-        longitude,
+        latitude: sanitizedLatitude,
+        longitude: sanitizedLongitude,
         locationDescription,
         locationSource,
         locationConfidence: normalizedLocationConfidence,
@@ -202,24 +230,57 @@ const buildProjectWhere = (query: RequestWithProfile['query']) => {
 // GET /projects - List all projects (optionally filtered by any parameter)
 export const getProjects = async (req: RequestWithProfile, res: Response) => {
   try {
-    const { page: pageQuery, limit: limitQuery } = req.query;
+    const { page: pageQuery, limit: limitQuery, mapOnly: mapOnlyQuery } =
+      req.query;
 
     const page = pageQuery ? parseInt(pageQuery as string, 10) : 1;
     const limit = limitQuery ? parseInt(limitQuery as string, 10) : 10;
     const skip = (page - 1) * limit;
 
     const where = buildProjectWhere(req.query);
+    const mapOnlyRaw = Array.isArray(mapOnlyQuery)
+      ? mapOnlyQuery[0]
+      : mapOnlyQuery;
+    const mapOnly =
+      mapOnlyRaw === 'true' ||
+      mapOnlyRaw === '1';
 
     const [projects, total] = await Promise.all([
-      prisma.project.findMany({
-        where,
-        orderBy: { createdAt: 'desc' },
-        include: {
-          evidence: true,
-        },
-        skip,
-        take: limit,
-      }),
+      mapOnly
+        ? prisma.project.findMany({
+            where,
+            orderBy: { createdAt: 'desc' },
+            select: {
+              id: true,
+              title: true,
+              description: true,
+              type: true,
+              regionId: true,
+              localAuthorityId: true,
+              expectedCompletion: true,
+              status: true,
+              statusRationale: true,
+              latitude: true,
+              longitude: true,
+              locationDescription: true,
+              locationSource: true,
+              locationConfidence: true,
+              imageUrl: true,
+              createdAt: true,
+              createdById: true,
+            },
+            skip,
+            take: limit,
+          })
+        : prisma.project.findMany({
+            where,
+            orderBy: { createdAt: 'desc' },
+            include: {
+              evidence: true,
+            },
+            skip,
+            take: limit,
+          }),
       prisma.project.count({ where }),
     ]);
 
@@ -243,16 +304,23 @@ export const getProjectSummary = async (
   try {
     const where = buildProjectWhere(req.query);
 
-    const [projectCount, evidenceCount, localAuthorityCount] =
-      await Promise.all([
-        prisma.project.count({ where }),
-        prisma.evidenceItem.count({
-          where: {
-            project: where,
-          },
-        }),
-        prisma.localAuthority.count(),
-      ]);
+    const [projectCount, evidenceCount, laGroupRows] = await Promise.all([
+      prisma.project.count({ where }),
+      prisma.evidenceItem.count({
+        where: {
+          project: where,
+        },
+      }),
+      prisma.project.groupBy({
+        by: ['localAuthorityId'],
+        where: {
+          ...where,
+          localAuthorityId: { not: null },
+        },
+      }),
+    ]);
+
+    const localAuthorityCount = laGroupRows.length;
 
     res.json({
       projectCount,
@@ -261,6 +329,18 @@ export const getProjectSummary = async (
     });
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch summary', details: err });
+  }
+};
+
+export const getAuthorityCoverage = async (
+  req: RequestWithProfile,
+  res: Response
+) => {
+  try {
+    const snapshot = await buildAuthorityCoverageSnapshot(prisma);
+    res.json(snapshot);
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch authority coverage', details: err });
   }
 };
 
@@ -323,24 +403,62 @@ export const modifyProject = async (req: RequestWithProfile, res: Response) => {
           })()
         : undefined;
 
+    const updateData: Record<string, unknown> = {
+      title,
+      description,
+      type,
+      regionId,
+      localAuthorityId,
+      imageUrl,
+      expectedCompletion,
+      status,
+      statusRationale,
+      locationDescription,
+      locationSource,
+      locationConfidence: normalizedLocationConfidence,
+    };
+
+    const resolvedLatitude =
+      latitude === '' || latitude === undefined || latitude === null
+        ? null
+        : Number(latitude);
+    const resolvedLongitude =
+      longitude === '' || longitude === undefined || longitude === null
+        ? null
+        : Number(longitude);
+    const sanitizedLatitude =
+      resolvedLatitude === null || Number.isNaN(resolvedLatitude)
+        ? null
+        : resolvedLatitude;
+    const sanitizedLongitude =
+      resolvedLongitude === null || Number.isNaN(resolvedLongitude)
+        ? null
+        : resolvedLongitude;
+
+    if (latitude !== undefined) {
+      updateData.latitude = sanitizedLatitude;
+    }
+    if (longitude !== undefined) {
+      updateData.longitude = sanitizedLongitude;
+    }
+
+    const derivedGeo =
+      sanitizedLatitude !== null && sanitizedLongitude !== null
+        ? await resolveGeoAssignments(sanitizedLatitude, sanitizedLongitude)
+        : {};
+
+    if (!regionId || regionId === '') {
+      updateData.regionId = derivedGeo.regionId ?? updateData.regionId;
+    }
+    if (!localAuthorityId || localAuthorityId === '') {
+      updateData.localAuthorityId =
+        derivedGeo.localAuthorityId ?? updateData.localAuthorityId;
+    }
+
     const updated = await prisma.project.update({
       where: { id },
-      data: {
-        title,
-        description,
-        type,
-        regionId,
-        localAuthorityId,
-        imageUrl,
-        expectedCompletion,
-        status,
-        statusRationale,
-        latitude,
-        longitude,
-        locationDescription,
-        locationSource,
-        locationConfidence: normalizedLocationConfidence,
-      },
+      // Prisma Client typings expect relation connect form for some fields; runtime accepts scalars.
+      data: updateData as Parameters<typeof prisma.project.update>[0]['data'],
     });
     res.json(updated);
   } catch (err) {

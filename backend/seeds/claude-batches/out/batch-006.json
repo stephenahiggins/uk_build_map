@@ -1,0 +1,560 @@
+[
+  {
+    "id": "hart-lcwip-cycling-walking-2024",
+    "title": "Hart Local Cycling and Walking Infrastructure Plan (LCWIP)",
+    "description": "Hart District Council, in partnership with Hampshire County Council, produced and adopted a Local Cycling and Walking Infrastructure Plan (LCWIP) in March 2024. The plan sets out a network of proposed cycle and walking route improvements across the district and will be used to secure developer contributions toward cycling and pedestrian infrastructure as part of new planning permissions.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "684166e5-794a-45e7-9b24-5ce898db4715",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Plan adopted by Hart District Council in March 2024 and by Hampshire County Council in June 2024; now in active use as a material planning consideration.",
+    "latitude": 51.2836,
+    "longitude": -0.8420,
+    "locationDescription": "Hart District, Hampshire (centred on Fleet town centre)",
+    "locationSource": "Council planning policy page",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Local Cycling and Walking Infrastructure Plan – Hart District Council",
+        "source": "Hart District Council",
+        "url": "https://www.hart.gov.uk/planning-and-building-control/planning-policy/local-cycling-and-walking-infrastructure-plan",
+        "datePublished": "2024-03-01",
+        "summary": "Hart District Council page confirming the LCWIP was produced with Hampshire County Council and adopted in March 2024. The plan indicates improvements needed to walking and cycling infrastructure and will help secure improvements through developer contributions."
+      }
+    ]
+  },
+  {
+    "id": "hartlepool-waterfront-pride-in-place",
+    "title": "Hartlepool Waterfront Programme and Pride in Place",
+    "description": "Hartlepool Borough Council is delivering a major programme of waterfront and town-centre regeneration funded by the Town Deal (£25 million, 2021) and the Pride in Place programme (£20 million, 2024 onwards). The Waterfront Programme focuses on investing in cultural, heritage and leisure infrastructure at the marina to create a landmark destination. The Screen Industries Production Village on Church Street forms a further strand, converting existing buildings into production facilities for film and TV. Pride in Place (formerly Long-Term Plan for Towns) funds continue the programme beyond the Town Deal, supporting public realm and economic recovery.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "1e7725f8-ed24-485b-8ad8-98cd209ebfd0",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Town Deal projects are in delivery; Pride in Place funding of £20 million confirmed, adding to the previously awarded Town Deal and Levelling Up Fund money.",
+    "latitude": 54.6882,
+    "longitude": -1.2120,
+    "locationDescription": "Hartlepool town centre and marina waterfront, County Durham",
+    "locationSource": "Council regeneration page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Regeneration – Hartlepool Borough Council",
+        "source": "Hartlepool Borough Council",
+        "url": "https://www.hartlepool.gov.uk/regeneration",
+        "datePublished": "2024-01-01",
+        "summary": "Official council regeneration page describing the Waterfront Programme, Town Deal (£25m), Pride in Place (£20m) and Screen Industries Production Village. The page sets out the full investment programme for Hartlepool town centre and marina."
+      }
+    ]
+  },
+  {
+    "id": "hastings-pelham-playground-renewal",
+    "title": "Hastings Foreshore Trust – Pelham Beach Playground Renewal",
+    "description": "The Foreshore Trust, managed by Hastings Borough Council, delivered a significant upgrade to Pelham Beach Playground on the seafront. The project replaced and upgraded play equipment, installed new surfaces and interactive play boards, and added seating areas for families. Works were carried out by Eibe Play. The playground was formally reopened on 24 July 2025 following the works.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "368988bf-37ca-48cc-9fb7-24d510bed8fb",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Works completed and playground officially reopened on 24 July 2025 with a public launch event attended by senior councillors and local MP.",
+    "latitude": 50.8564,
+    "longitude": 0.5700,
+    "locationDescription": "Pelham Beach, Hastings seafront, East Sussex",
+    "locationSource": "Council regeneration project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Foreshore Trust 2024 Pelham Playground Renewal Scheme – Hastings Borough Council",
+        "source": "Hastings Borough Council",
+        "url": "https://www.hastings.gov.uk/regeneration/Foreshore-Trust-Pelham-Playground-Renewal-Scheme/",
+        "datePublished": "2025-07-24",
+        "summary": "Council regeneration project page reporting that Pelham Beach Playground was successfully reopened on 24 July 2025 after a major upgrade by contractor Eibe Play, including new play equipment, surfaces, interactive boards and seating."
+      },
+      {
+        "type": "URL",
+        "title": "Pride in Place – Hastings Borough Council",
+        "source": "Hastings Borough Council",
+        "url": "https://www.hastings.gov.uk/regeneration/pride-in-place/",
+        "datePublished": "2025-09-25",
+        "summary": "Hastings is one of the towns receiving Pride in Place (Plan for Neighbourhoods) funding from the Ministry of Housing, Communities and Local Government. The programme was renamed from Long-Term Plan for Towns on 25 September 2025 and supports wider regeneration across the borough."
+      }
+    ]
+  },
+  {
+    "id": "havant-bulbeck-road-town-centre-regeneration",
+    "title": "Havant Town Centre – Bulbeck Road Residential Regeneration",
+    "description": "Havant Borough Council secured £1.65 million from the Department for Levelling Up and Communities' Brownfield Land Release Fund 2 (BLRF2) in November 2022 to demolish the underused Bulbeck Road car park and prepare the site for up to 91 new town-centre homes. This is Phase 1 of a larger residential-led regeneration programme for Havant town centre that will also integrate the railway and bus stations with the Civic Centre Campus. The Council is also working with the High Streets Task Force, which selected Havant in 2022.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "6bc0c4b9-2b38-4cae-b800-87874214b5c2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "BLRF2 grant funding secured and site preparation progressing; the final housing form is yet to be determined and full delivery is subject to further development decisions.",
+    "latitude": 50.8551,
+    "longitude": -0.9813,
+    "locationDescription": "Bulbeck Road car park, Havant town centre, Hampshire",
+    "locationSource": "Council regeneration project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Havant Town Centre Regeneration – Havant Borough Council",
+        "source": "Havant Borough Council",
+        "url": "https://www.havant.gov.uk/regeneration-and-business/regeneration-havant-borough/havant-town-centre",
+        "datePublished": "2023-01-01",
+        "summary": "Council page confirming £1.65m from Brownfield Land Release Fund 2 to demolish Bulbeck Road car park and prepare for 91 new town-centre homes. Describes the wider vision for residential-led Havant town centre regeneration including better station integration."
+      }
+    ]
+  },
+  {
+    "id": "havering-rainham-beam-park-housing-zone",
+    "title": "Rainham and Beam Park Housing Zone and New Station",
+    "description": "Havering Council's Rainham and Beam Park Housing Zone aims to transform a declining industrial area into a vibrant new urban community of up to 3,500 new homes over 10–15 years, supported by new transport, schools, health and green infrastructure. The zone's centrepiece is a proposed new Beam Park railway station on the c2c line, which will act as a civic hub and catalyst for over 5,000 homes and is pivotal to the wider London Riverside regeneration. In March 2026 the Government and Mayor of London announced support via the New Homes Accelerator to address the station funding gap caused by cost inflation.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "4da24c01-f0c0-4b74-aff3-0244727668a9",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Housing Zone is active and homes in delivery, but the critical Beam Park station project faces a funding gap due to inflation and cost increases, with the Council and GLA seeking solutions as of March 2026.",
+    "latitude": 51.5175,
+    "longitude": 0.1811,
+    "locationDescription": "Rainham and Beam Park, south-east London Borough of Havering, near Rainham town centre",
+    "locationSource": "Council regeneration project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Rainham and Beam Park – London Borough of Havering",
+        "source": "London Borough of Havering",
+        "url": "https://www.havering.gov.uk/regeneration-3/rainham-beam-park",
+        "datePublished": "2024-01-01",
+        "summary": "Official council page describing the Housing Zone vision for 3,500 homes, the importance of Beam Park station to unlock 5,000+ homes and over £1bn investment, and wider social infrastructure including schools, health centre and 60,000 sq ft commercial space."
+      },
+      {
+        "type": "URL",
+        "title": "Leader's Statement: Beam Park Station update – Havering Council",
+        "source": "London Borough of Havering",
+        "url": "https://www.havering.gov.uk/news/article/1754/leader-s-statement-beam-park-station-update",
+        "datePublished": "2026-03-25",
+        "summary": "Council leader statement (25 March 2026) confirming Government and GLA support through the New Homes Accelerator for Beam Park station, while acknowledging cost increases due to inflation and that partners are working to find solutions to the funding gap."
+      }
+    ]
+  },
+  {
+    "id": "herefordshire-leominster-heritage-action-zone",
+    "title": "Leominster High Street Heritage Action Zone",
+    "description": "Herefordshire Council, Historic England, Leominster Town Council and other partners collectively invested approximately £1.65 million in the Leominster High Street Heritage Action Zone. The project delivered improvements to pavements, roads and public spaces in the market town centre, restoring natural stone paving, widening footways, improving junctions for pedestrians and renovating historic shopfronts and buildings to reflect original character. Works completed by December 2024.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "9119ac8b-0ee8-4123-a063-eff4ba04e654",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Works completed by December 2024. Local councillors and visitors confirmed the quality of finished works and the positive impact on the town centre.",
+    "latitude": 52.2278,
+    "longitude": -2.7362,
+    "locationDescription": "Leominster town centre, Herefordshire",
+    "locationSource": "Council news article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Restoring Leominster's heart and heritage – Herefordshire Council",
+        "source": "Herefordshire Council",
+        "url": "https://www.herefordshire.gov.uk/news/2024/december/restoring-leominster-s-heart-and-heritage/",
+        "datePublished": "2024-12-23",
+        "summary": "December 2024 news article confirming completion of public realm improvements in Leominster town centre under the Heritage Action Zone: attractive road surfacing, wider pavements, improved junctions and restored historic shopfronts funded by Historic England, Herefordshire Council and Leominster Town Council."
+      },
+      {
+        "type": "URL",
+        "title": "Business and civic leaders celebrate £60m investment success at Skylon Park – Herefordshire Council",
+        "source": "Herefordshire Council",
+        "url": "https://www.herefordshire.gov.uk/news/2024/december/business-and-civic-leaders-celebrate-60m-investment-success-at-skylon-park/",
+        "datePublished": "2024-12-17",
+        "summary": "December 2024 article celebrating £60m of cumulative public-private investment at Skylon Park Enterprise Zone, Hereford, which transformed 110 acres of largely derelict council-owned land into a business park now home to 100+ businesses and 1,500 jobs."
+      }
+    ]
+  },
+  {
+    "id": "hertsmere-borehamwood-social-rent-homes",
+    "title": "Borehamwood Catterick Way – New Social Rent Housing",
+    "description": "Hertsmere Borough Council began construction in February 2026 on nine new three-bedroom social rent homes on a former derelict garage site on Catterick Way, Borehamwood. This is the first new-build residential scheme delivered entirely by the council itself in many years. Three ground-floor homes include private gardens and are fully wheelchair-adaptable. The development also includes landscaping and secure cycle storage.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "b06217cc-29da-4991-90d2-7c1c2ae08ee9",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Construction officially began in February 2026 with a ground-breaking ceremony; project on site and progressing.",
+    "latitude": 51.6566,
+    "longitude": -0.2728,
+    "locationDescription": "Catterick Way garage site, Borehamwood, Hertsmere",
+    "locationSource": "Council news article",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Breaking ground for new social rent homes in Borehamwood – Hertsmere Borough Council",
+        "source": "Hertsmere Borough Council",
+        "url": "https://www.hertsmere.gov.uk/news/breaking-ground-for-new-social-rent-homes-in-borehamwood",
+        "datePublished": "2026-02-24",
+        "summary": "News article (24 February 2026) confirming construction start on nine three-bedroom social rent homes on Catterick Way. Described as the council's first directly delivered new-build residential scheme in many years, with wheelchair-adaptable units and landscaping."
+      }
+    ]
+  },
+  {
+    "id": "high-peak-buxton-spring-gardens-regeneration",
+    "title": "Buxton Spring Gardens – Future High Streets Fund and Heritage Action Zone",
+    "description": "High Peak Borough Council secured millions of pounds from the Future High Streets Fund (FHSF) and the High Street Heritage Action Zone (HSHAZ) to regenerate Spring Gardens, Buxton's main commercial area. The Council acquired The Springs shopping centre as a milestone in delivering the regeneration. The HSHAZ provided grants for historic shopfront repair: over £350,000 at Ponden Homes and Fitzgerald's Bakery, £300,000 for restoration of the Grade II listed former White Lion pub, and reinstatement of the missing historic urn on the slopes.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "9b977417-5e3a-4c47-bba7-ea1bfb7fc7cf",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "FHSF and HSHAZ projects substantially delivered; council ownership of The Springs shopping centre secured; shopfront and heritage grant programme ongoing.",
+    "latitude": 53.2567,
+    "longitude": -1.9116,
+    "locationDescription": "Spring Gardens shopping area, Buxton town centre, High Peak, Derbyshire",
+    "locationSource": "Council news article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Heritage at the heart of Buxton's regeneration – High Peak Borough Council",
+        "source": "High Peak Borough Council",
+        "url": "https://www.highpeak.gov.uk/article/7591/Heritage-at-the-heart-of-Buxtons-regeneration",
+        "datePublished": "2023-06-28",
+        "summary": "Article (28 June 2023) detailing Future High Streets Fund and Heritage Action Zone investment in Buxton Spring Gardens, council acquisition of The Springs shopping centre, over £350,000 shopfront grants, £300,000 White Lion pub restoration and historic urn reinstatement."
+      },
+      {
+        "type": "URL",
+        "title": "Regeneration projects overview – High Peak Borough Council",
+        "source": "High Peak Borough Council",
+        "url": "https://www.highpeak.gov.uk/article/303/Regeneration-projects",
+        "datePublished": "2024-01-01",
+        "summary": "Overview of major regeneration projects in the High Peak, including Buxton Heritage Action Zone, Future High Street Fund, Fairfield Common A6 Roundabout planning permission, and Glossop Town Hall restoration."
+      }
+    ]
+  },
+  {
+    "id": "hillingdon-cranford-country-park-restoration",
+    "title": "Cranford Country Park Restoration",
+    "description": "Hillingdon Council, with funding largely from the National Lottery Heritage Fund and contributions from National Highways and the Heritage of London Trust, carried out a major restoration of Cranford Country Park. Works included restoring the historic stables (repairing dry rot, woodworm, re-roofing and double glazing, air-source heat pump heating), constructing a new café on the footprint of the demolished Cranford House with a green roof, restoring cellars with interpretation displays, enlarging and landscaping the car park, widening access from the A312, and creating a new playground.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "fdc9a069-655c-42a5-8f80-818a34506c18",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Construction works nearing completion; stables fully repaired, café built, car park enlarged and driveway reinstated from the A312.",
+    "latitude": 51.4876,
+    "longitude": -0.4200,
+    "locationDescription": "Cranford Country Park, off the A312, Cranford, London Borough of Hillingdon",
+    "locationSource": "Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Cranford Park project – London Borough of Hillingdon",
+        "source": "London Borough of Hillingdon",
+        "url": "https://www.hillingdon.gov.uk/cranford-park-project",
+        "datePublished": "2024-01-01",
+        "summary": "Council project page describing extensive restoration of Cranford Country Park: stables repair with air-source heat pumps, new café with green roof on the Cranford House footprint, restored cellars with interpretation, enlarged car park, new playground, and widened A312 driveway. Funded mainly by National Lottery Heritage Fund."
+      }
+    ]
+  },
+  {
+    "id": "hinckley-bosworth-twycross-zoo-science-centre",
+    "title": "Twycross Zoo – National Science and Conservation Centre",
+    "description": "Following a successful bid to the Levelling Up Fund Round 1 in 2021, Hinckley and Bosworth Borough was awarded £19.9 million to deliver a purpose-built National Science and Conservation Centre adjacent to Twycross Zoo. The centre will provide world-class facilities for researchers to study the four great apes and over 100 endangered species, as well as public engagement and education space.",
+    "type": "NATIONAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "d946cf16-c1dd-48f0-8ad1-b1f5605f43d8",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "£19.9m LUF Round 1 award confirmed; application form and appendices published; project in delivery.",
+    "latitude": 52.5984,
+    "longitude": -1.5009,
+    "locationDescription": "Twycross Zoo, Norton-juxta-Twycross, Hinckley and Bosworth, Leicestershire",
+    "locationSource": "Council regeneration page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Levelling Up Fund 2021 – successful bid for funding – Hinckley and Bosworth Borough Council",
+        "source": "Hinckley and Bosworth Borough Council",
+        "url": "https://www.hinckley-bosworth.gov.uk/info/200079/regeneration/1963/levelling_up_fund_2021_-_successful_bid_for_funding",
+        "datePublished": "2022-01-01",
+        "summary": "Council page confirming the £19,900,000 Levelling Up Fund Round 1 award for a National Science and Conservation Centre at Twycross Zoo, providing a purpose-built research facility to study the four great apes and over 100 endangered species."
+      }
+    ]
+  },
+  {
+    "id": "hounslow-feltham-town-centre-regeneration",
+    "title": "Feltham Town Centre Regeneration",
+    "description": "The London Borough of Hounslow is delivering a major regeneration programme for Feltham town centre, identified as a District Centre in the London Plan 2021. Works already completed include repaving and widening footways, new street lighting, additional pedestrian crossings, new cycle lanes, lengthened bus lanes, resurfaced carriageways and new street furniture. Feltham Green and Bridge House Pond have received substantial public realm improvements. A Feltham Masterplan 2026 sets out the council's vision for the town's continued transformation, taking advantage of its proximity to Heathrow Airport and Feltham train station's connections.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "4355cf65-9905-4235-8b4e-a825ee60e029",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Extensive public realm and transport improvements already delivered; Feltham Masterplan 2026 adopted to guide next phases of investment.",
+    "latitude": 51.4495,
+    "longitude": -0.4073,
+    "locationDescription": "Feltham town centre, London Borough of Hounslow",
+    "locationSource": "Council regeneration page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Feltham town centre regeneration – London Borough of Hounslow",
+        "source": "London Borough of Hounslow",
+        "url": "https://www.hounslow.gov.uk/regeneration/feltham-town-centre-regeneration",
+        "datePublished": "2024-01-01",
+        "summary": "Council regeneration page describing completed improvements to pavements, street lighting, crossings, cycle lanes and public spaces in Feltham, plus the Feltham Masterplan 2026 vision for continued regeneration of this district centre near Heathrow."
+      }
+    ]
+  },
+  {
+    "id": "huntingdonshire-hinchingbrooke-country-park-redevelopment",
+    "title": "Hinchingbrooke Country Park Redevelopment",
+    "description": "Huntingdonshire District Council contracted Lindum Group in March 2026 to deliver a transformative redevelopment of the 150-acre Hinchingbrooke Country Park in Huntingdon. Funded through the Community Infrastructure Levy (CIL) and capital budgets, the project will enhance biodiversity through targeted habitat management, redesign the car park with additional spaces, accessible bays and EV charging points, and resurface pathways to improve access for all visitors. Works commence April 2026 with completion expected Spring 2027.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "4c20d442-3d63-4ea2-9056-ce2042c0b583",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Contractor (Lindum Group) appointed 26 March 2026, construction start confirmed for 13 April 2026, funded through CIL and capital budgets.",
+    "latitude": 52.3312,
+    "longitude": -0.1984,
+    "locationDescription": "Hinchingbrooke Country Park, Huntingdon, Cambridgeshire",
+    "locationSource": "Council news article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Contractor appointed for Hinchingbrooke Country Park redevelopment – Huntingdonshire District Council",
+        "source": "Huntingdonshire District Council",
+        "url": "https://www.huntingdonshire.gov.uk/news/contractor-appointed-for-hinchingbrooke-country-park-redevelopment/",
+        "datePublished": "2026-03-26",
+        "summary": "News article (26 March 2026) confirming Lindum Group awarded contract for Hinchingbrooke Country Park. Work starts 13 April 2026, completing Spring 2027. CIL and capital funded; delivers improved car park with EV charging, better accessibility and habitat management across 150 acres."
+      },
+      {
+        "type": "URL",
+        "title": "Works underway on Priory Centre redevelopment in St Neots – Huntingdonshire District Council",
+        "source": "Huntingdonshire District Council",
+        "url": "https://www.huntingdonshire.gov.uk/news/works-underway-on-priory-centre-redevelopment-in-st-neots/",
+        "datePublished": "2025-06-11",
+        "summary": "June 2025 article confirming construction start on the Priory Centre refurbishment and expansion in St Neots, part of the Market Towns Programme. £1.95m contribution from St Neots Town Council. Will provide a modern cultural, social and community hub for the market town."
+      }
+    ]
+  },
+  {
+    "id": "hyndburn-accrington-market-hall-levelling-up",
+    "title": "Accrington Market Hall and Town Centre Levelling Up Programme",
+    "description": "Hyndburn Borough Council received a confirmed allocation from the Government's Levelling Up Fund following its August 2022 bid. The programme covers three interventions: (1) refurbishment and transformation of the iconic Victorian Accrington Market Hall into a food-and-drink destination whilst retaining 50% traditional retail space; (2) acquisition and refurbishment of Market Chambers opposite the Market Hall into a cultural, arts and heritage venue; and (3) acquisition and restoration of Burton's Chambers as a co-working space for businesses and events.",
+    "type": "NATIONAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "80db8ea7-c47b-4285-90a3-80975ddb2f24",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "LUF allocation confirmed February 2023; detailed plans shared with Market Hall traders. Delivery subject to procurement and planning processes; original March 2025 target has passed.",
+    "latitude": 53.7532,
+    "longitude": -2.3647,
+    "locationDescription": "Accrington Market Hall and town centre, Hyndburn, Lancashire",
+    "locationSource": "Council news article",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Accrington Market Hall Levelling Up Plans – Hyndburn Borough Council",
+        "source": "Hyndburn Borough Council",
+        "url": "https://www.hyndburnbc.gov.uk/news/accrington-market-hall-levelling-up-plans/",
+        "datePublished": "2023-02-21",
+        "summary": "February 2023 news article confirming LUF allocation for Hyndburn, detailing plans for Accrington Market Hall (50% food and drink, 50% traditional retail), Market Chambers (cultural venue) and Burton's Chambers (co-working space). Proposed completion by March 2025."
+      },
+      {
+        "type": "URL",
+        "title": "Levelling Up Fund Bid Submission – Hyndburn Borough Council",
+        "source": "Hyndburn Borough Council",
+        "url": "https://www.hyndburnbc.gov.uk/news/levelling-up-fund-bid-submission/",
+        "datePublished": "2022-09-20",
+        "summary": "September 2022 article by Council Leader confirming submission of LUF bid covering Accrington Market Hall, Market Chambers and Burton's Chambers, drawn from the Council's Town Centre Investment Plan for Accrington."
+      }
+    ]
+  },
+  {
+    "id": "ipswich-regent-theatre-redevelopment",
+    "title": "Ipswich Regent Theatre Redevelopment",
+    "description": "Ipswich Borough Council approved plans and appointed contractor Mixbrow Construction in February 2025 to deliver a major refurbishment of the Grade II listed Ipswich Regent Theatre on St Helen's Street. The project modernises and improves the 1929 Art Deco theatre: a new illuminated Art Deco canopy, improved accessible entrance with new lift and Wall of Fame mural, restored full-height ceilings and original Art Deco detailing, extended bars and a Changing Places facility. The theatre closed May 2025 and is scheduled to reopen for the Christmas pantomime in December 2025. The project is funded entirely by a Restoration Levy ring-fenced since June 2023.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "915008de-38ff-4771-ab2b-fa5efaacb74c",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Contractor appointed February 2025, construction underway from May 2025, grand reopening planned December 2025. Fully funded through ring-fenced Restoration Levy.",
+    "latitude": 52.0561,
+    "longitude": 1.1435,
+    "locationDescription": "Ipswich Regent Theatre, St Helen's Street, Ipswich town centre, Suffolk",
+    "locationSource": "Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Ipswich Regent Redevelopment – Ipswich Borough Council",
+        "source": "Ipswich Borough Council",
+        "url": "https://www.ipswich.gov.uk/Ipswich-Regent-Redevelopment",
+        "datePublished": "2024-12-11",
+        "summary": "Council project page (December 2024) confirming planning approval for the Regent Theatre redevelopment, detailing all improvements including new canopy, accessible entrance, restored Art Deco features, extended bars, Changing Places facility. Funded by ring-fenced Restoration Levy."
+      },
+      {
+        "type": "URL",
+        "title": "Contractor awarded works on Ipswich Regent Theatre redevelopment – Ipswich Borough Council",
+        "source": "Ipswich Borough Council",
+        "url": "https://www.ipswich.gov.uk/ipswich-newsroom/2025/contractor-awarded-works-ipswich-regent-theatre-redevelopment-project",
+        "datePublished": "2025-02-26",
+        "summary": "News article (26 February 2025) confirming Mixbrow Construction appointed. Theatre closes 4 May 2025 and reopens December 2025 for Cinderella pantomime. Shows hosted at Corn Exchange during closure."
+      }
+    ]
+  },
+  {
+    "id": "islington-new-homes-estates-programme",
+    "title": "Islington Council New Homes on Estates Programme",
+    "description": "Islington Council is delivering a rolling programme of new council homes on underused estate land, building genuinely affordable housing while improving communal areas, landscaping and facilities. Active sites as of early 2026 include: Andover Estate N7 (42 homes including affordable workspace, completing February 2026), Elthorne Estate N19 (46 homes with new multi-games court at Zoffany Park, completing January 2026), Park View Estate N5 (31 new council homes) and Beaumont Rise N19 (27 homes including 17 supported housing units). Future schemes include Bemerton Estate South (84 homes, planning approved September 2025) and Vorley Road (planned Spring 2027 start).",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "894c5daa-df59-4b85-a87a-1b3f768ca0d3",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Multiple sites in active construction with recent completions across north Islington; programme is council-wide and ongoing with new schemes in planning.",
+    "latitude": 51.5555,
+    "longitude": -0.1222,
+    "locationDescription": "Various council estates across the London Borough of Islington including Andover Estate N7, Elthorne Estate N19 and Park View Estate N5",
+    "locationSource": "Council housing development page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Where we are building – Islington Council",
+        "source": "London Borough of Islington",
+        "url": "https://www.islington.gov.uk/housing/housing-development-and-involvement/new-building/where-we-are-building",
+        "datePublished": "2026-01-01",
+        "summary": "Council page listing all active new-build housing development sites: Andover Estate (42 homes), Elthorne Estate (46 homes), Park View Estate (31 homes), Beaumont Rise (27 homes including supported housing) and Bemerton Estate South (84 homes, planning approved September 2025)."
+      }
+    ]
+  },
+  {
+    "id": "rbkc-grenfell-tower-site-memorial-commission",
+    "title": "Grenfell Tower Site and Memorial Commission",
+    "description": "The Royal Borough of Kensington and Chelsea is managing the long-term recovery, memorialisation and redevelopment of the Grenfell Tower site. The Grenfell Tower Site and Memorial Commission is developing a permanent national memorial following extensive consultation with bereaved families, survivors and the wider community. The Council also continues to fulfil its 45 commitments to the Grenfell Tower Inquiry. A Grenfell Support programme 2024–2028 provides a new four-year programme of support for survivors and the community. The tower wrapped in white remains a site of profound significance in North Kensington.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "3d764659-b3e6-4d0b-bc56-8ac1e07e3aaf",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Memorialisation and site planning ongoing; permanent memorial design process under way. Recovery programme and rehousing largely complete but memorial and site future not yet finalised.",
+    "latitude": 51.5142,
+    "longitude": -0.2165,
+    "locationDescription": "Grenfell Tower site, Lancaster West Estate, North Kensington, Royal Borough of Kensington and Chelsea",
+    "locationSource": "Council grenfell response page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Grenfell response and recovery – Royal Borough of Kensington and Chelsea",
+        "source": "Royal Borough of Kensington and Chelsea",
+        "url": "https://www.rbkc.gov.uk/grenfell-response-and-recovery",
+        "datePublished": "2024-01-01",
+        "summary": "Council's main page for Grenfell response, covering the Grenfell Tower Inquiry commitments, the Memorial Commission and site planning, Grenfell Support 2024–2028, rehousing programme, NHS support services and the Independent Grenfell Recovery Taskforce."
+      }
+    ]
+  },
+  {
+    "id": "kings-lynn-pride-in-place-guildhall-renovation",
+    "title": "King's Lynn Pride in Place Programme and St George's Guildhall Creative Hub",
+    "description": "The Government approved King's Lynn's Pride in Place Regeneration Plan on 25 March 2026, unlocking £20 million of national investment over ten years to revitalise the town centre and strengthen communities. The plan covers repurposing the town centre, enhanced walking and cycling routes, and neighbourhood initiatives for North Lynn, South Lynn, Gaywood Fairstead and the town centre. The flagship St George's Guildhall Creative Hub renovation—a medieval Guildhall being transformed into a national and international arts, theatre and creative industries destination—commenced construction November 2025 and is scheduled to reopen in 2028. Highways safety and public realm improvements on King Street adjacent to the Guildhall were confirmed in March 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "df6cbde2-ce09-4567-a4bf-c6f5b08524e5",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Pride in Place Regeneration Plan formally approved by Government 25 March 2026; Guildhall construction underway from November 2025 targeting 2028 reopening; public realm works on King Street confirmed.",
+    "latitude": 52.7545,
+    "longitude": 0.3988,
+    "locationDescription": "King's Lynn town centre, with St George's Guildhall on King Street, King's Lynn, Norfolk",
+    "locationSource": "Council newsroom",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major boost for King's Lynn as Government approves Pride in Place Regeneration Plan",
+        "source": "Borough Council of King's Lynn and West Norfolk",
+        "url": "https://www.west-norfolk.gov.uk/news/article/2031/major_boost_for_king_s_lynn_as_government_approves_pride_in_place_regeneration_plan",
+        "datePublished": "2026-03-25",
+        "summary": "25 March 2026 article confirming Government approval of the King's Lynn Pride in Place Regeneration Plan, releasing £20m over ten years. Key projects include repurposing the town centre, enhanced walking and cycling routes, and community initiatives in priority neighbourhoods shaped by 1,100-person consultation."
+      },
+      {
+        "type": "URL",
+        "title": "Highways safety and public realm improvements planned for Guildhall renovation project",
+        "source": "Borough Council of King's Lynn and West Norfolk",
+        "url": "https://www.west-norfolk.gov.uk/news/article/2025/highways_safety_and_public_realm_improvements_planned_for_guildhall_renovation_project",
+        "datePublished": "2026-03-23",
+        "summary": "23 March 2026 article announcing public realm and highway improvements outside St George's Guildhall on King Street: widened pavements, bicycle racks, delivery bay, new benches, sculpture, and four new street trees. Main Guildhall works started November 2025 with 2028 reopening target."
+      }
+    ]
+  },
+  {
+    "id": "hull-orchard-park-dane-park-new-homes",
+    "title": "Hull Orchard Park Regeneration – Dane Park New Council Homes",
+    "description": "Hull City Council is continuing its Orchard Park regeneration programme with the construction of 99 new council homes for rent at the Dane Park site (former Dane Park Primary School). Construction began April 2024 with phased completions through to 2027. An additional 34 homes are under construction at nearby Isledane from 2025. Homes use a fabric-first approach exceeding insulation standards, incorporate sustainable urban drainage systems (SuDS) designed with Yorkshire Water, and approximately half exceed current UK accessibility standards. Orchard Park is identified in Hull's Local Plan as a housing regeneration priority area.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "10dd16a9-49ca-45a6-b344-63bae1021561",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Construction started April 2024 at Dane Park with phased completions; Isledane site also under construction from 2025. Part of Hull's established Local Plan regeneration priority.",
+    "latitude": 53.7890,
+    "longitude": -0.3780,
+    "locationDescription": "Dane Park site (former Dane Park Primary School), Orchard Park, north Kingston upon Hull",
+    "locationSource": "Council regeneration page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Orchard Park regeneration – Hull City Council",
+        "source": "Hull City Council",
+        "url": "https://www.hull.gov.uk/regeneration-1/orchard-park-regeneration",
+        "datePublished": "2024-04-01",
+        "summary": "Council regeneration page confirming 99 new council homes for rent at Dane Park started construction April 2024 (completing in phases to 2027), plus 34 further homes at Isledane from 2025. Features fabric-first energy efficiency, SuDS flood management with Yorkshire Water, and high accessibility standards."
+      }
+    ]
+  },
+  {
+    "id": "kingston-new-malden-town-centre-regeneration",
+    "title": "New Malden Town Centre Regeneration",
+    "description": "The Royal Borough of Kingston upon Thames is delivering a series of regeneration projects in New Malden town centre, celebrating the area's unique cultural identity as home to Europe's largest Korean community. Key schemes include: Jubilee Square, a new public space, pocket park and pedestrian linkway into Cocks Crescent; regeneration of the Fountain Roundabout and creation of a new pocket park; redevelopment of the underutilised Cocks Crescent site; and Burlington School expansion. Two Go Cycle sustainable transport routes serve New Malden: the Beeline Way (New Malden to Raynes Park) and a Kingston-to-New Malden active travel corridor under construction.",
+    "type": "LOCAL_GOV",
+    "regionId": null,
+    "localAuthorityId": "e4cf69d7-f5c7-48e0-b646-4c46773f5bb7",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Multiple projects in active delivery including Jubilee Square, Fountain Roundabout improvements and Go Cycle active travel routes; council committed through capital programme and planning obligations.",
+    "latitude": 51.4000,
+    "longitude": -0.2524,
+    "locationDescription": "New Malden town centre, Royal Borough of Kingston upon Thames, south-west London",
+    "locationSource": "Council regeneration project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Projects in New Malden – Royal Borough of Kingston upon Thames",
+        "source": "Royal Borough of Kingston upon Thames",
+        "url": "https://www.kingston.gov.uk/planning-and-building-control/regeneration/projects-new-malden",
+        "datePublished": "2024-01-01",
+        "summary": "Council regeneration page describing Jubilee Square pocket park, Fountain Roundabout improvements, Cocks Crescent redevelopment, Burlington School expansion, and the Go Cycle active travel programme with Beeline Way to Raynes Park and Kingston town centre route under construction."
+      }
+    ]
+  }
+]

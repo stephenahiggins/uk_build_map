@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { applyRuntimeOverrides, envValues } from "./envValues";
+import { envValues } from "./envValues";
 import { log } from "./logger";
 import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
@@ -40,7 +40,7 @@ export function isGeminiRateLimitError(err: unknown): boolean {
 
 export async function handleGeminiRateLimit(
   label: string
-): Promise<"retry" | "abort" | "switch-openai"> {
+): Promise<"retry" | "abort"> {
   if (!process.stdin.isTTY) {
     log(`[LLM] ${label}: non-interactive session, pausing for 60s before retry.`);
     await pause(60_000);
@@ -50,18 +50,13 @@ export async function handleGeminiRateLimit(
   const rl = createInterface({ input, output });
   try {
     const answer = await rl.question(
-      `Gemini limit hit during ${label}. Press Enter to retry, enter a new API key, or type "pause" (optionally "pause 120"), "openai" to switch providers, or "exit": `
+      `Gemini limit hit during ${label}. Press Enter to retry, enter a new API key, or type "pause" (optionally "pause 120"), or "exit": `
     );
     const trimmed = answer.trim();
     if (!trimmed) {
       log("[LLM] Retrying after 5s.");
       await pause(5_000);
       return "retry";
-    }
-    if (trimmed.toLowerCase() === "openai") {
-      applyRuntimeOverrides({ PROVIDER: "openai" });
-      log("[LLM] Switched provider to OpenAI.");
-      return "switch-openai";
     }
     if (trimmed.toLowerCase().startsWith("pause")) {
       const parts = trimmed.split(/\s+/);
@@ -98,9 +93,6 @@ export async function generateContentWithRetry(
       const action = await handleGeminiRateLimit(label);
       if (action === "abort") {
         throw err;
-      }
-      if (action === "switch-openai") {
-        throw new Error("SWITCH_TO_OPENAI");
       }
     }
   }
