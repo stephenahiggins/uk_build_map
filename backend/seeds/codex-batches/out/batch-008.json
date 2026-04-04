@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The concept design has been approved to progress, but delivery remains subject to planning and procurement.",
-    "locationDescription": "Market Square, Bicester, Oxfordshire",
-    "locationSource": "Cherwell District Council",
+    "locationDescription": "Market Square, Bicester, Oxfordshire (town-centre Market Square public realm regeneration site).",
+    "locationSource": "Project description and currentLocationDescription provided (Cherwell District Council) referencing 'Market Square, Bicester, Oxfordshire'.",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -21,7 +21,9 @@
         "datePublished": "2025-09-02",
         "summary": "Executive meeting documents describing the Market Square regeneration/public realm improvement project, including recommendations to approve the concept design and proceed to subsequent stages subject to planning permission and procurement."
       }
-    ]
+    ],
+    "latitude": 51.8997,
+    "longitude": -1.1537
   },
   {
     "id": "gm-b008-e06000050-ellesmere-port-town-centre-regeneration",
@@ -33,8 +35,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Construction has started, but the regeneration programme remains in delivery.",
-    "locationDescription": "Ellesmere Port town centre, Cheshire",
-    "locationSource": "Cheshire West and Chester Council",
+    "locationDescription": "Ellesmere Port town centre, Cheshire West and Chester (representative town centre point).",
+    "locationSource": "Cheshire West and Chester Council press release: 'Work begins on Ellesmere Port town centre regeneration' (2025-03-18).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -45,7 +47,9 @@
         "datePublished": "2025-03-18",
         "summary": "Council press release confirming work has started on a £13m programme to regenerate Ellesmere Port town centre, outlining the scope of improvements and intended outcomes."
       }
-    ]
+    ],
+    "latitude": 53.2808,
+    "longitude": -2.8976
   },
   {
     "id": "gm-b008-e07000040-seaton-hole-coastal-defence-scheme",
@@ -57,9 +61,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The scheme is reported as completed in 2025.",
-    "locationDescription": "Seaton Hole beach / West Walk Promenade area, Seaton, East Devon",
-    "locationSource": "South West Flood & Coastal (Lead Authority: East Devon District Council)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Seaton Hole beach / West Walk Promenade area, Seaton, East Devon, Devon (site centroid).",
+    "locationSource": "Project location description and title referencing 'Seaton Hole' and 'Seaton Coastal Defence Scheme' (South West Flood & Coastal project page: https://swfloodandcoastal.org.uk/project/seaton-coastal-defence-scheme/).",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -69,7 +73,9 @@
         "datePublished": "2025-12-18",
         "summary": "Project page describing the Seaton Hole coastal defence works (including rock armour installation and repairs), including start/completion dates and scheme scope and budget, with East Devon District Council listed as lead authority."
       }
-    ]
+    ],
+    "latitude": 50.7039,
+    "longitude": -3.0718
   },
   {
     "id": "gm-b008-e07000109-the-charter-gravesend-contract-award",
@@ -81,9 +87,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A contractor has been appointed and works are underway, but completion was stated as expected in early 2026.",
-    "locationDescription": "Gravesend town centre (The Charter development), Gravesham",
-    "locationSource": "Gravesham Borough Council",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Gravesend town centre, Gravesham Borough (representative point for The Charter build-to-rent development site in Gravesend).",
+    "locationSource": "Gravesham Borough Council announcement about 'The Charter, Gravesend' town-centre development (https://www.gravesham.gov.uk/news/article/160/curo-construction-awarded-contract-to-complete-construction-of-the-charter-gravesend).",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -93,7 +99,9 @@
         "datePublished": "2024-08-21",
         "summary": "Council news confirming contract award to complete The Charter development, describing the scheme (242 apartments and a multi-storey car park) and expected completion timeframe."
       }
-    ]
+    ],
+    "latitude": 51.4419,
+    "longitude": 0.3676
   },
   {
     "id": "gm-b008-e07000131-rewilding-harborough-tin-house-farm",
@@ -105,9 +113,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has acquired the land and published a restoration vision, with delivery to follow over multiple phases/years.",
-    "locationDescription": "Tin House Farm, Harborough District",
-    "locationSource": "Harborough District Council",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Harborough District, Leicestershire (representative central point for the district; Tin House Farm not precisely located from provided evidence)",
+    "locationSource": "Harborough District Council news item on Rewilding Harborough and Tin House Farm acquisition (https://www.harborough.gov.uk/news/article/1878/councils_reveal_25-year_vision_to_bring_nature_back_to_district)",
+    "locationConfidence": "LOW",
     "evidence": [
       {
         "type": "URL",
@@ -117,7 +125,9 @@
         "datePublished": "2025-09-09",
         "summary": "Council news describing the Rewilding Harborough programme and a long-term vision linked to the acquisition of Tin House Farm for habitat restoration and nature recovery."
       }
-    ]
+    ],
+    "latitude": 52.499,
+    "longitude": -0.904
   },
   {
     "id": "gm-b008-e07000110-former-royal-mail-site-maidstone-east-redevelopment",
@@ -129,8 +139,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Planning permission has been approved, with delivery dependent on subsequent build-out.",
-    "locationDescription": "Former Royal Mail sorting office site near Maidstone East, Maidstone",
-    "locationSource": "Maidstone Borough Council",
+    "locationDescription": "Approximate centroid for the former Royal Mail sorting office site area near Maidstone East railway station, Maidstone, Kent.",
+    "locationSource": "Maidstone Borough Council news item referencing the former Royal Mail site at Maidstone East (no precise address given); coordinates set to Maidstone East station area as the closest clear named site.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -141,7 +151,9 @@
         "datePublished": "2025-09-27",
         "summary": "Council news update confirming approval of redevelopment plans for the former Royal Mail site at Maidstone East."
       }
-    ]
+    ],
+    "latitude": 51.2774,
+    "longitude": 0.5226
   },
   {
     "id": "gm-b008-e07000091-hurst-road-east-seawall-repairs",
@@ -153,9 +165,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Phase 1 repairs are reported complete, but additional phases are described as pending.",
-    "locationDescription": "Hurst Road East car park seawall, Milford-on-Sea, New Forest",
-    "locationSource": "Advertiser & Times",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Hurst Road East car park seawall, Milford-on-Sea, New Forest District, Hampshire",
+    "locationSource": "Project description and Advertiser & Times report referencing repairs at the Hurst Road East car park seawall, Milford-on-Sea",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -165,7 +177,9 @@
         "datePublished": "2025-12-10",
         "summary": "Local news reporting NFDC’s completion of phase 1 repairs to the Milford-on-Sea seawall and describing expectations for further works in 2026."
       }
-    ]
+    ],
+    "latitude": 50.7249,
+    "longitude": -1.5902
   },
   {
     "id": "gm-b008-e07000139-warm-homes-retrofit-programme",
@@ -177,8 +191,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding has been secured and delivery is planned across multiple years.",
-    "locationDescription": "North Kesteven District (council housing stock)",
-    "locationSource": "North Kesteven District Council",
+    "locationDescription": "North Kesteven District, Lincolnshire (representative point near Sleaford, the district’s main town, for council housing stock retrofit programme)",
+    "locationSource": "Project states North Kesteven District Council housing stock; representative centroid placed at Sleaford",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -189,7 +203,9 @@
         "datePublished": "2025-03-18",
         "summary": "Council announcement of £18.4m funding for a programme to retrofit and improve the energy performance of council homes over several years."
       }
-    ]
+    ],
+    "latitude": 53.1759,
+    "longitude": -0.5414
   },
   {
     "id": "gm-b008-e07000084-basing-view-town-centre-investment-partnership",
@@ -201,8 +217,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council is progressing procurement for a partner; delivery depends on securing the partnership and subsequent project implementation.",
-    "locationDescription": "Basingstoke town centre and Basing View, Basingstoke",
-    "locationSource": "Basingstoke and Deane Borough Council",
+    "locationDescription": "Basingstoke town centre / Basing View area, Basingstoke, Hampshire (representative central point near Basingstoke railway station and Basing View business district).",
+    "locationSource": "Project description and council release referencing “Basingstoke town centre and the Basing View business district” (Basingstoke and Deane Borough Council).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -213,7 +229,9 @@
         "datePublished": "2026-03-17",
         "summary": "Council news release describing plans to seek an investment partner to fast-track improvements across Basingstoke town centre and Basing View."
       }
-    ]
+    ],
+    "latitude": 51.2669,
+    "longitude": -1.0926
   },
   {
     "id": "gm-b008-e07000080-five-acres-regeneration-grant-extension",
@@ -225,8 +243,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding was extended, indicating continued delivery rather than completion.",
-    "locationDescription": "Five Acres area, Forest of Dean District",
-    "locationSource": "Forest of Dean District Council",
+    "locationDescription": "Five Acres estate area, Berry Hill/Coleford, Forest of Dean District, Gloucestershire",
+    "locationSource": "Project described by Forest of Dean District Council as the 'Five Acres regeneration project' in the Five Acres area (Coleford/Berry Hill). Coordinates are a representative centroid for the Five Acres estate area.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -237,7 +255,9 @@
         "datePublished": "2024-12-23",
         "summary": "Council update confirming the Five Acres regeneration project grant extension through March 2026."
       }
-    ]
+    ],
+    "latitude": 51.855,
+    "longitude": -2.613
   },
   {
     "id": "gm-b008-e08000004-oldham-town-living-planning-applications",
@@ -249,8 +269,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Planning applications have been submitted, with delivery contingent on approvals and subsequent construction phases.",
-    "locationDescription": "Oldham town centre (multiple Oldham Town Living sites)",
-    "locationSource": "Oldham Council",
+    "locationDescription": "Oldham town centre, Greater Manchester (representative centroid for the Oldham Town Living programme’s multiple town-centre sites).",
+    "locationSource": "Oldham Council announcement describing six sites in Oldham town centre (https://www.oldham.gov.uk/news/article/1556/planning_applications_submitted_for_town_centre_regeneration).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -261,7 +281,9 @@
         "datePublished": "2025-04-10",
         "summary": "Council announcement confirming planning applications for six town-centre sites as part of the Oldham Town Living regeneration programme."
       }
-    ]
+    ],
+    "latitude": 53.5413,
+    "longitude": -2.1113
   },
   {
     "id": "gm-b008-e09000002-beam-park-phase-3-topping-out",
@@ -273,8 +295,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Construction has reached topping-out, but homes and wider place-making remain in delivery.",
-    "locationDescription": "Beam Park, Barking and Dagenham (Thames Road / Dagenham area)",
-    "locationSource": "Vistry Group (citing London Borough of Barking & Dagenham regeneration)",
+    "locationDescription": "Beam Park regeneration area (Beam Park / Dagenham East, London Borough of Barking & Dagenham)",
+    "locationSource": "Project description and Vistry Group press release referencing 'Beam Park' in Barking & Dagenham (East London)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -285,7 +307,9 @@
         "datePublished": "2025-10-07",
         "summary": "Press release reporting the topping out of Beam Park phase 3 and describing the scale and timing of new homes delivery within the Beam Park regeneration programme."
       }
-    ]
+    ],
+    "latitude": 51.5259,
+    "longitude": 0.1585
   },
   {
     "id": "gm-b008-e08000018-whiston-brook-flood-alleviation-cil-funding",
@@ -297,8 +321,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding allocation was proposed to enable the scheme, with works expected to follow once approvals and delivery arrangements are in place.",
-    "locationDescription": "Whiston Brook catchment area, Rotherham",
-    "locationSource": "Rotherham Council",
+    "locationDescription": "Whiston Brook catchment area, centred on Whiston village (Rotherham, South Yorkshire).",
+    "locationSource": "Rotherham Council news item on the Whiston Brook Flood Alleviation Scheme (https://www.rotherham.gov.uk/news/article/1991/%C2%A33m-for-whiston-brook-to-start-flood-alleviation-works) and project description indicating the Whiston Brook catchment in Rotherham.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -309,7 +333,9 @@
         "datePublished": "2026-01-12",
         "summary": "Council news describing a proposed £3m CIL contribution towards the Whiston Brook Flood Alleviation Scheme and outlining the planned start of works following approvals."
       }
-    ]
+    ],
+    "latitude": 53.415,
+    "longitude": -1.304
   },
   {
     "id": "gm-b008-e07000130-queens-park-town-centre-improvements",
@@ -321,9 +347,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Works were reported as underway, with completion dependent on construction delivery.",
-    "locationDescription": "Queen’s Park and town centre areas, Loughborough (Charnwood)",
-    "locationSource": "Loughborough Town Deal",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Queen’s Park, Loughborough, Leicestershire (site centroid for the park referenced in the works, representing the combined Queen’s Park and adjacent town centre improvements area).",
+    "locationSource": "Project description and Loughborough Town Deal update referencing works in Queen’s Park and Loughborough town centre.",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -333,7 +359,9 @@
         "datePublished": "2025-03-20",
         "summary": "Update describing the start of improvement works in Queen’s Park and in the town centre, including upgrades to paths, drainage, electrical infrastructure and lighting."
       }
-    ]
+    ],
+    "latitude": 52.7686,
+    "longitude": -1.2077
   },
   {
     "id": "gm-b008-e07000047-warmer-homes-local-grant",
@@ -345,8 +373,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding has been announced and the grant scheme is being implemented, with delivery dependent on rollout and uptake.",
-    "locationDescription": "West Devon Borough (eligible households)",
-    "locationSource": "West Devon Borough Council",
+    "locationDescription": "West Devon Borough Council area (representative point at Tavistock, the borough’s main town)",
+    "locationSource": "Project description and West Devon Borough Council announcement (eligible households across West Devon)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -357,7 +385,9 @@
         "datePublished": "2025-11-04",
         "summary": "Council news describing funding for a local grant scheme to support energy-efficiency improvements to homes, aimed at reducing bills and improving health outcomes."
       }
-    ]
+    ],
+    "latitude": 50.4929,
+    "longitude": -4.2377
   },
   {
     "id": "gm-b008-e07000235-malvern-splash-solar-and-overroof",
@@ -369,8 +399,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Planning approval has been granted, with delivery dependent on implementation of the approved works.",
-    "locationDescription": "Malvern Splash Leisure Complex, Tanhouse Lane, Great Malvern",
-    "locationSource": "Malvern Hills District Council (Planning Portal)",
+    "locationDescription": "Malvern Splash Leisure Complex (pool hall), Tanhouse Lane, Great Malvern, Worcestershire",
+    "locationSource": "Malvern Hills District Council Planning Portal application M/24/00551/FUL (site: Malvern Splash Leisure Complex, Tanhouse Lane, Great Malvern)",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -381,7 +411,9 @@
         "datePublished": "2024-07-18",
         "summary": "Planning portal decision record for works at the Malvern Splash pool hall including over-roofing and solar panel installation."
       }
-    ]
+    ],
+    "latitude": 52.1129,
+    "longitude": -2.3268
   },
   {
     "id": "gm-b008-e06000060-flood-resilience-projects-funding",
@@ -393,9 +425,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding has been secured and projects are being developed and delivered over time.",
-    "locationDescription": "Buckinghamshire (multiple flood resilience project locations)",
-    "locationSource": "Buckinghamshire Council",
-    "locationConfidence": "LOW",
+    "locationDescription": "Buckinghamshire Council area (countywide flood resilience projects; representative point near Aylesbury, Buckinghamshire)",
+    "locationSource": "Project description indicates multiple locations across Buckinghamshire; no single named site, so using county town (Aylesbury) as representative centroid",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -405,7 +437,9 @@
         "datePublished": "2025-08-26",
         "summary": "Council announcement detailing secured funding to support flood resilience projects, including feasibility studies and natural flood management activity."
       }
-    ]
+    ],
+    "latitude": 51.8156,
+    "longitude": -0.8097
   },
   {
     "id": "gm-b008-e07000009-hive-leisure-centre-solar-panels",
@@ -417,9 +451,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council reported the solar installation as completed.",
-    "locationDescription": "The Hive Leisure Centre, Ely, East Cambridgeshire",
-    "locationSource": "East Cambridgeshire District Council",
-    "locationConfidence": "HIGH",
+    "locationDescription": "The Hive Leisure Centre, Ely, East Cambridgeshire, Cambridgeshire (site centroid approximation)",
+    "locationSource": "East Cambridgeshire District Council announcement: https://www.eastcambs.gov.uk/content/228-solar-panels-installed-hive-leisure-centre",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -429,6 +463,8 @@
         "datePublished": "2025-05-27",
         "summary": "Council announcement confirming installation of 228 solar panels at The Hive Leisure Centre in Ely and describing expected energy and emissions benefits."
       }
-    ]
+    ],
+    "latitude": 52.4016,
+    "longitude": 0.2629
   }
 ]

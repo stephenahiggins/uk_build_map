@@ -9,9 +9,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Phase 2 has started, with delivery dependent on successful completion of construction and ecological works.",
-    "locationDescription": "Fieldgate Quay, River Colne waterfront, Colchester",
-    "locationSource": "Colchester City Council",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Fieldgate Quay on the River Colne waterfront, Colchester, Essex",
+    "locationSource": "Colchester City Council announcement: https://www.colchester.gov.uk/latest-news/phase-2-of-fieldgate-quay-restoration-begins/ (project location described as Fieldgate Quay, River Colne waterfront, Colchester)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -21,7 +21,9 @@
         "datePublished": "2025-11-19",
         "summary": "Council announcement confirming the start of Phase 2 works at Fieldgate Quay, describing the focus on re-naturalising the riverbank and the scale of the remaining stretch."
       }
-    ]
+    ],
+    "latitude": 51.8939,
+    "longitude": 0.9065
   },
   {
     "id": "gm-b007-e07000228-burgess-hill-the-arc-community-sports-centre-open",
@@ -33,8 +35,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The facility has opened and is in use.",
-    "locationDescription": "The Arc, Burgess Hill, Mid Sussex",
-    "locationSource": "Mid Sussex District Council",
+    "locationDescription": "The Arc outdoor community sports centre, Burgess Hill, Mid Sussex, West Sussex",
+    "locationSource": "Mid Sussex District Council announcement describing the opening of The Arc in Burgess Hill (https://www.midsussex.gov.uk/about-us/latest-news/a-win-for-burgess-hill-new-community-sports-centre-now-open/). Coordinates set to central Burgess Hill as the site address/precise map reference is not provided in evidence.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -45,7 +47,9 @@
         "datePublished": "2025-09-30",
         "summary": "Council update announcing the opening of The Arc in Burgess Hill, listing the sports pitches and supporting facilities delivered through the project."
       }
-    ]
+    ],
+    "latitude": 50.956,
+    "longitude": -0.133
   },
   {
     "id": "gm-b007-e07000147-mundesley-coastal-management-scheme-completed",
@@ -57,9 +61,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council has reported the scheme as completed.",
-    "locationDescription": "Mundesley seafront, North Norfolk",
-    "locationSource": "North Norfolk District Council",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Mundesley seafront (coastal defences along the promenade/seawall), Mundesley, North Norfolk, England",
+    "locationSource": "North Norfolk District Council project updates describing works at the Mundesley Coastal Management Scheme on the seafront",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -77,7 +81,9 @@
         "datePublished": "2024-12-13",
         "summary": "Council update describing ongoing construction activities and expected completion timeframe for the Cromer and Mundesley coastal schemes, including the role of the rock berm in protecting the seawall."
       }
-    ]
+    ],
+    "latitude": 52.8789,
+    "longitude": 1.4384
   },
   {
     "id": "gm-b007-e08000013-st-helens-town-centre-transformation-investment-plan",
@@ -89,8 +95,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The investment plan has been approved, with delivery progressing through subsequent procurement and construction phases including the transport interchange build.",
-    "locationDescription": "St Helens Town Centre and St Helens Transport Interchange (adjacent to St Helens Central Station), St Helens",
-    "locationSource": "St Helens Borough Council and Liverpool City Region Combined Authority",
+    "locationDescription": "St Helens Transport Interchange site adjacent to St Helens Central railway station, St Helens town centre, Merseyside",
+    "locationSource": "Project description/evidence indicates the new St Helens Transport Interchange next to St Helens Central Station as the key named site",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -117,7 +123,9 @@
         "datePublished": "2025-11-19",
         "summary": "Combined authority update describing groundworks and piling activity for the transport interchange and linking the project to town centre regeneration and funding."
       }
-    ]
+    ],
+    "latitude": 53.4539,
+    "longitude": -2.7363
   },
   {
     "id": "gm-b007-e06000021-fowlea-brook-flood-risk-management-scheme",
@@ -129,8 +137,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The scheme has been publicly reported as completed by the Environment Agency.",
-    "locationDescription": "Fowlea Brook flood corridor, Stoke-on-Trent",
-    "locationSource": "Environment Agency (GOV.UK press release)",
+    "locationDescription": "Fowlea Brook flood corridor, Stoke-on-Trent (representative midpoint along the Fowlea Brook through Stoke-on-Trent)",
+    "locationSource": "Environment Agency GOV.UK press release: “Major flood risk management scheme completed in Stoke-on-Trent” (6 Feb 2026), referencing the Fowlea Brook Flood Risk Management Scheme in Stoke-on-Trent",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -141,7 +149,9 @@
         "datePublished": "2026-02-06",
         "summary": "Environment Agency press release announcing completion of the Fowlea Brook flood scheme, summarising measures delivered and the stated scale of flood risk reduction and regeneration benefits."
       }
-    ]
+    ],
+    "latitude": 53.012,
+    "longitude": -2.185
   },
   {
     "id": "gm-b007-e07000113-cockleshell-walk-sheerness-council-homes",
@@ -153,9 +163,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council has reported the homes as built and completed.",
-    "locationDescription": "Cockleshell Walk, Sheerness, Swale",
-    "locationSource": "Swale Borough Council",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Cockleshell Walk, Sheerness, Isle of Sheppey (Swale Borough), Kent",
+    "locationSource": "Project description and Swale Borough Council news item referencing the Cockleshell Walk development in Sheerness",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -165,7 +175,9 @@
         "datePublished": "2026-03-10",
         "summary": "Council update announcing completion of the Cockleshell Walk scheme and confirming the number of homes delivered for social rent and shared ownership."
       }
-    ]
+    ],
+    "latitude": 51.4447,
+    "longitude": 0.7542
   },
   {
     "id": "gm-b007-e07000215-tandridge-social-housing-decarbonisation-fund-wave-2-2-retrofit",
@@ -177,8 +189,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding and programme approvals have been set out in council papers, with delivery dependent on procurement and completion of works across the housing stock.",
-    "locationDescription": "Council housing stock across Tandridge District",
-    "locationSource": "Tandridge District Council",
+    "locationDescription": "Tandridge District, Surrey (representative centroid for the district-wide council housing retrofit programme)",
+    "locationSource": "Project described as covering 'council housing stock across Tandridge District' (Tandridge District Council governance papers; SHDF Wave 2.2 bid relates to Tandridge District Council)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -197,7 +209,9 @@
         "datePublished": "2024-03-18",
         "summary": "Government publication listing successful SHDF Wave 2.2 bids and grant allocations for delivery from 2024 to 2026."
       }
-    ]
+    ],
+    "latitude": 51.237,
+    "longitude": -0.068
   },
   {
     "id": "gm-b007-e07000103-watford-police-station-shady-lane-mixed-use-redevelopment",
@@ -209,8 +223,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Planning committee documentation recommended granting permission subject to a Section 106 agreement and conditions, with delivery dependent on final approvals and mobilisation.",
-    "locationDescription": "Watford Police Station site, 2 Shady Lane / Clarendon Road area, Watford WD17 1DD",
-    "locationSource": "Watford Borough Council (ModernGov planning report)",
+    "locationDescription": "Watford Police Station / Magistrates Court site, 2 Shady Lane / Clarendon Road area, Watford WD17 1DD",
+    "locationSource": "Watford Borough Council (ModernGov) planning committee report for application 24/00615/FULM, Watford Police Station, 2 Shady Lane, Watford WD17 1DD",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -221,7 +235,9 @@
         "datePublished": "2025-03-04",
         "summary": "Committee report describing the mixed-use redevelopment proposal, site context, and a recommendation that planning permission be granted subject to a legal agreement and conditions."
       }
-    ]
+    ],
+    "latitude": 51.6548,
+    "longitude": -0.3959
   },
   {
     "id": "gm-b007-e07000199-tamworth-future-high-streets-fund-programme-completion",
@@ -233,9 +249,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council has reported major works as complete, with remaining heritage elements moving into delivery through awarded contracts.",
-    "locationDescription": "Tamworth town centre (Market Street / Castle Gateway / St Editha’s Square), Tamworth",
-    "locationSource": "Tamworth Borough Council",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Tamworth town centre, centred on Market Street / St Editha’s Square (Future High Streets Fund works area), Tamworth, Staffordshire",
+    "locationSource": "Tamworth Borough Council project description and updates referencing Tamworth town centre and Market Street properties",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -253,7 +269,9 @@
         "datePublished": "2025-12-02",
         "summary": "Council update confirming appointment of a contractor to restore Grade II listed Market Street properties as part of the regeneration programme, with expected works start in Spring 2026."
       }
-    ]
+    ],
+    "latitude": 52.6338,
+    "longitude": -1.6956
   },
   {
     "id": "gm-b007-e07000117-burnley-town2turf-active-travel-corridor-completed",
@@ -265,9 +283,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Completion has been publicly reported by delivery partners.",
-    "locationDescription": "Yorkshire Street / Centenary Way / Harry Potts Way corridor between Burnley town centre and Turf Moor, Burnley",
-    "locationSource": "Lancashire County Council",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Representative midpoint on the Town2Turf active travel corridor between Burnley town centre and Turf Moor (approx. Yorkshire Street / Centenary Way / Harry Potts Way), Burnley, Lancashire",
+    "locationSource": "Project location description citing Lancashire County Council update on the Burnley Town2Turf scheme",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -285,7 +303,9 @@
         "datePublished": "2024-05-24",
         "summary": "Local reporting citing council information on the scheme schedule and upcoming works, describing project scope and partners."
       }
-    ]
+    ],
+    "latitude": 53.7889,
+    "longitude": -2.2436
   },
   {
     "id": "gm-b007-e07000035-ashbourne-reborn-highways-and-public-realm",
@@ -297,9 +317,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Works were reported as well under way with phased delivery and completion dependent on final construction and surfacing stages.",
-    "locationDescription": "Ashbourne town centre public realm and highways corridors (Ashbourne Reborn programme), Derbyshire Dales",
-    "locationSource": "Derbyshire Dales District Council",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Ashbourne town centre (Ashbourne Reborn highways and public realm works), Ashbourne, Derbyshire Dales, Derbyshire",
+    "locationSource": "Derbyshire Dales District Council project updates for the Ashbourne Reborn programme (phasing plans and related town centre regeneration news)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -317,7 +337,9 @@
         "datePublished": "2025-12-17",
         "summary": "Council update describing milestones for the Link Centre element of the Ashbourne Reborn programme and its relationship to wider town centre regeneration activity."
       }
-    ]
+    ],
+    "latitude": 53.0169,
+    "longitude": -1.7341
   },
   {
     "id": "gm-b007-e07000180-wantage-leisure-centre-reception-refurbishment",
@@ -329,8 +351,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The refurbishment has been reported as complete by the council.",
-    "locationDescription": "Wantage Leisure Centre, Wantage, Vale of White Horse",
-    "locationSource": "Vale of White Horse District Council",
+    "locationDescription": "Wantage Leisure Centre, Wantage, Oxfordshire (Vale of White Horse District)",
+    "locationSource": "Project description and council update identifying Wantage Leisure Centre as the specific site (Vale of White Horse District Council)",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -341,7 +363,9 @@
         "datePublished": "2026-01-29",
         "summary": "Council update confirming completion of reception refurbishment works at Wantage Leisure Centre and describing the improvements delivered."
       }
-    ]
+    ],
+    "latitude": 51.5883,
+    "longitude": -1.4279
   },
   {
     "id": "gm-b007-e07000096-hemel-health-campus-feasibility-business-case",
@@ -353,8 +377,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Feasibility and business case work is progressing with partner governance and appointments, with delivery dependent on option selection, funding and subsequent approvals.",
-    "locationDescription": "Market Square site / Hemel Hempstead town centre (Hemel Health Campus proposals), Hemel Hempstead",
-    "locationSource": "Dacorum Borough Council and West Hertfordshire Teaching Hospitals NHS Trust",
+    "locationDescription": "Market Square / Hemel Hempstead town centre (Hemel Health Campus proposals), Hemel Hempstead, Hertfordshire",
+    "locationSource": "Project description and currentLocationDescription citing Market Square site / Hemel Hempstead town centre; Dacorum Borough Council and West Hertfordshire Teaching Hospitals NHS Trust updates",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -373,7 +397,9 @@
         "datePublished": "2025-02-14",
         "summary": "NHS trust update confirming appointment of a programme director in a shared role with Dacorum Borough Council and the ICB to advance Health Campus proposals, engagement and option appraisal."
       }
-    ]
+    ],
+    "latitude": 51.7529,
+    "longitude": -0.4716
   },
   {
     "id": "gm-b007-e09000013-earls-court-hybrid-planning-approval-lbhf",
@@ -385,8 +411,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Committee approval has been reported, with further steps required including legal agreements, mayoral referral and phased delivery over multiple years.",
-    "locationDescription": "Earls Court / West Kensington redevelopment area (land bounded by North End Road, West Cromwell Road, West London Railway Line and Lillie Road), London",
-    "locationSource": "Public committee meeting information and developer reporting",
+    "locationDescription": "Earls Court / West Kensington redevelopment area (former Earls Court Exhibition Centre and surrounding land), bounded by North End Road, West Cromwell Road (A4), West London Line and Lillie Road, London",
+    "locationSource": "Project description specifies the redevelopment land boundary in Earls Court/West Kensington; representative centroid placed near the former Earls Court Exhibition Centre within the bounded area.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -405,7 +431,9 @@
         "datePublished": "2025-11-28",
         "summary": "Developer update reporting the planning committee decision for the Earls Court redevelopment and summarising the scheme scope and next steps."
       }
-    ]
+    ],
+    "latitude": 51.4875,
+    "longitude": -0.1996
   },
   {
     "id": "gm-b007-e09000017-platinum-jubilee-leisure-centre-completion",
@@ -418,8 +446,8 @@
     "status": "GREEN",
     "statusRationale": "The council has reported completion and handover of the facility, with opening preparations underway.",
     "locationDescription": "Platinum Jubilee Leisure Centre, West Drayton (Yiewsley and West Drayton), London Borough of Hillingdon",
-    "locationSource": "Hillingdon Council",
-    "locationConfidence": "HIGH",
+    "locationSource": "Hillingdon Council project description and council news release (https://pre.hillingdon.gov.uk/news/article/256/council-unveils-new-state-of-the-art-leisure-centre)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -429,7 +457,9 @@
         "datePublished": "2026-02-06",
         "summary": "Council announcement marking completion of the Platinum Jubilee Leisure Centre in West Drayton and describing the handover to operator GLL."
       }
-    ]
+    ],
+    "latitude": 51.5056,
+    "longitude": -0.4726
   },
   {
     "id": "gm-b007-e07000039-swadlincote-town-centre-masterplan-and-civic-site-project",
@@ -441,8 +471,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Masterplanning and programme approvals have been reported, with delivery dependent on completion of masterplan work, detailed design, procurement and construction.",
-    "locationDescription": "Swadlincote town centre and civic site (Green Bank Leisure Centre / Civic Offices), South Derbyshire",
-    "locationSource": "South Derbyshire District Council and Find a Tender",
+    "locationDescription": "Civic site in Swadlincote town centre (Green Bank Leisure Centre / South Derbyshire District Council Civic Offices), Swadlincote, South Derbyshire, Derbyshire, England",
+    "locationSource": "Project description citing 'Swadlincote town centre and civic site (Green Bank Leisure Centre / Civic Offices)' and South Derbyshire District Council / Find a Tender references",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -469,7 +499,9 @@
         "datePublished": "2025-08-28",
         "summary": "Council announcement confirming appointment of consultants to lead the Swadlincote town centre masterplanning work and describing its intended focus areas."
       }
-    ]
+    ],
+    "latitude": 52.7756,
+    "longitude": -1.5572
   },
   {
     "id": "gm-b007-e09000029-london-cancer-hub-expansion-planning-approval",
@@ -481,9 +513,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Planning consent has been reported, with delivery dependent on detailed design, procurement, and phased construction.",
-    "locationDescription": "London Cancer Hub district, Sutton (around The Institute of Cancer Research and The Royal Marsden campus)",
-    "locationSource": "London Borough of Sutton",
-    "locationConfidence": "HIGH",
+    "locationDescription": "London Cancer Hub (Institute of Cancer Research and Royal Marsden campus area), Belmont, London Borough of Sutton, London",
+    "locationSource": "London Borough of Sutton announcement describing the London Cancer Hub expansion around the ICR/Royal Marsden campus in Sutton",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -493,7 +525,9 @@
         "datePublished": "2026-02-04",
         "summary": "Council announcement confirming planning approval for the London Cancer Hub expansion and summarising scale, intended benefits and components of the development."
       }
-    ]
+    ],
+    "latitude": 51.3627,
+    "longitude": -0.1776
   },
   {
     "id": "gm-b007-e06000037-west-berkshire-highway-improvement-programme-2025-26",
@@ -505,9 +539,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The programme has been approved, with delivery dependent on mobilisation and completion of individual schemes across the year.",
-    "locationDescription": "West Berkshire highway network (district-wide programme of works)",
-    "locationSource": "West Berkshire Council",
-    "locationConfidence": "HIGH",
+    "locationDescription": "West Berkshire district-wide highway network programme; representative point set to Newbury (principal town/administrative centre of West Berkshire).",
+    "locationSource": "Project description and West Berkshire Council article describing a district-wide Highway Improvement Programme (no single site specified).",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -517,6 +551,8 @@
         "datePublished": "2025-04-07",
         "summary": "Council update confirming approval of the 2025/26 Highway Improvement Programme and summarising investments in roads, drainage, sustainable transport and flood resilience-related works."
       }
-    ]
+    ],
+    "latitude": 51.4015,
+    "longitude": -1.3239
   }
 ]

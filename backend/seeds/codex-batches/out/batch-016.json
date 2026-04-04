@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has publicly confirmed its intention to develop the site; delivery will depend on planning, procurement, and construction timelines.",
-    "locationDescription": "Bunns Lane car park, Mill Hill Broadway (near rail station), Barnet",
-    "locationSource": "Barnet Council news",
+    "locationDescription": "Bunns Lane car park by Mill Hill Broadway station, Mill Hill, London Borough of Barnet, London",
+    "locationSource": "Barnet Council news announcement referencing 'Bunns Lane car park near Mill Hill Broadway station' (https://www.barnet.gov.uk/news/barnet-council-develop-bunns-lane-car-park)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -21,7 +21,9 @@
         "datePublished": "2025-07-17",
         "summary": "Council announcement describing plans to redevelop Bunns Lane car park near Mill Hill Broadway station to deliver build-to-rent homes with around half affordable housing."
       }
-    ]
+    ],
+    "latitude": 51.6149,
+    "longitude": -0.2469
   },
   {
     "id": "gm-b016-e09000025-sustainable-transport-programme-2025-26",
@@ -33,9 +35,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The programme has been publicly set out and is linked to a cabinet decision; delivery depends on final funding allocations and scheme-by-scheme delivery.",
-    "locationDescription": "London Borough of Newham (multiple transport corridors and neighbourhoods)",
-    "locationSource": "Newham Council news",
-    "locationConfidence": "LOW",
+    "locationDescription": "London Borough of Newham (representative centroid for borough-wide sustainable transport programme)",
+    "locationSource": "Project description and Newham Council news indicating multiple corridors/neighbourhoods across Newham",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -45,7 +47,9 @@
         "datePublished": "2026-01-15",
         "summary": "Council update describing planned sustainable transport and safety improvements for 2025/26, and related cabinet consideration."
       }
-    ]
+    ],
+    "latitude": 51.5299,
+    "longitude": 0.0356
   },
   {
     "id": "gm-b016-e08000003-our-town-hall-path-to-completion",
@@ -57,8 +61,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council’s update describes active construction progress and a defined completion timeframe, indicating an ongoing delivery programme.",
-    "locationDescription": "Manchester Town Hall and Albert Square, Manchester city centre",
-    "locationSource": "Manchester City Council press release",
+    "locationDescription": "Manchester Town Hall / Albert Square, Manchester city centre",
+    "locationSource": "Manchester City Council press release and update report about Manchester Town Hall restoration and Albert Square transformation",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -69,7 +73,9 @@
         "datePublished": "2025-11-28",
         "summary": "Council update report setting out a revised completion path for the Manchester Town Hall restoration and Albert Square transformation programme."
       }
-    ]
+    ],
+    "latitude": 53.47937,
+    "longitude": -2.24534
   },
   {
     "id": "gm-b016-e07000062-town-centre-public-realm-green-connections",
@@ -81,8 +87,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Public communications show the project reaching final design and engagement, but do not confirm construction start dates in the cited evidence.",
-    "locationDescription": "Hastings town centre (public realm and green route connections)",
-    "locationSource": "Hastings Borough Council news",
+    "locationDescription": "Hastings town centre, East Sussex (representative point near central Hastings around Priory Meadow/Harold Place area)",
+    "locationSource": "Project described as a Hastings town-centre public realm and green connections scheme (Hastings Borough Council news, 2026-03-12)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -93,7 +99,9 @@
         "datePublished": "2026-03-12",
         "summary": "Council-hosted update describing the town-centre public realm and green connections scheme reaching final design stage."
       }
-    ]
+    ],
+    "latitude": 50.8544,
+    "longitude": 0.5736
   },
   {
     "id": "gm-b016-e08000033-hebden-bridge-flood-alleviation-scheme",
@@ -105,8 +113,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council reports planning permission and completed designs with an anticipated start; the cited evidence does not confirm works have started on site.",
-    "locationDescription": "Hebden Bridge (flood alleviation works in and around the town)",
-    "locationSource": "Calderdale Council news and flood scheme pages",
+    "locationDescription": "Hebden Bridge town centre, Calderdale, West Yorkshire (representative point for flood alleviation works in and around Hebden Bridge).",
+    "locationSource": "Project description and Calderdale Council update referencing the Hebden Bridge Flood Alleviation Scheme.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -117,7 +125,9 @@
         "datePublished": "2024-12-05",
         "summary": "Council update stating designs are complete and works are set to start in 2025 for the Hebden Bridge Flood Alleviation Scheme."
       }
-    ]
+    ],
+    "latitude": 53.7434,
+    "longitude": -2.0147
   },
   {
     "id": "gm-b016-e07000041-king-george-v-playing-fields-improvements",
@@ -129,9 +139,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has published committee decision material indicating an active decision process; the cited evidence does not confirm full construction completion.",
-    "locationDescription": "King George V Playing Fields, Topsham Road, Exeter",
-    "locationSource": "Exeter City Council committee decision portal",
-    "locationConfidence": "HIGH",
+    "locationDescription": "King George V Playing Fields, Topsham Road, Exeter (site centroid)",
+    "locationSource": "Project description and currentLocationDescription referencing King George V Playing Fields, Topsham Road, Exeter; Exeter City Council committee decision portal (Issue details IId=10271)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -141,7 +151,9 @@
         "datePublished": "2026-01-29",
         "summary": "Committee decision portal entry relating to King George V Playing Fields, providing public evidence of council decision-making on proposed improvements."
       }
-    ]
+    ],
+    "latitude": 50.7102,
+    "longitude": -3.5107
   },
   {
     "id": "gm-b016-e09000030-teviot-estate-regeneration-approval",
@@ -154,8 +166,8 @@
     "status": "AMBER",
     "statusRationale": "Planning approval is evidenced; delivery is dependent on phased implementation and subsequent construction activity.",
     "locationDescription": "Teviot Estate, Poplar (E14), London Borough of Tower Hamlets",
-    "locationSource": "Tower Hamlets Council news",
-    "locationConfidence": "HIGH",
+    "locationSource": "Tower Hamlets Council news (\"Nearly 2,000 homes approved in major regeneration of East End estate\", 2025-07-11) identifying Teviot Estate in Poplar",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -165,7 +177,9 @@
         "datePublished": "2025-07-11",
         "summary": "Council news item reporting approval of a major regeneration scheme for Teviot Estate in Poplar, including new homes, affordable housing and community facilities."
       }
-    ]
+    ],
+    "latitude": 51.5169,
+    "longitude": -0.0022
   },
   {
     "id": "gm-b016-e08000031-smithgate-city-centre-west-construction-start",
@@ -177,8 +191,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council communications indicate a main contractor appointment and construction starting on site for the first phase.",
-    "locationDescription": "City Centre West / Smithgate area around Market Square (city centre), Wolverhampton",
-    "locationSource": "City of Wolverhampton Council news",
+    "locationDescription": "Smithgate (formerly City Centre West) regeneration area around Market Square, Wolverhampton city centre.",
+    "locationSource": "Project description and City of Wolverhampton Council news referencing City Centre West/Smithgate around Market Square, Wolverhampton.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -189,7 +203,9 @@
         "datePublished": "2026-02-05",
         "summary": "Council news item announcing construction starting at the City Centre West site (Smithgate), with details of the regeneration programme and first-phase delivery."
       }
-    ]
+    ],
+    "latitude": 52.5867,
+    "longitude": -2.1296
   },
   {
     "id": "gm-b016-e09000014-high-road-west-love-lane-phase-1-procurement",
@@ -201,9 +217,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has publicly confirmed a cabinet decision to procure a contractor; construction is described as expected to recommence later in the year.",
-    "locationDescription": "Love Lane Estate / High Road West area (Tottenham, N17), Haringey",
-    "locationSource": "Haringey Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Love Lane Estate / High Road West regeneration area, Tottenham (N17), London Borough of Haringey",
+    "locationSource": "Haringey Council news item describing Phase 1 at Love Lane Estate (High Road West scheme, Tottenham N17)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -213,7 +229,9 @@
         "datePublished": "2026-02-11",
         "summary": "Council news confirming cabinet approval to procure a contractor to build 61 homes at Love Lane Estate as the first phase of High Road West."
       }
-    ]
+    ],
+    "latitude": 51.6046,
+    "longitude": -0.0669
   },
   {
     "id": "gm-b016-e07000227-land-west-of-ifield-major-planning-application",
@@ -225,8 +243,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has publicly confirmed receipt of a major application; outcomes depend on the planning process and subsequent delivery decisions.",
-    "locationDescription": "Land West of Ifield (near Crawley), Horsham District",
-    "locationSource": "Horsham District Council news",
+    "locationDescription": "Land West of Ifield, on the western edge of Crawley near Ifield (Horsham District, West Sussex)",
+    "locationSource": "Horsham District Council news item: 'receives major planning application for Land West of Ifield' (2025-08-29)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -237,7 +255,9 @@
         "datePublished": "2025-08-29",
         "summary": "Council news item announcing receipt of a major planning application for Land West of Ifield, describing the scale and infrastructure elements of the proposal."
       }
-    ]
+    ],
+    "latitude": 51.1205,
+    "longitude": -0.227
   },
   {
     "id": "gm-b016-e08000009-trafford-civic-quarter-heat-network-development-partner",
@@ -249,8 +269,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A tender notice is published, evidencing an active procurement process; delivery depends on selection and contract mobilisation.",
-    "locationDescription": "Trafford Civic Quarter (Talbot Road / Town Hall area), Trafford",
-    "locationSource": "GOV.UK Find a Tender notice",
+    "locationDescription": "Trafford Civic Quarter around Trafford Town Hall / Talbot Road, Stretford (Trafford), Greater Manchester",
+    "locationSource": "Project description and GOV.UK Find a Tender notice referencing 'Trafford Civic Quarter' (Talbot Road / Town Hall area)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -261,7 +281,9 @@
         "datePublished": "2025-11-26",
         "summary": "Tender notice describing Trafford Council’s procurement for a development partner for the Trafford Civic Quarter Heat Network and wider heat zone opportunity."
       }
-    ]
+    ],
+    "latitude": 53.4636,
+    "longitude": -2.2919
   },
   {
     "id": "gm-b016-e06000039-destination-farnham-road-major-highways-project",
@@ -273,8 +295,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has published updates and materials indicating ongoing design and delivery preparation; construction timelines are referenced but not fully evidenced as complete in the cited source.",
-    "locationDescription": "Farnham Road corridor and surrounding streets, Slough",
-    "locationSource": "Slough Borough Council news",
+    "locationDescription": "Farnham Road corridor, Slough, Berkshire (representative point along Farnham Road near its central section within Slough).",
+    "locationSource": "Project described as 'Destination Farnham Road' on Slough Borough Council update page; location given as Farnham Road and surrounding streets in Slough.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -285,7 +307,9 @@
         "datePublished": "2024-05-14",
         "summary": "Council update on the Destination Farnham Road project, including scope for highway, walking/cycling and streetscape improvements."
       }
-    ]
+    ],
+    "latitude": 51.5185,
+    "longitude": -0.6247
   },
   {
     "id": "gm-b016-e07000081-greyfriars-quarter-levelling-up-funding",
@@ -298,7 +322,7 @@
     "status": "AMBER",
     "statusRationale": "The Levelling Up Fund award evidences project enabling and funding; delivery depends on subsequent planning, procurement and construction phases.",
     "locationDescription": "Greyfriars Quarter / former Eastgate Shopping Centre area, Gloucester city centre",
-    "locationSource": "Gloucester City Council news",
+    "locationSource": "Gloucester City Council news (Levelling Up Fund award announcement for Greyfriars Quarter, Gloucester)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -309,7 +333,9 @@
         "datePublished": "2024-11-01",
         "summary": "Council update confirming a Levelling Up Fund award to support Gloucester’s Greyfriars Quarter regeneration programme."
       }
-    ]
+    ],
+    "latitude": 51.8657,
+    "longitude": -2.2449
   },
   {
     "id": "gm-b016-e07000145-north-quay-regeneration-timeline",
@@ -321,8 +347,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has published a detailed project timeline including procurement milestones; construction delivery details are not confirmed in the cited evidence.",
-    "locationDescription": "North Quay riverside site, Great Yarmouth (near town centre and rail station)",
-    "locationSource": "Great Yarmouth Borough Council regeneration project page",
+    "locationDescription": "North Quay riverside site (River Yare), Great Yarmouth town centre area near Great Yarmouth railway station, Norfolk",
+    "locationSource": "Great Yarmouth Borough Council – North Quay regeneration timeline page (project page evidence) identifying the North Quay riverside site in Great Yarmouth",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -333,7 +359,9 @@
         "datePublished": "2025-12-11",
         "summary": "Council-hosted timeline page describing North Quay regeneration milestones, including Levelling Up funding and procurement steps."
       }
-    ]
+    ],
+    "latitude": 52.6059,
+    "longitude": 1.7318
   },
   {
     "id": "gm-b016-e07000073-market-house-regeneration-construction-start",
@@ -345,9 +373,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council updates confirm construction activity beginning, indicating the project has entered delivery.",
-    "locationDescription": "Market House / Market Square, Harlow town centre",
-    "locationSource": "Harlow Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Market House / Market Square, Harlow town centre, Harlow, Essex",
+    "locationSource": "Harlow Council news: https://www.harlow.gov.uk/news/major-transformation-market-house-begins (project location given as Market House / Market Square, Harlow town centre)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -357,7 +385,9 @@
         "datePublished": "2025-11-22",
         "summary": "Council news confirming that work has started on redevelopment of Market House as part of Harlow town centre regeneration."
       }
-    ]
+    ],
+    "latitude": 51.7723,
+    "longitude": 0.1043
   },
   {
     "id": "gm-b016-e09000007-council-homes-retrofit-investment",
@@ -369,9 +399,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council communications state work has started, indicating the programme is in delivery for identified phases/blocks.",
-    "locationDescription": "Council housing blocks across the London Borough of Camden (first phase blocks identified)",
-    "locationSource": "Camden Newsroom",
-    "locationConfidence": "LOW",
+    "locationDescription": "London Borough of Camden (borough-wide council housing retrofit programme; representative centroid near Camden Town)",
+    "locationSource": "Project description and Camden Newsroom indicate works are across council housing blocks throughout the London Borough of Camden (no single named site)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -381,7 +411,9 @@
         "datePublished": "2026-03-18",
         "summary": "Camden Council newsroom post stating retrofit work has started and will benefit 3,000 council homes by improving energy efficiency and reducing bills."
       }
-    ]
+    ],
+    "latitude": 51.5416,
+    "longitude": -0.1432
   },
   {
     "id": "gm-b016-e07000148-anglia-square-regeneration-acquisition",
@@ -393,8 +425,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council confirms the acquisition and intent to progress regeneration; delivery depends on subsequent development plans, approvals and funding.",
-    "locationDescription": "Anglia Square, Norwich city centre",
-    "locationSource": "Norwich City Council news",
+    "locationDescription": "Anglia Square shopping and redevelopment site, Norwich city centre, Norfolk",
+    "locationSource": "Project description and Norwich City Council news item referencing Anglia Square, Norwich",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -405,7 +437,9 @@
         "datePublished": "2024-12-18",
         "summary": "Council announcement describing acquisition actions to revive regeneration of Anglia Square in Norwich city centre."
       }
-    ]
+    ],
+    "latitude": 52.6315,
+    "longitude": 1.2976
   },
   {
     "id": "gm-b016-e09000010-meridian-water-pipistrelle-house-first-residents",
@@ -417,9 +451,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council confirms occupation of newly delivered homes, indicating completed delivery of at least this phase/building.",
-    "locationDescription": "Pipistrelle House, Meridian Water, Enfield",
-    "locationSource": "Enfield Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Meridian Water regeneration area (Pipistrelle House), Enfield, London",
+    "locationSource": "Enfield Council news: 'New residents welcomed to new Pipistrelle House at Meridian Water' (2024-12-10)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -429,6 +463,8 @@
         "datePublished": "2024-12-10",
         "summary": "Council news item reporting the first residents moving into Pipistrelle House at Meridian Water, evidencing delivery of new homes within the regeneration programme."
       }
-    ]
+    ],
+    "latitude": 51.6209,
+    "longitude": -0.0549
   }
 ]

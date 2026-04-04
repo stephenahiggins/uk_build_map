@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The contract award has been published, but service outcomes depend on mobilisation and ongoing delivery across the district over the contract term.",
-    "locationDescription": "Tendring District, Essex (including coastal towns such as Clacton, Frinton, Walton, Brightlingsea, Harwich and Manningtree, plus rural areas)",
-    "locationSource": "Find a Tender (Tendring District Council, EPP0103 notices 2024/S 000-033463 and 2025/S 000-086189)",
+    "locationDescription": "Tendring District, Essex — representative centroid point (district-wide waste/recycling collection and street cleansing contract covering settlements including Clacton-on-Sea and surrounding coastal/rural areas).",
+    "locationSource": "Find a Tender notices for Tendring District Council procurement EPP0103 (2024/S 000-033463 contract notice and 2025/S 000-086189 contract award notice) describing the service area as across Tendring District.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -29,7 +29,9 @@
         "datePublished": "2025-12-24",
         "summary": "Contract award notice linked from the original EPP0103 contract notice, evidencing award publication and conclusion of the procurement for Tendring’s integrated waste/recycling and street cleansing contract."
       }
-    ]
+    ],
+    "latitude": 51.7893,
+    "longitude": 1.1556
   },
   {
     "id": "gm-b010-e06000008-blackburn-with-darwen-grass-cutting-weed-control-contract",
@@ -41,8 +43,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract award notice has been published and the contract period begins in 2024, indicating the maintenance contract is in delivery.",
-    "locationDescription": "Borough-wide (highway verges and council-owned land), Blackburn with Darwen",
-    "locationSource": "Find a Tender (Blackburn with Darwen Borough Council contract award notice 2024/S 000-023520)",
+    "locationDescription": "Blackburn with Darwen borough-wide area (representative point: central Blackburn, Lancashire)",
+    "locationSource": "Find a Tender contract award notice 2024/S 000-023520 describing borough-wide coverage in Blackburn with Darwen",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -53,7 +55,9 @@
         "datePublished": "2024-07-26",
         "summary": "Contract award notice for a borough-wide grass cutting and weed control contract covering highway verges and council-owned land in Blackburn with Darwen."
       }
-    ]
+    ],
+    "latitude": 53.7486,
+    "longitude": -2.4875
   },
   {
     "id": "gm-b010-e07000085-east-hampshire-whitehill-bordon-transport-strategy-consultancy",
@@ -65,8 +69,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A Contracts Finder notice shows the commission was awarded with contract dates in early 2024.",
-    "locationDescription": "Whitehill & Bordon regeneration area, East Hampshire",
-    "locationSource": "Contracts Finder (East Hampshire District Council notice cb8125ec-d94a-4d0a-acde-b4c706684f5d)",
+    "locationDescription": "Whitehill & Bordon regeneration area (centred on Bordon), East Hampshire District, Hampshire",
+    "locationSource": "Contracts Finder (East Hampshire District Council notice cb8125ec-d94a-4d0a-acde-b4c706684f5d) referencing the 'Whitehill and Bordon Transport Strategy' for the regeneration area",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -77,7 +81,9 @@
         "datePublished": "2024-06-14",
         "summary": "Awarded contract notice for commissioning support to develop the Whitehill and Bordon Transport Strategy (Place, Connectivity & Infrastructure)."
       }
-    ]
+    ],
+    "latitude": 51.116,
+    "longitude": -0.866
   },
   {
     "id": "gm-b010-e07000090-havant-bulbeck-road-car-park-demolition-regeneration-enabling-works",
@@ -89,9 +95,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council states works were due to start in September 2024 and expected to complete in winter 2024; later completion status is not evidenced here.",
-    "locationDescription": "Bulbeck Road multi-storey car park site, Havant town centre, Hampshire",
-    "locationSource": "Havant Borough Council news post on Bulbeck Road car park demolition",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Bulbeck Road multi-storey car park site, Havant town centre, Hampshire, England",
+    "locationSource": "Havant Borough Council news post: https://www.havant.gov.uk/news/2024/havant-regeneration-unlocked-town-centre-demolition",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -101,7 +107,9 @@
         "datePublished": "2024-08-21",
         "summary": "Council update stating demolition of the town-centre multi-storey car park would begin on 9 September 2024 with contractor Hughes & Salvidge and was expected to complete in winter 2024, alongside mitigation measures for dust, drainage and recycling."
       }
-    ]
+    ],
+    "latitude": 50.8532,
+    "longitude": -0.9856
   },
   {
     "id": "gm-b010-e06000004-stockton-on-tees-town-centre-living-preliminary-market-engagement",
@@ -113,8 +121,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The authority published a preliminary market engagement notice, indicating the project is in pre-procurement / early development stage.",
-    "locationDescription": "Stockton town centre (Town Centre Living regeneration area), Stockton-on-Tees",
-    "locationSource": "Find a Tender (Stockton-on-Tees Borough Council preliminary market engagement notice 2025/S 000-084935)",
+    "locationDescription": "Stockton-on-Tees town centre (Town Centre Living regeneration area), Stockton-on-Tees, UK",
+    "locationSource": "Find a Tender notice 2025/S 000-084935 (Stockton-on-Tees Borough Council) – described as Stockton town centre / Town Centre Living initiative",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -125,7 +133,9 @@
         "datePublished": "2025-05-07",
         "summary": "Preliminary market engagement notice for Stockton-on-Tees Borough Council’s Town Centre Living initiative, signalling early engagement with suppliers/developers ahead of any formal procurement."
       }
-    ]
+    ],
+    "latitude": 54.5699,
+    "longitude": -1.3145
   },
   {
     "id": "gm-b010-e06000055-bedford-ev-charging-infrastructure-concession",
@@ -137,8 +147,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A concession tender notice has been published; delivery depends on procurement outcome and rollout implementation.",
-    "locationDescription": "Bedford Borough (public EV charging locations to be supplied and installed across the borough)",
-    "locationSource": "Find a Tender (Bedford Borough Council concession notice 2025/S 000-006045) and Bedford Borough Council news",
+    "locationDescription": "Bedford Borough, represented by a central point in Bedford (the borough’s main urban centre), as the EV charging infrastructure is to be deployed across the borough rather than at a single named site.",
+    "locationSource": "Project description and evidence indicating rollout across Bedford Borough (Find a Tender notice 2025/S 000-006045 and Bedford Borough Council news, both 2025-02-20).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -157,7 +167,9 @@
         "datePublished": "2025-02-20",
         "summary": "Council announcement on plans to install additional EV charge points across the borough, supporting a wider rollout of public charging infrastructure."
       }
-    ]
+    ],
+    "latitude": 52.1364,
+    "longitude": -0.4607
   },
   {
     "id": "gm-b010-e07000192-cannock-chase-overflow-contractor-housing-repairs-backlog",
@@ -169,8 +181,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract details notice sets out an awarded contract period ending 31 March 2026 (which is in the past relative to 3 April 2026).",
-    "locationDescription": "Cannock Chase District (council housing repairs and maintenance works)",
-    "locationSource": "Find a Tender (Cannock Chase District Council contract details notice 2025/S 000-039698)",
+    "locationDescription": "Cannock Chase District Council area (representative point at Cannock town centre, Staffordshire)",
+    "locationSource": "Project description and Find a Tender notice context indicating works across Cannock Chase District; representative centroid chosen for Cannock (main town in the district).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -181,7 +193,9 @@
         "datePublished": "2025-07-14",
         "summary": "Contract details notice describing an overflow contractor appointed to clear a backlog of repairs and maintenance works orders for Cannock Chase District Council, including contract dates through to 31 March 2026."
       }
-    ]
+    ],
+    "latitude": 52.6903,
+    "longitude": -2.0304
   },
   {
     "id": "gm-b010-e07000225-chichester-selsey-coastal-scheme-site-investigation-services",
@@ -193,8 +207,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A contract details notice has been published for enabling investigations; follow-on design and construction phases depend on scheme development and approvals.",
-    "locationDescription": "Selsey, West Sussex (Selsey Coastal Scheme area)",
-    "locationSource": "Find a Tender (Chichester District Council contract details notice 2025/S 000-043561)",
+    "locationDescription": "Selsey, West Sussex (representative centre point for the Selsey Coastal Scheme area)",
+    "locationSource": "Find a Tender notice 2025/S 000-043561 (Chichester District Council) referencing the Selsey Coastal Scheme in Selsey",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -205,7 +219,9 @@
         "datePublished": "2025-07-28",
         "summary": "Contract details notice for site investigation services supporting the Selsey Coastal Scheme, an enabling step for coastal resilience and flood-risk management work."
       }
-    ]
+    ],
+    "latitude": 50.735,
+    "longitude": -0.789
   },
   {
     "id": "gm-b010-e06000015-derby-becketwell-live-performance-venue-practical-completion-opening",
@@ -217,9 +233,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council updates state the venue reached practical completion in February 2025 and an opening date was subsequently announced.",
-    "locationDescription": "Becketwell Live, Becketwell regeneration area, Derby city centre",
-    "locationSource": "Derby City Council news updates on Becketwell Live",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Becketwell Live performance venue, Becketwell regeneration area, Derby city centre (approximate site centroid).",
+    "locationSource": "Derby City Council news updates referencing Becketwell Live in the Becketwell regeneration area, Derby city centre.",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -237,7 +253,9 @@
         "datePublished": "2025-04-21",
         "summary": "Council announcement setting out the opening timeline for Becketwell Live following practical completion, evidencing progression from build to operation."
       }
-    ]
+    ],
+    "latitude": 52.9207,
+    "longitude": -1.4747
   },
   {
     "id": "gm-b010-e09000023-lewisham-school-minor-works-programme-condition-surveys-professional-services",
@@ -249,8 +267,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A contract notice has been published for surveys and professional services; delivery of the works programme depends on procurement award and subsequent project delivery.",
-    "locationDescription": "Lewisham borough schools (condition surveys and planned minor works programme)",
-    "locationSource": "Find a Tender (London Borough of Lewisham contract notice 2025/S 000-006992)",
+    "locationDescription": "London Borough of Lewisham (representative centroid for borough-wide works across multiple Lewisham schools)",
+    "locationSource": "Project description and Find a Tender notice indicating borough-wide school minor works programme in Lewisham (https://www.find-tender.service.gov.uk/Notice/006992-2025)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -261,7 +279,9 @@
         "datePublished": "2025-02-21",
         "summary": "Contract notice seeking condition surveys and multi-disciplinary professional services to support Lewisham’s school minor works programme, including preparation of reports and indicative programmes of works over multiple years."
       }
-    ]
+    ],
+    "latitude": 51.4613,
+    "longitude": -0.0106
   },
   {
     "id": "gm-b010-e06000064-westmorland-and-furness-traffic-signals-maintenance-repairs-improvements",
@@ -273,8 +293,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A contract notice has been published; delivery depends on procurement completion and ongoing service performance over the contract term.",
-    "locationDescription": "Westmorland and Furness Council area (traffic signals across the council’s road network)",
-    "locationSource": "Find a Tender (Westmorland and Furness Council contract notice 2024/S 000-040884)",
+    "locationDescription": "Westmorland and Furness Council area (representative centroid within the unitary authority, Cumbria).",
+    "locationSource": "Find a Tender notice 2024/S 000-040884 describing works across the Westmorland and Furness Council road network; coordinates set to a representative central point for the council area.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -285,7 +305,9 @@
         "datePublished": "2024-12-19",
         "summary": "Contract notice for traffic signals maintenance, repairs, installation and improvements across Westmorland and Furness, supporting ongoing transport network operations."
       }
-    ]
+    ],
+    "latitude": 54.3269,
+    "longitude": -2.7477
   },
   {
     "id": "gm-b010-e07000094-winchester-refurbishment-renewal-works-civic-estate",
@@ -297,8 +319,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The Contracts Finder notice shows an awarded contract with an end date in October 2025 (in the past relative to 3 April 2026).",
-    "locationDescription": "Winchester district (council refurbishment / renewal works sites as defined in the procurement documentation)",
-    "locationSource": "Contracts Finder (Winchester City Council notice c7e7dd7d-ea09-4b08-84dc-e07b6d694d88)",
+    "locationDescription": "Winchester city centre (representative point for Winchester district/civic estate works, Winchester, Hampshire).",
+    "locationSource": "Project evidence only specifies Winchester City Council civic estate refurbishment/renewal works with no single named site; using central Winchester as district representative.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -309,7 +331,9 @@
         "datePublished": "2025-03-05",
         "summary": "Awarded contract notice for refurbishment / renewal works published by Winchester City Council, including contract dates running from April to October 2025."
       }
-    ]
+    ],
+    "latitude": 51.0629,
+    "longitude": -1.3162
   },
   {
     "id": "gm-b010-e06000014-york-external-wall-and-balcony-flooring-upgrades",
@@ -321,8 +345,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A pipeline notice indicates planned works with an estimated tender publication date; delivery depends on subsequent procurement and construction.",
-    "locationDescription": "York (specific walkway and balcony locations to be defined through the procurement)",
-    "locationSource": "Find a Tender (City of York Council pipeline notice 2025/S 000-013683)",
+    "locationDescription": "York city centre (representative point for City of York Council area; specific sites not defined in the pipeline notice).",
+    "locationSource": "Find a Tender notice 2025/S 000-013683 (City of York Council) indicates works in York but no specific site/facility named.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -333,7 +357,9 @@
         "datePublished": "2025-04-08",
         "summary": "Pipeline notice describing procurement to appoint a contractor to upgrade and replace walkway and balcony coverings where they have fallen into disrepair, including estimated contract dates and value."
       }
-    ]
+    ],
+    "latitude": 53.959055,
+    "longitude": -1.081536
   },
   {
     "id": "gm-b010-e06000052-cornwall-tamar-crossings-structural-repairs",
@@ -345,9 +371,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract award notice has been published, evidencing procurement completion for the structural repairs scope.",
-    "locationDescription": "Tamar Crossings (Tamar Bridge crossing infrastructure between Cornwall and Devon)",
-    "locationSource": "Find a Tender (Tamar Crossings contract award notice 2025/S 000-009414)",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Tamar Bridge (Tamar Crossings) between Saltash, Cornwall and Plymouth, Devon",
+    "locationSource": "Find a Tender contract award notice 2025/S 000-009414 for Tamar Crossings structural repairs",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -357,7 +383,9 @@
         "datePublished": "2025-03-27",
         "summary": "Contract award notice for structural repairs to Tamar Crossings infrastructure, evidencing award and delivery planning for maintenance of a major transport asset."
       }
-    ]
+    ],
+    "latitude": 50.4169,
+    "longitude": -4.2027
   },
   {
     "id": "gm-b010-e09000018-hounslow-lionel-road-north-structural-repair-works",
@@ -369,9 +397,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The Contracts Finder notice shows an awarded contract with an end date in December 2025 (in the past relative to 3 April 2026).",
-    "locationDescription": "Lionel Road North, London Borough of Hounslow",
-    "locationSource": "Contracts Finder (London Borough of Hounslow notice a1a8e42d-20c5-4eae-b7ee-8b402bb709b6)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Lionel Road North, Brentford (London Borough of Hounslow), West London",
+    "locationSource": "Contracts Finder notice a1a8e42d-20c5-4eae-b7ee-8b402bb709b6 referencing 'Lionel Road North' as the works location",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -381,7 +409,9 @@
         "datePublished": "2025-11-24",
         "summary": "Awarded contract notice for structural repair works at Lionel Road North, including contract dates running to 31 December 2025."
       }
-    ]
+    ],
+    "latitude": 51.4909,
+    "longitude": -0.3139
   },
   {
     "id": "gm-b010-e06000061-north-northamptonshire-highway-safety-inspections-audits",
@@ -393,8 +423,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract details notice has been published, indicating an awarded contract for inspections and audits is in force.",
-    "locationDescription": "North Northamptonshire (highway network safety inspections and audits)",
-    "locationSource": "Find a Tender (North Northamptonshire Council contract details notice 2025/S 000-034876)",
+    "locationDescription": "North Northamptonshire Council area (representative point near Kettering, central within the unitary authority’s highway network coverage).",
+    "locationSource": "Find a Tender notice 2025/S 000-034876 describing services across North Northamptonshire Council’s road network; centroid approximated to Kettering as a central settlement.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -405,7 +435,9 @@
         "datePublished": "2025-06-12",
         "summary": "Contract details notice for provision of highway safety inspections and safety audits for North Northamptonshire Council’s road network."
       }
-    ]
+    ],
+    "latitude": 52.395,
+    "longitude": -0.725
   },
   {
     "id": "gm-b010-e07000075-rochford-rayleigh-approach-car-park-resurfacing-alterations",
@@ -417,9 +449,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A tender notice has been published; delivery depends on procurement award and construction completion.",
-    "locationDescription": "The Approach Car Park, Rayleigh (adjacent to Rayleigh Station), Essex",
-    "locationSource": "Find a Tender (Rochford District Council tender notice 2026/S 000-004546)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "The Approach Car Park, adjacent to Rayleigh railway station (Station Road area), Rayleigh, Essex, UK.",
+    "locationSource": "Project description and evidence citing 'The Approach Car Park' near/adjacent to Rayleigh Station (Find a Tender notice 2026/S 000-004546).",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -429,7 +461,9 @@
         "datePublished": "2026-01-23",
         "summary": "Tender notice for resurfacing and alterations to The Approach Car Park in Rayleigh (near Rayleigh Station), including a stated budget and procurement reference."
       }
-    ]
+    ],
+    "latitude": 51.5899,
+    "longitude": 0.6006
   },
   {
     "id": "gm-b010-e06000040-windsor-and-maidenhead-highway-maintenance-capital-works-framework",
@@ -441,8 +475,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A tender notice has been published; delivery depends on framework establishment and subsequent call-off works orders.",
-    "locationDescription": "Royal Borough of Windsor & Maidenhead (highway network and associated assets)",
-    "locationSource": "Find a Tender (Royal Borough of Windsor & Maidenhead tender notice 2025/S 000-024596)",
+    "locationDescription": "Royal Borough of Windsor & Maidenhead (representative point at Maidenhead town centre, within the borough highway network coverage area)",
+    "locationSource": "Find a Tender notice 2025/S 000-024596 for the Royal Borough of Windsor & Maidenhead highway maintenance and capital works framework",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -453,6 +487,8 @@
         "datePublished": "2025-04-29",
         "summary": "Tender notice for a highway maintenance and capital works framework for the Royal Borough of Windsor & Maidenhead, supporting delivery of transport asset maintenance and improvement works."
       }
-    ]
+    ],
+    "latitude": 51.5228,
+    "longitude": -0.7196
   }
 ]

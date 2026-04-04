@@ -70,6 +70,26 @@ cd backend
 make recompute-evaluations
 ```
 
+### Backfilling Codex Batch Coordinates
+
+Codex batch output files under `backend/seeds/codex-batches/out/` can be backfilled
+with `latitude`, `longitude`, and location metadata before merge/import.
+
+Run from the repo root with Docker:
+
+```sh
+make backend-seed-backfill-codex-coords ARGS="--model gpt-5.2"
+```
+
+Or run directly on the host from `backend/`:
+
+```sh
+cd backend
+npm run seed:backfill-codex-coords -- --model gpt-5.2
+```
+
+This step is now included automatically in `make agents-overnight-growth-map`.
+
 ### Frontend Development
 
 1. Install dependencies and run the dev server:
@@ -94,6 +114,7 @@ make recompute-evaluations
 | make prisma-generate | Generate Prisma client             |
 | make seed        | Run Prisma seed script                 |
 | make test        | Run backend tests                      |
+| make seed-backfill-codex-coords ARGS="--model gpt-5.2" | Backfill missing lat/lng in Codex batch outputs |
  |make seed-projects SEED=seeds/national-starter.json | Seed files |
 ## API Documentation
 - Swagger UI available at `/api-docs/:version` (when not in production)

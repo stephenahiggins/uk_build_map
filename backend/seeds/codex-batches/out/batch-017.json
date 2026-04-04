@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Planning approval is in place, but delivery depends on detailed design, funding, procurement and construction timelines.",
-    "locationDescription": "Power Court site, central Luton (near Luton Town Centre / rail station area)",
-    "locationSource": "Luton Council and BBC News",
+    "locationDescription": "Power Court development site, central Luton near Luton railway station and town centre (Luton Town FC proposed stadium site).",
+    "locationSource": "Project description and cited sources (Luton Council news release; BBC News) identifying the site as Power Court in central Luton.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -29,7 +29,9 @@
         "datePublished": "2024-12-16",
         "summary": "Report that Luton Borough Council approved the new Power Court stadium plans."
       }
-    ]
+    ],
+    "latitude": 51.8796,
+    "longitude": -0.4145
   },
   {
     "id": "gm-b017-e06000032-the-stage-groundbreaking-construction-start",
@@ -41,8 +43,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council has publicly confirmed that construction has started.",
-    "locationDescription": "Bute Street Shoppers Car Park / Church Street area, Luton town centre",
-    "locationSource": "Luton Council news",
+    "locationDescription": "Approximate centroid of the Bute Street / Church Street area (Bute Street Shoppers Car Park vicinity), Luton town centre",
+    "locationSource": "Luton Council news release describing the site as the Bute Street / Church Street area in Luton town centre",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -53,7 +55,9 @@
         "datePublished": "2026-03-05",
         "summary": "Council announcement confirming a groundbreaking ceremony and start of construction for The Stage development in Luton town centre."
       }
-    ]
+    ],
+    "latitude": 51.8787,
+    "longitude": -0.4175
   },
   {
     "id": "gm-b017-e08000034-george-hotel-renovation-milestone",
@@ -65,8 +69,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has confirmed ongoing progress, but completion depends on construction delivery for a complex listed-building scheme.",
-    "locationDescription": "George Hotel, St George’s Square, Huddersfield",
-    "locationSource": "Kirklees Together",
+    "locationDescription": "George Hotel, St George’s Square, Huddersfield, West Yorkshire",
+    "locationSource": "Project location description and Kirklees Council update (Kirklees Together) referencing the George Hotel in Huddersfield town centre",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -77,7 +81,9 @@
         "datePublished": "2026-02-20",
         "summary": "Council update describing progress on the George Hotel renovation and next steps for the town-centre scheme."
       }
-    ]
+    ],
+    "latitude": 53.6453,
+    "longitude": -1.7836
   },
   {
     "id": "gm-b017-e08000034-our-cultural-heart-phase-1-underway",
@@ -89,8 +95,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council has confirmed demolition and construction progress and set out indicative completion and opening timeframes.",
-    "locationDescription": "Former Queensgate Market site, Huddersfield town centre",
-    "locationSource": "Kirklees Together",
+    "locationDescription": "Former Queensgate Market (Queensgate Market Hall) site in Huddersfield town centre, West Yorkshire",
+    "locationSource": "Kirklees Together (Kirklees Council) article describing Phase 1 works at the former Queensgate Market building in Huddersfield town centre",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -101,7 +107,9 @@
         "datePublished": "2025-05-20",
         "summary": "Council update on demolition completion and ongoing construction for Phase 1 of Our Cultural Heart, including the future library hub, food hall and public square."
       }
-    ]
+    ],
+    "latitude": 53.6457,
+    "longitude": -1.7796
   },
   {
     "id": "gm-b017-e07000146-southgates-masterplan-latest-designs",
@@ -113,8 +121,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Designs have been published, but delivery will depend on final design development, approvals, funding and implementation.",
-    "locationDescription": "Southgates area and historic South Gate, King’s Lynn",
-    "locationSource": "Borough Council of King's Lynn & West Norfolk news",
+    "locationDescription": "Historic South Gate / Southgates area, King’s Lynn, Norfolk",
+    "locationSource": "Borough Council of King's Lynn & West Norfolk news release about the Southgates Masterplan (\"Latest designs for key King’s Lynn gateway revealed\")",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -125,7 +133,9 @@
         "datePublished": "2024-09-17",
         "summary": "Council news release publishing updated designs for the Southgates Masterplan, including public realm and movement improvements around the South Gate."
       }
-    ]
+    ],
+    "latitude": 52.7527,
+    "longitude": 0.4009
   },
   {
     "id": "gm-b017-e07000146-custom-house-revitalisation-listed-building-consent",
@@ -137,8 +147,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Plans have been approved, but the project remains subject to delivery planning, procurement and construction.",
-    "locationDescription": "The Custom House, King’s Lynn",
-    "locationSource": "Borough Council of King's Lynn & West Norfolk news",
+    "locationDescription": "The Custom House, King's Lynn, Norfolk (historic Custom House building on the quayside in King's Lynn town centre)",
+    "locationSource": "Borough Council of King's Lynn & West Norfolk news: https://www.west-norfolk.gov.uk/news/article/1985/plans_approved_to_revitalise_iconic_custom_house_in_king_s_lynn",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -149,7 +159,9 @@
         "datePublished": "2025-12-11",
         "summary": "Council announcement confirming approval of plans to revitalise the Custom House as a regeneration project."
       }
-    ]
+    ],
+    "latitude": 52.7586,
+    "longitude": 0.3957
   },
   {
     "id": "gm-b017-e07000146-pride-in-place-regeneration-plan-approved",
@@ -161,9 +173,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Approval provides programme-level backing, but individual schemes will still require scoping, funding, procurement and delivery.",
-    "locationDescription": "King’s Lynn town centre (Pride in Place programme area)",
-    "locationSource": "Borough Council of King's Lynn & West Norfolk news",
-    "locationConfidence": "LOW",
+    "locationDescription": "King’s Lynn town centre, King’s Lynn, Norfolk (representative central point for the Pride in Place programme area)",
+    "locationSource": "Borough Council of King's Lynn & West Norfolk news release: 'Major boost for King’s Lynn as Government approves Pride in Place regeneration plan' (2026-03-25)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -173,7 +185,9 @@
         "datePublished": "2026-03-25",
         "summary": "Council news release stating that the Pride in Place regeneration plan for King's Lynn has been approved by government."
       }
-    ]
+    ],
+    "latitude": 52.7527,
+    "longitude": 0.3976
   },
   {
     "id": "gm-b017-e07000008-cowley-road-operations-hub-nears-opening",
@@ -185,9 +199,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council has stated the hub is nearing opening following delivery of the new facility.",
-    "locationDescription": "Cowley Road, Cambridge (operations hub site)",
-    "locationSource": "Cambridge City Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Cowley Road, Cambridge, Cambridgeshire – Cambridge City Council operations hub site (representative point on Cowley Road in Cambridge).",
+    "locationSource": "Cambridge City Council news article (2025-10-23) describing the new operations hub on Cowley Road, Cambridge.",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -197,7 +211,9 @@
         "datePublished": "2025-10-23",
         "summary": "Council news update on the delivery and imminent opening of the Cowley Road operations hub supporting front-line council services."
       }
-    ]
+    ],
+    "latitude": 52.2002,
+    "longitude": 0.1486
   },
   {
     "id": "gm-b017-e07000008-civic-quarter-project-plans-approved",
@@ -209,9 +225,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Approvals have been reported, but the programme will require further detailed design, procurement and phased construction.",
-    "locationDescription": "Cambridge city centre civic quarter (Guildhall, Corn Exchange and Market Square area)",
-    "locationSource": "Cambridge City Council news",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Cambridge Civic Quarter centred on Cambridge Guildhall / Market Square area, Cambridge city centre",
+    "locationSource": "Cambridge City Council news (Civic Quarter project for Guildhall, Corn Exchange and Market Square)",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -221,7 +237,9 @@
         "datePublished": "2026-03-26",
         "summary": "Council update describing key milestones and approvals for the Civic Quarter project covering the Guildhall, Corn Exchange and Market Square proposals."
       }
-    ]
+    ],
+    "latitude": 52.2052,
+    "longitude": 0.1191
   },
   {
     "id": "gm-b017-e07000178-covered-market-redevelopment-updated-plans-2027",
@@ -233,8 +251,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Plans have been set out publicly, but the project depends on final design, approvals and procurement before works can begin.",
-    "locationDescription": "Oxford Covered Market, Oxford city centre",
-    "locationSource": "Oxford City Council news",
+    "locationDescription": "Oxford Covered Market, Market Street, Oxford city centre",
+    "locationSource": "Oxford City Council news article about the Covered Market redevelopment (https://www.oxford.gov.uk/news/article/1802/covered-market-redevelopment-updated-plans-and-2027-start-date)",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -245,7 +263,9 @@
         "datePublished": "2026-01-29",
         "summary": "Council news item describing updated plans for the Covered Market redevelopment and an indicated start date in 2027."
       }
-    ]
+    ],
+    "latitude": 51.75282,
+    "longitude": -1.25807
   },
   {
     "id": "gm-b017-e07000178-market-street-changes-permanent",
@@ -257,8 +277,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council has confirmed the changes have been made permanent and implemented on-street.",
-    "locationDescription": "Market Street, Oxford city centre",
-    "locationSource": "Oxford City Council news",
+    "locationDescription": "Market Street, Oxford city centre (near Cornmarket Street/Queen Street), Oxford, Oxfordshire",
+    "locationSource": "Oxford City Council news item 'Market Street changes to become permanent' (https://www.oxford.gov.uk/news/article/1731/market_street_changes_to_become_permanent)",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -269,7 +289,9 @@
         "datePublished": "2025-09-12",
         "summary": "Council announcement confirming that Market Street measures will be made permanent."
       }
-    ]
+    ],
+    "latitude": 51.75363,
+    "longitude": -1.25872
   },
   {
     "id": "gm-b017-e08000025-smithfield-major-funding-agreed",
@@ -281,8 +303,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding agreement represents a major milestone, but the programme remains subject to phased delivery, procurement and construction.",
-    "locationDescription": "Smithfield area, Birmingham city centre",
-    "locationSource": "Birmingham City Council news",
+    "locationDescription": "Smithfield Birmingham regeneration area in Birmingham city centre (near the former Birmingham Wholesale Market / Moat Lane area).",
+    "locationSource": "Birmingham City Council news release: https://www.birmingham.gov.uk/news/article/1603/major_funding_agreed_for_smithfield_birmingham",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -293,7 +315,9 @@
         "datePublished": "2025-07-22",
         "summary": "Council news release confirming that major funding was agreed for the Smithfield Birmingham regeneration programme."
       }
-    ]
+    ],
+    "latitude": 52.4766,
+    "longitude": -1.8893
   },
   {
     "id": "gm-b017-e08000025-druids-heath-regeneration-outline-planning-approved",
@@ -305,8 +329,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Outline approval sets a development framework, but detailed planning, rehousing strategy and phased construction will determine delivery.",
-    "locationDescription": "Druids Heath estate, Birmingham",
-    "locationSource": "Birmingham City Council news",
+    "locationDescription": "Druids Heath estate, Birmingham (representative centroid for the Druids Heath area in south Birmingham)",
+    "locationSource": "Project description and Birmingham City Council news item referencing the Druids Heath estate regeneration",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -317,7 +341,9 @@
         "datePublished": "2025-10-23",
         "summary": "Council announcement that outline plans for the Druids Heath estate regeneration were approved."
       }
-    ]
+    ],
+    "latitude": 52.414,
+    "longitude": -1.893
   },
   {
     "id": "gm-b017-e09000033-church-street-regeneration-work-starts",
@@ -329,8 +355,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council has publicly confirmed that works have started on site as part of the regeneration scheme.",
-    "locationDescription": "Church Street area, Westminster (NW8)",
-    "locationSource": "Westminster City Council news",
+    "locationDescription": "Church Street area (NW8), Westminster, London",
+    "locationSource": "Westminster City Council news release: “Work starts on Westminster City Council’s pioneering green and inclusive regeneration scheme” (Church Street regeneration scheme)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -341,7 +367,9 @@
         "datePublished": "2026-02-19",
         "summary": "Council news release confirming the start of works for the Church Street regeneration scheme."
       }
-    ]
+    ],
+    "latitude": 51.5286,
+    "longitude": -0.1806
   },
   {
     "id": "gm-b017-e09000033-pdhu-future-heating-options-project-update",
@@ -353,8 +381,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council is still evaluating options; delivery depends on selection of the preferred solution and subsequent design and implementation.",
-    "locationDescription": "Pimlico District Heating Undertaking network area, Westminster (Pimlico)",
-    "locationSource": "Westminster City Council (Future of PDHU)",
+    "locationDescription": "Pimlico District Heating Undertaking (PDHU) network area, Pimlico, City of Westminster, London",
+    "locationSource": "Westminster City Council PDHU 'Project update' page (Future of PDHU) referencing the Pimlico District Heating Undertaking network area",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -365,7 +393,9 @@
         "datePublished": "2025-06-30",
         "summary": "Council programme page explaining that options are being reviewed for the future of PDHU and that a preferred option is to be agreed."
       }
-    ]
+    ],
+    "latitude": 51.4899,
+    "longitude": -0.1358
   },
   {
     "id": "gm-b017-e08000035-leeds-pipes-next-phase-heat-network",
@@ -377,9 +407,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "An expansion phase has been announced, but delivery is subject to detailed programme delivery and construction sequencing.",
-    "locationDescription": "Leeds city centre and connected heat network corridors (Leeds PIPES district heating network)",
-    "locationSource": "Leeds City Council newsroom",
-    "locationConfidence": "LOW",
+    "locationDescription": "Leeds city centre (representative point for the Leeds PIPES district heat network expansion corridors in Leeds)",
+    "locationSource": "Project description and Leeds City Council newsroom article about the next phase of Leeds PIPES expansion (citywide network; no single named facility/site given)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -389,7 +419,9 @@
         "datePublished": "2026-03-24",
         "summary": "Council newsroom article setting out the next phase of Leeds’ low-carbon heat network expansion under Leeds PIPES."
       }
-    ]
+    ],
+    "latitude": 53.7997,
+    "longitude": -1.5492
   },
   {
     "id": "gm-b017-e08000035-sheepscar-beck-flood-resilience-scheme-complete",
@@ -401,8 +433,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council has announced that the works have been completed.",
-    "locationDescription": "Sheepscar Beck corridor, Sheepscar and Mabgate area, Leeds city centre north",
-    "locationSource": "Leeds City Council newsroom",
+    "locationDescription": "Sheepscar Beck corridor in the Sheepscar and Mabgate area, north of Leeds city centre (representative midpoint near Mabgate/Sheepscar, Leeds).",
+    "locationSource": "Leeds City Council newsroom article referencing works on Sheepscar Beck in the Sheepscar and Mabgate area, Leeds (https://news.leeds.gov.uk/news/gbp-1-5-million-flood-resilience-scheme-protecting-over-300-homes-and-businesses-is-complete) and project location description.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -413,6 +445,8 @@
         "datePublished": "2025-08-18",
         "summary": "Council newsroom article confirming completion of the £1.5m Sheepscar Beck refurbishment scheme to enhance flood resilience for businesses and homes."
       }
-    ]
+    ],
+    "latitude": 53.8046,
+    "longitude": -1.5356
   }
 ]

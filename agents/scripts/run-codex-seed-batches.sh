@@ -13,6 +13,7 @@ AGENTS_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 BACKEND_ROOT="$(cd "$AGENTS_ROOT/../backend" && pwd)"
 BATCH_DIR="$BACKEND_ROOT/seeds/codex-batches"
 OUT_DIR="$BATCH_DIR/out"
+ARCHIVE_DIR="$OUT_DIR/archive"
 
 YES=0
 DRY_RUN=0
@@ -257,6 +258,7 @@ if [[ "$DRY_RUN" -ne 1 ]]; then
   if [[ ! -d "$OUT_DIR" ]]; then
     mkdir -p "$OUT_DIR"
   fi
+  mkdir -p "$ARCHIVE_DIR"
   if ! confirm "Start Codex batch research run?"; then
     vmsg "Aborted."
     exit 0
@@ -264,6 +266,7 @@ if [[ "$DRY_RUN" -ne 1 ]]; then
 fi
 
 mkdir -p "$OUT_DIR"
+mkdir -p "$ARCHIVE_DIR"
 
 successful_batches=()
 failed_batches=()
@@ -337,6 +340,13 @@ for prompt_file in "${run_list[@]}"; do
     rm -f "$normalized_tmp"
     rm -f "$tmp_file"
     continue
+  fi
+
+  if [[ -f "$out_file" ]]; then
+    archive_stamp="$(date '+%Y%m%dT%H%M%S')"
+    archive_file="$ARCHIVE_DIR/batch-${batch_num}.${archive_stamp}.json"
+    cp "$out_file" "$archive_file"
+    vmsg "Archived previous batch ${batch_num} output to $archive_file"
   fi
 
   mv "$normalized_tmp" "$out_file"

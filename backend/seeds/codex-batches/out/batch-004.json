@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Grant funding is confirmed; delivery is pending detailed design and installation programmes across both sites.",
-    "locationDescription": "Bury St Edmunds Leisure Centre and Haverhill Leisure Centre, West Suffolk",
-    "locationSource": "West Suffolk Council news",
+    "locationDescription": "West Suffolk: midpoint between Bury St Edmunds Leisure Centre (Bury St Edmunds) and Haverhill Leisure Centre (Haverhill), reflecting the two named project sites.",
+    "locationSource": "West Suffolk Council news release (2025-05-19) describing upgrades at Bury St Edmunds Leisure Centre and Haverhill Leisure Centre.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -29,7 +29,9 @@
         "datePublished": "2024-12-17",
         "summary": "Related West Suffolk Council update on securing energy-efficiency improvement funding for a major leisure asset, illustrating the council’s wider decarbonisation pipeline for civic buildings."
       }
-    ]
+    ],
+    "latitude": 52.2523,
+    "longitude": 0.7113
   },
   {
     "id": "gm-b004-e06000011-bridlington-major-road-improvement-scheme",
@@ -41,8 +43,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council reporting indicates delivery is underway; programme timing and on-site sequencing may evolve as works progress.",
-    "locationDescription": "Bridlington, East Riding of Yorkshire",
-    "locationSource": "East Riding of Yorkshire Council news",
+    "locationDescription": "Bridlington town centre, East Riding of Yorkshire (representative point for the road improvement scheme around Bridlington)",
+    "locationSource": "Project description and East Riding of Yorkshire Council news item describing a major road improvement scheme in Bridlington",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -53,7 +55,9 @@
         "datePublished": "2025-02-28",
         "summary": "Council update describing a major road improvement scheme in Bridlington and setting out delivery activity as the scheme gets underway."
       }
-    ]
+    ],
+    "latitude": 54.0833,
+    "longitude": -0.1919
   },
   {
     "id": "gm-b004-e08000022-north-shields-riverside-embankment-walkway",
@@ -65,9 +69,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council reporting confirms the route is open and operational for public use.",
-    "locationDescription": "Riverside Embankment Walkway between North Shields Quayside and Fish Quay, North Tyneside",
-    "locationSource": "North Tyneside Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Centroid of the Riverside Embankment Walkway along the River Tyne between North Shields Quayside and the Fish Quay, North Shields, North Tyneside",
+    "locationSource": "North Tyneside Council news article describing the walkway connecting North Shields’ quayside and the Fish Quay (https://northtyneside.gov.uk/news/34895/new-riverside-embankment-walkway-open-public)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -77,7 +81,9 @@
         "datePublished": "2024-12-20",
         "summary": "Council announcement confirming the new North Shields riverside embankment walkway is open to the public and describing the improved connection between the quayside and Fish Quay."
       }
-    ]
+    ],
+    "latitude": 55.0116,
+    "longitude": -1.4417
   },
   {
     "id": "gm-b004-e07000045-newton-abbot-future-high-streets-fund-package",
@@ -89,8 +95,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Cabinet reporting confirms programme progress; delivery remains dependent on sequencing and town-centre construction coordination.",
-    "locationDescription": "Newton Abbot town centre (Market and Cultural Quarters), Teignbridge",
-    "locationSource": "Teignbridge District Council (Executive meeting papers)",
+    "locationDescription": "Newton Abbot town centre (Market and Cultural Quarters), Teignbridge, Devon",
+    "locationSource": "Project described as Newton Abbot town-centre Future High Streets Fund regeneration package (Teignbridge District Council Executive meeting papers); coordinates set to a representative central point in Newton Abbot town centre",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -109,7 +115,9 @@
         "datePublished": "2025-04-08",
         "summary": "Follow-on Executive update reporting progress and programme management for Newton Abbot’s Future High Streets Fund regeneration projects."
       }
-    ]
+    ],
+    "latitude": 50.5289,
+    "longitude": -3.6118
   },
   {
     "id": "gm-b004-e09000008-croydon-ukspf-district-centres-regeneration-2025",
@@ -121,8 +129,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council communications confirm funding and outline work packages; works are scheduled to commence on site in 2026.",
-    "locationDescription": "Norbury, Addiscombe, Coulsdon and South Croydon district centres, London Borough of Croydon",
-    "locationSource": "Croydon Council newsroom",
+    "locationDescription": "London Borough of Croydon (representative centroid for the multi-site district-centre regeneration programme across Norbury, Addiscombe, Coulsdon and South Croydon)",
+    "locationSource": "Croydon Council newsroom announcements describing a package of works across four district centres in Croydon",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -141,7 +149,9 @@
         "datePublished": "2025-12-17",
         "summary": "Update stating the projects are moving into design and delivery phase with work expected to begin on site in January 2026, and summarising planned interventions by centre."
       }
-    ]
+    ],
+    "latitude": 51.3721,
+    "longitude": -0.1004
   },
   {
     "id": "gm-b004-e07000108-maison-dieu-restoration-dover-reopening",
@@ -153,8 +163,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council communications report major restoration milestones and confirm the building reopening for public use.",
-    "locationDescription": "Maison Dieu, Dover, Kent",
-    "locationSource": "Dover District Council press releases",
+    "locationDescription": "Maison Dieu (Dover Town Hall), Biggin Street, Dover, Kent",
+    "locationSource": "Project description and Dover District Council press releases referencing the Maison Dieu in Dover",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -173,7 +183,9 @@
         "datePublished": "2025-05-03",
         "summary": "Council announcement confirming the reopening of the Maison Dieu following restoration works and outlining public access and programme information."
       }
-    ]
+    ],
+    "latitude": 51.1287,
+    "longitude": 1.3139
   },
   {
     "id": "gm-b004-e07000120-accrington-market-hall-regeneration",
@@ -185,8 +197,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council reports the market hall has reopened to the public following works.",
-    "locationDescription": "Accrington Market Hall, Accrington town centre, Hyndburn",
-    "locationSource": "Hyndburn Borough Council news and local reporting",
+    "locationDescription": "Accrington Market Hall, Accrington town centre, Hyndburn, Lancashire",
+    "locationSource": "Project description and Hyndburn Borough Council news item referencing Accrington Market Hall reopening",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -205,7 +217,9 @@
         "datePublished": "2024-10-17",
         "summary": "Local news coverage reporting construction progress on the Accrington Market Hall regeneration scheme (topping out milestone)."
       }
-    ]
+    ],
+    "latitude": 53.7536,
+    "longitude": -2.3636
   },
   {
     "id": "gm-b004-e06000053-climate-adaptation-scilly-phase-2",
@@ -217,9 +231,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A planned procurement notice has been published; works are programmed for future delivery subject to procurement and mobilisation.",
-    "locationDescription": "Isles of Scilly (coastal defences and drainage interventions across identified locations)",
-    "locationSource": "Find a Tender (planned procurement notice)",
-    "locationConfidence": "LOW",
+    "locationDescription": "Isles of Scilly (representative centroid for the island group; works described as occurring across multiple coastal and drainage intervention locations rather than a single named site).",
+    "locationSource": "Find a Tender planned procurement notice for 'Climate Adaptation Scilly2. Phase 2 (Capex)' (2026-02-06).",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -229,7 +243,9 @@
         "datePublished": "2026-02-06",
         "summary": "Procurement notice describing Climate Adaptation Scilly Phase 2 capital works (embankments, drainage and demountable defences) and an indicative delivery window spanning late 2026 to early 2027."
       }
-    ]
+    ],
+    "latitude": 49.9144,
+    "longitude": -6.3156
   },
   {
     "id": "gm-b004-e07000099-leisure-centre-refurbishments-letchworth-royston",
@@ -241,8 +257,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council updates set out the works programme; delivery is subject to contractor scheduling and phased closures.",
-    "locationDescription": "Letchworth and Royston leisure centres, North Hertfordshire",
-    "locationSource": "North Hertfordshire District Council news",
+    "locationDescription": "Midpoint representative location between Letchworth Leisure Centre (Letchworth Garden City) and Royston Leisure Centre (Royston), North Hertfordshire, Hertfordshire, UK.",
+    "locationSource": "North Hertfordshire District Council news item describing refurbishments at both Letchworth and Royston leisure centres (no single site specified).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -253,7 +269,9 @@
         "datePublished": "2024-07-16",
         "summary": "Council announcement outlining a package of planned improvements and refurbishments at Letchworth and Royston leisure centres."
       }
-    ]
+    ],
+    "latitude": 51.9799,
+    "longitude": -0.2287
   },
   {
     "id": "gm-b004-e06000031-peterborough-station-quarter-city-link-phase-1",
@@ -265,9 +283,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council engagement materials state main construction is expected to start in early 2026; procurement evidence supports delivery preparations.",
-    "locationDescription": "Queensgate roundabout / Station Quarter link between Peterborough railway station and Cowgate, Peterborough",
-    "locationSource": "Peterborough City Council engagement hub and Find a Tender",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Queensgate roundabout subway area on the City Link route between Peterborough railway station and Cowgate (Peterborough Station Quarter).",
+    "locationSource": "Project description and currentLocationDescription citing 'Queensgate roundabout / Station Quarter link between Peterborough railway station and Cowgate, Peterborough' (Peterborough City Council engagement hub; Find a Tender notice 028313-2025).",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -285,7 +303,9 @@
         "datePublished": "2025-05-13",
         "summary": "Find a Tender contract award notice associated with delivery support for the Peterborough Station Quarter / City Link project."
       }
-    ]
+    ],
+    "latitude": 52.5737,
+    "longitude": -0.2475
   },
   {
     "id": "gm-b004-e09000026-wanstead-leisure-centre-new-build",
@@ -297,8 +317,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council reporting confirms construction started; delivery continues through the build programme.",
-    "locationDescription": "Wanstead Leisure Centre site, Wanstead, London Borough of Redbridge",
-    "locationSource": "Redbridge Council news",
+    "locationDescription": "Wanstead Leisure Centre site, Wanstead, London Borough of Redbridge, London",
+    "locationSource": "Redbridge Council news: https://www.redbridge.gov.uk/news/nov-2024/work-begins-on-new-wanstead-leisure-centre/",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -309,7 +329,9 @@
         "datePublished": "2024-11-21",
         "summary": "Council announcement confirming construction has begun on the new Wanstead Leisure Centre and describing the project as a major redevelopment."
       }
-    ]
+    ],
+    "latitude": 51.5769,
+    "longitude": 0.0266
   },
   {
     "id": "gm-b004-e07000211-merstham-recreation-ground-refurbishment",
@@ -321,9 +343,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council reporting states the refurbished facilities are delivered and open for community use.",
-    "locationDescription": "Merstham Recreation Ground, Merstham, Reigate & Banstead",
-    "locationSource": "Reigate & Banstead Borough Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Merstham Recreation Ground, Merstham (Reigate & Banstead), Surrey",
+    "locationSource": "Reigate & Banstead Borough Council news article: https://www.reigate-banstead.gov.uk/news/article/514/merstham_recreational_ground_gets_a_3_million_refurbishment",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -333,7 +355,9 @@
         "datePublished": "2025-05-09",
         "summary": "Council update describing the £3m refurbishment at Merstham Recreation Ground and the facilities delivered as part of the scheme."
       }
-    ]
+    ],
+    "latitude": 51.2635,
+    "longitude": -0.1515
   },
   {
     "id": "gm-b004-e06000025-charfield-rail-station-new-build",
@@ -345,8 +369,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding and approvals are confirmed; the project is moving into the construction phase and remains subject to delivery and rail-interface constraints.",
-    "locationDescription": "Charfield, South Gloucestershire (new rail station site)",
-    "locationSource": "Travelwest (West of England Combined Authority / Travelwest news)",
+    "locationDescription": "Charfield, South Gloucestershire – proposed new Charfield railway station site (representative centroid for Charfield village)",
+    "locationSource": "Project description and Travelwest (West of England Combined Authority/Travelwest) news item referencing a new station at Charfield, South Gloucestershire",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -357,7 +381,9 @@
         "datePublished": "2025-08-04",
         "summary": "Regional transport update confirming project approval and £39.5m funding to South Gloucestershire Council, with the station expected to get underway and be completed by Spring 2027."
       }
-    ]
+    ],
+    "latitude": 51.625,
+    "longitude": -2.406
   },
   {
     "id": "gm-b004-e07000140-castle-site-redevelopment-spalding",
@@ -369,9 +395,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council updates confirm active construction and milestones; the site remains in build through to the planned opening period.",
-    "locationDescription": "Castle site, Spalding, South Holland (Lincolnshire)",
-    "locationSource": "South Holland District Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Castle Sports & Leisure Centre redevelopment site (\"Castle site\"), Spalding, South Holland, Lincolnshire",
+    "locationSource": "South Holland District Council news pages describing the 'Castle site' / 'Castle Sports and Leisure' redevelopment in Spalding (evidence items 1 and 2)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -389,7 +415,9 @@
         "datePublished": "2026-03-20",
         "summary": "Council update reporting steel frame completion and describing the expanded facility components with a planned opening timeframe."
       }
-    ]
+    ],
+    "latitude": 52.7881,
+    "longitude": -0.1526
   },
   {
     "id": "gm-b004-e07000223-shoreham-flood-defences-improvements",
@@ -401,9 +429,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council communications confirm funding and scope; delivery depends on detailed design and implementation schedules for flood infrastructure works.",
-    "locationDescription": "Shoreham-by-Sea, Adur (flood defence locations as per scheme scope)",
-    "locationSource": "Adur District Council news",
-    "locationConfidence": "LOW",
+    "locationDescription": "Shoreham-by-Sea town centre (River Adur area), Adur District, West Sussex",
+    "locationSource": "Adur District Council press release about Shoreham flood defences improvement scheme (https://www.adur-worthing.gov.uk/news/pr25-407.html)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -413,7 +441,9 @@
         "datePublished": "2025-12-10",
         "summary": "Council press release setting out investment to improve Shoreham flood defences and describing the scheme’s intent to reduce flood risk."
       }
-    ]
+    ],
+    "latitude": 50.834,
+    "longitude": -0.274
   },
   {
     "id": "gm-b004-e07000070-dovedale-sports-centre-refurbishment-chelmsford",
@@ -425,9 +455,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council communications confirm the refurbishment programme and closure period; delivery continues through the planned work phases.",
-    "locationDescription": "Dovedale Sports Centre, Chelmsford, Essex",
-    "locationSource": "Chelmsford City Council",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Dovedale Sports Centre, Chelmsford, Essex (site centroid in Chelmsford urban area)",
+    "locationSource": "Chelmsford City Council project announcements referencing 'Dovedale Sports Centre' in Chelmsford (https://www.chelmsford.gov.uk/news/article/1359/phased-refurbishment-plans-for-dovedale-sports-centre/ ; https://www.chelmsford.gov.uk/news/article/1507/refurbishment-work-gets-underway-at-dovedale-sports-centre/)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -445,7 +475,9 @@
         "datePublished": "2026-03-20",
         "summary": "Council update confirming refurbishment works are underway at Dovedale Sports Centre and providing delivery progress detail."
       }
-    ]
+    ],
+    "latitude": 51.7409,
+    "longitude": 0.4546
   },
   {
     "id": "gm-b004-e07000118-chorley-town-centre-transformation-programme",
@@ -457,8 +489,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council reporting confirms programme scope and progress across sites; delivery is staged and subject to construction and procurement timelines.",
-    "locationDescription": "Chorley town centre (Civic Square, Bengal Street depot and Union Street offices sites), Chorley",
-    "locationSource": "Chorley Council news",
+    "locationDescription": "Chorley town centre (representative centroid near Civic Square/Town Hall, covering Civic Square, Bengal Street depot and Union Street offices), Chorley, Lancashire",
+    "locationSource": "Project description and Chorley Council news update describing a multi-site town centre programme focused on Civic Square, Bengal Street and Union Street",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -469,7 +501,9 @@
         "datePublished": "2025-05-08",
         "summary": "Council update outlining the £44m package for town centre improvements, including Civic Square works and civic estate-related redevelopment plans."
       }
-    ]
+    ],
+    "latitude": 53.6535,
+    "longitude": -2.6327
   },
   {
     "id": "gm-b004-e07000107-dartford-town-centre-regeneration-spital-street-phase-3a",
@@ -481,8 +515,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Procurement notices confirm delivery support contracts and planned works packages; on-the-ground delivery remains subject to scheduling and construction sequencing.",
-    "locationDescription": "Spital Street and surrounding town centre streets, Dartford, Kent",
-    "locationSource": "Find a Tender (procurement notices)",
+    "locationDescription": "Spital Street, Dartford town centre, Kent (representative point on Spital Street near its town-centre section).",
+    "locationSource": "Project description and Find a Tender notices referencing Phase 3A public realm works on Spital Street, Dartford.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -501,6 +535,8 @@
         "datePublished": "2026-03-11",
         "summary": "Planned procurement notice describing town-centre regeneration works including improvements to the adopted highway on Spital Street as part of the Westgate Village development package."
       }
-    ]
+    ],
+    "latitude": 51.4469,
+    "longitude": 0.2189
   }
 ]

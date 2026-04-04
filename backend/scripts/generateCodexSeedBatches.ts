@@ -28,6 +28,7 @@ function parseArgs() {
   let coverageJson = path.join(process.cwd(), 'seeds', 'authority-coverage.snapshot.json');
   let outDir = path.join(process.cwd(), 'seeds', 'codex-batches');
   let batchSize = 18;
+  let coverageFromDb = false;
 
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
@@ -47,13 +48,17 @@ function parseArgs() {
       batchSize = Math.max(1, Number.parseInt(argv[++i], 10) || 18);
       continue;
     }
+    if (arg === '--coverage-from-db') {
+      coverageFromDb = true;
+      continue;
+    }
   }
 
   if (!authoritiesJson) {
     throw new Error('Missing required --authorities-json path.');
   }
 
-  return { authoritiesJson, coverageJson, outDir, batchSize };
+  return { authoritiesJson, coverageJson, outDir, batchSize, coverageFromDb };
 }
 
 function loadJsonFile<T>(filePath: string, fallback: T): T {
@@ -83,6 +88,8 @@ function buildPrompt(batchNumber: number, authorities: AuthorityExport[]): strin
     .join('\n');
 
   return `# Growth Map Codex Batch ${batchNumber}
+
+You are working in the backend app root. Treat \`seeds/\` as the correct relative directory; do not prepend an extra \`backend/\`.
 
 Research under-covered local authorities using deterministic, public-source evidence only.
 
@@ -127,7 +134,7 @@ Return only a JSON array. Each object should include:
 - \`latitude\`, \`longitude\`, \`locationDescription\`, \`locationSource\`, \`locationConfidence\` when supported by evidence
 - \`evidence\`: array with \`type\`, \`title\`, \`source\`, \`url\`, \`datePublished\`, \`summary\`
 
-Save the JSON array to \`backend/seeds/codex-batches/out/batch-${String(batchNumber).padStart(3, '0')}.json\`.
+Save the JSON array to \`seeds/codex-batches/out/batch-${String(batchNumber).padStart(3, '0')}.json\`.
 `;
 }
 
@@ -139,11 +146,57 @@ function chunk<T>(items: T[], size: number): T[][] {
   return output;
 }
 
-function main() {
-  const { authoritiesJson, coverageJson, outDir, batchSize } = parseArgs();
+function pickCoverageFields(row: {
+  id: string;
+  projectCount: number;
+  staleProjectCount: number;
+  mappingQuality: string;
+  priority: string;
+}): CoverageRow {
+  return {
+    id: row.id,
+    projectCount: row.projectCount,
+    staleProjectCount: row.staleProjectCount,
+    mappingQuality: row.mappingQuality,
+    priority: row.priority,
+  };
+}
+
+async function loadCoverageRows(
+  coverageJson: string,
+  coverageFromDb: boolean
+): Promise<CoverageRow[]> {
+  if (!coverageFromDb && fs.existsSync(coverageJson)) {
+    const payload = JSON.parse(fs.readFileSync(coverageJson, 'utf-8')) as { rows?: CoverageRow[] };
+    const rows = payload.rows ?? [];
+    if (rows.length > 0) {
+      return rows.map(pickCoverageFields);
+    }
+  }
+
+  if (coverageFromDb) {
+    console.log('Using authority coverage from database (--coverage-from-db).');
+  } else {
+    console.log(
+      `Coverage snapshot missing or empty (${coverageJson}); building ranking from database.`
+    );
+  }
+
+  resolveDatabaseUrlForHostScripts();
+  const prisma = createPrismaClient();
+  try {
+    const snapshot = await buildAuthorityCoverageSnapshot(prisma);
+    return snapshot.rows.map(pickCoverageFields);
+  } finally {
+    await prisma.$disconnect();
+  }
+}
+
+async function main() {
+  const { authoritiesJson, coverageJson, outDir, batchSize, coverageFromDb } = parseArgs();
   const authorities = loadJsonFile<AuthorityExport[]>(authoritiesJson, []);
-  const coveragePayload = loadJsonFile<{ rows?: CoverageRow[] }>(coverageJson, {});
-  const coverageById = new Map((coveragePayload.rows || []).map((row) => [row.id, row]));
+  const coverageRows = await loadCoverageRows(coverageJson, coverageFromDb);
+  const coverageById = new Map(coverageRows.map((row) => [row.id, row]));
 
   const rankedAuthorities = [...authorities].sort((left, right) => {
     const leftCoverage = coverageById.get(left.id);
@@ -193,4 +246,7 @@ function main() {
   );
 }
 
-main();
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Public council updates confirm the restoration works commenced and are progressing as a multi-year programme; completion remains dependent on continued delivery through later phases.",
-    "locationDescription": "Tyne Bridge, Newcastle upon Tyne / Gateshead",
-    "locationSource": "Newcastle City Council news",
+    "locationDescription": "Tyne Bridge spanning the River Tyne between Newcastle upon Tyne and Gateshead",
+    "locationSource": "Project description and Newcastle City Council news identifying the Tyne Bridge restoration works",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -29,7 +29,9 @@
         "datePublished": "2024-12-20",
         "summary": "Update describing progress in 2024 and the planned 2025 phases of restoration, including movement of works to the Newcastle side."
       }
-    ]
+    ],
+    "latitude": 54.9689,
+    "longitude": -1.6033
   },
   {
     "id": "gm-b015-e09000006-crystal-palace-park-regeneration-main-works-contractor-procurement",
@@ -41,8 +43,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Find a Tender contract notice evidences a live procurement for main works; delivery depends on contract award and subsequent construction programme.",
-    "locationDescription": "Crystal Palace Park (Tidal Lakes / Geological Court and Italian Terraces), London Borough of Bromley",
-    "locationSource": "Find a Tender (London Borough of Bromley contract notice 2024/S 000-024669)",
+    "locationDescription": "Crystal Palace Park (Tidal Lakes / Italian Terraces area), London Borough of Bromley",
+    "locationSource": "Project-provided location description citing Find a Tender notice 2024/S 000-024669 for Crystal Palace Park Regeneration Project main works",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -53,7 +55,9 @@
         "datePublished": "2024-08-06",
         "summary": "Contract notice describing proposed main works across park sites, including demolition and new buildings, heritage repairs, landscaping, paths, lighting, wayfinding, drainage and ground works."
       }
-    ]
+    ],
+    "latitude": 51.4188,
+    "longitude": -0.0728
   },
   {
     "id": "gm-b015-e06000059-in-situ-road-recycling-2025-award",
@@ -65,8 +69,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A published contract award notice confirms the works were procured; individual site delivery remains to be completed across multiple locations.",
-    "locationDescription": "Fourteen locations across Dorset (in-situ road recycling sites)",
-    "locationSource": "Find a Tender (Dorset Council contract award notice 2025/S 000-015268)",
+    "locationDescription": "Dorset Council area (multiple in-situ road recycling sites across Dorset); representative centroid set to Dorchester, Dorset",
+    "locationSource": "Find a Tender contract award notice 2025/S 000-015268 describing fourteen locations across Dorset without naming specific sites",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -77,7 +81,9 @@
         "datePublished": "2025-04-15",
         "summary": "Contract award notice for in-situ road recycling across fourteen Dorset locations, including recycling to specified depths and finishing with surface dressing or asphalt depending on location."
       }
-    ]
+    ],
+    "latitude": 50.7129,
+    "longitude": -2.437
   },
   {
     "id": "gm-b015-e06000035-ascend-innovation-hub-completion",
@@ -89,8 +95,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A council news release states the centre has been completed, evidencing delivery of the facility.",
-    "locationDescription": "Ascend (Innovation Hub), first floor of the Pentagon Centre, Chatham, Medway",
-    "locationSource": "Medway Council news",
+    "locationDescription": "Pentagon Shopping Centre (Pentagon Centre), Chatham, Medway, Kent — site of the Ascend Innovation Hub on the first floor",
+    "locationSource": "Medway Council news article describing Ascend as located in Chatham’s Pentagon Centre (https://www.medway.gov.uk/news/article/1796/medway_businesses_to_reach_new_heights_with_ascend_centre)",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -101,7 +107,9 @@
         "datePublished": "2024-11-06",
         "summary": "Council announcement that the Ascend coworking space in Chatham’s Pentagon Centre has been completed, describing facilities and intended benefits for local businesses."
       }
-    ]
+    ],
+    "latitude": 51.3806,
+    "longitude": 0.5226
   },
   {
     "id": "gm-b015-e07000123-harris-your-place-final-fit-out-phase",
@@ -113,8 +121,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Public reporting confirms handover from structural works to final fit-out, but reopening and full benefits depend on completion of the remaining phase.",
-    "locationDescription": "The Harris Museum, Art Gallery and Library, Market Square, Preston",
-    "locationSource": "Lancashire Business View",
+    "locationDescription": "The Harris Museum, Art Gallery & Library (The Harris), Market Square, Preston, Lancashire",
+    "locationSource": "Project description states: \"The Harris Museum, Art Gallery and Library, Market Square, Preston\" (Lancashire Business View)",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -125,7 +133,9 @@
         "datePublished": "2025-02-07",
         "summary": "Article describing the transition to final fit-out for the Harris Your Place project, including refurbishment scope and intended reopening timeline."
       }
-    ]
+    ],
+    "latitude": 53.75963,
+    "longitude": -2.70077
   },
   {
     "id": "gm-b015-e07000197-guildhall-and-former-coop-demolition-contractors",
@@ -137,9 +147,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council update confirms contractors are mobilised and works are underway; subsequent demolition phases and redevelopment remain to be delivered.",
-    "locationDescription": "Guildhall Shopping Centre and former Co-op department store, Stafford town centre",
-    "locationSource": "Stafford Borough Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Guildhall Shopping Centre / former Co-op department store site, Stafford town centre, Staffordshire",
+    "locationSource": "Project description and Stafford Borough Council news (Guildhall Shopping Centre and former Co-op, Stafford town centre)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -149,7 +159,9 @@
         "datePublished": "2024-11-04",
         "summary": "Council announcement naming the contractor for partial demolition of the Guildhall Shopping Centre and former Co-op, setting out scope and timelines for demolition and site preparation."
       }
-    ]
+    ],
+    "latitude": 52.8057,
+    "longitude": -2.1166
   },
   {
     "id": "gm-b015-e07000132-hinckley-leisure-centre-solar-panels",
@@ -161,9 +173,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council announcement evidences funded works planned to start with a short installation programme; completion is not explicitly evidenced in the cited source.",
-    "locationDescription": "Hinckley Leisure Centre, Hinckley",
-    "locationSource": "Hinckley & Bosworth Borough Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Hinckley Leisure Centre, Hinckley, Leicestershire",
+    "locationSource": "Project description and Hinckley & Bosworth Borough Council news item identifying the site as Hinckley Leisure Centre",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -173,7 +185,9 @@
         "datePublished": "2025-02-05",
         "summary": "Council news item stating over 700 solar panels will be installed at Hinckley Leisure Centre, including start date, funding and anticipated carbon reduction."
       }
-    ]
+    ],
+    "latitude": 52.5479,
+    "longitude": -1.3736
   },
   {
     "id": "gm-b015-e08000019-castlegate-park-phase-2-construction",
@@ -185,8 +199,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council update confirms phase 2 construction commenced with an anticipated completion timeline; final delivery remains dependent on completion of works and follow-on phases.",
-    "locationDescription": "Castlegate (former Castle Market / Sheffield Castle site), Sheffield city centre",
-    "locationSource": "Sheffield City Council news",
+    "locationDescription": "Former Castle Market / Sheffield Castle site at Castlegate, Sheffield city centre (Castlegate Park project).",
+    "locationSource": "Sheffield City Council news update (\"Phase 2 work underway at Castlegate as park begins to take shape\", 2024-07-29) identifying the former Castle Market site at Castlegate as the project location.",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -197,7 +211,9 @@
         "datePublished": "2024-07-29",
         "summary": "Council update stating the project moved into phase 2, describing the planned park and events space, archaeology preservation and opening up the River Sheaf."
       }
-    ]
+    ],
+    "latitude": 53.3845,
+    "longitude": -1.4688
   },
   {
     "id": "gm-b015-e06000058-poole-bridge-and-twin-sails-improvement-plans",
@@ -209,8 +225,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council publication evidences Cabinet approval and outlines intended upgrade programme; delivery depends on procurement, design and execution over subsequent years.",
-    "locationDescription": "Poole Bridge and Twin Sails Bridge, Poole",
-    "locationSource": "BCP Council news",
+    "locationDescription": "Representative centroid between Poole Bridge and the Twin Sails Bridge, Poole Harbour, Poole (Bournemouth, Christchurch and Poole).",
+    "locationSource": "Project description and BCP Council news item referencing upgrades to Poole Bridge and the Twin Sails Bridge in Poole.",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -221,7 +237,9 @@
         "datePublished": "2025-07-16",
         "summary": "Council news item describing proposed tasks and funding to improve reliability and extend life of Poole Bridge and Twin Sails, including corrosion repairs and mechanism upgrades."
       }
-    ]
+    ],
+    "latitude": 50.7176,
+    "longitude": -1.9848
   },
   {
     "id": "gm-b015-e07000239-kidderminster-town-hall-reopens",
@@ -233,8 +251,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A council news release states the Town Hall has reopened following refurbishment, evidencing completion of the scheme.",
-    "locationDescription": "Kidderminster Town Hall, Kidderminster",
-    "locationSource": "Wyre Forest District Council news",
+    "locationDescription": "Kidderminster Town Hall, Vicar Street, Kidderminster, Worcestershire",
+    "locationSource": "Project description and Wyre Forest District Council news release referencing Kidderminster Town Hall reopening",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -245,7 +263,9 @@
         "datePublished": "2025-12-05",
         "summary": "Council news release confirming Kidderminster Town Hall’s reopening and summarising Levelling Up funded regeneration projects completed in the town centre."
       }
-    ]
+    ],
+    "latitude": 52.3867,
+    "longitude": -2.2476
   },
   {
     "id": "gm-b015-e06000016-leicester-railway-station-redevelopment",
@@ -257,8 +277,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Published designs and a contract award notice evidence the scheme’s advancement into contracted delivery; completion remains dependent on delivery of the full construction programme.",
-    "locationDescription": "Leicester Railway Station, Leicester",
-    "locationSource": "Leicester City Council news and Find a Tender",
+    "locationDescription": "Leicester railway station (station centroid), London Road, Leicester, Leicestershire",
+    "locationSource": "Project description and evidence explicitly reference ‘Leicester Railway Station’ redevelopment (Leicester City Council news release and Find a Tender contract award notice). Coordinates placed at the station site centroid.",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -277,7 +297,9 @@
         "datePublished": "2024-12-20",
         "summary": "Contract award notice describing a two-stage design-and-build procurement for the redevelopment of Leicester Station in partnership with Network Rail and East Midlands Railway."
       }
-    ]
+    ],
+    "latitude": 52.6306,
+    "longitude": -1.1259
   },
   {
     "id": "gm-b015-e08000037-gateshead-highway-flyover-demolition-programme",
@@ -289,9 +311,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A council announcement sets out the start date and phased demolition programme; full removal and subsequent regeneration outcomes remain to be delivered.",
-    "locationDescription": "A167 Gateshead Highway flyover and surrounding buildings, Gateshead town centre",
-    "locationSource": "Gateshead Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "A167 Gateshead Highway flyover area in Gateshead town centre (around the former Computer House / Gateshead Highway junction area).",
+    "locationSource": "Gateshead Council news release: “Flyover demolition programme to start” (https://www.gateshead.gov.uk/article/34810/Flyover-demolition-programme-to-start)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -301,7 +323,9 @@
         "datePublished": "2025-10-14",
         "summary": "Council announcement setting out the demolition programme start date, initial demolition of Computer House, phased flyover demolition approach and expected timeline for removal."
       }
-    ]
+    ],
+    "latitude": 54.9585,
+    "longitude": -1.6059
   },
   {
     "id": "gm-b015-e09000012-west-reservoir-centre-upgrade-underway",
@@ -313,8 +337,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Hackney Council news confirms the main phase of works has started with a year-long programme; completion depends on delivery through remaining phases.",
-    "locationDescription": "West Reservoir Centre, Woodberry Down (Green Lanes, N4 2HA), Hackney",
-    "locationSource": "Hackney Council news",
+    "locationDescription": "West Reservoir Centre, Woodberry Down (Green Lanes, London N4 2HA), Hackney, London",
+    "locationSource": "Project description and Hackney Council news referencing West Reservoir Centre, Woodberry Down (N4 2HA)",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -325,7 +349,9 @@
         "datePublished": "2025-07-10",
         "summary": "Council news item stating work has started on upgrades at West Reservoir Centre, describing intended inclusivity/accessibility and environmental improvements while keeping the site open."
       }
-    ]
+    ],
+    "latitude": 51.5739,
+    "longitude": -0.0926
   },
   {
     "id": "gm-b015-e06000018-broad-marsh-green-heart-opened",
@@ -337,9 +363,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council’s project page states the Green Heart opened on a specific date, evidencing completion of the public realm element.",
-    "locationDescription": "Broad Marsh / Broadmarsh area (Green Heart), Nottingham city centre",
-    "locationSource": "Nottingham City Council project page",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Broad Marsh 'Green Heart' public realm area, Broadmarsh redevelopment site, Nottingham city centre (between Nottingham railway station and Broad Marsh bus station area)",
+    "locationSource": "Nottingham City Council Broad Marsh area redevelopment page (https://www.nottinghamcity.gov.uk/broadmarsharea)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -349,7 +375,9 @@
         "datePublished": "2024-09-04",
         "summary": "Council page describing the Broad Marsh redevelopment and stating the new Green Heart opened on 4 September 2024, with details of planting, rain gardens and routes."
       }
-    ]
+    ],
+    "latitude": 52.9537,
+    "longitude": -1.1453
   },
   {
     "id": "gm-b015-e08000036-former-crown-court-wood-street-redevelopment-plans",
@@ -361,9 +389,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council update confirms plans have been submitted and sets out an anticipated construction start; delivery depends on planning approval and subsequent build completion.",
-    "locationDescription": "Former Crown Court, Wood Street, Wakefield city centre",
-    "locationSource": "Wakefield Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Former Crown Court building, Wood Street, Wakefield city centre, West Yorkshire",
+    "locationSource": "Wakefield Council news release referencing the former Crown Court on Wood Street (https://www.wakefield.gov.uk/your-district/city-centre-regeneration-scheme-reaches-final-stages)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -373,7 +401,9 @@
         "datePublished": "2025-05-15",
         "summary": "Council release describing submitted redevelopment plans for the former Crown Court on Wood Street, intended uses and stated timeline for construction and opening."
       }
-    ]
+    ],
+    "latitude": 53.6829,
+    "longitude": -1.4956
   },
   {
     "id": "gm-b015-e08000016-alhambra-shopping-centre-refurbishment-delivery-management-services",
@@ -385,8 +415,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A published contract award notice evidences procurement of delivery management services; the refurbishment works and outcomes remain to be delivered.",
-    "locationDescription": "Alhambra Shopping Centre, Barnsley",
-    "locationSource": "Find a Tender (Barnsley Metropolitan Borough Council notice 2025/S 000-080855 PDF)",
+    "locationDescription": "Alhambra Shopping Centre, central Barnsley, South Yorkshire",
+    "locationSource": "Project description and Find a Tender contract award notice (Barnsley Metropolitan Borough Council) referencing the Alhambra Shopping Centre in Barnsley",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -397,7 +427,9 @@
         "datePublished": "2025-12-09",
         "summary": "PDF of a Find a Tender contract award notice for client-side professional services to manage delivery of a refurbishment scheme to the Alhambra Shopping Centre."
       }
-    ]
+    ],
+    "latitude": 53.5517,
+    "longitude": -1.4812
   },
   {
     "id": "gm-b015-e07000066-barleylands-depot-resurfacing-works-procurement",
@@ -409,9 +441,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A published Contracts Finder notice evidences a procurement for depot resurfacing works; delivery depends on contract award and completion of the works within the stated period.",
-    "locationDescription": "Barleylands Depot, Basildon",
-    "locationSource": "Contracts Finder (Basildon Borough Council notice GB-Basildon: Surfacing Works)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Barleylands Farm Park / Barleylands Depot area, Noak Bridge (Basildon), Essex",
+    "locationSource": "Project description and Contracts Finder notice referencing 'Barleylands Depot' in Basildon (GB-Basildon: Surfacing Works)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -421,7 +453,9 @@
         "datePublished": "2025-11-25",
         "summary": "Contracts Finder notice for resurfacing works at Barleylands Depot in Basildon, including stated procurement dates and intended works completion by 31 March 2026."
       }
-    ]
+    ],
+    "latitude": 51.5817,
+    "longitude": 0.4579
   },
   {
     "id": "gm-b015-e06000023-bristol-temple-quarter-private-sector-partner-procurement",
@@ -433,9 +467,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Find a Tender publications evidence formal steps toward appointing a development partner; delivery depends on procurement completion and subsequent phased regeneration delivery.",
-    "locationDescription": "Bristol Temple Quarter regeneration area (around Bristol Temple Meads and surrounding brownfield land)",
-    "locationSource": "Find a Tender (Bristol Temple Quarter LLP prior information notice)",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Bristol Temple Quarter regeneration area centred on Bristol Temple Meads station, Bristol",
+    "locationSource": "Project description and supporting sources referencing Bristol Temple Quarter/Temple Meads (Find a Tender notice and Bristol City Council Temple Quarter overview)",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -453,6 +487,8 @@
         "datePublished": "2025-02-13",
         "summary": "Council overview page describing the Temple Quarter regeneration programme and its long-term ambition to transform brownfield land into mixed-use communities."
       }
-    ]
+    ],
+    "latitude": 51.4491,
+    "longitude": -2.5815
   }
 ]

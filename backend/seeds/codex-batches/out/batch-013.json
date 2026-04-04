@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has published and updated programme and framework material, indicating ongoing development and delivery planning for housing regeneration activity rather than a single completed capital scheme.",
-    "locationDescription": "Blackpool (borough-wide housing regeneration areas)",
-    "locationSource": "Blackpool Council regeneration project pages",
+    "locationDescription": "Blackpool borough (representative central point: Blackpool town centre area, Lancashire)",
+    "locationSource": "Project described as borough-wide across Blackpool in Blackpool Council regeneration pages (Housing Regeneration Framework; Transforming Blackpool's housing)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -29,7 +29,9 @@
         "datePublished": "2026-02-10",
         "summary": "Council programme page describing activity to improve and regenerate housing in Blackpool, including neighbourhood-focused interventions and delivery context."
       }
-    ]
+    ],
+    "latitude": 53.8142,
+    "longitude": -3.0503
   },
   {
     "id": "gm-b013-e08000029-solihull-mell-square-holbeche-place-redevelopment",
@@ -41,8 +43,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has publicly confirmed partnership and approvals to take the masterplan forward, indicating the project is advancing through development and delivery stages.",
-    "locationDescription": "Mell Square (Holbeche Place), Solihull town centre",
-    "locationSource": "Solihull Metropolitan Borough Council",
+    "locationDescription": "Mell Square (Holbeche Place) shopping centre / town centre redevelopment site, Solihull, West Midlands.",
+    "locationSource": "Solihull Metropolitan Borough Council – Mell Square (Holbeche Place) masterplan and redevelopment announcement.",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -61,7 +63,9 @@
         "datePublished": "2026-02-09",
         "summary": "Council masterplan page providing the latest update on the Mell Square (Holbeche Place) redevelopment, including confirmation of approved plans and next steps."
       }
-    ]
+    ],
+    "latitude": 52.4146,
+    "longitude": -1.7807
   },
   {
     "id": "gm-b013-e06000047-county-durham-highway-projects-programme-2024-2026",
@@ -73,8 +77,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract award notice has been published for the 2024–2026 highway works programme, indicating delivery arrangements are in place.",
-    "locationDescription": "County Durham (highway projects programme)",
-    "locationSource": "Find a Tender (Durham County Council)",
+    "locationDescription": "County Durham, represented by a central point in Durham city (county town) as the programme covers highway works across the county.",
+    "locationSource": "Find a Tender award notice 015617-2025 describing a county-wide Highway Projects Programme of Works for Durham County Council.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -85,7 +89,9 @@
         "datePublished": "2025-04-16",
         "summary": "Contract award notice for Durham County Council’s Highway Projects Programme of Works 2024–2026."
       }
-    ]
+    ],
+    "latitude": 54.7761,
+    "longitude": -1.5756
   },
   {
     "id": "gm-b013-e06000049-cheshire-east-middlewich-eastern-bypass-main-construction",
@@ -97,9 +103,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has publicly approved the main construction phase and set out planned delivery milestones, indicating the scheme is moving from approvals into delivery.",
-    "locationDescription": "Middlewich Eastern Bypass, Middlewich (Cheshire East)",
-    "locationSource": "Cheshire East Council news release",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Middlewich Eastern Bypass (representative point east of Middlewich town centre), Middlewich, Cheshire East, England, UK",
+    "locationSource": "Cheshire East Council news release about the Middlewich Eastern Bypass main construction phase",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -109,7 +115,9 @@
         "datePublished": "2026-01-22",
         "summary": "Council news release announcing approval of the main construction phase for the Middlewich Eastern Bypass and setting out the planned programme."
       }
-    ]
+    ],
+    "latitude": 53.1918,
+    "longitude": -2.4406
   },
   {
     "id": "gm-b013-e07000011-huntingdonshire-priory-centre-st-neots-redevelopment",
@@ -121,9 +129,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council reports that refurbishment and expansion works have officially begun on site, indicating active delivery.",
-    "locationDescription": "The Priory Centre, St Neots (Huntingdonshire)",
-    "locationSource": "Huntingdonshire District Council news release",
-    "locationConfidence": "HIGH",
+    "locationDescription": "The Priory Centre, St Neots, Cambridgeshire (Huntingdonshire District)",
+    "locationSource": "Huntingdonshire District Council news release: 'Works Underway on Priory Centre Redevelopment in St Neots' (2025-06-11)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -133,7 +141,9 @@
         "datePublished": "2025-06-11",
         "summary": "Council announcement stating that refurbishment and expansion work has started at the Priory Centre, with delivery partners and funding contributions described."
       }
-    ]
+    ],
+    "latitude": 52.2296,
+    "longitude": -0.2709
   },
   {
     "id": "gm-b013-e07000142-west-lindsey-gainsborough-whitton-gardens-baltic-mill-regeneration",
@@ -145,9 +155,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council states both projects are in the final stages of development with completion expected in spring/summer 2025, indicating delivery is well advanced.",
-    "locationDescription": "Whitton Gardens and Baltic Mill site, Gainsborough (West Lindsey)",
-    "locationSource": "West Lindsey District Council news release",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Gainsborough town centre, West Lindsey District (representative point for the Whitton Gardens and Baltic Mill regeneration sites in Gainsborough, Lincolnshire).",
+    "locationSource": "West Lindsey District Council news release describing projects at Whitton Gardens and the Baltic Mill site in Gainsborough; no precise site coordinates provided.",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -157,7 +167,9 @@
         "datePublished": "2025-03-17",
         "summary": "Council update describing progress on Whitton Gardens café works and the Baltic Mill site public space transformation, with anticipated completion timings."
       }
-    ]
+    ],
+    "latitude": 53.3995,
+    "longitude": -0.7747
   },
   {
     "id": "gm-b013-e08000010-wigan-galleries-market-hall-construction",
@@ -169,9 +181,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council states construction work is commencing with a principal contractor mobilising on the first phases, indicating active delivery.",
-    "locationDescription": "Former Galleries site, Wigan town centre",
-    "locationSource": "Wigan Council news release",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Former Wigan Galleries Shopping Centre site, Wigan town centre (The Galleries, Wigan, Greater Manchester)",
+    "locationSource": "Wigan Council news release referencing works commencing at the former Galleries shopping centre site in Wigan town centre",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -181,7 +193,9 @@
         "datePublished": "2024-10-11",
         "summary": "Council announcement that agreements were signed enabling Galliford Try to start the first construction phases, including the new market hall and enabling works across the wider redevelopment."
       }
-    ]
+    ],
+    "latitude": 53.5447,
+    "longitude": -2.6319
   },
   {
     "id": "gm-b013-e07000129-blaby-huncote-leisure-centre-landfill-gas-mitigation-minor-works",
@@ -193,9 +207,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A transparency notice has been published confirming the decision to award the specialist minor works contract for landfill gas mitigation-related works at the leisure centre site.",
-    "locationDescription": "Huncote Leisure Centre, Sportsfield Lane, Huncote (Blaby District)",
-    "locationSource": "Find a Tender (Blaby District Council)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Huncote Leisure Centre, Sportsfield Lane, Huncote, Blaby District, Leicestershire",
+    "locationSource": "Project 'currentLocationDescription' citing Find a Tender notice 050547-2025 (Blaby District Council)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -205,7 +219,9 @@
         "datePublished": "2025-08-21",
         "summary": "Transparency notice describing minor works at Huncote Leisure Centre including gas monitoring wells and associated site works tied to landfill gas mitigation infrastructure."
       }
-    ]
+    ],
+    "latitude": 52.555,
+    "longitude": -1.164
   },
   {
     "id": "gm-b013-e09000005-brent-south-kilburn-regeneration-single-delivery-partner",
@@ -217,9 +233,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A UK1 pipeline notice has been published for procurement of a delivery partner, indicating the programme is moving through procurement preparation for subsequent delivery.",
-    "locationDescription": "South Kilburn, London Borough of Brent",
-    "locationSource": "Find a Tender (London Borough of Brent)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "South Kilburn, London Borough of Brent (representative central point for the South Kilburn regeneration area).",
+    "locationSource": "Project description and Find a Tender notice location stated as South Kilburn, London Borough of Brent.",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -229,7 +245,9 @@
         "datePublished": "2025-05-13",
         "summary": "Pipeline notice describing Brent’s planned procurement for a single delivery partner to support delivery of later phases of the South Kilburn Regeneration Programme."
       }
-    ]
+    ],
+    "latitude": 51.535,
+    "longitude": -0.188
   },
   {
     "id": "gm-b013-e08000006-salford-salford-crescent-third-platform-upgrade",
@@ -241,8 +259,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Network Rail has published project updates confirming active construction and delivery of the third platform scheme.",
-    "locationDescription": "Salford Crescent station, Salford",
-    "locationSource": "Network Rail media centre",
+    "locationDescription": "Salford Crescent railway station, Salford, Greater Manchester",
+    "locationSource": "Project description and Network Rail Media Centre articles referencing works at Salford Crescent station",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -261,7 +279,9 @@
         "datePublished": "2025-04-11",
         "summary": "Network Rail progress update describing works completed during early 2025 closures and ongoing construction activities for the third platform."
       }
-    ]
+    ],
+    "latitude": 53.4876,
+    "longitude": -2.2757
   },
   {
     "id": "gm-b013-e06000005-darlington-station-transformation-footbridge-link-installed",
@@ -273,8 +293,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Network Rail reports physical milestone delivery (footbridge sections installed) as part of the wider station upgrade programme.",
-    "locationDescription": "Darlington station (Bank Top), Darlington",
-    "locationSource": "Network Rail media centre",
+    "locationDescription": "Darlington railway station (Bank Top), Darlington, County Durham",
+    "locationSource": "Project location explicitly stated as 'Darlington station (Bank Top), Darlington' and corroborated by Network Rail Media Centre article about works at Darlington station.",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -285,7 +305,9 @@
         "datePublished": "2025-06-05",
         "summary": "Network Rail update announcing installation of final sections of the new footbridge connecting the existing station with the new eastern entrance and platforms as part of the £140m redevelopment."
       }
-    ]
+    ],
+    "latitude": 54.5249,
+    "longitude": -1.5556
   },
   {
     "id": "gm-b013-e06000024-north-somerset-banwell-bypass-enabling-works-restart",
@@ -297,8 +319,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council reported enabling works had restarted while the main construction delivery arrangements progressed, indicating preparatory delivery activity rather than completion.",
-    "locationDescription": "Banwell bypass scheme area, Banwell (North Somerset)",
-    "locationSource": "North Somerset Council news release",
+    "locationDescription": "Banwell, North Somerset (representative point for the Banwell bypass scheme area)",
+    "locationSource": "North Somerset Council news release: 'Environmental works restart on the Banwell bypass' (2024-04-15)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -309,7 +331,9 @@
         "datePublished": "2024-04-15",
         "summary": "Council announcement that environmental enabling works restarted for the Banwell bypass, describing the nature of preparatory works and the scheme’s aims."
       }
-    ]
+    ],
+    "latitude": 51.324,
+    "longitude": -2.872
   },
   {
     "id": "gm-b013-e07000175-newark-and-sherwood-ollerton-town-centre-regeneration-planning-application",
@@ -321,9 +345,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council reports that a planning application has been submitted, indicating the project is progressing through planning and pre-delivery phases.",
-    "locationDescription": "Ollerton town centre, Newark and Sherwood District",
-    "locationSource": "Newark and Sherwood District Council news release",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Ollerton town centre, Ollerton, Newark and Sherwood District, Nottinghamshire",
+    "locationSource": "Project description and Newark & Sherwood District Council news release referencing 'Ollerton town centre regeneration' (site not further specified)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -333,7 +357,9 @@
         "datePublished": "2025-12-05",
         "summary": "Council news release announcing submission of a planning application for an Ollerton town centre regeneration project and outlining key proposed elements."
       }
-    ]
+    ],
+    "latitude": 53.2245,
+    "longitude": -1.0122
   },
   {
     "id": "gm-b013-e06000057-northumberland-line-bedlington-station-opening-completes-programme",
@@ -345,8 +371,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council reports a station opening and passenger service commencement milestone, indicating delivered operational infrastructure.",
-    "locationDescription": "Bedlington station (Northumberland Line), Bedlington (Northumberland)",
-    "locationSource": "Northumberland County Council news release",
+    "locationDescription": "Bedlington station (Northumberland Line), Bedlington, Northumberland, England",
+    "locationSource": "Northumberland County Council news release: https://www.northumberland.gov.uk/news/station-opening-completes-northumberland-linefor-now",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -357,7 +383,9 @@
         "datePublished": "2026-03-30",
         "summary": "Council announcement describing the first passenger train into Bedlington and positioning it as completion of the Northumberland Line programme phase."
       }
-    ]
+    ],
+    "latitude": 55.1306,
+    "longitude": -1.5863
   },
   {
     "id": "gm-b013-e07000061-eastbourne-old-orchard-road-affordable-housing-redevelopment-procurement",
@@ -369,9 +397,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A tender notice has been published for the design-and-build redevelopment, indicating the scheme is moving through procurement toward delivery.",
-    "locationDescription": "Old Orchard Road, Eastbourne town centre",
-    "locationSource": "Find a Tender (Eastbourne Borough Council)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Old Orchard Road, Eastbourne town centre, East Sussex (representative point on Old Orchard Road near the town centre as no precise site boundary/address provided).",
+    "locationSource": "Find a Tender notice 068125-2025 (Eastbourne Borough Council) referencing a vacant council-owned site on Old Orchard Road, Eastbourne.",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -381,7 +409,9 @@
         "datePublished": "2025-10-24",
         "summary": "Tender notice describing Eastbourne Borough Council’s proposed design-and-build scheme for a vacant Old Orchard Road site with 30 affordable flats and landscaping."
       }
-    ]
+    ],
+    "latitude": 50.7687,
+    "longitude": 0.2837
   },
   {
     "id": "gm-b013-e09000031-waltham-forest-planned-works-and-responsive-repairs-partner-engagement",
@@ -393,8 +423,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A preliminary market engagement notice has been published, indicating the council is shaping a procurement strategy and scope prior to tender.",
-    "locationDescription": "London Borough of Waltham Forest (housing stock repairs and planned works)",
-    "locationSource": "Find a Tender (London Borough of Waltham Forest)",
+    "locationDescription": "London Borough of Waltham Forest (representative borough centre, around Walthamstow), London, UK",
+    "locationSource": "Project description and Find a Tender notice indicating works to LB Waltham Forest housing stock (no single site specified)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -405,7 +435,9 @@
         "datePublished": "2026-02-15",
         "summary": "Pre-market engagement notice describing planned works and responsive repair services for the council’s housing stock to inform procurement strategy and scope."
       }
-    ]
+    ],
+    "latitude": 51.5886,
+    "longitude": -0.0174
   },
   {
     "id": "gm-b013-e06000022-bathnes-bath-walking-wheeling-cycling-links-consultation",
@@ -417,8 +449,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council has consulted on route proposals as part of business case and design development, indicating the project is in pre-construction development.",
-    "locationDescription": "Bath (BWWCL routes: Weston–city centre, links to RUH, Oldfield School–Newbridge Hill, city centre–Kennet & Avon Canal)",
-    "locationSource": "Bath & North East Somerset Council newsroom",
+    "locationDescription": "Bath city centre, Bath and North East Somerset (representative point for the Bath Walking, Wheeling and Cycling Links routes across Bath)",
+    "locationSource": "Bath & North East Somerset Council newsroom releases describing active travel route improvements across Bath",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -437,7 +469,9 @@
         "datePublished": "2024-12-04",
         "summary": "Council update extending the BWWCL consultation period and reiterating the scope of the proposed walking, wheeling and cycling improvements."
       }
-    ]
+    ],
+    "latitude": 51.3813,
+    "longitude": -2.3599
   },
   {
     "id": "gm-b013-e09000015-harrow-household-waste-recycling-centre-resurfacing",
@@ -449,9 +483,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract details notice has been published showing the resurfacing works contract was awarded and scheduled for delivery.",
-    "locationDescription": "Household Waste and Recycling Centre (HWRC), Forward Drive, Harrow HA3",
-    "locationSource": "Find a Tender (London Borough of Harrow)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "London Borough of Harrow Household Waste and Recycling Centre (HWRC), Forward Drive, Harrow HA3, Greater London, UK",
+    "locationSource": "Find a Tender notice 067563-2025 (London Borough of Harrow) referencing the HWRC site at Forward Drive, Harrow HA3",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -461,6 +495,8 @@
         "datePublished": "2025-10-22",
         "summary": "Contract details notice for a one-off resurfacing contract at Harrow’s HWRC site on Forward Drive (Harrow HA3)."
       }
-    ]
+    ],
+    "latitude": 51.6079,
+    "longitude": -0.3354
   }
 ]

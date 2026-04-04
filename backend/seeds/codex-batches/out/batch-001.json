@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding confirmed; plans and phased delivery are being developed by the Neighbourhood Board and council.",
-    "locationDescription": "Canvey Island, Castle Point Borough",
-    "locationSource": "Castle Point Borough Council news",
+    "locationDescription": "Canvey Island, Castle Point Borough, Essex (representative central point for the island-wide regeneration programme)",
+    "locationSource": "Project description and Castle Point Borough Council updates referring to Canvey Island as the programme area",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -29,7 +29,9 @@
         "datePublished": "2025-09-09",
         "summary": "Council progress update on the Plan for Neighbourhoods for Canvey Island, including plan documents and submission timetable."
       }
-    ]
+    ],
+    "latitude": 51.5218,
+    "longitude": 0.5889
   },
   {
     "id": "gm-b001-e06000046-iow-yaverland-sandown-shanklin-coastal-defences",
@@ -41,8 +43,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council decision supports refurbishment of defences; design and planning stage ahead of construction.",
-    "locationDescription": "Yaverland, Sandown and Shanklin, Isle of Wight",
-    "locationSource": "Environment Agency press release",
+    "locationDescription": "Representative midpoint along the east coast of the Isle of Wight covering the linked communities of Yaverland, Sandown and Shanklin.",
+    "locationSource": "Environment Agency press release (GOV.UK) describing refurbishment of coastal defences in Yaverland, Sandown and Shanklin, Isle of Wight.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -53,7 +55,9 @@
         "datePublished": "2024-03-25",
         "summary": "Press release describing the decision to refurbish existing coastal defences in Yaverland, Sandown and Shanklin to reduce flood and erosion risk."
       }
-    ]
+    ],
+    "latitude": 50.6266,
+    "longitude": -1.1706
   },
   {
     "id": "gm-b001-e07000042-active-tiverton-poolside-upgrades",
@@ -65,9 +69,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Upgrades completed and facilities reopened following works between March and June 2025.",
-    "locationDescription": "Active Tiverton (Exe Valley), Bolham Road, Tiverton",
-    "locationSource": "Mid Devon District Council leisure news",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Active Tiverton (formerly Exe Valley Leisure Centre), Bolham Road, Tiverton, Devon",
+    "locationSource": "Project description and Mid Devon District Council leisure news articles referencing 'Active Tiverton (Exe Valley), Bolham Road, Tiverton'",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -85,7 +89,9 @@
         "datePublished": "2025-06-26",
         "summary": "Council confirmation that major poolside upgrades and repairs were completed between March and June 2025 and facilities reopened."
       }
-    ]
+    ],
+    "latitude": 50.9097,
+    "longitude": -3.4916
   },
   {
     "id": "gm-b001-e07000236-redditch-town-hall-community-hub",
@@ -97,9 +103,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Construction works underway with completion expected by the end of 2025.",
-    "locationDescription": "Redditch Town Hall, Walter Stranz Square, Redditch",
-    "locationSource": "Redditch Borough Council news",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Redditch Town Hall, Walter Stranz Square, Redditch, Worcestershire",
+    "locationSource": "Project location description citing Redditch Town Hall (Redditch Borough Council news: https://www.redditchbc.gov.uk/news/posts/town-hall-works-underway/)",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -109,7 +115,9 @@
         "datePublished": "2025-01-17",
         "summary": "Council update announcing that refurbishment works to transform Redditch Town Hall into a community hub have begun, with an expected completion timeline."
       }
-    ]
+    ],
+    "latitude": 52.3069,
+    "longitude": -1.9457
   },
   {
     "id": "gm-b001-e07000064-sidley-community-hub",
@@ -121,8 +129,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Project funded and contract awarded; construction and enabling works underway toward completion.",
-    "locationDescription": "Sidley Recreation Ground, Canada Way, Bexhill-on-Sea",
-    "locationSource": "Rother District Council and Contracts Finder",
+    "locationDescription": "Sidley Recreation Ground, Canada Way, Sidley (Bexhill-on-Sea), East Sussex",
+    "locationSource": "Project description and currentLocationDescription citing Sidley Recreation Ground, Canada Way, Bexhill-on-Sea (Rother District Council / Contracts Finder)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -141,7 +149,9 @@
         "datePublished": "2026-02-05",
         "summary": "Contracts Finder award notice for design and construction of the Heart of Sidley community hub, including contract dates and value."
       }
-    ]
+    ],
+    "latitude": 50.8439,
+    "longitude": 0.4927
   },
   {
     "id": "gm-b001-e08000014-bootle-strand-transformation",
@@ -153,9 +163,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Demolition works commenced in June 2025 as Phase 1 of the regeneration programme, with further phases planned.",
-    "locationDescription": "Bootle Strand Shopping Centre, Bootle town centre",
-    "locationSource": "Sefton Council news",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "The Strand Shopping Centre (Bootle Strand), Bootle town centre, Sefton, Merseyside",
+    "locationSource": "Sefton Council news articles referencing demolition works at Bootle Strand / The Strand shopping centre",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -173,7 +183,9 @@
         "datePublished": "2025-08-29",
         "summary": "Council update describing progress on Phase 1 demolition and setting out expected next steps, including main construction and anticipated completion."
       }
-    ]
+    ],
+    "latitude": 53.4466,
+    "longitude": -2.9947
   },
   {
     "id": "gm-b001-e07000241-hatfield-market-place-transformation",
@@ -185,8 +197,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Market Place redevelopment completed and officially opened in 2025.",
-    "locationDescription": "Market Place, Hatfield town centre",
-    "locationSource": "ONE Welwyn Hatfield news",
+    "locationDescription": "Hatfield Market Place, Hatfield town centre, Welwyn Hatfield, Hertfordshire",
+    "locationSource": "Project description and council news pages referencing 'Hatfield Market Place' (ONE Welwyn Hatfield)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -205,7 +217,9 @@
         "datePublished": "2025-10-01",
         "summary": "Council update marking the completion and official opening of the newly redeveloped Hatfield Market Place."
       }
-    ]
+    ],
+    "latitude": 51.7638,
+    "longitude": -0.2242
   },
   {
     "id": "gm-b001-e07000033-bolsover-15m-regeneration-fund",
@@ -217,8 +231,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding allocation approved and projects progressing under the programme delivery timetable.",
-    "locationDescription": "Multiple sites across Bolsover District (including Bolsover town centre)",
-    "locationSource": "Bolsover District Council committees and regeneration updates",
+    "locationDescription": "Bolsover District (representative point set to Bolsover town centre, Derbyshire) for a multi-site regeneration programme across the district.",
+    "locationSource": "Project description and Bolsover District Council regeneration/committee updates indicating multiple sites across Bolsover District including Bolsover town centre.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -237,7 +251,9 @@
         "datePublished": "2025-10-03",
         "summary": "Council update describing progress and site preparation work across the regeneration projects funded through the £15m programme."
       }
-    ]
+    ],
+    "latitude": 53.2297,
+    "longitude": -1.2897
   },
   {
     "id": "gm-b001-e07000136-boston-leisure-project",
@@ -249,9 +265,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Construction underway with phased openings expected through 2026 and external works thereafter.",
-    "locationDescription": "Geoff Moulder Leisure Complex (Boston Leisure Centre), Rowley Road, Boston",
-    "locationSource": "Boston Borough Council updates",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Geoff Moulder Leisure Complex (Boston Leisure Centre), Rowley Road, Boston, Lincolnshire",
+    "locationSource": "Project location description provided (Boston Borough Council updates) referencing Geoff Moulder Leisure Complex, Rowley Road, Boston",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -269,7 +285,9 @@
         "datePublished": "2026-03-25",
         "summary": "Council update on construction progress for the leisure complex redevelopment, including the start of the main construction phase and expected opening timeline."
       }
-    ]
+    ],
+    "latitude": 52.9819,
+    "longitude": -0.0359
   },
   {
     "id": "gm-b001-e07000068-brentwood-centre-upgrade",
@@ -281,9 +299,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Programme approved with enabling and refurbishment works scheduled to begin in 2026 subject to planning and phasing.",
-    "locationDescription": "The Brentwood Centre, Brentwood",
-    "locationSource": "Brentwood Borough Council announcements",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "The Brentwood Centre leisure facility site, Brentwood, Essex",
+    "locationSource": "Project description and Brentwood Borough Council announcements referencing “The Brentwood Centre, Brentwood”",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -301,7 +319,9 @@
         "datePublished": "2025-12-05",
         "summary": "Council announcement of a broader £25m redevelopment proposal for the Brentwood Centre site, including new leisure facilities and outdoor sports provision."
       }
-    ]
+    ],
+    "latitude": 51.6106,
+    "longitude": 0.3019
   },
   {
     "id": "gm-b001-e07000172-stapleford-cricket-club-new-base",
@@ -313,8 +333,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Planning approved with staged delivery planned, including infrastructure works before play can commence.",
-    "locationDescription": "Land off Pit Lane between Stapleford and Trowell",
-    "locationSource": "Broxtowe Borough Council press release",
+    "locationDescription": "Land off Pit Lane between Stapleford and Trowell, Broxtowe, Nottinghamshire (representative point along Pit Lane corridor between the two settlements).",
+    "locationSource": "Broxtowe Borough Council press release (project location described as 'Land off Pit Lane between Stapleford and Trowell').",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -325,7 +345,9 @@
         "datePublished": "2025-01-15",
         "summary": "Council press release confirming planning approval and outlining works programme for the club’s new site acquired through the Stapleford Towns Fund."
       }
-    ]
+    ],
+    "latitude": 52.9383,
+    "longitude": -1.2628
   },
   {
     "id": "gm-b001-e06000056-houghton-regis-leisure-community-centre",
@@ -337,8 +359,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Centre opened to the public in March 2025.",
-    "locationDescription": "Houghton Regis Leisure and Community Centre, Kingsland Campus (Parkside Drive entrance)",
-    "locationSource": "Central Bedfordshire Council news and information pages",
+    "locationDescription": "Houghton Regis Leisure and Community Centre, Kingsland Campus (Parkside Drive entrance), Houghton Regis, Central Bedfordshire",
+    "locationSource": "Central Bedfordshire Council news pages referencing the new leisure and community centre at Kingsland Campus in Houghton Regis (Parkside Drive entrance)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -357,7 +379,9 @@
         "datePublished": "2025-04-03",
         "summary": "Council update reporting on the public opening event and confirming the centre is open with its new facilities."
       }
-    ]
+    ],
+    "latitude": 51.9034,
+    "longitude": -0.5168
   },
   {
     "id": "gm-b001-e07000208-rainbow-leisure-centre-solar-panels",
@@ -369,8 +393,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Solar installation completed and operational as of February 2025.",
-    "locationDescription": "Rainbow Leisure Centre, Epsom",
-    "locationSource": "Epsom & Ewell Borough Council news",
+    "locationDescription": "Rainbow Leisure Centre, Epsom (Epsom & Ewell Borough, Surrey)",
+    "locationSource": "Epsom & Ewell Borough Council news (project location stated as 'Rainbow Leisure Centre, Epsom')",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -381,7 +405,9 @@
         "datePublished": "2025-02-13",
         "summary": "Council announcement confirming completion of 390 solar panels at Rainbow Leisure Centre, including expected energy generation and emissions savings."
       }
-    ]
+    ],
+    "latitude": 51.3419,
+    "longitude": -0.2696
   },
   {
     "id": "gm-b001-e06000006-east-runcorn-connectivity-active-travel",
@@ -393,8 +419,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Phase 1 funding committed with construction planned and completion targeted by autumn 2026.",
-    "locationDescription": "East Runcorn (A56 corridor and links to Runcorn East station and Sci-Tech Daresbury)",
-    "locationSource": "Liverpool City Region Combined Authority",
+    "locationDescription": "East Runcorn, Halton — representative point on the A56 corridor between Runcorn East station and the Sci-Tech Daresbury area for the East Runcorn Connectivity walking and cycling link (Phase 1).",
+    "locationSource": "Project description and Liverpool City Region Combined Authority announcement referencing East Runcorn A56 corridor links to Runcorn East station and Sci-Tech Daresbury.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -405,7 +431,9 @@
         "datePublished": "2024-07-22",
         "summary": "Combined authority announcement committing more than £17.5m to Phase 1 of the East Runcorn Connectivity scheme, including scope and expected programme."
       }
-    ]
+    ],
+    "latitude": 53.3365,
+    "longitude": -2.6625
   },
   {
     "id": "gm-b001-e06000065-a59-kex-gill-bypass",
@@ -417,9 +445,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Major highway scheme under construction with opening delayed to spring 2026.",
-    "locationDescription": "A59 at Kex Gill near Blubberhouses (Harrogate–Skipton route)",
-    "locationSource": "BBC News and North Yorkshire Council scheme information",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "A59 Kex Gill landslip area / bypass realignment site near Blubberhouses, North Yorkshire (Harrogate–Skipton route, Nidderdale AONB)",
+    "locationSource": "Project description: 'A59 at Kex Gill near Blubberhouses' (BBC News and North Yorkshire Council scheme information referenced)",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -429,7 +457,9 @@
         "datePublished": "2024-09-16",
         "summary": "BBC report citing North Yorkshire Council confirming the Kex Gill bypass completion has been delayed to spring 2026 and summarising scheme scope and funding."
       }
-    ]
+    ],
+    "latitude": 54.0263,
+    "longitude": -1.6957
   },
   {
     "id": "gm-b001-e06000051-smithfield-riverside-shrewsbury",
@@ -441,8 +471,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Planning and demolition progressing with phased delivery of public realm and subsequent development plots.",
-    "locationDescription": "Smithfield Riverside area between River Severn, Darwin Centre and Roushill, Shrewsbury",
-    "locationSource": "Shropshire Council Newsroom",
+    "locationDescription": "Smithfield Riverside regeneration area (former Riverside Shopping Centre), between the River Severn and the Darwin Centre/Roushill area, Shrewsbury town centre",
+    "locationSource": "Shropshire Council Newsroom project description referencing Smithfield Riverside between River Severn, Darwin Centre and Roushill, Shrewsbury",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -461,7 +491,9 @@
         "datePublished": "2024-12-02",
         "summary": "Council update confirming submission of a phase two outline planning application and describing progress on demolition and the planned new public park."
       }
-    ]
+    ],
+    "latitude": 52.7096,
+    "longitude": -2.7512
   },
   {
     "id": "gm-b001-e06000045-southampton-ring-road-improvements",
@@ -473,9 +505,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Ring Road improvement project reported as completed in October 2024.",
-    "locationDescription": "A3024 Northern Inner Ring Road (Brunswick Place, Cumberland Place and adjacent junctions)",
-    "locationSource": "Southampton City Council and Connecting Southampton scheme pages",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Centroid on the A3024 Northern Inner Ring Road in Southampton city centre, around Brunswick Place / Cumberland Place and adjacent junctions (Southampton Ring Road improvements).",
+    "locationSource": "Project description and currentLocationDescription citing A3024 Northern Inner Ring Road (Brunswick Place, Cumberland Place) from Southampton City Council / Connecting Southampton scheme pages.",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -492,7 +524,9 @@
         "url": "https://transport.southampton.gov.uk/ringroad",
         "summary": "Scheme overview stating the Ring Road project is completed in October 2024 and summarising key benefits and delivered measures."
       }
-    ]
+    ],
+    "latitude": 50.9139,
+    "longitude": -1.4016
   },
   {
     "id": "gm-b001-e08000024-crown-works-studios-enabling-works",
@@ -504,8 +538,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Enabling and preparatory works underway ahead of phased construction of the studios complex.",
-    "locationDescription": "Crown Works site, Pallion (banks of the River Wear), Sunderland",
-    "locationSource": "Sunderland City Council and local news reporting",
+    "locationDescription": "Crown Works Studios site, Pallion on the south bank of the River Wear, Sunderland",
+    "locationSource": "Project description and Sunderland City Council/local news references to the Crown Works site in Pallion, Sunderland",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -524,6 +558,8 @@
         "datePublished": "2025-02-27",
         "summary": "Local news report describing enabling works beginning on the Crown Works Studios site as preparatory activity ahead of construction."
       }
-    ]
+    ],
+    "latitude": 54.8998,
+    "longitude": -1.3847
   }
 ]

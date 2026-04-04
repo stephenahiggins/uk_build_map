@@ -1,449 +1,577 @@
 [
   {
-    "id": "gm-b012-e07000043-north-devon-lynmouth-esplanade-cliff-stabilisation",
-    "title": "North Devon: Lynmouth Esplanade cliff stabilisation works procurement",
-    "description": "North Devon District Council published a tender notice for cliff stabilisation works at Lynmouth Esplanade, covering repairs and maintenance to existing rockfall mitigation measures (including netting) to improve safety and resilience along the coastal frontage.",
+    "id": "gm-b012-e07000043-barnstaple-strand-river-wall-repairs",
+    "title": "North Devon: Strand river wall repairs at Barnstaple Long Bridge (tendered works)",
+    "description": "North Devon District Council published a tender for repairs to the Strand river wall adjacent to Long Bridge in Barnstaple, including dismantling and rebuilding a downstream section and completing additional repair works, supporting flood resilience and the integrity of a key riverside asset.",
     "type": "LOCAL_GOV",
     "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
     "localAuthorityId": "3c6b3bd7-4b20-473e-9760-149830f49231",
     "createdById": 1,
-    "status": "AMBER",
-    "statusRationale": "A UK4 tender notice has been published for the Lynmouth Esplanade cliff stabilisation works, indicating the project is in procurement.",
-    "locationDescription": "Lynmouth Esplanade, Lynmouth (North Devon)",
-    "locationSource": "Find a Tender (North Devon District Council)",
+    "status": "GREEN",
+    "statusRationale": "A Find a Tender notice has been published describing the river wall repair scope and procurement timeline, indicating the works are moving into delivery.",
+    "locationDescription": "Strand river wall adjacent to Long Bridge, Barnstaple",
+    "locationSource": "Find a Tender (North Devon District Council) NDC0056-25 notice for Strand River Wall Repair Works",
     "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
-        "title": "NDC0068-25 - Lynmouth Esplanade Cliff Stabilisation (tender notice)",
+        "title": "NDC0056-25 Strand River Wall Repair Works (tender notice)",
         "source": "Find a Tender (North Devon District Council)",
-        "url": "https://www.find-tender.service.gov.uk/Notice/080074-2025",
-        "datePublished": "2025-12-05",
-        "summary": "Tender notice for works to stabilise the Lynmouth Esplanade cliff, including repairs and maintenance to existing rockfall mitigation measures such as netting."
+        "url": "https://www.find-tender.service.gov.uk/Notice/061990-2025",
+        "datePublished": "2025-10-03",
+        "summary": "Tender notice for reactive maintenance works to the Strand river wall adjacent to Long Bridge, Barnstaple, including rebuild and repair sections."
       }
     ]
   },
   {
-    "id": "gm-b012-e06000054-wiltshire-m4-junction-17-improvement-works",
-    "title": "Wiltshire: M4 Junction 17 improvement works procurement",
-    "description": "Wiltshire Council issued a tender notice for works to improve M4 Junction 17, covering highway and traffic signal upgrades including widening and additional lane provision, supporting improved capacity and network performance at the junction.",
-    "type": "LOCAL_GOV",
-    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
-    "localAuthorityId": "32078f80-82c9-4156-8a0c-ea4d3379b89e",
-    "createdById": 1,
-    "status": "AMBER",
-    "statusRationale": "A UK4 tender notice has been published for M4 Junction 17 improvement works, indicating the scheme is at procurement stage.",
-    "locationDescription": "M4 Junction 17, Wiltshire (near Chippenham)",
-    "locationSource": "Find a Tender (Wiltshire Council)",
-    "locationConfidence": "HIGH",
-    "evidence": [
-      {
-        "type": "URL",
-        "title": "HE0915 - M4 JUNCTION 17 IMPROVEMENT WORKS (tender notice)",
-        "source": "Find a Tender (Wiltshire Council)",
-        "url": "https://www.find-tender.service.gov.uk/Notice/064010-2025",
-        "datePublished": "2025-10-10",
-        "summary": "Tender notice describing highway improvement works at M4 Junction 17, including traffic signal upgrades and capacity enhancements."
-      }
-    ]
-  },
-  {
-    "id": "gm-b012-e09000024-merton-remaking-morden-30m-funding-boost",
-    "title": "Merton: £30m council investment to progress ‘Remaking Morden’ regeneration",
-    "description": "The London Borough of Merton announced plans to commit £30 million to progress its ‘Remaking Morden’ regeneration ambitions, including town-centre renewal and preparation to secure a private-sector development partner.",
-    "type": "LOCAL_GOV",
-    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
-    "localAuthorityId": "74b00795-04f3-4525-9481-98487a7ae43d",
-    "createdById": 1,
-    "status": "AMBER",
-    "statusRationale": "The council has publicly set out funding plans and the next steps toward delivery, including progressing approvals and partnership procurement.",
-    "locationDescription": "Morden town centre, London Borough of Merton",
-    "locationSource": "Merton Council Newsroom",
-    "locationConfidence": "HIGH",
-    "evidence": [
-      {
-        "type": "URL",
-        "title": "Morden regeneration set for major step forward with £30 million funding boost",
-        "source": "Merton Council Newsroom",
-        "url": "https://news.merton.gov.uk/2025/11/28/morden-regeneration-set-for-major-step-forward-with-30-million-funding-boost/",
-        "datePublished": "2025-11-28",
-        "summary": "Council announcement describing a planned £30m investment to move forward the Remaking Morden regeneration programme and progress toward securing a development partner."
-      }
-    ]
-  },
-  {
-    "id": "gm-b012-e06000042-milton-keynes-residential-ev-chargers-tender",
-    "title": "Milton Keynes: residential electric vehicle (EV) chargers rollout procurement",
-    "description": "Milton Keynes City Council published a tender notice for the supply and installation of residential EV chargers, supporting the rollout of local charging infrastructure for residents.",
-    "type": "LOCAL_GOV",
-    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
-    "localAuthorityId": "41cb4145-8c3b-4bf4-a4fb-139f173b7b80",
-    "createdById": 1,
-    "status": "AMBER",
-    "statusRationale": "A UK4 tender notice has been published for residential EV charger supply and installation, indicating the rollout is in procurement.",
-    "locationDescription": "Milton Keynes (residential on-street/off-street locations to be confirmed)",
-    "locationSource": "Find a Tender (Milton Keynes City Council)",
-    "locationConfidence": "MEDIUM",
-    "evidence": [
-      {
-        "type": "URL",
-        "title": "Residential EV Chargers - tender notice",
-        "source": "Find a Tender (Milton Keynes City Council)",
-        "url": "https://www.find-tender.service.gov.uk/Notice/017417-2025",
-        "datePublished": "2025-04-28",
-        "summary": "Tender notice for the supply and installation of residential electric vehicle chargers for Milton Keynes City Council."
-      }
-    ]
-  },
-  {
-    "id": "gm-b012-e07000221-stratford-on-avon-gateway-masterplan-and-investment",
-    "title": "Stratford-on-Avon: Stratford-upon-Avon Gateway masterplan and regeneration funding",
-    "description": "Stratford-on-Avon District Council progressed regeneration plans for the Stratford-upon-Avon Gateway area, including adoption of a masterplan and approval of funding to support delivery of initial phases and enabling works.",
+    "id": "gm-b012-e07000221-stratford-honeybourne-rail-line-business-case-refresh",
+    "title": "Stratford-on-Avon: Stratford-upon-Avon to Honeybourne rail link SOBC refresh (Restoring Your Railway)",
+    "description": "Stratford-on-Avon District Council progressed work on a refreshed Strategic Outline Business Case (SOBC) for reinstating the rail link between Stratford-upon-Avon and Honeybourne, positioning the proposal as evidence for strategic planning and potential future funding bids.",
     "type": "LOCAL_GOV",
     "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
     "localAuthorityId": "54d099bf-5db6-4bdf-8e53-86e0594a9799",
     "createdById": 1,
     "status": "AMBER",
-    "statusRationale": "The masterplan has been adopted and the council has approved funding, but delivery remains subject to subsequent procurement, detailed design and planning steps.",
-    "locationDescription": "Stratford-upon-Avon Gateway area, Stratford-upon-Avon",
-    "locationSource": "Stratford-on-Avon District Council (planning and news)",
-    "locationConfidence": "HIGH",
+    "statusRationale": "The council has approved and published decision records for the SOBC refresh, but reinstatement remains contingent on further development, funding and external approvals.",
+    "locationDescription": "Former Stratford-upon-Avon to Honeybourne rail corridor (Stratford-on-Avon District)",
+    "locationSource": "Stratford-on-Avon District Council cabinet decision records and transport pages for the Stratford–Honeybourne line proposal",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
-        "title": "Stratford-upon-Avon Gateway masterplan (adoption)",
+        "title": "Stratford-upon-Avon to Honeybourne Railway Line - Strategic Outline Business Case Study Refresh (decision details)",
         "source": "Stratford-on-Avon District Council",
-        "url": "https://www.stratford.gov.uk/planning-building/stratford-upon-avon-gateway-masterplan.cfm",
-        "datePublished": "2024-04-22",
-        "summary": "Council planning page describing the Stratford-upon-Avon Gateway masterplan and stating that it was adopted on 22 April 2024."
+        "url": "https://democracy.stratford.gov.uk/ieDecisionDetails.aspx?Id=3970",
+        "datePublished": "2025-03-13",
+        "summary": "Cabinet decision record noting the refreshed SOBC for the Stratford-upon-Avon to Honeybourne rail link and its intended use as evidence for strategic planning."
       },
       {
         "type": "URL",
-        "title": "Funding approved for Stratford-upon-Avon Gateway project",
+        "title": "Stratford-upon-Avon to Honeybourne Railway Line - Strategic Outline Business Case refresh to be submitted to DfT",
         "source": "Stratford-on-Avon District Council (news)",
-        "url": "https://www.stratford.gov.uk/news/news.cfm/current/1/item/138290",
-        "datePublished": "2024-07-17",
-        "summary": "Council news item reporting approval of funding to support progress of the Stratford-upon-Avon Gateway project."
+        "url": "https://www.stratford.gov.uk/news/press.cfm/archive/4/item/139114",
+        "datePublished": "2025-03-10",
+        "summary": "Council press release describing the refreshed SOBC and next steps, including submission to the Department for Transport."
       }
     ]
   },
   {
-    "id": "gm-b012-e07000143-breckland-thetford-leisure-centre-3g-pitch",
-    "title": "Breckland: Thetford Leisure Centre 3G football pitch handed over",
-    "description": "Breckland Council announced the official handover of a new 3G football pitch at Thetford Leisure Centre, upgrading local sports infrastructure and supporting year-round community and club use.",
+    "id": "gm-b012-e06000054-a303-stonehenge-scheme-dco-revoked",
+    "title": "Wiltshire: A303 Stonehenge scheme cancelled and Development Consent Order revoked",
+    "description": "The Department for Transport confirmed the A303 Amesbury to Berwick Down (Stonehenge) scheme would not proceed and the existing Development Consent Order (DCO) would be revoked, ending the nationally significant road/tunnel proposal in Wiltshire.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "32078f80-82c9-4156-8a0c-ea4d3379b89e",
+    "createdById": 1,
+    "status": "RED",
+    "statusRationale": "The Department for Transport stated the scheme will not proceed and published a revocation order for the DCO, indicating the project has been cancelled.",
+    "locationDescription": "A303 Amesbury to Berwick Down corridor around the Stonehenge World Heritage Site, Wiltshire",
+    "locationSource": "UK Government (DfT) statement and Planning Inspectorate DCO revocation notice",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Statement on the A303 Stonehenge scheme",
+        "source": "UK Government (Department for Transport)",
+        "url": "https://www.gov.uk/government/publications/statement-on-the-a303-stonehenge-scheme/statement-on-the-a303-stonehenge-scheme",
+        "datePublished": "2026-03-17",
+        "summary": "DfT statement confirming the A303 Stonehenge scheme will not proceed and the Development Consent Order will be revoked."
+      },
+      {
+        "type": "URL",
+        "title": "Notice of Revocation Order (A303 Amesbury to Berwick Down)",
+        "source": "Planning Inspectorate (National Infrastructure Planning)",
+        "url": "https://infrastructure.planninginspectorate.gov.uk/wp-content/ipc/uploads/projects/TR010025/TR010025-000002-Notice-of-Revocation-Order.pdf",
+        "datePublished": "2026-03-19",
+        "summary": "Revocation order notice document for the A303 Amesbury to Berwick Down Development Consent Order."
+      }
+    ]
+  },
+  {
+    "id": "gm-b012-e09000024-remaking-morden-30m-investment-and-partner-procurement",
+    "title": "Merton: ‘Remaking Morden’ regeneration funding approved and partner procurement progressed",
+    "description": "Merton Council announced and then advanced formal decision-making for an initial £30 million investment to progress the ‘Remaking Morden’ regeneration programme, enabling masterplanning and the appointment of a development partner for town-centre renewal.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "74b00795-04f3-4525-9481-98487a7ae43d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council has committed capital funding and taken cabinet decisions to progress the programme and procure a partner, but major physical delivery remains subject to future approvals and phased implementation.",
+    "locationDescription": "Morden town centre (Remaking Morden regeneration area), London Borough of Merton",
+    "locationSource": "Merton Council Newsroom announcement and cabinet decision record",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Merton Council unveils exciting plans for Morden with £30m investment",
+        "source": "Merton Council Newsroom",
+        "url": "https://www.merton.gov.uk/news/articles/2025/november/merton-council-unveils-exciting-plans-for-morden-with-30m-investment",
+        "datePublished": "2025-11-28",
+        "summary": "Council announcement setting out the £30m investment to accelerate Remaking Morden and outlining intended regeneration outcomes."
+      },
+      {
+        "type": "URL",
+        "title": "Remaking Morden Programme (cabinet decision details)",
+        "source": "Merton Council (democracy)",
+        "url": "https://democracy.merton.gov.uk/ieDecisionDetails.aspx?Id=2031",
+        "datePublished": "2026-01-26",
+        "summary": "Cabinet decision record relating to the Remaking Morden Programme, including steps to progress delivery and procurement."
+      }
+    ]
+  },
+  {
+    "id": "gm-b012-e06000042-wolverton-agora-regeneration-delayed-start-2026",
+    "title": "Milton Keynes: Wolverton Agora regeneration and public-realm works (delayed, start targeted for 2026)",
+    "description": "Milton Keynes City Council continued progressing the Wolverton Agora regeneration, including the Old Market Hall and surrounding public realm, with updated timelines indicating delays but an intention to start main works from 2026 as part of a wider Wolverton town-centre renewal programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "41cb4145-8c3b-4bf4-a4fb-139f173b7b80",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council and local reporting indicate the scheme remains active but has been delayed, with start/delivery dates re-phased rather than completed.",
+    "locationDescription": "Wolverton Agora / Old Market Hall area, Wolverton, Milton Keynes",
+    "locationSource": "Milton Keynes City Council communications and project updates relating to Wolverton Agora regeneration",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Old Market Hall set to take centre stage in Wolverton regeneration",
+        "source": "Milton Keynes City Council",
+        "url": "https://www.milton-keynes.gov.uk/news/2025/old-market-hall-set-to-take-centre-stage-in-wolverton-regeneration",
+        "datePublished": "2025-11-14",
+        "summary": "Council update on the Old Market Hall’s role within the Wolverton regeneration programme and the intended benefits for the town centre."
+      },
+      {
+        "type": "URL",
+        "title": "Wolverton Agora regeneration is delayed until 2028",
+        "source": "ITV News Anglia",
+        "url": "https://www.itv.com/news/anglia/2026-02-06/wolverton-agora-regeneration-is-delayed-until-2028",
+        "datePublished": "2026-02-06",
+        "summary": "Report describing revised timelines for the Wolverton Agora regeneration programme and the updated expected opening date."
+      },
+      {
+        "type": "URL",
+        "title": "Wolverton Agora Site development plan agreed to move forward",
+        "source": "Love Wolverton",
+        "url": "https://lovewolverton.co.uk/news/wolverton-agora-site-development-plan-agreed-to-move-forward/",
+        "datePublished": "2026-03-26",
+        "summary": "Local regeneration update reporting agreement to move forward with the Wolverton Agora site development plan and updated start dates."
+      }
+    ]
+  },
+  {
+    "id": "gm-b012-e07000143-swaffham-heritage-regeneration-town-pound-restoration",
+    "title": "Breckland: Swaffham heritage-led regeneration (Town Pound restoration and follow-on heritage funding)",
+    "description": "Breckland Council progressed heritage-led regeneration in Swaffham, including completion of restoration works to the historic Town Pound and securing additional heritage funding to continue conservation and public realm improvements within the town’s conservation area.",
     "type": "LOCAL_GOV",
     "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
     "localAuthorityId": "c77a8255-6252-4556-920a-2b0d111748aa",
     "createdById": 1,
     "status": "GREEN",
-    "statusRationale": "The council reports the new pitch has been officially handed over, indicating completion and entry into operational use.",
-    "locationDescription": "Thetford Leisure Centre, Thetford (Breckland)",
-    "locationSource": "Breckland Council (news)",
+    "statusRationale": "Council updates confirm completion of the Town Pound restoration and subsequent funding secured for continued heritage activity, indicating delivery is under way and partially completed.",
+    "locationDescription": "Swaffham town centre conservation area (including the historic Town Pound)",
+    "locationSource": "Breckland Council press releases on Swaffham heritage regeneration and funding",
     "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
-        "title": "Goal! New 3G football pitch officially handed over to Breckland Council",
+        "title": "Restoration of Swaffham’s historic Town Pound complete",
         "source": "Breckland Council",
-        "url": "https://www.breckland.gov.uk/article/24491/12-05-2025-Goal-New-3G-football-pitch-officially-handed-over-to-Breckland-Council",
-        "datePublished": "2025-05-12",
-        "summary": "Council announcement confirming the handover of a new 3G football pitch at Thetford Leisure Centre."
+        "url": "https://www.breckland.gov.uk/article/24438/14-03-2025-Restoration-of-Swaffham-s-historic-Town-Pound-complete",
+        "datePublished": "2025-03-14",
+        "summary": "Council announcement confirming completion of restoration works to Swaffham’s historic Town Pound."
+      },
+      {
+        "type": "URL",
+        "title": "Breckland Council secures almost £1m heritage funding boost",
+        "source": "Breckland Council",
+        "url": "https://www.breckland.gov.uk/article/25113/28-08-2025-Breckland-Council-secures-almost-1m-heritage-funding-boost",
+        "datePublished": "2025-08-28",
+        "summary": "Council update on securing additional heritage funding to support continuation of heritage and regeneration activity in Breckland market towns, including Swaffham."
       }
     ]
   },
   {
-    "id": "gm-b012-e08000017-doncaster-scawthorpe-flooding-defences-consultation",
-    "title": "Doncaster: Scawthorpe flooding defences proposals (consultation)",
-    "description": "City of Doncaster Council published proposals for flooding defences in Scawthorpe, describing measures such as sustainable drainage and attenuation to reduce surface water flood risk for local residents.",
+    "id": "gm-b012-e08000017-doncaster-sheffield-airport-reopening-mobilisation-funding",
+    "title": "Doncaster: Doncaster Sheffield Airport (DSA) reopening programme – mobilisation funding and operational ramp-up",
+    "description": "City of Doncaster Council continued the programme to reopen Doncaster Sheffield Airport, including cabinet-approved mobilisation funding packages and operational hiring as activity increased on site ahead of the council’s stated reopening ambitions.",
     "type": "LOCAL_GOV",
     "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
     "localAuthorityId": "1a13033a-7cf6-40da-b7db-658832c3250d",
     "createdById": 1,
     "status": "AMBER",
-    "statusRationale": "The council has published consultation materials for proposed flood defences, indicating the scheme is in development and engagement phase.",
-    "locationDescription": "Scawthorpe, Doncaster (surface water flooding locations referenced in consultation)",
-    "locationSource": "City of Doncaster Council consultation page",
-    "locationConfidence": "MEDIUM",
+    "statusRationale": "Council statements and updates confirm continued mobilisation and staffing activity supported by funding approvals, but the airport remains in a reopening programme rather than fully operational passenger service.",
+    "locationDescription": "Doncaster Sheffield Airport site (formerly DSA), Doncaster",
+    "locationSource": "City of Doncaster Council updates and statements on the airport reopening programme",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
-        "title": "Scawthorpe Flooding Defences Consultation",
+        "title": "Airport gets financial boost to progress re-opening",
+        "source": "City of Doncaster Council (Visit Doncaster news)",
+        "url": "https://www.visitdoncaster.com/news/airport-gets-financial-boost-to-progress-re-opening",
+        "datePublished": "2025-02-13",
+        "summary": "Update reporting cabinet approval of a funding package and progress to continue mobilisation works as part of the programme to reopen the airport."
+      },
+      {
+        "type": "URL",
+        "title": "Doncaster Sheffield Airport statements (latest releases and programme updates)",
         "source": "City of Doncaster Council",
-        "url": "https://www.doncaster.gov.uk/services/get-involved/scawthorpe-flooding-defences-consultaiton",
-        "datePublished": "2026-03-26",
-        "summary": "Council consultation page setting out proposed flooding defences for Scawthorpe and inviting feedback."
+        "url": "https://www.doncaster.gov.uk/services/transport-streets-parking/doncaster-sheffield-airport-statements",
+        "datePublished": "2026-02-18",
+        "summary": "Council statements page listing airport reopening updates, including staffing and operational ramp-up milestones."
       }
     ]
   },
   {
-    "id": "gm-b012-e06000001-hartlepool-wingfield-castle-phase-2-works",
-    "title": "Hartlepool: PS Wingfield Castle Phase 2 works procurement",
-    "description": "Hartlepool Borough Council published a tender notice for Phase 2 works on PS Wingfield Castle, supporting the conservation and continued operation of a historic vessel as part of the town’s waterfront heritage and visitor offer.",
+    "id": "gm-b012-e06000001-hartlepool-waterfront-connectivity-phase-two",
+    "title": "Hartlepool: Waterfront Connectivity Project Phase 2 active-travel and public-realm works",
+    "description": "Hartlepool Borough Council began Phase 2 of the Waterfront Connectivity Project, delivering improvements to walking and cycling routes, streetlighting, signage and junction layouts around Hartlepool Marina and nearby visitor attractions to improve access and the public realm.",
     "type": "LOCAL_GOV",
     "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
     "localAuthorityId": "1e7725f8-ed24-485b-8ad8-98cd209ebfd0",
     "createdById": 1,
-    "status": "AMBER",
-    "statusRationale": "A UK4 tender notice has been published for Phase 2 works, indicating the project is being procured ahead of delivery.",
-    "locationDescription": "PS Wingfield Castle, Hartlepool (waterfront heritage asset)",
-    "locationSource": "Find a Tender (Hartlepool Borough Council)",
+    "status": "GREEN",
+    "statusRationale": "Council updates confirm works started on Phase 2, indicating the scheme is in delivery on the ground.",
+    "locationDescription": "Hartlepool Marina / The Waterfront area (Phase 2 works including Victoria Terrace / Maritime Avenue junction area)",
+    "locationSource": "Hartlepool Borough Council project update and local reporting on Phase 2 works start",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
-        "title": "PS Wingfield Castle Phase 2 Works (tender notice)",
-        "source": "Find a Tender (Hartlepool Borough Council)",
-        "url": "https://www.find-tender.service.gov.uk/Notice/055995-2025",
-        "datePublished": "2025-09-11",
-        "summary": "Tender notice for Phase 2 works associated with PS Wingfield Castle, issued by Hartlepool Borough Council."
+        "title": "Work begins on Waterfront Connectivity project phase two",
+        "source": "Hartlepool Borough Council",
+        "url": "https://www.hartlepool.gov.uk/news/article/2287/work_begins_on_waterfront_connectivity_project_phase_two",
+        "datePublished": "2025-03-20",
+        "summary": "Council announcement that Phase 2 of the Waterfront Connectivity project has started, describing active-travel and public realm improvements around the waterfront."
+      },
+      {
+        "type": "URL",
+        "title": "Next phase of £6m project to improve connections around Hartlepool attractions",
+        "source": "Hartlepool Mail",
+        "url": "https://www.hartlepoolmail.co.uk/news/people/next-phase-of-ps6m-project-to-improve-connections-around-hartlepool-attractions-5062038",
+        "datePublished": "2025-04-01",
+        "summary": "Local reporting on Phase 2 works scope, including route improvements, lighting and junction changes around Hartlepool’s waterfront attractions."
       }
     ]
   },
   {
-    "id": "gm-b012-e07000174-mansfield-white-hart-street-development",
-    "title": "Mansfield: White Hart Street housing-led regeneration contract award",
-    "description": "Mansfield District Council published an awarded works contract for development at White Hart Street, covering delivery of new homes and commercial space as part of town-centre regeneration and place-making.",
+    "id": "gm-b012-e07000174-four-seasons-car-park-refurbishment",
+    "title": "Mansfield: Four Seasons multi-storey car park refurbishment (tendered works and delivery update)",
+    "description": "Mansfield District Council progressed refurbishment works for the Four Seasons multi-storey car park in Mansfield town centre, following investigations identifying defects and the need for repairs and protection to extend the structure’s long-term durability.",
     "type": "LOCAL_GOV",
     "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
     "localAuthorityId": "d8f1b9fc-ffe3-49ca-a9f7-f1059c0e965d",
     "createdById": 1,
     "status": "GREEN",
-    "statusRationale": "A Contracts Finder award notice has been published with supplier and contract dates, indicating the project has moved into delivery.",
-    "locationDescription": "White Hart Street, Mansfield",
-    "locationSource": "Contracts Finder (Mansfield District Council / Westworks Procurement)",
+    "statusRationale": "A Find a Tender notice was published for refurbishment and the council subsequently issued project updates, indicating the refurbishment programme is progressing into delivery.",
+    "locationDescription": "Four Seasons multi-storey car park, Mansfield town centre",
+    "locationSource": "Mansfield District Council and Find a Tender procurement for Four Seasons multi-storey car park refurbishment",
     "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
-        "title": "Mansfield District Council - White Hart Street (award notice)",
-        "source": "Contracts Finder",
-        "url": "https://www.contractsfinder.service.gov.uk/Notice/226c1a64-5648-4677-b024-4eec8b3368fa",
-        "datePublished": "2025-06-05",
-        "summary": "Award notice for works contract covering development of homes and commercial space at White Hart Street, including contract value and dates."
+        "title": "Four Seasons multi-storey car park refurbishment (council update)",
+        "source": "Mansfield District Council",
+        "url": "https://www.mansfield.gov.uk/news/article/10442/four-seasons-car-park-repairs-to-start",
+        "datePublished": "2025-12-22",
+        "summary": "Council update on the planned refurbishment/repairs programme for the Four Seasons multi-storey car park, including context and next steps."
+      },
+      {
+        "type": "URL",
+        "title": "Car Park Refurbishment Four Seasons Multi-Storey Car Park, Mansfield (tender notice reference)",
+        "source": "Find a Tender (via Bidstats listing)",
+        "url": "https://bidstats.uk/tenders/2025/W26/849215981",
+        "datePublished": "2025-06-24",
+        "summary": "Tender notice listing for refurbishment works at the Four Seasons multi-storey car park, referencing the Find a Tender publication and scope."
       }
     ]
   },
   {
-    "id": "gm-b012-e06000012-north-east-lincolnshire-freshney-place-development-construction-start",
-    "title": "North East Lincolnshire: construction starts on Freshney Place development site",
-    "description": "North East Lincolnshire Council announced that construction had started on the Freshney Place development site in Grimsby, supporting town-centre regeneration and reuse of a key retail area.",
+    "id": "gm-b012-e06000012-freshney-place-regeneration-construction",
+    "title": "North East Lincolnshire: Freshney Place regeneration – construction milestones and steel signing",
+    "description": "North East Lincolnshire Council advanced the Freshney Place redevelopment in Grimsby, including construction start announcements and a milestone steel-signing event, repurposing parts of the centre to create a new leisure/community-focused destination as part of wider town-centre regeneration.",
     "type": "LOCAL_GOV",
     "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
     "localAuthorityId": "cef65a66-6ad5-444b-9f9e-64813743fbf2",
     "createdById": 1,
     "status": "GREEN",
-    "statusRationale": "The council reports that construction has started on the site, indicating the project is in delivery.",
-    "locationDescription": "Freshney Place development site, Grimsby",
-    "locationSource": "North East Lincolnshire Council (news)",
+    "statusRationale": "Council updates confirm construction activity has started and milestones have been reached, indicating the project is in delivery.",
+    "locationDescription": "Freshney Place, Grimsby town centre",
+    "locationSource": "North East Lincolnshire Council project updates for the Freshney Place redevelopment",
     "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
-        "title": "Construction has started this week on Freshney Place development site",
+        "title": "Construction starts on Freshney Place development site",
         "source": "North East Lincolnshire Council",
-        "url": "https://www.nelincs.gov.uk/construction-has-started-this-week-on-freshney-place-development-site/",
+        "url": "https://www.nelincs.gov.uk/construction-starts-on-freshney-place-development-site/",
         "datePublished": "2025-11-27",
-        "summary": "Council news item stating that construction has started on the Freshney Place development site in Grimsby."
+        "summary": "Council update confirming construction has begun on the Freshney Place redevelopment in Grimsby."
+      },
+      {
+        "type": "URL",
+        "title": "Freshney Place steel signing sees council leader put pen to paper",
+        "source": "North East Lincolnshire Council",
+        "url": "https://www.nelincs.gov.uk/freshney-place-steel-signing-sees-council-leader-put-pen-to-paper/",
+        "datePublished": "2026-02-24",
+        "summary": "Council update describing a milestone steel-signing event for the Freshney Place redevelopment as construction progresses."
       }
     ]
   },
   {
-    "id": "gm-b012-e07000124-ribble-valley-clitheroe-castle-keep-structural-repairs",
-    "title": "Ribble Valley: Clitheroe Castle Keep structural repairs procurement",
-    "description": "Ribble Valley Borough Council published a tender notice for structural repairs to Clitheroe Castle Keep, supporting ongoing conservation and safe operation of the historic civic heritage asset.",
+    "id": "gm-b012-e07000124-clitheroe-castle-keep-structural-repairs",
+    "title": "Ribble Valley: Clitheroe Castle Keep structural repairs (tendered works and council delivery start)",
+    "description": "Ribble Valley Borough Council progressed a programme of structural repairs to Clitheroe Castle Keep, supporting preservation of a landmark heritage asset and visitor attraction, with procurement activity followed by a council update indicating works had started on site.",
     "type": "LOCAL_GOV",
     "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
     "localAuthorityId": "9183543c-f7c6-469f-a856-e0446e9d3c99",
     "createdById": 1,
-    "status": "AMBER",
-    "statusRationale": "A UK4 tender notice has been published for structural repair works, indicating the project is in procurement.",
+    "status": "GREEN",
+    "statusRationale": "Tendering was published and the council later issued a public update that works had started, indicating active delivery.",
     "locationDescription": "Clitheroe Castle Keep, Clitheroe",
-    "locationSource": "Find a Tender (Ribble Valley Borough Council)",
+    "locationSource": "Procurement listing and Ribble Valley Borough Council update on Clitheroe Castle improvement works",
     "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
-        "title": "Structural Repairs to Clitheroe Castle Keep (tender notice)",
-        "source": "Find a Tender (Ribble Valley Borough Council)",
-        "url": "https://www.find-tender.service.gov.uk/Notice/040784-2025",
-        "datePublished": "2025-07-17",
-        "summary": "Tender notice for structural repairs to Clitheroe Castle Keep issued by Ribble Valley Borough Council."
-      }
-    ]
-  },
-  {
-    "id": "gm-b012-e07000067-braintree-witham-new-community-centre-construction-start",
-    "title": "Braintree: construction starts on new community centre in Witham",
-    "description": "Braintree District Council reported the start of construction for a new community centre in Witham, delivering a modern, flexible civic facility supported by council investment and developer contributions.",
-    "type": "LOCAL_GOV",
-    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
-    "localAuthorityId": "90db78e8-e501-4aac-abd9-8a5d46562cfe",
-    "createdById": 1,
-    "status": "GREEN",
-    "statusRationale": "The council reports that construction has started, indicating the project is in delivery.",
-    "locationDescription": "New community centre site, Haygreen Road, Witham",
-    "locationSource": "Braintree District Council (news)",
-    "locationConfidence": "HIGH",
-    "evidence": [
-      {
-        "type": "URL",
-        "title": "Councillors and partners break ground on new community centre in Witham",
-        "source": "Braintree District Council",
-        "url": "https://www.braintree.gov.uk/news/article/792/councillors-and-partners-break-ground-on-new-community-centre-in-witham",
-        "datePublished": "2025-06-09",
-        "summary": "Council news announcement marking the start of construction for a new community centre in Witham, including funding details."
-      }
-    ]
-  },
-  {
-    "id": "gm-b012-e07000173-gedling-colwick-recreation-ground-car-park-resurfacing",
-    "title": "Gedling: Colwick Recreation Ground car park resurfacing and alteration works procurement",
-    "description": "Gedling Borough Council published a tender notice for resurfacing and alteration works to the car park at Colwick Recreation Ground, supporting maintenance and improvement of public access infrastructure serving the recreation site.",
-    "type": "LOCAL_GOV",
-    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
-    "localAuthorityId": "655643b4-044b-4423-b4c9-e16bb75c0244",
-    "createdById": 1,
-    "status": "AMBER",
-    "statusRationale": "A UK4 tender notice has been published for the car park works, indicating the project is in procurement.",
-    "locationDescription": "Colwick Recreation Ground, Gedling",
-    "locationSource": "Find a Tender (Gedling Borough Council)",
-    "locationConfidence": "HIGH",
-    "evidence": [
-      {
-        "type": "URL",
-        "title": "Car Park Resurfacing and Alteration Works - Colwick Recreation Ground (tender notice)",
-        "source": "Find a Tender (Gedling Borough Council)",
-        "url": "https://www.find-tender.service.gov.uk/Notice/054073-2025",
-        "datePublished": "2025-08-28",
-        "summary": "Tender notice for works to resurface and alter the car park at Colwick Recreation Ground in Gedling."
-      }
-    ]
-  },
-  {
-    "id": "gm-b012-e07000210-mole-valley-21-high-street-leatherhead-conversion-works",
-    "title": "Mole Valley: 21 High Street, Leatherhead conversion works contract award",
-    "description": "Mole Valley District Council published a contract details notice for conversion works at 21 High Street, Leatherhead, changing the principal use from office to residential as part of town-centre regeneration and re-use of existing buildings.",
-    "type": "LOCAL_GOV",
-    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
-    "localAuthorityId": "0018cde8-819c-4320-ae8c-0a1ac18dd344",
-    "createdById": 1,
-    "status": "GREEN",
-    "statusRationale": "A UK7 contract details notice has been published naming the supplier and contract dates, indicating the works contract is awarded and scheduled for delivery.",
-    "locationDescription": "21 High Street, Leatherhead, Surrey KT22 8AQ",
-    "locationSource": "Find a Tender (Mole Valley District Council)",
-    "locationConfidence": "HIGH",
-    "evidence": [
-      {
-        "type": "URL",
-        "title": "MVDC - 21 High St. Leatherhead Property Conversion Works (contract details notice)",
-        "source": "Find a Tender (Mole Valley District Council)",
-        "url": "https://www.find-tender.service.gov.uk/Notice/041584-2025",
-        "datePublished": "2025-07-21",
-        "summary": "Contract details notice confirming award for works to convert 21 High Street, Leatherhead from office use to residential use, including supplier and contract dates."
-      }
-    ]
-  },
-  {
-    "id": "gm-b012-e06000007-warrington-liverpool-road-sankey-bridges-drainage-pump-station",
-    "title": "Warrington: Liverpool Road (Sankey Bridges) drainage upgrades and pump station to reduce flooding",
-    "description": "Warrington Borough Council advanced a flood-risk management scheme at Liverpool Road, Sankey Bridges, including drainage upgrades and a new pump station to reduce flood risk for local properties and improve resilience of the highway corridor.",
-    "type": "LOCAL_GOV",
-    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
-    "localAuthorityId": "73dc1a7b-988d-4f1c-8ee2-7b8d01ff8bf0",
-    "createdById": 1,
-    "status": "GREEN",
-    "statusRationale": "The council has approved and publicly described the scheme and reports delivery activity including contractor appointment and progress updates.",
-    "locationDescription": "Liverpool Road, Sankey Bridges (Great Sankey South), Warrington",
-    "locationSource": "Warrington Borough Council (news and project information)",
-    "locationConfidence": "HIGH",
-    "evidence": [
-      {
-        "type": "URL",
-        "title": "New pump station to tackle flooding",
-        "source": "Warrington Borough Council",
-        "url": "https://www.warrington.gov.uk/news/new-pump-station-tackle-flooding",
-        "datePublished": "2025-09-09",
-        "summary": "Council news item describing cabinet approval for a new drainage system and pump station at Liverpool Road, Sankey Bridges, to reduce flood risk to local properties."
+        "title": "Clitheroe Castle Keep Structural Repairs (tender listing)",
+        "source": "Tender Impulse (Ribble Valley Borough Council tender listing)",
+        "url": "https://tenderimpulse.com/government-tenders/united-kingdom/clitheroe-castle-keep-structural-repairs-8877320",
+        "datePublished": "2025-08-04",
+        "summary": "Tender listing for Ribble Valley Borough Council procurement for structural repairs to Clitheroe Castle Keep."
       },
       {
         "type": "URL",
-        "title": "Liverpool Road Flood Risk Management Scheme",
-        "source": "Warrington Borough Council",
-        "url": "https://www.warrington.gov.uk/liverpool-road-flood-risk-management-scheme",
-        "datePublished": "2026-03-04",
-        "summary": "Council project page describing the Liverpool Road flood risk management scheme scope, delivery timeline and progress updates."
+        "title": "Start of work on Clitheroe Castle improvement scheme",
+        "source": "Ribble Valley Borough Council",
+        "url": "https://www.ribblevalley.gov.uk/article/12588/Start-of-work-on-Clitheroe-Castle-improvement-scheme",
+        "datePublished": "2025-12-02",
+        "summary": "Council update announcing the start of works on an improvement scheme at Clitheroe Castle."
       }
     ]
   },
   {
-    "id": "gm-b012-e07000224-arun-holly-court-cladding-window-replacement",
-    "title": "Arun: Holly Court cladding and window replacement works contract award",
-    "description": "Arun District Council published an awarded works contract for cladding and window replacement at Holly Court, supporting building safety and estate improvement works within the council’s housing portfolio.",
+    "id": "gm-b012-e07000224-littlehampton-seafront-scheme",
+    "title": "Arun: Littlehampton Seafront Scheme (Levelling Up Fund) public-realm and visitor-infrastructure improvements",
+    "description": "Arun District Council progressed the Levelling Up Fund-backed Littlehampton Seafront Scheme, delivering new public realm, visitor facilities and active-travel upgrades along the seafront, with council updates highlighting construction progress and final-stage works.",
     "type": "LOCAL_GOV",
     "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
     "localAuthorityId": "4b50870d-6c3a-4878-bc51-d13eb7b443fa",
     "createdById": 1,
     "status": "GREEN",
-    "statusRationale": "A Contracts Finder award notice has been published, indicating the contract for cladding and window replacement works has been awarded.",
-    "locationDescription": "Holly Court (Arun District Council housing asset)",
-    "locationSource": "Contracts Finder (Arun District Council)",
-    "locationConfidence": "MEDIUM",
+    "statusRationale": "Council project updates confirm on-site progress and final-stage works on the seafront scheme, indicating delivery is under way.",
+    "locationDescription": "Littlehampton seafront (including East Beach / South Terrace / Windmill Road areas), Arun District",
+    "locationSource": "Arun District Council project updates for the Littlehampton Seafront Scheme",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
-        "title": "Holly Court Cladding and Window Replacement Works - AWARD",
-        "source": "Contracts Finder",
-        "url": "https://www.contractsfinder.service.gov.uk/notice/44dd7faf-f5a2-4b41-85a8-17d6b80a8171",
-        "datePublished": "2025-02-13",
-        "summary": "Contracts Finder award notice for works to replace cladding and windows at Holly Court on behalf of Arun District Council."
+        "title": "Littlehampton Seafront Scheme project update (works under way)",
+        "source": "Arun District Council",
+        "url": "https://www.arun.gov.uk/news/littlehampton-seafront-scheme-update-february-2025/",
+        "datePublished": "2025-02-07",
+        "summary": "Council update describing construction progress and key features of the Littlehampton Seafront Scheme."
+      },
+      {
+        "type": "URL",
+        "title": "Final stage of Littlehampton Seafront Scheme begins",
+        "source": "Arun District Council",
+        "url": "https://www.arun.gov.uk/news/final-stage-of-littlehampton-seafront-scheme-begins/",
+        "datePublished": "2025-07-25",
+        "summary": "Council update announcing the final stage of construction works for the Littlehampton Seafront Scheme."
       }
     ]
   },
   {
-    "id": "gm-b012-e09000027-richmond-ham-close-regeneration-underway",
-    "title": "Richmond upon Thames: Ham Close regeneration work underway",
-    "description": "The London Borough of Richmond upon Thames reported that regeneration work was underway at Ham Close, delivering new homes and improved public realm and community facilities as part of a wider estate renewal programme.",
+    "id": "gm-b012-e07000067-witham-community-centre-construction",
+    "title": "Braintree: Witham Community Centre construction milestones (groundbreaking and topping out)",
+    "description": "Braintree District Council advanced delivery of the new Witham Community Centre, with public milestones including a groundbreaking ceremony and a topping out event, supporting new civic/community estate provision in Witham.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "90db78e8-e501-4aac-abd9-8a5d46562cfe",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council updates confirm construction activity and milestones, indicating the project is in delivery rather than a concept stage.",
+    "locationDescription": "Witham (new community centre site), Braintree District",
+    "locationSource": "Braintree District Council updates on the Witham Community Centre project",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Witham Community Centre - groundbreaking ceremony marks start of construction",
+        "source": "Braintree District Council",
+        "url": "https://www.braintree.gov.uk/news/article/776/witham-community-centre-groundbreaking-ceremony-marks-start-of-construction",
+        "datePublished": "2025-06-09",
+        "summary": "Council announcement marking the start of construction of the new Witham Community Centre."
+      },
+      {
+        "type": "URL",
+        "title": "Witham Community Centre celebrates topping out milestone",
+        "source": "Braintree District Council",
+        "url": "https://www.braintree.gov.uk/news/article/819/witham-community-centre-celebrates-topping-out-milestone",
+        "datePublished": "2025-12-19",
+        "summary": "Council update describing the topping out milestone reached during construction of the Witham Community Centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b012-e07000173-greater-carlton-regeneration-plan",
+    "title": "Gedling: Greater Carlton regeneration programme governance for £20m neighbourhood investment",
+    "description": "Gedling Borough Council progressed governance and programme development for a Greater Carlton neighbourhood regeneration programme associated with £20 million of government investment, establishing/strengthening local board arrangements to oversee delivery of a long-term regeneration plan for Carlton and surrounding areas.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "655643b4-044b-4423-b4c9-e16bb75c0244",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council updates confirm programme governance is being established and plans are being developed, but the programme is primarily at planning/enablement stage rather than fully built-out delivery.",
+    "locationDescription": "Greater Carlton area (Carlton, Carlton Hill and surrounding neighbourhoods), Gedling Borough",
+    "locationSource": "Gedling Borough Council pages relating to the Greater Carlton Neighbourhood Board and regeneration plan development",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New £20m Carlton plan unveiled (Regeneration Plan for Greater Carlton)",
+        "source": "Gedling Borough Council",
+        "url": "https://www.gedling.gov.uk/news/pressreleases/2025/november/new20mcarltonplanunveiled/",
+        "datePublished": "2025-11-18",
+        "summary": "Council press release describing the unveiling of a regeneration plan and programme intent for Greater Carlton linked to £20m investment."
+      },
+      {
+        "type": "URL",
+        "title": "New Chair appointed to lead £20 million Carlton investment plan",
+        "source": "Gedling Borough Council",
+        "url": "https://www.gedling.gov.uk/business/greatercarltonplanforneighbourhoods/carltonneighbourhoodboard/",
+        "datePublished": "2026-02-17",
+        "summary": "Council update announcing the appointment of an independent chair to the Greater Carlton Neighbourhood Board overseeing delivery of the £20m investment plan."
+      }
+    ]
+  },
+  {
+    "id": "gm-b012-e07000210-transform-leatherhead-swan-centre-bull-hill-planning-submitted",
+    "title": "Mole Valley: Transform Leatherhead – major planning application submitted for Swan Centre and Bull Hill redevelopment",
+    "description": "A major planning application was submitted to Mole Valley District Council for the redevelopment of the Swan Centre and Bull Hill area in Leatherhead under the Transform Leatherhead programme, proposing new homes, reconfigured retail/leisure, public space and updated town-centre infrastructure.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "0018cde8-819c-4320-ae8c-0a1ac18dd344",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Reports confirm a planning application has been lodged and is under consideration; delivery depends on planning approval and subsequent procurement and funding arrangements.",
+    "locationDescription": "Swan Centre and Bull Hill area, Leatherhead town centre",
+    "locationSource": "Reporting on the Transform Leatherhead programme planning submission to Mole Valley District Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Leatherhead regeneration plans lodged for 480 homes and Swan Centre overhaul",
+        "source": "Build News",
+        "url": "https://www.buildnews.co.uk/leatherhead-regeneration-plans-lodged-for-480-homes-and-swan-centre-overhaul/",
+        "datePublished": "2025-12-05",
+        "summary": "Construction-industry reporting that a major planning application has been submitted for the Swan Centre and Bull Hill redevelopment in Leatherhead as part of Transform Leatherhead."
+      },
+      {
+        "type": "URL",
+        "title": "Plans submitted for major redevelopment of Leatherhead town centre",
+        "source": "Surrey Chambers of Commerce",
+        "url": "https://www.surrey-chambers.co.uk/news-listing/plans-submitted-for-major-redevelopment-of-leatherhead-town-centre/",
+        "datePublished": "2025-12-11",
+        "summary": "Business community update summarising the planning submission for Transform Leatherhead, including proposed housing and town-centre improvements."
+      }
+    ]
+  },
+  {
+    "id": "gm-b012-e06000007-liverpool-road-sankey-bridges-flood-risk-management",
+    "title": "Warrington: Liverpool Road (Sankey Bridges) flood risk management scheme (pump station and drainage upgrades)",
+    "description": "Warrington Borough Council progressed a flood risk management scheme at Liverpool Road (Sankey Bridges), including drainage upgrades and a new pump station intended to reduce flooding disruption on a key transport corridor and improve local resilience.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "73dc1a7b-988d-4f1c-8ee2-7b8d01ff8bf0",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council announcements confirm the scheme moved into on-site works and subsequent updates report continuing construction, indicating active delivery.",
+    "locationDescription": "Liverpool Road (Sankey Bridges), Warrington",
+    "locationSource": "Warrington Borough Council scheme updates and local reporting on construction progress",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Liverpool Road flood scheme to reduce disruption and help prevent flooding",
+        "source": "Warrington Borough Council",
+        "url": "https://www.warrington.gov.uk/news/liverpool-road-flood-scheme-to-reduce-disruption-and-help-prevent-flooding",
+        "datePublished": "2025-09-09",
+        "summary": "Council announcement describing the Liverpool Road flood risk management scheme scope including drainage upgrades and a pump station."
+      },
+      {
+        "type": "URL",
+        "title": "Liverpool Road flood scheme: update as construction continues",
+        "source": "Warrington Worldwide",
+        "url": "https://www.warrington-worldwide.co.uk/2026/02/07/liverpool-road-flood-scheme-update-as-construction-continues/",
+        "datePublished": "2026-02-07",
+        "summary": "Local news update reporting continued construction activity and ongoing works on the Liverpool Road flood scheme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b012-e09000027-twickenham-riverside-regeneration",
+    "title": "Richmond upon Thames: Twickenham Riverside regeneration – construction start and delivery milestones",
+    "description": "Richmond Council progressed the Twickenham Riverside regeneration, advancing construction arrangements for a new riverside park and town-centre improvements alongside housing and ground-floor uses, with council updates confirming key delivery milestones.",
     "type": "LOCAL_GOV",
     "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
     "localAuthorityId": "ee3cd39e-1937-41d8-8855-b137bfd735c0",
     "createdById": 1,
     "status": "GREEN",
-    "statusRationale": "The council reports that regeneration work is underway on site, indicating active delivery.",
-    "locationDescription": "Ham Close, Richmond upon Thames",
-    "locationSource": "London Borough of Richmond upon Thames (news)",
+    "statusRationale": "Council press releases confirm contract and construction milestones for the scheme, indicating active delivery rather than a concept stage.",
+    "locationDescription": "Twickenham Riverside (Water Lane / Wharf Lane / King Street links), Twickenham",
+    "locationSource": "London Borough of Richmond upon Thames updates on the Twickenham Riverside regeneration scheme",
     "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
-        "title": "Ham Close regeneration work underway",
-        "source": "London Borough of Richmond upon Thames",
-        "url": "https://www.richmond.gov.uk/news/news_march_2026/ham_close_regeneration",
-        "datePublished": "2026-03-24",
-        "summary": "Council news update stating that regeneration work is underway at Ham Close, describing the programme and expected outcomes."
+        "title": "Twickenham Riverside: main contractor appointed ahead of construction",
+        "source": "Richmond upon Thames Council",
+        "url": "https://www.richmond.gov.uk/news/news_june_2025/twickenham_riverside_main_contractor_appointed",
+        "datePublished": "2025-06-26",
+        "summary": "Council update announcing the appointment of the main contractor and outlining next steps toward construction for Twickenham Riverside."
+      },
+      {
+        "type": "URL",
+        "title": "Construction begins on Twickenham Riverside regeneration scheme",
+        "source": "Richmond upon Thames Council",
+        "url": "https://www.richmond.gov.uk/news/news_march_2026/construction_begins_on_twickenham_riverside",
+        "datePublished": "2026-03-19",
+        "summary": "Council announcement confirming construction start on the Twickenham Riverside regeneration scheme."
       }
     ]
   },
   {
-    "id": "gm-b012-e09000028-southwark-peckham-rye-station-square-civic-space-works-begin",
-    "title": "Southwark: works begin on new civic square at Peckham Rye Station",
-    "description": "The London Borough of Southwark announced the start of works to deliver a new civic square at Peckham Rye Station, transforming the station forecourt and surrounding public realm to improve access, safety and the town centre environment.",
+    "id": "gm-b012-e09000028-peckham-rye-station-square-civic-space",
+    "title": "Southwark: civic square works at Peckham Rye Station (public realm, safety and market space)",
+    "description": "Southwark Council began works to deliver a new civic square at Peckham Rye Station, including public realm upgrades, seating, lighting, CCTV and new space for markets and events, improving a key town-centre gateway next to the rail station.",
     "type": "LOCAL_GOV",
     "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
     "localAuthorityId": "61ab05cf-5212-4632-b04f-fb9585633336",
     "createdById": 1,
     "status": "GREEN",
-    "statusRationale": "The council reports that works have begun on site, indicating active delivery of the public realm scheme.",
-    "locationDescription": "Peckham Rye Station and station square/forecourt, Southwark",
-    "locationSource": "Southwark Council (news)",
+    "statusRationale": "Southwark Council announced the start of works and Network Rail confirmed associated funding for station-area improvements, indicating delivery is under way.",
+    "locationDescription": "Peckham Rye Station forecourt / station square area, Peckham",
+    "locationSource": "Southwark Council works announcement and Network Rail funding/associated station improvement update",
     "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
-        "title": "Work begins on transformative new civic square at Peckham Rye Station",
+        "title": "Work begins on new civic square at Peckham Rye Station",
         "source": "Southwark Council",
-        "url": "https://www.southwark.gov.uk/news/2026/work-begins-transformative-new-civic-square-peckham-rye-station",
-        "datePublished": "2026-03-19",
-        "summary": "Council announcement stating that construction has started to deliver a new civic square at Peckham Rye Station as part of public realm improvements."
+        "url": "https://www.southwark.gov.uk/news/2026/work-begins-on-new-civic-square-at-peckham-rye-station",
+        "datePublished": "2026-03-17",
+        "summary": "Council announcement confirming the start of works to create a new civic square at Peckham Rye Station, including public realm upgrades and improved facilities."
+      },
+      {
+        "type": "URL",
+        "title": "Network Rail announces funding boost for Peckham Rye Station improvement project",
+        "source": "Network Rail",
+        "url": "https://www.networkrailmediacentre.co.uk/news/network-rail-announces-funding-boost-for-peckham-rye-station-improvement-project",
+        "datePublished": "2026-01-30",
+        "summary": "Network Rail media release announcing funding for Peckham Rye Station improvement elements and describing next steps and scope."
       }
     ]
   }

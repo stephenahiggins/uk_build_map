@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council approval in place and delivery approach reset; regeneration programme and phases continue to develop.",
-    "locationDescription": "Winstanley and York Road estates / Winstanley neighbourhood, Battersea, London",
-    "locationSource": "Wandsworth Borough Council news",
+    "locationDescription": "Winstanley and York Road estates (Winstanley neighbourhood), Battersea, London Borough of Wandsworth",
+    "locationSource": "Project description and Wandsworth Borough Council news referring to the Winstanley neighbourhood centred on the Winstanley and York Road estates in Battersea",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -29,7 +29,9 @@
         "datePublished": "2025-01-06",
         "summary": "Council statement setting out the change in delivery approach for the regeneration scheme and planned next phases."
       }
-    ]
+    ],
+    "latitude": 51.4636,
+    "longitude": -0.1689
   },
   {
     "id": "gm-b002-e07000128-fleetwood-waterfront-masterplan",
@@ -41,8 +43,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Masterplan signed off; business cases and delivery planning underway for constituent projects.",
-    "locationDescription": "Fleetwood Waterfront (including Marine Hall, Fleetwood Leisure Centre and promenade), Fleetwood, Lancashire",
-    "locationSource": "Wyre Council news",
+    "locationDescription": "Fleetwood Waterfront (centred on Marine Hall and the adjacent seafront promenade), Fleetwood, Lancashire",
+    "locationSource": "Wyre Council news article describing the Fleetwood Waterfront masterplan including redevelopment of Marine Hall, refurbishment of Fleetwood Leisure Centre and improvements to the promenade/public realm",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -53,7 +55,9 @@
         "datePublished": "2024-12-11",
         "summary": "Council update confirming councillors signed off the Fleetwood Waterfront masterplan and summarising the four potential projects."
       }
-    ]
+    ],
+    "latitude": 53.9247,
+    "longitude": -3.0106
   },
   {
     "id": "gm-b002-e07000095-waltham-cross-town-centre-regeneration-reopens",
@@ -65,9 +69,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council states the main town centre works have completed and the regenerated area has reopened, with minor finishing works continuing.",
-    "locationDescription": "Waltham Cross town centre, Broxbourne, Hertfordshire",
-    "locationSource": "Borough of Broxbourne Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Waltham Cross town centre, Broxbourne, Hertfordshire (representative central point of the town centre area).",
+    "locationSource": "Project description and Borough of Broxbourne Council news item: https://www.broxbourne.gov.uk/news/article/410/waltham-cross-town-centre-reopens-with-a-brand-new-look",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -77,7 +81,9 @@
         "datePublished": "2025-12-04",
         "summary": "Council announcement describing the completed regeneration works and the improvements delivered in and around the town centre."
       }
-    ]
+    ],
+    "latitude": 51.6857,
+    "longitude": -0.0332
   },
   {
     "id": "gm-b002-e09000001-transforming-fleet-street-public-realm",
@@ -89,9 +95,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Design options approved and consultation planned; scheme development ongoing.",
-    "locationDescription": "Fleet Street and surrounding courts/lanes, City of London",
-    "locationSource": "City of London Corporation project page",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Fleet Street, City of London (representative midpoint along Fleet Street between Ludgate Circus and Fetter Lane).",
+    "locationSource": "City of London Corporation project pages for 'Transforming Fleet Street' and the 'Fleet Street Area Programme'.",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -109,7 +115,9 @@
         "datePublished": "2026-02-24",
         "summary": "Programme page summarising multiple Fleet Street area public realm enhancement schemes and providing supporting map/document links."
       }
-    ]
+    ],
+    "latitude": 51.513,
+    "longitude": -0.1106
   },
   {
     "id": "gm-b002-e07000098-jewish-life-centre-borehamwood",
@@ -121,9 +129,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Ground-breaking event held and redevelopment underway, indicating delivery has started on site.",
-    "locationDescription": "Shenley Road, Borehamwood, Hertfordshire",
-    "locationSource": "Hertsmere Borough Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Shenley Road (town centre), Borehamwood, Hertfordshire (representative point along Shenley Road in Borehamwood town centre as exact former bank building number not specified).",
+    "locationSource": "Hertsmere Borough Council news: 'Breaking Ground at the Jewish Life Centre' (2026-02-26) describing works on a former bank building on Shenley Road, Borehamwood.",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -133,7 +141,9 @@
         "datePublished": "2026-02-26",
         "summary": "Council news item reporting a ground-breaking ceremony and describing the redevelopment into a modern community facility in the town centre."
       }
-    ]
+    ],
+    "latitude": 51.6547,
+    "longitude": -0.2773
   },
   {
     "id": "gm-b002-e07000212-chertsey-hospital-cil-investment",
@@ -145,8 +155,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding package confirmed and delivery planned over the next two years with NHS partners.",
-    "locationDescription": "St Peter’s Hospital, Chertsey, Surrey",
-    "locationSource": "Runnymede Borough Council news",
+    "locationDescription": "St Peter’s Hospital (Ashford and St Peter’s Hospitals NHS Foundation Trust), Chertsey, Surrey",
+    "locationSource": "Project description and Runnymede Borough Council news item referencing St Peter’s Hospital in Chertsey",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -157,7 +167,9 @@
         "datePublished": "2025-11-12",
         "summary": "Council news item detailing CIL investment to upgrade the cardiac catheter lab and refurbish the neonatal intensive care unit at St Peter’s Hospital."
       }
-    ]
+    ],
+    "latitude": 51.3899,
+    "longitude": -0.5078
   },
   {
     "id": "gm-b002-e07000214-camberley-london-road-brownfield-demolition",
@@ -169,8 +181,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council reports enabling works starting; site preparation underway ahead of future redevelopment.",
-    "locationDescription": "London Road regeneration site, Camberley town centre, Surrey",
-    "locationSource": "Surrey Heath Borough Council news",
+    "locationDescription": "London Road regeneration (brownfield) site, Camberley town centre, Surrey Heath, Surrey",
+    "locationSource": "Surrey Heath Borough Council news release referencing the 'London Road site' in Camberley town centre",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -189,7 +201,9 @@
         "datePublished": "2024-07-05",
         "summary": "Council announcement outlining planned public realm improvements including lighting, green-roofed bus shelters and enhancements to key pedestrian routes."
       }
-    ]
+    ],
+    "latitude": 51.3378,
+    "longitude": -0.7441
   },
   {
     "id": "gm-b002-e07000046-bideford-public-art-wayfinding-sea-change",
@@ -201,8 +215,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Procurement notice published for delivery partners; project scope set and tendering underway.",
-    "locationDescription": "Bideford town centre, Devon",
-    "locationSource": "Find a Tender service notice (Torridge District Council)",
+    "locationDescription": "Bideford town centre, Devon (representative central point for Bideford).",
+    "locationSource": "Find a Tender notice 051301-2025 (Torridge District Council) describing works in Bideford town centre.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -213,7 +227,9 @@
         "datePublished": "2025-08-26",
         "summary": "Contract details notice inviting tenders for commissioning and delivery of public realm, wayfinding and gateway installation works in Bideford."
       }
-    ]
+    ],
+    "latitude": 51.0178,
+    "longitude": -4.2066
   },
   {
     "id": "gm-b002-e07000222-leamington-town-hall-creative-hub-phase-1",
@@ -226,7 +242,7 @@
     "status": "AMBER",
     "statusRationale": "Works reported as beginning; construction phase underway with planned completion in early 2025.",
     "locationDescription": "Leamington Spa Town Hall, The Parade, Royal Leamington Spa, Warwickshire",
-    "locationSource": "Warwick District Council news",
+    "locationSource": "Warwick District Council news (\"Town Hall rejuvenation to begin\", 2024-06-05) identifying Leamington Town Hall as the works site",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -237,7 +253,9 @@
         "datePublished": "2024-06-05",
         "summary": "Council news item confirming phase-one works to improve access and facilities at Leamington Town Hall as part of a future Creative Hub."
       }
-    ]
+    ],
+    "latitude": 52.2899,
+    "longitude": -1.5357
   },
   {
     "id": "gm-b002-e07000216-cranleigh-new-leisure-centre-planning-approved",
@@ -250,7 +268,7 @@
     "status": "AMBER",
     "statusRationale": "Planning permission secured; council progressing procurement and construction programme.",
     "locationDescription": "Cranleigh Leisure Centre site, Cranleigh, Surrey",
-    "locationSource": "Waverley Borough Council news",
+    "locationSource": "Waverley Borough Council news: 'Green light for new leisure centre in Cranleigh' (project described as on the Cranleigh Leisure Centre site)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -261,7 +279,9 @@
         "datePublished": "2025-03-06",
         "summary": "Council announcement confirming planning approval and outlining next steps and indicative delivery timescales."
       }
-    ]
+    ],
+    "latitude": 51.1427,
+    "longitude": -0.4849
   },
   {
     "id": "gm-b002-e07000238-ukspf-town-centre-and-parks-improvements",
@@ -273,9 +293,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Programme described as delivering tangible public realm improvements via UKSPF, with further work continuing through place boards and partners.",
-    "locationDescription": "Multiple town centres and parks across Wychavon District (including Pershore, Droitwich Spa and Evesham)",
-    "locationSource": "Local news reporting",
-    "locationConfidence": "LOW",
+    "locationDescription": "Wychavon District, Worcestershire (representative district-centre point near Pershore; project spans multiple town centres and parks including Pershore, Droitwich Spa and Evesham)",
+    "locationSource": "Project description and local news reporting (Evesham Observer, 2025-08-05) indicating improvements across Wychavon district rather than a single site",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -285,7 +305,9 @@
         "datePublished": "2025-08-05",
         "summary": "Local report summarising UKSPF-funded town centre and public space improvements across the district, referencing place boards and delivered initiatives."
       }
-    ]
+    ],
+    "latitude": 52.0924,
+    "longitude": -2.0157
   },
   {
     "id": "gm-b002-e07000144-sprowston-viking-community-building-refurbishment",
@@ -297,9 +319,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council reports the facility reopened following completion of refurbishment and extension works.",
-    "locationDescription": "Viking Community Building (former Viking Pub), Sprowston, Norfolk",
-    "locationSource": "Broadland and South Norfolk Councils news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Viking Community Building (former Viking Pub), Sprowston, Norfolk — representative point in Sprowston as the specific street address/site centroid is not provided in the evidence.",
+    "locationSource": "Broadland and South Norfolk Councils news article 'From pub to hub: new building renews community spirit in Sprowston' (2025-04-15) referencing the Viking Community Building in Sprowston.",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -309,7 +331,9 @@
         "datePublished": "2025-04-15",
         "summary": "Council news item describing completion of refurbishment/extension works and the building’s new role as a community hub funded via CIL."
       }
-    ]
+    ],
+    "latitude": 52.655,
+    "longitude": 1.337
   },
   {
     "id": "gm-b002-e07000106-herne-bay-sea-defences-upgrade",
@@ -321,8 +345,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council reported works starting with an expected delivery programme over the following weeks.",
-    "locationDescription": "Central Parade / Neptune car park area seafront, Herne Bay, Kent",
-    "locationSource": "Canterbury City Council newsroom",
+    "locationDescription": "Central Parade seafront by Neptune Car Park, Herne Bay, Kent (site centroid for the described sea defences works area)",
+    "locationSource": "Project description citing 'Central Parade / Neptune car park area seafront, Herne Bay, Kent' (Canterbury City Council Newsroom, 2025-03-18)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -333,7 +357,9 @@
         "datePublished": "2025-03-18",
         "summary": "Council announcement detailing the sea defences works, scope (rear wall, floodgates, resurfacing) and Environment Agency funding."
       }
-    ]
+    ],
+    "latitude": 51.3726,
+    "longitude": 1.1306
   },
   {
     "id": "gm-b002-e07000086-chickenhall-lane-materials-recovery-facility",
@@ -345,8 +371,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "County council decision documents and announcements indicate funding approval and progression toward procurement and construction phases.",
-    "locationDescription": "Chickenhall Lane, Eastleigh (materials recovery facility site)",
-    "locationSource": "Hampshire County Council news and decision records",
+    "locationDescription": "Chickenhall Lane Materials Recovery Facility site, Chickenhall Lane, Eastleigh, Hampshire",
+    "locationSource": "Project description and Hampshire County Council news/decision records referencing the MRF at Chickenhall Lane, Eastleigh",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -365,7 +391,9 @@
         "datePublished": "2025-04-28",
         "summary": "Decision record showing publication date and approval status for the MRF update and next steps for the Chickenhall Lane facility."
       }
-    ]
+    ],
+    "latitude": 50.9595,
+    "longitude": -1.3386
   },
   {
     "id": "gm-b002-e07000037-glossop-halls-regeneration",
@@ -377,9 +405,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council states works nearing completion with final fit-out and reopening preparations ongoing.",
-    "locationDescription": "Glossop Halls / Glossop Market Hall complex, Glossop, Derbyshire",
-    "locationSource": "High Peak Borough Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Glossop Halls / Glossop Market Hall civic complex, Glossop town centre, Derbyshire",
+    "locationSource": "High Peak Borough Council news item referencing Glossop Halls redevelopment (https://www.highpeak.gov.uk/article/8346/Public-gets-chance-to-tour-Glossop-Halls-redevelopment)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -389,7 +417,9 @@
         "datePublished": "2025-06-09",
         "summary": "Council update describing the redevelopment nearing reopening and the range of uses and spaces being created within the rejuvenated halls."
       }
-    ]
+    ],
+    "latitude": 53.4437,
+    "longitude": -1.9496
   },
   {
     "id": "gm-b002-e09000021-kingston-leisure-centre-construction-begins",
@@ -401,8 +431,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council and delivery partner communications indicate construction started with a multi-year programme through to opening.",
-    "locationDescription": "Kingston town centre leisure centre site (Kingfisher Leisure Centre), Kingston upon Thames, London",
-    "locationSource": "Royal Borough of Kingston upon Thames news listing and project partner release",
+    "locationDescription": "Kingfisher (Kingston) Leisure Centre site, Kingston town centre, Kingston upon Thames, London",
+    "locationSource": "Project description and currentLocationDescription referencing the Kingston town centre Kingfisher Leisure Centre site (Royal Borough of Kingston upon Thames news listing; Alliance Leisure release)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -421,7 +451,9 @@
         "datePublished": "2025-06-12",
         "summary": "Delivery partner release describing the start of construction and outlining the facility components and delivery team."
       }
-    ]
+    ],
+    "latitude": 51.4089,
+    "longitude": -0.2966
   },
   {
     "id": "gm-b002-e07000133-melton-town-centre-design-guidance-and-investment",
@@ -433,9 +465,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council reports funding allocated and projects progressing through consultation and implementation phases.",
-    "locationDescription": "Melton Mowbray town centre and Market Place, Leicestershire",
-    "locationSource": "Melton Borough Council news",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Market Place / town centre area, Melton Mowbray, Leicestershire",
+    "locationSource": "Project description and Melton Borough Council news items referencing Melton Mowbray town centre and market-related enhancements",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -453,7 +485,9 @@
         "datePublished": "2025-05-21",
         "summary": "Council announcement launching consultation on the Town Centre Design Guide intended to support improved shopfronts and streetscape quality."
       }
-    ]
+    ],
+    "latitude": 52.7659,
+    "longitude": -0.8862
   },
   {
     "id": "gm-b002-e07000220-rugby-central-intervention",
@@ -465,9 +499,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council reported active engagement and preparation for potential acquisition/joint venture/enforcement actions to unlock redevelopment.",
-    "locationDescription": "Rugby Central shopping centre and Brotherhood House site, Rugby town centre, Warwickshire",
-    "locationSource": "Rugby Borough Council news",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Rugby Central Shopping Centre, Rugby town centre, Rugby, Warwickshire",
+    "locationSource": "Rugby Borough Council news item: https://www.rugby.gov.uk/w/council-targets-rugby-central-buyout-to-unlock-town-s-transformation",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -477,6 +511,8 @@
         "datePublished": "2025-12-01",
         "summary": "Council news item describing plans to gain control of key assets to support town centre regeneration, including Rugby Central and Brotherhood House."
       }
-    ]
+    ],
+    "latitude": 52.3707,
+    "longitude": -1.2646
   }
 ]

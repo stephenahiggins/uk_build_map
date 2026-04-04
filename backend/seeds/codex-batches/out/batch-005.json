@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Evidence shows the scheme progressing through planning and consultation; construction timing is not confirmed in the cited sources.",
-    "locationDescription": "Stanton Regeneration Site / former Stanton Ironworks, Lows Lane, Stanton by Dale (New Stanton Park), Erewash",
-    "locationSource": "Stanton by Dale Parish Council planning consultation and Open Council Network meeting documents list",
+    "locationDescription": "Stanton Regeneration Site / former Stanton Ironworks (New Stanton Park), off Lows Lane near Stanton-by-Dale, Erewash, Derbyshire",
+    "locationSource": "Stanton by Dale Parish Council planning consultation notice for application ERE/0724/0011 and Erewash Borough Council planning committee papers listing the application at Stanton Regeneration Site (former Stanton Ironworks) on/near Lows Lane, Stanton by Dale",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -29,7 +29,9 @@
         "datePublished": "2024-09-18",
         "summary": "Meeting page listing Erewash Planning Committee documents for 18 September 2024, including an item report and plans for application 0724/0011, providing public confirmation of the application’s consideration."
       }
-    ]
+    ],
+    "latitude": 52.9299,
+    "longitude": -1.3076
   },
   {
     "id": "gm-b005-e07000088-gosport-peoples-park-waterfront",
@@ -41,8 +43,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council bulletins confirm demolition, secured investment and active landscaping works; later phases (including commercial units) are still to follow.",
-    "locationDescription": "Former Gosport bus station site, Gosport waterfront (People’s Park)",
-    "locationSource": "Gosport Borough Council GovDelivery bulletins (Coastline newsletters)",
+    "locationDescription": "Former Gosport waterfront bus station site being redeveloped as “People’s Park”, adjacent to Gosport Ferry terminal on the waterfront, Gosport, Hampshire.",
+    "locationSource": "Project description and Gosport Borough Council GovDelivery ‘Coastline’ bulletins describing the site as the former Gosport waterfront bus station site (People’s Park).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -77,7 +79,9 @@
         "datePublished": "2026-03-24",
         "summary": "Council bulletin confirming core landscaping and infrastructure works are underway for Phase One following demolition and clearance, with an indicative completion and summer opening timeline and follow-on Phase Two plans."
       }
-    ]
+    ],
+    "latitude": 50.7947,
+    "longitude": -1.1267
   },
   {
     "id": "gm-b005-e07000121-eden-project-morecambe-delivery",
@@ -89,8 +93,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding releases and planning approval are confirmed, but construction and delivery remain subject to ongoing procurement, finalisation and build programme.",
-    "locationDescription": "Central promenade, Morecambe (former Bubbles leisure complex site)",
-    "locationSource": "Lancaster City Council news and ITV News Granada reporting",
+    "locationDescription": "Eden Project Morecambe site on the central promenade, Morecambe (former Bubbles leisure complex site), Lancashire",
+    "locationSource": "Project description and cited Lancaster City Council updates/ITV News Granada referring to the Eden Project Morecambe on Morecambe’s central promenade at the former Bubbles site",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -117,7 +121,9 @@
         "datePublished": "2026-02-17",
         "summary": "Report that Lancaster councillors approved updated plans for Eden Project Morecambe, describing the revised concept and noting earlier permission and subsequent variation sought due to changing factors."
       }
-    ]
+    ],
+    "latitude": 54.0699,
+    "longitude": -2.8691
   },
   {
     "id": "gm-b005-e07000038-clay-cross-town-centre-regeneration",
@@ -129,8 +135,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The council reports a disruption to delivery (contractor ceased works) but also states arrangements are being progressed to restart and complete the regeneration programme.",
-    "locationDescription": "Market Street / Bridge Street area and town centre (including Baileys Square), Clay Cross, North East Derbyshire",
-    "locationSource": "Clay Cross Town Deal updates (North East Derbyshire District Council programme site)",
+    "locationDescription": "Clay Cross town centre regeneration area around Market Street / Bridge Street and the new Baileys Square, Clay Cross, North East Derbyshire, Derbyshire",
+    "locationSource": "Project description and Clay Cross Town Deal updates referencing town centre works and Baileys Square (evidence items 1–3)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -157,7 +163,9 @@
         "datePublished": "2026-02-24",
         "summary": "North East Derbyshire District Council update stating Inside Limited has ceased works; the council is focusing on public safety and traffic management and progressing arrangements to enable works to continue."
       }
-    ]
+    ],
+    "latitude": 53.1649,
+    "longitude": -1.4157
   },
   {
     "id": "gm-b005-e07000122-pendle-rise-demolition-and-redevelopment",
@@ -169,9 +177,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council updates and procurement notices confirm preparations and contract award for demolition, with redevelopment and subsequent construction still to follow.",
-    "locationDescription": "Pendle Rise Shopping Centre site, Nelson town centre, Pendle",
-    "locationSource": "Pendle Borough Council news and Find a Tender contract award notice",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Pendle Rise Shopping Centre site, Nelson town centre, Pendle (Lancashire)",
+    "locationSource": "Pendle Borough Council project updates and Find a Tender notice refer explicitly to demolition of Pendle Rise Shopping Centre in Nelson town centre",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -197,7 +205,9 @@
         "datePublished": "2026-03-09",
         "summary": "Council update describing final utility disconnections, strip-out/asbestos removal, and planned demolition timing and the intended replacement scheme components."
       }
-    ]
+    ],
+    "latitude": 53.8347,
+    "longitude": -2.2153
   },
   {
     "id": "gm-b005-e07000044-totnes-market-square-steps-repairs",
@@ -209,9 +219,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "The council announced the works with a stated three-week delivery window, indicating short, defined delivery activity rather than early-stage planning.",
-    "locationDescription": "Totnes Market Square steps, Totnes, South Hams",
-    "locationSource": "South Hams District Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Totnes Market Square steps (Market Square), Totnes, South Hams, Devon",
+    "locationSource": "South Hams District Council news article: https://www.southhams.gov.uk/news/2025/revamp-totnes-market-steps-begins-next-week",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -221,7 +231,9 @@
         "datePublished": "2025-02-25",
         "summary": "Council announcement of concrete repair works starting 3 March 2025, expected to last three weeks, to strengthen the market square steps structure."
       }
-    ]
+    ],
+    "latitude": 50.4316,
+    "longitude": -3.6848
   },
   {
     "id": "gm-b005-e07000126-leyland-town-deal-market-square-and-commercial-buildings",
@@ -233,8 +245,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council announcements confirm enabling works have started and delivery is underway, but the overall programme completion and full build-out remain in progress.",
-    "locationDescription": "Ecroyd Street car park / Leyland town centre market square development site, Leyland",
-    "locationSource": "South Ribble Borough Council news",
+    "locationDescription": "Ecroyd Street car park site (Leyland town centre market square and commercial buildings enabling works), Leyland, South Ribble, Lancashire",
+    "locationSource": "South Ribble Borough Council news (Leyland Town Deal works continue, 2026-01-13) referencing the 'Ecroyd Street car park site' in Leyland town centre",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -253,7 +265,9 @@
         "datePublished": "2026-01-13",
         "summary": "Council announcement that enabling works for a new market square and commercial buildings on the Ecroyd Street car park site will begin on 19 January, describing the intended town centre transformation."
       }
-    ]
+    ],
+    "latitude": 53.6947,
+    "longitude": -2.6899
   },
   {
     "id": "gm-b005-e07000196-i54-jlr-site-expansion-and-waste-facility",
@@ -265,9 +279,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Public reporting indicates planning-stage and approval milestones, but delivery, build programme and operational start depend on subsequent implementation.",
-    "locationDescription": "i54 South Staffordshire employment site (Coven/Featherstone area, near M54 J2)",
-    "locationSource": "Local news reporting on planning approvals at i54 South Staffordshire",
-    "locationConfidence": "LOW",
+    "locationDescription": "i54 South Staffordshire employment site / JLR Engine Manufacturing Centre area (Coven/Featherstone, near M54 Junction 2)",
+    "locationSource": "Project description and local news references to the i54 site next to Jaguar Land Rover engine plant near Coven (South Staffordshire)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -285,7 +299,9 @@
         "datePublished": "2025-09-19",
         "summary": "Local news report stating planning approval for a waste processing facility next to the Jaguar Land Rover plant at i54, indicating an approved enabling/support facility for the industrial site."
       }
-    ]
+    ],
+    "latitude": 52.6338,
+    "longitude": -2.1807
   },
   {
     "id": "gm-b005-e07000198-leek-levelling-up-programme",
@@ -297,8 +313,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council updates state some elements are complete while others are underway; overall programme delivery continues over multiple years.",
-    "locationDescription": "Leek town centre: MyActive Leek (Brough Park), Butter and Trestle Market Halls, and Nicholson Institute",
-    "locationSource": "Staffordshire Moorlands District Council programme pages",
+    "locationDescription": "Leek town centre, Staffordshire (representative centroid covering MyActive Leek/Brough Park Leisure Centre, Butter & Trestle Market Halls, and the Nicholson Institute).",
+    "locationSource": "Staffordshire Moorlands District Council Levelling Up Fund programme pages describing the projects as located in Leek town centre.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -317,7 +333,9 @@
         "datePublished": "2025-10-03",
         "summary": "Council update confirming the refurbished Butter and Trestle markets re-opened in November 2024 and summarising works delivered including new units, improved entrances, heating/insulation, CCTV and other upgrades."
       }
-    ]
+    ],
+    "latitude": 53.1046,
+    "longitude": -2.0228
   },
   {
     "id": "gm-b005-e07000243-stevenage-station-gateway-development-agreement",
@@ -329,9 +347,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council updates confirm agreement milestones and intended outputs, but delivery requires ongoing design, planning and construction phases.",
-    "locationDescription": "Stevenage railway station area and connection to town centre (Station Gateway)",
-    "locationSource": "Stevenage Borough Council news",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Stevenage railway station (Station Gateway regeneration area linking the station to Stevenage town centre), Stevenage, Hertfordshire",
+    "locationSource": "Project description and Stevenage Borough Council news referring to the 'Stevenage Station Gateway' around Stevenage railway station",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -349,7 +367,9 @@
         "datePublished": "2026-03-24",
         "summary": "Council update describing the Station Gateway as a regeneration opportunity and noting the development agreement with Muse supported by ECF, as part of the broader town centre regeneration programme."
       }
-    ]
+    ],
+    "latitude": 51.9026,
+    "longitude": -0.2047
   },
   {
     "id": "gm-b005-e07000116-royal-victoria-place-masterplan-and-redevelopment",
@@ -361,8 +381,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council consultation materials set out a preferred masterplan direction; delivery depends on future approvals, funding and implementation decisions.",
-    "locationDescription": "Royal Victoria Place shopping centre, Royal Tunbridge Wells",
-    "locationSource": "Tunbridge Wells Borough Council consultation and planning-related pages",
+    "locationDescription": "Royal Victoria Place (RVP) shopping centre, Royal Tunbridge Wells, Kent",
+    "locationSource": "Tunbridge Wells Borough Council major sites pages for the Royal Victoria Place redevelopment masterplan and related planning/appeal information",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -381,7 +401,9 @@
         "datePublished": "2024-06-10",
         "summary": "Council page referencing an appeal decision for replacing the multi-storey car park and using the site for development, providing context for town centre redevelopment constraints and next steps."
       }
-    ]
+    ],
+    "latitude": 51.1338,
+    "longitude": 0.2649
   },
   {
     "id": "gm-b005-e07000229-teville-gate-start-on-site",
@@ -393,8 +415,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council news confirms a delivery milestone (work started), but the scheme is multi-phase and ongoing.",
-    "locationDescription": "Teville Gate area, Worthing town centre",
-    "locationSource": "Worthing Borough Council news",
+    "locationDescription": "Teville Gate area by Worthing railway station (town centre gateway redevelopment), Worthing, West Sussex",
+    "locationSource": "Worthing Borough Council news article: https://www.worthing.gov.uk/news/article/781/work-starts-at-teville-gate",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -405,7 +427,9 @@
         "datePublished": "2025-05-27",
         "summary": "Council announcement that work has started on the Teville Gate redevelopment, positioning it as a significant town centre regeneration project."
       }
-    ]
+    ],
+    "latitude": 50.8158,
+    "longitude": -0.3719
   },
   {
     "id": "gm-b005-e07000105-park-mall-demolition-and-interim-car-park",
@@ -417,9 +441,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council decisions and communications confirm intent to proceed and tenant timelines, but demolition and subsequent redevelopment remain to be delivered.",
-    "locationDescription": "Park Mall Shopping Centre site and associated car parks, Ashford town centre",
-    "locationSource": "Ashford Borough Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Park Mall Shopping Centre site (Park Mall), Ashford town centre, Kent",
+    "locationSource": "Ashford Borough Council news pages describing demolition of Park Mall Shopping Centre in Ashford town centre (evidence items 1 and 2)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -437,7 +461,9 @@
         "datePublished": "2025-03-28",
         "summary": "Council update extending tenant occupation to 9 January 2026 and stating that contractors will be scheduled to commence demolition works shortly after achieving possession of the site."
       }
-    ]
+    ],
+    "latitude": 51.1489,
+    "longitude": 0.8736
   },
   {
     "id": "gm-b005-e07000234-bromsgrove-transport-and-town-centre-improvements",
@@ -449,9 +475,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "County-led scheme pages and local authority documents indicate ongoing delivery and programme activity rather than a completed, closed project.",
-    "locationDescription": "Bromsgrove urban area (key highway corridors and junctions)",
-    "locationSource": "Worcestershire County Council scheme pages and Bromsgrove District Council committee papers",
-    "locationConfidence": "LOW",
+    "locationDescription": "Worcester Road Roundabout, Bromsgrove, Worcestershire (representative site point for Bromsgrove transport/junction improvement works)",
+    "locationSource": "Worcestershire County Council scheme page: 'Worcester Road Roundabout improvements' (Bromsgrove)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -477,7 +503,9 @@
         "datePublished": "2025-02-28",
         "summary": "District council update referencing funding allocations including for regeneration and infrastructure priorities, providing context for local investment decisions."
       }
-    ]
+    ],
+    "latitude": 52.3356,
+    "longitude": -2.0596
   },
   {
     "id": "gm-b005-e09000016-rainham-and-beam-park-regeneration-and-bridge-close-cpo",
@@ -489,8 +517,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council updates confirm governance and delivery actions (JV restructuring and CPO steps), but full regeneration outcomes depend on subsequent funding, land assembly and delivery phases.",
-    "locationDescription": "Rainham and Beam Park (A1306 corridor) and Bridge Close, Romford, Havering",
-    "locationSource": "London Borough of Havering news and democracy decisions pages",
+    "locationDescription": "Bridge Close regeneration area, Romford (London Borough of Havering). Representative point placed in Romford town centre due to multiple project areas spanning Havering, including Rainham & Beam Park and Bridge Close.",
+    "locationSource": "Project description and Havering Council Democracy item referencing Bridge Close regeneration in Romford; combined with stated focus on Rainham & Beam Park along the A1306 corridor.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -509,7 +537,9 @@
         "datePublished": "2025-12-10",
         "summary": "Cabinet agenda item page for 10 December 2025 describing the Bridge Close Regeneration report to make a compulsory purchase order (CPO), evidencing formal decision-making to progress the scheme."
       }
-    ]
+    ],
+    "latitude": 51.5813,
+    "longitude": 0.1831
   },
   {
     "id": "gm-b005-e09000019-holloway-park-topping-out-phase-one",
@@ -521,9 +551,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The cited sources confirm a construction milestone (topping out) and planned delivery timeline, indicating the scheme remains under construction.",
-    "locationDescription": "Former Holloway Prison site (Holloway Park), Parkhurst Road area, Islington",
-    "locationSource": "Peabody and AHMM updates referencing Islington Council partnership",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Holloway Park redevelopment site (former HM Prison Holloway), Parkhurst Road area, Holloway, London Borough of Islington, London",
+    "locationSource": "Project description and evidence identify the specific site as the former Holloway Prison (Holloway Park) on/around Parkhurst Road in Islington",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -541,7 +571,9 @@
         "datePublished": "2025-10-20",
         "summary": "Architect update describing the phase one topping out milestone, overall scale (homes and community assets) and intended completion timeframe for first homes."
       }
-    ]
+    ],
+    "latitude": 51.5529,
+    "longitude": -0.1167
   },
   {
     "id": "gm-b005-e06000038-reading-transport-delivery-plan-2026-2030",
@@ -553,9 +585,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The plan sets out a multi-year pipeline of schemes; delivery will be staged across the plan period and depends on project-by-project implementation.",
-    "locationDescription": "Reading (town-wide transport corridors and active travel network)",
-    "locationSource": "Reading Borough Council transport strategy pages",
-    "locationConfidence": "LOW",
+    "locationDescription": "Reading town centre (representative centroid for Reading Borough-wide transport corridors and active travel/public realm schemes)",
+    "locationSource": "Reading Borough Council – Reading Transport Strategy 2040: Transport Delivery Plan 2026–2030 pages indicate a town-wide programme across Reading",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -573,7 +605,9 @@
         "datePublished": "2023-09-11",
         "summary": "Council overview of active travel initiatives and delivered schemes, providing context for the ongoing walking and cycling programme referenced by the transport strategy."
       }
-    ]
+    ],
+    "latitude": 51.4543,
+    "longitude": -0.9781
   },
   {
     "id": "gm-b005-e07000125-rawtenstall-gyratory-and-bacup-market-investment",
@@ -585,8 +619,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "The cited sources indicate ongoing delivery and phased works rather than a fully completed programme across both interventions.",
-    "locationDescription": "Rawtenstall town centre gyratory and Bacup Market, Rossendale",
-    "locationSource": "Lancashire County Council scheme page and Rossendale Borough Council update",
+    "locationDescription": "Rawtenstall town centre (gyratory area), Rossendale, Lancashire",
+    "locationSource": "Project location description referencing the Lancashire County Council Rawtenstall gyratory scheme page; representative town-centre point used as a single centroid for the combined Rawtenstall/Bacup works.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -605,6 +639,8 @@
         "datePublished": "2025-11-12",
         "summary": "Borough council update on roof works and progress at Bacup Market, indicating ongoing investment in the market building as a civic/town centre asset."
       }
-    ]
+    ],
+    "latitude": 53.7046,
+    "longitude": -2.2833
   }
 ]

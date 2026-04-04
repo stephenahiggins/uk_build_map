@@ -1,13 +1,15 @@
 # Growth Map Codex Batch 8
 
+You are working in the backend app root. Treat `seeds/` as the correct relative directory; do not prepend an extra `backend/`.
+
 Research under-covered local authorities using deterministic, public-source evidence only.
 
 ## Authority List
 
 | localAuthorityId | name | code | regionName | countryCode |
 |------------------|------|------|------------|-------------|
-| 31455f7b-45c1-43a5-98ef-9c65fd7472ca | South Derbyshire | E07000039 | East Midlands | ENGLAND |
 | 4913c47e-4926-4305-ba51-1f01707f1d0b | Sutton | E09000029 | London | ENGLAND |
+| 82cc34ae-9c27-4790-b415-124b6faf1593 | Torbay | E06000027 | Unassigned | ENGLAND |
 | 5d1ac344-2735-4c65-8dab-54b3e922fcb7 | West Berkshire | E06000037 | South East | ENGLAND |
 | 88edbc2c-c927-4f71-9179-f6e2d1886ef1 | Cherwell | E07000177 | South East | ENGLAND |
 | bc34f0f3-2116-4264-8840-e806a29b7cba | East Devon | E07000040 | South West | ENGLAND |
@@ -28,9 +30,21 @@ Research under-covered local authorities using deterministic, public-source evid
 ## Scope
 
 - Find verifiable infrastructure, regeneration, transport, utilities, civic estate, or flood-resilience projects.
+- Also look for obvious named sites and destination-led schemes inside each authority: heritage assets, landmarks, visitor attractions, waterfronts, stations, ports, town-centre gateways, major roads, hospitals, campuses, and world-heritage or nationally significant sites.
+- Include projects led by councils, combined authorities, arm's-length bodies, National Highways, Network Rail, the Planning Inspectorate/DCO process, or central government where the project is physically located in the listed authority.
+- Do not stop at generic council search terms. For each authority, explicitly try site-led searches such as "<authority> tunnel", "<authority> station redevelopment", "<authority> bypass", "<authority> town deal", "<authority> levelling up", "<authority> heritage restoration", "<authority> castle", "<authority> waterfront", "<authority> museum", "<authority> market hall", "<authority> world heritage", and "<authority> planning inspectorate".
+- Prioritise projects that would be obvious to a local resident or reporter, including controversial or delayed schemes, not just live procurements.
 - Prefer official local authority, combined authority, Planning Inspectorate, Contracts Finder, Find a Tender, or reputable local news sources.
 - Prioritise projects with evidence from the last 24 months.
 - Do not invent URLs or citations.
+
+## Search Heuristics
+
+- Start broad, then narrow to named sites. If an authority has a famous place, search the place name directly rather than relying only on the authority name.
+- Prefer the most specific project title you can evidence, for example a named road scheme, station redevelopment, harbour programme, castle restoration, or tunnel proposal.
+- Capture nationally significant projects that sit within a local authority boundary even if the sponsoring body is national rather than local.
+- If multiple sources discuss the same obvious site, consolidate them into one project with stronger evidence instead of emitting several near-duplicates.
+- Where a project is high-profile but stalled, litigated, or awaiting consent, keep it and set status/statusRationale accordingly.
 
 ## Output
 
@@ -48,4 +62,4 @@ Return only a JSON array. Each object should include:
 - `latitude`, `longitude`, `locationDescription`, `locationSource`, `locationConfidence` when supported by evidence
 - `evidence`: array with `type`, `title`, `source`, `url`, `datePublished`, `summary`
 
-Save the JSON array to `backend/seeds/codex-batches/out/batch-008.json`.
+Save the JSON array to `seeds/codex-batches/out/batch-008.json`.

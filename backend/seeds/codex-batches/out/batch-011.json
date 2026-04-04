@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A tender notice and a subsequent award notice have been published, indicating the solar PV servicing and maintenance contract is in delivery.",
-    "locationDescription": "Babergh District (solar PV installations maintained by Babergh District Council and Mid Suffolk District Council)",
-    "locationSource": "Find a Tender (Babergh District Council / Mid Suffolk District Council) and Contracts Finder award notice",
+    "locationDescription": "Representative central point for Babergh District, Suffolk (covering council estate solar PV installations across Babergh; joint contract with Mid Suffolk).",
+    "locationSource": "Project description and Find a Tender / Contracts Finder notices indicating scope across Babergh District Council (and Mid Suffolk) estates; no single named facility provided.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -29,7 +29,9 @@
         "datePublished": "2025-02-04",
         "summary": "Award notice confirming contract award for solar PV servicing, repairs and maintenance for Babergh District Council and Mid Suffolk District Council."
       }
-    ]
+    ],
+    "latitude": 52.056,
+    "longitude": 0.721
   },
   {
     "id": "gm-b011-e06000019-herefordshire-highways-infrastructure-professional-services-contract",
@@ -41,8 +43,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A tender notice and contract award notice have been published, indicating the professional services contract has been awarded and is in delivery.",
-    "locationDescription": "Herefordshire (highways and infrastructure programme)",
-    "locationSource": "Find a Tender (Herefordshire Council notices 2025/S 000-049467 and 2025/S 000-084384)",
+    "locationDescription": "Herefordshire Council highways and infrastructure programme across Herefordshire; representative point set to Hereford (county town) town centre.",
+    "locationSource": "Project described only at county level ('Herefordshire') in Find a Tender notices 2025/S 000-049467 and 2025/S 000-084384.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -61,7 +63,9 @@
         "datePublished": "2025-12-18",
         "summary": "Contract award notice confirming award of Herefordshire Council’s professional services contract to support highways and infrastructure delivery."
       }
-    ]
+    ],
+    "latitude": 52.0567,
+    "longitude": -2.716
   },
   {
     "id": "gm-b011-e06000034-thurrock-tarmacadam-supply-contract",
@@ -73,8 +77,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A tender notice and subsequent award notice have been published, indicating the supply contract supporting highway works is in delivery.",
-    "locationDescription": "Thurrock (highway maintenance and works requiring tarmacadam supply)",
-    "locationSource": "Find a Tender (Thurrock Council notices 2025/S 000-065269 and 2025/S 000-079887)",
+    "locationDescription": "Thurrock borough, Essex (representative point: Grays town centre, Thurrock Council’s main administrative centre area)",
+    "locationSource": "Project description and Find a Tender notices indicating works/supply across Thurrock borough (Find a Tender notice references: 2025/S 000-065269 and 2025/S 000-079887)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -93,7 +97,9 @@
         "datePublished": "2025-12-01",
         "summary": "Contract award notice confirming award of Thurrock Council’s tarmacadam supply contract."
       }
-    ]
+    ],
+    "latitude": 51.4781,
+    "longitude": 0.3314
   },
   {
     "id": "gm-b011-e08000001-bolton-highways-construction-framework-2024-2028",
@@ -105,8 +111,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract notice and subsequent award notice have been published, indicating the highways construction framework has been established and is available for call-offs.",
-    "locationDescription": "Bolton (borough-wide highways works)",
-    "locationSource": "Find a Tender (Bolton Council notices 2024/S 000-017420 and 2025/S 000-013196)",
+    "locationDescription": "Bolton Metropolitan Borough (borough-wide highways works); representative point set to Bolton town centre.",
+    "locationSource": "Project description and Find a Tender notices indicating borough-wide works in Bolton (Bolton Council).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -125,7 +131,9 @@
         "datePublished": "2025-03-14",
         "summary": "Contract award notice confirming the establishment and award of the highways construction framework for 2024–2028."
       }
-    ]
+    ],
+    "latitude": 53.5769,
+    "longitude": -2.4282
   },
   {
     "id": "gm-b011-e07000087-fareham-west-street-public-realm-improvements-tender",
@@ -137,9 +145,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Planned procurement and tender notices have been published; delivery depends on the procurement outcome and subsequent construction programme.",
-    "locationDescription": "West Street and town centre public realm, Fareham",
-    "locationSource": "Find a Tender (Fareham Borough Council notices 2025/S 000-044895 and 2025/S 000-044992)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "West Street, Fareham town centre, Fareham, Hampshire",
+    "locationSource": "Find a Tender notices 2025/S 000-044895 and 2025/S 000-044992 (Fareham Borough Council) referencing West Street and adjacent town-centre public realm in Fareham",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -157,7 +165,9 @@
         "datePublished": "2025-07-10",
         "summary": "Tender notice for West Street / town-centre public realm improvements as part of Fareham’s regeneration strategy."
       }
-    ]
+    ],
+    "latitude": 50.8509,
+    "longitude": -1.1788
   },
   {
     "id": "gm-b011-e07000194-lichfield-dfg-adaptations-building-works-framework",
@@ -169,8 +179,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract notice and contract award notice have been published, indicating the DFG adaptations framework has been established and is available for call-offs.",
-    "locationDescription": "Lichfield District (DFG adaptations and associated building works in eligible homes)",
-    "locationSource": "Find a Tender (Lichfield District Council notices 2025/S 000-004384 and 2025/S 000-056711)",
+    "locationDescription": "Lichfield District, Staffordshire (representative centroid using Lichfield city centre as the district’s administrative hub for DFG adaptations delivered across the district).",
+    "locationSource": "Find a Tender notices 2025/S 000-004384 and 2025/S 000-056711 (Lichfield District Council) stating works are across Lichfield District; coordinates set to a representative central point for Lichfield.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -189,7 +199,9 @@
         "datePublished": "2025-09-15",
         "summary": "Contract award notice confirming award of the DFG adaptations and associated building works framework for Lichfield District Council."
       }
-    ]
+    ],
+    "latitude": 52.6816,
+    "longitude": -1.8291
   },
   {
     "id": "gm-b011-e07000149-south-norfolk-hethel-technology-park-infrastructure-works-roundabout-access",
@@ -201,8 +213,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A tender notice and a subsequent award notice have been published, indicating the infrastructure works contract at Hethel Technology Park has been awarded and is in delivery.",
-    "locationDescription": "Hethel Technology Park and surrounding highway links, Norfolk",
-    "locationSource": "Find a Tender (South Norfolk Council notices 2025/S 000-021843 and 2025/S 000-078688)",
+    "locationDescription": "Hethel Technology Park, Hethel (near Wymondham), South Norfolk, Norfolk",
+    "locationSource": "Project description and Find a Tender notices referencing 'Infrastructure Works at Hethel Technology Park' (South Norfolk Council; 2025/S 000-021843 and 2025/S 000-078688)",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -221,7 +233,9 @@
         "datePublished": "2025-12-01",
         "summary": "Contract award notice confirming award of South Norfolk Council’s infrastructure works contract at Hethel Technology Park."
       }
-    ]
+    ],
+    "latitude": 52.4999,
+    "longitude": 1.1783
   },
   {
     "id": "gm-b011-e08000030-walsall-temporary-accommodation-building-maintenance-reactive-repairs",
@@ -233,8 +247,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract notice and later award notice have been published, indicating the building maintenance contract supporting temporary accommodation sites has been awarded and is in delivery.",
-    "locationDescription": "Walsall (council-managed temporary accommodation buildings)",
-    "locationSource": "Find a Tender (Walsall Council notices 2024/S 000-021727 and 2026/S 000-016859)",
+    "locationDescription": "Walsall, West Midlands (representative centroid for Walsall Council temporary accommodation buildings)",
+    "locationSource": "Project description and Find a Tender notices 2024/S 000-021727 and 2026/S 000-016859 (Walsall Council) indicating works across Walsall Council temporary accommodation buildings; no specific site given",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -253,7 +267,9 @@
         "datePublished": "2026-02-25",
         "summary": "Contract award notice confirming award of the temporary accommodation building maintenance contract for Walsall Council."
       }
-    ]
+    ],
+    "latitude": 52.5853,
+    "longitude": -1.9823
   },
   {
     "id": "gm-b011-e08000032-bradford-general-highways-projects-framework",
@@ -265,8 +281,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract details notice has been published setting out an established framework for highways projects.",
-    "locationDescription": "Bradford District (general highways projects)",
-    "locationSource": "Find a Tender (City of Bradford Metropolitan District Council contract details notice 2025/S 000-069446)",
+    "locationDescription": "City of Bradford Metropolitan District (representative central point: Bradford city centre)",
+    "locationSource": "Find a Tender notice 2025/S 000-069446 indicates works across the City of Bradford Metropolitan District",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -277,7 +293,9 @@
         "datePublished": "2025-10-29",
         "summary": "Contract details notice describing a framework of contractors to deliver general highways projects for City of Bradford Metropolitan District Council."
       }
-    ]
+    ],
+    "latitude": 53.795,
+    "longitude": -1.759
   },
   {
     "id": "gm-b011-e07000244-east-suffolk-passive-fire-safety-works-council-residential-buildings",
@@ -289,9 +307,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract notice and a subsequent award notice have been published, indicating the council’s passive fire safety works contract has been awarded and is in delivery.",
-    "locationDescription": "East Suffolk (retired living schemes and other council-owned residential buildings)",
-    "locationSource": "Contracts Finder contract notice and Find a Tender contract award notice for East Suffolk Council",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "East Suffolk district, Suffolk (representative central point for the council area; works across multiple council-owned retired living schemes and residential buildings).",
+    "locationSource": "Contracts Finder contract notice and Find a Tender contract award notice for East Suffolk Council; project location described only as 'East Suffolk' across multiple sites (no specific addresses).",
+    "locationConfidence": "LOW",
     "evidence": [
       {
         "type": "URL",
@@ -309,7 +327,9 @@
         "datePublished": "2025-04-10",
         "summary": "Contract award notice confirming award of East Suffolk Council’s passive fire safety works contract (compartmentation, fire stopping and fire door repairs/installations)."
       }
-    ]
+    ],
+    "latitude": 52.1872,
+    "longitude": 1.492
   },
   {
     "id": "gm-b011-e08000011-knowsley-halewood-leisure-centre-decarbonisation-refurbishment",
@@ -321,9 +341,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A contract details notice has been published, but delivery outcomes depend on mobilisation and completion of refurbishment and decarbonisation works on site.",
-    "locationDescription": "Halewood Leisure Centre, Knowsley",
-    "locationSource": "Find a Tender (Knowsley Council contract details notice 2025/S 000-077217)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Halewood Leisure Centre, Halewood, Knowsley, Merseyside",
+    "locationSource": "Find a Tender (Knowsley Council contract details notice 2025/S 000-077217) referencing works at 'Halewood Leisure Centre'",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -333,7 +353,9 @@
         "datePublished": "2025-11-26",
         "summary": "Contract details notice describing Knowsley Council’s contract for decarbonisation and refurbishment works at Halewood Leisure Centre."
       }
-    ]
+    ],
+    "latitude": 53.3639,
+    "longitude": -2.8366
   },
   {
     "id": "gm-b011-e06000013-north-lincolnshire-traffic-signal-term-maintenance-2025-2029",
@@ -345,8 +367,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A tender notice and contract award notice have been published, indicating the traffic signal maintenance contract has been awarded and is in delivery.",
-    "locationDescription": "North Lincolnshire (traffic signal sites across the council area)",
-    "locationSource": "Find a Tender (North Lincolnshire Council notices 2025/S 000-015252 and 2025/S 000-049130)",
+    "locationDescription": "North Lincolnshire Council area (representative point at Scunthorpe town centre, the principal settlement in North Lincolnshire)",
+    "locationSource": "Project location described as 'North Lincolnshire (traffic signal sites across the council area)' in Find a Tender notices 2025/S 000-015252 and 2025/S 000-049130",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -365,7 +387,9 @@
         "datePublished": "2025-08-15",
         "summary": "Contract award notice confirming award of North Lincolnshire Council’s traffic signal term maintenance services contract."
       }
-    ]
+    ],
+    "latitude": 53.5886,
+    "longitude": -0.6544
   },
   {
     "id": "gm-b011-e07000012-south-cambridgeshire-waterbeach-renewable-energy-network-wren",
@@ -377,8 +401,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A tender and award notice have been published, but delivery outcomes depend on design, construction and commissioning of the integrated renewable energy and storage solution.",
-    "locationDescription": "Waterbeach area, South Cambridgeshire (renewable energy generation, storage and grid infrastructure)",
-    "locationSource": "Find a Tender (South Cambridgeshire District Council notices 2025/S 000-020244 and 2025/S 000-051199)",
+    "locationDescription": "Waterbeach, South Cambridgeshire, Cambridgeshire (representative central point for the Waterbeach area where the WREN solar PV, storage and associated grid infrastructure is described as being located).",
+    "locationSource": "Project description and Find a Tender notices 2025/S 000-020244 and 2025/S 000-051199 indicating the project is at/for Waterbeach (South Cambridgeshire).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -397,7 +421,9 @@
         "datePublished": "2025-08-21",
         "summary": "Contract award notice confirming award of South Cambridgeshire District Council’s WREN procurement for an integrated renewable energy and storage solution at Waterbeach."
       }
-    ]
+    ],
+    "latitude": 52.2675,
+    "longitude": 0.1885
   },
   {
     "id": "gm-b011-e06000030-swindon-mill-lane-aqueduct-repairs-2025",
@@ -409,9 +435,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A tender notice has been published; delivery depends on contract award and completion of the aqueduct repair works.",
-    "locationDescription": "Mill Lane aqueduct, Swindon",
-    "locationSource": "Find a Tender (Swindon Borough Council tender notice 2025/S 000-030154)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Approximate central point for Swindon, Wiltshire, used as a representative location for the Mill Lane aqueduct repairs where the specific aqueduct site is not uniquely identifiable from the provided evidence.",
+    "locationSource": "Find a Tender notice 030154-2025 (Swindon Borough Council) provides 'Mill Lane aqueduct, Swindon' but no precise coordinates; Swindon town centre used as fallback.",
+    "locationConfidence": "LOW",
     "evidence": [
       {
         "type": "URL",
@@ -421,7 +447,9 @@
         "datePublished": "2025-06-04",
         "summary": "Tender notice for repair works to the Mill Lane aqueduct, published by Swindon Borough Council."
       }
-    ]
+    ],
+    "latitude": 51.5609,
+    "longitude": -1.7806
   },
   {
     "id": "gm-b011-e06000043-brighton-hove-brighton-marina-to-river-adur-coastal-scheme-phase-1",
@@ -433,9 +461,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A tender and award notice have been published, but flood/coastal resilience benefits depend on construction and completion of coastal defence works along the shoreline.",
-    "locationDescription": "Brighton & Hove coastline between Brighton Marina and the River Adur",
-    "locationSource": "Find a Tender (Brighton & Hove City Council notices 2025/S 000-018829 and 2025/S 000-050606)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Representative midpoint on the Brighton & Hove seafront between Brighton Marina and the River Adur (approx. central Brighton seafront near Hove Lawns/West Pier area).",
+    "locationSource": "Project description and Find a Tender notices describing works along the Brighton Marina to River Adur coastline (BHCC notices 2025/S 000-018829 and 2025/S 000-050606).",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -453,7 +481,9 @@
         "datePublished": "2025-08-07",
         "summary": "Contract award notice confirming award of Phase 1 coastal defence works for the Brighton Marina to River Adur Coastal Scheme."
       }
-    ]
+    ],
+    "latitude": 50.8275,
+    "longitude": -0.184
   },
   {
     "id": "gm-b011-e06000041-wokingham-loddon-valley-garden-village-strategic-design-code",
@@ -465,9 +495,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A contract details notice has been published, indicating an awarded contract to deliver the strategic design code work.",
-    "locationDescription": "Loddon Valley Garden Village, Wokingham Borough",
-    "locationSource": "Find a Tender (Wokingham Borough Council contract details notice 2025/S 000-059023)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Representative centroid for the Loddon Valley Garden Village growth area in Wokingham Borough (around Arborfield/Finchampstead, south of Reading).",
+    "locationSource": "Project description and Find a Tender notice naming 'Loddon Valley Garden Village' (Wokingham Borough Council notice 2025/S 000-059023).",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -477,7 +507,9 @@
         "datePublished": "2025-09-23",
         "summary": "Contract details notice for preparation of a strategic design code for Loddon Valley Garden Village, published by Wokingham Borough Council."
       }
-    ]
+    ],
+    "latitude": 51.4209,
+    "longitude": -0.9637
   },
   {
     "id": "gm-b011-e07000082-stroud-council-housing-planned-external-works-2026-2029",
@@ -489,8 +521,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "A tender notice has been published; delivery depends on procurement outcomes and subsequent programme delivery across the housing stock.",
-    "locationDescription": "Stroud District (council housing stock external works)",
-    "locationSource": "Find a Tender (Stroud District Council tender notice 2025/S 000-084864)",
+    "locationDescription": "Representative central point for Stroud town, Stroud District, Gloucestershire (works programme spans council housing stock across the district; no single site specified).",
+    "locationSource": "Find a Tender notice 084864-2025 describing works across Stroud District Council housing stock (district-wide).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -501,7 +533,9 @@
         "datePublished": "2025-12-19",
         "summary": "Tender notice for a planned external works programme across Stroud District Council’s housing stock covering a multi-year contract term."
       }
-    ]
+    ],
+    "latitude": 51.7459,
+    "longitude": -2.219
   },
   {
     "id": "gm-b011-e06000017-rutland-family-hub-library-upgrades-ketton-oakham-uppingham",
@@ -513,9 +547,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "A tender notice and a subsequent award notice have been published; the award notice includes contract dates through 30 January 2026 (in the past relative to 3 April 2026), indicating works should be complete or at final close-out.",
-    "locationDescription": "Ketton Library, Oakham Library and Uppingham Library, Rutland",
-    "locationSource": "Find a Tender (Rutland County Council notices 2025/S 000-014205 and 2025/S 000-043285)",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Rutland County Council Family Hub Library Project covering Ketton, Oakham and Uppingham libraries; representative point set to Oakham (county town) as central location in Rutland.",
+    "locationSource": "Find a Tender notices 2025/S 000-014205 and 2025/S 000-043285 (Rutland County Council) referencing Ketton, Oakham and Uppingham libraries.",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -533,6 +567,8 @@
         "datePublished": "2025-07-28",
         "summary": "Contract award notice confirming award of the Family Hub Library Project works across Ketton, Oakham and Uppingham libraries, including contract values and dates per lot."
       }
-    ]
+    ],
+    "latitude": 52.6702,
+    "longitude": -0.7332
   }
 ]

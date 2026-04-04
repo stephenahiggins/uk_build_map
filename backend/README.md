@@ -198,6 +198,12 @@ To seed projects from a specific JSON file, run:
 make seed-projects SEED=seeds/national-starter.json
 ```
 
+To backfill missing coordinates in finalized Codex batch output files before merge/import, run:
+```bash
+make seed-backfill-codex-coords ARGS="--model gpt-5.2"
+```
+This target runs on the host, not inside Docker, because it updates files under `seeds/codex-batches/out/` in place.
+
 ### 4. Accessing the Application
 
 Once the containers are up and running, you can access the application at: http://localhost:5002
@@ -208,8 +214,6 @@ To stop and remove the containers, use:
 ```
 docker-compose down
 ```
-
-
 
 
 

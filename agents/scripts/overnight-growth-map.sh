@@ -32,8 +32,9 @@ This script runs:
   2. local authority export
   3. Codex batch generation
   4. Codex batch execution
-  5. merge outputs
-  6. optional seed/import + geo sync + evaluation + fresh coverage snapshot
+  5. backfill missing batch coordinates
+  6. merge outputs
+  7. optional seed/import + geo sync + evaluation + fresh coverage snapshot
 USAGE
 }
 
@@ -86,19 +87,19 @@ if ! confirm "Start overnight Growth Map pipeline?"; then
   exit 0
 fi
 
-vmsg "Step 1/6: computing authority coverage"
+vmsg "Step 1/7: computing authority coverage"
 ( cd "$BACKEND_ROOT" && npm run coverage:authorities )
 
-vmsg "Step 2/6: exporting local authorities"
+vmsg "Step 2/7: exporting local authorities"
 ( cd "$BACKEND_ROOT" && npm run seed:export-local-authorities )
 
-vmsg "Step 3/6: generating Codex batches"
+vmsg "Step 3/7: generating Codex batches"
 (
   cd "$BACKEND_ROOT" && \
   npm run seed:generate-codex-batches -- --authorities-json seeds/local-authorities.json
 )
 
-vmsg "Step 4/6: running Codex overnight batches"
+vmsg "Step 4/7: running Codex overnight batches"
 codex_args=()
 if [[ "$YES" -eq 1 ]]; then
   codex_args+=(--yes)
@@ -112,11 +113,14 @@ fi
   ./scripts/run-codex-seed-batches.sh "${codex_args[@]}"
 )
 
-vmsg "Step 5/6: merging Codex outputs"
+vmsg "Step 5/7: backfilling missing Codex batch coordinates"
+( cd "$BACKEND_ROOT" && npm run seed:backfill-codex-coords -- --model "$MODEL" )
+
+vmsg "Step 6/7: merging Codex outputs"
 ( cd "$BACKEND_ROOT" && npm run seed:merge-codex-outputs )
 
 if [[ "$IMPORT" -eq 1 ]]; then
-  vmsg "Step 6/6: importing merged data, syncing geo, recomputing evaluations, refreshing coverage"
+  vmsg "Step 7/7: importing merged data, syncing geo, recomputing evaluations, refreshing coverage"
   (
     cd "$BACKEND_ROOT" && \
     npx ts-node scripts/seedProjectsFromFile.ts seeds/merged-from-codex.json && \
@@ -125,7 +129,7 @@ if [[ "$IMPORT" -eq 1 ]]; then
     npm run coverage:authorities
   )
 else
-  vmsg "Step 6/6 skipped: import disabled. Re-run with --import to seed and refresh backend state."
+  vmsg "Step 7/7 skipped: import disabled. Re-run with --import to seed and refresh backend state."
 fi
 
 vmsg "Overnight Growth Map pipeline completed."

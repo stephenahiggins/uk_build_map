@@ -9,8 +9,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding and scope are confirmed by the council; individual works are being delivered across multiple sites.",
-    "locationDescription": "Abbey Sports Centre (Berinsfield), Didcot Wave (Didcot) and Thame Leisure Centre, South Oxfordshire",
-    "locationSource": "South Oxfordshire District Council news",
+    "locationDescription": "Didcot Wave leisure centre, Didcot, South Oxfordshire (representative point for the multi-site leisure facilities investment also covering Abbey Sports Centre, Berinsfield and Thame Leisure Centre).",
+    "locationSource": "South Oxfordshire District Council news pages referencing upgrades at the Didcot Wave, Abbey Sports Centre (Berinsfield) and Thame Leisure Centre (evidence items 1–2).",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -29,7 +29,9 @@
         "datePublished": "2025-11-27",
         "summary": "Council update announcing new studio facilities at the Didcot Wave and describing the upgrades being delivered to expand activity offer."
       }
-    ]
+    ],
+    "latitude": 51.6169,
+    "longitude": -1.2437
   },
   {
     "id": "gm-b003-e08000007-stockport-interchange-one-year-on",
@@ -41,9 +43,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Interchange is operational; the council’s one-year update positions it as a core asset supporting ongoing regeneration around the town centre.",
-    "locationDescription": "Stockport Interchange, Stockport town centre",
-    "locationSource": "Stockport Council news",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Stockport Interchange (bus station/transport interchange), Stockport town centre, Greater Manchester",
+    "locationSource": "Stockport Council news page: https://www.stockport.gov.uk/news/one-year-on-stockport-interchange-at-the-heart-of-the-towns-1bn-transformation (project described as 'Stockport Interchange' in Stockport town centre)",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -53,7 +55,9 @@
         "datePublished": "2025-03-18",
         "summary": "Council update marking one year since opening, describing the interchange’s role in improving public transport and enabling town centre regeneration."
       }
-    ]
+    ],
+    "latitude": 53.4089,
+    "longitude": -2.1603
   },
   {
     "id": "gm-b003-e06000020-pride-park-highways-upgrades",
@@ -65,9 +69,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council reports completed phases and ongoing delivery through its highways programme.",
-    "locationDescription": "Pride Park / highways network improvements in Telford",
-    "locationSource": "Telford & Wrekin Council newsroom",
-    "locationConfidence": "LOW",
+    "locationDescription": "Telford town centre (representative point for Pride Park/highways network improvements in Telford, Telford & Wrekin, Shropshire)",
+    "locationSource": "Project description and Telford & Wrekin Council newsroom article referencing Pride Park programme in Telford (https://newsroom.telford.gov.uk/News/Details/14732)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -77,7 +81,9 @@
         "datePublished": "2025-12-17",
         "summary": "Council newsroom update describing delivery of major highways upgrades as part of its programme, including Pride Park works and wider resurfacing activity."
       }
-    ]
+    ],
+    "latitude": 52.6777,
+    "longitude": -2.4499
   },
   {
     "id": "gm-b003-e07000127-skelmersdale-town-centre-masterplan",
@@ -89,8 +95,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council has approved the masterplan and business plan; delivery is phased and subject to further design and funding decisions.",
-    "locationDescription": "Skelmersdale town centre, West Lancashire",
-    "locationSource": "West Lancashire Borough Council news",
+    "locationDescription": "Skelmersdale town centre, West Lancashire, Lancashire (representative centroid for Skelmersdale town centre area)",
+    "locationSource": "Project description and West Lancashire Borough Council news releases referencing 'Skelmersdale Town Centre Transformation'",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -109,7 +115,9 @@
         "datePublished": "2025-11-12",
         "summary": "Council update confirming business plan approval to progress the masterplan, supporting delivery planning for the regeneration programme."
       }
-    ]
+    ],
+    "latitude": 53.5518,
+    "longitude": -2.7739
   },
   {
     "id": "gm-b003-e07000181-chipping-norton-leisure-centre-improvements",
@@ -121,8 +129,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council reports the improvement works are completed at the leisure centre.",
-    "locationDescription": "Chipping Norton Leisure Centre, Chipping Norton, West Oxfordshire",
-    "locationSource": "West Oxfordshire District Council news",
+    "locationDescription": "Chipping Norton Leisure Centre, Chipping Norton, West Oxfordshire, Oxfordshire",
+    "locationSource": "West Oxfordshire District Council news release (2024-11-27) titled 'Chipping Norton Leisure Centre improvements complete' and project-provided current location description",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -133,7 +141,9 @@
         "datePublished": "2024-11-27",
         "summary": "Council news release confirming completion of improvement works at Chipping Norton Leisure Centre."
       }
-    ]
+    ],
+    "latitude": 51.9415,
+    "longitude": -1.5446
   },
   {
     "id": "gm-b003-e07000237-shrub-hill-quarter-shared-use-link",
@@ -145,9 +155,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Construction start and enabling works are confirmed in public updates; delivery is progressing as part of the wider Shrub Hill Quarter programme.",
-    "locationDescription": "Shrub Hill Quarter / Worcester Shrub Hill area, Worcester",
-    "locationSource": "Worcestershire County Council news",
-    "locationConfidence": "MEDIUM",
+    "locationDescription": "Shrub Hill Quarter regeneration area around Worcester Shrub Hill railway station, Worcester, Worcestershire",
+    "locationSource": "Worcestershire County Council news items referencing the shared use link at Shrub Hill Quarter / station area (e.g., https://www.worcestershire.gov.uk/news/work-due-start-new-shared-use-link-shrub-hill-quarter)",
+    "locationConfidence": "HIGH",
     "evidence": [
       {
         "type": "URL",
@@ -165,7 +175,9 @@
         "datePublished": "2025-07-24",
         "summary": "Project update describing progress of demolition/enabling works at Shrub Hill Quarter as part of the regeneration programme."
       }
-    ]
+    ],
+    "latitude": 52.1946,
+    "longitude": -2.2093
   },
   {
     "id": "gm-b003-e09000004-former-sidcup-library-housing",
@@ -177,8 +189,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Contractor appointment and start on site are confirmed; build-out and completion remain to be delivered.",
-    "locationDescription": "Former Sidcup Library site, Sidcup, London Borough of Bexley",
-    "locationSource": "BexleyCo Homes updates",
+    "locationDescription": "Former Sidcup Library site, Sidcup (London Borough of Bexley), London",
+    "locationSource": "BexleyCo Homes project updates referencing the 'former Sidcup Library' site in Sidcup",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -197,7 +209,9 @@
         "datePublished": "2024-08-22",
         "summary": "Developer update confirming construction has started on site for the former Sidcup Library redevelopment."
       }
-    ]
+    ],
+    "latitude": 51.4269,
+    "longitude": 0.1039
   },
   {
     "id": "gm-b003-e08000002-prestwich-village-regeneration-travel-hub",
@@ -209,8 +223,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council decision papers confirm the programme structure, phasing and delivery approach; delivery is ongoing.",
-    "locationDescription": "Prestwich Village / Bury town centre area, Bury",
-    "locationSource": "Bury Council cabinet report",
+    "locationDescription": "Prestwich Village (Prestwich town centre), Metropolitan Borough of Bury, Greater Manchester",
+    "locationSource": "Bury Council cabinet report: 'Prestwich Village Regeneration Project Phase 1B and 2 Development Strategy' (2025-12-03)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -221,7 +235,9 @@
         "datePublished": "2025-12-03",
         "summary": "Cabinet report setting out the development strategy for phases 1B and 2 of the Prestwich Village Regeneration Project, including delivery approach and transport hub elements."
       }
-    ]
+    ],
+    "latitude": 53.5338,
+    "longitude": -2.2826
   },
   {
     "id": "gm-b003-e07000119-st-annes-high-street-improvements",
@@ -233,9 +249,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Works start and delivery timetable are confirmed; completion depends on delivery phasing and site conditions.",
-    "locationDescription": "St Annes High Street, Lytham St Annes, Fylde",
-    "locationSource": "Invest in Fylde (Fylde Council) update",
-    "locationConfidence": "HIGH",
+    "locationDescription": "St Annes High Street, St Annes-on-the-Sea (Lytham St Annes), Fylde, Lancashire",
+    "locationSource": "Project description and Invest in Fylde (Fylde Council) update referencing St Annes High Street improvements",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -245,7 +261,9 @@
         "datePublished": "2024-11-11",
         "summary": "Council project update announcing the start of High Street improvement works and summarising scope and indicative programme."
       }
-    ]
+    ],
+    "latitude": 53.7539,
+    "longitude": -3.0295
   },
   {
     "id": "gm-b003-e07000089-frogmore-leisure-centre-investment",
@@ -257,8 +275,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council and operator updates confirm funding and the delivery of gym improvements at Frogmore Leisure Centre.",
-    "locationDescription": "Frogmore Leisure Centre, Yateley, Hart",
-    "locationSource": "Hart District Council news",
+    "locationDescription": "Frogmore Leisure Centre, Yateley, Hart District, Hampshire",
+    "locationSource": "Project description and Hart District Council news referencing Frogmore Leisure Centre (Yateley)",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -277,7 +295,9 @@
         "datePublished": "2024-12-17",
         "summary": "Council update promoting the gym transformation at Frogmore Leisure Centre and confirming the upgraded facilities."
       }
-    ]
+    ],
+    "latitude": 51.3437,
+    "longitude": -0.8309
   },
   {
     "id": "gm-b003-e09000020-portobello-road-improvements",
@@ -289,9 +309,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council confirms implementation of Phase 1 changes and sets out the longer-term delivery and review process.",
-    "locationDescription": "Portobello Road, Notting Hill, Royal Borough of Kensington and Chelsea",
-    "locationSource": "RBKC news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Portobello Road, Notting Hill, Royal Borough of Kensington and Chelsea (representative point near Portobello Road/Portobello Road Market area)",
+    "locationSource": "RBKC news releases referencing Portobello Road improvements (project description and currentLocationDescription)",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -309,7 +329,9 @@
         "datePublished": "2026-03-10",
         "summary": "Council update setting out longer-term work to strengthen Portobello Road, including programme and engagement information."
       }
-    ]
+    ],
+    "latitude": 51.5169,
+    "longitude": -0.2058
   },
   {
     "id": "gm-b003-e07000074-burnham-pontoon-replacement",
@@ -321,8 +343,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Council updates confirm the pontoon replacement project was funded and delivered.",
-    "locationDescription": "Burnham-on-Crouch (marina/pontoon), Maldon District",
-    "locationSource": "Maldon District Council news",
+    "locationDescription": "Burnham-on-Crouch riverside/marina pontoon area, Burnham-on-Crouch, Maldon District, Essex",
+    "locationSource": "Maldon District Council news pages referencing 'Replacement of the Burnham-on-Crouch pontoon' (project described as at Burnham-on-Crouch marina/pontoon)",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -341,7 +363,9 @@
         "datePublished": "2024-12-16",
         "summary": "Council update confirming additional UKSPF allocations and noting projects already delivered, including the replacement pontoon at Burnham-on-Crouch."
       }
-    ]
+    ],
+    "latitude": 51.6315,
+    "longitude": 0.8159
   },
   {
     "id": "gm-b003-e07000218-atherstone-leisure-complex-redevelopment",
@@ -353,9 +377,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Council confirms construction is beginning; completion and commissioning remain pending.",
-    "locationDescription": "Atherstone Leisure Complex, Atherstone, North Warwickshire",
-    "locationSource": "North Warwickshire Borough Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "Atherstone Leisure Complex, Atherstone, North Warwickshire (representative site centroid in Atherstone town).",
+    "locationSource": "North Warwickshire Borough Council news release: https://www.northwarks.gov.uk/news/article/728/construction_begins_on_new_leisure_centre (project described as Atherstone Leisure Complex redevelopment).",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -373,7 +397,9 @@
         "datePublished": "2024-10-15",
         "summary": "Council announcement unveiling plans for a new leisure centre, providing context on the wider leisure redevelopment programme."
       }
-    ]
+    ],
+    "latitude": 52.575,
+    "longitude": -1.546
   },
   {
     "id": "gm-b003-e07000141-meres-leisure-centre-low-carbon-heating",
@@ -385,9 +411,9 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding and delivery plans are confirmed; works are in progress through the council’s delivery programme.",
-    "locationDescription": "The Meres Leisure Centre, Grantham, South Kesteven",
-    "locationSource": "South Kesteven District Council news",
-    "locationConfidence": "HIGH",
+    "locationDescription": "The Meres Leisure Centre, Grantham, Lincolnshire (South Kesteven District)",
+    "locationSource": "South Kesteven District Council news articles identifying the project site as The Meres Leisure Centre, Grantham",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -405,7 +431,9 @@
         "datePublished": "2026-01-06",
         "summary": "Council update confirming the low-carbon heating project is under way and outlining the works being delivered at the leisure centre."
       }
-    ]
+    ],
+    "latitude": 52.9147,
+    "longitude": -0.6319
   },
   {
     "id": "gm-b003-e07000102-south-oxhey-leisure-centre-gym-upgrade",
@@ -417,9 +445,9 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Upgrade completion is confirmed by the operator with reopening over the Christmas period.",
-    "locationDescription": "South Oxhey Leisure Centre, South Oxhey, Three Rivers",
-    "locationSource": "Everyone Active update",
-    "locationConfidence": "HIGH",
+    "locationDescription": "South Oxhey Leisure Centre, South Oxhey (Three Rivers District, Hertfordshire)",
+    "locationSource": "Project description and cited Everyone Active / Three Rivers District Council updates naming South Oxhey Leisure Centre as the site",
+    "locationConfidence": "MEDIUM",
     "evidence": [
       {
         "type": "URL",
@@ -437,7 +465,9 @@
         "datePublished": "2025-12-24",
         "summary": "Operator update confirming completion of the gym upgrade at South Oxhey Leisure Centre and announcing the improved facilities."
       }
-    ]
+    ],
+    "latitude": 51.6439,
+    "longitude": -0.3919
   },
   {
     "id": "gm-b003-e08000015-woodside-ferry-terminal-landing-stage",
@@ -449,8 +479,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Construction and delivery milestones (including the new landing stage arrival) are confirmed; remaining works are still being completed.",
-    "locationDescription": "Woodside Ferry Terminal, Birkenhead waterfront, Wirral",
-    "locationSource": "Liverpool City Region Combined Authority / Wirral View updates",
+    "locationDescription": "Woodside Ferry Terminal, Birkenhead waterfront, Wirral (landing stage replacement site)",
+    "locationSource": "Project description and location given as 'Woodside Ferry Terminal, Birkenhead waterfront, Wirral' corroborated by Liverpool City Region Combined Authority and Wirral View updates",
     "locationConfidence": "HIGH",
     "evidence": [
       {
@@ -469,7 +499,9 @@
         "datePublished": "2025-12-22",
         "summary": "Project milestone update confirming arrival of the new landing stage as part of the Woodside Ferry Terminal refurbishment programme."
       }
-    ]
+    ],
+    "latitude": 53.4008,
+    "longitude": -3.0136
   },
   {
     "id": "gm-b003-e07000092-union-yard-aldershot-regeneration",
@@ -481,8 +513,8 @@
     "createdById": 1,
     "status": "GREEN",
     "statusRationale": "Development opening is reported publicly, indicating delivery and occupation/operation can commence.",
-    "locationDescription": "Union Yard, Aldershot town centre, Rushmoor",
-    "locationSource": "Insider Media report",
+    "locationDescription": "Union Yard regeneration development in Aldershot town centre (central Aldershot, Rushmoor, Hampshire).",
+    "locationSource": "Insider Media report describing Union Yard as opening in central Aldershot town centre.",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -493,7 +525,9 @@
         "datePublished": "2025-03-11",
         "summary": "Independent report on the opening of Union Yard, outlining delivered homes, commercial space and student accommodation in Aldershot town centre."
       }
-    ]
+    ],
+    "latitude": 51.2485,
+    "longitude": -0.7637
   },
   {
     "id": "gm-b003-e07000065-a22-south-of-uckfield-mrn-package",
@@ -505,8 +539,8 @@
     "createdById": 1,
     "status": "AMBER",
     "statusRationale": "Funding allocation is confirmed; scheme design and construction delivery are still to be completed.",
-    "locationDescription": "A22 south of Uckfield corridor, Wealden",
-    "locationSource": "Wealden District Council news",
+    "locationDescription": "Representative point on the A22 immediately south of Uckfield (Wealden District), East Sussex",
+    "locationSource": "Project description and Wealden District Council news item referencing 'A22 south of Uckfield' corridor",
     "locationConfidence": "MEDIUM",
     "evidence": [
       {
@@ -525,6 +559,8 @@
         "datePublished": "2025-12-09",
         "summary": "Council update on delivering energy efficiency upgrades to social housing stock, evidencing wider infrastructure investment in the district."
       }
-    ]
+    ],
+    "latitude": 50.9586,
+    "longitude": 0.1086
   }
 ]
