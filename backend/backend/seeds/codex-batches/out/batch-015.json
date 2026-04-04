@@ -1,0 +1,458 @@
+[
+  {
+    "id": "gm-b015-e08000021-tyne-bridge-restoration",
+    "title": "Newcastle upon Tyne: Tyne Bridge restoration (multi-year structural repairs and repainting)",
+    "description": "Newcastle City Council and Gateshead Council began the main phase of a multi-year restoration of the Grade II* listed Tyne Bridge, including extensive steelwork repairs, grit blasting and repainting, waterproofing and resurfacing, drainage improvements, and joint replacement.",
+    "type": "LOCAL_GOV",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "localAuthorityId": "fcc7d3c8-0128-45b7-9f31-9c6bdc209cca",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Public council updates confirm the restoration works commenced and are progressing as a multi-year programme; completion remains dependent on continued delivery through later phases.",
+    "locationDescription": "Tyne Bridge, Newcastle upon Tyne / Gateshead",
+    "locationSource": "Newcastle City Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Tyne Bridge restoration begins",
+        "source": "Newcastle City Council",
+        "url": "https://new.newcastle.gov.uk/news/2024/tyne-bridge-restoration-begins",
+        "datePublished": "2024-04-02",
+        "summary": "Council announcement that engineers began the four-year task of restoring the Tyne Bridge, outlining major repair and repainting works and the appointed contractor."
+      },
+      {
+        "type": "URL",
+        "title": "Tyne Bridge 2025 restoration programme set out",
+        "source": "Newcastle City Council",
+        "url": "https://new.newcastle.gov.uk/news/2024/tyne-bridge-2025-restoration-programme-set-out",
+        "datePublished": "2024-12-20",
+        "summary": "Update describing progress in 2024 and the planned 2025 phases of restoration, including movement of works to the Newcastle side."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e09000006-crystal-palace-park-regeneration-main-works-contractor-procurement",
+    "title": "Bromley: Crystal Palace Park regeneration main works contractor procurement (Tidal Lakes and Italian Terraces works)",
+    "description": "The London Borough of Bromley published a contract notice seeking a main works contractor for elements of the Crystal Palace Park Regeneration Project, including heritage repairs, new visitor facilities, improved paths and accessibility, landscaping, drainage and related ground works.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "bbcdedd5-a1fa-4555-94e4-7bc38591a29d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Find a Tender contract notice evidences a live procurement for main works; delivery depends on contract award and subsequent construction programme.",
+    "locationDescription": "Crystal Palace Park (Tidal Lakes / Geological Court and Italian Terraces), London Borough of Bromley",
+    "locationSource": "Find a Tender (London Borough of Bromley contract notice 2024/S 000-024669)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Crystal Palace Park Regeneration Project - Main Works Contractor (contract notice)",
+        "source": "Find a Tender (London Borough of Bromley)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/024669-2024?origin=SearchResults&p=2201",
+        "datePublished": "2024-08-06",
+        "summary": "Contract notice describing proposed main works across park sites, including demolition and new buildings, heritage repairs, landscaping, paths, lighting, wayfinding, drainage and ground works."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e06000059-in-situ-road-recycling-2025-award",
+    "title": "Dorset: In-situ road recycling programme (multiple highway sites) – contract award",
+    "description": "Dorset Council awarded a works contract for in-situ road recycling across fourteen locations, recycling road layers and completing surface treatments to extend pavement life and support highway maintenance delivery.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "0a7eec36-8501-4ac4-94fa-b6307157e0c0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A published contract award notice confirms the works were procured; individual site delivery remains to be completed across multiple locations.",
+    "locationDescription": "Fourteen locations across Dorset (in-situ road recycling sites)",
+    "locationSource": "Find a Tender (Dorset Council contract award notice 2025/S 000-015268)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "In-situ Road Recycling 2025 (contract award notice)",
+        "source": "Find a Tender (Dorset Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/015268-2025",
+        "datePublished": "2025-04-15",
+        "summary": "Contract award notice for in-situ road recycling across fourteen Dorset locations, including recycling to specified depths and finishing with surface dressing or asphalt depending on location."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e06000035-ascend-innovation-hub-completion",
+    "title": "Medway: Ascend Innovation Hub (Pentagon Centre, Chatham) completion",
+    "description": "Medway Council reported completion of Ascend, a new coworking and business centre on the first floor of the Pentagon Centre in Chatham, delivered as part of regeneration activity and intended to support small businesses, entrepreneurs and freelancers.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "e01658e6-54f1-4d6c-9948-0426515f110c",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A council news release states the centre has been completed, evidencing delivery of the facility.",
+    "locationDescription": "Ascend (Innovation Hub), first floor of the Pentagon Centre, Chatham, Medway",
+    "locationSource": "Medway Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Medway businesses to reach new heights with Ascend centre",
+        "source": "Medway Council",
+        "url": "https://www.medway.gov.uk/news/article/1796/medway_businesses_to_reach_new_heights_with_ascend_centre",
+        "datePublished": "2024-11-06",
+        "summary": "Council announcement that the Ascend coworking space in Chatham’s Pentagon Centre has been completed, describing facilities and intended benefits for local businesses."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e07000123-harris-your-place-final-fit-out-phase",
+    "title": "Preston: The Harris (Harris Your Place) restoration and redevelopment enters final fit-out phase",
+    "description": "Preston’s Harris Museum, Art Gallery and Library redevelopment (Harris Your Place) moved into its final fit-out phase following major structural works, advancing refurbishment of galleries, accessibility enhancements and new visitor facilities ahead of reopening.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "5e98d753-9efc-435b-af85-566487322ae2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Public reporting confirms handover from structural works to final fit-out, but reopening and full benefits depend on completion of the remaining phase.",
+    "locationDescription": "The Harris Museum, Art Gallery and Library, Market Square, Preston",
+    "locationSource": "Lancashire Business View",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Harris Your Place project enters final fit-out phase",
+        "source": "Lancashire Business View",
+        "url": "https://www.lancashirebusinessview.co.uk/latest-news-and-features/harris-your-place-project-enters-final-fit-out-phase",
+        "datePublished": "2025-02-07",
+        "summary": "Article describing the transition to final fit-out for the Harris Your Place project, including refurbishment scope and intended reopening timeline."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e07000197-guildhall-and-former-coop-demolition-contractors",
+    "title": "Stafford: Guildhall Shopping Centre and former Co-op partial demolition (town centre regeneration)",
+    "description": "Stafford Borough Council appointed contractors to begin internal and preparatory works for the partial demolition of the Guildhall Shopping Centre and former Co-op department store (with retained historic frontages), as part of major town centre regeneration plans.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "ce54087d-802c-47e1-8a93-7a92394a5bb1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council update confirms contractors are mobilised and works are underway; subsequent demolition phases and redevelopment remain to be delivered.",
+    "locationDescription": "Guildhall Shopping Centre and former Co-op department store, Stafford town centre",
+    "locationSource": "Stafford Borough Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Stafford shopping centre demolition contractors named",
+        "source": "Stafford Borough Council",
+        "url": "https://www.staffordbc.gov.uk/news/stafford-shopping-centre-demolition-contractors-named",
+        "datePublished": "2024-11-04",
+        "summary": "Council announcement naming the contractor for partial demolition of the Guildhall Shopping Centre and former Co-op, setting out scope and timelines for demolition and site preparation."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e07000132-hinckley-leisure-centre-solar-panels",
+    "title": "Hinckley and Bosworth: Hinckley Leisure Centre solar PV installation",
+    "description": "Hinckley & Bosworth Borough Council announced installation of more than 700 solar panels at Hinckley Leisure Centre, intended to reduce carbon emissions and support decarbonisation of the facility while keeping the centre open during works.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "d946cf16-c1dd-48f0-8ad1-b1f5605f43d8",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council announcement evidences funded works planned to start with a short installation programme; completion is not explicitly evidenced in the cited source.",
+    "locationDescription": "Hinckley Leisure Centre, Hinckley",
+    "locationSource": "Hinckley & Bosworth Borough Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Solar panels to be installed at Hinckley Leisure Centre",
+        "source": "Hinckley & Bosworth Borough Council",
+        "url": "https://www.hinckley-bosworth.gov.uk/news/article/404/solar_panels_to_be_installed_at_hinckley_leisure_centre",
+        "datePublished": "2025-02-05",
+        "summary": "Council news item stating over 700 solar panels will be installed at Hinckley Leisure Centre, including start date, funding and anticipated carbon reduction."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e08000019-castlegate-park-phase-2-construction",
+    "title": "Sheffield: Castlegate park creation (phase 2 construction under way)",
+    "description": "Sheffield City Council reported that phase 2 works were underway to transform the former Castle Market site at Castlegate into a public park and events space, including opening up the River Sheaf and preparing heritage interpretation and public realm elements.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "localAuthorityId": "c8342b98-d53e-4234-b1a5-3103487c2009",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council update confirms phase 2 construction commenced with an anticipated completion timeline; final delivery remains dependent on completion of works and follow-on phases.",
+    "locationDescription": "Castlegate (former Castle Market / Sheffield Castle site), Sheffield city centre",
+    "locationSource": "Sheffield City Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Phase 2 work underway at Castlegate as park begins to take shape",
+        "source": "Sheffield City Council",
+        "url": "https://www.sheffield.gov.uk/news/2024/phase-2-work-underway-castlegate-park-begins-take-shape",
+        "datePublished": "2024-07-29",
+        "summary": "Council update stating the project moved into phase 2, describing the planned park and events space, archaeology preservation and opening up the River Sheaf."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e06000058-poole-bridge-and-twin-sails-improvement-plans",
+    "title": "Bournemouth, Christchurch and Poole: Poole Bridge and Twin Sails long-term reliability and life-extension improvements (CIL-funded)",
+    "description": "BCP Council set out plans to invest £6m of strategic Community Infrastructure Levy funding in long-term upgrades to Poole Bridge and the Twin Sails bridge, including addressing corrosion, repainting, mechanism design changes and upgraded digital information panels.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "991a2631-5af6-4f86-bd50-5031229ec62d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council publication evidences Cabinet approval and outlines intended upgrade programme; delivery depends on procurement, design and execution over subsequent years.",
+    "locationDescription": "Poole Bridge and Twin Sails Bridge, Poole",
+    "locationSource": "BCP Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Cabinet approves major improvement plans for Twin Sails and Poole Bridge",
+        "source": "BCP Council",
+        "url": "https://www.bcpcouncil.gov.uk/news-hub/news-articles/cabinet-approves-major-improvement-plans-for-twin-sails-and-poole-bridge",
+        "datePublished": "2025-07-16",
+        "summary": "Council news item describing proposed tasks and funding to improve reliability and extend life of Poole Bridge and Twin Sails, including corrosion repairs and mechanism upgrades."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e07000239-kidderminster-town-hall-reopens",
+    "title": "Wyre Forest: Kidderminster Town Hall refurbishment and reopening (Levelling Up funded)",
+    "description": "Wyre Forest District Council reported that the refurbished Grade II listed Kidderminster Town Hall reopened, completing a set of Levelling Up projects and evidencing delivery of cultural and heritage-led town centre regeneration investment.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "39c841e8-274c-4a3d-b0ce-ff7218c2c6c3",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A council news release states the Town Hall has reopened following refurbishment, evidencing completion of the scheme.",
+    "locationDescription": "Kidderminster Town Hall, Kidderminster",
+    "locationSource": "Wyre Forest District Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Kidderminster Town Hall reopens - a proud final chapter in the town’s Levelling Up journey",
+        "source": "Wyre Forest District Council",
+        "url": "https://www.wyreforestdc.gov.uk/news/posts/2025/december/kidderminster-town-hall-reopens-a-proud-final-chapter-in-the-town-s-levelling-up-journey/",
+        "datePublished": "2025-12-05",
+        "summary": "Council news release confirming Kidderminster Town Hall’s reopening and summarising Levelling Up funded regeneration projects completed in the town centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e06000016-leicester-railway-station-redevelopment",
+    "title": "Leicester: Leicester Railway Station redevelopment (Levelling Up funded) – project designs and construction contract award",
+    "description": "Leicester City Council set out final designs for a major revamp of Leicester Railway Station and separately published a contract award notice for the design-and-build redevelopment works, intended to create a higher quality, more accessible station gateway supporting wider regeneration objectives.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "fe0e49eb-12d2-47cd-872d-67ac9ee31036",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Published designs and a contract award notice evidence the scheme’s advancement into contracted delivery; completion remains dependent on delivery of the full construction programme.",
+    "locationDescription": "Leicester Railway Station, Leicester",
+    "locationSource": "Leicester City Council news and Find a Tender",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Final designs for Leicester’s railway station revamp revealed",
+        "source": "Leicester City Council",
+        "url": "https://news.leicester.gov.uk/news-articles/2024/may/final-designs-for-leicester-s-railway-station-revamp-revealed/",
+        "datePublished": "2024-05-01",
+        "summary": "Council release describing final designs for a station revamp, including proposals for a new public plaza and improved passenger facilities as a city gateway."
+      },
+      {
+        "type": "URL",
+        "title": "PAN2758 - Leicester Railway Station Redevelopment – Construction Contract (contract award notice)",
+        "source": "Find a Tender (Leicester City Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/041218-2024?origin=SearchResults&p=4532",
+        "datePublished": "2024-12-20",
+        "summary": "Contract award notice describing a two-stage design-and-build procurement for the redevelopment of Leicester Station in partnership with Network Rail and East Midlands Railway."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e08000037-gateshead-highway-flyover-demolition-programme",
+    "title": "Gateshead: A167 Gateshead Highway flyover demolition programme (enabling regeneration)",
+    "description": "Gateshead Council announced a demolition programme for the A167 Gateshead Highway flyover, beginning with demolition of the adjacent Computer House building to enable access and progressing to phased removal of the flyover structure, with stated regeneration ambitions for the surrounding area.",
+    "type": "LOCAL_GOV",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "localAuthorityId": "9ad351cc-4523-4686-a05c-1caf186c0083",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A council announcement sets out the start date and phased demolition programme; full removal and subsequent regeneration outcomes remain to be delivered.",
+    "locationDescription": "A167 Gateshead Highway flyover and surrounding buildings, Gateshead town centre",
+    "locationSource": "Gateshead Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Flyover demolition programme to start",
+        "source": "Gateshead Council",
+        "url": "https://www.gateshead.gov.uk/article/34810/Flyover-demolition-programme-to-start",
+        "datePublished": "2025-10-14",
+        "summary": "Council announcement setting out the demolition programme start date, initial demolition of Computer House, phased flyover demolition approach and expected timeline for removal."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e09000012-west-reservoir-centre-upgrade-underway",
+    "title": "Hackney: West Reservoir Centre upgrade and access/biodiversity improvements (works underway)",
+    "description": "Hackney Council reported that work had started on upgrades at the West Reservoir Centre in Woodberry Down, including accessibility improvements, new community and leisure facilities and environmental enhancements around the reservoir.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "90d5f587-9e3a-4439-ba00-fb44ebd20573",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Hackney Council news confirms the main phase of works has started with a year-long programme; completion depends on delivery through remaining phases.",
+    "locationDescription": "West Reservoir Centre, Woodberry Down (Green Lanes, N4 2HA), Hackney",
+    "locationSource": "Hackney Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "A big upgrade is underway at open water swimming \"hidden gem\"",
+        "source": "Hackney Council",
+        "url": "https://news.hackney.gov.uk/news/west-res",
+        "datePublished": "2025-07-10",
+        "summary": "Council news item stating work has started on upgrades at West Reservoir Centre, describing intended inclusivity/accessibility and environmental improvements while keeping the site open."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e06000018-broad-marsh-green-heart-opened",
+    "title": "Nottingham: Broad Marsh 'Green Heart' opens (city centre public realm and green infrastructure)",
+    "description": "Nottingham City Council stated that the Broad Marsh Green Heart opened in September 2024, creating a new city centre green space with new trees, planting, a marsh pond and rain gardens, and a lit pedestrian route linking the rail station to the bus station and city centre.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "c0410e92-f833-49c2-8e5f-84f5d4754cd8",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council’s project page states the Green Heart opened on a specific date, evidencing completion of the public realm element.",
+    "locationDescription": "Broad Marsh / Broadmarsh area (Green Heart), Nottingham city centre",
+    "locationSource": "Nottingham City Council project page",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Broad Marsh area redevelopment (Green Heart opened 4 September 2024)",
+        "source": "Nottingham City Council",
+        "url": "https://www.nottinghamcity.gov.uk/broadmarsharea",
+        "datePublished": "2024-09-04",
+        "summary": "Council page describing the Broad Marsh redevelopment and stating the new Green Heart opened on 4 September 2024, with details of planting, rain gardens and routes."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e08000036-former-crown-court-wood-street-redevelopment-plans",
+    "title": "Wakefield: former Crown Court (Wood Street) redevelopment plans for creative workspace and multi-use venue",
+    "description": "Wakefield Council reported submission of plans to redevelop the Grade II* former Crown Court on Wood Street into a multi-use venue including creative workspace and cultural/community uses, with intended construction and opening timeline described publicly.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "localAuthorityId": "0192253e-0ea6-4a2b-a195-1065b63f5acb",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council update confirms plans have been submitted and sets out an anticipated construction start; delivery depends on planning approval and subsequent build completion.",
+    "locationDescription": "Former Crown Court, Wood Street, Wakefield city centre",
+    "locationSource": "Wakefield Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "City centre regeneration scheme reaches final stages",
+        "source": "Wakefield Council",
+        "url": "https://www.wakefield.gov.uk/your-district/city-centre-regeneration-scheme-reaches-final-stages",
+        "datePublished": "2025-05-15",
+        "summary": "Council release describing submitted redevelopment plans for the former Crown Court on Wood Street, intended uses and stated timeline for construction and opening."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e08000016-alhambra-shopping-centre-refurbishment-delivery-management-services",
+    "title": "Barnsley: Alhambra Shopping Centre refurbishment scheme – client-side professional services contract award",
+    "description": "Barnsley Metropolitan Borough Council published a contract award notice for client-side professional services to manage delivery of a refurbishment scheme to the Alhambra Shopping Centre, evidencing active steps toward town centre asset improvement.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "localAuthorityId": "ae2526bd-34ae-489f-a153-bcbdeca3f463",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A published contract award notice evidences procurement of delivery management services; the refurbishment works and outcomes remain to be delivered.",
+    "locationDescription": "Alhambra Shopping Centre, Barnsley",
+    "locationSource": "Find a Tender (Barnsley Metropolitan Borough Council notice 2025/S 000-080855 PDF)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "THE PROVISION OF CLIENT-SIDE PROFESSIONAL SERVICES TO MANAGE THE DELIVERY OF A REFURBISHMENT SCHEME TO THE ALHAMBRA SHOPPING CENTRE (contract award notice PDF)",
+        "source": "Find a Tender (Barnsley Metropolitan Borough Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/080855-2025/PDF",
+        "datePublished": "2025-12-09",
+        "summary": "PDF of a Find a Tender contract award notice for client-side professional services to manage delivery of a refurbishment scheme to the Alhambra Shopping Centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e07000066-barleylands-depot-resurfacing-works-procurement",
+    "title": "Basildon: Barleylands Depot resurfacing works procurement",
+    "description": "Basildon Borough Council published a contracts notice seeking delivery of resurfacing works at Barleylands Depot, with stated contract start and end dates for completion of the works.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "f34a541e-702a-4cf2-92a9-eb6660ad8483",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A published Contracts Finder notice evidences a procurement for depot resurfacing works; delivery depends on contract award and completion of the works within the stated period.",
+    "locationDescription": "Barleylands Depot, Basildon",
+    "locationSource": "Contracts Finder (Basildon Borough Council notice GB-Basildon: Surfacing Works)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "GB-Basildon: Surfacing Works (contract notice)",
+        "source": "Contracts Finder",
+        "url": "https://www.contractsfinder.service.gov.uk/notice/9906528c-451b-404d-9781-d4b9610a18cc",
+        "datePublished": "2025-11-25",
+        "summary": "Contracts Finder notice for resurfacing works at Barleylands Depot in Basildon, including stated procurement dates and intended works completion by 31 March 2026."
+      }
+    ]
+  },
+  {
+    "id": "gm-b015-e06000023-bristol-temple-quarter-private-sector-partner-procurement",
+    "title": "Bristol: Temple Quarter regeneration – procurement for a private sector development partner (via Bristol Temple Quarter LLP)",
+    "description": "Bristol Temple Quarter LLP published a Find a Tender notice describing its intention to procure a private sector development partner to help deliver the Bristol Temple Quarter regeneration programme, underpinned by a partnership between Bristol City Council, Homes England, the West of England Mayoral Combined Authority and Network Rail.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "aae3ef62-d578-4f92-ab26-fdf1fd4826c1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Find a Tender publications evidence formal steps toward appointing a development partner; delivery depends on procurement completion and subsequent phased regeneration delivery.",
+    "locationDescription": "Bristol Temple Quarter regeneration area (around Bristol Temple Meads and surrounding brownfield land)",
+    "locationSource": "Find a Tender (Bristol Temple Quarter LLP prior information notice)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bristol Temple Quarter Regeneration Project - Private Sector Partner (prior information notice)",
+        "source": "Find a Tender (Bristol Temple Quarter LLP)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/004840-2025",
+        "datePublished": "2025-02-13",
+        "summary": "Prior information notice describing plans for procurement of a private sector development partner for the Bristol Temple Quarter regeneration programme and the partnership structure behind delivery."
+      },
+      {
+        "type": "URL",
+        "title": "Temple Quarter project overview",
+        "source": "Bristol City Council",
+        "url": "https://www.bristol.gov.uk/ask/projects/temple-quarter",
+        "datePublished": "2025-02-13",
+        "summary": "Council overview page describing the Temple Quarter regeneration programme and its long-term ambition to transform brownfield land into mixed-use communities."
+      }
+    ]
+  }
+]

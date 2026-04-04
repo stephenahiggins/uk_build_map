@@ -12,8 +12,8 @@ Research under-covered local authorities using deterministic, public-source evid
 | 3314cd16-0cc0-485f-a181-f269151d20a4 | Oadby and Wigston | E07000135 | East Midlands | ENGLAND |
 | fa88a510-40c0-4c85-b1cf-5d96f5a2fb2b | Liverpool | E08000012 | North West | ENGLAND |
 | 84371d60-45d9-4dc3-a0e9-423ceb3c90ef | West Northamptonshire | E06000062 | East Midlands | ENGLAND |
-| 2abc46ad-bb04-4cc4-8c75-840422b41ce3 | Mid Suffolk | E07000203 | East of England | ENGLAND |
 | 1795b1c7-413a-444c-a9d3-30661cdf7ec9 | Ealing | E09000009 | London | ENGLAND |
+| 2abc46ad-bb04-4cc4-8c75-840422b41ce3 | Mid Suffolk | E07000203 | East of England | ENGLAND |
 | 08dbbc19-7ecf-41af-ba5f-c324e8c6da65 | Lambeth | E09000022 | London | ENGLAND |
 | 4212bbed-8db0-4254-8477-908fbac7ccbf | Plymouth | E06000026 | South West | ENGLAND |
 | c207efea-0c63-426d-98d6-c8baee48e656 | Fenland | E07000010 | East of England | ENGLAND |
@@ -22,8 +22,8 @@ Research under-covered local authorities using deterministic, public-source evid
 | 10dd16a9-49ca-45a6-b344-63bae1021561 | Kingston upon Hull, City of | E06000010 | Yorkshire and the Humber | ENGLAND |
 | 4bb74bfa-a03e-424f-9b82-74e5adbb23d2 | St Albans | E07000240 | East of England | ENGLAND |
 | 9bf7def2-da4b-4906-8de5-d6fb7c9b6570 | Dudley | E08000027 | West Midlands | ENGLAND |
-| 861eed51-03df-41c1-bf31-c834ccb4bd5f | Coventry | E08000026 | West Midlands | ENGLAND |
-| 24578131-915e-4e3e-a16c-bf08b745e434 | Elmbridge | E07000207 | South East | ENGLAND |
+| fcc7d3c8-0128-45b7-9f31-9c6bdc209cca | Newcastle upon Tyne | E08000021 | North East | ENGLAND |
+| bbcdedd5-a1fa-4555-94e4-7bc38591a29d | Bromley | E09000006 | London | ENGLAND |
 
 ## Scope
 

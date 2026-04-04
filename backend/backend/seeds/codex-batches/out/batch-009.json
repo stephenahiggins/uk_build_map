@@ -1,0 +1,450 @@
+[
+  {
+    "id": "gm-b009-e07000137-sutton-on-sea-broadway-car-park-construction",
+    "title": "Sutton-on-Sea (The Broadway) car park: new tarmac surfacing and associated works (ELDC 000124)",
+    "description": "East Lindsey District Council procured works to construct a new surfaced car park at The Broadway, Sutton-on-Sea (replacing a grassed car park), as part of improving parking provision; contract award information indicates works starting January 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "83569b61-4cbf-469e-b2ce-0f29a4eedb30",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A contract award notice sets out an estimated works period starting January 2026; delivery depends on mobilisation and completion of the construction programme.",
+    "locationDescription": "The Broadway Car Park, Sutton-on-Sea, Lincolnshire",
+    "locationSource": "Find a Tender (East Lindsey District Council notice ELDC 000124)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New Car Park Construction and Associated Works at The Broadway, Sutton on Sea, Lincolnshire (tender notice, ELDC 000124)",
+        "source": "Find a Tender (East Lindsey District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/062164-2025",
+        "datePublished": "2025-10-03",
+        "summary": "Tender notice describing the works to construct a new tarmac-surfaced car park at The Broadway Car Park in Sutton-on-Sea, replacing an existing grassed car park."
+      },
+      {
+        "type": "URL",
+        "title": "New Car Park Construction and Associated Works (contract award notice, ELDC 000124)",
+        "source": "Find a Tender (East Lindsey District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/081103-2025",
+        "datePublished": "2025-12-09",
+        "summary": "Contract award notice for ELDC 000124 with an estimated contract period of 5 January 2026 to 1 April 2026 for the Broadway, Sutton-on-Sea car park works."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e07000072-epping-leisure-centre-opening",
+    "title": "New Epping Leisure Centre: Bakers Lane facility opening as part of Epping regeneration",
+    "description": "Epping Forest District Council announced an opening date for the new Epping Leisure Centre on Bakers Lane, replacing the Hemnall Street sports centre and forming part of the town’s wider regeneration programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "9c5d53b8-ee3d-4ad0-8e23-be31d153e006",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A council update set an opening date; operational performance and wider regeneration benefits depend on successful opening and ongoing delivery.",
+    "locationDescription": "Bakers Lane, Epping (new Epping Leisure Centre site)",
+    "locationSource": "Epping Forest District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Shaping the Council’s priorities for 2026 (includes Epping Leisure Centre opening date)",
+        "source": "Epping Forest District Council",
+        "url": "https://www.eppingforestdc.gov.uk/shaping-the-councils-priorities-for-2026/",
+        "datePublished": "2025-12-17",
+        "summary": "Cabinet update stating the new Epping Leisure Centre (Bakers Lane) will open on Monday 12 January 2026, replacing the Hemnall Street sports centre as part of Epping’s wider regeneration programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e06000002-middlehaven-over-the-border-regeneration-partnership",
+    "title": "Middlehaven ‘Over the border’: partnership approved to progress up to 3,400 homes and mixed-use regeneration",
+    "description": "Middlesbrough Council approved a partnership with Capital & Centric to progress a major Middlehaven/Old Town Hall area regeneration project, with an ambition for up to 3,400 homes plus leisure and retail attractions and use of Towns Fund money to develop proposals toward contractor appointment.",
+    "type": "LOCAL_GOV",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "localAuthorityId": "65ca3a9a-2d96-465c-bb8c-355d59246c6c",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Executive approval has been given to progress development work with a partner, but delivery remains subject to further design, funding, permissions and procurement.",
+    "locationDescription": "Area around Middlesbrough Old Town Hall and Middlehaven Dock (‘Over the border’ / Middlehaven)",
+    "locationSource": "Middlesbrough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major housing project given green light after Executive approval",
+        "source": "Middlesbrough Council",
+        "url": "https://www.middlesbrough.gov.uk/latest-news/major-housing-project-given-green-light-after-executive-approval/",
+        "datePublished": "2025-11-13",
+        "summary": "Council news reporting Executive approval of a partnership with Capital & Centric to progress a major regeneration vision for the Old Town Hall/Middlehaven area, including up to 3,400 homes and mixed-use elements."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e06000003-eston-precinct-redevelopment-demolition-and-new-retail-units",
+    "title": "Eston Precinct redevelopment: demolition begins ahead of seven new retail units and public realm improvements",
+    "description": "Redcar & Cleveland Borough Council reported that works began to prepare Eston Precinct for demolition, enabling a government- and TVCA-funded first phase to deliver seven new retail units and an outdoor space, with public realm improvements such as paving, trees, benches, lighting and upgraded power infrastructure.",
+    "type": "LOCAL_GOV",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "localAuthorityId": "85268d52-2dd4-48f8-a379-aa576f28c1d9",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Demolition and early enabling works were reported underway, with phase-one completion anticipated by summer 2026; the scheme remains in delivery.",
+    "locationDescription": "Eston Precinct, Eston, Redcar and Cleveland",
+    "locationSource": "Redcar & Cleveland Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Demolition of Eston Precinct to begin to make way for major redevelopment",
+        "source": "Redcar & Cleveland Borough Council",
+        "url": "https://www.redcar-cleveland.gov.uk/news/2025/demolition-of-eston-precinct-to-begin-to-make-way-for-major-redevelopment",
+        "datePublished": "2025-07-03",
+        "summary": "Council news stating demolition preparations started, outlining phase-one scope (seven new retail units and outdoor space) plus public realm improvements and an expected phase-one completion by summer 2026."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e07000242-beam-hertford-opening",
+    "title": "BEAM Hertford: Hertford Theatre redevelopment opens as a new multi-purpose arts venue",
+    "description": "East Herts District Council announced the opening of BEAM, Hertford’s redeveloped theatre and arts venue, following a £30m redevelopment of Hertford Theatre, including cinema screens and performance spaces.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "061f24d2-8db5-4afe-88c0-903d34abb795",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council reported the venue has officially opened to the public following completion of the redevelopment project.",
+    "locationDescription": "BEAM (former Hertford Theatre), The Wash, Hertford, Hertfordshire",
+    "locationSource": "East Herts District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "BEAM opens to the public",
+        "source": "East Herts District Council",
+        "url": "https://www.eastherts.gov.uk/latest-news/2024/beam-opens",
+        "datePublished": "2024-08-23",
+        "summary": "Council news confirming BEAM (Hertford’s redeveloped theatre/arts venue) has officially opened following a £30m redevelopment, listing key new facilities and features."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e07000134-coalville-marlborough-square-public-realm",
+    "title": "Coalville Marlborough Square: public realm redevelopment creating a pedestrian-focused market and events space",
+    "description": "North West Leicestershire District Council’s Coalville regeneration programme included the redevelopment of Marlborough Square to create a revitalised public realm space for markets, events and town-centre activity.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "15541f0a-5a34-489d-a3c5-7841be2f3ab2",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A contractor update reports the square reopened following completion of the redevelopment works.",
+    "locationDescription": "Marlborough Square, Coalville, Leicestershire",
+    "locationSource": "Stepnell (delivery partner) and NWLDC cabinet papers",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Grand Opening of Marlborough Square Redevelopment",
+        "source": "Stepnell",
+        "url": "https://www.stepnell.co.uk/sectors/public-realm/grand-opening-of-marlborough-square-redevelopment/",
+        "datePublished": "2024-09-05",
+        "summary": "Contractor case study reporting the reopening of Coalville’s Marlborough Square following a £2.7m redevelopment, describing new public realm features intended to support markets and events."
+      },
+      {
+        "type": "URL",
+        "title": "Coalville Regeneration Framework (Cabinet report pack)",
+        "source": "North West Leicestershire District Council (minutes/meetings portal)",
+        "url": "https://minutes-1.nwleics.gov.uk/documents/g2627/Public%20reports%20pack%2022nd-Oct-2024%2017.00%20Cabinet.pdf?T=10",
+        "datePublished": "2024-10-22",
+        "summary": "Cabinet report pack describing Coalville regeneration projects, including the redevelopment of Marlborough Square within the wider ‘four squares’ public realm approach."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e07000219-nuneaton-abbey-street-phase-2",
+    "title": "Abbey Street Phase 2 (Transforming Nuneaton): contracts signed and works underway",
+    "description": "Nuneaton and Bedworth Borough Council reported that contracts were signed and work was underway on phase 2 of the Abbey Street project in Nuneaton town centre as part of the wider Transforming Nuneaton regeneration programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "5dd82acf-6049-4194-a85b-edfc88d13d5c",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council reported contracts signed and construction underway, but the programme remains in delivery across multiple phases.",
+    "locationDescription": "Abbey Street, Nuneaton town centre, Warwickshire",
+    "locationSource": "Nuneaton and Bedworth Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "It is all go for Phase 2 of Abbey Street",
+        "source": "Nuneaton and Bedworth Borough Council",
+        "url": "https://www.nuneatonandbedworth.gov.uk/news/article/168/it-is-all-go-for-phase-2-of-abbey-street",
+        "datePublished": "2025-01-30",
+        "summary": "Council news stating contracts were signed and phase 2 works on Abbey Street were underway, as part of the Transforming Nuneaton town centre regeneration programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e08000028-west-bromwich-kings-square-cinema-demolition",
+    "title": "West Bromwich town centre: demolition of former Kings Square cinema to enable regeneration",
+    "description": "Regenerating Sandwell reported that demolition of the former Kings Square cinema in West Bromwich was scheduled to start in early December 2025, clearing space for redevelopment as part of the West Bromwich Masterplan and wider town-centre regeneration activity.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "ef751ea7-5965-4415-9e1e-f84dfe31d207",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Demolition was reported as scheduled to start and complete within a defined period, but the subsequent redevelopment remains subject to further delivery steps.",
+    "locationDescription": "Former Kings Square cinema site, West Bromwich town centre, Sandwell",
+    "locationSource": "Regenerating Sandwell (Sandwell Council regeneration site)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Demolition set to mark major milestone in town centre regeneration",
+        "source": "Regenerating Sandwell",
+        "url": "https://regeneratingsandwell.co.uk/news/article/117/demolition-set-to-mark-major-milestone-in-town-centre-regeneration",
+        "datePublished": "2025-11-20",
+        "summary": "Update stating demolition of the former Kings Square cinema is due to start in early December 2025 and complete by March 2026 as part of West Bromwich town centre regeneration and the West Bromwich Masterplan."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e08000023-south-shields-college-relocation-campus",
+    "title": "South Shields town centre: construction starts on new South Tyneside College and Marine School campus",
+    "description": "Invest South Tyneside reported that construction was underway to relocate South Tyneside College and South Shields Marine School to a new town-centre campus near King Street, as part of South Tyneside Council’s regeneration ambitions to increase footfall and diversify the town centre.",
+    "type": "LOCAL_GOV",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "localAuthorityId": "1b158d1b-185f-4751-9999-86bc44dfdf18",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Construction was reported underway, with completion and opening dependent on the multi-year build programme and associated approvals for related elements.",
+    "locationDescription": "South Shields town centre (new college campus area near King Street / South Shields Interchange)",
+    "locationSource": "Invest South Tyneside",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Multi-Million-Pound Regeneration Project Underway in South Shields",
+        "source": "Invest South Tyneside",
+        "url": "https://investsouthtyneside.com/multi-million-pound-regeneration-project-underway-in-south-shields/",
+        "datePublished": "2025-06-18",
+        "summary": "Update stating work has started on site to deliver a new town-centre campus for South Tyneside College and South Shields Marine School, describing the scheme, partnership, funding and anticipated September 2027 intake."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e08000008-ashton-market-square-kiosks-arrive",
+    "title": "Ashton Market Square regeneration: new modular kiosks arrive on site",
+    "description": "Tameside Council reported that new market kiosks began arriving on site in Ashton-under-Lyne as a milestone in the regeneration of the Market Square, supporting a flexible civic space for markets, events and cultural activities.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "1782fb1e-571c-4131-882c-1852f829e384",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A milestone delivery step (kiosk installation) was reported, but the broader Market Square regeneration remains in delivery through to completion and reopening.",
+    "locationDescription": "Ashton-under-Lyne Market Square, Ashton town centre, Tameside",
+    "locationSource": "Tameside Metropolitan Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Ashton’s Market Square regeneration takes shape as new kiosks arrive on site",
+        "source": "Tameside Metropolitan Borough Council",
+        "url": "https://public.tameside.gov.uk/pressreleases/f1030pressreleasestory107.asp?keyword=&story=6081",
+        "datePublished": "2025-11-19",
+        "summary": "Council press release reporting arrival of new modular kiosks on site and describing the regeneration scheme’s purpose (events, markets and cultural activity) and delivery partners."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e07000115-bluebell-hill-modular-temporary-accommodation",
+    "title": "Bluebell Hill former commuter car park: modular family temporary accommodation (design & build) contract award",
+    "description": "Tonbridge & Malling Borough Council awarded a design and build contract for modular family-sized housing on the Bluebell Hill former commuter car park site (council-owned), to provide temporary accommodation.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "bb526d3d-dbca-4b62-8a9e-19f03a3b1a6b",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A contract award notice has been published with an estimated delivery period through March 2027; delivery remains subject to build-out and completion.",
+    "locationDescription": "Bluebell Hill former commuter car park site (Blue Bell Hill, Maidstone, Kent)",
+    "locationSource": "Find a Tender (Tonbridge & Malling Borough Council)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "TMBC Bluebell Hill - Temporary Accommodation (contract award notice)",
+        "source": "Find a Tender (Tonbridge & Malling Borough Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/057886-2025",
+        "datePublished": "2025-09-18",
+        "summary": "Contract award notice for a design-and-build modular housing project on the Bluebell Hill former commuter car park, including supplier and estimated contract dates (Oct 2025 to Mar 2027)."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e07000078-golden-valley-phase-1-detailed-plans-submitted",
+    "title": "Golden Valley phase 1: detailed plans submitted for first delivery phase (IDEA and ROUTER)",
+    "description": "Cheltenham Borough Council reported that detailed plans were submitted for phase one of Golden Valley, a major innovation and technology development adjacent to GCHQ being delivered in partnership with the council, with contractor appointed for the first phase.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "5d888fca-fb02-4c1d-913d-9eb1a57c32fe",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A reserved matters submission was reported as a pre-construction milestone; delivery remains subject to approvals and construction progressing.",
+    "locationDescription": "Golden Valley development area adjacent to GCHQ, Cheltenham",
+    "locationSource": "Cheltenham Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Golden Valley submits detailed plans for phase one",
+        "source": "Cheltenham Borough Council",
+        "url": "https://www.cheltenham.gov.uk/news/article/3083/golden_valley_submits_detailed_plans_for_phase_one",
+        "datePublished": "2026-01-09",
+        "summary": "Council news stating detailed plans for phase one were submitted and noting the partnership delivery model and appointment of the contractor for the first phase."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e07000209-weyside-urban-village-new-depot",
+    "title": "Weyside Urban Village: new Guildford Borough Council depot progressing on schedule",
+    "description": "Guildford Borough Council reported progress on its new operational depot (including depot building, multi-storey car park and storage), part of the wider Weyside Urban Village regeneration programme intended to free land for housing and modernise operational infrastructure, including provision for future fleet electrification.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "0d41e09c-c374-4867-aaee-8fb8d3dd16e8",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council reports construction progressing with completion planned for July 2026; the project remains in delivery until handover and occupation.",
+    "locationDescription": "New Guildford Borough Council depot site (Weyside Urban Village regeneration area), Guildford",
+    "locationSource": "Guildford Borough Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New depot progressing on schedule",
+        "source": "Guildford Borough Council",
+        "url": "https://www.guildford.gov.uk/article/27644/New-depot-progressing-on-schedule",
+        "datePublished": "2026-01-19",
+        "summary": "Council news describing depot construction progress, planned completion timing, and key infrastructure elements including EV charging infrastructure for fleet electrification."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e06000044-southsea-coastal-scheme-sub-frontage-5-east",
+    "title": "Southsea Coastal Scheme (Sub-Frontage 5 East): essential sea defence works and promenade rebuild",
+    "description": "Portsmouth City Council announced closure of the promenade between Speakers’ Corner and South Parade Pier to deliver essential sea defence works as part of the Southsea Coastal Scheme, including raising the promenade, new lighting and seating, cycleway improvements and refurbishment of listed light columns.",
+    "type": "LOCAL_GOV",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "localAuthorityId": "38d6224d-7d80-402f-8ae1-4927b7a3241f",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A new construction phase was announced with a defined closure window through May 2027; delivery remains ongoing until completion and reopening.",
+    "locationDescription": "Southsea promenade between Speakers’ Corner and South Parade Pier, Southsea, Portsmouth",
+    "locationSource": "Portsmouth City Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Promenade to close for essential sea defence work",
+        "source": "Portsmouth City Council",
+        "url": "https://www.portsmouth.gov.uk/promenade-to-close-for-essential-sea-defence-work/",
+        "datePublished": "2026-02-19",
+        "summary": "Council news stating the promenade will be closed from 2 March 2026 until May 2027 for Sub-Frontage 5 East sea defence works, describing planned improvements and flood protection benefits."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e07000111-land-east-of-sevenoaks-high-street-regeneration",
+    "title": "Land East of Sevenoaks High Street: revised concept for leisure centre, market hall, public realm and housing",
+    "description": "Sevenoaks District Council updated its regeneration proposals for land east of Sevenoaks High Street after feedback and changes to partner involvement, outlining an alternative concept including a new energy-efficient leisure centre, a cultural hub/market hall, public space and pedestrian link improvements, and new town-centre homes.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "a0087b01-90e7-45ed-8563-f065eb387081",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council describes a conceptual scheme and next steps (including procurement for a development partner and subsequent planning application), indicating the project remains at pre-delivery stages.",
+    "locationDescription": "Land east of Sevenoaks High Street, Sevenoaks town centre, Kent",
+    "locationSource": "Sevenoaks District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Next steps for Land East of Sevenoaks High Street",
+        "source": "Sevenoaks District Council",
+        "url": "https://www.sevenoaks.gov.uk/news/article/501/next_steps_for_land_east_of_sevenoaks_high_street",
+        "datePublished": "2025-02-17",
+        "summary": "Council update describing the revised concept scheme and proposed elements (leisure centre, market hall/cultural hub, public spaces, improved links to Knole Park and housing) plus procurement next steps."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e07000083-ashchurch-rail-bridge-design-rethink",
+    "title": "Ashchurch rail bridge (Garden Communities): Homes England support to finalise and rethink bridge design",
+    "description": "Tewkesbury Borough Council announced support from Homes England to finalise technical design work and enable a redesign of a new bridge over the railway north of Ashchurch station, intended to unlock development and enable closure of a level crossing in line with Network Rail priorities.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "3fc2ec4a-f23a-4ef0-b677-c009c475238f",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council reported design funding secured and further design/planning activity expected; bridge delivery remains subject to subsequent planning, funding and construction.",
+    "locationDescription": "Rail crossing north of Ashchurch for Tewkesbury station (Garden Communities area)",
+    "locationSource": "Tewkesbury Borough Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Homes England to support re-think on bridge design",
+        "source": "Tewkesbury Borough Council",
+        "url": "https://tewkesbury.gov.uk/homes-england-to-support-re-think-on-bridge-design/",
+        "datePublished": "2025-01-27",
+        "summary": "Council update stating Homes England support/grant funding will enable technical design work for a new bridge over the railway north of Ashchurch station, intended to unlock development and support closure of the level crossing."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e07000171-worksop-pride-in-place-regeneration-plan-approved",
+    "title": "Worksop Pride in Place: £20m, 10-year vision and regeneration plan approved for town-centre improvement",
+    "description": "Bassetlaw District Council reported government approval of a £20m, 10-year Vision and Regeneration Plan for Worksop Town Centre and surrounding areas (via the Worksop Together Board partnership), intended to deliver safer streets, revitalised public spaces and a more vibrant town centre with delivery funding starting from April 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "29e30f64-1b2e-4e30-9959-b90c23b7807a",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Government approval was reported, but programme delivery is planned over multiple years with priorities and project pipeline to be developed and implemented.",
+    "locationDescription": "Worksop town centre and surrounding areas, Bassetlaw",
+    "locationSource": "Bassetlaw District Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£20million regeneration plan for Worksop approved",
+        "source": "Bassetlaw District Council",
+        "url": "https://www.bassetlaw.gov.uk/media-centre/news/latest-news/20million-regeneration-plan-for-worksop-approved/",
+        "datePublished": "2026-03-22",
+        "summary": "Council news stating government approval of a £20m plan to regenerate Worksop town centre over 10 years, describing intended outcomes and indicating delivery funding starting from April 2026."
+      }
+    ]
+  },
+  {
+    "id": "gm-b009-e06000033-better-queensway-highways-works-begin",
+    "title": "Better Queensway: highway and public realm works begin to enable regeneration and reduce flood risk",
+    "description": "Southend-on-Sea City Council announced the start of Better Queensway highway works, including changes to the underpass/roundabout/footbridge layout, new cycle routes, improved pedestrian crossings and installation of underground water storage to manage rainfall and reduce flooding, supporting city-centre regeneration and future housing.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "572c1490-ae94-4374-b165-5a16dc43f668",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council announced a start date and scope for major highways works; delivery remains ongoing through construction and completion of the transformation.",
+    "locationDescription": "Queensway area (city centre), Southend-on-Sea",
+    "locationSource": "Southend-on-Sea City Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Better Queensway highways works begin: safer, more accessible streets for Southend",
+        "source": "Southend-on-Sea City Council",
+        "url": "https://www.southend.gov.uk/news/article/3437/better-queensway-highways-works-begin-safer-more-accessible-streets-for-southend",
+        "datePublished": "2025-11-13",
+        "summary": "Council news announcing highway works starting 8 December 2025 and describing scope including accessibility improvements, new crossings/cycle links and underground water storage to manage rainwater and reduce flooding."
+      }
+    ]
+  }
+]

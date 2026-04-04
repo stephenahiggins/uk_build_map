@@ -142,6 +142,113 @@ confirm() {
   [[ "$ans" == "y" || "$ans" == "yes" ]]
 }
 
+normalize_json_output() {
+  local input_file="$1"
+  local output_file="$2"
+
+  node - "$input_file" "$output_file" <<'EOF'
+const fs = require('fs');
+
+const [, , inputFile, outputFile] = process.argv;
+const raw = fs.readFileSync(inputFile, 'utf8');
+
+function tryParse(text) {
+  try {
+    const parsed = JSON.parse(text);
+    return Array.isArray(parsed) ? parsed : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+function stripCodeFence(text) {
+  const trimmed = text.trim();
+  const match = trimmed.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
+  return match ? match[1].trim() : trimmed;
+}
+
+function findBalancedJson(text) {
+  const openers = new Set(['[', '{']);
+
+  for (let start = 0; start < text.length; start += 1) {
+    const first = text[start];
+    if (!openers.has(first)) continue;
+
+    let depth = 0;
+    let inString = false;
+    let escaped = false;
+
+    for (let end = start; end < text.length; end += 1) {
+      const ch = text[end];
+
+      if (inString) {
+        if (escaped) {
+          escaped = false;
+          continue;
+        }
+        if (ch === '\\') {
+          escaped = true;
+          continue;
+        }
+        if (ch === '"') {
+          inString = false;
+        }
+        continue;
+      }
+
+      if (ch === '"') {
+        inString = true;
+        continue;
+      }
+
+      if (ch === '[' || ch === '{') {
+        depth += 1;
+        continue;
+      }
+
+      if (ch === ']' || ch === '}') {
+        depth -= 1;
+        if (depth !== 0) continue;
+
+        const candidate = text.slice(start, end + 1).trim();
+        const parsed = tryParse(candidate);
+        if (parsed !== undefined) {
+          return parsed;
+        }
+      }
+    }
+  }
+
+  return undefined;
+}
+
+const candidates = [
+  raw.replace(/^\uFEFF/, '').trim(),
+  stripCodeFence(raw),
+  raw,
+];
+
+let parsed;
+for (const candidate of candidates) {
+  parsed = tryParse(candidate);
+  if (parsed !== undefined) break;
+}
+
+if (parsed === undefined) {
+  for (const candidate of candidates) {
+    parsed = findBalancedJson(candidate);
+    if (parsed !== undefined) break;
+  }
+}
+
+if (parsed === undefined) {
+  process.exit(1);
+}
+
+fs.writeFileSync(outputFile, `${JSON.stringify(parsed)}\n`, 'utf8');
+EOF
+}
+
 if [[ "$DRY_RUN" -ne 1 ]]; then
   vmsg "Codex CLI: $(codex --version 2>/dev/null || echo 'unknown')"
   vmsg "Model: $MODEL"
@@ -157,6 +264,10 @@ if [[ "$DRY_RUN" -ne 1 ]]; then
 fi
 
 mkdir -p "$OUT_DIR"
+
+successful_batches=()
+failed_batches=()
+invalid_json_batches=()
 
 for prompt_file in "${run_list[@]}"; do
   base=$(basename "$prompt_file")
@@ -178,6 +289,10 @@ for prompt_file in "${run_list[@]}"; do
   profile_args=()
   if [[ -n "$PROFILE" ]]; then
     profile_args+=(--profile "$PROFILE")
+  fi
+
+  if [[ "$DRY_RUN" -ne 1 ]]; then
+    tmp_file="$(mktemp "$OUT_DIR/batch-${batch_num}.tmp.XXXXXX")"
   fi
 
   cmd=(
@@ -207,22 +322,33 @@ for prompt_file in "${run_list[@]}"; do
     continue
   fi
 
-  tmp_file="$(mktemp "$OUT_DIR/batch-${batch_num}.tmp.XXXXXX")"
   vmsg "Running batch ${batch_num}"
   if ! cat "$prompt_file" | "${cmd[@]}"; then
-    vmsg "Batch ${batch_num} failed"
+    vmsg "Batch ${batch_num} failed; continuing to next batch"
+    failed_batches+=("$batch_num")
     rm -f "$tmp_file"
-    exit 1
+    continue
   fi
 
-  if ! node -e 'JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"));' "$tmp_file" >/dev/null 2>&1; then
-    vmsg "Batch ${batch_num} did not produce valid JSON"
+  normalized_tmp="$(mktemp "$OUT_DIR/batch-${batch_num}.normalized.XXXXXX")"
+  if ! normalize_json_output "$tmp_file" "$normalized_tmp"; then
+    vmsg "Batch ${batch_num} did not produce valid JSON; continuing to next batch"
+    invalid_json_batches+=("$batch_num")
+    rm -f "$normalized_tmp"
     rm -f "$tmp_file"
-    exit 1
+    continue
   fi
 
-  mv "$tmp_file" "$out_file"
+  mv "$normalized_tmp" "$out_file"
+  rm -f "$tmp_file"
+  successful_batches+=("$batch_num")
   vmsg "Saved batch ${batch_num} to $out_file"
 done
 
-vmsg "Completed Codex batch run."
+vmsg "Completed Codex batch run. Successful: ${#successful_batches[@]}, command failures: ${#failed_batches[@]}, invalid JSON: ${#invalid_json_batches[@]}"
+if [[ ${#failed_batches[@]} -gt 0 ]]; then
+  vmsg "Batches with command failures: ${failed_batches[*]}"
+fi
+if [[ ${#invalid_json_batches[@]} -gt 0 ]]; then
+  vmsg "Batches with invalid JSON: ${invalid_json_batches[*]}"
+fi

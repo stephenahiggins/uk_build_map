@@ -1,0 +1,562 @@
+[
+  {
+    "id": "gm-b006-e07000176-city-ground-peter-taylor-stand-redevelopment",
+    "title": "Nottingham Forest City Ground redevelopment: Peter Taylor Stand replacement and associated public realm",
+    "description": "Rushcliffe Borough Council’s planning committee resolved to approve revised plans for Nottingham Forest’s City Ground redevelopment, centred on demolishing and rebuilding the Peter Taylor Stand to increase capacity and deliver associated site works and public realm changes.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "47f68eb2-2bd2-4740-9ff6-d5b8437f453b",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning committee approval has been reported, with delivery dependent on subsequent mobilisation and construction phases.",
+    "locationDescription": "Nottingham Forest City Ground, West Bridgford (River Trent), Rushcliffe",
+    "locationSource": "Rushcliffe Borough Council and construction industry reporting",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning Committee resolve to approve Nottingham Forest’s plans at the City Ground",
+        "source": "Rushcliffe Borough Council",
+        "url": "https://www.rushcliffe.gov.uk/news-area/planning-committee-resolve-to-approve-nottingham-forest-s-plans-at-the-city-ground/",
+        "datePublished": "2025-06-26",
+        "summary": "Council update stating the planning committee resolved to approve Nottingham Forest’s City Ground redevelopment application, with quotes from the council leader confirming the decision."
+      },
+      {
+        "type": "URL",
+        "title": "Nottingham Forest City Ground starts £130m redevelopment",
+        "source": "Construction News",
+        "url": "https://www.constructionnews.co.uk/buildings/nottingham-forest-city-ground-starts-130m-redevelopment-03-02-2026/",
+        "datePublished": "2026-02-03",
+        "summary": "Industry report describing the start of redevelopment activity at the City Ground and the reported project value and scope."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000217-sheerwater-lahf-funded-empty-homes-refurbishment",
+    "title": "Sheerwater regeneration: LAHF-funded refurbishment of long-term empty homes",
+    "description": "Woking Borough Council secured Local Authority Housing Fund (LAHF) funding to refurbish long-term empty properties in the Sheerwater regeneration area, accelerating delivery of refurbished homes and supporting a shift away from further new-build phases.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "32d9f262-14b8-40d9-be66-260afe1ec33c",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Grant funding has been awarded with a defined refurbishment programme and completion milestones, but works are time-bound through to 2026.",
+    "locationDescription": "Sheerwater regeneration area (including long-term empty homes), Woking",
+    "locationSource": "Woking Borough Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Council receives funding to bring long-term empty homes back into use",
+        "source": "Woking Borough Council",
+        "url": "https://www.woking.gov.uk/news/council-receives-funding-bring-long-term-empty-homes-back-use",
+        "datePublished": "2024-09-11",
+        "summary": "Council statement confirming LAHF Round 3 funding for refurbishing empty homes in the Sheerwater regeneration area and setting out payment milestones and a March 2026 completion date."
+      },
+      {
+        "type": "URL",
+        "title": "Woking bankruptcy claims latest victim as regeneration loses GP, nursery and community centre",
+        "source": "Woking News & Mail (Local Democracy Reporting Service)",
+        "url": "https://www.wokingnewsandmail.co.uk/news/woking-bankruptcy-claims-latest-victim-as-regeneration-loses-gp-nursery-and-community-centre-785061",
+        "datePublished": "2025-04-17",
+        "summary": "Local Democracy Reporting Service article describing changes to Sheerwater regeneration proposals and related planning decisions against the backdrop of Woking’s financial position."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000226-station-gateway-phase-1-contractor-appointed",
+    "title": "Station Gateway (Phase 1), Crawley: public realm and highways works with contractor appointed",
+    "description": "Crawley Borough Council appointed a contractor to deliver phase one of the Station Gateway regeneration scheme, covering public realm and highways works around The Martlets, Haslett Avenue West and Friary Way, including bus station operational improvements and enhanced pedestrian and cycle connections.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "9d25a482-0d07-49da-b6f1-521ec3ad62c5",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Delivery contract has been awarded and preparatory/early works have been reported, with construction expected to continue across a multi-year programme.",
+    "locationDescription": "Crawley town centre transport hub area (Friary Way, The Martlets, Haslett Avenue West and bus station)",
+    "locationSource": "Crawley Borough Council and Find a Tender",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Contractor appointed to deliver phase one of the ‘Station Gateway’ regeneration scheme",
+        "source": "Crawley Borough Council",
+        "url": "https://crawley.gov.uk/council-information/news-and-events/latest-news/2026/contractor-appointed-deliver-phase-one-station-gateway-regeneration-scheme",
+        "datePublished": "2026-01-13",
+        "summary": "Council announcement appointing Landbuild Ltd for Phase 1 and describing scope, funding sources and expected programme duration."
+      },
+      {
+        "type": "URL",
+        "title": "Crawley Borough Council- Station Gateway Phase 1 (contract details notice)",
+        "source": "Find a Tender (UK Government)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/076758-2025",
+        "datePublished": "2025-11-25",
+        "summary": "Contract details notice for Station Gateway Phase 1 public realm and highways works, including the commencement date and contract duration."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000170-north-kirkby-gateway-factory-shop-demolition-and-redevelopment",
+    "title": "North Kirkby Gateway (Kirkby-in-Ashfield): Ellis Street factory shop demolition and gateway building plans",
+    "description": "Ashfield District Council began demolition of the former factory shop on Ellis Street as part of the North Kirkby Gateway regeneration, with plans for a new apartment complex and flexible ground-floor space overlooking Kirkby Plaza, alongside wider Town Deal-funded interventions in the area.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "311939d0-af21-4e6b-adbe-14f6b57b15a8",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Demolition has started and redevelopment plans have progressed, but the new build remains to be delivered.",
+    "locationDescription": "Former factory shop site, Ellis Street / Kirkby Plaza area, Kirkby-in-Ashfield",
+    "locationSource": "Ashfield District Council and BBC News",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Demolition starts on the former factory shop",
+        "source": "Ashfield District Council",
+        "url": "https://www.ashfield.gov.uk/news/demolition-starts-on-the-former-factory-shop/",
+        "datePublished": "2025-11-11",
+        "summary": "Council update confirming demolition activity at the Ellis Street site and describing the planned apartment complex and ground-floor space as part of North Kirkby Gateway."
+      },
+      {
+        "type": "URL",
+        "title": "Council to buy land for major regeneration scheme",
+        "source": "BBC News",
+        "url": "https://feeds.bbci.co.uk/news/articles/cgl79de092zo",
+        "datePublished": "2024-07-01",
+        "summary": "BBC report describing Ashfield District Council’s plans and land acquisitions for the £14m North Kirkby Gateway scheme focused on the Pond Hole and Ellis Street areas."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e06000036-coopers-hill-regeneration-completed",
+    "title": "Coopers Hill (Bracknell): regeneration completed with new homes, open space and active travel links",
+    "description": "Bracknell Forest Council reported completion of the Coopers Hill regeneration, delivering 52 new sustainable homes alongside new public open space, pedestrian paths and cycle routes designed to improve connectivity to Bracknell town centre, including cycle parking and EV charging.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "89ba0b58-baf3-4a7c-9ca9-d82c41059681",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council reporting states the regeneration has been completed and homes and associated public realm works have been handed over.",
+    "locationDescription": "Coopers Hill site, edge of Bracknell town centre",
+    "locationSource": "Bracknell Forest Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Coopers Hill regeneration completed",
+        "source": "Bracknell Forest Council",
+        "url": "https://www.bracknell-forest.gov.uk/news/2025/11/coopers-hill-regeneration-completed",
+        "datePublished": "2025-11-05",
+        "summary": "Council announcement stating Coopers Hill regeneration completion, including 52 homes, public open spaces, new paths and cycle routes, and sustainability measures."
+      },
+      {
+        "type": "URL",
+        "title": "Residents move into new affordable homes at Coopers Hill",
+        "source": "Bracknell Forest Council",
+        "url": "https://www.bracknell-forest.gov.uk/news/2024/08/residents-move-new-affordable-homes-coopers-hill",
+        "datePublished": "2024-08-14",
+        "summary": "Council update on affordable homes delivery at Coopers Hill, describing sustainability features and active travel infrastructure associated with the regeneration."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000093-andover-western-avenue-riverside-park-planning-consent",
+    "title": "Andover Riverside Park (Western Avenue): planning consent for River Anton town-centre transformation",
+    "description": "Test Valley Borough Council secured planning permission to create a new riverside park near Western Avenue in Andover, involving changes to highway layout and new accessible paths and public spaces to open up the River Anton and improve walking and cycling connections within the town centre masterplan area.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "c3069c84-6135-4764-8f30-cbbe22981484",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning consent has been granted with a stated delivery timeline, but construction is planned for a later start date.",
+    "locationDescription": "Western Avenue / River Anton (town centre), Andover",
+    "locationSource": "Test Valley Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Full stream ahead: planning consent granted for riverside park transformation in Andover",
+        "source": "Test Valley Borough Council",
+        "url": "https://www.testvalley.gov.uk/news/2025/sep/full-stream-ahead-planning-consent-granted-for-riverside-park-transformation-in-andover",
+        "datePublished": "2025-09-24",
+        "summary": "Council news item describing planning consent for a new riverside park at Western Avenue, key design elements, and the wider Andover Town Centre Masterplan context."
+      },
+      {
+        "type": "URL",
+        "title": "Riverside park project in full flow as council submits planning application",
+        "source": "Test Valley Borough Council",
+        "url": "https://www.testvalley.gov.uk/news/2025/may/riverside-park-project-in-full-flow-as-council-submits-planning-application",
+        "datePublished": "2025-05-16",
+        "summary": "Council update confirming submission of the planning application and describing intended river opening-up works, paths, public space and connectivity benefits."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000114-ramsgate-clock-house-refurbishment-and-cafe-extension",
+    "title": "Ramsgate Clock House: refurbishment as heritage hub with café extension (Local Regeneration Fund)",
+    "description": "Thanet District Council’s Ramsgate regeneration programme includes the refurbishment of the Grade II* listed Clock House (former Maritime Museum) to create a heritage and community hub with a new café extension, supported by government regeneration funding and progressing through planning and procurement stages.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "1fc80db5-b0c9-48f6-b8a3-c4ab3bcf5ec1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council updates describe the project moving through planning and delivery phases with construction activity reported as underway.",
+    "locationDescription": "The Clock House (former Maritime Museum), Ramsgate Royal Harbour",
+    "locationSource": "Thanet District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Councillors to consider way forward for Ramsgate’s £9.7m investment projects",
+        "source": "Thanet District Council",
+        "url": "https://www.thanet.gov.uk/councillors-to-consider-way-forward-for-ramsgates-9-7m-investment-projects/",
+        "datePublished": "2024-10-07",
+        "summary": "Council update outlining the status of Ramsgate investment projects, including the Clock House refurbishment objectives and next delivery steps."
+      },
+      {
+        "type": "URL",
+        "title": "Update: regeneration projects in Margate and Ramsgate",
+        "source": "Thanet District Council",
+        "url": "https://www.thanet.gov.uk/update-regeneration-projects-in-margate-and-ramsgate/",
+        "datePublished": "2025-02-27",
+        "summary": "Council update reporting progress across Ramsgate and Margate regeneration schemes, including the Clock House moving to the next phase with planning activity and delivery timelines."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000034-chesterfield-market-and-town-centre-public-realm-refurbishment",
+    "title": "Chesterfield Market and town centre public realm refurbishment (Revitalising the Heart of Chesterfield)",
+    "description": "Chesterfield Borough Council’s town centre regeneration programme includes a multi-million-pound refurbishment of Chesterfield Market and associated public realm improvements, modernising stalls and creating flexible event space as part of the wider ‘Revitalising the Heart of Chesterfield’ works.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "ec85a970-c47d-44d0-b364-f299c48263ec",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council reporting describes the market investment as delivered, and local reporting describes the refurbishment as relaunched.",
+    "locationDescription": "Chesterfield Market Place and adjacent town-centre public realm, Chesterfield",
+    "locationSource": "Chesterfield Borough Council and Destination Chesterfield",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Key regeneration sites (Revitalising the Heart of Chesterfield)",
+        "source": "Chesterfield Borough Council",
+        "url": "https://www.chesterfield.gov.uk/business-and-economic-growth/regeneration-and-economic-growth/revitalising-the-heart-of-chesterfield/key-regeneration-sites/",
+        "datePublished": "2026-01-16",
+        "summary": "Council page (last updated 16 January 2026) describing town-centre public realm improvements including the market investment and related regeneration areas."
+      },
+      {
+        "type": "URL",
+        "title": "Businesses celebrate the refurbishment of Chesterfield’s Market",
+        "source": "Destination Chesterfield",
+        "url": "https://www.chesterfield.co.uk/2026/04/businesses-celebrate-the-refurbishment-of-chesterfields-market/",
+        "datePublished": "2026-04-01",
+        "summary": "Local business/regeneration reporting describing the market’s re-launch following refurbishment and summarising public realm and trading improvements."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000079-kemble-to-steadings-greenway-cil-allocation",
+    "title": "Kemble to Steadings Greenway: CIL strategic funding allocation",
+    "description": "Cotswold District Council’s Infrastructure Funding Statement for 2024/25 records strategic Community Infrastructure Levy (CIL) allocations to transport and active travel schemes, including a funded allocation for the Kemble to Steadings Greenway project led by Sustrans.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "b6b03ea9-7fd5-47cc-83e5-cb923aa2bba2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding has been allocated in the council’s published Infrastructure Funding Statement, but the statement records allocation rather than completion of works.",
+    "locationDescription": "Kemble area (Cotswold District), Gloucestershire",
+    "locationSource": "Cotswold District Council (Infrastructure Funding Statement)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Infrastructure Funding Statement 2024/2025 (1 April 2024 to 31 March 2025)",
+        "source": "Cotswold District Council",
+        "url": "https://www.cotswold.gov.uk/media/1a4ejkkm/infrastructure-funding-statement-2024-2025_ruby-moore.pdf",
+        "datePublished": "2025-11-12",
+        "summary": "Infrastructure Funding Statement dated 12 November 2025 listing CIL Strategic Fund allocations, including an allocation for the Kemble to Steadings Greenway scheme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e06000063-workington-gateway-highways-and-connectivity-upgrades",
+    "title": "Workington Gateway: highways upgrades at Ramsay Brow and Hall Brow with improved walking/cycling access",
+    "description": "Cumberland Council’s Workington Gateway project is a central-government-funded package of transport and connectivity interventions, including junction and corridor upgrades at Ramsay Brow and Hall Brow intended to reduce congestion, improve safety and enhance access (including for walking and cycling) to employment sites, the Port of Workington and local attractions such as Hall Park and Workington Hall.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "7bd12193-1e9d-48e3-a51a-e66f29db6e47",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council updates report design work and site investigations progressing ahead of and during construction phases, with milestones and completion dates published.",
+    "locationDescription": "Ramsay Brow / Hall Brow corridors and town-centre connectivity routes, Workington",
+    "locationSource": "Cumberland Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Next phase of Workington Gateway scheme begins",
+        "source": "Cumberland Council",
+        "url": "https://www.cumberland.gov.uk/news/2025/next-phase-workington-gateway-scheme-begins",
+        "datePublished": "2025-02-27",
+        "summary": "Council update describing the start of detailed design work and site investigations for the £10m Workington Gateway transport transformation."
+      },
+      {
+        "type": "URL",
+        "title": "Workington’s £33 million regeneration: key dates announced",
+        "source": "Cumberland Council",
+        "url": "https://www.cumberland.gov.uk/news/2025/workingtons-ps33-million-regeneration-key-dates-announced",
+        "datePublished": "2025-08-15",
+        "summary": "Council update setting out key milestones and programmed roadworks for Workington Gateway and associated town-centre public realm works, including anticipated completion dates."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000193-uttoxeter-maltings-solar-ev-charging-hub",
+    "title": "Uttoxeter town centre: solar-assisted EV charging hub installed at The Maltings car park",
+    "description": "East Staffordshire Borough Council installed a solar-assisted EV charging hub at The Maltings car park in Uttoxeter, providing multiple public charge points with integrated solar generation as a practical low-carbon infrastructure intervention aligned with broader regeneration objectives for the Maltings site.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "3a9d3532-ce84-41e9-a5a6-4ebcf29f2988",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Reporting states the EV charging hub is operational and open to the public.",
+    "locationDescription": "The Maltings car park, Uttoxeter town centre",
+    "locationSource": "Greater Birmingham Chambers of Commerce and BBC News",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Uttoxeter's ‘cutting edge’ EV charging hub opens to public",
+        "source": "Greater Birmingham Chambers of Commerce",
+        "url": "https://www.greaterbirminghamchambers.com/resource/uttoxeter-s-cutting-edge-ev-charging-hub-opens-to-public.html",
+        "datePublished": "2025-09-23",
+        "summary": "Business chamber article describing the operational Papilio3 solar-assisted EV charging hub at The Maltings car park, including number of charging points and council statements."
+      },
+      {
+        "type": "URL",
+        "title": "Shopping centre demolition plans put forward",
+        "source": "BBC News",
+        "url": "https://feeds.bbci.co.uk/news/articles/cly8kx7jjx9o",
+        "datePublished": "2025-07-08",
+        "summary": "BBC Local Democracy Reporting Service article describing East Staffordshire’s Maltings regeneration context, including demolition planning activity and the council’s stated objectives for the site."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000112-folkestone-a-brighter-future-town-centre-road-redesign",
+    "title": "Folkestone – A Brighter Future: town centre road redesign and public realm programme",
+    "description": "Folkestone & Hythe District Council’s Levelling Up-funded ‘Folkestone – A Brighter Future’ programme involves major town-centre road redesign, including changes around Radnor Park roundabout, Shellons Street and Middelburg Square to improve safety, connectivity and the public realm, delivered with Kent County Council and contractors Jackson Civil Engineering.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "42efa97b-cf9c-4ae4-b7ce-f0ef1f5518e4",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council updates report the programme progressing through phases with completion planned for 2026.",
+    "locationDescription": "Folkestone town centre (Radnor Park roundabout, Shellons Street, Middelburg Square and surrounding streets)",
+    "locationSource": "Folkestone & Hythe District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "A brighter future is taking shape",
+        "source": "Folkestone & Hythe District Council",
+        "url": "https://www.folkestone-hythe.gov.uk/news/article/352/a-brighter-future-is-taking-shape",
+        "datePublished": "2025-07-31",
+        "summary": "Council update stating the scheme is progressing (with a quarter complete) and describing the current stage involving major road redesign and traffic management adjustments."
+      },
+      {
+        "type": "URL",
+        "title": "Folkestone - A Brighter Future updates",
+        "source": "Folkestone & Hythe District Council",
+        "url": "https://www.folkestone-hythe.gov.uk/news/article/387/folkestone-a-brighter-future-updates",
+        "datePublished": "2025-12-03",
+        "summary": "Council update stating the scheme is more than a third complete and summarising ongoing works and an expected finish in summer 2026."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000138-charterholme-eastern-access-road-and-rail-bridge",
+    "title": "Charterholme (Western Growth Corridor), Lincoln: eastern access road and multi-user rail bridge",
+    "description": "City of Lincoln Council reported progress on Charterholme’s eastern access, including an access road from Tritton Road and a new vehicle and multi-user bridge over the railway, intended to unlock housing and wider site infrastructure delivery as part of the Charterholme/Western Growth Corridor programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "45831c76-dafc-4769-8a03-85a7c1623627",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council updates describe the scheme progressing and scheduled for completion by March 2026, but completion is not confirmed in the cited updates.",
+    "locationDescription": "Charterholme development eastern access from Tritton Road (including bridge over the railway), Lincoln",
+    "locationSource": "City of Lincoln Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Charterholme update – January 2025",
+        "source": "City of Lincoln Council",
+        "url": "https://www.lincoln.gov.uk/lincoln-city/news/article/369/update-on-charterholme-development-progress",
+        "datePublished": "2025-01-16",
+        "summary": "Council update describing progress and milestones for the eastern access road and rail bridge, with a completion target of March 2026."
+      },
+      {
+        "type": "URL",
+        "title": "Progress Continues on Charterholme Eastern Access and Tritton Road Improvements",
+        "source": "City of Lincoln Council",
+        "url": "https://www.lincoln.gov.uk/news/article/404/progress-continues-on-charterholme-eastern-access-and-tritton-road-improvements",
+        "datePublished": "2025-07-18",
+        "summary": "Council update describing ongoing eastern access and Tritton Road works, including bridge progress and planned traffic management to complete essential infrastructure."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000195-kidsgrove-station-upgrade-town-deal",
+    "title": "Kidsgrove Town Deal: revised £2.7m Kidsgrove railway station upgrade progressing",
+    "description": "Newcastle-under-Lyme Borough Council, as accountable body for Kidsgrove Town Deal funding, advanced a revised programme to upgrade Kidsgrove railway station, including refurbishment of the main building and island building and wider site enhancements after earlier proposals were scaled back due to mining-related ground constraints.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "4c223c00-c1eb-43d7-9c49-0e05626166bf",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council and sector reporting describes the revised scheme moving toward approval and delivery, with further design and implementation steps required.",
+    "locationDescription": "Kidsgrove railway station and station buildings, Kidsgrove",
+    "locationSource": "Newcastle-under-Lyme Borough Council and Rail Magazine",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New Kidsgrove train station plan on track for council's green light",
+        "source": "Newcastle-under-Lyme Borough Council",
+        "url": "https://www.newcastle-staffs.gov.uk/news/article/441/new-kidsgrove-train-station-plan-on-track-for-council-s-green-light",
+        "datePublished": "2025-10-07",
+        "summary": "Council update describing the revised Kidsgrove station modernisation scope and the Town Deal governance steps toward formal progression."
+      },
+      {
+        "type": "URL",
+        "title": "Kidsgrove station refurbishment given go-ahead after plans scaled back",
+        "source": "Rail Magazine",
+        "url": "https://www.railmagazine.com/news/kidsgrove-station-refurbishment-given-go-ahead-after-plans-scaled-back",
+        "datePublished": "2025-10-09",
+        "summary": "Rail sector reporting describing council approval for a scaled-back station modernisation scheme and summarising the revised project scope and budget."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e08000005-rochdale-town-hall-council-chamber-restoration-completed",
+    "title": "Rochdale Town Hall: council chamber restoration as final phase of the £20m redevelopment",
+    "description": "Rochdale’s town hall restoration programme included the final phase works to reopen and restore the historic council chamber and associated rooms (including the mayoral parlour), completing the final piece of the wider redevelopment and reopening programme for the Grade I listed civic building.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "4df67854-7f50-4b8d-b431-93adfdd800dc",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Regeneration partner reporting states the council chamber restoration phase has completed and is reopening as part of the completed restoration programme.",
+    "locationDescription": "Rochdale Town Hall (council chamber and mayoral parlour), Rochdale town centre",
+    "locationSource": "Rochdale Development Agency and Rochdale Online",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Final piece of the jigsaw as restoration of Grade I listed masterpiece completes",
+        "source": "Rochdale Development Agency (Invest in Rochdale)",
+        "url": "https://www.investinrochdale.co.uk/news/post/final-piece-of-the-jigsaw-as-restoration-of-grade-i-listed-masterpiece-comp",
+        "datePublished": "2025-03-14",
+        "summary": "Regeneration partner post describing completion of council chamber and adjoining room restoration after the wider building reopened in March 2024, and outlining the heritage and operational outcomes."
+      },
+      {
+        "type": "URL",
+        "title": "Final phase of Rochdale Town Hall redevelopment tabled",
+        "source": "Rochdale Online",
+        "url": "https://www.rochdaleonline.co.uk/news-features/2/news-headlines/158781/final-phase-of-rochdale-town-hall-redevelopment-tabled",
+        "datePublished": "2025-02-11",
+        "summary": "Local reporting on the planning application for the final phase of works, including refitting the council chamber and mayoral parlour and expected completion timing."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e06000066-bridgwater-tidal-barrier-scheme-construction-and-design-efficiency-review",
+    "title": "Bridgwater Tidal Barrier: flood-resilience scheme construction and design efficiency review",
+    "description": "The Bridgwater Tidal Barrier scheme is a major flood-resilience programme intended to protect thousands of homes, businesses and infrastructure from tidal flooding, combining a barrier across the River Parrett with downstream flood banks and upstream fish/eel passage improvements, with construction activity progressing alongside design efficiency updates.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "ebc3c1e0-496e-4ae6-a066-5d6f3d65a565",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Construction and programme updates are ongoing, with public updates indicating continuing works and further timeline updates expected.",
+    "locationDescription": "River Parrett, Bridgwater area (including downstream communities such as Chilton Trinity, Pawlett and Combwich)",
+    "locationSource": "Somerset Council and Environment Agency",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "About the Bridgwater Tidal Barrier Scheme",
+        "source": "Somerset Council",
+        "url": "https://www.somerset.gov.uk/beaches-ports-and-flooding/bridgwater-tidal-barrier-scheme/about-the-bridgwater-tidal-barrier-scheme/",
+        "datePublished": "2026-03-13",
+        "summary": "Scheme overview page describing scope (barrier, downstream banks, fish/eel passage) and noting the page’s last updated date and ongoing multi-year delivery."
+      },
+      {
+        "type": "URL",
+        "title": "Bridgwater Tidal Barrier Scheme gets a more efficient design",
+        "source": "Environment Agency (GOV.UK)",
+        "url": "https://www.gov.uk/government/news/bridgwater-tidal-barrier-scheme-gets-a-more-efficient-design",
+        "datePublished": "2026-01-15",
+        "summary": "Environment Agency press release describing an efficiency review and design changes to the tidal barrier superstructure while maintaining flood protection outcomes."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e06000027-paignton-and-preston-promenade-coastal-flood-protection",
+    "title": "Paignton and Preston Promenade: coastal flood protection and promenade improvements",
+    "description": "Torbay Council’s Paignton and Preston Promenade scheme plans new sea defences and promenade improvements to reduce coastal flood risk, enhance accessibility and upgrade public spaces, with a phased construction programme and an identified contractor for delivery.",
+    "type": "LOCAL_GOV",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "localAuthorityId": "82cc34ae-9c27-4790-b415-124b6faf1593",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council information states works are scheduled and have commenced timing, with delivery continuing through to 2027.",
+    "locationDescription": "Paignton and Preston seafront promenades, Torbay",
+    "locationSource": "Torbay Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Paignton and Preston Promenade coastal flood protection scheme",
+        "source": "Torbay Council",
+        "url": "https://www.torbay.gov.uk/leisure-sports-and-community/regeneration/paignton-and-preston-seafront-masterplan/",
+        "datePublished": "2025-09-29",
+        "summary": "Council scheme page (updated 29 September 2025) describing proposed sea defences, start timing, phased programme, completion windows and contractor details."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000032-heanor-marketplace-future-high-streets-fund-regeneration",
+    "title": "Heanor Marketplace: Future High Streets Fund public realm regeneration and reopening",
+    "description": "Amber Valley Borough Council’s Future High Streets Fund programme delivered major public realm works at Heanor Marketplace, including improved pedestrian routes, enhanced bus access, planting, and a resurfaced car park, with the scheme formally celebrated at a public opening event.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "9878daec-1cee-4b83-a68e-ce03d8b1d2de",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council and BBC reporting describes the marketplace works completed and celebrated via an official opening event in September 2024.",
+    "locationDescription": "Heanor Marketplace, Heanor town centre",
+    "locationSource": "Amber Valley Borough Council and BBC News",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Market place to open as part of £17.8m scheme",
+        "source": "BBC News",
+        "url": "https://feeds.bbci.co.uk/news/articles/clyw4kdzve5o",
+        "datePublished": "2024-09-07",
+        "summary": "BBC report describing the Heanor Market Place overhaul as part of a £17.8m investment programme, listing delivered public realm and access improvements and associated project strands."
+      },
+      {
+        "type": "URL",
+        "title": "Dignitaries choose Heanor Happening to celebrate official opening of transformation project",
+        "source": "Derbyshire Times",
+        "url": "https://www.derbyshiretimes.co.uk/arts-and-culture/dignitaries-choose-heanor-happening-to-celebrate-official-opening-of-transformation-project-4772061",
+        "datePublished": "2024-09-06",
+        "summary": "Local news report summarising the Heanor Marketplace overhaul and confirming the planned official opening event date, with details on delivered public realm and accessibility improvements."
+      }
+    ]
+  }
+]

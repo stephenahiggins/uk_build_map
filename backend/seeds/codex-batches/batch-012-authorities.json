@@ -8,6 +8,14 @@
     "regionName": "South West"
   },
   {
+    "id": "54d099bf-5db6-4bdf-8e53-86e0594a9799",
+    "name": "Stratford-on-Avon",
+    "code": "E07000221",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
     "id": "32078f80-82c9-4156-8a0c-ea4d3379b89e",
     "name": "Wiltshire",
     "code": "E06000054",
@@ -30,14 +38,6 @@
     "countryCode": "ENGLAND",
     "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
     "regionName": "South East"
-  },
-  {
-    "id": "54d099bf-5db6-4bdf-8e53-86e0594a9799",
-    "name": "Stratford-on-Avon",
-    "code": "E07000221",
-    "countryCode": "ENGLAND",
-    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
-    "regionName": "West Midlands"
   },
   {
     "id": "c77a8255-6252-4556-920a-2b0d111748aa",
@@ -64,6 +64,14 @@
     "regionName": "North East"
   },
   {
+    "id": "d8f1b9fc-ffe3-49ca-a9f7-f1059c0e965d",
+    "name": "Mansfield",
+    "code": "E07000174",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
     "id": "cef65a66-6ad5-444b-9f9e-64813743fbf2",
     "name": "North East Lincolnshire",
     "code": "E06000012",
@@ -80,6 +88,14 @@
     "regionName": "North West"
   },
   {
+    "id": "4b50870d-6c3a-4878-bc51-d13eb7b443fa",
+    "name": "Arun",
+    "code": "E07000224",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
     "id": "90db78e8-e501-4aac-abd9-8a5d46562cfe",
     "name": "Braintree",
     "code": "E07000067",
@@ -91,14 +107,6 @@
     "id": "655643b4-044b-4423-b4c9-e16bb75c0244",
     "name": "Gedling",
     "code": "E07000173",
-    "countryCode": "ENGLAND",
-    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
-    "regionName": "East Midlands"
-  },
-  {
-    "id": "d8f1b9fc-ffe3-49ca-a9f7-f1059c0e965d",
-    "name": "Mansfield",
-    "code": "E07000174",
     "countryCode": "ENGLAND",
     "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
     "regionName": "East Midlands"
@@ -118,14 +126,6 @@
     "countryCode": "ENGLAND",
     "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
     "regionName": "North West"
-  },
-  {
-    "id": "4b50870d-6c3a-4878-bc51-d13eb7b443fa",
-    "name": "Arun",
-    "code": "E07000224",
-    "countryCode": "ENGLAND",
-    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
-    "regionName": "South East"
   },
   {
     "id": "ee3cd39e-1937-41d8-8855-b137bfd735c0",

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "gm-b002-e09000032-winstanley-neighbourhood-regeneration-plan",
+    "title": "Winstanley Neighbourhood Regeneration Plan (Winstanley and York Road estates)",
+    "description": "Wandsworth Council approved an updated 10-year regeneration plan for the Winstanley neighbourhood, centred on the Winstanley and York Road estates, to deliver around 2,550 homes alongside new and improved community facilities, green space and local amenities.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "00bc7835-970c-4876-8d81-e6a5c9595f5c",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council approval in place and delivery approach reset; regeneration programme and phases continue to develop.",
+    "locationDescription": "Winstanley and York Road estates / Winstanley neighbourhood, Battersea, London",
+    "locationSource": "Wandsworth Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Wandsworth Council approves major investment to transform the Winstanley Neighbourhood",
+        "source": "Wandsworth Borough Council",
+        "url": "https://www.wandsworth.gov.uk/news/news-july-2025/wandsworth-council-approves-major-investment-to-transform-the-winstanley-neighbourhood/",
+        "datePublished": "2025-07-15",
+        "summary": "Council announcement approving an improved regeneration plan, describing planned investment in homes, community facilities and public realm improvements."
+      },
+      {
+        "type": "URL",
+        "title": "Statement on the Winstanley and York Road Regeneration joint venture",
+        "source": "Wandsworth Borough Council",
+        "url": "https://www.wandsworth.gov.uk/news/news-january-2025/statement-on-the-winstanley-and-york-road-regeneration-joint-venture/",
+        "datePublished": "2025-01-06",
+        "summary": "Council statement setting out the change in delivery approach for the regeneration scheme and planned next phases."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000128-fleetwood-waterfront-masterplan",
+    "title": "Fleetwood Waterfront masterplan development (Marine Hall, leisure centre and public realm)",
+    "description": "Wyre Council signed off a masterplan to rejuvenate Fleetwood’s waterfront, including proposals to redevelop Marine Hall, refurbish Fleetwood Leisure Centre and improve the promenade/public realm to better connect the seafront and town centre.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "6f34243b-9c71-47a7-bafd-3b077c0e8730",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Masterplan signed off; business cases and delivery planning underway for constituent projects.",
+    "locationDescription": "Fleetwood Waterfront (including Marine Hall, Fleetwood Leisure Centre and promenade), Fleetwood, Lancashire",
+    "locationSource": "Wyre Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Wyre Council gives the green light on plans to rejuvenate Fleetwood Waterfront",
+        "source": "Wyre Council",
+        "url": "https://www.wyre.gov.uk/news/article/496/wyre-council-gives-the-green-light-on-plans-to-rejuvenate-fleetwood-waterfront",
+        "datePublished": "2024-12-11",
+        "summary": "Council update confirming councillors signed off the Fleetwood Waterfront masterplan and summarising the four potential projects."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000095-waltham-cross-town-centre-regeneration-reopens",
+    "title": "Waltham Cross town centre regeneration (public realm, crossings, SUDS and streetscape)",
+    "description": "Broxbourne Borough Council reported the reopening of Waltham Cross town centre following an extensive regeneration project, delivering upgraded public realm and accessibility improvements including new pedestrian crossings, cycle facilities, landscaping with sustainable drainage, lighting and street furniture.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "09fa2982-ea4f-4206-a9c3-0577830ce00c",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council states the main town centre works have completed and the regenerated area has reopened, with minor finishing works continuing.",
+    "locationDescription": "Waltham Cross town centre, Broxbourne, Hertfordshire",
+    "locationSource": "Borough of Broxbourne Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Waltham Cross Town Centre Reopens with a Brand-New Look",
+        "source": "Borough of Broxbourne Council",
+        "url": "https://www.broxbourne.gov.uk/news/article/410/waltham-cross-town-centre-reopens-with-a-brand-new-look",
+        "datePublished": "2025-12-04",
+        "summary": "Council announcement describing the completed regeneration works and the improvements delivered in and around the town centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e09000001-transforming-fleet-street-public-realm",
+    "title": "Transforming Fleet Street (public realm and active travel design proposals)",
+    "description": "The City of London Corporation set out proposals to transform Fleet Street with wider pavements, cycling improvements, and public realm enhancements including seating and planting, as part of wider Fleet Street area works.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "625db3b5-baeb-42c9-9fc7-03427e0cae2d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Design options approved and consultation planned; scheme development ongoing.",
+    "locationDescription": "Fleet Street and surrounding courts/lanes, City of London",
+    "locationSource": "City of London Corporation project page",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Transforming Fleet Street",
+        "source": "City of London Corporation",
+        "url": "https://www.cityoflondon.gov.uk/services/streets/traffic-schemes-and-proposals/transforming-fleet-street",
+        "datePublished": "2025-12-02",
+        "summary": "Project page describing the aims and headline design proposals for Fleet Street, including walking, cycling and public realm improvements."
+      },
+      {
+        "type": "URL",
+        "title": "Fleet Street Area Programme",
+        "source": "City of London Corporation",
+        "url": "https://www.cityoflondon.gov.uk/services/streets/traffic-schemes-and-proposals/fleet-street-area-programme",
+        "datePublished": "2026-02-24",
+        "summary": "Programme page summarising multiple Fleet Street area public realm enhancement schemes and providing supporting map/document links."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000098-jewish-life-centre-borehamwood",
+    "title": "Jewish Life Centre (community facility) redevelopment in Borehamwood",
+    "description": "Hertsmere Borough Council supported the start of works to transform a former bank building on Shenley Road into a modern community facility known as the Jewish Life Centre, described as a town-centre investment.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "b06217cc-29da-4991-90d2-7c1c2ae08ee9",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Ground-breaking event held and redevelopment underway, indicating delivery has started on site.",
+    "locationDescription": "Shenley Road, Borehamwood, Hertfordshire",
+    "locationSource": "Hertsmere Borough Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Breaking Ground at the Jewish Life Centre",
+        "source": "Hertsmere Borough Council",
+        "url": "https://www.hertsmere.gov.uk/news/breaking-ground-at-the-jewish-life-centre",
+        "datePublished": "2026-02-26",
+        "summary": "Council news item reporting a ground-breaking ceremony and describing the redevelopment into a modern community facility in the town centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000212-chertsey-hospital-cil-investment",
+    "title": "Chertsey Hospital (St Peter’s) CIL-funded upgrade to cardiac lab and neonatal unit",
+    "description": "Runnymede Borough Council announced a major Community Infrastructure Levy (CIL) investment to modernise and expand facilities at St Peter’s Hospital in Chertsey, including the cardiac catheter lab and neonatal intensive care unit.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "5308ed4d-331a-49ef-b207-e0dbd90130d1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding package confirmed and delivery planned over the next two years with NHS partners.",
+    "locationDescription": "St Peter’s Hospital, Chertsey, Surrey",
+    "locationSource": "Runnymede Borough Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£3.2 million investment brings new hope for patients at Chertsey Hospital",
+        "source": "Runnymede Borough Council",
+        "url": "https://www.runnymede.gov.uk/news/article/279/-3-2-million-investment-brings-new-hope-for-patients-at-chertsey-hospital",
+        "datePublished": "2025-11-12",
+        "summary": "Council news item detailing CIL investment to upgrade the cardiac catheter lab and refurbish the neonatal intensive care unit at St Peter’s Hospital."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000214-camberley-london-road-brownfield-demolition",
+    "title": "Camberley London Road site: demolition and remediation for town centre regeneration",
+    "description": "Surrey Heath Borough Council reported commencement of enabling works, including asbestos removal and demolition of derelict buildings, at the London Road site in Camberley to prepare a brownfield town-centre regeneration site for future residential development.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "d62b55cf-3543-4cf8-a982-aaac041ea7c7",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council reports enabling works starting; site preparation underway ahead of future redevelopment.",
+    "locationDescription": "London Road regeneration site, Camberley town centre, Surrey",
+    "locationSource": "Surrey Heath Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Demolition works mark significant step forward for Camberley’s regeneration",
+        "source": "Surrey Heath Borough Council",
+        "url": "https://www.surreyheath.gov.uk/news/2025/demolition-works-mark-significant-step-forward-camberleys-regeneration",
+        "datePublished": "2025-05-01",
+        "summary": "Council update on demolition/enabling works funded via the Brownfield Land Release Fund to bring the London Road site forward for redevelopment."
+      },
+      {
+        "type": "URL",
+        "title": "Camberley access route gets welcoming makeover",
+        "source": "Surrey Heath Borough Council",
+        "url": "https://www.surreyheath.gov.uk/news/2024/camberley-access-route-gets-welcoming-makeover",
+        "datePublished": "2024-07-05",
+        "summary": "Council announcement outlining planned public realm improvements including lighting, green-roofed bus shelters and enhancements to key pedestrian routes."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000046-bideford-public-art-wayfinding-sea-change",
+    "title": "Bideford Public Art Wayfinding Project (Sea Change 2025–2026)",
+    "description": "Torridge District Council published a Find a Tender notice for a place-responsive public realm project in Bideford, including a significant public realm element, a bespoke wayfinding scheme and a town centre gateway installation under the ‘Sea Change’ concept.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "04db7ce9-76cf-4ad6-ac66-c762d67cb0ee",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Procurement notice published for delivery partners; project scope set and tendering underway.",
+    "locationDescription": "Bideford town centre, Devon",
+    "locationSource": "Find a Tender service notice (Torridge District Council)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bideford Public Art Wayfinding Project (Sea Change 2025-2026)",
+        "source": "Find a Tender (Torridge District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/051301-2025",
+        "datePublished": "2025-08-26",
+        "summary": "Contract details notice inviting tenders for commissioning and delivery of public realm, wayfinding and gateway installation works in Bideford."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000222-leamington-town-hall-creative-hub-phase-1",
+    "title": "Leamington Spa Town Hall: phase one works towards a Creative Hub",
+    "description": "Warwick District Council announced the start of phase-one rejuvenation works at Leamington’s Town Hall to improve public access and facilities (including lift and welfare facilities) as part of plans to establish a Creative Hub supported by Future High Streets Fund investment.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "587654ed-f27c-43bf-8a88-1e5a0e3f1760",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Works reported as beginning; construction phase underway with planned completion in early 2025.",
+    "locationDescription": "Leamington Spa Town Hall, The Parade, Royal Leamington Spa, Warwickshire",
+    "locationSource": "Warwick District Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Town Hall rejuvenation to begin",
+        "source": "Warwick District Council",
+        "url": "https://www.warwickdc.gov.uk/news/article/1193/town_hall_rejuvenation_to_begin",
+        "datePublished": "2024-06-05",
+        "summary": "Council news item confirming phase-one works to improve access and facilities at Leamington Town Hall as part of a future Creative Hub."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000216-cranleigh-new-leisure-centre-planning-approved",
+    "title": "New Cranleigh Leisure Centre (planning approval and delivery programme)",
+    "description": "Waverley Borough Council announced planning approval for a new energy-efficient leisure centre in Cranleigh, with contractor appointment and construction programmed for autumn 2025 and opening expected in 2027.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "6148e973-871b-48b6-bf49-96d74a448450",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning permission secured; council progressing procurement and construction programme.",
+    "locationDescription": "Cranleigh Leisure Centre site, Cranleigh, Surrey",
+    "locationSource": "Waverley Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Green light for new leisure centre in Cranleigh",
+        "source": "Waverley Borough Council",
+        "url": "https://www.waverley.gov.uk/council-updates/read-our-latest-news/green-light-for-new-leisure-centre-in-cranleigh",
+        "datePublished": "2025-03-06",
+        "summary": "Council announcement confirming planning approval and outlining next steps and indicative delivery timescales."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000238-ukspf-town-centre-and-parks-improvements",
+    "title": "UKSPF-funded town centre and public space improvements across Wychavon district",
+    "description": "Local reporting described multiple UK Shared Prosperity Fund-funded improvements across Wychavon’s towns, including lighting upgrades in parks, shopfront improvements, benches and other public realm enhancements led via town centre ‘place boards’.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "2bc5e6ac-fa4e-476d-a18e-dc61b02c48ea",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Programme described as delivering tangible public realm improvements via UKSPF, with further work continuing through place boards and partners.",
+    "locationDescription": "Multiple town centres and parks across Wychavon District (including Pershore, Droitwich Spa and Evesham)",
+    "locationSource": "Local news reporting",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£4million boosts town centres and businesses across Wychavon district",
+        "source": "Evesham Observer",
+        "url": "https://eveshamobserver.co.uk/news/4million-boosts-town-centres-and-businesses-across-wychavon-district/",
+        "datePublished": "2025-08-05",
+        "summary": "Local report summarising UKSPF-funded town centre and public space improvements across the district, referencing place boards and delivered initiatives."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000144-sprowston-viking-community-building-refurbishment",
+    "title": "Viking Community Building, Sprowston (refurbishment and extension using CIL)",
+    "description": "Broadland District Council highlighted the reopening of the Viking Community Building in Sprowston following extensive refurbishment and extension, creating a multi-purpose community hub supported by Community Infrastructure Levy funding.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "53ac3a0e-fa9e-4874-8801-2209272aab5f",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council reports the facility reopened following completion of refurbishment and extension works.",
+    "locationDescription": "Viking Community Building (former Viking Pub), Sprowston, Norfolk",
+    "locationSource": "Broadland and South Norfolk Councils news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "From pub to hub: new building renews community spirit in Sprowston",
+        "source": "Broadland and South Norfolk Councils",
+        "url": "https://www.southnorfolkandbroadland.gov.uk/news/from-pub-to-hub-new-building-renews-community-spirit-in-sprowston",
+        "datePublished": "2025-04-15",
+        "summary": "Council news item describing completion of refurbishment/extension works and the building’s new role as a community hub funded via CIL."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000106-herne-bay-sea-defences-upgrade",
+    "title": "Herne Bay sea defences upgrade (rear wall, floodgates and promenade works)",
+    "description": "Canterbury City Council announced the start of works to improve sea defences in Herne Bay, including construction of a new rear wall, installation of floodgates and associated promenade resurfacing and railing refurbishment, supported by Environment Agency funding.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "30428149-cba0-4d0f-925a-84428a8245d0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council reported works starting with an expected delivery programme over the following weeks.",
+    "locationDescription": "Central Parade / Neptune car park area seafront, Herne Bay, Kent",
+    "locationSource": "Canterbury City Council newsroom",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Work starts on sea defences upgrade for Herne Bay",
+        "source": "Canterbury City Council (Newsroom)",
+        "url": "https://news.canterbury.gov.uk/news/work-starts-on-sea-defences-upgrade-for-herne-bay/",
+        "datePublished": "2025-03-18",
+        "summary": "Council announcement detailing the sea defences works, scope (rear wall, floodgates, resurfacing) and Environment Agency funding."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000086-chickenhall-lane-materials-recovery-facility",
+    "title": "Chickenhall Lane Materials Recovery Facility (MRF) investment and delivery programme",
+    "description": "Hampshire County Council set out and progressed proposals for a new Materials Recovery Facility at Chickenhall Lane in Eastleigh, including a joint £50.5m investment to expand recycling capability and support implementation of Simpler Recycling requirements.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "3061db65-662a-42ce-98d4-662b8829abe2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "County council decision documents and announcements indicate funding approval and progression toward procurement and construction phases.",
+    "locationDescription": "Chickenhall Lane, Eastleigh (materials recovery facility site)",
+    "locationSource": "Hampshire County Council news and decision records",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Hampshire County Council set to consider proposals to boost recycling rates",
+        "source": "Hampshire County Council",
+        "url": "https://www.hants.gov.uk/News/20250416MRF",
+        "datePublished": "2025-04-16",
+        "summary": "County council news item describing the proposal to build a new MRF at Chickenhall Lane, rationale and indicative construction/operation timelines."
+      },
+      {
+        "type": "URL",
+        "title": "Decision details: MRF Update Chickenhall Lane Eastleigh",
+        "source": "Hampshire County Council (ModernGov)",
+        "url": "https://hampshire.moderngov.co.uk/ieDecisionDetails.aspx?ID=4145",
+        "datePublished": "2025-04-28",
+        "summary": "Decision record showing publication date and approval status for the MRF update and next steps for the Chickenhall Lane facility."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000037-glossop-halls-regeneration",
+    "title": "Glossop Halls: historic civic complex rejuvenation and reopening programme",
+    "description": "High Peak Borough Council reported progress on its multi-million-pound programme to rejuvenate Glossop’s historic halls, restoring the market hall, town hall and associated buildings to full public use with new business and community spaces ahead of reopening.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "9b977417-5e3a-4c47-bba7-ea1bfb7fc7cf",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council states works nearing completion with final fit-out and reopening preparations ongoing.",
+    "locationDescription": "Glossop Halls / Glossop Market Hall complex, Glossop, Derbyshire",
+    "locationSource": "High Peak Borough Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Public gets chance to tour Glossop Halls redevelopment",
+        "source": "High Peak Borough Council",
+        "url": "https://www.highpeak.gov.uk/article/8346/Public-gets-chance-to-tour-Glossop-Halls-redevelopment",
+        "datePublished": "2025-06-09",
+        "summary": "Council update describing the redevelopment nearing reopening and the range of uses and spaces being created within the rejuvenated halls."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e09000021-kingston-leisure-centre-construction-begins",
+    "title": "Kingston Leisure Centre (Kingfisher) rebuild: construction start milestone",
+    "description": "Kingston Council reported that construction had begun on its new community leisure centre in Kingston town centre, described as a major public infrastructure investment intended to deliver modern, accessible leisure provision.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "e4cf69d7-f5c7-48e0-b646-4c46773f5bb7",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council and delivery partner communications indicate construction started with a multi-year programme through to opening.",
+    "locationDescription": "Kingston town centre leisure centre site (Kingfisher Leisure Centre), Kingston upon Thames, London",
+    "locationSource": "Royal Borough of Kingston upon Thames news listing and project partner release",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "News listing showing publication of 'Construction begins on Kingston’s new community leisure centre'",
+        "source": "Royal Borough of Kingston upon Thames",
+        "url": "https://www.kingston.gov.uk/news?page=2",
+        "datePublished": "2025-06-11",
+        "summary": "Council news list entry indicating construction began on the new community leisure centre and providing the published date."
+      },
+      {
+        "type": "URL",
+        "title": "Construction Begins on £44.5m Kingston Leisure Centre",
+        "source": "Alliance Leisure",
+        "url": "https://allianceleisure.co.uk/construction-begins-kingston-leisure-centre/",
+        "datePublished": "2025-06-12",
+        "summary": "Delivery partner release describing the start of construction and outlining the facility components and delivery team."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000133-melton-town-centre-design-guidance-and-investment",
+    "title": "Melton Mowbray town centre improvements (market/town centre investment and design guidance)",
+    "description": "Melton Borough Council announced UK Shared Prosperity Fund-supported initiatives to improve Melton Mowbray town centre, including market-related infrastructure enhancements and a commissioned Town Centre Design Guide to support higher-quality shopfronts and streetscape.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "f741388a-f4e2-49f5-977b-dcf17a75d0a3",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council reports funding allocated and projects progressing through consultation and implementation phases.",
+    "locationDescription": "Melton Mowbray town centre and Market Place, Leicestershire",
+    "locationSource": "Melton Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Melton Borough Council invests in its Town Centre",
+        "source": "Melton Borough Council",
+        "url": "https://www.melton.gov.uk/your-council/news-and-awards/news/2025/melton-borough-council-invests-in-its-town-centre/",
+        "datePublished": "2025-03-20",
+        "summary": "Council news item describing UKSPF-funded town centre initiatives including market-related enhancements and public realm greening."
+      },
+      {
+        "type": "URL",
+        "title": "Introducing Melton Mowbray’s Town Centre Design Guidance – Have your say!",
+        "source": "Melton Borough Council",
+        "url": "https://www.melton.gov.uk/your-council/news-and-awards/news/2025/introducing-melton-mowbray-s-town-centre-design-guidance/",
+        "datePublished": "2025-05-21",
+        "summary": "Council announcement launching consultation on the Town Centre Design Guide intended to support improved shopfronts and streetscape quality."
+      }
+    ]
+  },
+  {
+    "id": "gm-b002-e07000220-rugby-central-intervention",
+    "title": "Rugby town centre: intervention to gain control of key assets (Rugby Central and Brotherhood House)",
+    "description": "Rugby Borough Council stated it was prepared to intervene to gain control of key town centre assets, including the Rugby Central shopping centre and the Brotherhood House site, to support delivery of its town centre transformation and regeneration ambitions.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "20509f09-89e9-4ccf-a48b-f36af473e37c",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council reported active engagement and preparation for potential acquisition/joint venture/enforcement actions to unlock redevelopment.",
+    "locationDescription": "Rugby Central shopping centre and Brotherhood House site, Rugby town centre, Warwickshire",
+    "locationSource": "Rugby Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Council targets Rugby Central buyout to unlock town’s transformation",
+        "source": "Rugby Borough Council",
+        "url": "https://www.rugby.gov.uk/w/council-targets-rugby-central-buyout-to-unlock-town-s-transformation",
+        "datePublished": "2025-12-01",
+        "summary": "Council news item describing plans to gain control of key assets to support town centre regeneration, including Rugby Central and Brotherhood House."
+      }
+    ]
+  }
+]

@@ -6,8 +6,8 @@ Research under-covered local authorities using deterministic, public-source evid
 
 | localAuthorityId | name | code | regionName | countryCode |
 |------------------|------|------|------------|-------------|
+| 56fd119b-5daa-45bf-ac3f-9bb0eb748d0c | Windsor and Maidenhead | E06000040 | South East | ENGLAND |
 | 9119ac8b-0ee8-4123-a063-eff4ba04e654 | Herefordshire, County of | E06000019 | West Midlands | ENGLAND |
-| d78a5e12-ade7-47dd-8fee-deead8981365 | North Northamptonshire | E06000061 | East Midlands | ENGLAND |
 | bf52a64d-21cd-4601-b294-7f218f0cadc4 | Thurrock | E06000034 | East of England | ENGLAND |
 | e21e1cf3-bcd3-4e79-ac36-9caef4b2f05e | Bolton | E08000001 | North West | ENGLAND |
 | 36234393-4bb0-4840-838e-27fa1f6750fd | Fareham | E07000087 | South East | ENGLAND |

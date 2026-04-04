@@ -1,0 +1,506 @@
+[
+  {
+    "id": "gm-b004-e07000245-leisure-centres-decarbonisation-bury-haverhill",
+    "title": "Public Sector Decarbonisation Scheme upgrades at Bury St Edmunds and Haverhill leisure centres",
+    "description": "West Suffolk Council secured Public Sector Decarbonisation Scheme funding to remove gas heating and deliver low-carbon heat and energy-efficiency upgrades at Bury St Edmunds Leisure Centre and Haverhill Leisure Centre as part of its net zero programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "d90db92e-7ad8-4e34-9b01-cc8168e432ee",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Grant funding is confirmed; delivery is pending detailed design and installation programmes across both sites.",
+    "locationDescription": "Bury St Edmunds Leisure Centre and Haverhill Leisure Centre, West Suffolk",
+    "locationSource": "West Suffolk Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "West Suffolk Council awarded £4.1 million for decarbonisation projects at Bury St Edmunds and Haverhill leisure centres",
+        "source": "West Suffolk Council",
+        "url": "https://www.westsuffolk.gov.uk/news/pr20250519ws01.cfm",
+        "datePublished": "2025-05-19",
+        "summary": "Council announcement confirming £4.1m Public Sector Decarbonisation Scheme grant funding for decarbonisation works at the Bury St Edmunds and Haverhill leisure centres, alongside the council’s contribution."
+      },
+      {
+        "type": "URL",
+        "title": "Almost £3million for energy efficiency improvements at Abbeygate Cinema and Leisure Centre",
+        "source": "West Suffolk Council",
+        "url": "https://www.westsuffolk.gov.uk/news/pr20241217ws01.cfm",
+        "datePublished": "2024-12-17",
+        "summary": "Related West Suffolk Council update on securing energy-efficiency improvement funding for a major leisure asset, illustrating the council’s wider decarbonisation pipeline for civic buildings."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e06000011-bridlington-major-road-improvement-scheme",
+    "title": "Major road improvement scheme in Bridlington (East Riding) – delivery phase",
+    "description": "East Riding of Yorkshire Council set out a major road improvement scheme in Bridlington, positioned as a package of highway works to improve capacity, resilience and journeys around the town.",
+    "type": "LOCAL_GOV",
+    "regionId": "cdde5565-2090-4f98-9fbf-f990d7825dcc",
+    "localAuthorityId": "fd54eb81-620d-4f25-88f4-44d16c1dd5d2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council reporting indicates delivery is underway; programme timing and on-site sequencing may evolve as works progress.",
+    "locationDescription": "Bridlington, East Riding of Yorkshire",
+    "locationSource": "East Riding of Yorkshire Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major road improvement scheme in Bridlington getting under way",
+        "source": "East Riding of Yorkshire Council",
+        "url": "https://www.eastriding.gov.uk/council/news-events/news/?entry=major-road-improvement-scheme-in-bridlington-getting-under-way",
+        "datePublished": "2025-02-28",
+        "summary": "Council update describing a major road improvement scheme in Bridlington and setting out delivery activity as the scheme gets underway."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e08000022-north-shields-riverside-embankment-walkway",
+    "title": "North Shields Riverside Embankment Walkway opened to the public",
+    "description": "North Tyneside Council opened a new riverside embankment walkway connecting North Shields’ quayside and the Fish Quay, improving pedestrian access along the riverside as part of wider regeneration and place improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "08e79b78-35f5-437b-8093-84d87c32d68c",
+    "localAuthorityId": "d951ce9f-7115-411c-965c-102e236b37d1",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council reporting confirms the route is open and operational for public use.",
+    "locationDescription": "Riverside Embankment Walkway between North Shields Quayside and Fish Quay, North Tyneside",
+    "locationSource": "North Tyneside Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New Riverside Embankment Walkway open to public",
+        "source": "North Tyneside Council",
+        "url": "https://northtyneside.gov.uk/news/34895/new-riverside-embankment-walkway-open-public",
+        "datePublished": "2024-12-20",
+        "summary": "Council announcement confirming the new North Shields riverside embankment walkway is open to the public and describing the improved connection between the quayside and Fish Quay."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e07000045-newton-abbot-future-high-streets-fund-package",
+    "title": "Newton Abbot Future High Streets Fund regeneration package (Market Hall, Queen Street and public realm)",
+    "description": "Teignbridge District Council advanced a programme of town-centre regeneration projects in Newton Abbot funded through the Future High Streets Fund, including Market Hall-related interventions and public realm and access upgrades around the Market and Cultural Quarters.",
+    "type": "LOCAL_GOV",
+    "regionId": "b89b48af-cea4-499e-84cf-d09df887cf1e",
+    "localAuthorityId": "e689fd0a-47d4-496b-9d20-293836d5bae7",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Cabinet reporting confirms programme progress; delivery remains dependent on sequencing and town-centre construction coordination.",
+    "locationDescription": "Newton Abbot town centre (Market and Cultural Quarters), Teignbridge",
+    "locationSource": "Teignbridge District Council (Executive meeting papers)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Executive agenda item: Future High Streets Fund (Newton Abbot) – project update",
+        "source": "Teignbridge District Council",
+        "url": "https://democracy.teignbridge.gov.uk/mgAi.aspx?ID=12659",
+        "datePublished": "2025-03-04",
+        "summary": "Executive meeting paper and decision record covering an update on the Future High Streets Fund programme in Newton Abbot and next steps for delivery."
+      },
+      {
+        "type": "URL",
+        "title": "Executive agenda item: Update on Future High Streets Fund projects",
+        "source": "Teignbridge District Council",
+        "url": "https://democracy.teignbridge.gov.uk/mgAi.aspx?ID=12825",
+        "datePublished": "2025-04-08",
+        "summary": "Follow-on Executive update reporting progress and programme management for Newton Abbot’s Future High Streets Fund regeneration projects."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e09000008-croydon-ukspf-district-centres-regeneration-2025",
+    "title": "UK Shared Prosperity Fund district-centre regeneration projects in Croydon (Norbury, Addiscombe, Coulsdon, South Croydon)",
+    "description": "Croydon Council progressed a set of UK Shared Prosperity Fund-funded district centre projects across Norbury, Addiscombe, Coulsdon and South Croydon, moving into design and delivery with an expected on-site start in early 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": "14060d3a-d235-407d-80f2-ebdf212b3eb7",
+    "localAuthorityId": "c24a9e15-f34c-4d4a-acf5-362522d5db93",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council communications confirm funding and outline work packages; works are scheduled to commence on site in 2026.",
+    "locationDescription": "Norbury, Addiscombe, Coulsdon and South Croydon district centres, London Borough of Croydon",
+    "locationSource": "Croydon Council newsroom",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Croydon to use £833k to improve four district centres",
+        "source": "Croydon Council (Newsroom)",
+        "url": "https://news.croydon.gov.uk/croydon-to-use-833k-to-improve-four-district-centres/",
+        "datePublished": "2025-03-13",
+        "summary": "Council announcement describing a funded package of district centre improvements and the scope of works across four Croydon centres."
+      },
+      {
+        "type": "URL",
+        "title": "Croydon’s district centre regeneration projects reach the next stage",
+        "source": "Croydon Council (Newsroom)",
+        "url": "https://news.croydon.gov.uk/croydons-district-centre-regeneration-projects-reach-the-next-stage/",
+        "datePublished": "2025-12-17",
+        "summary": "Update stating the projects are moving into design and delivery phase with work expected to begin on site in January 2026, and summarising planned interventions by centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e07000108-maison-dieu-restoration-dover-reopening",
+    "title": "Maison Dieu (Dover) restoration project – milestone and reopening",
+    "description": "Dover District Council progressed and completed major restoration works to the Maison Dieu in Dover, including reporting key construction milestones and announcing the venue’s reopening for residents and visitors.",
+    "type": "LOCAL_GOV",
+    "regionId": "ef368261-a5b7-415b-9b12-6edcce90ec3b",
+    "localAuthorityId": "11877e29-f3a9-48b6-adf0-d28cb5f5e2d6",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council communications report major restoration milestones and confirm the building reopening for public use.",
+    "locationDescription": "Maison Dieu, Dover, Kent",
+    "locationSource": "Dover District Council press releases",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Restoration of the Maison Dieu passes major milestone",
+        "source": "Dover District Council",
+        "url": "https://www.dover.gov.uk/News/Press-Releases/2024/Restoration-of-the-Maison-Dieu-passes-major-milestone.aspx",
+        "datePublished": "2024-11-06",
+        "summary": "Council press release reporting a significant milestone in the Maison Dieu restoration project and providing progress context."
+      },
+      {
+        "type": "URL",
+        "title": "Welcome to the Maison Dieu",
+        "source": "Dover District Council",
+        "url": "https://www.dover.gov.uk/News/Press-Releases/2025/Welcome-to-the-Maison-Dieu.aspx",
+        "datePublished": "2025-05-03",
+        "summary": "Council announcement confirming the reopening of the Maison Dieu following restoration works and outlining public access and programme information."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e07000120-accrington-market-hall-regeneration",
+    "title": "Accrington Market Hall regeneration and reopening",
+    "description": "Hyndburn Borough Council delivered a refurbishment and regeneration scheme for Accrington Market Hall, culminating in the facility reopening and being positioned as part of town-centre regeneration activity.",
+    "type": "LOCAL_GOV",
+    "regionId": "c6730010-e864-44a0-a5f6-61b92d159568",
+    "localAuthorityId": "80db8ea7-c47b-4285-90a3-80975ddb2f24",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council reports the market hall has reopened to the public following works.",
+    "locationDescription": "Accrington Market Hall, Accrington town centre, Hyndburn",
+    "locationSource": "Hyndburn Borough Council news and local reporting",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Accrington Market Hall reopens",
+        "source": "Hyndburn Borough Council",
+        "url": "https://www.hyndburnbc.gov.uk/news/accrington-market-hall-reopens/",
+        "datePublished": "2025-01-30",
+        "summary": "Council announcement confirming the reopening of Accrington Market Hall following regeneration and refurbishment works."
+      },
+      {
+        "type": "URL",
+        "title": "Accrington Market Hall regeneration scheme tops out",
+        "source": "Lancashire Telegraph",
+        "url": "https://www.lancashiretelegraph.co.uk/news/24663300.accrington-market-hall-regeneration-scheme-tops/",
+        "datePublished": "2024-10-17",
+        "summary": "Local news coverage reporting construction progress on the Accrington Market Hall regeneration scheme (topping out milestone)."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e06000053-climate-adaptation-scilly-phase-2",
+    "title": "Climate Adaptation Scilly Phase 2 – sea defences and flood-resilience works (planned procurement)",
+    "description": "The Council of the Isles of Scilly published procurement plans for Climate Adaptation Scilly Phase 2, a package of coastal and flood-resilience interventions including raising embankments, improved drainage and demountable sea defences, with delivery anticipated across 2026–2027.",
+    "type": "LOCAL_GOV",
+    "regionId": "b89b48af-cea4-499e-84cf-d09df887cf1e",
+    "localAuthorityId": "27c18fd5-c335-4cda-881f-9422c60481d7",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A planned procurement notice has been published; works are programmed for future delivery subject to procurement and mobilisation.",
+    "locationDescription": "Isles of Scilly (coastal defences and drainage interventions across identified locations)",
+    "locationSource": "Find a Tender (planned procurement notice)",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Climate Adaptation Scilly2. Phase 2 (Capex) – planned procurement notice",
+        "source": "Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/013436-2026/PDF",
+        "datePublished": "2026-02-06",
+        "summary": "Procurement notice describing Climate Adaptation Scilly Phase 2 capital works (embankments, drainage and demountable defences) and an indicative delivery window spanning late 2026 to early 2027."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e07000099-leisure-centre-refurbishments-letchworth-royston",
+    "title": "Refurbishments at Letchworth and Royston leisure centres (North Herts)",
+    "description": "North Hertfordshire District Council announced investment-led refurbishments at Letchworth and Royston leisure centres, aimed at improving facilities and user experience as part of the council’s leisure estate improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "82b718ba-034c-41ff-beea-0631e38c5efe",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council updates set out the works programme; delivery is subject to contractor scheduling and phased closures.",
+    "locationDescription": "Letchworth and Royston leisure centres, North Hertfordshire",
+    "locationSource": "North Hertfordshire District Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Big improvements planned for Letchworth and Royston Leisure Centres",
+        "source": "North Hertfordshire District Council",
+        "url": "https://www.north-herts.gov.uk/news/big-improvements-planned-letchworth-and-royston-leisure-centres",
+        "datePublished": "2024-07-16",
+        "summary": "Council announcement outlining a package of planned improvements and refurbishments at Letchworth and Royston leisure centres."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e06000031-peterborough-station-quarter-city-link-phase-1",
+    "title": "Peterborough Station Quarter – City Link phase (removal of Queensgate subways and new public realm)",
+    "description": "Peterborough City Council advanced the Station Quarter programme’s City Link phase, including proposals to remove subways under the Queensgate roundabout and create an improved gateway between the railway station and the city centre, supported by procurement and public engagement activity.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "e0439480-b49f-4636-8c37-9671272c7635",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council engagement materials state main construction is expected to start in early 2026; procurement evidence supports delivery preparations.",
+    "locationDescription": "Queensgate roundabout / Station Quarter link between Peterborough railway station and Cowgate, Peterborough",
+    "locationSource": "Peterborough City Council engagement hub and Find a Tender",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Have your say on City Link landscape plans",
+        "source": "Peterborough City Council",
+        "url": "https://www.peterborough.gov.uk/engagement-hub/have-your-say-on-city-link-landscape-plans",
+        "datePublished": "2026-01-14",
+        "summary": "Council engagement page describing the City Link phase of the Station Quarter project, including removal of subways and expected construction start in early 2026."
+      },
+      {
+        "type": "URL",
+        "title": "Peterborough Station Quarter City Link Project – contract award notice",
+        "source": "Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/028313-2025",
+        "datePublished": "2025-05-13",
+        "summary": "Find a Tender contract award notice associated with delivery support for the Peterborough Station Quarter / City Link project."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e09000026-wanstead-leisure-centre-new-build",
+    "title": "Wanstead Leisure Centre redevelopment – construction begins",
+    "description": "Redbridge Council commenced construction on a new leisure centre in Wanstead, positioned as a major local leisure and community facility replacement project.",
+    "type": "LOCAL_GOV",
+    "regionId": "14060d3a-d235-407d-80f2-ebdf212b3eb7",
+    "localAuthorityId": "f1ec1447-4992-41af-aaff-a9a2e97011f5",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council reporting confirms construction started; delivery continues through the build programme.",
+    "locationDescription": "Wanstead Leisure Centre site, Wanstead, London Borough of Redbridge",
+    "locationSource": "Redbridge Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Work begins on new Wanstead Leisure Centre",
+        "source": "Redbridge Council",
+        "url": "https://www.redbridge.gov.uk/news/nov-2024/work-begins-on-new-wanstead-leisure-centre/",
+        "datePublished": "2024-11-21",
+        "summary": "Council announcement confirming construction has begun on the new Wanstead Leisure Centre and describing the project as a major redevelopment."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e07000211-merstham-recreation-ground-refurbishment",
+    "title": "Merstham Recreation Ground refurbishment (Reigate and Banstead) – new community sports facilities",
+    "description": "Reigate & Banstead Borough Council completed a major refurbishment of Merstham Recreation Ground, including upgraded sports and community facilities as part of local investment in parks and active infrastructure.",
+    "type": "LOCAL_GOV",
+    "regionId": "ef368261-a5b7-415b-9b12-6edcce90ec3b",
+    "localAuthorityId": "1ad44592-d118-4e3c-9390-c155ca91fca7",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council reporting states the refurbished facilities are delivered and open for community use.",
+    "locationDescription": "Merstham Recreation Ground, Merstham, Reigate & Banstead",
+    "locationSource": "Reigate & Banstead Borough Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Merstham Recreational Ground gets a £3 million refurbishment",
+        "source": "Reigate & Banstead Borough Council",
+        "url": "https://www.reigate-banstead.gov.uk/news/article/514/merstham_recreational_ground_gets_a_3_million_refurbishment",
+        "datePublished": "2025-05-09",
+        "summary": "Council update describing the £3m refurbishment at Merstham Recreation Ground and the facilities delivered as part of the scheme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e06000025-charfield-rail-station-new-build",
+    "title": "Charfield railway station (South Gloucestershire) – new station project approved and funded",
+    "description": "South Gloucestershire Council progressed the delivery of a new rail station at Charfield, following project approval and funding from the West of England Mayoral Combined Authority, with construction expected to get underway and completion targeted for 2027.",
+    "type": "LOCAL_GOV",
+    "regionId": "b89b48af-cea4-499e-84cf-d09df887cf1e",
+    "localAuthorityId": "594ce1a6-620d-427d-902a-d84b7e921ac1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding and approvals are confirmed; the project is moving into the construction phase and remains subject to delivery and rail-interface constraints.",
+    "locationDescription": "Charfield, South Gloucestershire (new rail station site)",
+    "locationSource": "Travelwest (West of England Combined Authority / Travelwest news)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New Charfield Station will connect thousands in local villages to the national rail network",
+        "source": "Travelwest (WEST)",
+        "url": "https://travelwest.info/news/new-charfield-station-will-connect-thousands-in-local-villages-to-the-national-rail-network/",
+        "datePublished": "2025-08-04",
+        "summary": "Regional transport update confirming project approval and £39.5m funding to South Gloucestershire Council, with the station expected to get underway and be completed by Spring 2027."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e07000140-castle-site-redevelopment-spalding",
+    "title": "Castle site redevelopment (Spalding) – new activity and fitness centre expansion milestone",
+    "description": "South Holland District Council is redeveloping the Castle site in Spalding, expanding leisure and health facilities (including new pools and sports spaces), with delivery supported by named partners and a stated planned opening timeline.",
+    "type": "LOCAL_GOV",
+    "regionId": "fdbd0e13-9106-4820-814b-86640a681197",
+    "localAuthorityId": "0f33e97f-93e5-4f97-b690-b2731f378c3a",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council updates confirm active construction and milestones; the site remains in build through to the planned opening period.",
+    "locationDescription": "Castle site, Spalding, South Holland (Lincolnshire)",
+    "locationSource": "South Holland District Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Alliance Leisure appointed to deliver Castle Sports and Leisure redevelopment project",
+        "source": "South Holland District Council",
+        "url": "https://www.sholland.gov.uk/article/28389/Alliance-Leisure-appointed-to-deliver-Castle-Sports-and-Leisure-redevelopment-project",
+        "datePublished": "2024-04-30",
+        "summary": "Council announcement confirming delivery partner appointment for the Castle site leisure redevelopment and setting out project intent."
+      },
+      {
+        "type": "URL",
+        "title": "Steel frame completion marks major milestone for Castle redevelopment",
+        "source": "South Holland District Council",
+        "url": "https://www.sholland.gov.uk/article/29947/Steel-frame-completion-marks-major-milestone-for-Castle-redevelopment",
+        "datePublished": "2026-03-20",
+        "summary": "Council update reporting steel frame completion and describing the expanded facility components with a planned opening timeframe."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e07000223-shoreham-flood-defences-improvements",
+    "title": "Shoreham flood defences improvement scheme (Adur) – investment to reduce flood risk",
+    "description": "Adur District Council reported major investment to improve flood defences at Shoreham, with the scheme positioned to help reduce flood risk for local residents and businesses through works to flood protection infrastructure.",
+    "type": "LOCAL_GOV",
+    "regionId": "ef368261-a5b7-415b-9b12-6edcce90ec3b",
+    "localAuthorityId": "68b15a6a-4fef-4c8e-af8e-42b21fab15f5",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council communications confirm funding and scope; delivery depends on detailed design and implementation schedules for flood infrastructure works.",
+    "locationDescription": "Shoreham-by-Sea, Adur (flood defence locations as per scheme scope)",
+    "locationSource": "Adur District Council news",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Shoreham flood defences to be improved to help reduce flood risk",
+        "source": "Adur District Council",
+        "url": "https://www.adur-worthing.gov.uk/news/pr25-407.html",
+        "datePublished": "2025-12-10",
+        "summary": "Council press release setting out investment to improve Shoreham flood defences and describing the scheme’s intent to reduce flood risk."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e07000070-dovedale-sports-centre-refurbishment-chelmsford",
+    "title": "Dovedale Sports Centre refurbishment (Chelmsford) – phased improvements and temporary closure",
+    "description": "Chelmsford City Council announced and progressed a refurbishment project at Dovedale Sports Centre, including a planned temporary closure and phased works to improve the council’s leisure estate.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "41bb52e2-1c91-4c1f-ac76-96aa169068b7",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council communications confirm the refurbishment programme and closure period; delivery continues through the planned work phases.",
+    "locationDescription": "Dovedale Sports Centre, Chelmsford, Essex",
+    "locationSource": "Chelmsford City Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Phased refurbishment plans for Dovedale Sports Centre",
+        "source": "Chelmsford City Council",
+        "url": "https://www.chelmsford.gov.uk/news/article/1359/phased-refurbishment-plans-for-dovedale-sports-centre/",
+        "datePublished": "2025-03-17",
+        "summary": "Council announcement describing the planned refurbishment approach for Dovedale Sports Centre and the intended phasing and impacts."
+      },
+      {
+        "type": "URL",
+        "title": "Refurbishment work gets underway at Dovedale Sports Centre",
+        "source": "Chelmsford City Council",
+        "url": "https://www.chelmsford.gov.uk/news/article/1507/refurbishment-work-gets-underway-at-dovedale-sports-centre/",
+        "datePublished": "2026-03-20",
+        "summary": "Council update confirming refurbishment works are underway at Dovedale Sports Centre and providing delivery progress detail."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e07000118-chorley-town-centre-transformation-programme",
+    "title": "Chorley Town Centre Transformation Programme – civic estate and public realm investment package",
+    "description": "Chorley Council set out progress on a multi-site town centre transformation programme including Civic Square improvements, redevelopment of the Bengal Street depot, and replacement of Union Street offices, framed as part of a wider long-term investment in the town centre.",
+    "type": "LOCAL_GOV",
+    "regionId": "c6730010-e864-44a0-a5f6-61b92d159568",
+    "localAuthorityId": "5fb44e2e-f5a4-444c-86de-228564de50f6",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council reporting confirms programme scope and progress across sites; delivery is staged and subject to construction and procurement timelines.",
+    "locationDescription": "Chorley town centre (Civic Square, Bengal Street depot and Union Street offices sites), Chorley",
+    "locationSource": "Chorley Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£44 million improvement plans gather pace",
+        "source": "Chorley Council",
+        "url": "https://chorley.gov.uk/news/article/58/44-million-improvement-plans-gather-pace",
+        "datePublished": "2025-05-08",
+        "summary": "Council update outlining the £44m package for town centre improvements, including Civic Square works and civic estate-related redevelopment plans."
+      }
+    ]
+  },
+  {
+    "id": "gm-b004-e07000107-dartford-town-centre-regeneration-spital-street-phase-3a",
+    "title": "Dartford Town Centre Regeneration – Phase 3A public realm works (Spital Street) and delivery management",
+    "description": "Dartford Borough Council progressed its multi-phase Dartford Town Centre Regeneration programme, including Phase 3A works around Spital Street and associated programme management and site supervision procurement to support delivery.",
+    "type": "LOCAL_GOV",
+    "regionId": "ef368261-a5b7-415b-9b12-6edcce90ec3b",
+    "localAuthorityId": "ec7bacad-6fd4-49d8-b03b-f385edceae36",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Procurement notices confirm delivery support contracts and planned works packages; on-the-ground delivery remains subject to scheduling and construction sequencing.",
+    "locationDescription": "Spital Street and surrounding town centre streets, Dartford, Kent",
+    "locationSource": "Find a Tender (procurement notices)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Dartford Town Centre Regeneration – Programme Manager and Site Supervisor 2025–2026 (transparency notice)",
+        "source": "Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/029474-2025",
+        "datePublished": "2025-06-03",
+        "summary": "Find a Tender notice describing the Dartford Town Centre Regeneration programme and including KPIs referencing mobilisation and implementation of Phase 3A Spital Street works."
+      },
+      {
+        "type": "URL",
+        "title": "Dartford Town Centre – Westgate Village Development (works) planned procurement notice",
+        "source": "Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/021594-2026/PDF",
+        "datePublished": "2026-03-11",
+        "summary": "Planned procurement notice describing town-centre regeneration works including improvements to the adopted highway on Spital Street as part of the Westgate Village development package."
+      }
+    ]
+  }
+]

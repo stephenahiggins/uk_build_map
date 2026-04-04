@@ -1,5 +1,13 @@
 [
   {
+    "id": "061f24d2-8db5-4afe-88c0-903d34abb795",
+    "name": "East Hertfordshire",
+    "code": "E07000242",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
+  },
+  {
     "id": "83569b61-4cbf-469e-b2ce-0f29a4eedb30",
     "name": "East Lindsey",
     "code": "E07000137",
@@ -24,22 +32,6 @@
     "regionName": "North East"
   },
   {
-    "id": "85268d52-2dd4-48f8-a379-aa576f28c1d9",
-    "name": "Redcar and Cleveland",
-    "code": "E06000003",
-    "countryCode": "ENGLAND",
-    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
-    "regionName": "North East"
-  },
-  {
-    "id": "061f24d2-8db5-4afe-88c0-903d34abb795",
-    "name": "East Hertfordshire",
-    "code": "E07000242",
-    "countryCode": "ENGLAND",
-    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
-    "regionName": "East of England"
-  },
-  {
     "id": "15541f0a-5a34-489d-a3c5-7841be2f3ab2",
     "name": "North West Leicestershire",
     "code": "E07000134",
@@ -56,12 +48,28 @@
     "regionName": "West Midlands"
   },
   {
+    "id": "85268d52-2dd4-48f8-a379-aa576f28c1d9",
+    "name": "Redcar and Cleveland",
+    "code": "E06000003",
+    "countryCode": "ENGLAND",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
+  },
+  {
     "id": "ef751ea7-5965-4415-9e1e-f84dfe31d207",
     "name": "Sandwell",
     "code": "E08000028",
     "countryCode": "ENGLAND",
     "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
     "regionName": "West Midlands"
+  },
+  {
+    "id": "a0087b01-90e7-45ed-8563-f065eb387081",
+    "name": "Sevenoaks",
+    "code": "E07000111",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
   },
   {
     "id": "1b158d1b-185f-4751-9999-86bc44dfdf18",
@@ -78,6 +86,14 @@
     "countryCode": "ENGLAND",
     "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
     "regionName": "North West"
+  },
+  {
+    "id": "3fc2ec4a-f23a-4ef0-b677-c009c475238f",
+    "name": "Tewkesbury",
+    "code": "E07000083",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
   },
   {
     "id": "bb526d3d-dbca-4b62-8a9e-19f03a3b1a6b",
@@ -110,22 +126,6 @@
     "countryCode": "ENGLAND",
     "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
     "regionName": "Unassigned"
-  },
-  {
-    "id": "a0087b01-90e7-45ed-8563-f065eb387081",
-    "name": "Sevenoaks",
-    "code": "E07000111",
-    "countryCode": "ENGLAND",
-    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
-    "regionName": "South East"
-  },
-  {
-    "id": "3fc2ec4a-f23a-4ef0-b677-c009c475238f",
-    "name": "Tewkesbury",
-    "code": "E07000083",
-    "countryCode": "ENGLAND",
-    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
-    "regionName": "South West"
   },
   {
     "id": "29e30f64-1b2e-4e30-9959-b90c23b7807a",

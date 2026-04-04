@@ -1,0 +1,538 @@
+[
+  {
+    "id": "gm-b011-e07000200-babergh-solar-pv-servicing-repairs-maintenance-contract",
+    "title": "Babergh: Solar PV servicing, repairs and maintenance contract (joint with Mid Suffolk)",
+    "description": "Babergh District Council and Mid Suffolk District Council published a competitive tender and subsequent award notice for a contract covering servicing, repairs and maintenance of solar photovoltaic (PV) installations across their estates, supporting ongoing operation and resilience of local renewable generation assets.",
+    "type": "LOCAL_GOV",
+    "regionId": "ea04376c-a55d-41b4-b100-dbbe60af41fe",
+    "localAuthorityId": "2e5d0cc7-ccef-46a8-8b4c-43847d55590c",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A tender notice and a subsequent award notice have been published, indicating the solar PV servicing and maintenance contract is in delivery.",
+    "locationDescription": "Babergh District (solar PV installations maintained by Babergh District Council and Mid Suffolk District Council)",
+    "locationSource": "Find a Tender (Babergh District Council / Mid Suffolk District Council) and Contracts Finder award notice",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Solar PV Servicing, Repairs and Maintenance Contract for Babergh District Council and Mid Suffolk District Council (contract notice)",
+        "source": "Find a Tender (Babergh District Council / Mid Suffolk District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/017945-2024",
+        "datePublished": "2024-06-11",
+        "summary": "Contract notice seeking bids for a joint contract to service, repair and maintain solar PV installations for Babergh District Council and Mid Suffolk District Council."
+      },
+      {
+        "type": "URL",
+        "title": "Solar PV Servicing, Repairs and Maintenance Contract for Babergh District Council and Mid Suffolk District Council (award notice)",
+        "source": "Contracts Finder (Babergh District Council / Mid Suffolk District Council)",
+        "url": "https://www.contractsfinder.service.gov.uk/notice/c99568d1-1b18-4db3-9c65-e1de4580d780",
+        "datePublished": "2025-02-04",
+        "summary": "Award notice confirming contract award for solar PV servicing, repairs and maintenance for Babergh District Council and Mid Suffolk District Council."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e06000019-herefordshire-highways-infrastructure-professional-services-contract",
+    "title": "Herefordshire: professional services contractor to support highways and infrastructure",
+    "description": "Herefordshire Council procured a single professional services provider to support highways and infrastructure delivery, covering multidisciplinary technical services intended to improve delivery capability and capacity for the council’s highways and infrastructure programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "0aff780f-e97b-4655-8352-8d8a70a7991f",
+    "localAuthorityId": "9119ac8b-0ee8-4123-a063-eff4ba04e654",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A tender notice and contract award notice have been published, indicating the professional services contract has been awarded and is in delivery.",
+    "locationDescription": "Herefordshire (highways and infrastructure programme)",
+    "locationSource": "Find a Tender (Herefordshire Council notices 2025/S 000-049467 and 2025/S 000-084384)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Highways and Transport Professional Services Procurement (tender notice)",
+        "source": "Find a Tender (Herefordshire Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/049467-2025",
+        "datePublished": "2025-08-18",
+        "summary": "Tender notice describing Herefordshire Council’s procurement for a single professional services provider to support highways and infrastructure delivery with multidisciplinary services."
+      },
+      {
+        "type": "URL",
+        "title": "Professional Services Contractor to support Highways and Infrastructure (contract award notice)",
+        "source": "Find a Tender (Herefordshire Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/084384-2025",
+        "datePublished": "2025-12-18",
+        "summary": "Contract award notice confirming award of Herefordshire Council’s professional services contract to support highways and infrastructure delivery."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e06000034-thurrock-tarmacadam-supply-contract",
+    "title": "Thurrock: tarmacadam supply contract for highways works",
+    "description": "Thurrock Council ran a procurement for the supply of tarmacadam to support highway maintenance and works across the borough, and subsequently published an award notice confirming contract award.",
+    "type": "LOCAL_GOV",
+    "regionId": "ea04376c-a55d-41b4-b100-dbbe60af41fe",
+    "localAuthorityId": "bf52a64d-21cd-4601-b294-7f218f0cadc4",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A tender notice and subsequent award notice have been published, indicating the supply contract supporting highway works is in delivery.",
+    "locationDescription": "Thurrock (highway maintenance and works requiring tarmacadam supply)",
+    "locationSource": "Find a Tender (Thurrock Council notices 2025/S 000-065269 and 2025/S 000-079887)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Tarmacadam Supply (tender notice)",
+        "source": "Find a Tender (Thurrock Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/065269-2025",
+        "datePublished": "2025-10-20",
+        "summary": "Tender notice for supply of tarmacadam to support Thurrock Council’s highway maintenance and works programme."
+      },
+      {
+        "type": "URL",
+        "title": "Tarmacadam Supply (contract award notice)",
+        "source": "Find a Tender (Thurrock Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/079887-2025",
+        "datePublished": "2025-12-01",
+        "summary": "Contract award notice confirming award of Thurrock Council’s tarmacadam supply contract."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e08000001-bolton-highways-construction-framework-2024-2028",
+    "title": "Bolton: highways construction framework (2024–2028)",
+    "description": "Bolton Council procured a four-year highways construction framework to support delivery of highway works across the borough, using an NEC4-based framework for highways construction and associated activities.",
+    "type": "LOCAL_GOV",
+    "regionId": "38ad155b-1f00-44c4-8566-b26f7e37e879",
+    "localAuthorityId": "e21e1cf3-bcd3-4e79-ac36-9caef4b2f05e",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A contract notice and subsequent award notice have been published, indicating the highways construction framework has been established and is available for call-offs.",
+    "locationDescription": "Bolton (borough-wide highways works)",
+    "locationSource": "Find a Tender (Bolton Council notices 2024/S 000-017420 and 2025/S 000-013196)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "TC005 – Framework for Highways Work 2024–2028 (contract notice)",
+        "source": "Find a Tender (Bolton Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/017420-2024",
+        "datePublished": "2024-06-05",
+        "summary": "Contract notice for Bolton Council’s highways construction framework covering delivery of highways works over a four-year term."
+      },
+      {
+        "type": "URL",
+        "title": "TC005 – Framework for Highways Work 2024–2028 (contract award notice)",
+        "source": "Find a Tender (Bolton Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/013196-2025",
+        "datePublished": "2025-03-14",
+        "summary": "Contract award notice confirming the establishment and award of the highways construction framework for 2024–2028."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e07000087-fareham-west-street-public-realm-improvements-tender",
+    "title": "Fareham: West Street public realm improvements (town centre regeneration)",
+    "description": "Fareham Borough Council published planned procurement and tender notices for public realm improvements as part of the Fareham Town Centre Regeneration Strategy 2025–2035, focused on West Street and adjacent town-centre spaces including improved paving, street furniture and regeneration enabling works.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b4b73a4-a1ce-4ec5-998d-9585cb8433e4",
+    "localAuthorityId": "36234393-4bb0-4840-838e-27fa1f6750fd",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planned procurement and tender notices have been published; delivery depends on the procurement outcome and subsequent construction programme.",
+    "locationDescription": "West Street and town centre public realm, Fareham",
+    "locationSource": "Find a Tender (Fareham Borough Council notices 2025/S 000-044895 and 2025/S 000-044992)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Public realm improvements as part of the Fareham Town Centre Regeneration Strategy 2025–2035 (planned procurement notice)",
+        "source": "Find a Tender (Fareham Borough Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/044895-2025",
+        "datePublished": "2025-07-10",
+        "summary": "Planned procurement notice setting out Fareham Borough Council’s intention to procure public realm improvements linked to the town centre regeneration strategy."
+      },
+      {
+        "type": "URL",
+        "title": "Public realm improvements as part of the Fareham Town Centre Regeneration Strategy 2025–2035 (tender notice)",
+        "source": "Find a Tender (Fareham Borough Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/044992-2025",
+        "datePublished": "2025-07-10",
+        "summary": "Tender notice for West Street / town-centre public realm improvements as part of Fareham’s regeneration strategy."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e07000194-lichfield-dfg-adaptations-building-works-framework",
+    "title": "Lichfield: Disabled Facilities Grant (DFG) adaptations and building works framework",
+    "description": "Lichfield District Council procured and awarded a framework for Disabled Facilities Grant (DFG) adaptations and associated building works, supporting delivery of accessibility and home adaptation projects for eligible residents across the district.",
+    "type": "LOCAL_GOV",
+    "regionId": "0aff780f-e97b-4655-8352-8d8a70a7991f",
+    "localAuthorityId": "5985813f-e96e-4c66-9ce7-dc752c7ac035",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A contract notice and contract award notice have been published, indicating the DFG adaptations framework has been established and is available for call-offs.",
+    "locationDescription": "Lichfield District (DFG adaptations and associated building works in eligible homes)",
+    "locationSource": "Find a Tender (Lichfield District Council notices 2025/S 000-004384 and 2025/S 000-056711)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "LDC-335 DFG Adaptations and Associated Building Works Framework (contract notice)",
+        "source": "Find a Tender (Lichfield District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/004384-2025",
+        "datePublished": "2025-02-04",
+        "summary": "Contract notice for a framework to deliver Disabled Facilities Grant adaptations and related building works across Lichfield District."
+      },
+      {
+        "type": "URL",
+        "title": "LDC-335 DFG Adaptations and Associated Building Works Framework (contract award notice)",
+        "source": "Find a Tender (Lichfield District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/056711-2025",
+        "datePublished": "2025-09-15",
+        "summary": "Contract award notice confirming award of the DFG adaptations and associated building works framework for Lichfield District Council."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e07000149-south-norfolk-hethel-technology-park-infrastructure-works-roundabout-access",
+    "title": "South Norfolk: Hethel Technology Park roundabout and access infrastructure works",
+    "description": "South Norfolk Council procured and awarded infrastructure works at Hethel Technology Park, including construction of a new roundabout and access road works intended to support growth and improved access for the employment site.",
+    "type": "LOCAL_GOV",
+    "regionId": "ea04376c-a55d-41b4-b100-dbbe60af41fe",
+    "localAuthorityId": "3c567233-40ed-48a2-8b08-65eadf2efb09",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A tender notice and a subsequent award notice have been published, indicating the infrastructure works contract at Hethel Technology Park has been awarded and is in delivery.",
+    "locationDescription": "Hethel Technology Park and surrounding highway links, Norfolk",
+    "locationSource": "Find a Tender (South Norfolk Council notices 2025/S 000-021843 and 2025/S 000-078688)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Infrastructure Works at Hethel Technology Park (tender notice)",
+        "source": "Find a Tender (South Norfolk Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/021843-2025",
+        "datePublished": "2025-05-21",
+        "summary": "Tender notice for infrastructure works at Hethel Technology Park, including a new roundabout and access road works."
+      },
+      {
+        "type": "URL",
+        "title": "Infrastructure Works at Hethel Technology Park (contract award notice)",
+        "source": "Find a Tender (South Norfolk Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/078688-2025",
+        "datePublished": "2025-12-01",
+        "summary": "Contract award notice confirming award of South Norfolk Council’s infrastructure works contract at Hethel Technology Park."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e08000030-walsall-temporary-accommodation-building-maintenance-reactive-repairs",
+    "title": "Walsall: temporary accommodation building maintenance (reactive repairs and minor works)",
+    "description": "Walsall Council procured and awarded a contract for reactive repair and maintenance works to its housing and welfare temporary accommodation buildings, including 24/7 coverage for service, maintenance and minor repairs to support ongoing operation of homelessness and supported accommodation sites.",
+    "type": "LOCAL_GOV",
+    "regionId": "0aff780f-e97b-4655-8352-8d8a70a7991f",
+    "localAuthorityId": "405554dd-518f-4ff2-a895-d96048221270",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A contract notice and later award notice have been published, indicating the building maintenance contract supporting temporary accommodation sites has been awarded and is in delivery.",
+    "locationDescription": "Walsall (council-managed temporary accommodation buildings)",
+    "locationSource": "Find a Tender (Walsall Council notices 2024/S 000-021727 and 2026/S 000-016859)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "WP3833 Temporary Accommodation Building Maintenance (contract notice)",
+        "source": "Find a Tender (Walsall Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/021727-2024",
+        "datePublished": "2024-07-15",
+        "summary": "Contract notice for a provider to deliver reactive repair and maintenance services (including minor works) to Walsall Council’s temporary accommodation buildings."
+      },
+      {
+        "type": "URL",
+        "title": "WP3833 Temporary Accommodation Building Maintenance (contract award notice)",
+        "source": "Find a Tender (Walsall Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/016859-2026",
+        "datePublished": "2026-02-25",
+        "summary": "Contract award notice confirming award of the temporary accommodation building maintenance contract for Walsall Council."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e08000032-bradford-general-highways-projects-framework",
+    "title": "Bradford: general highways projects framework",
+    "description": "City of Bradford Metropolitan District Council published a contract details notice for a framework of contractors to deliver general highways projects, supporting delivery of highway improvement and maintenance works across the district.",
+    "type": "LOCAL_GOV",
+    "regionId": "13ff8b9d-b364-435c-9347-651e9e9af317",
+    "localAuthorityId": "4228d1cd-c9f6-4824-bb60-7656f06612a4",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A contract details notice has been published setting out an established framework for highways projects.",
+    "locationDescription": "Bradford District (general highways projects)",
+    "locationSource": "Find a Tender (City of Bradford Metropolitan District Council contract details notice 2025/S 000-069446)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "General Highways Projects (contract details notice)",
+        "source": "Find a Tender (City of Bradford Metropolitan District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/069446-2025",
+        "datePublished": "2025-10-29",
+        "summary": "Contract details notice describing a framework of contractors to deliver general highways projects for City of Bradford Metropolitan District Council."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e07000244-east-suffolk-passive-fire-safety-works-council-residential-buildings",
+    "title": "East Suffolk: passive fire safety works to retired living and residential buildings",
+    "description": "East Suffolk Council tendered and awarded works to undertake passive fire safety improvements, including compartmentation, fire stopping and fire door repairs/installations, across retired living schemes and other residential buildings within council ownership.",
+    "type": "LOCAL_GOV",
+    "regionId": "ea04376c-a55d-41b4-b100-dbbe60af41fe",
+    "localAuthorityId": "167fa00f-0939-45ce-aae4-bc2a52e23b22",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A contract notice and a subsequent award notice have been published, indicating the council’s passive fire safety works contract has been awarded and is in delivery.",
+    "locationDescription": "East Suffolk (retired living schemes and other council-owned residential buildings)",
+    "locationSource": "Contracts Finder contract notice and Find a Tender contract award notice for East Suffolk Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Passive Fire Safety Works (contract notice)",
+        "source": "Contracts Finder (East Suffolk Council)",
+        "url": "https://www.contractsfinder.service.gov.uk/notice/7e30c294-19c2-422e-ad65-1c9883bd5a80",
+        "datePublished": "2024-09-11",
+        "summary": "Contract notice for passive fire safety works across East Suffolk Council’s retired living schemes and other residential buildings in council ownership."
+      },
+      {
+        "type": "URL",
+        "title": "Passive Fire Safety Works (contract award notice)",
+        "source": "Find a Tender (East Suffolk Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/014390-2025",
+        "datePublished": "2025-04-10",
+        "summary": "Contract award notice confirming award of East Suffolk Council’s passive fire safety works contract (compartmentation, fire stopping and fire door repairs/installations)."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e08000011-knowsley-halewood-leisure-centre-decarbonisation-refurbishment",
+    "title": "Knowsley: Halewood Leisure Centre decarbonisation and refurbishment works",
+    "description": "Knowsley Council published a contract details notice for decarbonisation and refurbishment works at Halewood Leisure Centre, supporting upgrades to the civic leisure estate and reduced operational emissions through building improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "38ad155b-1f00-44c4-8566-b26f7e37e879",
+    "localAuthorityId": "9432eb2d-c60a-471d-bb68-4fcde835d0ed",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A contract details notice has been published, but delivery outcomes depend on mobilisation and completion of refurbishment and decarbonisation works on site.",
+    "locationDescription": "Halewood Leisure Centre, Knowsley",
+    "locationSource": "Find a Tender (Knowsley Council contract details notice 2025/S 000-077217)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Halewood Leisure Centre Decarbonisation and Refurbishment Works (contract details notice)",
+        "source": "Find a Tender (Knowsley Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/077217-2025",
+        "datePublished": "2025-11-26",
+        "summary": "Contract details notice describing Knowsley Council’s contract for decarbonisation and refurbishment works at Halewood Leisure Centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e06000013-north-lincolnshire-traffic-signal-term-maintenance-2025-2029",
+    "title": "North Lincolnshire: traffic signal term maintenance services (2025–2029)",
+    "description": "North Lincolnshire Council procured and awarded term maintenance services for traffic signals, supporting inspection, maintenance and continuity of operation for road traffic-control assets across the local highway network.",
+    "type": "LOCAL_GOV",
+    "regionId": "13ff8b9d-b364-435c-9347-651e9e9af317",
+    "localAuthorityId": "8f566f13-8281-4167-8a26-eff47173c4b6",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A tender notice and contract award notice have been published, indicating the traffic signal maintenance contract has been awarded and is in delivery.",
+    "locationDescription": "North Lincolnshire (traffic signal sites across the council area)",
+    "locationSource": "Find a Tender (North Lincolnshire Council notices 2025/S 000-015252 and 2025/S 000-049130)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Traffic Signal Term Maintenance Services 2025–2029 (tender notice)",
+        "source": "Find a Tender (North Lincolnshire Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/015252-2025",
+        "datePublished": "2025-04-15",
+        "summary": "Tender notice for term maintenance services covering inspection and maintenance of traffic signals for North Lincolnshire Council."
+      },
+      {
+        "type": "URL",
+        "title": "Traffic Signal Term Maintenance Services 2025–2029 (contract award notice)",
+        "source": "Find a Tender (North Lincolnshire Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/049130-2025",
+        "datePublished": "2025-08-15",
+        "summary": "Contract award notice confirming award of North Lincolnshire Council’s traffic signal term maintenance services contract."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e07000012-south-cambridgeshire-waterbeach-renewable-energy-network-wren",
+    "title": "South Cambridgeshire: Waterbeach Renewable Energy Network (solar PV, storage and grid infrastructure)",
+    "description": "South Cambridgeshire District Council procured and awarded a contract for development and delivery of the Waterbeach Renewable Energy Network (WREN), comprising a ground-mounted solar photovoltaic array, energy storage, associated grid infrastructure and related energy management components intended to support council and local energy needs.",
+    "type": "LOCAL_GOV",
+    "regionId": "ea04376c-a55d-41b4-b100-dbbe60af41fe",
+    "localAuthorityId": "6161bc31-3a78-42d3-88b6-d87511894f49",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A tender and award notice have been published, but delivery outcomes depend on design, construction and commissioning of the integrated renewable energy and storage solution.",
+    "locationDescription": "Waterbeach area, South Cambridgeshire (renewable energy generation, storage and grid infrastructure)",
+    "locationSource": "Find a Tender (South Cambridgeshire District Council notices 2025/S 000-020244 and 2025/S 000-051199)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Development and Delivery of Waterbeach Renewable Energy Network (WREN) (tender notice)",
+        "source": "Find a Tender (South Cambridgeshire District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/020244-2025",
+        "datePublished": "2025-04-08",
+        "summary": "Tender notice for development and delivery of the Waterbeach Renewable Energy Network (WREN), including solar PV, energy storage and associated grid/energy management infrastructure."
+      },
+      {
+        "type": "URL",
+        "title": "Development and Delivery of Waterbeach Renewable Energy Network (WREN) (contract award notice)",
+        "source": "Find a Tender (South Cambridgeshire District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/051199-2025",
+        "datePublished": "2025-08-21",
+        "summary": "Contract award notice confirming award of South Cambridgeshire District Council’s WREN procurement for an integrated renewable energy and storage solution at Waterbeach."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e06000030-swindon-mill-lane-aqueduct-repairs-2025",
+    "title": "Swindon: Mill Lane aqueduct repairs (2025)",
+    "description": "Swindon Borough Council published a tender notice for repairs to the Mill Lane aqueduct, supporting asset condition and continuity of a key local infrastructure structure.",
+    "type": "LOCAL_GOV",
+    "regionId": "46484560-91c6-4ed0-8ae2-9df4ec42290d",
+    "localAuthorityId": "65a306aa-86ab-49c7-a9b2-3d50d232db7e",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A tender notice has been published; delivery depends on contract award and completion of the aqueduct repair works.",
+    "locationDescription": "Mill Lane aqueduct, Swindon",
+    "locationSource": "Find a Tender (Swindon Borough Council tender notice 2025/S 000-030154)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Mill Lane Aqueduct Repairs 2025 (tender notice)",
+        "source": "Find a Tender (Swindon Borough Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/030154-2025",
+        "datePublished": "2025-06-04",
+        "summary": "Tender notice for repair works to the Mill Lane aqueduct, published by Swindon Borough Council."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e06000043-brighton-hove-brighton-marina-to-river-adur-coastal-scheme-phase-1",
+    "title": "Brighton & Hove: Brighton Marina to River Adur Coastal Scheme – Phase 1 (coastal defences)",
+    "description": "Brighton & Hove City Council tendered and awarded construction works for Phase 1 of the Brighton Marina to River Adur Coastal Scheme, including coastal protection works such as groyne replacement, beach nourishment and associated concrete works to improve coastal resilience.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b4b73a4-a1ce-4ec5-998d-9585cb8433e4",
+    "localAuthorityId": "b95e88d6-0f9e-4e02-8844-7d7b84748104",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A tender and award notice have been published, but flood/coastal resilience benefits depend on construction and completion of coastal defence works along the shoreline.",
+    "locationDescription": "Brighton & Hove coastline between Brighton Marina and the River Adur",
+    "locationSource": "Find a Tender (Brighton & Hove City Council notices 2025/S 000-018829 and 2025/S 000-050606)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "BHCC JB Brighton Marina to River Adur Coastal Scheme – Phase 1 (tender notice)",
+        "source": "Find a Tender (Brighton & Hove City Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/018829-2025",
+        "datePublished": "2025-05-02",
+        "summary": "Tender notice inviting bids for construction of coastal protection works for Phase 1 of the Brighton Marina to River Adur Coastal Scheme (including groyne works and beach nourishment)."
+      },
+      {
+        "type": "URL",
+        "title": "BHCC JB Brighton Marina to River Adur Coastal Scheme – Phase 1 (contract award notice)",
+        "source": "Find a Tender (Brighton & Hove City Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/050606-2025",
+        "datePublished": "2025-08-07",
+        "summary": "Contract award notice confirming award of Phase 1 coastal defence works for the Brighton Marina to River Adur Coastal Scheme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e06000041-wokingham-loddon-valley-garden-village-strategic-design-code",
+    "title": "Wokingham: Loddon Valley Garden Village strategic design code",
+    "description": "Wokingham Borough Council published a contract details notice for preparation of a strategic design code for the Loddon Valley Garden Village, supporting masterplanning and design governance for a major growth and regeneration programme area.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b4b73a4-a1ce-4ec5-998d-9585cb8433e4",
+    "localAuthorityId": "291f15d8-fca2-41ba-8b3f-0259a8fbcff3",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A contract details notice has been published, indicating an awarded contract to deliver the strategic design code work.",
+    "locationDescription": "Loddon Valley Garden Village, Wokingham Borough",
+    "locationSource": "Find a Tender (Wokingham Borough Council contract details notice 2025/S 000-059023)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Loddon Valley Garden Village Strategic Design Code (contract details notice)",
+        "source": "Find a Tender (Wokingham Borough Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/059023-2025",
+        "datePublished": "2025-09-23",
+        "summary": "Contract details notice for preparation of a strategic design code for Loddon Valley Garden Village, published by Wokingham Borough Council."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e07000082-stroud-council-housing-planned-external-works-2026-2029",
+    "title": "Stroud: planned external works programme for council housing (2026–2029)",
+    "description": "Stroud District Council published a tender notice for a planned external works programme across its housing stock, supporting planned investment in building fabric and external elements across council-owned homes over a multi-year term.",
+    "type": "LOCAL_GOV",
+    "regionId": "46484560-91c6-4ed0-8ae2-9df4ec42290d",
+    "localAuthorityId": "a6f8c820-5f90-4624-8461-489a3518595e",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A tender notice has been published; delivery depends on procurement outcomes and subsequent programme delivery across the housing stock.",
+    "locationDescription": "Stroud District (council housing stock external works)",
+    "locationSource": "Find a Tender (Stroud District Council tender notice 2025/S 000-084864)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Stroud District Council – Planned External Works 2026–2029 (tender notice)",
+        "source": "Find a Tender (Stroud District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/084864-2025",
+        "datePublished": "2025-12-19",
+        "summary": "Tender notice for a planned external works programme across Stroud District Council’s housing stock covering a multi-year contract term."
+      }
+    ]
+  },
+  {
+    "id": "gm-b011-e06000017-rutland-family-hub-library-upgrades-ketton-oakham-uppingham",
+    "title": "Rutland: Family Hub Library Project (upgrades to Ketton, Oakham and Uppingham libraries)",
+    "description": "Rutland County Council tendered and awarded works to upgrade Ketton, Oakham and Uppingham libraries as part of its Family Hub Library Project, including internal alterations and new family hub spaces, supporting improved civic estate provision and community service delivery.",
+    "type": "LOCAL_GOV",
+    "regionId": "bf7f02d5-bc9e-44ac-8971-b7c1292d2a58",
+    "localAuthorityId": "19becee2-f033-432c-8680-77ab35773e74",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A tender notice and a subsequent award notice have been published; the award notice includes contract dates through 30 January 2026 (in the past relative to 3 April 2026), indicating works should be complete or at final close-out.",
+    "locationDescription": "Ketton Library, Oakham Library and Uppingham Library, Rutland",
+    "locationSource": "Find a Tender (Rutland County Council notices 2025/S 000-014205 and 2025/S 000-043285)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "RCC-1451 Family Hub Library Project (tender notice)",
+        "source": "Find a Tender (Rutland County Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/014205-2025",
+        "datePublished": "2025-04-10",
+        "summary": "Tender notice for works to upgrade Ketton, Oakham and Uppingham libraries as part of Rutland County Council’s Family Hub Library Project."
+      },
+      {
+        "type": "URL",
+        "title": "RCC-1451 Family Hub Library Project (contract award notice)",
+        "source": "Find a Tender (Rutland County Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/043285-2025",
+        "datePublished": "2025-07-28",
+        "summary": "Contract award notice confirming award of the Family Hub Library Project works across Ketton, Oakham and Uppingham libraries, including contract values and dates per lot."
+      }
+    ]
+  }
+]

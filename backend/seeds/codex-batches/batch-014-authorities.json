@@ -48,20 +48,20 @@
     "regionName": "East Midlands"
   },
   {
-    "id": "2abc46ad-bb04-4cc4-8c75-840422b41ce3",
-    "name": "Mid Suffolk",
-    "code": "E07000203",
-    "countryCode": "ENGLAND",
-    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
-    "regionName": "East of England"
-  },
-  {
     "id": "1795b1c7-413a-444c-a9d3-30661cdf7ec9",
     "name": "Ealing",
     "code": "E09000009",
     "countryCode": "ENGLAND",
     "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
     "regionName": "London"
+  },
+  {
+    "id": "2abc46ad-bb04-4cc4-8c75-840422b41ce3",
+    "name": "Mid Suffolk",
+    "code": "E07000203",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
   },
   {
     "id": "08dbbc19-7ecf-41af-ba5f-c324e8c6da65",
@@ -128,19 +128,19 @@
     "regionName": "West Midlands"
   },
   {
-    "id": "861eed51-03df-41c1-bf31-c834ccb4bd5f",
-    "name": "Coventry",
-    "code": "E08000026",
+    "id": "fcc7d3c8-0128-45b7-9f31-9c6bdc209cca",
+    "name": "Newcastle upon Tyne",
+    "code": "E08000021",
     "countryCode": "ENGLAND",
-    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
-    "regionName": "West Midlands"
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "regionName": "North East"
   },
   {
-    "id": "24578131-915e-4e3e-a16c-bf08b745e434",
-    "name": "Elmbridge",
-    "code": "E07000207",
+    "id": "bbcdedd5-a1fa-4555-94e4-7bc38591a29d",
+    "name": "Bromley",
+    "code": "E09000006",
     "countryCode": "ENGLAND",
-    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
-    "regionName": "South East"
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
   }
 ]

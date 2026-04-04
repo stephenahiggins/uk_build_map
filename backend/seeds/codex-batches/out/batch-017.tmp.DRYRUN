@@ -1,0 +1,418 @@
+[
+  {
+    "id": "gm-b017-e06000032-power-court-planning-application-approved",
+    "title": "Luton: Power Court town-centre stadium and mixed-use development planning approval",
+    "description": "Luton Borough Council approved the detailed planning application for Power Court, enabling plans for a new town-centre stadium and associated mixed-use development as part of wider regeneration proposals.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "c7768962-56cd-4510-a2ce-0069322984f0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning approval is in place, but delivery depends on detailed design, funding, procurement and construction timelines.",
+    "locationDescription": "Power Court site, central Luton (near Luton Town Centre / rail station area)",
+    "locationSource": "Luton Council and BBC News",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Power Court planning application approved",
+        "source": "Luton Council",
+        "url": "https://m.luton.gov.uk/Page/Show/news/Pages/Power-Court-planning-application-approval.aspx?redirectToMobile=True",
+        "datePublished": "2024-12-17",
+        "summary": "Council update confirming approval of the detailed planning application for the Power Court development."
+      },
+      {
+        "type": "URL",
+        "title": "Luton Town new stadium at Power Court approved",
+        "source": "BBC News",
+        "url": "https://feeds.bbci.co.uk/news/articles/c17dwyywg7yo",
+        "datePublished": "2024-12-16",
+        "summary": "Report that Luton Borough Council approved the new Power Court stadium plans."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e06000032-the-stage-groundbreaking-construction-start",
+    "title": "Luton: The Stage town-centre mixed-use development construction starts",
+    "description": "Luton Council marked the start of construction for The Stage, a town-centre regeneration scheme on the Bute Street / Church Street area, intended to deliver new homes alongside commercial and community space.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "c7768962-56cd-4510-a2ce-0069322984f0",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council has publicly confirmed that construction has started.",
+    "locationDescription": "Bute Street Shoppers Car Park / Church Street area, Luton town centre",
+    "locationSource": "Luton Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Groundbreaking ceremony marks start of The Stage construction",
+        "source": "Luton Council",
+        "url": "https://m.luton.gov.uk/Page/Show/news/Pages/Groundbreaking-ceremony-marks-start-of-The-Stage-construction.aspx",
+        "datePublished": "2026-03-05",
+        "summary": "Council announcement confirming a groundbreaking ceremony and start of construction for The Stage development in Luton town centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e08000034-george-hotel-renovation-milestone",
+    "title": "Kirklees: George Hotel (Huddersfield) renovation reaches new milestone",
+    "description": "Kirklees Council set out progress on the renovation and conversion of the Grade II listed George Hotel in Huddersfield town centre, with works planned to move forward as the scheme progresses toward delivery.",
+    "type": "LOCAL_GOV",
+    "regionId": "cdde5565-2090-4f98-9fbf-f990d7825dcc",
+    "localAuthorityId": "e33bf613-cde9-4964-9498-3789c9454360",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council has confirmed ongoing progress, but completion depends on construction delivery for a complex listed-building scheme.",
+    "locationDescription": "George Hotel, St George’s Square, Huddersfield",
+    "locationSource": "Kirklees Together",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New milestone in the renovation of the historic George Hotel",
+        "source": "Kirklees Together (Kirklees Council)",
+        "url": "https://kirkleestogether.co.uk/2026/02/20/new-milestone-in-the-renovation-of-the-historic-george-hotel/",
+        "datePublished": "2026-02-20",
+        "summary": "Council update describing progress on the George Hotel renovation and next steps for the town-centre scheme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e08000034-our-cultural-heart-phase-1-underway",
+    "title": "Kirklees: Our Cultural Heart Phase 1 (former Queensgate Market) redevelopment progresses",
+    "description": "Kirklees Council reported progress on Phase 1 of the Our Cultural Heart regeneration programme in Huddersfield town centre, converting the former Queensgate Market building into a library hub, food hall and public square.",
+    "type": "LOCAL_GOV",
+    "regionId": "cdde5565-2090-4f98-9fbf-f990d7825dcc",
+    "localAuthorityId": "e33bf613-cde9-4964-9498-3789c9454360",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council has confirmed demolition and construction progress and set out indicative completion and opening timeframes.",
+    "locationDescription": "Former Queensgate Market site, Huddersfield town centre",
+    "locationSource": "Kirklees Together",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Our Cultural Heart is starting to take shape in Huddersfield town centre",
+        "source": "Kirklees Together (Kirklees Council)",
+        "url": "https://kirkleestogether.co.uk/2025/05/20/our-cultural-heart-is-starting-to-take-shape-in-huddersfield-town-centre/",
+        "datePublished": "2025-05-20",
+        "summary": "Council update on demolition completion and ongoing construction for Phase 1 of Our Cultural Heart, including the future library hub, food hall and public square."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e07000146-southgates-masterplan-latest-designs",
+    "title": "King’s Lynn and West Norfolk: Southgates Masterplan latest designs for gateway and public realm",
+    "description": "The Borough Council of King’s Lynn and West Norfolk published updated designs for the Southgates Masterplan, focusing on public realm improvements and greener movement to transform a key entrance to King’s Lynn and enhance the historic South Gate setting.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "df6cbde2-ce09-4567-a4bf-c6f5b08524e5",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Designs have been published, but delivery will depend on final design development, approvals, funding and implementation.",
+    "locationDescription": "Southgates area and historic South Gate, King’s Lynn",
+    "locationSource": "Borough Council of King's Lynn & West Norfolk news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Latest designs for key King’s Lynn gateway revealed",
+        "source": "Borough Council of King's Lynn & West Norfolk",
+        "url": "https://www.west-norfolk.gov.uk/news/article/1733/latest_designs_for_key_king_s_lynn_gateway_revealed",
+        "datePublished": "2024-09-17",
+        "summary": "Council news release publishing updated designs for the Southgates Masterplan, including public realm and movement improvements around the South Gate."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e07000146-custom-house-revitalisation-listed-building-consent",
+    "title": "King’s Lynn and West Norfolk: Custom House revitalisation plans approved (Town Deal project)",
+    "description": "The Borough Council of King’s Lynn and West Norfolk announced approval of plans to revitalise the Custom House, including works intended to bring the building back into use as part of regeneration efforts.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "df6cbde2-ce09-4567-a4bf-c6f5b08524e5",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Plans have been approved, but the project remains subject to delivery planning, procurement and construction.",
+    "locationDescription": "The Custom House, King’s Lynn",
+    "locationSource": "Borough Council of King's Lynn & West Norfolk news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Plans approved to revitalise iconic Custom House in King’s Lynn",
+        "source": "Borough Council of King's Lynn & West Norfolk",
+        "url": "https://www.west-norfolk.gov.uk/news/article/1985/plans_approved_to_revitalise_iconic_custom_house_in_king_s_lynn",
+        "datePublished": "2025-12-11",
+        "summary": "Council announcement confirming approval of plans to revitalise the Custom House as a regeneration project."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e07000146-pride-in-place-regeneration-plan-approved",
+    "title": "King’s Lynn and West Norfolk: Pride in Place regeneration plan approved by government",
+    "description": "The Borough Council of King’s Lynn and West Norfolk said the government approved a Pride in Place regeneration plan for King’s Lynn, setting out a programme of investment intended to support town centre regeneration.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "df6cbde2-ce09-4567-a4bf-c6f5b08524e5",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Approval provides programme-level backing, but individual schemes will still require scoping, funding, procurement and delivery.",
+    "locationDescription": "King’s Lynn town centre (Pride in Place programme area)",
+    "locationSource": "Borough Council of King's Lynn & West Norfolk news",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major boost for King’s Lynn as Government approves Pride in Place regeneration plan",
+        "source": "Borough Council of King's Lynn & West Norfolk",
+        "url": "https://www.west-norfolk.gov.uk/news/article/2031/major_boost_for_king_s_lynn_as_government_approves_pride_in_place_regeneration_plan",
+        "datePublished": "2026-03-25",
+        "summary": "Council news release stating that the Pride in Place regeneration plan for King's Lynn has been approved by government."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e07000008-cowley-road-operations-hub-nears-opening",
+    "title": "Cambridge: Cowley Road operations hub nears opening (waste and street services depot)",
+    "description": "Cambridge City Council reported that its new operations hub on Cowley Road was nearing opening, intended to support delivery of council services such as waste, street cleaning and grounds maintenance from a modernised site.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "6bd33e35-4bc1-45d1-8ccc-3bff8fdebd3d",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council has stated the hub is nearing opening following delivery of the new facility.",
+    "locationDescription": "Cowley Road, Cambridge (operations hub site)",
+    "locationSource": "Cambridge City Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Council’s award-winning new operations hub in Cowley Road nears opening",
+        "source": "Cambridge City Council",
+        "url": "https://www.cambridge.gov.uk/news/2025/10/23/councils-award-winning-new-operations-hub-in-cowley-road-nears-opening",
+        "datePublished": "2025-10-23",
+        "summary": "Council news update on the delivery and imminent opening of the Cowley Road operations hub supporting front-line council services."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e07000008-civic-quarter-project-plans-approved",
+    "title": "Cambridge: Civic Quarter plans approved for Guildhall, Corn Exchange and Market Square",
+    "description": "Cambridge City Council announced approval for plans within the Civic Quarter project, covering proposals for the Guildhall, Corn Exchange and Market Square area, aimed at improving public spaces and refurbishing civic assets.",
+    "type": "LOCAL_GOV",
+    "regionId": "64633c9f-8cfe-4a86-8879-bb94dd016fe8",
+    "localAuthorityId": "6bd33e35-4bc1-45d1-8ccc-3bff8fdebd3d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Approvals have been reported, but the programme will require further detailed design, procurement and phased construction.",
+    "locationDescription": "Cambridge city centre civic quarter (Guildhall, Corn Exchange and Market Square area)",
+    "locationSource": "Cambridge City Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Big week for Civic Quarter project to reimagine Cambridge’s Guildhall, Corn Exchange and Market Square",
+        "source": "Cambridge City Council",
+        "url": "https://www.cambridge.gov.uk/news/2026/03/26/big-week-for-civic-quarter-project-to-reimagine-cambridges-guildhall-corn-exchange-and-market-square",
+        "datePublished": "2026-03-26",
+        "summary": "Council update describing key milestones and approvals for the Civic Quarter project covering the Guildhall, Corn Exchange and Market Square proposals."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e07000178-covered-market-redevelopment-updated-plans-2027",
+    "title": "Oxford: Covered Market redevelopment updated plans with proposed 2027 start",
+    "description": "Oxford City Council published updated plans for the redevelopment of the Oxford Covered Market, including infrastructure improvements to support long-term operation of the historic market and an indicated start date in 2027.",
+    "type": "LOCAL_GOV",
+    "regionId": "ef368261-a5b7-415b-9b12-6edcce90ec3b",
+    "localAuthorityId": "8ce20ee0-fde4-4acf-9c26-32c471dab770",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Plans have been set out publicly, but the project depends on final design, approvals and procurement before works can begin.",
+    "locationDescription": "Oxford Covered Market, Oxford city centre",
+    "locationSource": "Oxford City Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Covered Market redevelopment updated plans and 2027 start date",
+        "source": "Oxford City Council",
+        "url": "https://www.oxford.gov.uk/news/article/1802/covered-market-redevelopment-updated-plans-and-2027-start-date",
+        "datePublished": "2026-01-29",
+        "summary": "Council news item describing updated plans for the Covered Market redevelopment and an indicated start date in 2027."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e07000178-market-street-changes-permanent",
+    "title": "Oxford: Market Street pedestrian-friendly changes made permanent",
+    "description": "Oxford City Council confirmed that changes to Market Street were made permanent, supporting a more pedestrian-friendly city centre and aligning with public realm and transport objectives.",
+    "type": "LOCAL_GOV",
+    "regionId": "ef368261-a5b7-415b-9b12-6edcce90ec3b",
+    "localAuthorityId": "8ce20ee0-fde4-4acf-9c26-32c471dab770",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council has confirmed the changes have been made permanent and implemented on-street.",
+    "locationDescription": "Market Street, Oxford city centre",
+    "locationSource": "Oxford City Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Market Street changes to become permanent",
+        "source": "Oxford City Council",
+        "url": "https://www.oxford.gov.uk/news/article/1731/market_street_changes_to_become_permanent",
+        "datePublished": "2025-09-12",
+        "summary": "Council announcement confirming that Market Street measures will be made permanent."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e08000025-smithfield-major-funding-agreed",
+    "title": "Birmingham: Major funding agreed for Smithfield Birmingham regeneration",
+    "description": "Birmingham City Council announced that major funding was agreed for Smithfield Birmingham, supporting the city-centre regeneration programme including a new wholesale market and wider mixed-use redevelopment of the Smithfield area.",
+    "type": "LOCAL_GOV",
+    "regionId": "0f2e7b9c-4567-4f45-8d27-9cd8ae47085c",
+    "localAuthorityId": "414e7c46-6756-491a-b12d-c705f016670c",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding agreement represents a major milestone, but the programme remains subject to phased delivery, procurement and construction.",
+    "locationDescription": "Smithfield area, Birmingham city centre",
+    "locationSource": "Birmingham City Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major funding agreed for Smithfield Birmingham",
+        "source": "Birmingham City Council",
+        "url": "https://www.birmingham.gov.uk/news/article/1603/major_funding_agreed_for_smithfield_birmingham",
+        "datePublished": "2025-07-22",
+        "summary": "Council news release confirming that major funding was agreed for the Smithfield Birmingham regeneration programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e08000025-druids-heath-regeneration-outline-planning-approved",
+    "title": "Birmingham: Druids Heath regeneration outline plans approved",
+    "description": "Birmingham City Council reported that outline plans for the regeneration of the Druids Heath estate were approved, setting the framework for redevelopment and investment in the estate.",
+    "type": "LOCAL_GOV",
+    "regionId": "0f2e7b9c-4567-4f45-8d27-9cd8ae47085c",
+    "localAuthorityId": "414e7c46-6756-491a-b12d-c705f016670c",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Outline approval sets a development framework, but detailed planning, rehousing strategy and phased construction will determine delivery.",
+    "locationDescription": "Druids Heath estate, Birmingham",
+    "locationSource": "Birmingham City Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Outline plans for Druids Heath regeneration given the go-ahead",
+        "source": "Birmingham City Council",
+        "url": "https://www.birmingham.gov.uk/news/article/1658/outline_plans_for_druids_heath_regeneration_given_the_go_ahead",
+        "datePublished": "2025-10-23",
+        "summary": "Council announcement that outline plans for the Druids Heath estate regeneration were approved."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e09000033-church-street-regeneration-work-starts",
+    "title": "Westminster: Church Street regeneration work begins (green and inclusive scheme)",
+    "description": "Westminster City Council announced the start of work on the Church Street regeneration scheme, framed as a green and inclusive regeneration programme intended to deliver new homes and place improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "14060d3a-d235-407d-80f2-ebdf212b3eb7",
+    "localAuthorityId": "2d82ae18-5429-475c-b3dc-210df969ffc8",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council has publicly confirmed that works have started on site as part of the regeneration scheme.",
+    "locationDescription": "Church Street area, Westminster (NW8)",
+    "locationSource": "Westminster City Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Work starts on Westminster City Council’s pioneering green and inclusive regeneration scheme",
+        "source": "Westminster City Council",
+        "url": "https://www.westminster.gov.uk/news/work-starts-westminster-city-councils-pioneering-green-and-inclusive-regeneration-scheme",
+        "datePublished": "2026-02-19",
+        "summary": "Council news release confirming the start of works for the Church Street regeneration scheme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e09000033-pdhu-future-heating-options-project-update",
+    "title": "Westminster: Future of PDHU (Pimlico District Heating) options and project update",
+    "description": "Westminster City Council provided an update on its programme exploring options for the future of the Pimlico District Heating Undertaking (PDHU), including study work to identify a preferred heating system option for the estate-wide network.",
+    "type": "LOCAL_GOV",
+    "regionId": "14060d3a-d235-407d-80f2-ebdf212b3eb7",
+    "localAuthorityId": "2d82ae18-5429-475c-b3dc-210df969ffc8",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council is still evaluating options; delivery depends on selection of the preferred solution and subsequent design and implementation.",
+    "locationDescription": "Pimlico District Heating Undertaking network area, Westminster (Pimlico)",
+    "locationSource": "Westminster City Council (Future of PDHU)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Project update (Future of PDHU)",
+        "source": "Westminster City Council",
+        "url": "https://www.westminster.gov.uk/housing/pdhu/project-update",
+        "datePublished": "2025-06-30",
+        "summary": "Council programme page explaining that options are being reviewed for the future of PDHU and that a preferred option is to be agreed."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e08000035-leeds-pipes-next-phase-heat-network",
+    "title": "Leeds: Next phase of low-carbon heat network (Leeds PIPES) to reach more residents",
+    "description": "Leeds City Council announced progress on the next phase of the city’s low-carbon district heating expansion, linked to Leeds PIPES, intended to connect additional homes and buildings to low-carbon heat.",
+    "type": "LOCAL_GOV",
+    "regionId": "cdde5565-2090-4f98-9fbf-f990d7825dcc",
+    "localAuthorityId": "d0af0b17-b849-47fd-b9bb-9e8644bf9254",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "An expansion phase has been announced, but delivery is subject to detailed programme delivery and construction sequencing.",
+    "locationDescription": "Leeds city centre and connected heat network corridors (Leeds PIPES district heating network)",
+    "locationSource": "Leeds City Council newsroom",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Next phase of low-carbon heat network set to reach thousands more residents",
+        "source": "Leeds City Council",
+        "url": "https://news.leeds.gov.uk/news/next-phase-of-low-carbon-heat-network-set-to-reach-thousands-more-residents",
+        "datePublished": "2026-03-24",
+        "summary": "Council newsroom article setting out the next phase of Leeds’ low-carbon heat network expansion under Leeds PIPES."
+      }
+    ]
+  },
+  {
+    "id": "gm-b017-e08000035-sheepscar-beck-flood-resilience-scheme-complete",
+    "title": "Leeds: Sheepscar Beck flood resilience refurbishment scheme completed",
+    "description": "Leeds City Council confirmed completion of refurbishment works on Sheepscar Beck to enhance flood resilience for nearby businesses and homes, repairing and strengthening channel infrastructure to reduce the risk of flooding.",
+    "type": "LOCAL_GOV",
+    "regionId": "cdde5565-2090-4f98-9fbf-f990d7825dcc",
+    "localAuthorityId": "d0af0b17-b849-47fd-b9bb-9e8644bf9254",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council has announced that the works have been completed.",
+    "locationDescription": "Sheepscar Beck corridor, Sheepscar and Mabgate area, Leeds city centre north",
+    "locationSource": "Leeds City Council newsroom",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£1.5 million flood resilience scheme protecting over 300 homes and businesses is complete",
+        "source": "Leeds City Council",
+        "url": "https://news.leeds.gov.uk/news/gbp-1-5-million-flood-resilience-scheme-protecting-over-300-homes-and-businesses-is-complete",
+        "datePublished": "2025-08-18",
+        "summary": "Council newsroom article confirming completion of the £1.5m Sheepscar Beck refurbishment scheme to enhance flood resilience for businesses and homes."
+      }
+    ]
+  }
+]

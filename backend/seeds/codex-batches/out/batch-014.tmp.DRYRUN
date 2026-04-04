@@ -1,0 +1,482 @@
+[
+  {
+    "id": "gm-b014-e07000202-cornhill-grimwades-building-acquisition",
+    "title": "Ipswich: Cornhill (former Grimwades) building acquisition for town centre regeneration",
+    "description": "Ipswich Borough Council has acquired a prominent Cornhill building (formerly Grimwades) to support town centre regeneration, with plans to bring the property back into active use and help increase footfall and investment in the central area.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "915008de-38ff-4771-ab2b-fa5efaacb74c",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council has completed the acquisition and set out intended re-use and regeneration aims; delivery depends on subsequent works and tenant/occupier arrangements.",
+    "locationDescription": "Cornhill (former Grimwades store), Ipswich town centre",
+    "locationSource": "Ipswich Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Ipswich Borough Council buys Cornhill building to support the town's regeneration",
+        "source": "Ipswich Borough Council",
+        "url": "https://www.ipswich.gov.uk/content/ipswich-borough-council-buys-cornhill-building-support-towns-regeneration",
+        "datePublished": "2025-04-23",
+        "summary": "Council announcement confirming the purchase of a Cornhill building (formerly Grimwades) as part of town centre regeneration activity and intentions to bring it back into use."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e07000063-re-imagining-newhaven-programme-board",
+    "title": "Lewes: Re-imagining Newhaven regeneration programme governance (Programme Board and published minutes)",
+    "description": "Lewes District Council has established a Programme Board for the Re-imagining Newhaven regeneration programme, publishing board information and minutes to evidence governance and ongoing work to coordinate regeneration activity in Newhaven.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "09d21c64-b66f-445b-bdc8-451819759789",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Public programme board information and minutes show continued governance and planning activity; individual capital schemes sit within an ongoing programme rather than a single completed project.",
+    "locationDescription": "Newhaven (Lewes District)",
+    "locationSource": "Lewes and Eastbourne Councils website (programme board pages and minutes)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Re-imagining Newhaven Programme Board",
+        "source": "Lewes and Eastbourne Councils",
+        "url": "https://www.lewes-eastbourne.gov.uk/council-elections-and-democracy/your-council/council-structure/boards-and-working-groups/re-imagining-newhaven-programme-board/",
+        "datePublished": "2025-06-17",
+        "summary": "Council page describing the Re-imagining Newhaven Programme Board and its role in supporting and coordinating regeneration activity in Newhaven."
+      },
+      {
+        "type": "URL",
+        "title": "Re-imagining Newhaven Programme Board minutes",
+        "source": "Lewes and Eastbourne Councils",
+        "url": "https://www.lewes-eastbourne.gov.uk/housing-and-property/re-imagining-newhaven-programme-board-minutes/",
+        "datePublished": "2025-06-17",
+        "summary": "Council page publishing Programme Board minutes for the Re-imagining Newhaven regeneration programme, providing public evidence of ongoing governance activity."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e07000213-staines-waterfront-lease-terminated",
+    "title": "Spelthorne: Staines Waterfront development lease terminated",
+    "description": "Spelthorne Borough Council has terminated the lease for the Staines Waterfront development, ending the existing arrangement for the proposed scheme and indicating a reset in how the site will be taken forward.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "d25e8559-1e76-43ec-8d85-ad2bb9b5196d",
+    "createdById": 1,
+    "status": "RED",
+    "statusRationale": "The council states the development lease has been terminated, which signals the previously proposed delivery route is no longer proceeding as planned.",
+    "locationDescription": "Staines Waterfront site, Staines-upon-Thames",
+    "locationSource": "Spelthorne Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Spelthorne terminates Waterfront development lease",
+        "source": "Spelthorne Borough Council",
+        "url": "https://www.spelthorne.gov.uk/article/15657/Spelthorne-terminates-Waterfront-development-lease",
+        "datePublished": "2025-07-25",
+        "summary": "Council announcement confirming termination of the development lease for the Staines Waterfront scheme and outlining the council’s position on next steps."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e07000135-ukspf-street-furniture-and-play-area-investment",
+    "title": "Oadby and Wigston: UK Shared Prosperity Fund (UKSPF) capital programme for street furniture and play area improvements",
+    "description": "Oadby and Wigston Borough Council’s published committee pack evidences UK Shared Prosperity Fund capital allocations, including budget lines for street furniture and play area-related activity as part of local place improvement initiatives.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "3314cd16-0cc0-485f-a181-f269151d20a4",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Committee papers show funded budget lines and officer responsibility, indicating planned/ongoing delivery rather than confirmed completion in the cited material.",
+    "locationDescription": "Oadby, Wigston and South Wigston (borough-wide place improvements)",
+    "locationSource": "Oadby and Wigston Borough Council (Policy, Finance & Development Committee public reports pack)",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Policy, Finance & Development Committee public reports pack (Budget Monitoring Q2 2025/26 and capital programme tables)",
+        "source": "Oadby and Wigston Borough Council (Modern.Gov)",
+        "url": "https://moderngov.oadby-wigston.gov.uk/documents/g2947/Public%20reports%20pack%2002nd-Dec-2025%2019.00%20Policy%20Finance%20Development%20Committee.pdf?T=10",
+        "datePublished": "2025-11-24",
+        "summary": "Agenda reports pack including capital programme lines referencing UKSPF schemes such as street furniture and play area/green initiative activity, providing public evidence of funded place-improvement items."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e08000012-liverpool-baltic-station",
+    "title": "Liverpool: Liverpool Baltic Station (Merseyrail Northern Line) progressed toward delivery",
+    "description": "The Liverpool City Region Combined Authority has progressed the Liverpool Baltic Station project as a new Merseyrail Northern Line station intended to improve rail access to the Baltic Triangle area, with public updates covering funding and subsequent project milestones.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "fa88a510-40c0-4c85-b1cf-5d96f5a2fb2b",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Public authority updates indicate funding and approvals have advanced the project; construction and opening are future milestones in the cited updates.",
+    "locationDescription": "Baltic Triangle area, Liverpool (proposed Liverpool Baltic Station on the Northern Line)",
+    "locationSource": "Liverpool City Region Combined Authority news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£100m funding package brings new Liverpool Baltic station a step closer",
+        "source": "Liverpool City Region Combined Authority",
+        "url": "https://www.liverpoolcityregion-ca.gov.uk/100m-funding-package-brings-new-liverpool-baltic-station-a-step-closer/",
+        "datePublished": "2024-09-20",
+        "summary": "Combined authority update describing the £100m funding package and progress steps for the planned Liverpool Baltic Station scheme."
+      },
+      {
+        "type": "URL",
+        "title": "Next stop Liverpool Baltic as £100m new station gets green light",
+        "source": "Liverpool City Region Combined Authority",
+        "url": "https://www.liverpoolcityregion-ca.gov.uk/next-stop-liverpool-baltic-as-100m-new-station-gets-green-light/",
+        "datePublished": "2025-04-22",
+        "summary": "Combined authority update describing a major milestone for Liverpool Baltic Station, including permissions and intended next phases toward delivery."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e06000062-northampton-four-waterside-regeneration-agreement",
+    "title": "West Northamptonshire: Northampton Four Waterside regeneration development agreement",
+    "description": "West Northamptonshire Council has signed a development agreement to progress the regeneration of Northampton’s Four Waterside area, covering development sites and intended mixed-use transformation near the town centre and rail station.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "84371d60-45d9-4dc3-a0e9-423ceb3c90ef",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A formal development agreement is confirmed by the council, indicating progression to delivery stages, but construction and completion milestones extend beyond the cited announcement.",
+    "locationDescription": "Four Waterside (Marefair and adjacent sites), Northampton town centre",
+    "locationSource": "West Northamptonshire Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New agreement signals start of Northampton regeneration’s Four Waterside",
+        "source": "West Northamptonshire Council",
+        "url": "https://www.westnorthants.gov.uk/news/new-agreement-signals-start-northampton-regenerations-four-waterside",
+        "datePublished": "2025-03-06",
+        "summary": "Council announcement confirming a signed development agreement for Northampton’s Four Waterside regeneration and outlining intended redevelopment outcomes."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e07000203-stowmarket-innovation-gateway-gateway-14",
+    "title": "Mid Suffolk: Stowmarket Innovation Gateway (Gateway 14) tops out",
+    "description": "Mid Suffolk District Council has publicly confirmed a construction milestone (“topping out”) for the Stowmarket Innovation Gateway at Gateway 14, a project intended to provide new innovation and workspace facilities linked to economic growth ambitions in the district.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "2abc46ad-bb04-4cc4-8c75-840422b41ce3",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A topping-out milestone indicates the building is progressing through construction; opening and operational delivery follow completion and fit-out.",
+    "locationDescription": "Gateway 14, Stowmarket (Stowmarket Innovation Gateway)",
+    "locationSource": "Mid Suffolk District Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Stowmarket Innovation Gateway tops out",
+        "source": "Mid Suffolk District Council",
+        "url": "https://www.midsuffolk.gov.uk/about/latest-news/stowmarket-innovation-gateway-tops-out",
+        "datePublished": "2025-12-02",
+        "summary": "Council update confirming a topping-out milestone at the Stowmarket Innovation Gateway at Gateway 14 and providing public information on next steps toward opening."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e09000009-gurnell-leisure-centre-redevelopment-241706outr3",
+    "title": "Ealing: Gurnell Leisure Centre redevelopment (planning application 241706OUTR3)",
+    "description": "The London Borough of Ealing has granted planning permission for redevelopment of the Gurnell Leisure Centre site, covering a replacement leisure centre, parkland improvements and outline consent for enabling residential development.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "1795b1c7-413a-444c-a9d3-30661cdf7ec9",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning permission has been granted for the scheme; delivery remains subject to procurement and construction phases after planning approval.",
+    "locationDescription": "Gurnell Leisure Centre site, Ruislip Road East, West Ealing, W13 0AL",
+    "locationSource": "Ealing Council (Planning Committee Modern.Gov agenda item)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning Application - 241706OUTR3 - Gurnell Leisure Centre, Ruislip Road East, West Ealing, W13 0AL (Pitshanger)",
+        "source": "Ealing Council (Modern.Gov)",
+        "url": "https://ealing.moderngov.co.uk/mgAi.aspx?ID=5568",
+        "datePublished": "2025-01-15",
+        "summary": "Planning Committee agenda item and minutes summarising the hybrid application, including demolition, replacement leisure centre, park improvements, and outline enabling residential development, and recording the committee’s decision to grant planning permission."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e09000022-brixton-station-road-and-canterbury-crescent-regeneration",
+    "title": "Lambeth: Brixton town centre regeneration proposals at 49 Brixton Station and 6 Canterbury Crescent",
+    "description": "Lambeth Council has progressed proposals for a mixed-use regeneration scheme in Brixton town centre at 49 Brixton Station and 6 Canterbury Crescent, including new homes, workspace, market infrastructure and public realm improvements, with public updates covering consultation and planning submission.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "08dbbc19-7ecf-41af-ba5f-c324e8c6da65",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Public updates evidence the scheme moving through consultation and planning submission; construction and delivery depend on subsequent approvals and procurement.",
+    "locationDescription": "49 Brixton Station and 6 Canterbury Crescent, Brixton, London Borough of Lambeth",
+    "locationSource": "Love Lambeth (Lambeth Council news)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Brixton: Next opportunity to have your say on Brixton Town Centre regeneration plan",
+        "source": "Lambeth Council (Love Lambeth)",
+        "url": "https://love.lambeth.gov.uk/brixton-next-opportunity-to-have-your-say-on-brixton-town-centre-regeneration-plan/",
+        "datePublished": "2025-10-10",
+        "summary": "Council update inviting feedback on the regeneration proposals for the Brixton Station Road and Canterbury Crescent sites, describing housing, workspace and public realm elements."
+      },
+      {
+        "type": "URL",
+        "title": "Major Brixton Town Centre regeneration plans submitted",
+        "source": "Lambeth Council (Love Lambeth)",
+        "url": "https://love.lambeth.gov.uk/major-brixton-town-centre-regeneration-plans-submitted/",
+        "datePublished": "2025-12-12",
+        "summary": "Council update confirming planning submission for the regeneration proposals and summarising intended outcomes, including homes, workspace and improvements to market/public realm infrastructure."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e06000026-trefusis-park-flood-relief-scheme",
+    "title": "Plymouth: Trefusis Park Flood Relief Scheme",
+    "description": "Plymouth City Council has progressed and commenced construction activity for the Trefusis Park Flood Relief Scheme, intended to reduce surface water flooding risk and improve drainage resilience in the area, with public updates on construction impacts and timelines.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "4212bbed-8db0-4254-8477-908fbac7ccbf",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council updates confirm works are underway and being managed through phased construction; completion is expected after the start of works and depends on the construction programme.",
+    "locationDescription": "Trefusis Park, Plymouth",
+    "locationSource": "Plymouth City Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Work set to start on Trefusis Park Flood Relief Scheme",
+        "source": "Plymouth City Council",
+        "url": "https://www.plymouth.gov.uk/news/work-set-start-trefusis-park-flood-relief-scheme",
+        "datePublished": "2025-04-09",
+        "summary": "Council announcement that work is set to start on the Trefusis Park Flood Relief Scheme, describing intended flood resilience benefits and programme information."
+      },
+      {
+        "type": "URL",
+        "title": "Trefusis Park Flood Relief Scheme - November update",
+        "source": "Plymouth City Council",
+        "url": "https://www.plymouth.gov.uk/news/trefusis-park-flood-relief-scheme-november-update",
+        "datePublished": "2025-11-07",
+        "summary": "Council update on progress and access arrangements during construction, providing public evidence of continued works delivery."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e07000010-wisbech-regeneration-plan-2025",
+    "title": "Fenland: Wisbech Regeneration Plan 2025 (town centre and waterfront regeneration pipeline)",
+    "description": "Fenland District Council has published a Wisbech Regeneration Plan (2025) setting out a pipeline of regeneration activity in Wisbech, including town centre/high street investment themes and enabling work for wider regeneration sites, supported by local updates on specific projects such as “The Gap” site at 24 High Street.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "c207efea-0c63-426d-98d6-c8baee48e656",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A published regeneration plan and project-specific updates evidence active development and delivery work, but multiple components are at different stages and are not all complete.",
+    "locationDescription": "Wisbech town centre (including High Street regeneration sites such as 24 High Street, “The Gap”)",
+    "locationSource": "Fenland District Council regeneration plan and local news reporting",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Wisbech Regeneration Plan 2025",
+        "source": "Fenland District Council",
+        "url": "https://www.fenland.gov.uk/media/20986/Wisbech-Regeneration-Plan-2025/pdf/Wisbech_Regeneration_Plan_2025.pdf?m=638922083082270000",
+        "datePublished": "2025-09-30",
+        "summary": "Council-published regeneration plan document outlining regeneration priorities and intended project pipeline for Wisbech in 2025."
+      },
+      {
+        "type": "URL",
+        "title": "Contractor appointed to transform town centre ‘gap’ site",
+        "source": "Fenland Citizen",
+        "url": "https://www.fenlandcitizen.co.uk/news/contractor-appointed-to-transform-town-centre-gap-site-9412691/",
+        "datePublished": "2025-02-27",
+        "summary": "Local reporting that a contractor was appointed for redevelopment at ‘The Gap’ at 24 High Street, Wisbech, indicating active progression of a specific town centre regeneration site."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e09000011-council-homes-investment-2025-26",
+    "title": "Greenwich: investment programme for council homes in 2025/26",
+    "description": "The Royal Borough of Greenwich has published a funding announcement for investment in its council housing stock for 2025/26, covering works intended to maintain and improve homes and building safety and condition across the borough.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "332aa2ed-bb95-45e0-a548-5bb2caf8c5f6",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council’s published update confirms budgeted investment for a specific financial year; delivery spans multiple workstreams across the housing stock and is ongoing through 2025/26.",
+    "locationDescription": "Royal Borough of Greenwich council housing stock (borough-wide)",
+    "locationSource": "Royal Borough of Greenwich news",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Around £9m to invest in council homes in 2025-26",
+        "source": "Royal Borough of Greenwich",
+        "url": "https://www.royalgreenwich.gov.uk/news/article/2797/around_9m_to_invest_in_council_homes_in_2025-26",
+        "datePublished": "2025-04-01",
+        "summary": "Council news update setting out planned investment for council homes in 2025/26, describing the scale of funding and intended maintenance/improvement focus."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e07000077-saffron-walden-clean-air-project-e-bike-hire",
+    "title": "Uttlesford: Saffron Walden Clean Air Project (e-bike hire and local active travel measures)",
+    "description": "Uttlesford District Council has progressed the Saffron Walden Clean Air Project, including introducing an e-bike hire scheme and other measures intended to reduce car use and improve air quality through active travel and behaviour change initiatives.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "46a55cc5-6a96-41ac-8398-423f26511831",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Public case study evidence confirms the e-bike hire scheme launched and has recorded usage, indicating the project is implemented and operating rather than only planned.",
+    "locationDescription": "Saffron Walden, Uttlesford",
+    "locationSource": "Local Government Association case study",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Uttlesford: Saffron Walden Clean Air Project",
+        "source": "Local Government Association",
+        "url": "https://www.local.gov.uk/case-studies/uttlesford-saffron-walden-clean-air-project",
+        "datePublished": "2025-04-08",
+        "summary": "LGA case study describing the Saffron Walden Clean Air Project, including the e-bike hire scheme and associated measures, with reported outcomes and delivery context."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e06000010-a63-castle-street-improvements",
+    "title": "Hull: A63 Castle Street improvements (National Highways) – major city centre transport scheme",
+    "description": "National Highways is delivering the A63 Castle Street improvements in Hull, a major highway and junction upgrade intended to improve connectivity and reliability and change the layout around the Castle Street corridor, with ongoing construction updates published publicly.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "localAuthorityId": "10dd16a9-49ca-45a6-b344-63bae1021561",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "National Highways updates confirm active construction and staged works; the scheme remains in delivery rather than being confirmed as complete in the cited update.",
+    "locationDescription": "A63 Castle Street corridor, Hull city centre",
+    "locationSource": "National Highways project page and published updates",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "A63 Castle Street improvements",
+        "source": "National Highways",
+        "url": "https://nationalhighways.co.uk/our-roads/yorkshire-and-the-humber/a63-castle-street-improvements/",
+        "datePublished": "2026-03-05",
+        "summary": "National Highways project page for the A63 Castle Street improvements, including a published construction update dated 5 March 2026 describing ongoing works activity and programme information."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e07000240-jubilee-square-city-centre-revamp",
+    "title": "St Albans: Jubilee Square city centre revamp completed",
+    "description": "St Albans City and District Council has completed a revamp of Jubilee Square in the city centre, delivering public realm improvements intended to enhance the area for events and everyday use.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "4bb74bfa-a03e-424f-9b82-74e5adbb23d2",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council update describes the completed revamp and opening/celebration of the improved public square, indicating delivery completion.",
+    "locationDescription": "Jubilee Square, St Albans city centre",
+    "locationSource": "St Albans City and District Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Jubilee Square - a celebration!",
+        "source": "St Albans City and District Council",
+        "url": "https://www.stalbans.gov.uk/news/jubilee-square-a-celebration",
+        "datePublished": "2024-08-01",
+        "summary": "Council news update describing completion of a revamp of Jubilee Square and the public realm improvements delivered in the city centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e08000027-dudley-interchange-taking-shape",
+    "title": "Dudley: Dudley Interchange construction progress (bus and tram interchange)",
+    "description": "Dudley Metropolitan Borough Council and delivery partners have progressed construction of the Dudley Interchange, a transport hub intended to integrate bus services with the Midland Metro extension and improve connectivity into Dudley town centre.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "9bf7def2-da4b-4906-8de5-d6fb7c9b6570",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Public update materials show the interchange is under construction and taking shape; opening and operational commissioning remain future milestones.",
+    "locationDescription": "Dudley town centre (Dudley Interchange site)",
+    "locationSource": "West Midlands Combined Authority news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New images show Dudley Interchange taking shape",
+        "source": "West Midlands Combined Authority",
+        "url": "https://www.wmca.org.uk/news/new-images-show-dudley-interchange-taking-shape/",
+        "datePublished": "2025-10-30",
+        "summary": "Combined authority update sharing construction progress and visuals for the Dudley Interchange project, evidencing ongoing delivery toward completion."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e08000026-coventry-very-light-rail-demonstrator",
+    "title": "Coventry: Very Light Rail demonstrator progressed after on-street trials",
+    "description": "Coventry has progressed its Very Light Rail (VLR) programme following on-street trials, with public reporting on successful demonstrations and subsequent approval to build a further demonstrator line connecting key destinations.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "861eed51-03df-41c1-bf31-c834ccb4bd5f",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Public reporting indicates successful on-street trials have occurred and further demonstrator route construction has been approved; this indicates progression but not completion of the next demonstrator line.",
+    "locationDescription": "Coventry city centre (Very Light Rail demonstrator and planned further route)",
+    "locationSource": "University and rail-industry reporting on Coventry VLR programme milestones",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "On track for Coventry Very Light Rail innovations",
+        "source": "Coventry University",
+        "url": "https://www.coventry.ac.uk/news/2026/on-track-for-coventry-very-light-rail-innovations/",
+        "datePublished": "2026-01-14",
+        "summary": "University update describing Coventry Very Light Rail innovations and progress following on-street trials, with context on next steps for the programme."
+      },
+      {
+        "type": "URL",
+        "title": "New Coventry Very Light Rail route approved after successful trials",
+        "source": "RAIL Magazine",
+        "url": "https://www.railmagazine.com/news/new-coventry-very-light-rail-route-approved-after-successful-trials",
+        "datePublished": "2025-12-30",
+        "summary": "Rail industry reporting stating Coventry City Council approved construction of a further VLR demonstrator route following on-street trials, describing proposed route and implementation approach."
+      }
+    ]
+  },
+  {
+    "id": "gm-b014-e07000207-brooklands-flood-alleviation-pond-desilting",
+    "title": "Elmbridge: Brooklands Community Park flood alleviation pond improvement (desilting works)",
+    "description": "Elmbridge Borough Council has progressed improvement works to a flood alleviation pond in Brooklands Community Park, undertaking desilting and associated works intended to improve the pond’s capacity and performance for local flood resilience.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "24578131-915e-4e3e-a16c-bf08b745e434",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council update describes active works underway with a defined programme period, indicating delivery in progress at the time of publication.",
+    "locationDescription": "Flood alleviation pond, Brooklands Community Park, Weybridge",
+    "locationSource": "Elmbridge Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Flood alleviation pond being improved",
+        "source": "Elmbridge Borough Council",
+        "url": "https://www.elmbridge.gov.uk/news/flood-alleviation-pond-being-improved/",
+        "datePublished": "2025-10-20",
+        "summary": "Council update announcing desilting and improvement works to the flood alleviation pond at Brooklands Community Park, including programme timing and purpose for flood resilience."
+      }
+    ]
+  }
+]

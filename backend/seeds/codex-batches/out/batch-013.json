@@ -1,0 +1,466 @@
+[
+  {
+    "id": "gm-b013-e06000009-blackpool-housing-regeneration-framework",
+    "title": "Blackpool: housing regeneration framework and neighbourhood transformation programme",
+    "description": "Blackpool Council has published a Housing Regeneration Framework and associated programme information setting out how the council plans and coordinates housing-led regeneration and neighbourhood improvements across the borough as part of its wider regeneration activity.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "0871ae5f-12f0-4fdd-a225-31464ca0a2ae",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council has published and updated programme and framework material, indicating ongoing development and delivery planning for housing regeneration activity rather than a single completed capital scheme.",
+    "locationDescription": "Blackpool (borough-wide housing regeneration areas)",
+    "locationSource": "Blackpool Council regeneration project pages",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Housing regeneration framework",
+        "source": "Blackpool Council",
+        "url": "https://www.blackpool.gov.uk/Business/Regeneration-projects/Housing-regeneration-framework.aspx",
+        "datePublished": "2026-03-03",
+        "summary": "Council page setting out the Housing Regeneration Framework and approach for housing-led regeneration activity in Blackpool."
+      },
+      {
+        "type": "URL",
+        "title": "Transforming Blackpool's housing",
+        "source": "Blackpool Council",
+        "url": "https://www.blackpool.gov.uk/Business/Regeneration-projects/Transforming-Blackpool-s-housing.aspx",
+        "datePublished": "2026-02-10",
+        "summary": "Council programme page describing activity to improve and regenerate housing in Blackpool, including neighbourhood-focused interventions and delivery context."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e08000029-solihull-mell-square-holbeche-place-redevelopment",
+    "title": "Solihull: Mell Square (Holbeche Place) town centre redevelopment with Muse",
+    "description": "Solihull Metropolitan Borough Council is progressing the redevelopment of Mell Square as a mixed-use scheme (now referenced as Holbeche Place), with proposals including new homes, retail/leisure uses and new public spaces as part of the wider town centre masterplan.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "c43f0394-ce3e-44bd-b757-872975fd6cd2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council has publicly confirmed partnership and approvals to take the masterplan forward, indicating the project is advancing through development and delivery stages.",
+    "locationDescription": "Mell Square (Holbeche Place), Solihull town centre",
+    "locationSource": "Solihull Metropolitan Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Solihull Council and Muse sign agreement for the landmark redevelopment of Mell Square",
+        "source": "Solihull Metropolitan Borough Council",
+        "url": "https://www.solihull.gov.uk/2025/solihull-council-and-muse-sign-agreement-landmark-redevelopment-mell-square",
+        "datePublished": "2024-11-12",
+        "summary": "Council announcement confirming a development agreement with Muse to regenerate Mell Square, describing mixed uses including new public spaces, leisure facilities and homes."
+      },
+      {
+        "type": "URL",
+        "title": "Mell Square Masterplan (latest update: 9 February 2026)",
+        "source": "Solihull Metropolitan Borough Council",
+        "url": "https://www.solihull.gov.uk/about-council/mell-square-masterplan",
+        "datePublished": "2026-02-09",
+        "summary": "Council masterplan page providing the latest update on the Mell Square (Holbeche Place) redevelopment, including confirmation of approved plans and next steps."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e06000047-county-durham-highway-projects-programme-2024-2026",
+    "title": "County Durham: Highway Projects Programme of Works 2024–2026 (contract award)",
+    "description": "Durham County Council has awarded a contract for its Highway Projects Programme of Works 2024–2026, supporting delivery of planned highway improvement and civil engineering works across the county.",
+    "type": "LOCAL_GOV",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "localAuthorityId": "1f94fb79-1821-46be-b1e2-7f22bd0d7af1",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A contract award notice has been published for the 2024–2026 highway works programme, indicating delivery arrangements are in place.",
+    "locationDescription": "County Durham (highway projects programme)",
+    "locationSource": "Find a Tender (Durham County Council)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Highway Projects Programme of Works 2024-2026 (contract award notice)",
+        "source": "Find a Tender (Durham County Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/015617-2025",
+        "datePublished": "2025-04-16",
+        "summary": "Contract award notice for Durham County Council’s Highway Projects Programme of Works 2024–2026."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e06000049-cheshire-east-middlewich-eastern-bypass-main-construction",
+    "title": "Cheshire East: Middlewich Eastern Bypass main construction phase approved",
+    "description": "Cheshire East Council has approved the main construction phase for the Middlewich Eastern Bypass, a new road scheme intended to improve connectivity and reduce congestion while supporting planned growth around Middlewich.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "3416b16a-946a-4bed-b1ef-d0f6bb219530",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council has publicly approved the main construction phase and set out planned delivery milestones, indicating the scheme is moving from approvals into delivery.",
+    "locationDescription": "Middlewich Eastern Bypass, Middlewich (Cheshire East)",
+    "locationSource": "Cheshire East Council news release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Green light for construction of Middlewich Eastern Bypass main phase as new link road planned for next year",
+        "source": "Cheshire East Council",
+        "url": "https://www.cheshireeast.gov.uk/news_and_events/news.aspx?news_id=9653",
+        "datePublished": "2026-01-22",
+        "summary": "Council news release announcing approval of the main construction phase for the Middlewich Eastern Bypass and setting out the planned programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e07000011-huntingdonshire-priory-centre-st-neots-redevelopment",
+    "title": "Huntingdonshire: Priory Centre redevelopment in St Neots (works underway)",
+    "description": "Huntingdonshire District Council is refurbishing and expanding the Priory Centre in St Neots as part of its Market Towns Programme, aiming to create a modern cultural and community venue supporting town centre vitality.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "4c20d442-3d63-4ea2-9056-ce2042c0b583",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council reports that refurbishment and expansion works have officially begun on site, indicating active delivery.",
+    "locationDescription": "The Priory Centre, St Neots (Huntingdonshire)",
+    "locationSource": "Huntingdonshire District Council news release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Works Underway on Priory Centre Redevelopment in St Neots",
+        "source": "Huntingdonshire District Council",
+        "url": "https://www.huntingdonshire.gov.uk/news/works-underway-on-priory-centre-redevelopment-in-st-neots/",
+        "datePublished": "2025-06-11",
+        "summary": "Council announcement stating that refurbishment and expansion work has started at the Priory Centre, with delivery partners and funding contributions described."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e07000142-west-lindsey-gainsborough-whitton-gardens-baltic-mill-regeneration",
+    "title": "West Lindsey: Gainsborough regeneration projects (Whitton Gardens and Baltic Mill) nearing completion",
+    "description": "West Lindsey District Council reported significant progress on two Gainsborough regeneration schemes: Whitton Gardens (including a new café facility) and the Baltic Mill site transformation into a new green public space, as part of the council’s wider regeneration programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "a000dccd-285c-4e72-a57f-4913f58c5a31",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council states both projects are in the final stages of development with completion expected in spring/summer 2025, indicating delivery is well advanced.",
+    "locationDescription": "Whitton Gardens and Baltic Mill site, Gainsborough (West Lindsey)",
+    "locationSource": "West Lindsey District Council news release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Flagship regeneration projects nearing completion in Gainsborough",
+        "source": "West Lindsey District Council",
+        "url": "https://www.west-lindsey.gov.uk/council-news/2025/03/flagship-regeneration-projects-nearing-completion-gainsborough",
+        "datePublished": "2025-03-17",
+        "summary": "Council update describing progress on Whitton Gardens café works and the Baltic Mill site public space transformation, with anticipated completion timings."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e08000010-wigan-galleries-market-hall-construction",
+    "title": "Wigan: Galleries town centre redevelopment (market hall construction phase starts)",
+    "description": "Wigan Council and development partner Cityheart confirmed agreements enabling principal contractor Galliford Try to begin the first construction phases of the former Galleries site redevelopment, including construction of a new 90,000 sqft market hall and enabling works across the wider mixed-use scheme.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "9f137a19-a0df-49f7-afd2-4069462499b3",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council states construction work is commencing with a principal contractor mobilising on the first phases, indicating active delivery.",
+    "locationDescription": "Former Galleries site, Wigan town centre",
+    "locationSource": "Wigan Council news release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Construction works to commence at Wigan's former Galleries shopping centre site following agreement signing",
+        "source": "Wigan Council",
+        "url": "https://www.wigan.gov.uk/News/Articles/2024/October/Construction-works-to-commence-at-Wigan%27s-former-Galleries-shopping-centre-site-following-agreement-signing..aspx",
+        "datePublished": "2024-10-11",
+        "summary": "Council announcement that agreements were signed enabling Galliford Try to start the first construction phases, including the new market hall and enabling works across the wider redevelopment."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e07000129-blaby-huncote-leisure-centre-landfill-gas-mitigation-minor-works",
+    "title": "Blaby: Huncote Leisure Centre landfill-gas mitigation minor works (contract award)",
+    "description": "Blaby District Council awarded a contract for minor works at Huncote Leisure Centre, including installation of gas monitoring wells and works to extend landfill gas mitigation infrastructure to support site safety and potential future reopening.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "1d315c4c-7ac6-4fa3-a378-db6108e709bf",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A transparency notice has been published confirming the decision to award the specialist minor works contract for landfill gas mitigation-related works at the leisure centre site.",
+    "locationDescription": "Huncote Leisure Centre, Sportsfield Lane, Huncote (Blaby District)",
+    "locationSource": "Find a Tender (Blaby District Council)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Huncote Leisure Centre Minor Works (transparency notice)",
+        "source": "Find a Tender (Blaby District Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/050547-2025",
+        "datePublished": "2025-08-21",
+        "summary": "Transparency notice describing minor works at Huncote Leisure Centre including gas monitoring wells and associated site works tied to landfill gas mitigation infrastructure."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e09000005-brent-south-kilburn-regeneration-single-delivery-partner",
+    "title": "Brent: South Kilburn Regeneration Programme (single delivery partner procurement pipeline)",
+    "description": "The London Borough of Brent published a pipeline notice for procurement of a single delivery partner to support delivery of the final phases of the South Kilburn Regeneration Programme, described as a multi-site regeneration programme with significant housing capacity over a long delivery horizon.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "56733ec9-49f1-401a-8d5b-5cc99d6485d0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A UK1 pipeline notice has been published for procurement of a delivery partner, indicating the programme is moving through procurement preparation for subsequent delivery.",
+    "locationDescription": "South Kilburn, London Borough of Brent",
+    "locationSource": "Find a Tender (London Borough of Brent)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Single Delivery Partner - South Kilburn Regeneration Programme (pipeline notice)",
+        "source": "Find a Tender (London Borough of Brent)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/020748-2025",
+        "datePublished": "2025-05-13",
+        "summary": "Pipeline notice describing Brent’s planned procurement for a single delivery partner to support delivery of later phases of the South Kilburn Regeneration Programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e08000006-salford-salford-crescent-third-platform-upgrade",
+    "title": "Salford: Salford Crescent station third platform upgrade (£21m investment)",
+    "description": "Network Rail is delivering a £21m upgrade at Salford Crescent station to add a third platform and associated works to improve passenger flow and reduce train delays on busy routes through Greater Manchester.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "f9e5f7df-73a6-47ad-a033-4ff9199ee374",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Network Rail has published project updates confirming active construction and delivery of the third platform scheme.",
+    "locationDescription": "Salford Crescent station, Salford",
+    "locationSource": "Network Rail media centre",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£21m investment at Salford Crescent station to improve train services across the North West",
+        "source": "Network Rail (Media Centre)",
+        "url": "https://www.networkrailmediacentre.co.uk/news/gbp-21m-investment-at-salford-crescent-station-to-improve-train-services-across-the-north-west",
+        "datePublished": "2024-10-18",
+        "summary": "Network Rail announcement describing the £21m third platform scheme at Salford Crescent, intended to improve passenger flow and reduce delays."
+      },
+      {
+        "type": "URL",
+        "title": "Salford Crescent third platform: the story so far",
+        "source": "Network Rail (Media Centre)",
+        "url": "https://www.networkrailmediacentre.co.uk/news/salford-crescent-third-platform-the-story-so-far",
+        "datePublished": "2025-04-11",
+        "summary": "Network Rail progress update describing works completed during early 2025 closures and ongoing construction activities for the third platform."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e06000005-darlington-station-transformation-footbridge-link-installed",
+    "title": "Darlington: £140m station transformation (final footbridge link installed)",
+    "description": "As part of the ongoing Darlington station transformation programme, Network Rail reported installation of final sections of a new footbridge linking the historic station to the new eastern entrance and new platforms, supporting improved accessibility and station capacity.",
+    "type": "LOCAL_GOV",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "localAuthorityId": "929b6c99-e2d5-437e-ae6a-60cfb16f0060",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Network Rail reports physical milestone delivery (footbridge sections installed) as part of the wider station upgrade programme.",
+    "locationDescription": "Darlington station (Bank Top), Darlington",
+    "locationSource": "Network Rail media centre",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Final footbridge link installed at Darlington station as £140m transformation progresses",
+        "source": "Network Rail (Media Centre)",
+        "url": "https://www.networkrailmediacentre.co.uk/news/final-footbridge-link-installed-at-darlington-station-as-gbp-140m-transformation-progresses",
+        "datePublished": "2025-06-05",
+        "summary": "Network Rail update announcing installation of final sections of the new footbridge connecting the existing station with the new eastern entrance and platforms as part of the £140m redevelopment."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e06000024-north-somerset-banwell-bypass-enabling-works-restart",
+    "title": "North Somerset: Banwell bypass enabling works restarted",
+    "description": "North Somerset Council restarted environmental enabling works for the Banwell bypass scheme, a new road bypass intended to relieve congestion and support wider transport and development objectives, including associated walking and cycling routes and biodiversity measures.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "eb713df5-5ed3-4ec7-be9a-ab8b8d0373dd",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council reported enabling works had restarted while the main construction delivery arrangements progressed, indicating preparatory delivery activity rather than completion.",
+    "locationDescription": "Banwell bypass scheme area, Banwell (North Somerset)",
+    "locationSource": "North Somerset Council news release",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Environmental works restart on the Banwell bypass",
+        "source": "North Somerset Council",
+        "url": "https://n-somerset.gov.uk/index.php/news/environmental-works-restart-banwell-bypass",
+        "datePublished": "2024-04-15",
+        "summary": "Council announcement that environmental enabling works restarted for the Banwell bypass, describing the nature of preparatory works and the scheme’s aims."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e07000175-newark-and-sherwood-ollerton-town-centre-regeneration-planning-application",
+    "title": "Newark and Sherwood: Ollerton town centre regeneration (planning application submitted)",
+    "description": "Newark and Sherwood District Council progressed the transformation of Ollerton town centre by submitting a formal planning application for a regeneration project intended to revitalise the town centre with new public realm and facilities.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "de278ff3-97fd-4e36-9d36-498aaf3de9e8",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council reports that a planning application has been submitted, indicating the project is progressing through planning and pre-delivery phases.",
+    "locationDescription": "Ollerton town centre, Newark and Sherwood District",
+    "locationSource": "Newark and Sherwood District Council news release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Ollerton’s future takes shape as planning permission is submitted",
+        "source": "Newark and Sherwood District Council",
+        "url": "https://www.newark-sherwooddc.gov.uk/latest-news/2025/december/ollertons-future-takes-shape/",
+        "datePublished": "2025-12-05",
+        "summary": "Council news release announcing submission of a planning application for an Ollerton town centre regeneration project and outlining key proposed elements."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e06000057-northumberland-line-bedlington-station-opening-completes-programme",
+    "title": "Northumberland: Bedlington station opening completes Northumberland Line programme (for now)",
+    "description": "Northumberland County Council reported the opening of Bedlington station, marking completion of the Northumberland Line programme phase and expanding passenger rail connectivity in south east Northumberland following the line’s reopening.",
+    "type": "LOCAL_GOV",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "localAuthorityId": "814d26be-4a5a-4b6f-9c62-df6fbb1369c6",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council reports a station opening and passenger service commencement milestone, indicating delivered operational infrastructure.",
+    "locationDescription": "Bedlington station (Northumberland Line), Bedlington (Northumberland)",
+    "locationSource": "Northumberland County Council news release",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Station opening completes Northumberland Line...for now",
+        "source": "Northumberland County Council",
+        "url": "https://www.northumberland.gov.uk/news/station-opening-completes-northumberland-linefor-now",
+        "datePublished": "2026-03-30",
+        "summary": "Council announcement describing the first passenger train into Bedlington and positioning it as completion of the Northumberland Line programme phase."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e07000061-eastbourne-old-orchard-road-affordable-housing-redevelopment-procurement",
+    "title": "Eastbourne: Old Orchard Road redevelopment (affordable housing design-and-build tender)",
+    "description": "Eastbourne Borough Council published a tender notice for the design and build redevelopment of a vacant council-owned site on Old Orchard Road, with plans for 30 affordable flats and landscaped communal amenity space.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "8877dc28-1f35-4641-9e18-e378ae0c1ee4",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A tender notice has been published for the design-and-build redevelopment, indicating the scheme is moving through procurement toward delivery.",
+    "locationDescription": "Old Orchard Road, Eastbourne town centre",
+    "locationSource": "Find a Tender (Eastbourne Borough Council)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Old Orchard Road Redevelopment (tender notice)",
+        "source": "Find a Tender (Eastbourne Borough Council)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/068125-2025",
+        "datePublished": "2025-10-24",
+        "summary": "Tender notice describing Eastbourne Borough Council’s proposed design-and-build scheme for a vacant Old Orchard Road site with 30 affordable flats and landscaping."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e09000031-waltham-forest-planned-works-and-responsive-repairs-partner-engagement",
+    "title": "Waltham Forest: planned works and responsive repairs delivery partner (pre-procurement engagement)",
+    "description": "The London Borough of Waltham Forest issued a preliminary market engagement notice for planned works and responsive repairs to its housing stock, to inform its procurement approach for maintenance and repair delivery capacity.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "a8c9f880-1b45-4f30-aa1a-fa1d63f0bc01",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A preliminary market engagement notice has been published, indicating the council is shaping a procurement strategy and scope prior to tender.",
+    "locationDescription": "London Borough of Waltham Forest (housing stock repairs and planned works)",
+    "locationSource": "Find a Tender (London Borough of Waltham Forest)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "LBWF Planned works and Repairs Technical Partner 2026 (preliminary market engagement notice)",
+        "source": "Find a Tender (London Borough of Waltham Forest)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/013664-2026",
+        "datePublished": "2026-02-15",
+        "summary": "Pre-market engagement notice describing planned works and responsive repair services for the council’s housing stock to inform procurement strategy and scope."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e06000022-bathnes-bath-walking-wheeling-cycling-links-consultation",
+    "title": "Bath and North East Somerset: Bath Walking, Wheeling and Cycling Links scheme consultation",
+    "description": "Bath & North East Somerset Council launched a public consultation on the Bath Walking, Wheeling and Cycling Links (BWWCL) scheme, proposing improvements across four routes to expand cycling provision and upgrade walking and wheeling infrastructure in Bath.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "5d6ab247-42b5-4f3a-8aef-227771b99e68",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council has consulted on route proposals as part of business case and design development, indicating the project is in pre-construction development.",
+    "locationDescription": "Bath (BWWCL routes: Weston–city centre, links to RUH, Oldfield School–Newbridge Hill, city centre–Kennet & Avon Canal)",
+    "locationSource": "Bath & North East Somerset Council newsroom",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Council launches consultation on active travel routes across Bath",
+        "source": "Bath & North East Somerset Council",
+        "url": "https://newsroom.bathnes.gov.uk/news/council-launches-consultation-active-travel-routes-across-bath",
+        "datePublished": "2024-10-17",
+        "summary": "Council newsroom release launching consultation on the Bath Walking, Wheeling and Cycling Links scheme and outlining the four proposed routes and intended active travel improvements."
+      },
+      {
+        "type": "URL",
+        "title": "Bath active travel consultation extended",
+        "source": "Bath & North East Somerset Council",
+        "url": "https://newsroom.bathnes.gov.uk/news/bath-active-travel-consultation-extended",
+        "datePublished": "2024-12-04",
+        "summary": "Council update extending the BWWCL consultation period and reiterating the scope of the proposed walking, wheeling and cycling improvements."
+      }
+    ]
+  },
+  {
+    "id": "gm-b013-e09000015-harrow-household-waste-recycling-centre-resurfacing",
+    "title": "Harrow: Household Waste and Recycling Centre resurfacing works (contract award)",
+    "description": "The London Borough of Harrow awarded a one-off contract to resurface the council’s Household Waste and Recycling Centre (HWRC) site at Forward Drive, supporting maintenance and usability of civic waste infrastructure.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "a5680ade-8bd2-4ab7-9acf-e72fe75a27c6",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "A contract details notice has been published showing the resurfacing works contract was awarded and scheduled for delivery.",
+    "locationDescription": "Household Waste and Recycling Centre (HWRC), Forward Drive, Harrow HA3",
+    "locationSource": "Find a Tender (London Borough of Harrow)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Civic Amenity Site Resurfacing Works (contract details notice)",
+        "source": "Find a Tender (London Borough of Harrow)",
+        "url": "https://www.find-tender.service.gov.uk/Notice/067563-2025",
+        "datePublished": "2025-10-22",
+        "summary": "Contract details notice for a one-off resurfacing contract at Harrow’s HWRC site on Forward Drive (Harrow HA3)."
+      }
+    ]
+  }
+]

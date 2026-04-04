@@ -1,0 +1,530 @@
+[
+  {
+    "id": "gm-b003-e07000179-south-leisure-facilities-investment",
+    "title": "£2m capital investment in South Oxfordshire leisure facilities (Abbey Sports Centre, Didcot Wave, Thame Leisure Centre)",
+    "description": "South Oxfordshire District Council approved a £2m capital programme to improve leisure facilities including refurbishments at Abbey Sports Centre (Berinsfield) and upgrades at the Didcot Wave and Thame Leisure Centre, aimed at improving changing facilities and expanding activity space.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "860739d8-e2a7-4dea-b4cd-a90584c29031",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding and scope are confirmed by the council; individual works are being delivered across multiple sites.",
+    "locationDescription": "Abbey Sports Centre (Berinsfield), Didcot Wave (Didcot) and Thame Leisure Centre, South Oxfordshire",
+    "locationSource": "South Oxfordshire District Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£2M boost for South leisure facilities",
+        "source": "South Oxfordshire District Council",
+        "url": "https://www.southoxon.gov.uk/leisure/2m-boost-for-south-leisure-facilities/",
+        "datePublished": "2026-01-28",
+        "summary": "Council announcement of a £2m capital investment programme for leisure facilities including Abbey Sports Centre and the Didcot Wave / Thame Leisure Centre."
+      },
+      {
+        "type": "URL",
+        "title": "New studios open at the Didcot Wave",
+        "source": "South Oxfordshire District Council",
+        "url": "https://www.southoxon.gov.uk/leisure/new-studios-open-at-the-didcot-wave/",
+        "datePublished": "2025-11-27",
+        "summary": "Council update announcing new studio facilities at the Didcot Wave and describing the upgrades being delivered to expand activity offer."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e08000007-stockport-interchange-one-year-on",
+    "title": "Stockport Interchange (bus station and transport interchange) – one year on",
+    "description": "Stockport Interchange is a major transport hub project (new bus station and associated public realm and travel connections) positioned as a key piece of Stockport’s wider town centre transformation programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "04b84554-6687-4755-852d-df78aadcdc31",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Interchange is operational; the council’s one-year update positions it as a core asset supporting ongoing regeneration around the town centre.",
+    "locationDescription": "Stockport Interchange, Stockport town centre",
+    "locationSource": "Stockport Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "One year on: Stockport Interchange at the heart of the town’s £1bn transformation",
+        "source": "Stockport Council",
+        "url": "https://www.stockport.gov.uk/news/one-year-on-stockport-interchange-at-the-heart-of-the-towns-1bn-transformation",
+        "datePublished": "2025-03-18",
+        "summary": "Council update marking one year since opening, describing the interchange’s role in improving public transport and enabling town centre regeneration."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e06000020-pride-park-highways-upgrades",
+    "title": "Pride Park highways improvement programme (Telford) – major upgrades delivered",
+    "description": "Telford & Wrekin Council delivered a set of highways upgrades as part of its Pride Park programme to improve road condition and journey quality, alongside wider resurfacing and road maintenance activity.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "c029a725-1c3e-431f-8dd3-d37c0af1755f",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council reports completed phases and ongoing delivery through its highways programme.",
+    "locationDescription": "Pride Park / highways network improvements in Telford",
+    "locationSource": "Telford & Wrekin Council newsroom",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Better roads, better journeys – major upgrades delivered",
+        "source": "Telford & Wrekin Council",
+        "url": "https://newsroom.telford.gov.uk/News/Details/14732",
+        "datePublished": "2025-12-17",
+        "summary": "Council newsroom update describing delivery of major highways upgrades as part of its programme, including Pride Park works and wider resurfacing activity."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000127-skelmersdale-town-centre-masterplan",
+    "title": "Skelmersdale Town Centre Transformation Masterplan (West Lancashire) – £150m programme approved",
+    "description": "West Lancashire Borough Council approved a masterplan for the Skelmersdale Town Centre Transformation programme, setting out a long-term regeneration package including town centre redevelopment and public realm improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "2331c02a-6411-44c3-a795-128e08e9ee6d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council has approved the masterplan and business plan; delivery is phased and subject to further design and funding decisions.",
+    "locationDescription": "Skelmersdale town centre, West Lancashire",
+    "locationSource": "West Lancashire Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "West Lancashire Council approves £150m masterplan for Skelmersdale Town Centre Transformation",
+        "source": "West Lancashire Borough Council",
+        "url": "https://www.westlancs.gov.uk/news/2025/may/west-lancashire-council-approves-%C2%A3150m-masterplan-for-skelmersdale-town-centre-transformation.aspx",
+        "datePublished": "2025-05-08",
+        "summary": "Council announcement approving the Skelmersdale Town Centre Transformation masterplan and outlining the scale and focus of the regeneration proposals."
+      },
+      {
+        "type": "URL",
+        "title": "Business Plan approval to progress the Skelmersdale Town Centre masterplan",
+        "source": "West Lancashire Borough Council",
+        "url": "https://www.westlancs.gov.uk/news/2025/november/business-plan-approval-to-progress-the-skelmersdale-town-centre-masterplan.aspx",
+        "datePublished": "2025-11-12",
+        "summary": "Council update confirming business plan approval to progress the masterplan, supporting delivery planning for the regeneration programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000181-chipping-norton-leisure-centre-improvements",
+    "title": "Chipping Norton Leisure Centre improvements completed",
+    "description": "West Oxfordshire District Council completed a package of improvements at Chipping Norton Leisure Centre, including modernisation works to enhance facilities for users.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "78d875a9-73b6-4a30-b7b7-36b77a2bd359",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council reports the improvement works are completed at the leisure centre.",
+    "locationDescription": "Chipping Norton Leisure Centre, Chipping Norton, West Oxfordshire",
+    "locationSource": "West Oxfordshire District Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Chipping Norton Leisure Centre improvements complete",
+        "source": "West Oxfordshire District Council",
+        "url": "https://news.westoxon.gov.uk/news/chipping-norton-leisure-centre-improvements-complete",
+        "datePublished": "2024-11-27",
+        "summary": "Council news release confirming completion of improvement works at Chipping Norton Leisure Centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000237-shrub-hill-quarter-shared-use-link",
+    "title": "Shrub Hill Quarter – shared use link construction due to start",
+    "description": "As part of the Shrub Hill Quarter regeneration programme in Worcester, partners are delivering new walking and cycling connections (shared use link) to improve access between the station area and surrounding routes, supporting wider regeneration and transport improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "b905e93e-1918-4ff8-b1af-e13ccabd7b68",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Construction start and enabling works are confirmed in public updates; delivery is progressing as part of the wider Shrub Hill Quarter programme.",
+    "locationDescription": "Shrub Hill Quarter / Worcester Shrub Hill area, Worcester",
+    "locationSource": "Worcestershire County Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Work due to start on new Shared Use Link at Shrub Hill Quarter",
+        "source": "Worcestershire County Council",
+        "url": "https://www.worcestershire.gov.uk/news/work-due-start-new-shared-use-link-shrub-hill-quarter",
+        "datePublished": "2025-06-16",
+        "summary": "County council update announcing start of construction on a new shared use walking/cycling link at Shrub Hill Quarter."
+      },
+      {
+        "type": "URL",
+        "title": "Shrub Hill Quarter: Demolition works progressing",
+        "source": "Worcestershire County Council",
+        "url": "https://www.worcestershire.gov.uk/news/shrub-hill-quarter-demolition-works-progressing",
+        "datePublished": "2025-07-24",
+        "summary": "Project update describing progress of demolition/enabling works at Shrub Hill Quarter as part of the regeneration programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e09000004-former-sidcup-library-housing",
+    "title": "Former Sidcup Library redevelopment (BexleyCo) – new homes start on site",
+    "description": "BexleyCo Homes started construction on the former Sidcup Library site as a residential-led redevelopment project, delivering new homes as part of regeneration and housing supply activity in the borough.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "3295781f-4494-4519-9479-002e6017a2cd",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Contractor appointment and start on site are confirmed; build-out and completion remain to be delivered.",
+    "locationDescription": "Former Sidcup Library site, Sidcup, London Borough of Bexley",
+    "locationSource": "BexleyCo Homes updates",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "BexleyCo appoints Skillcrown to start construction on its former Sidcup Library development",
+        "source": "BexleyCo Homes",
+        "url": "https://www.bexleycohomes.com/bexleyco-appoints-skillcrown-to-start-construction-on-its-former-sidcup-library-development/",
+        "datePublished": "2024-04-04",
+        "summary": "Developer update announcing appointment of the main contractor (Skillcrown) for the former Sidcup Library development."
+      },
+      {
+        "type": "URL",
+        "title": "Start on site at former Sidcup Library",
+        "source": "BexleyCo Homes",
+        "url": "https://www.bexleycohomes.com/start-on-site-at-former-sidcup-library/",
+        "datePublished": "2024-08-22",
+        "summary": "Developer update confirming construction has started on site for the former Sidcup Library redevelopment."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e08000002-prestwich-village-regeneration-travel-hub",
+    "title": "Prestwich Village Regeneration (Bury) – phases 1B and 2 development strategy",
+    "description": "Bury Council set out its strategy for the Prestwich Village Regeneration Project (phases 1B and 2), including town centre redevelopment elements and a new/expanded travel hub as part of the programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "eab1fa0f-b6fd-4f3c-8230-f74d48588035",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council decision papers confirm the programme structure, phasing and delivery approach; delivery is ongoing.",
+    "locationDescription": "Prestwich Village / Bury town centre area, Bury",
+    "locationSource": "Bury Council cabinet report",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Prestwich Village Regeneration Project Phase 1B and 2 Development Strategy (Cabinet report)",
+        "source": "Bury Council",
+        "url": "https://councildecisions.bury.gov.uk/documents/s47140/Prestwich%20Village%20Regeneration%20Project%20Phase%201B%20and%202%20Development%20Strategy.pdf",
+        "datePublished": "2025-12-03",
+        "summary": "Cabinet report setting out the development strategy for phases 1B and 2 of the Prestwich Village Regeneration Project, including delivery approach and transport hub elements."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000119-st-annes-high-street-improvements",
+    "title": "St Annes High Street Improvements (Fylde) – works start",
+    "description": "Fylde Council commenced public realm and streetscape improvement works on St Annes High Street to enhance the town centre environment and support regeneration, including paving and associated street works.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "99ed5a23-a490-40e5-bfc9-369398a40844",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Works start and delivery timetable are confirmed; completion depends on delivery phasing and site conditions.",
+    "locationDescription": "St Annes High Street, Lytham St Annes, Fylde",
+    "locationSource": "Invest in Fylde (Fylde Council) update",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "St Annes High Street Improvements: works are set to start",
+        "source": "Invest in Fylde (Fylde Council)",
+        "url": "https://investinfylde.co.uk/st-annes-high-street-improvements-works-are-set-to-start/",
+        "datePublished": "2024-11-11",
+        "summary": "Council project update announcing the start of High Street improvement works and summarising scope and indicative programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000089-frogmore-leisure-centre-investment",
+    "title": "Frogmore Leisure Centre (Hart) – gym improvements funded",
+    "description": "Hart District Council funded improvements at Frogmore Leisure Centre, including gym upgrades, to modernise the facility and improve user experience as part of council investment in civic leisure assets.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "684166e5-794a-45e7-9b24-5ce898db4715",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council and operator updates confirm funding and the delivery of gym improvements at Frogmore Leisure Centre.",
+    "locationDescription": "Frogmore Leisure Centre, Yateley, Hart",
+    "locationSource": "Hart District Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£350,000 investment in Frogmore Leisure Centre improvements",
+        "source": "Hart District Council",
+        "url": "https://www.hart.gov.uk/news/ps350000-investment-frogmore-leisure-centre-improvements",
+        "datePublished": "2024-10-04",
+        "summary": "Council announcement of a £350k investment programme at Frogmore Leisure Centre, including gym improvements and facility upgrades."
+      },
+      {
+        "type": "URL",
+        "title": "Gym transformation at Frogmore Leisure Centre with a free family fun day to celebrate!",
+        "source": "Hart District Council",
+        "url": "https://www.hart.gov.uk/news/gym-transformation-frogmore-leisure-centre-free-family-fun-day-celebrate",
+        "datePublished": "2024-12-17",
+        "summary": "Council update promoting the gym transformation at Frogmore Leisure Centre and confirming the upgraded facilities."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e09000020-portobello-road-improvements",
+    "title": "Portobello Road public realm improvements (Kensington and Chelsea) – phase 1 returns",
+    "description": "The Royal Borough of Kensington and Chelsea reinstated Phase 1 of the Portobello Road improvements scheme (public realm and traffic management changes) intended to improve safety and the experience of residents, visitors and market activity.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "3d764659-b3e6-4d0b-bc56-8ac1e07e3aaf",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council confirms implementation of Phase 1 changes and sets out the longer-term delivery and review process.",
+    "locationDescription": "Portobello Road, Notting Hill, Royal Borough of Kensington and Chelsea",
+    "locationSource": "RBKC news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Portobello Road improvements return",
+        "source": "Royal Borough of Kensington and Chelsea",
+        "url": "https://www.rbkc.gov.uk/newsroom/portobello-road-improvements-return",
+        "datePublished": "2026-02-10",
+        "summary": "Council news release confirming the return of Phase 1 improvements on Portobello Road and describing the scheme aims and arrangements."
+      },
+      {
+        "type": "URL",
+        "title": "Strengthening Portobello Road",
+        "source": "Royal Borough of Kensington and Chelsea",
+        "url": "https://www.rbkc.gov.uk/newsroom/strengthening-portobello-road",
+        "datePublished": "2026-03-10",
+        "summary": "Council update setting out longer-term work to strengthen Portobello Road, including programme and engagement information."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000074-burnham-pontoon-replacement",
+    "title": "Burnham-on-Crouch pontoon replacement (Maldon) – new marina infrastructure delivered",
+    "description": "Maldon District Council supported replacement of the pontoon at Burnham-on-Crouch, a local marina and riverside infrastructure asset, with works planned for summer 2024 and subsequently confirmed as delivered through UK Shared Prosperity Fund allocation updates.",
+    "type": "LOCAL_GOV",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "localAuthorityId": "f192e426-9f23-4f03-a5be-08aa7e0a3699",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council updates confirm the pontoon replacement project was funded and delivered.",
+    "locationDescription": "Burnham-on-Crouch (marina/pontoon), Maldon District",
+    "locationSource": "Maldon District Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Replacement of the Burnham-on-Crouch pontoon",
+        "source": "Maldon District Council",
+        "url": "https://www.maldon.gov.uk/news/article/6850/replacement_of_the_burnham-on-crouch_pontoon",
+        "datePublished": "2024-07-30",
+        "summary": "Council announcement setting out the pontoon replacement project and expected summer works programme."
+      },
+      {
+        "type": "URL",
+        "title": "Maldon District Council confirms additional UK Shared Prosperity Fund allocation for the district",
+        "source": "Maldon District Council",
+        "url": "https://www.maldon.gov.uk/news/article/6915/maldon_district_council_confirms_additional_uk_shared_prosperity_fund_allocation_for_the_district",
+        "datePublished": "2024-12-16",
+        "summary": "Council update confirming additional UKSPF allocations and noting projects already delivered, including the replacement pontoon at Burnham-on-Crouch."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000218-atherstone-leisure-complex-redevelopment",
+    "title": "Atherstone Leisure Complex redevelopment (North Warwickshire) – construction begins",
+    "description": "North Warwickshire Borough Council progressed redevelopment of Atherstone Leisure Complex (including replacement leisure provision) with construction activity starting, forming part of investment in civic leisure estate and local services.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "b472768f-ae31-4358-b378-ddd3b9c41051",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council confirms construction is beginning; completion and commissioning remain pending.",
+    "locationDescription": "Atherstone Leisure Complex, Atherstone, North Warwickshire",
+    "locationSource": "North Warwickshire Borough Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Construction begins on new leisure centre",
+        "source": "North Warwickshire Borough Council",
+        "url": "https://www.northwarks.gov.uk/news/article/728/construction_begins_on_new_leisure_centre",
+        "datePublished": "2026-03-12",
+        "summary": "Council news release confirming construction has begun on the new leisure centre replacing Atherstone Leisure Complex facilities."
+      },
+      {
+        "type": "URL",
+        "title": "Plans unveiled for new leisure centre in Coleshill",
+        "source": "North Warwickshire Borough Council",
+        "url": "https://www.northwarks.gov.uk/news/article/644/plans_unveiled_for_new_leisure_centre_in_coleshill",
+        "datePublished": "2024-10-15",
+        "summary": "Council announcement unveiling plans for a new leisure centre, providing context on the wider leisure redevelopment programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000141-meres-leisure-centre-low-carbon-heating",
+    "title": "The Meres Leisure Centre (Grantham) – low-carbon heating and energy upgrades",
+    "description": "South Kesteven District Council secured and progressed investment to install low-carbon heating and related energy upgrades at The Meres Leisure Centre in Grantham, supporting decarbonisation of civic estate and reducing running costs.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "91fe8b17-0c86-4f0e-9518-342da911a301",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding and delivery plans are confirmed; works are in progress through the council’s delivery programme.",
+    "locationDescription": "The Meres Leisure Centre, Grantham, South Kesteven",
+    "locationSource": "South Kesteven District Council news",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Over £4 million to be invested into Meres Leisure Centre upgrades",
+        "source": "South Kesteven District Council",
+        "url": "https://www.southkesteven.gov.uk/news/article/1541/over_4_million_to_be_invested_into_meres_leisure_centre_upgrades",
+        "datePublished": "2024-05-13",
+        "summary": "Council announcement of more than £4m investment in Meres Leisure Centre upgrades, including low-carbon heating and facility improvements."
+      },
+      {
+        "type": "URL",
+        "title": "Sustainable low-carbon heating project under way at The Meres",
+        "source": "South Kesteven District Council",
+        "url": "https://www.southkesteven.gov.uk/news/article/1731/sustainable_low-carbon_heating_project_under_way_at_the_meres",
+        "datePublished": "2026-01-06",
+        "summary": "Council update confirming the low-carbon heating project is under way and outlining the works being delivered at the leisure centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000102-south-oxhey-leisure-centre-gym-upgrade",
+    "title": "South Oxhey Leisure Centre – gym upgrade completed",
+    "description": "Three Rivers District Council’s leisure operator completed a gym upgrade at South Oxhey Leisure Centre, enhancing equipment and fitness provision as part of civic leisure estate improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "b287a159-9b3d-4d7e-a635-a0eb98650e2d",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Upgrade completion is confirmed by the operator with reopening over the Christmas period.",
+    "locationDescription": "South Oxhey Leisure Centre, South Oxhey, Three Rivers",
+    "locationSource": "Everyone Active update",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "South Oxhey Leisure Centre gym is getting an upgrade",
+        "source": "Three Rivers District Council (Everyone Active news)",
+        "url": "https://www.threerivers.gov.uk/egcl-page/south-oxhey-leisure-centre-gym-is-getting-an-upgrade",
+        "datePublished": "2025-10-14",
+        "summary": "Project announcement describing the planned gym upgrade at South Oxhey Leisure Centre and what the works would deliver."
+      },
+      {
+        "type": "URL",
+        "title": "South Oxhey Leisure Centre gym upgrade completed",
+        "source": "Everyone Active",
+        "url": "https://www.everyoneactive.com/content-hub/news/south-oxhey-leisure-centre-gym-upgrade-completed/",
+        "datePublished": "2025-12-24",
+        "summary": "Operator update confirming completion of the gym upgrade at South Oxhey Leisure Centre and announcing the improved facilities."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e08000015-woodside-ferry-terminal-landing-stage",
+    "title": "Woodside Ferry Terminal (Wirral) – landing stage replacement for improved operations",
+    "description": "A major programme to refurbish and modernise Woodside Ferry Terminal includes replacing the landing stage and improving the waterfront gateway, supporting transport connectivity across the Mersey and wider regeneration of the waterfront area.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "6d909733-2d4c-45f4-838c-bbbd3577e8cd",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Construction and delivery milestones (including the new landing stage arrival) are confirmed; remaining works are still being completed.",
+    "locationDescription": "Woodside Ferry Terminal, Birkenhead waterfront, Wirral",
+    "locationSource": "Liverpool City Region Combined Authority / Wirral View updates",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Big changes on Wirral waterfront as major Woodside Ferry Terminal revamp begins",
+        "source": "Liverpool City Region Combined Authority",
+        "url": "https://www.liverpoolcityregion-ca.gov.uk/big-changes-on-wirral-waterfront-as-major-woodside-ferry-terminal-revamp-begins/",
+        "datePublished": "2024-10-14",
+        "summary": "Combined authority announcement about the start of the Woodside Ferry Terminal revamp, including landing stage replacement and wider terminal improvements."
+      },
+      {
+        "type": "URL",
+        "title": "New landing stage arrives at Woodside Ferry Terminal",
+        "source": "Wirral View",
+        "url": "https://wirralview.com/new-landing-stage-arrives-at-woodside-ferry-terminal/",
+        "datePublished": "2025-12-22",
+        "summary": "Project milestone update confirming arrival of the new landing stage as part of the Woodside Ferry Terminal refurbishment programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000092-union-yard-aldershot-regeneration",
+    "title": "Union Yard (Aldershot) – town centre regeneration development opened",
+    "description": "Union Yard is a town centre regeneration development in Aldershot delivering new homes, commercial units and student accommodation as part of a wider programme to revitalise the town centre.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "1344add6-5fe2-4e68-9a6f-8300a0238d83",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Development opening is reported publicly, indicating delivery and occupation/operation can commence.",
+    "locationDescription": "Union Yard, Aldershot town centre, Rushmoor",
+    "locationSource": "Insider Media report",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Development with 12 commercial units, 100 new homes and room for 128 students opens in central Aldershot",
+        "source": "Insider Media",
+        "url": "https://www.insidermedia.com/news/preview/development-with-12-commercial-units-100-new-homes-and-room-for-128-students-opens-in-central-aldershot",
+        "datePublished": "2025-03-11",
+        "summary": "Independent report on the opening of Union Yard, outlining delivered homes, commercial space and student accommodation in Aldershot town centre."
+      }
+    ]
+  },
+  {
+    "id": "gm-b003-e07000065-a22-south-of-uckfield-mrn-package",
+    "title": "A22 south of Uckfield (Wealden) – Major Road Network funded improvements",
+    "description": "Wealden District Council secured a £29m Major Road Network funding package for the A22 south of Uckfield, intended to deliver a set of highway improvements to enhance safety and support local connectivity.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "e40fd0f5-a7d8-43c3-8b8a-e9b26d13fca9",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding allocation is confirmed; scheme design and construction delivery are still to be completed.",
+    "locationDescription": "A22 south of Uckfield corridor, Wealden",
+    "locationSource": "Wealden District Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Wealden awarded £29m Major Road Network funding package for A22 south of Uckfield improvements",
+        "source": "Wealden District Council",
+        "url": "https://www.wealden.gov.uk/news/wealden-awarded-29m-major-road-network-funding-package-for-a22-south-of-uckfield-improvements/",
+        "datePublished": "2026-02-06",
+        "summary": "Council announcement confirming award of £29m MRN funding for A22 south of Uckfield improvement schemes."
+      },
+      {
+        "type": "URL",
+        "title": "Wealden delivers multimillion pound social housing energy efficiency upgrades",
+        "source": "Wealden District Council",
+        "url": "https://www.wealden.gov.uk/news/wealden-delivers-multimillion-pound-social-housing-energy-efficiency-upgrades/",
+        "datePublished": "2025-12-09",
+        "summary": "Council update on delivering energy efficiency upgrades to social housing stock, evidencing wider infrastructure investment in the district."
+      }
+    ]
+  }
+]

@@ -1,0 +1,529 @@
+[
+  {
+    "id": "gm-b001-e07000069-canvey-pride-in-place",
+    "title": "Canvey Island £20m Pride in Place (Plan for Neighbourhoods)",
+    "description": "Castle Point Borough Council and the Canvey Island Neighbourhood Board are preparing a long-term regeneration programme backed by £20m of Government Pride in Place funding to deliver neighbourhood improvements across Canvey Island over the next decade.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "12849c58-4a1e-41db-b3cf-b2696170e4cd",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding confirmed; plans and phased delivery are being developed by the Neighbourhood Board and council.",
+    "locationDescription": "Canvey Island, Castle Point Borough",
+    "locationSource": "Castle Point Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£20 million Pride in Place funding confirmed for Canvey Island",
+        "source": "Castle Point Borough Council",
+        "url": "https://www.castlepoint.gov.uk/w/-20-million-pride-in-place-funding-confirmed-for-canvey-island",
+        "datePublished": "2026-03-24",
+        "summary": "Council update confirming £20m Pride in Place funding for Canvey Island and outlining priority investment areas for early delivery."
+      },
+      {
+        "type": "URL",
+        "title": "Canvey Island’s £20 million Neighbourhoods Plan makes progress",
+        "source": "Castle Point Borough Council",
+        "url": "https://www.castlepoint.gov.uk/w/canvey-island-s-20-million-neighbourhoods-plan-makes-progress",
+        "datePublished": "2025-09-09",
+        "summary": "Council progress update on the Plan for Neighbourhoods for Canvey Island, including plan documents and submission timetable."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e06000046-iow-yaverland-sandown-shanklin-coastal-defences",
+    "title": "Yaverland, Sandown and Shanklin coastal defence refurbishment",
+    "description": "Isle of Wight Council and the Environment Agency have committed to refurbishing existing coastal defences to better protect communities in Yaverland, Sandown and Shanklin from flooding and coastal erosion for the coming decades.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "56afd3c8-b958-4620-9d00-42a26319154f",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council decision supports refurbishment of defences; design and planning stage ahead of construction.",
+    "locationDescription": "Yaverland, Sandown and Shanklin, Isle of Wight",
+    "locationSource": "Environment Agency press release",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Better flood protection planned for Isle of Wight",
+        "source": "Environment Agency (GOV.UK)",
+        "url": "https://www.gov.uk/government/news/better-flood-protection-planned-for-isle-of-wight",
+        "datePublished": "2024-03-25",
+        "summary": "Press release describing the decision to refurbish existing coastal defences in Yaverland, Sandown and Shanklin to reduce flood and erosion risk."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e07000042-active-tiverton-poolside-upgrades",
+    "title": "Active Tiverton poolside changing facilities upgrade",
+    "description": "Mid Devon District Council invested in refurbishing poolside changing facilities and carrying out essential repairs at Active Tiverton (formerly Exe Valley Leisure Centre), alongside upgrades at Active Crediton.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "b33ec5d9-8112-4793-b540-961ba09d1fc5",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Upgrades completed and facilities reopened following works between March and June 2025.",
+    "locationDescription": "Active Tiverton (Exe Valley), Bolham Road, Tiverton",
+    "locationSource": "Mid Devon District Council leisure news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major Poolside Upgrades Coming to Active Tiverton",
+        "source": "Mid Devon District Council",
+        "url": "https://www.middevon.gov.uk/major-poolside-upgrades-coming-to-active-tiverton/",
+        "datePublished": "2025-03-31",
+        "summary": "Council announcement of works to upgrade poolside changing facilities at Active Tiverton, including programme dates and temporary pool closures."
+      },
+      {
+        "type": "URL",
+        "title": "Major Poolside Upgrades Completed at Crediton and Tiverton Leisure Centres",
+        "source": "Mid Devon District Council",
+        "url": "https://www.middevon.gov.uk/major-poolside-upgrades-completed-at-crediton-and-tiverton-leisure-centres/",
+        "datePublished": "2025-06-26",
+        "summary": "Council confirmation that major poolside upgrades and repairs were completed between March and June 2025 and facilities reopened."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e07000236-redditch-town-hall-community-hub",
+    "title": "Redditch Town Hall Community Hub refurbishment",
+    "description": "Redditch Borough Council is refurbishing Redditch Town Hall into a community hub with modernised civic spaces, council offices, commercial space and rooms for community hire, as part of wider town centre improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "04ccc3be-b55d-4bff-8812-6f0788807d2f",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Construction works underway with completion expected by the end of 2025.",
+    "locationDescription": "Redditch Town Hall, Walter Stranz Square, Redditch",
+    "locationSource": "Redditch Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Town Hall Works Underway",
+        "source": "Redditch Borough Council",
+        "url": "https://www.redditchbc.gov.uk/news/posts/town-hall-works-underway/",
+        "datePublished": "2025-01-17",
+        "summary": "Council update announcing that refurbishment works to transform Redditch Town Hall into a community hub have begun, with an expected completion timeline."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e07000064-sidley-community-hub",
+    "title": "Sidley Community Hub at Sidley Recreation Ground",
+    "description": "Rother District Council is supporting delivery of a new, fully accessible community hub at Sidley Recreation Ground in Bexhill, providing sports changing facilities, community rooms, café space and accessible toilets including a Changing Places facility.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "8a75c1ed-7176-4dba-803c-e03aaeea310e",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Project funded and contract awarded; construction and enabling works underway toward completion.",
+    "locationDescription": "Sidley Recreation Ground, Canada Way, Bexhill-on-Sea",
+    "locationSource": "Rother District Council and Contracts Finder",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Key Bexhill projects receive huge sustainability boost",
+        "source": "Rother District Council",
+        "url": "https://www.rother.gov.uk/news/key-bexhill-projects-receive-huge-sustainability-boost/",
+        "datePublished": "2025-11-26",
+        "summary": "Council news item describing additional sustainability funding for the Sidley Community Hub and associated Levelling Up Fund programme in Bexhill."
+      },
+      {
+        "type": "URL",
+        "title": "ESPH AB RDC Heart of Sidley Hub (ESPH646 JB) - Award notice",
+        "source": "Contracts Finder",
+        "url": "https://www.contractsfinder.service.gov.uk/Notice/06bed1d6-f67a-4846-86e6-b3fd44bedb14",
+        "datePublished": "2026-02-05",
+        "summary": "Contracts Finder award notice for design and construction of the Heart of Sidley community hub, including contract dates and value."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e08000014-bootle-strand-transformation",
+    "title": "Bootle Strand Transformation Project (Phase 1 demolition)",
+    "description": "Sefton Council’s Bootle Strand Transformation Project is repurposing parts of the Strand shopping centre to create new public realm and modern spaces, with demolition works forming the first phase of the wider town centre regeneration programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "b6363a2d-dd76-4bc4-b220-a333fe3cce0e",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Demolition works commenced in June 2025 as Phase 1 of the regeneration programme, with further phases planned.",
+    "locationDescription": "Bootle Strand Shopping Centre, Bootle town centre",
+    "locationSource": "Sefton Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Work Starts on Bootle Strand Demolition in Milestone for Town’s Future",
+        "source": "Sefton Council",
+        "url": "https://www.sefton.gov.uk/mysefton-news/latest-news/work-starts-on-bootle-strand-demolition-in-milestone-for-town-s-future/",
+        "datePublished": "2025-06-19",
+        "summary": "Sefton Council announcement that demolition at Bootle Strand has begun as Phase One of the Bootle Strand Transformation Project, with works scheduled through to December 2025."
+      },
+      {
+        "type": "URL",
+        "title": "Sefton Council provides exciting update on current works and next phases at The Strand",
+        "source": "Sefton Council",
+        "url": "https://www.sefton.gov.uk/mysefton-news/latest-news/sefton-council-provides-exciting-update-on-current-works-and-next-phases-at-the-strand/",
+        "datePublished": "2025-08-29",
+        "summary": "Council update describing progress on Phase 1 demolition and setting out expected next steps, including main construction and anticipated completion."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e07000241-hatfield-market-place-transformation",
+    "title": "Hatfield Market Place public realm transformation",
+    "description": "Welwyn Hatfield Borough Council delivered a UK Shared Prosperity Fund-backed redevelopment of Hatfield Market Place, creating an inclusive play area, improved landscaping, lighting and seating to support town centre regeneration.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "d9a99eef-a4b8-4753-a1fa-465f430a0b36",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Market Place redevelopment completed and officially opened in 2025.",
+    "locationDescription": "Market Place, Hatfield town centre",
+    "locationSource": "ONE Welwyn Hatfield news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Hatfield Market Place Set For Exciting Transformation",
+        "source": "ONE Welwyn Hatfield (Welwyn Hatfield Borough Council)",
+        "url": "https://one.welhat.gov.uk/news/article/305/hatfield-market-place-set-for-exciting-transformation",
+        "datePublished": "2025-03-05",
+        "summary": "Council announcement appointing a contractor and setting out the scope and programme for the Hatfield Market Place public realm improvements."
+      },
+      {
+        "type": "URL",
+        "title": "Council Celebrates Completion of Hatfield’s Market Place",
+        "source": "ONE Welwyn Hatfield (Welwyn Hatfield Borough Council)",
+        "url": "https://one.welhat.gov.uk/news/article/393/council-celebrates-completion-of-hatfield-s-market-place",
+        "datePublished": "2025-10-01",
+        "summary": "Council update marking the completion and official opening of the newly redeveloped Hatfield Market Place."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e07000033-bolsover-15m-regeneration-fund",
+    "title": "Bolsover District £15m Regeneration Fund programme",
+    "description": "Bolsover District Council is delivering a package of place-based regeneration projects funded through a £15m allocation, including town centre and public realm interventions across the district.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "7cacddfe-642c-423a-82f6-bca2c378799a",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding allocation approved and projects progressing under the programme delivery timetable.",
+    "locationDescription": "Multiple sites across Bolsover District (including Bolsover town centre)",
+    "locationSource": "Bolsover District Council committees and regeneration updates",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Update on Bolsover District Regeneration Fund (Executive agenda item)",
+        "source": "Bolsover District Council (committees)",
+        "url": "https://committees.bolsover.gov.uk/mgAi.aspx?ID=12586",
+        "datePublished": "2024-06-24",
+        "summary": "Council committee record noting approvals and governance for the £15m Regeneration Fund allocation and project delivery arrangements."
+      },
+      {
+        "type": "URL",
+        "title": "£15 million regeneration investment: progress is underway across Bolsover District",
+        "source": "Bolsover District Council",
+        "url": "https://www.bolsover-uk.com/post/15-million-regeneration-investment-progress-is-underway-across-bolsover-district",
+        "datePublished": "2025-10-03",
+        "summary": "Council update describing progress and site preparation work across the regeneration projects funded through the £15m programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e07000136-boston-leisure-project",
+    "title": "Boston Leisure Project: Geoff Moulder Leisure Complex redevelopment",
+    "description": "Boston Borough Council is delivering a major redevelopment and extension of the Geoff Moulder Leisure Complex to create an updated leisure centre with modern entrance, changing facilities and fitness spaces, supported by the Boston Town Deal and levelling up funding.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "3696dbbc-1ac8-4b07-b1fc-0dbf1b09801f",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Construction underway with phased openings expected through 2026 and external works thereafter.",
+    "locationDescription": "Geoff Moulder Leisure Complex (Boston Leisure Centre), Rowley Road, Boston",
+    "locationSource": "Boston Borough Council updates",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Boston and East Lindsey councils awarded share of Sport England Swimming Pool Support Fund",
+        "source": "Boston Borough Council",
+        "url": "https://www.boston.gov.uk/article/26120/Boston-and-East-Lincolnshire-councils-awarded-share-of-60m-Sport-England-Swimming-Pool-Support-Fund",
+        "datePublished": "2024-03-25",
+        "summary": "Council announcement of Sport England Swimming Pool Support Fund award supporting energy-efficiency investment in local pool facilities."
+      },
+      {
+        "type": "URL",
+        "title": "Steel frame takes shape as major milestone reached in Boston Leisure Project redevelopment",
+        "source": "Boston Borough Council",
+        "url": "https://www.boston.gov.uk/article/30020/Steel-frame-takes-shape-as-major-milestone-reached-in-Boston-Leisure-Project-redevelopment",
+        "datePublished": "2026-03-25",
+        "summary": "Council update on construction progress for the leisure complex redevelopment, including the start of the main construction phase and expected opening timeline."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e07000068-brentwood-centre-upgrade",
+    "title": "Brentwood Centre swimming and wider site upgrade",
+    "description": "Brentwood Borough Council is investing in refurbishing and redeveloping the Brentwood Centre, including a wet-side changing and pool refurbishment starting in 2026 and plans for a wider £25m upgrade to modernise leisure facilities, outdoor pitches, parking and public realm.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "95924b8c-df87-4994-89c9-1ec1e8cb21ef",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Programme approved with enabling and refurbishment works scheduled to begin in 2026 subject to planning and phasing.",
+    "locationDescription": "The Brentwood Centre, Brentwood",
+    "locationSource": "Brentwood Borough Council announcements",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£1.1m upgrade announced for The Brentwood Centre swimming pools and changing facilities",
+        "source": "Brentwood Borough Council",
+        "url": "https://www.brentwood.gov.uk/ps11m-upgrade-announced-for-the-brentwood-centre-swimming-pools-and-changing-facilities",
+        "datePublished": "2025-11-11",
+        "summary": "Council announcement of a 20-week pool and wet-side changing refurbishment programme starting January 2026, with phasing to keep at least one pool open."
+      },
+      {
+        "type": "URL",
+        "title": "Brentwood Centre to get £25m upgrade in Council’s biggest ever investment",
+        "source": "Brentwood Borough Council",
+        "url": "https://www.brentwood.gov.uk/brentwood-centre-to-get-ps25m-upgrade-in-councils-biggest-ever-investment",
+        "datePublished": "2025-12-05",
+        "summary": "Council announcement of a broader £25m redevelopment proposal for the Brentwood Centre site, including new leisure facilities and outdoor sports provision."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e07000172-stapleford-cricket-club-new-base",
+    "title": "Stapleford Cricket Club new permanent base (Stapleford Towns Fund)",
+    "description": "Broxtowe Borough Council is supporting delivery of a new permanent base for Stapleford Cricket Club funded through the Stapleford Towns Fund, including new wickets, practice nets and associated infrastructure works such as drainage and flood resilience.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "1a375801-aa11-4183-b770-50ddf8da615b",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning approved with staged delivery planned, including infrastructure works before play can commence.",
+    "locationDescription": "Land off Pit Lane between Stapleford and Trowell",
+    "locationSource": "Broxtowe Borough Council press release",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New permanent home for Stapleford Cricket Club announced",
+        "source": "Broxtowe Borough Council",
+        "url": "https://www.broxtowe.gov.uk/news-events/news/press-releases-2026/january-2026/new-permanent-home-for-stapleford-cricket-club-announced/",
+        "datePublished": "2025-01-15",
+        "summary": "Council press release confirming planning approval and outlining works programme for the club’s new site acquired through the Stapleford Towns Fund."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e06000056-houghton-regis-leisure-community-centre",
+    "title": "Houghton Regis Leisure and Community Centre (Kingsland Campus)",
+    "description": "Central Bedfordshire Council delivered a new leisure and community centre at Kingsland Campus, providing swimming pools, gym, studios, squash courts and community spaces, supported by a Levelling Up Fund grant.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "fa731498-63b7-42ae-99a1-113526fb7b4b",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Centre opened to the public in March 2025.",
+    "locationDescription": "Houghton Regis Leisure and Community Centre, Kingsland Campus (Parkside Drive entrance)",
+    "locationSource": "Central Bedfordshire Council news and information pages",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Impressive leisure and community centre in Houghton Regis prepares for opening",
+        "source": "Central Bedfordshire Council",
+        "url": "https://www.centralbedfordshire.gov.uk/news/article/1297/impressive_leisure_and_community_centre_in_houghton_regis_prepares_for_opening",
+        "datePublished": "2025-02-28",
+        "summary": "Council announcement confirming the opening date and summarising the facilities and funding for the new Houghton Regis leisure and community centre."
+      },
+      {
+        "type": "URL",
+        "title": "State of the art leisure and community centre in Houghton Regis is now open!",
+        "source": "Central Bedfordshire Council",
+        "url": "https://www.centralbedfordshire.gov.uk/news/article/1317/state_of_the_art_leisure_and_community_centre_in_houghton_regis_is_now_open",
+        "datePublished": "2025-04-03",
+        "summary": "Council update reporting on the public opening event and confirming the centre is open with its new facilities."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e07000208-rainbow-leisure-centre-solar-panels",
+    "title": "Rainbow Leisure Centre solar PV installation",
+    "description": "Epsom & Ewell Borough Council installed 390 solar panels on the roof of the council-owned Rainbow Leisure Centre, funded through Sport England’s Swimming Pool Support Fund, to reduce energy use and carbon emissions.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "eb069eae-ca05-473e-bbde-02c3f3e2a85a",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Solar installation completed and operational as of February 2025.",
+    "locationDescription": "Rainbow Leisure Centre, Epsom",
+    "locationSource": "Epsom & Ewell Borough Council news",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Epsom & Ewell Borough Council completes largest solar panel installation so far at the Rainbow Leisure Centre",
+        "source": "Epsom & Ewell Borough Council",
+        "url": "https://www.epsom-ewell.gov.uk/news/epsom-ewell-borough-council-completes-largest-solar-panel-installation-so-far-rainbow-leisure",
+        "datePublished": "2025-02-13",
+        "summary": "Council announcement confirming completion of 390 solar panels at Rainbow Leisure Centre, including expected energy generation and emissions savings."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e06000006-east-runcorn-connectivity-active-travel",
+    "title": "East Runcorn Connectivity: walking and cycling link (Phase 1)",
+    "description": "Liverpool City Region Combined Authority funding supports the first phase of a new walking and cycling link in East Runcorn, including new cycle routes, widened footpaths along the A56 and upgraded crossings and highway infrastructure, with further phases developed by Halton Council.",
+    "type": "REGIONAL_GOV",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "localAuthorityId": "c40c4dac-6ca9-43e3-a0c5-e7ed00589331",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Phase 1 funding committed with construction planned and completion targeted by autumn 2026.",
+    "locationDescription": "East Runcorn (A56 corridor and links to Runcorn East station and Sci-Tech Daresbury)",
+    "locationSource": "Liverpool City Region Combined Authority",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Mayor announces £17m for first phase of new walking and cycling link for East Runcorn",
+        "source": "Liverpool City Region Combined Authority",
+        "url": "https://www.liverpoolcityregion-ca.gov.uk/news/mayor-announces-17m-for-first-phase-of-new-walking-and-cycling-link-for-east-runcorn",
+        "datePublished": "2024-07-22",
+        "summary": "Combined authority announcement committing more than £17.5m to Phase 1 of the East Runcorn Connectivity scheme, including scope and expected programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e06000065-a59-kex-gill-bypass",
+    "title": "A59 Kex Gill realignment (bypass) scheme",
+    "description": "North Yorkshire Council is delivering the A59 Kex Gill bypass/realignment to replace a landslip-prone section of the A59 near Blubberhouses, improving resilience of a key east-west route between Harrogate and Skipton.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "localAuthorityId": "26181f9a-8e89-4fef-8923-1e0ff3fecc12",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Major highway scheme under construction with opening delayed to spring 2026.",
+    "locationDescription": "A59 at Kex Gill near Blubberhouses (Harrogate–Skipton route)",
+    "locationSource": "BBC News and North Yorkshire Council scheme information",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Opening of 'unique' £68m bypass delayed until 2026",
+        "source": "BBC News",
+        "url": "https://feeds.bbci.co.uk/news/articles/cn020nzpqp8o",
+        "datePublished": "2024-09-16",
+        "summary": "BBC report citing North Yorkshire Council confirming the Kex Gill bypass completion has been delayed to spring 2026 and summarising scheme scope and funding."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e06000051-smithfield-riverside-shrewsbury",
+    "title": "Smithfield Riverside regeneration (Shrewsbury town centre)",
+    "description": "Shropshire Council’s Smithfield Riverside programme is regenerating the former Riverside Shopping Centre area in Shrewsbury, including demolition works and a new public park, supported by levelling up funding and a phased masterplan for future development plots.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "1a8a9bca-852d-4a65-8574-54cf638079b5",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning and demolition progressing with phased delivery of public realm and subsequent development plots.",
+    "locationDescription": "Smithfield Riverside area between River Severn, Darwin Centre and Roushill, Shrewsbury",
+    "locationSource": "Shropshire Council Newsroom",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Next phase of consultation launched on Smithfield Riverside in Shrewsbury",
+        "source": "Shropshire Council Newsroom",
+        "url": "https://newsroom.shropshire.gov.uk/2024/02/consultation-launched-smithfield-riverside-shrewsbury/",
+        "datePublished": "2024-02-09",
+        "summary": "Council announcement launching consultation ahead of planning applications for demolition and a new public park at Smithfield Riverside."
+      },
+      {
+        "type": "URL",
+        "title": "Plans submitted for next phase of Shrewsbury town centre regeneration scheme",
+        "source": "Shropshire Council Newsroom",
+        "url": "https://newsroom.shropshire.gov.uk/2024/12/plans-submitted-for-next-phase-of-shrewsbury-town-centre-regeneration-scheme/",
+        "datePublished": "2024-12-02",
+        "summary": "Council update confirming submission of a phase two outline planning application and describing progress on demolition and the planned new public park."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e06000045-southampton-ring-road-improvements",
+    "title": "Southampton Ring Road improvements (City Centre Transformation)",
+    "description": "Southampton City Council delivered transport improvements on the northern and western sections of the Ring Road (A3024), including junction upgrades, bus priority technology and improved walking and cycling crossings as part of the Transforming Cities Fund programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "c66ff654-a1e1-4f34-8882-d96060c07e73",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Ring Road improvement project reported as completed in October 2024.",
+    "locationDescription": "A3024 Northern Inner Ring Road (Brunswick Place, Cumberland Place and adjacent junctions)",
+    "locationSource": "Southampton City Council and Connecting Southampton scheme pages",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major improvements to the city’s Ring Road starting in February",
+        "source": "Southampton City Council",
+        "url": "https://www.southampton.gov.uk/news/article/major-improvements-to-the-citys-ring-road-starting-in-february/",
+        "datePublished": "2024-01-19",
+        "summary": "Council announcement of the start of a major Ring Road improvement scheme, including project aims and funding context."
+      },
+      {
+        "type": "URL",
+        "title": "Ring Road (Connecting Southampton) – project summary",
+        "source": "Connecting Southampton (Southampton City Council)",
+        "url": "https://transport.southampton.gov.uk/ringroad",
+        "summary": "Scheme overview stating the Ring Road project is completed in October 2024 and summarising key benefits and delivered measures."
+      }
+    ]
+  },
+  {
+    "id": "gm-b001-e08000024-crown-works-studios-enabling-works",
+    "title": "Crown Works Studios (Sunderland) enabling works",
+    "description": "Sunderland City Council is supporting delivery of the Crown Works Studios development on the banks of the River Wear, with enabling works to prepare the brownfield site ahead of construction of the film and TV production complex.",
+    "type": "LOCAL_GOV",
+    "regionId": "93bc819f-9dbc-4a0c-ad18-2df70e34f7e8",
+    "localAuthorityId": "08526dcf-19b7-4fd7-9d57-7122623c3a64",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Enabling and preparatory works underway ahead of phased construction of the studios complex.",
+    "locationDescription": "Crown Works site, Pallion (banks of the River Wear), Sunderland",
+    "locationSource": "Sunderland City Council and local news reporting",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "New era for North East as Crown Works Studios backed with new tools given to the region in the budget",
+        "source": "Sunderland City Council",
+        "url": "https://www.sunderland.gov.uk/article/30495/New-era-for-North-East-as-Crown-Works-Studios-backed-with-new-tools-given-to-the-region-in-the-budget",
+        "datePublished": "2024-03-06",
+        "summary": "Council statement about Government backing for Crown Works Studios, including expected scale and employment impact."
+      },
+      {
+        "type": "URL",
+        "title": "Enabling works start at Sunderland's Crown Works Studios site",
+        "source": "Sunderland Echo",
+        "url": "https://www.sunderlandecho.com/business/enabling-works-start-at-sunderlands-crown-works-studios-site-5010648",
+        "datePublished": "2025-02-27",
+        "summary": "Local news report describing enabling works beginning on the Crown Works Studios site as preparatory activity ahead of construction."
+      }
+    ]
+  }
+]

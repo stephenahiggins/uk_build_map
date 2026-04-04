@@ -1,0 +1,434 @@
+[
+  {
+    "id": "gm-b008-e07000177-bicester-market-square-project",
+    "title": "Bicester Market Square Project: town-centre public realm regeneration",
+    "description": "Cherwell District Council reported progress on its Bicester Market Square regeneration and public realm improvement project and approved the concept design to proceed to the next stage (design development, planning permissions and procurement), with an updated overall project budget.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b4b73a4-a1ce-4ec5-998d-9585cb8433e4",
+    "localAuthorityId": "88edbc2c-c927-4f71-9179-f6e2d1886ef1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The concept design has been approved to progress, but delivery remains subject to planning and procurement.",
+    "locationDescription": "Market Square, Bicester, Oxfordshire",
+    "locationSource": "Cherwell District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Executive agenda: Bicester Market Square Project (report and appendices)",
+        "source": "Cherwell District Council (ModGov)",
+        "url": "https://modgov.cherwell.gov.uk/ieListDocuments.aspx?CId=115&MId=4222&Ver=4",
+        "datePublished": "2025-09-02",
+        "summary": "Executive meeting documents describing the Market Square regeneration/public realm improvement project, including recommendations to approve the concept design and proceed to subsequent stages subject to planning permission and procurement."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e06000050-ellesmere-port-town-centre-regeneration",
+    "title": "Ellesmere Port town centre regeneration: work starts on £13m programme",
+    "description": "Cheshire West and Chester Council announced the start of construction on its Ellesmere Port town centre regeneration programme, including public realm improvements, walking/wheeling/cycling connectivity and enabling town centre investment.",
+    "type": "LOCAL_GOV",
+    "regionId": "38ad155b-1f00-44c4-8566-b26f7e37e879",
+    "localAuthorityId": "bc9d43a6-2bc0-4037-8bfe-2ff5e657c160",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Construction has started, but the regeneration programme remains in delivery.",
+    "locationDescription": "Ellesmere Port town centre, Cheshire",
+    "locationSource": "Cheshire West and Chester Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Work begins on Ellesmere Port town centre regeneration",
+        "source": "Cheshire West and Chester Council",
+        "url": "https://www.cheshirewestandchester.gov.uk/news-and-views/press-releases/work-begins-ellesmere-port-town-centre-regeneration",
+        "datePublished": "2025-03-18",
+        "summary": "Council press release confirming work has started on a £13m programme to regenerate Ellesmere Port town centre, outlining the scope of improvements and intended outcomes."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000040-seaton-hole-coastal-defence-scheme",
+    "title": "Seaton Hole coastal defence scheme: cliff and beach protection works",
+    "description": "East Devon District Council delivered a coastal defence scheme at Seaton Hole involving new rock armour and repairs to existing defences to reduce erosion and coastal cliff risk and help protect nearby homes and infrastructure.",
+    "type": "LOCAL_GOV",
+    "regionId": "46484560-91c6-4ed0-8ae2-9df4ec42290d",
+    "localAuthorityId": "bc34f0f3-2116-4264-8840-e806a29b7cba",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The scheme is reported as completed in 2025.",
+    "locationDescription": "Seaton Hole beach / West Walk Promenade area, Seaton, East Devon",
+    "locationSource": "South West Flood & Coastal (Lead Authority: East Devon District Council)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Seaton Coastal Defence Scheme 2025",
+        "source": "South West Flood and Coastal",
+        "url": "https://swfloodandcoastal.org.uk/project/seaton-coastal-defence-scheme/",
+        "datePublished": "2025-12-18",
+        "summary": "Project page describing the Seaton Hole coastal defence works (including rock armour installation and repairs), including start/completion dates and scheme scope and budget, with East Devon District Council listed as lead authority."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000109-the-charter-gravesend-contract-award",
+    "title": "The Charter, Gravesend: contractor appointed to complete build-to-rent development",
+    "description": "Gravesham Borough Council announced the award of a contract to Curo Construction to complete The Charter in Gravesend, a build-to-rent development with 242 apartments and a multi-storey car park in the town centre.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b4b73a4-a1ce-4ec5-998d-9585cb8433e4",
+    "localAuthorityId": "6b3bdaf4-2dc0-4491-b5ec-ef9426d998fc",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "A contractor has been appointed and works are underway, but completion was stated as expected in early 2026.",
+    "locationDescription": "Gravesend town centre (The Charter development), Gravesham",
+    "locationSource": "Gravesham Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Curo Construction awarded contract to complete construction of The Charter, Gravesend",
+        "source": "Gravesham Borough Council",
+        "url": "https://www.gravesham.gov.uk/news/article/160/curo-construction-awarded-contract-to-complete-construction-of-the-charter-gravesend",
+        "datePublished": "2024-08-21",
+        "summary": "Council news confirming contract award to complete The Charter development, describing the scheme (242 apartments and a multi-storey car park) and expected completion timeframe."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000131-rewilding-harborough-tin-house-farm",
+    "title": "Rewilding Harborough: Tin House Farm land purchase and long-term restoration vision",
+    "description": "Harborough District Council acquired Tin House Farm as part of its Rewilding Harborough initiative, setting out plans for habitat restoration, nature recovery and community access as the scheme progresses.",
+    "type": "LOCAL_GOV",
+    "regionId": "bf7f02d5-bc9e-44ac-8971-b7c1292d2a58",
+    "localAuthorityId": "f81f5051-60cc-47d8-aa4c-c7b98bfa74af",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council has acquired the land and published a restoration vision, with delivery to follow over multiple phases/years.",
+    "locationDescription": "Tin House Farm, Harborough District",
+    "locationSource": "Harborough District Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Councils reveal 25-year vision to bring nature back to district",
+        "source": "Harborough District Council",
+        "url": "https://www.harborough.gov.uk/news/article/1878/councils_reveal_25-year_vision_to_bring_nature_back_to_district",
+        "datePublished": "2025-09-09",
+        "summary": "Council news describing the Rewilding Harborough programme and a long-term vision linked to the acquisition of Tin House Farm for habitat restoration and nature recovery."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000110-former-royal-mail-site-maidstone-east-redevelopment",
+    "title": "Maidstone East: plans approved for redevelopment of former Royal Mail site",
+    "description": "Maidstone Borough Council reported that planning permission has been granted for redevelopment of the former Royal Mail sorting office site near Maidstone East, supporting regeneration and new development in the area.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b4b73a4-a1ce-4ec5-998d-9585cb8433e4",
+    "localAuthorityId": "be6ef521-de3f-4f4c-8789-a17e67a3a905",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning permission has been approved, with delivery dependent on subsequent build-out.",
+    "locationDescription": "Former Royal Mail sorting office site near Maidstone East, Maidstone",
+    "locationSource": "Maidstone Borough Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Plans approved for redevelopment of former Royal Mail site at Maidstone East",
+        "source": "MBC News Website (Maidstone Borough Council)",
+        "url": "https://news.maidstone.gov.uk/home/news/2025/september/plans-approved-for-redevelopment-of-former-royal-mail-site-at-maidstone-east",
+        "datePublished": "2025-09-27",
+        "summary": "Council news update confirming approval of redevelopment plans for the former Royal Mail site at Maidstone East."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000091-hurst-road-east-seawall-repairs",
+    "title": "Milford-on-Sea Hurst Road East seawall repairs: phase 1 completed",
+    "description": "New Forest District Council completed phase 1 repairs to the Hurst Road East car park seawall at Milford-on-Sea, with further works described as planned for spring 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b4b73a4-a1ce-4ec5-998d-9585cb8433e4",
+    "localAuthorityId": "24bcacf3-12ba-4d90-8502-646007e983ed",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Phase 1 repairs are reported complete, but additional phases are described as pending.",
+    "locationDescription": "Hurst Road East car park seawall, Milford-on-Sea, New Forest",
+    "locationSource": "Advertiser & Times",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Phase one of Milford seawall repairs completed",
+        "source": "Advertiser & Times",
+        "url": "https://www.advertiserandtimes.co.uk/news/nfdc-completes-phase-1-repairs-to-milford-on-sea-seawall-9412257/",
+        "datePublished": "2025-12-10",
+        "summary": "Local news reporting NFDC’s completion of phase 1 repairs to the Milford-on-Sea seawall and describing expectations for further works in 2026."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000139-warm-homes-retrofit-programme",
+    "title": "Warm homes retrofit: £18.4m programme to upgrade North Kesteven council homes",
+    "description": "North Kesteven District Council secured funding for a multi-year retrofit programme to improve energy efficiency and reduce carbon emissions in its housing stock through upgrades such as insulation and low-carbon heating measures.",
+    "type": "LOCAL_GOV",
+    "regionId": "bf7f02d5-bc9e-44ac-8971-b7c1292d2a58",
+    "localAuthorityId": "87427552-d71f-47f8-9329-5edf90d6af12",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding has been secured and delivery is planned across multiple years.",
+    "locationDescription": "North Kesteven District (council housing stock)",
+    "locationSource": "North Kesteven District Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major funding boost to retrofit council homes",
+        "source": "North Kesteven District Council",
+        "url": "https://www.n-kesteven.gov.uk/news/article/2466/major_funding_boost_to_retrofit_council_homes",
+        "datePublished": "2025-03-18",
+        "summary": "Council announcement of £18.4m funding for a programme to retrofit and improve the energy performance of council homes over several years."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000084-basing-view-town-centre-investment-partnership",
+    "title": "Basingstoke town centre and Basing View: investment partnership to accelerate regeneration",
+    "description": "Basingstoke and Deane Borough Council progressed plans to procure a long-term investment partnership to accelerate improvements across Basingstoke town centre and the Basing View business district, aligned to its adopted Town Centre Masterplan.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b4b73a4-a1ce-4ec5-998d-9585cb8433e4",
+    "localAuthorityId": "6efae1bf-b2cc-4638-b91c-2a80d407c9a2",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The council is progressing procurement for a partner; delivery depends on securing the partnership and subsequent project implementation.",
+    "locationDescription": "Basingstoke town centre and Basing View, Basingstoke",
+    "locationSource": "Basingstoke and Deane Borough Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Progressing plans for bold partnership to unlock major investment",
+        "source": "Basingstoke and Deane Borough Council",
+        "url": "https://www.basingstoke.gov.uk/rte.aspx?id=298&itemid=10742&task=View",
+        "datePublished": "2026-03-17",
+        "summary": "Council news release describing plans to seek an investment partner to fast-track improvements across Basingstoke town centre and Basing View."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000080-five-acres-regeneration-grant-extension",
+    "title": "Five Acres regeneration: funding extension for improvements to local estate and facilities",
+    "description": "Forest of Dean District Council reported that the grant for the Five Acres regeneration project had been extended, enabling continued delivery of improvements and works through to March 2026.",
+    "type": "LOCAL_GOV",
+    "regionId": "46484560-91c6-4ed0-8ae2-9df4ec42290d",
+    "localAuthorityId": "7cd0b671-8334-47f0-bcee-a2ffa243b813",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding was extended, indicating continued delivery rather than completion.",
+    "locationDescription": "Five Acres area, Forest of Dean District",
+    "locationSource": "Forest of Dean District Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Five Acres regeneration project sees grant extended until March 2026",
+        "source": "Forest of Dean District Council",
+        "url": "https://www.fdean.gov.uk/news/five-acres-regeneration-project-sees-grant-extended-until-march-2026/",
+        "datePublished": "2024-12-23",
+        "summary": "Council update confirming the Five Acres regeneration project grant extension through March 2026."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e08000004-oldham-town-living-planning-applications",
+    "title": "Oldham Town Living: planning applications submitted for six town-centre sites",
+    "description": "Oldham Council submitted planning applications for redevelopment across six sites under its Oldham Town Living programme, aiming to transform the town centre with new homes and associated public realm improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "38ad155b-1f00-44c4-8566-b26f7e37e879",
+    "localAuthorityId": "68c43f8b-b4b6-4aee-b567-95fc988b6078",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning applications have been submitted, with delivery contingent on approvals and subsequent construction phases.",
+    "locationDescription": "Oldham town centre (multiple Oldham Town Living sites)",
+    "locationSource": "Oldham Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning applications submitted for town centre regeneration",
+        "source": "Oldham Council",
+        "url": "https://www.oldham.gov.uk/news/article/1556/planning_applications_submitted_for_town_centre_regeneration",
+        "datePublished": "2025-04-10",
+        "summary": "Council announcement confirming planning applications for six town-centre sites as part of the Oldham Town Living regeneration programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e09000002-beam-park-phase-3-topping-out",
+    "title": "Beam Park regeneration: phase 3 reaches topping-out milestone",
+    "description": "Barking and Dagenham Council’s Beam Park regeneration programme reached a construction milestone as phase 3 topped out, with the update describing delivery of new homes and associated neighbourhood infrastructure.",
+    "type": "LOCAL_GOV",
+    "regionId": "dfce05f8-7293-44eb-816b-3f6a1e67ff39",
+    "localAuthorityId": "8657c8e6-ce23-40e6-9055-8b88c395525e",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Construction has reached topping-out, but homes and wider place-making remain in delivery.",
+    "locationDescription": "Beam Park, Barking and Dagenham (Thames Road / Dagenham area)",
+    "locationSource": "Vistry Group (citing London Borough of Barking & Dagenham regeneration)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Vistry's Beam Park phase 3 in East London tops out",
+        "source": "Vistry Group",
+        "url": "https://www.vistrygroup.co.uk/media-centre/press-releases/2025/vistrys-beam-park-phase-3-in-east-london-tops-out",
+        "datePublished": "2025-10-07",
+        "summary": "Press release reporting the topping out of Beam Park phase 3 and describing the scale and timing of new homes delivery within the Beam Park regeneration programme."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e08000018-whiston-brook-flood-alleviation-cil-funding",
+    "title": "Whiston Brook flood alleviation: proposed £3m CIL contribution to start works",
+    "description": "Rotherham Council proposed allocating £3m of Community Infrastructure Levy (CIL) funding to the Whiston Brook Flood Alleviation Scheme, describing the planned programme of works and intent to begin works within the following year.",
+    "type": "LOCAL_GOV",
+    "regionId": "13ff8b9d-b364-435c-9347-651e9e9af317",
+    "localAuthorityId": "129ae05e-849f-4e94-8dfb-46eb4da97f83",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding allocation was proposed to enable the scheme, with works expected to follow once approvals and delivery arrangements are in place.",
+    "locationDescription": "Whiston Brook catchment area, Rotherham",
+    "locationSource": "Rotherham Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£3m for Whiston Brook to start flood alleviation works",
+        "source": "Rotherham Council",
+        "url": "https://www.rotherham.gov.uk/news/article/1991/%C2%A33m-for-whiston-brook-to-start-flood-alleviation-works",
+        "datePublished": "2026-01-12",
+        "summary": "Council news describing a proposed £3m CIL contribution towards the Whiston Brook Flood Alleviation Scheme and outlining the planned start of works following approvals."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000130-queens-park-town-centre-improvements",
+    "title": "Loughborough Town Deal: park and town centre improvement works underway",
+    "description": "Charnwood Borough Council set out that works had started on town deal-backed improvements in Loughborough, including paths, drainage, lighting and electrical upgrades within Queen’s Park and related town centre public realm enhancements.",
+    "type": "LOCAL_GOV",
+    "regionId": "bf7f02d5-bc9e-44ac-8971-b7c1292d2a58",
+    "localAuthorityId": "d5a915ae-2b4f-4d3f-98ce-364ebc2a1e87",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Works were reported as underway, with completion dependent on construction delivery.",
+    "locationDescription": "Queen’s Park and town centre areas, Loughborough (Charnwood)",
+    "locationSource": "Loughborough Town Deal",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Improvements underway at award-winning park and town centre",
+        "source": "Loughborough Town Deal",
+        "url": "https://www.loughboroughtowndeal.co.uk/news/improvements-underway-at-award-winning-park-and-town-centre/",
+        "datePublished": "2025-03-20",
+        "summary": "Update describing the start of improvement works in Queen’s Park and in the town centre, including upgrades to paths, drainage, electrical infrastructure and lighting."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000047-warmer-homes-local-grant",
+    "title": "Warmer Homes: Local Grant scheme for home energy-efficiency upgrades",
+    "description": "West Devon Borough Council announced government funding to deliver a local grant scheme supporting eligible households with energy-efficiency improvements aimed at warmer, healthier homes and reduced energy bills.",
+    "type": "LOCAL_GOV",
+    "regionId": "46484560-91c6-4ed0-8ae2-9df4ec42290d",
+    "localAuthorityId": "17eb048e-c268-4b5a-b80b-92469c4efa3d",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding has been announced and the grant scheme is being implemented, with delivery dependent on rollout and uptake.",
+    "locationDescription": "West Devon Borough (eligible households)",
+    "locationSource": "West Devon Borough Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Investing in warmer, healthier homes",
+        "source": "West Devon Borough Council",
+        "url": "https://www.westdevon.gov.uk/news/article/1300/investing-in-warmer-healthier-homes",
+        "datePublished": "2025-11-04",
+        "summary": "Council news describing funding for a local grant scheme to support energy-efficiency improvements to homes, aimed at reducing bills and improving health outcomes."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000235-malvern-splash-solar-and-overroof",
+    "title": "Malvern Splash leisure centre: over-roofing and solar PV planning approval",
+    "description": "Malvern Hills District Council approved a planning application for over-roofing works and installation of solar panels at the Malvern Splash pool hall, supporting upgrades to the civic leisure estate and on-site renewable generation.",
+    "type": "LOCAL_GOV",
+    "regionId": "0aff780f-e97b-4655-8352-8d8a70a7991f",
+    "localAuthorityId": "0dad54f9-8dab-4f70-9a8e-0f6e7cf768c0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning approval has been granted, with delivery dependent on implementation of the approved works.",
+    "locationDescription": "Malvern Splash Leisure Complex, Tanhouse Lane, Great Malvern",
+    "locationSource": "Malvern Hills District Council (Planning Portal)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning application M/24/00551/FUL (solar panels and pool hall over-roofing) decision",
+        "source": "Malvern Hills District Council",
+        "url": "https://plan.malvernhills.gov.uk/Planning/Display/M/24/00551/FUL",
+        "datePublished": "2024-07-18",
+        "summary": "Planning portal decision record for works at the Malvern Splash pool hall including over-roofing and solar panel installation."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e06000060-flood-resilience-projects-funding",
+    "title": "Buckinghamshire flood resilience: funding secured for new projects and feasibility work",
+    "description": "Buckinghamshire Council announced funding secured to support new flood resilience activity, including feasibility work and natural flood management measures across the county.",
+    "type": "LOCAL_GOV",
+    "regionId": "0b4b73a4-a1ce-4ec5-998d-9585cb8433e4",
+    "localAuthorityId": "75d44285-e9d2-4622-936b-4036a76da7d0",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding has been secured and projects are being developed and delivered over time.",
+    "locationDescription": "Buckinghamshire (multiple flood resilience project locations)",
+    "locationSource": "Buckinghamshire Council",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Council secures £265k for new flood resilience projects",
+        "source": "Buckinghamshire Council",
+        "url": "https://www.buckinghamshire.gov.uk/news/council-secures-265k-for-new-flood-resilience-projects/",
+        "datePublished": "2025-08-26",
+        "summary": "Council announcement detailing secured funding to support flood resilience projects, including feasibility studies and natural flood management activity."
+      }
+    ]
+  },
+  {
+    "id": "gm-b008-e07000009-hive-leisure-centre-solar-panels",
+    "title": "The Hive Leisure Centre (Ely): 228 solar panels installed",
+    "description": "East Cambridgeshire District Council installed 228 solar panels on The Hive Leisure Centre in Ely to reduce carbon emissions and lower energy costs for the civic leisure estate.",
+    "type": "LOCAL_GOV",
+    "regionId": "ea04376c-a55d-41b4-b100-dbbe60af41fe",
+    "localAuthorityId": "8d33ba9e-f1cb-489c-a7fa-83e2c53b1ce2",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council reported the solar installation as completed.",
+    "locationDescription": "The Hive Leisure Centre, Ely, East Cambridgeshire",
+    "locationSource": "East Cambridgeshire District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "228 solar panels installed at The Hive Leisure Centre",
+        "source": "East Cambridgeshire District Council",
+        "url": "https://www.eastcambs.gov.uk/content/228-solar-panels-installed-hive-leisure-centre",
+        "datePublished": "2025-05-27",
+        "summary": "Council announcement confirming installation of 228 solar panels at The Hive Leisure Centre in Ely and describing expected energy and emissions benefits."
+      }
+    ]
+  }
+]

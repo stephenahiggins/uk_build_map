@@ -24,22 +24,6 @@
     "regionName": "North East"
   },
   {
-    "id": "3416b16a-946a-4bed-b1ef-d0f6bb219530",
-    "name": "Cheshire East",
-    "code": "E06000049",
-    "countryCode": "ENGLAND",
-    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
-    "regionName": "North West"
-  },
-  {
-    "id": "4c20d442-3d63-4ea2-9056-ce2042c0b583",
-    "name": "Huntingdonshire",
-    "code": "E07000011",
-    "countryCode": "ENGLAND",
-    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
-    "regionName": "East of England"
-  },
-  {
     "id": "a000dccd-285c-4e72-a57f-4913f58c5a31",
     "name": "West Lindsey",
     "code": "E07000142",
@@ -54,6 +38,22 @@
     "countryCode": "ENGLAND",
     "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
     "regionName": "North West"
+  },
+  {
+    "id": "3416b16a-946a-4bed-b1ef-d0f6bb219530",
+    "name": "Cheshire East",
+    "code": "E06000049",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "4c20d442-3d63-4ea2-9056-ce2042c0b583",
+    "name": "Huntingdonshire",
+    "code": "E07000011",
+    "countryCode": "ENGLAND",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "regionName": "East of England"
   },
   {
     "id": "1d315c4c-7ac6-4fa3-a378-db6108e709bf",
@@ -112,6 +112,14 @@
     "regionName": "North East"
   },
   {
+    "id": "5d6ab247-42b5-4f3a-8aef-227771b99e68",
+    "name": "Bath and North East Somerset",
+    "code": "E06000022",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
     "id": "8877dc28-1f35-4641-9e18-e378ae0c1ee4",
     "name": "Eastbourne",
     "code": "E07000061",
@@ -126,14 +134,6 @@
     "countryCode": "ENGLAND",
     "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
     "regionName": "London"
-  },
-  {
-    "id": "5d6ab247-42b5-4f3a-8aef-227771b99e68",
-    "name": "Bath and North East Somerset",
-    "code": "E06000022",
-    "countryCode": "ENGLAND",
-    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
-    "regionName": "South West"
   },
   {
     "id": "a5680ade-8bd2-4ab7-9acf-e72fe75a27c6",

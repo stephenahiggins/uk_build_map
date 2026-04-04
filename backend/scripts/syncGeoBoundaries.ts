@@ -18,6 +18,17 @@ type GeoJsonFeature = {
   properties: Record<string, unknown>;
 };
 
+type RegionFeatureRecord = {
+  id: string;
+  geometry: PolygonGeometry;
+};
+
+type AuthorityFeatureRecord = {
+  id: string;
+  regionId: string | null;
+  geometry: PolygonGeometry;
+};
+
 let prisma: ReturnType<typeof createPrismaClient> | null = null;
 
 const getPrisma = () => {
@@ -202,7 +213,7 @@ async function syncRegionBoundaries() {
 
     await getPrisma().region.update({
       where: { id: regionId },
-      data: { boundingPolygon: featureItem.geometry },
+      data: { boundingPolygon: featureItem.geometry as Prisma.InputJsonValue },
     });
     updated += 1;
   }
@@ -243,7 +254,7 @@ async function syncLocalAuthorityBoundaries() {
 
     await getPrisma().localAuthority.update({
       where: { id: authorityId },
-      data: { boundaryPolygon: featureItem.geometry },
+      data: { boundaryPolygon: featureItem.geometry as Prisma.InputJsonValue },
     });
     updated += 1;
   }
@@ -264,13 +275,16 @@ async function mapLocalAuthoritiesToRegions() {
     }),
   ]);
 
-  const regionFeatures = regions
-    .map((region) =>
-      isPolygonGeometry(region.boundingPolygon)
-        ? { id: region.id, geometry: region.boundingPolygon }
-        : null
-    )
-    .filter((value): value is { id: string; geometry: PolygonGeometry } => !!value);
+  const regionFeatures: RegionFeatureRecord[] = [];
+  for (const region of regions) {
+    if (!isPolygonGeometry(region.boundingPolygon)) {
+      continue;
+    }
+    regionFeatures.push({
+      id: region.id,
+      geometry: region.boundingPolygon,
+    });
+  }
 
   const fallbackRegionIds = new Set(
     (
@@ -351,31 +365,28 @@ async function assignProjectsToBoundaries() {
     }),
   ]);
 
-  const regionFeatures = regions
-    .map((region) =>
-      isPolygonGeometry(region.boundingPolygon)
-        ? { id: region.id, geometry: region.boundingPolygon }
-        : null
-    )
-    .filter((value): value is { id: string; geometry: PolygonGeometry } => !!value);
+  const regionFeatures: RegionFeatureRecord[] = [];
+  for (const region of regions) {
+    if (!isPolygonGeometry(region.boundingPolygon)) {
+      continue;
+    }
+    regionFeatures.push({
+      id: region.id,
+      geometry: region.boundingPolygon,
+    });
+  }
 
-  const authorityFeatures = localAuthorities
-    .map((authority) =>
-      isPolygonGeometry(authority.boundaryPolygon)
-        ? {
-            id: authority.id,
-            regionId: authority.regionId ?? null,
-            geometry: authority.boundaryPolygon,
-          }
-        : null
-    )
-    .filter(
-      (value): value is {
-        id: string;
-        regionId: string | null;
-        geometry: PolygonGeometry;
-      } => !!value
-    );
+  const authorityFeatures: AuthorityFeatureRecord[] = [];
+  for (const authority of localAuthorities) {
+    if (!isPolygonGeometry(authority.boundaryPolygon)) {
+      continue;
+    }
+    authorityFeatures.push({
+      id: authority.id,
+      regionId: authority.regionId ?? null,
+      geometry: authority.boundaryPolygon,
+    });
+  }
 
   let updated = 0;
   let skipped = 0;

@@ -1,0 +1,470 @@
+[
+  {
+    "id": "gm-b006-e07000176-keyworth-leisure-centre-refurbishment-reopens",
+    "title": "Keyworth Leisure Centre refurbishment and energy-efficiency upgrades (reopened September 2025)",
+    "description": "Rushcliffe Borough Council completed a refurbishment of Keyworth Leisure Centre, including upgrades intended to improve the building and reduce energy use, and reopened the facility to the public in September 2025.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "47f68eb2-2bd2-4740-9ff6-d5b8437f453b",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council announcement confirms refurbishment completed and centre reopened on 16 September 2025.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Keyworth Leisure Centre, Keyworth, Rushcliffe",
+    "locationSource": "Rushcliffe Borough Council news announcement about the centre reopening after refurbishment",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Keyworth Leisure Centre refurbishment unveiled as it reopens",
+        "source": "Rushcliffe Borough Council",
+        "url": "https://www.rushcliffe.gov.uk/news-area/keyworth-leisure-centre-refurbishment-unveiled-as-it-reopens/",
+        "datePublished": "2025-09-16",
+        "summary": "Council update announcing the reopening of Keyworth Leisure Centre following refurbishment and energy-efficiency upgrades, with works described and reopening confirmed."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000217-sheerwater-lahf-empty-homes-refurbishment",
+    "title": "Sheerwater: refurbishment of long-term empty homes funded via Local Authority Housing Fund",
+    "description": "Woking Borough Council secured funding to refurbish long-term empty homes in the Sheerwater area for use as temporary accommodation, as part of council-led interventions connected to the Sheerwater regeneration context.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "32d9f262-14b8-40d9-be66-260afe1ec33c",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council announcement confirms funding secured with refurbishments planned to complete by March 2026.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Sheerwater, Woking (refurbishment of long-term empty homes in the area)",
+    "locationSource": "Woking Borough Council news announcement about Local Authority Housing Fund-funded refurbishments",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Grant funding secured to refurbish empty homes in Sheerwater",
+        "source": "Woking Borough Council",
+        "url": "https://www.woking.gov.uk/news/grant-funding-secured-refurbish-empty-homes-sheerwater",
+        "datePublished": "2024-09-11",
+        "summary": "Council news release describing the award of Local Authority Housing Fund grant funding to refurbish long-term empty homes in Sheerwater for temporary accommodation, with an expected completion timeframe."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000226-crawley-station-gateway-phase-1-planning-permission",
+    "title": "Crawley Station Gateway: phase one public realm and bus station operational improvements (planning permission granted)",
+    "description": "Crawley Borough Council granted planning permission for phase one of the Station Gateway regeneration scheme, covering public realm improvements on key routes between the railway station and bus station and operational improvements at the bus station.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "9d25a482-0d07-49da-b6f1-521ec3ad62c5",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council news confirms phase one planning permission granted and describes the funded scheme scope.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Friary Way, The Martlets, Haslett Avenue West and Crawley bus station area (Station Gateway), Crawley town centre",
+    "locationSource": "Crawley Borough Council news release describing phase one Station Gateway scheme locations",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning permission granted for first phase of Station Gateway regeneration scheme",
+        "source": "Crawley Borough Council",
+        "url": "https://crawley.gov.uk/council-information/news-and-events/latest-news/2025/planning-permission-granted-first-phase-station-gateway-regeneration-scheme",
+        "datePublished": "2025-02-17",
+        "summary": "Council announcement confirming planning permission for phase one of Station Gateway, describing public space improvements and bus station operational changes and identifying the streets covered."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000170-portland-square-sutton-town-centre-transformation",
+    "title": "Portland Square (Sutton in Ashfield) public realm transformation works",
+    "description": "Ashfield District Council began on-site works to transform Portland Square in Sutton in Ashfield, including new raised lawns, seating, semi-mature trees, upgraded lighting, new paving and CCTV, as part of its town centre transformation programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "311939d0-af21-4e6b-adbe-14f6b57b15a8",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council news confirms ground was broken at Portland Square and indicates mid-2025 expected completion.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Portland Square, Sutton in Ashfield, Ashfield",
+    "locationSource": "Ashfield District Council news release describing works starting at Portland Square",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Excitement builds as work starts on flagship stage of Sutton transformation",
+        "source": "Ashfield District Council",
+        "url": "https://www.ashfield.gov.uk/your-council/news/excitement-builds-as-work-starts-on-flagship-stage-of-sutton-transformation/",
+        "datePublished": "2024-10-21",
+        "summary": "Council update announcing the start of works at Portland Square and summarising planned public realm improvements, with completion expected mid-2025."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e06000036-coopers-hill-bracknell-regeneration-completed",
+    "title": "Coopers Hill, Bracknell: regeneration and public realm works completed",
+    "description": "Bracknell Forest Council confirmed completion of regeneration works at Coopers Hill in Bracknell, including improvements to the local environment and public realm.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "89ba0b58-baf3-4a7c-9ca9-d82c41059681",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council news release states the Coopers Hill regeneration has been completed.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Coopers Hill, Bracknell",
+    "locationSource": "Bracknell Forest Council media centre news about completion of Coopers Hill regeneration",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Coopers Hill regeneration completed",
+        "source": "Bracknell Forest Council",
+        "url": "https://www.bracknell-forest.gov.uk/council-and-democracy/media-centre/news/coopers-hill-regeneration-completed",
+        "datePublished": "2025-11-05",
+        "summary": "Council media release confirming completion of regeneration works at Coopers Hill in Bracknell."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000093-andover-riverside-park-transformation-planning-permission",
+    "title": "Andover town centre riverside park transformation (planning permission granted)",
+    "description": "Test Valley Borough Council approved planning permission to transform a riverside park in Andover town centre, with proposals to improve green space and accessibility as part of a wider town centre programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "c3069c84-6135-4764-8f30-cbbe22981484",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council update confirms planning permission granted and indicates next-stage design and delivery activity.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Riverside park in Andover town centre, Test Valley",
+    "locationSource": "Test Valley Borough Council project update on planning permission for Andover riverside park transformation",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Andover Town Centre Project: Riverside Park Update - Planning Permission Granted",
+        "source": "Test Valley Borough Council",
+        "url": "https://testvalley.gov.uk/andovertowncentreproject/riversidepark",
+        "datePublished": "2025-09-24",
+        "summary": "Council project page update stating planning permission was granted to transform the riverside park in Andover town centre and outlining proposed improvements."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000114-ramsgate-green-campus-planning-application-published",
+    "title": "Ramsgate Green Campus: planning application published for education and regeneration scheme",
+    "description": "Thanet District Council published a planning application for the Green Campus scheme in Ramsgate, setting out a proposal intended to support skills, education and regeneration objectives within the town.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "1fc80db5-b0c9-48f6-b8a3-c4ab3bcf5ec1",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council project page states the planning application was published and notes the expected decision timeline.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Green Campus project site, Ramsgate, Thanet",
+    "locationSource": "Thanet District Council Green Campus project page describing the planning application publication",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Green Campus",
+        "source": "Thanet District Council",
+        "url": "https://www.thanet.gov.uk/green-campus/",
+        "datePublished": "2025-09-15",
+        "summary": "Council project page stating that the Green Campus planning application was published on 15 September 2025 and outlining the expected planning decision timeframe."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000034-staveley-21-town-centre-improvements",
+    "title": "Staveley 21: town centre public realm and access improvements programme",
+    "description": "Chesterfield Borough Council’s Staveley 21 programme sets out a package of town centre improvements in Staveley, including public realm, accessibility and place-making works funded through the Staveley Towns Fund programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "ec85a970-c47d-44d0-b364-f299c48263ec",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council project page confirms the Staveley 21 programme scope and funding context under the Towns Fund.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Staveley town centre, Chesterfield",
+    "locationSource": "Chesterfield Borough Council Staveley 21 Towns Fund project page",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Staveley 21",
+        "source": "Chesterfield Borough Council",
+        "url": "https://www.chesterfield.gov.uk/communities/community-initiatives/staveley-towns-fund-projects/staveley-21/",
+        "datePublished": "2024-12-10",
+        "summary": "Council project page describing the Staveley 21 Towns Fund programme and its intended public realm and accessibility improvements in Staveley town centre, with a page update date shown as 10 December 2024."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000079-cirencester-leisure-centre-refurbishment-unveiled",
+    "title": "Cirencester Leisure Centre refurbishment and decarbonisation works unveiled",
+    "description": "Cotswold District Council completed refurbishment and decarbonisation works at Cirencester Leisure Centre and unveiled the upgrades in September 2024.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "b6b03ea9-7fd5-47cc-83e5-cb923aa2bba2",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council press release states refurbishment was completed and unveiled on 30 September 2024.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Cirencester Leisure Centre, Cirencester, Cotswold",
+    "locationSource": "Cotswold District Council press release about the refurbished leisure centre being unveiled",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Cirencester Leisure Centre refurbishment to be unveiled",
+        "source": "Cotswold District Council",
+        "url": "https://www.cotswold.gov.uk/about-the-council/news-and-media/press-releases/2024/cirencester-leisure-centre-refurbishment-to-be-unveiled/",
+        "datePublished": "2024-09-30",
+        "summary": "Council press release announcing the unveiling of refurbishment and decarbonisation works at Cirencester Leisure Centre on 30 September 2024."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e06000063-carlisle-city-centre-regeneration-update-september-2024",
+    "title": "Carlisle city centre regeneration: Market Square, Greenmarket and Devonshire Street works update",
+    "description": "Cumberland Council published a status update on multiple Carlisle city centre regeneration works, covering progress at Market Square, Greenmarket and Devonshire Street and related town centre improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "7bd12193-1e9d-48e3-a51a-e66f29db6e47",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council update describes a programme with elements completed and others underway during September 2024.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Market Square, Greenmarket and Devonshire Street, Carlisle city centre",
+    "locationSource": "Cumberland Council Carlisle regeneration update (September 2024)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Carlisle Regeneration Update - September 2024",
+        "source": "Cumberland Council",
+        "url": "https://cumberland.gov.uk/news/2024/carlisle-regeneration-update-september-2024",
+        "datePublished": "2024-09-23",
+        "summary": "Council update describing progress across Carlisle city centre regeneration sites including Market Square, Greenmarket and Devonshire Street, with status notes on works completed and in progress."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000193-burton-town-centre-cycleway-extension-starts-jan-2026",
+    "title": "Burton town centre cycleway extension (works starting January 2026)",
+    "description": "Staffordshire County Council announced works to extend the Burton town centre cycleway, with construction scheduled to begin in January 2026 as part of the broader Burton town centre programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "3a9d3532-ce84-41e9-a5a6-4ebcf29f2988",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "County council newsroom item confirms scheme scope and a January 2026 start date for works.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Burton upon Trent town centre (cycleway extension works area)",
+    "locationSource": "Staffordshire County Council newsroom item announcing the Burton town centre cycleway extension start",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Work to extend Burton town centre cycleway begins next month",
+        "source": "Staffordshire County Council",
+        "url": "https://www.staffordshire.gov.uk/Newsroom/Articles/2025/12-December/Work-to-extend-Burton-town-centre-cycleway-begins-next-month.aspx",
+        "datePublished": "2025-12-16",
+        "summary": "County council newsroom article announcing works to extend Burton town centre cycleway, with works due to begin in January 2026."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000112-otterpool-park-wastewater-treatment-works-planning-validated",
+    "title": "Otterpool Park: wastewater treatment works planning application validated",
+    "description": "Folkestone & Hythe District Council validated a planning application for a wastewater treatment works associated with the Otterpool Park development, marking a key utilities infrastructure step for the new settlement proposals.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "42efa97b-cf9c-4ae4-b7ce-f0ef1f5518e4",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council news release confirms the wastewater treatment works planning application was validated and sets out an indicative determination timeline.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Otterpool Park development area (utilities infrastructure: wastewater treatment works), Folkestone and Hythe",
+    "locationSource": "Folkestone & Hythe District Council news release about validation of the wastewater treatment works planning application",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Otterpool Park Wastewater Treatment Works planning application validated",
+        "source": "Folkestone & Hythe District Council",
+        "url": "https://www.folkestone-hythe.gov.uk/news/article/365/otterpool-park-wastewater-treatment-works-planning-application-validated",
+        "datePublished": "2025-02-25",
+        "summary": "Council announcement confirming the planning application for the Otterpool Park wastewater treatment works was validated and describing the next steps and indicative determination timescales."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000138-cornhill-market-refurbished-reopened",
+    "title": "Cornhill Market, Lincoln: refurbished market hall reopens for traders",
+    "description": "A refurbished Cornhill Market in Lincoln city centre reopened for traders and new businesses, reflecting a city-centre regeneration investment in a key civic and commercial asset.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "45831c76-dafc-4769-8a03-85a7c1623627",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "External community report references traders opening in the refurbished Cornhill Market in May 2024.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Cornhill Market, Lincoln city centre",
+    "locationSource": "Lincoln City Foundation post describing business opening in the refurbished Cornhill Market",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "ESOL learner opens new business in refurbished Cornhill Market",
+        "source": "Lincoln City Foundation",
+        "url": "https://www.lincolncityfoundation.com/post/esol-learner-opens-new-business-in-refurbished-cornhill-market",
+        "datePublished": "2024-06-24",
+        "summary": "Article describing a trader opening a business in the refurbished Cornhill Market and referencing the market’s reopening period in May 2024."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000195-newcastle-town-centre-regeneration-sites-ready-to-progress",
+    "title": "Newcastle-under-Lyme: regeneration sites and schemes approved to progress (contracts programme)",
+    "description": "Newcastle-under-Lyme Borough Council reported that a package of regeneration sites and schemes across the borough had been approved to progress through procurement and delivery steps, supported by contract approvals and programme funding.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "4c223c00-c1eb-43d7-9c49-0e05626166bf",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council news release states regeneration sites are ready to progress and references contract approvals and next steps.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Multiple borough regeneration sites including Newcastle town centre (programme of sites/schemes), Newcastle-under-Lyme",
+    "locationSource": "Newcastle-under-Lyme Borough Council news release about regeneration sites being ready to progress",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "£85 million of regeneration sites ready to progress",
+        "source": "Newcastle-under-Lyme Borough Council",
+        "url": "https://www.newcastle-staffs.gov.uk/news/article/471/85-million-of-regeneration-sites-ready-to-progress",
+        "datePublished": "2025-03-14",
+        "summary": "Council announcement outlining a regeneration programme and stating that sites are ready to progress, referencing the approval of contracts and programme delivery steps."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e08000005-rochdale-st-marys-gate-crossing-complete",
+    "title": "St Mary’s Gate, Rochdale: new pedestrian crossing completed",
+    "description": "Rochdale Borough Council completed a new pedestrian crossing on St Mary’s Gate in Rochdale town centre, intended to improve pedestrian connectivity as part of wider public realm and town centre improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "4df67854-7f50-4b8d-b431-93adfdd800dc",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Council news confirms the crossing is complete and open.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "St Mary’s Gate, Rochdale town centre",
+    "locationSource": "Rochdale Borough Council news release announcing completion of the St Mary’s Gate crossing",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "St Mary’s Gate crossing complete",
+        "source": "Rochdale Borough Council",
+        "url": "https://www.rochdale.gov.uk/news/article/1158/st-marys-gate-crossing-complete",
+        "datePublished": "2025-04-10",
+        "summary": "Council announcement stating the new pedestrian crossing on St Mary’s Gate in Rochdale is complete, improving access and connectivity."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e06000066-bridgwater-tidal-barrier-jack-up-barge-arrival",
+    "title": "Bridgwater Tidal Barrier: arrival of jack-up barge milestone for construction",
+    "description": "A GOV.UK Environment Agency press release confirmed the arrival of a jack-up barge at the Bridgwater Tidal Barrier site, a milestone enabling the next phase of construction for the major flood defence scheme on the River Parrett.",
+    "type": "LOCAL_GOV",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "localAuthorityId": "ebc3c1e0-496e-4ae6-a066-5d6f3d65a565",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Environment Agency press release confirms active construction milestone reached in March 2025.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Bridgwater Tidal Barrier construction site on the River Parrett, Bridgwater, Somerset",
+    "locationSource": "GOV.UK Environment Agency press release about the construction barge arrival at the Bridgwater Tidal Barrier site",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Bridgwater Tidal Barrier sees arrival of giant construction barge",
+        "source": "Environment Agency (GOV.UK)",
+        "url": "https://www.gov.uk/government/news/bridgwater-tidal-barrier-sees-arrival-of-giant-construction-barge",
+        "datePublished": "2025-03-13",
+        "summary": "Environment Agency press release describing the arrival of a jack-up barge to support cofferdam and foundation works at the Bridgwater Tidal Barrier site, confirming a construction milestone."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e06000027-paignton-preston-promenade-coastal-flood-defences",
+    "title": "Paignton and Preston Promenade: coastal flood defences and public realm improvements (developer appointed)",
+    "description": "Torbay Council appointed a developer to deliver improved coastal flood defences and wider public space upgrades along Paignton and Preston Promenade, intended to strengthen resilience to storm damage and flooding while improving the seafront environment.",
+    "type": "LOCAL_GOV",
+    "regionId": "999ffc8b-bbcf-4def-9135-c59e5bcfdffa",
+    "localAuthorityId": "82cc34ae-9c27-4790-b415-124b6faf1593",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Council press release confirms developer appointment and indicates the start of works from September 2025.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Paignton and Preston Promenade seafront, Torbay",
+    "locationSource": "Torbay Council press release announcing appointment for Paignton and Preston Promenade coastal defence improvements",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Developer appointed for improved flood defences at Paignton and Preston Promenade",
+        "source": "Torbay Council",
+        "url": "https://www.torbay.gov.uk/news/pr9338/developer-appointed-for-improved-flood-defences-at-paignton-and-preston-promenade/",
+        "datePublished": "2025-07-22",
+        "summary": "Council press release announcing the appointment of a developer to deliver improved coastal flood defences and public space upgrades along Paignton and Preston Promenade, with works scheduled to begin from September 2025."
+      }
+    ]
+  },
+  {
+    "id": "gm-b006-e07000032-amber-valley-play-area-refurbishment-contract-awarded",
+    "title": "Amber Valley play area refurbishment programme (contract award)",
+    "description": "Amber Valley Borough Council awarded a contract for play area refurbishment works across the district, covering improvements to playground and play equipment assets as part of a planned works programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "9878daec-1cee-4b83-a68e-ce03d8b1d2de",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Contracts Finder notice indicates the contract award and a defined contract period for refurbishment works.",
+    "latitude": null,
+    "longitude": null,
+    "locationDescription": "Play areas across Amber Valley (district-wide programme)",
+    "locationSource": "Contracts Finder contract award notice for Amber Valley Borough Council play area refurbishment",
+    "locationConfidence": "LOW",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Play Area Refurbishment 2025-2026 (contract award notice)",
+        "source": "Contracts Finder",
+        "url": "https://www.contractsfinder.service.gov.uk/Notice/69afef68-2f48-4307-aaf8-2d80c98ca5d0",
+        "datePublished": "2026-01-14",
+        "summary": "Contracts Finder notice recording Amber Valley Borough Council’s award of a contract for play area refurbishment works, including contract period details and scope description for the district-wide programme."
+      }
+    ]
+  }
+]

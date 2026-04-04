@@ -71,24 +71,35 @@ async function recompute() {
 
   const where = projectWhereForMode(mode);
 
-  const projects = await prisma.project.findMany({
+  const projectIds = await prisma.project.findMany({
     where,
-    include: {
-      evidence: {
-        orderBy: {
-          datePublished: 'desc',
-        },
-      },
-      region: true,
-      localAuthority: true,
-    },
+    select: { id: true },
   });
 
   console.log(
-    `Mode: ${mode}. Found ${projects.length} project(s) to evaluate.`
+    `Mode: ${mode}. Found ${projectIds.length} project(s) to evaluate.`
   );
 
-  for (const project of projects) {
+  for (const { id } of projectIds) {
+    let project;
+    try {
+      project = await prisma.project.findUniqueOrThrow({
+        where: { id },
+        include: {
+          evidence: {
+            orderBy: {
+              datePublished: 'desc',
+            },
+          },
+          region: true,
+          localAuthority: true,
+        },
+      });
+    } catch (error) {
+      console.error(`Failed to load project ${id} for evaluation`, error);
+      continue;
+    }
+
     try {
       const evaluation = evaluateProjectDeterministically(
         {

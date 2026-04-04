@@ -1,7 +1,7 @@
 import booleanPointInPolygon from '@turf/boolean-point-in-polygon';
 import { feature, point } from '@turf/helpers';
 import { Prisma } from '@prisma/client';
-import prisma from '@/src/db';
+import prisma from '../db';
 
 type PolygonGeometry = {
   type: 'Polygon' | 'MultiPolygon';

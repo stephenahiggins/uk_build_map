@@ -1,6 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
+const URL_CHECK_CONCURRENCY = 12;
+
 function normalize(value: string): string {
   return value
     .toLowerCase()
@@ -34,6 +36,27 @@ async function urlOk(url: string): Promise<boolean> {
   }
 }
 
+async function mapWithConcurrency<T, R>(
+  items: T[],
+  concurrency: number,
+  worker: (item: T) => Promise<R>
+): Promise<R[]> {
+  const results = new Array<R>(items.length);
+  let nextIndex = 0;
+
+  async function runWorker() {
+    while (nextIndex < items.length) {
+      const currentIndex = nextIndex;
+      nextIndex += 1;
+      results[currentIndex] = await worker(items[currentIndex]);
+    }
+  }
+
+  const workerCount = Math.min(Math.max(concurrency, 1), items.length);
+  await Promise.all(Array.from({ length: workerCount }, () => runWorker()));
+  return results;
+}
+
 function parseArgs() {
   const argv = process.argv.slice(2);
   let globPattern = path.join(process.cwd(), 'seeds', 'codex-batches', 'out', '*.json');
@@ -62,27 +85,45 @@ function expandGlob(pattern: string): string[] {
   const directory = path.dirname(pattern);
   const basename = path.basename(pattern);
   const [prefix, suffix] = basename.split('*');
+  const finalizedBatchFile = /^batch-\d{3}\.json$/;
   if (!fs.existsSync(directory)) return [];
   return fs
     .readdirSync(directory)
     .filter((file) => file.startsWith(prefix) && file.endsWith(suffix || ''))
+    .filter((file) => finalizedBatchFile.test(file))
     .map((file) => path.join(directory, file))
     .sort();
+}
+
+function tryParseJsonArray(file: string): any[] | undefined {
+  try {
+    const payload = JSON.parse(fs.readFileSync(file, 'utf-8'));
+    return Array.isArray(payload) ? payload : undefined;
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.warn(`Skipping unreadable batch output ${file}: ${message}`);
+    return undefined;
+  }
 }
 
 async function main() {
   const { globPattern, output, allowFailedUrls } = parseArgs();
   const files = expandGlob(globPattern);
   if (files.length === 0) {
-    throw new Error(`No batch outputs matched ${globPattern}`);
+    fs.mkdirSync(path.dirname(output), { recursive: true });
+    fs.writeFileSync(output, '[]\n', 'utf-8');
+    console.warn(`No batch outputs matched ${globPattern}; wrote empty merge output to ${output}`);
+    return;
   }
 
   const seen = new Set<string>();
   const merged: any[] = [];
 
   for (const file of files) {
-    const payload = JSON.parse(fs.readFileSync(file, 'utf-8'));
-    if (!Array.isArray(payload)) continue;
+    const payload = tryParseJsonArray(file);
+    if (!payload) {
+      continue;
+    }
 
     for (const project of payload) {
       const dedupeKey = [
@@ -95,21 +136,26 @@ async function main() {
 
       if (!project.title || seen.has(dedupeKey)) continue;
 
-      const nextEvidence = [];
-      for (const evidence of Array.isArray(project.evidence) ? project.evidence : []) {
-        const url = typeof evidence?.url === 'string' ? evidence.url : '';
-        if (!url) {
-          nextEvidence.push(evidence);
-          continue;
-        }
-        if (!/^https?:\/\//i.test(url)) {
-          if (allowFailedUrls) continue;
-          continue;
-        }
-        if (allowFailedUrls || (await urlOk(url))) {
-          nextEvidence.push(evidence);
-        }
-      }
+      const projectEvidence: any[] = Array.isArray(project.evidence) ? project.evidence : [];
+      const nextEvidence = (
+        await mapWithConcurrency<any, any | undefined>(
+          projectEvidence,
+          URL_CHECK_CONCURRENCY,
+          async (evidence) => {
+            const url = typeof evidence?.url === 'string' ? evidence.url : '';
+            if (!url) {
+              return evidence;
+            }
+            if (!/^https?:\/\//i.test(url)) {
+              return undefined;
+            }
+            if (allowFailedUrls || (await urlOk(url))) {
+              return evidence;
+            }
+            return undefined;
+          }
+        )
+      ).filter((evidence): evidence is NonNullable<typeof evidence> => Boolean(evidence));
 
       seen.add(dedupeKey);
       merged.push({

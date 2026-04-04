@@ -1,0 +1,522 @@
+[
+  {
+    "id": "gm-b007-e07000071-fieldgate-quay-restoration-phase-2",
+    "title": "Phase 2 of Fieldgate Quay restoration: renaturalising the River Colne riverbank",
+    "description": "Colchester City Council began Phase 2 of its Fieldgate Quay restoration project, focused on re-naturalising a remaining stretch of riverbank along the River Colne to improve the quay environment and habitat.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "5debc648-a144-4627-aac6-84e5b9973a9f",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Phase 2 has started, with delivery dependent on successful completion of construction and ecological works.",
+    "locationDescription": "Fieldgate Quay, River Colne waterfront, Colchester",
+    "locationSource": "Colchester City Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Phase 2 of Fieldgate Quay restoration begins",
+        "source": "Colchester City Council",
+        "url": "https://www.colchester.gov.uk/latest-news/phase-2-of-fieldgate-quay-restoration-begins/",
+        "datePublished": "2025-11-19",
+        "summary": "Council announcement confirming the start of Phase 2 works at Fieldgate Quay, describing the focus on re-naturalising the riverbank and the scale of the remaining stretch."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000228-burgess-hill-the-arc-community-sports-centre-open",
+    "title": "Burgess Hill: The Arc community sports centre opens",
+    "description": "Mid Sussex District Council reported the opening of The Arc, a new outdoor community sports centre in Burgess Hill delivered in partnership with Homes England, providing floodlit and multi-sport pitches and supporting facilities.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "16483efb-f5b8-40b7-a5ee-92de3bb4daf4",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The facility has opened and is in use.",
+    "locationDescription": "The Arc, Burgess Hill, Mid Sussex",
+    "locationSource": "Mid Sussex District Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "A win for Burgess Hill: new community sports centre now open",
+        "source": "Mid Sussex District Council",
+        "url": "https://www.midsussex.gov.uk/about-us/latest-news/a-win-for-burgess-hill-new-community-sports-centre-now-open/",
+        "datePublished": "2025-09-30",
+        "summary": "Council update announcing the opening of The Arc in Burgess Hill, listing the sports pitches and supporting facilities delivered through the project."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000147-mundesley-coastal-management-scheme-completed",
+    "title": "Mundesley Coastal Management Scheme completion: seawall strengthening and rock berm",
+    "description": "North Norfolk District Council confirmed completion of the Mundesley Coastal Management Scheme, including works designed to protect the seafront and assets through measures such as rock placement and seawall-related improvements.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "455ee169-1b26-48ec-bb4c-e27f54121c08",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council has reported the scheme as completed.",
+    "locationDescription": "Mundesley seafront, North Norfolk",
+    "locationSource": "North Norfolk District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Mundesley Coastal Management Scheme completed",
+        "source": "North Norfolk District Council",
+        "url": "https://www.north-norfolk.gov.uk/news/2025/july/mundesley-coastal-management-scheme-completed/",
+        "datePublished": "2025-07-10",
+        "summary": "Council update confirming completion of coastal management works at Mundesley and summarising how the scheme helps protect the seafront and local assets."
+      },
+      {
+        "type": "URL",
+        "title": "Cromer and Mundesley schemes nearing completion",
+        "source": "North Norfolk District Council",
+        "url": "https://www.north-norfolk.gov.uk/news/2024/december/cromer-and-mundesley-schemes-nearing-completion/",
+        "datePublished": "2024-12-13",
+        "summary": "Council update describing ongoing construction activities and expected completion timeframe for the Cromer and Mundesley coastal schemes, including the role of the rock berm in protecting the seawall."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e08000013-st-helens-town-centre-transformation-investment-plan",
+    "title": "St Helens Town Centre Transformation: investment plan approval and transport interchange delivery",
+    "description": "St Helens Borough Council reported approval of an investment plan to transform St Helens Town Centre, alongside delivery of a new St Helens Transport Interchange as a key regeneration project for the town centre.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "9db29c9f-fb30-42d5-b6a2-4de7303bc610",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The investment plan has been approved, with delivery progressing through subsequent procurement and construction phases including the transport interchange build.",
+    "locationDescription": "St Helens Town Centre and St Helens Transport Interchange (adjacent to St Helens Central Station), St Helens",
+    "locationSource": "St Helens Borough Council and Liverpool City Region Combined Authority",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Investment plan to transform St Helens Town Centre approved",
+        "source": "St Helens Borough Council",
+        "url": "https://www.sthelens.gov.uk/news/2025/december/investment-plan-to-transform-st-helens-town-centre-approved/",
+        "datePublished": "2025-12-08",
+        "summary": "Council announcement confirming approval of an investment plan to transform St Helens Town Centre, describing the intended regeneration outcomes."
+      },
+      {
+        "type": "URL",
+        "title": "Major improvement works at St Helens Transport Interchange set to begin",
+        "source": "St Helens Borough Council",
+        "url": "https://www.sthelens.gov.uk/news/2025/october/major-improvement-works-at-st-helens-transport-interchange-set-to-begin/",
+        "datePublished": "2025-10-18",
+        "summary": "Council update outlining the start of construction-related activity to deliver a new St Helens Transport Interchange as part of town centre regeneration."
+      },
+      {
+        "type": "URL",
+        "title": "Strong foundations: groundworks move forward on St Helens Transport Interchange",
+        "source": "Liverpool City Region Combined Authority",
+        "url": "https://www.liverpoolcityregion-ca.gov.uk/news/strong-foundations-groundworks-move-forward-on-st-helens-transport-interchange",
+        "datePublished": "2025-11-19",
+        "summary": "Combined authority update describing groundworks and piling activity for the transport interchange and linking the project to town centre regeneration and funding."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e06000021-fowlea-brook-flood-risk-management-scheme",
+    "title": "Fowlea Brook Flood Risk Management Scheme: flood defences upgrade completed",
+    "description": "The Environment Agency completed the Fowlea Brook Flood Risk Management Scheme in Stoke-on-Trent, delivering upgraded flood defences intended to reduce flood risk for hundreds of properties and support regeneration opportunities.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "b5c82f1a-f6dd-455c-b215-d179931976f7",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The scheme has been publicly reported as completed by the Environment Agency.",
+    "locationDescription": "Fowlea Brook flood corridor, Stoke-on-Trent",
+    "locationSource": "Environment Agency (GOV.UK press release)",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Major flood risk management scheme completed in Stoke-on-Trent",
+        "source": "Environment Agency (GOV.UK)",
+        "url": "https://www.gov.uk/government/news/major-flood-risk-management-scheme-completed-in-stoke-on-trent",
+        "datePublished": "2026-02-06",
+        "summary": "Environment Agency press release announcing completion of the Fowlea Brook flood scheme, summarising measures delivered and the stated scale of flood risk reduction and regeneration benefits."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000113-cockleshell-walk-sheerness-council-homes",
+    "title": "Sheerness: Cockleshell Walk development delivers 51 homes for social rent and shared ownership",
+    "description": "Swale Borough Council reported completion of the Cockleshell Walk development in Sheerness, delivering 51 homes for social rent and shared ownership as part of council housing delivery activity.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "79fd5cc0-d051-4fff-b14d-2b091a17ae1f",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council has reported the homes as built and completed.",
+    "locationDescription": "Cockleshell Walk, Sheerness, Swale",
+    "locationSource": "Swale Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Cockleshell Walk: Sheerness’ 51 new homes built for social rent and shared ownership",
+        "source": "Swale Borough Council",
+        "url": "https://news.swale.gov.uk/news/cockleshell-walk-sheerness-51-new-homes-built-for-social-rent-and-shared-ownership",
+        "datePublished": "2026-03-10",
+        "summary": "Council update announcing completion of the Cockleshell Walk scheme and confirming the number of homes delivered for social rent and shared ownership."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000215-tandridge-social-housing-decarbonisation-fund-wave-2-2-retrofit",
+    "title": "Tandridge housing decarbonisation: SHDF Wave 2.2 retrofit programme for council homes",
+    "description": "Tandridge District Council governance papers set out capital programme funding in the Housing Revenue Account supported by the Social Housing Decarbonisation Fund, alongside proposals to appoint contractors to deliver retrofit works to council homes.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "342d04fd-d711-44d1-811d-2dd7a28bc365",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Funding and programme approvals have been set out in council papers, with delivery dependent on procurement and completion of works across the housing stock.",
+    "locationDescription": "Council housing stock across Tandridge District",
+    "locationSource": "Tandridge District Council",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Public Document Pack (Strategy & Resources Committee, 26 September 2024)",
+        "source": "Tandridge District Council (ModernGov)",
+        "url": "https://tandridge.moderngov.co.uk/documents/g1396/Public%20reports%20pack%2026th-Sep-2024%2019.30%20Strategy%20Resources%20Committee.pdf?T=10",
+        "datePublished": "2024-09-26",
+        "summary": "Committee report pack referencing additions to the 2024/25 capital programme including Housing Revenue Account funding supported by the Social Housing Decarbonisation Fund, and describing programme and budget implications."
+      },
+      {
+        "type": "URL",
+        "title": "Social Housing Decarbonisation Fund Wave 2.2 successful bids",
+        "source": "GOV.UK",
+        "url": "https://www.gov.uk/government/publications/social-housing-decarbonisation-fund-wave-22-successful-bids/social-housing-decarbonisation-fund-wave-22-successful-bids",
+        "datePublished": "2024-03-18",
+        "summary": "Government publication listing successful SHDF Wave 2.2 bids and grant allocations for delivery from 2024 to 2026."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000103-watford-police-station-shady-lane-mixed-use-redevelopment",
+    "title": "Watford Police Station / Magistrates Court site: mixed-use redevelopment recommendation for approval",
+    "description": "Watford Borough Council planning committee papers set out a major full planning application for redevelopment of the Watford Police Station site (Shady Lane / Clarendon Road) as a phased mixed-use scheme, including residential, office and retail uses with new public realm and associated works.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "76c1ad20-5680-40ad-9485-cd47cfd4fdd3",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning committee documentation recommended granting permission subject to a Section 106 agreement and conditions, with delivery dependent on final approvals and mobilisation.",
+    "locationDescription": "Watford Police Station site, 2 Shady Lane / Clarendon Road area, Watford WD17 1DD",
+    "locationSource": "Watford Borough Council (ModernGov planning report)",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning committee report: 24/00615/FULM Watford Police Station, 2 Shady Lane (major full application)",
+        "source": "Watford Borough Council (ModernGov)",
+        "url": "https://watford.moderngov.co.uk/documents/s49838/2400615FULM%2BWatford%2BPolice%2BStation%2B2%2BShady%2BLane%2BWatford%2BWD17%2B1DD.pdf",
+        "datePublished": "2025-03-04",
+        "summary": "Committee report describing the mixed-use redevelopment proposal, site context, and a recommendation that planning permission be granted subject to a legal agreement and conditions."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000199-tamworth-future-high-streets-fund-programme-completion",
+    "title": "Tamworth town centre: Future High Streets Fund regeneration programme completion and heritage restoration contract",
+    "description": "Tamworth Borough Council reported completion of major works across its Future High Streets Fund regeneration programme, including public realm and key projects, and appointed a specialist contractor for restoration of Grade II listed Market Street properties as the final project phase.",
+    "type": "LOCAL_GOV",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "localAuthorityId": "c9e5ea3e-c751-4789-bb68-580befd37617",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council has reported major works as complete, with remaining heritage elements moving into delivery through awarded contracts.",
+    "locationDescription": "Tamworth town centre (Market Street / Castle Gateway / St Editha’s Square), Tamworth",
+    "locationSource": "Tamworth Borough Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Ambitious regeneration programme delivers transformed town centre for Tamworth",
+        "source": "Tamworth Borough Council",
+        "url": "https://www.tamworth.gov.uk/ambitious-regeneration-programme-delivers-transformed-town-centre-tamworth",
+        "datePublished": "2025-12-22",
+        "summary": "Council announcement stating completion of major works under the Future High Streets Fund programme and summarising delivered projects and public realm connections."
+      },
+      {
+        "type": "URL",
+        "title": "Heritage conservation specialists appointed to restore historic Market Street properties",
+        "source": "Tamworth Borough Council",
+        "url": "https://www.tamworth.gov.uk/heritage-conservation-specialists-appointed-restore-historic-market-street-properties",
+        "datePublished": "2025-12-02",
+        "summary": "Council update confirming appointment of a contractor to restore Grade II listed Market Street properties as part of the regeneration programme, with expected works start in Spring 2026."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000117-burnley-town2turf-active-travel-corridor-completed",
+    "title": "Burnley Town2Turf active travel corridor: public realm and crossings between Turf Moor and the town centre",
+    "description": "Lancashire County Council reported completion of the Town2Turf scheme in Burnley, funded by the UK Government with match funding from Burnley Borough Council, delivering pedestrian-focused highway and public realm changes to improve links between Turf Moor and Burnley town centre.",
+    "type": "LOCAL_GOV",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "localAuthorityId": "175678cf-60cf-473c-8ddc-ddf99e6c46ae",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "Completion has been publicly reported by delivery partners.",
+    "locationDescription": "Yorkshire Street / Centenary Way / Harry Potts Way corridor between Burnley town centre and Turf Moor, Burnley",
+    "locationSource": "Lancashire County Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Work is finished on Burnley's Town to Turf scheme",
+        "source": "Lancashire County Council",
+        "url": "https://news.lancashire.gov.uk/news/work-is-finished-on-burnleys-town-to-turf-scheme",
+        "datePublished": "2024-08-09",
+        "summary": "County council update confirming completion of the Town2Turf project, describing works to crossings, pavements and junctions and noting Burnley Borough Council’s match funding."
+      },
+      {
+        "type": "URL",
+        "title": "Latest information on Burnley's Town 2 Turf 'Levelling Up' scheme",
+        "source": "Burnley Express",
+        "url": "https://www.burnleyexpress.net/news/transport/latest-information-on-burnleys-town-2-turf-levelling-up-scheme-4641302",
+        "datePublished": "2024-05-24",
+        "summary": "Local reporting citing council information on the scheme schedule and upcoming works, describing project scope and partners."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000035-ashbourne-reborn-highways-and-public-realm",
+    "title": "Ashbourne Reborn: highways and public realm works with updated phasing",
+    "description": "Derbyshire Dales District Council published updated phasing plans for the Ashbourne Reborn Highways and Public Realm project, with highways delivery led by Derbyshire County Council and coordinated as part of the wider Ashbourne Reborn programme.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "477bad74-9175-4081-aa92-ba38262782bf",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Works were reported as well under way with phased delivery and completion dependent on final construction and surfacing stages.",
+    "locationDescription": "Ashbourne town centre public realm and highways corridors (Ashbourne Reborn programme), Derbyshire Dales",
+    "locationSource": "Derbyshire Dales District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Phasing Plans December 2025 (Ashbourne Reborn)",
+        "source": "Derbyshire Dales District Council",
+        "url": "https://dev3.derbyshiredales.gov.uk/community/ashbourne-reborn/latest-news/phasing-plans-december-2025",
+        "datePublished": "2025-12-10",
+        "summary": "Council update providing revised phasing information for the highways and public realm works in Ashbourne, including indicative programme dates and current status of sections."
+      },
+      {
+        "type": "URL",
+        "title": "The Link Centre milestones (Ashbourne Reborn)",
+        "source": "Derbyshire Dales District Council",
+        "url": "https://dev3.derbyshiredales.gov.uk/community/ashbourne-reborn/latest-news/the-link-centre-milestones",
+        "datePublished": "2025-12-17",
+        "summary": "Council update describing milestones for the Link Centre element of the Ashbourne Reborn programme and its relationship to wider town centre regeneration activity."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000180-wantage-leisure-centre-reception-refurbishment",
+    "title": "Wantage Leisure Centre reception refurbishment completed",
+    "description": "Vale of White Horse District Council reported completion of a refurbishment of the reception area at Wantage Leisure Centre, delivering upgraded customer facilities and access systems as part of investment in the civic leisure estate.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "57fdb475-af3a-4bef-96c8-447b65bd627e",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The refurbishment has been reported as complete by the council.",
+    "locationDescription": "Wantage Leisure Centre, Wantage, Vale of White Horse",
+    "locationSource": "Vale of White Horse District Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Reception refurbishment completed at Wantage Leisure Centre",
+        "source": "Vale of White Horse District Council",
+        "url": "https://www.whitehorsedc.gov.uk/vale-of-white-horse-district-council/reception-refurbishment-completed-at-wantage-leisure-centre/",
+        "datePublished": "2026-01-29",
+        "summary": "Council update confirming completion of reception refurbishment works at Wantage Leisure Centre and describing the improvements delivered."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000096-hemel-health-campus-feasibility-business-case",
+    "title": "Hemel Health Campus: council-funded feasibility and programme leadership appointment",
+    "description": "Dacorum Borough Council reported progress on proposals for a Hemel Health Campus in Hemel Hempstead town centre, including cabinet-backed feasibility funding, with NHS partners later appointing a programme director to advance option appraisal and engagement.",
+    "type": "LOCAL_GOV",
+    "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
+    "localAuthorityId": "dfa0cab3-b5ed-4352-8df2-0a5e42065d78",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Feasibility and business case work is progressing with partner governance and appointments, with delivery dependent on option selection, funding and subsequent approvals.",
+    "locationDescription": "Market Square site / Hemel Hempstead town centre (Hemel Health Campus proposals), Hemel Hempstead",
+    "locationSource": "Dacorum Borough Council and West Hertfordshire Teaching Hospitals NHS Trust",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Partnership makes progress on Hemel Health Campus",
+        "source": "Dacorum Borough Council",
+        "url": "https://webdev.dacorum.gov.uk/home/all-news/2024/08/01/partnership-makes-progress-on-hemel-health-campus",
+        "datePublished": "2024-08-01",
+        "summary": "Council update describing cabinet recommendations to allocate feasibility funding for the Hemel Health Campus proposal and outlining intended town centre regeneration and service benefits."
+      },
+      {
+        "type": "URL",
+        "title": "Hemel Hempstead Health Campus programme director takes up role",
+        "source": "West Hertfordshire Teaching Hospitals NHS Trust",
+        "url": "https://www.westhertshospitals.nhs.uk/about-us/news/hemel-hempstead-health-campus-programme-director-takes-role",
+        "datePublished": "2025-02-14",
+        "summary": "NHS trust update confirming appointment of a programme director in a shared role with Dacorum Borough Council and the ICB to advance Health Campus proposals, engagement and option appraisal."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e09000013-earls-court-hybrid-planning-approval-lbhf",
+    "title": "Earls Court redevelopment: LBHF Planning and Development Control Committee approval (hybrid application)",
+    "description": "Public meeting information indicates that Hammersmith & Fulham’s Planning and Development Control Committee approved a hybrid planning application for a large mixed-use regeneration scheme at Earls Court, subject to conditions, legal agreements, and referral to the Mayor of London.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "f5a751c5-f5ae-432d-a898-4cff1275795a",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Committee approval has been reported, with further steps required including legal agreements, mayoral referral and phased delivery over multiple years.",
+    "locationDescription": "Earls Court / West Kensington redevelopment area (land bounded by North End Road, West Cromwell Road, West London Railway Line and Lillie Road), London",
+    "locationSource": "Public committee meeting information and developer reporting",
+    "locationConfidence": "MEDIUM",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning and Development Control Committee meeting (Earls Court hybrid application) - 26 November 2025",
+        "source": "Open Council Network (Hammersmith and Fulham)",
+        "url": "https://opencouncil.network/meetings/87210",
+        "datePublished": "2025-11-26",
+        "summary": "Meeting record summarising the committee discussion and vote to approve the Earls Court hybrid planning application, subject to conditions, a legal agreement and referral to the Mayor of London."
+      },
+      {
+        "type": "URL",
+        "title": "Earls Court plans approved by Hammersmith & Fulham planning committee",
+        "source": "Delancey",
+        "url": "https://www.delancey.com/2025/11/earls-court-plans-approved-by-hammersmith-fulham-planning-committee/",
+        "datePublished": "2025-11-28",
+        "summary": "Developer update reporting the planning committee decision for the Earls Court redevelopment and summarising the scheme scope and next steps."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e09000017-platinum-jubilee-leisure-centre-completion",
+    "title": "Platinum Jubilee Leisure Centre, West Drayton: completion marked and handover to operator",
+    "description": "Hillingdon Council marked the completion of its new Platinum Jubilee Leisure Centre in West Drayton, with the building handed over to Greenwich Leisure Limited (GLL) to operate the facility ahead of public opening.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "fdc9a069-655c-42a5-8f80-818a34506c18",
+    "createdById": 1,
+    "status": "GREEN",
+    "statusRationale": "The council has reported completion and handover of the facility, with opening preparations underway.",
+    "locationDescription": "Platinum Jubilee Leisure Centre, West Drayton (Yiewsley and West Drayton), London Borough of Hillingdon",
+    "locationSource": "Hillingdon Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Council unveils new, state-of-the-art leisure centre",
+        "source": "Hillingdon Council",
+        "url": "https://pre.hillingdon.gov.uk/news/article/256/council-unveils-new-state-of-the-art-leisure-centre",
+        "datePublished": "2026-02-06",
+        "summary": "Council announcement marking completion of the Platinum Jubilee Leisure Centre in West Drayton and describing the handover to operator GLL."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e07000039-swadlincote-town-centre-masterplan-and-civic-site-project",
+    "title": "Swadlincote: town centre masterplan and new leisure centre / civic offices programme progression",
+    "description": "South Derbyshire District Council commissioned a Swadlincote Town Centre Masterplan with a focus on regeneration and the future of the civic site, while also progressing proposals for a new leisure centre and civic offices intended to unlock regeneration opportunities in the town centre.",
+    "type": "LOCAL_GOV",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "localAuthorityId": "31455f7b-45c1-43a5-98ef-9c65fd7472ca",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Masterplanning and programme approvals have been reported, with delivery dependent on completion of masterplan work, detailed design, procurement and construction.",
+    "locationDescription": "Swadlincote town centre and civic site (Green Bank Leisure Centre / Civic Offices), South Derbyshire",
+    "locationSource": "South Derbyshire District Council and Find a Tender",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Transformative new leisure centre and civic offices project moves closer to reality",
+        "source": "South Derbyshire District Council",
+        "url": "https://www.southderbyshire.gov.uk/news/2025/jan/transformative-new-leisure-centre-and-civic-offices-project-moves-closer-to-reality",
+        "datePublished": "2025-01-22",
+        "summary": "Council update describing progression of proposals for a new leisure centre and civic office complex and how the project is intended to unlock regeneration opportunities."
+      },
+      {
+        "type": "URL",
+        "title": "SWADLINCOTE TOWN CENTRE MASTERPLAN (tender notice)",
+        "source": "Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/016364-2025",
+        "datePublished": "2025-04-22",
+        "summary": "UK procurement notice for commissioning a Swadlincote Town Centre Masterplan, including scope focused on strategic redevelopment of the civic centre site and long-term regeneration and infrastructure development."
+      },
+      {
+        "type": "URL",
+        "title": "Masterplan for Swadlincote Town Centre",
+        "source": "South Derbyshire District Council",
+        "url": "https://www.southderbyshire.gov.uk/news/2025/aug/masterplan-for-swadlincote-town-centre",
+        "datePublished": "2025-08-28",
+        "summary": "Council announcement confirming appointment of consultants to lead the Swadlincote town centre masterplanning work and describing its intended focus areas."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e09000029-london-cancer-hub-expansion-planning-approval",
+    "title": "London Cancer Hub expansion: planning approval secured for major life sciences development",
+    "description": "The London Borough of Sutton reported that planning approval was granted for a major expansion of the London Cancer Hub, including new laboratory and research space and associated public realm and key worker housing elements.",
+    "type": "LOCAL_GOV",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "localAuthorityId": "4913c47e-4926-4305-ba51-1f01707f1d0b",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "Planning consent has been reported, with delivery dependent on detailed design, procurement, and phased construction.",
+    "locationDescription": "London Cancer Hub district, Sutton (around The Institute of Cancer Research and The Royal Marsden campus)",
+    "locationSource": "London Borough of Sutton",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Planning approval secured for London Cancer Hub, paving the way for next stage of growth and innovation on site",
+        "source": "London Borough of Sutton",
+        "url": "https://www.sutton.gov.uk/w/planning-approval-secured-for-london-cancer-hub-paving-the-way-for-next-stage-of-growth-and-innovation-on-site",
+        "datePublished": "2026-02-04",
+        "summary": "Council announcement confirming planning approval for the London Cancer Hub expansion and summarising scale, intended benefits and components of the development."
+      }
+    ]
+  },
+  {
+    "id": "gm-b007-e06000037-west-berkshire-highway-improvement-programme-2025-26",
+    "title": "West Berkshire 2025/26 Highway Improvement Programme: roads, drainage and sustainable transport investment",
+    "description": "West Berkshire Council approved its 2025/26 Highway Improvement Programme (HIP), setting out a capital programme of road resurfacing, drainage maintenance and improvements, and investments linked to sustainable transport and flood resilience.",
+    "type": "LOCAL_GOV",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "localAuthorityId": "5d1ac344-2735-4c65-8dab-54b3e922fcb7",
+    "createdById": 1,
+    "status": "AMBER",
+    "statusRationale": "The programme has been approved, with delivery dependent on mobilisation and completion of individual schemes across the year.",
+    "locationDescription": "West Berkshire highway network (district-wide programme of works)",
+    "locationSource": "West Berkshire Council",
+    "locationConfidence": "HIGH",
+    "evidence": [
+      {
+        "type": "URL",
+        "title": "Ambitious Highway Improvement Programme for the coming year",
+        "source": "West Berkshire Council",
+        "url": "https://www.westberks.gov.uk/article/44393/Ambitious-Highway-Improvement-Programme-for-the-coming-year",
+        "datePublished": "2025-04-07",
+        "summary": "Council update confirming approval of the 2025/26 Highway Improvement Programme and summarising investments in roads, drainage, sustainable transport and flood resilience-related works."
+      }
+    ]
+  }
+]

@@ -6,8 +6,8 @@ Research under-covered local authorities using deterministic, public-source evid
 
 | localAuthorityId | name | code | regionName | countryCode |
 |------------------|------|------|------------|-------------|
-| fcc7d3c8-0128-45b7-9f31-9c6bdc209cca | Newcastle upon Tyne | E08000021 | North East | ENGLAND |
-| bbcdedd5-a1fa-4555-94e4-7bc38591a29d | Bromley | E09000006 | London | ENGLAND |
+| 861eed51-03df-41c1-bf31-c834ccb4bd5f | Coventry | E08000026 | West Midlands | ENGLAND |
+| 24578131-915e-4e3e-a16c-bf08b745e434 | Elmbridge | E07000207 | South East | ENGLAND |
 | 0a7eec36-8501-4ac4-94fa-b6307157e0c0 | Dorset | E06000059 | South West | ENGLAND |
 | e01658e6-54f1-4d6c-9948-0426515f110c | Medway | E06000035 | South East | ENGLAND |
 | 5e98d753-9efc-435b-af85-566487322ae2 | Preston | E07000123 | North West | ENGLAND |
@@ -15,11 +15,11 @@ Research under-covered local authorities using deterministic, public-source evid
 | d946cf16-c1dd-48f0-8ad1-b1f5605f43d8 | Hinckley and Bosworth | E07000132 | East Midlands | ENGLAND |
 | c8342b98-d53e-4234-b1a5-3103487c2009 | Sheffield | E08000019 | Yorkshire and the Humber | ENGLAND |
 | 991a2631-5af6-4f86-bd50-5031229ec62d | Bournemouth, Christchurch and Poole | E06000058 | South West | ENGLAND |
-| 39c841e8-274c-4a3d-b0ce-ff7218c2c6c3 | Wyre Forest | E07000239 | West Midlands | ENGLAND |
 | fe0e49eb-12d2-47cd-872d-67ac9ee31036 | Leicester | E06000016 | East Midlands | ENGLAND |
+| 39c841e8-274c-4a3d-b0ce-ff7218c2c6c3 | Wyre Forest | E07000239 | West Midlands | ENGLAND |
 | 9ad351cc-4523-4686-a05c-1caf186c0083 | Gateshead | E08000037 | North East | ENGLAND |
-| 90d5f587-9e3a-4439-ba00-fb44ebd20573 | Hackney | E09000012 | London | ENGLAND |
 | c0410e92-f833-49c2-8e5f-84f5d4754cd8 | Nottingham | E06000018 | East Midlands | ENGLAND |
+| 90d5f587-9e3a-4439-ba00-fb44ebd20573 | Hackney | E09000012 | London | ENGLAND |
 | 0192253e-0ea6-4a2b-a195-1065b63f5acb | Wakefield | E08000036 | Yorkshire and the Humber | ENGLAND |
 | ae2526bd-34ae-489f-a153-bcbdeca3f463 | Barnsley | E08000016 | Yorkshire and the Humber | ENGLAND |
 | f34a541e-702a-4cf2-92a9-eb6660ad8483 | Basildon | E07000066 | East of England | ENGLAND |
