@@ -1,0 +1,168 @@
+name: Deploy (DigitalOcean)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - "deploy/digitalocean/**"
+      - ".github/workflows/deploy-digitalocean.yml"
+      - "deploy/docker/**"
+      - "deploy/docker-compose.yml"
+      - "deploy/env/**"
+      - "backend/**"
+      - "frontend/**"
+
+jobs:
+  test:
+    name: Build checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Backend TypeScript build
+        working-directory: backend
+        run: npm run build
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Frontend production build
+        working-directory: frontend
+        run: npm run build
+
+  build:
+    name: Build and publish images
+    runs-on: ubuntu-latest
+    needs: test
+    env:
+      IMAGE_TAG: ${{ github.sha }}
+    outputs:
+      owner: ${{ steps.vars.outputs.owner }}
+      backend_image: ${{ steps.vars.outputs.backend_image }}
+      frontend_image: ${{ steps.vars.outputs.frontend_image }}
+      image_tag: ${{ env.IMAGE_TAG }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Derive image names
+        id: vars
+        run: |
+          owner="${{ github.repository_owner }}"
+          owner_lower=$(echo "$owner" | tr '[:upper:]' '[:lower:]')
+          echo "owner=$owner_lower" >> $GITHUB_OUTPUT
+          echo "backend_image=ghcr.io/$owner_lower/growthmap-backend" >> $GITHUB_OUTPUT
+          echo "frontend_image=ghcr.io/$owner_lower/growthmap-frontend" >> $GITHUB_OUTPUT
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push backend image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: deploy/docker/backend.Dockerfile
+          push: true
+          tags: |
+            ${{ steps.vars.outputs.backend_image }}:${{ env.IMAGE_TAG }}
+            ${{ steps.vars.outputs.backend_image }}:latest
+
+      - name: Build and push frontend image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: deploy/docker/frontend.Dockerfile
+          push: true
+          build-args: |
+            REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}
+          tags: |
+            ${{ steps.vars.outputs.frontend_image }}:${{ env.IMAGE_TAG }}
+            ${{ steps.vars.outputs.frontend_image }}:latest
+
+  deploy:
+    name: Apply infrastructure & release (DigitalOcean)
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: production
+      url: https://growthmap.uk
+    env:
+      TF_VAR_do_token: ${{ secrets.DO_API_TOKEN }}
+      TF_VAR_ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: false
+
+      - name: Terraform init
+        run: terraform -chdir=deploy/digitalocean/terraform init
+
+      - name: Terraform apply
+        run: terraform -chdir=deploy/digitalocean/terraform apply -auto-approve
+
+      - name: Capture droplet IP
+        id: tf
+        run: |
+          ip=$(terraform -chdir=deploy/digitalocean/terraform output -raw droplet_ipv4)
+          echo "server_ip=$ip" >> $GITHUB_OUTPUT
+
+      - name: Copy docker-compose file
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ steps.tf.outputs.server_ip }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "deploy/docker-compose.yml"
+          target: "/opt/lfg/"
+
+      - name: Deploy stack
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ steps.tf.outputs.server_ip }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            set -euo pipefail
+            mkdir -p /opt/lfg/env
+            cat <<'EOF' > /opt/lfg/.env
+            BACKEND_IMAGE=${{ needs.build.outputs.backend_image }}
+            FRONTEND_IMAGE=${{ needs.build.outputs.frontend_image }}
+            IMAGE_TAG=${{ needs.build.outputs.image_tag }}
+            EOF
+            cat <<'EOF' > /opt/lfg/env/backend.env
+            ${{ secrets.BACKEND_ENV }}
+            EOF
+            cat <<'EOF' > /opt/lfg/env/mysql.env
+            ${{ secrets.MYSQL_ENV }}
+            EOF
+            cat <<'EOF' > /opt/lfg/env/caddy.env
+            ${{ secrets.CADDY_ENV }}
+            EOF
+            echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ needs.build.outputs.owner }} --password-stdin
+            cd /opt/lfg
+            docker compose pull
+            docker compose up -d --remove-orphans

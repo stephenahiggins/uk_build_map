@@ -1,0 +1,25 @@
+{
+  email {$ACME_EMAIL}
+}
+
+{$PRIMARY_DOMAIN} {
+  encode gzip
+
+  handle_path /api/* {
+    reverse_proxy {$BACKEND_ORIGIN}
+  }
+
+  handle_path /uploads/* {
+    reverse_proxy {$BACKEND_ORIGIN}
+  }
+
+  handle {
+    root * /srv
+    try_files {path} /index.html
+    file_server
+  }
+}
+
+{$API_DOMAIN} {
+  reverse_proxy {$BACKEND_ORIGIN}
+}
