@@ -30,50 +30,69 @@ const UK_BOUNDS = {
   east: 2.1,
 };
 
+const viewOptions = { animate: false as const };
+
 const FitBounds: React.FC<{ projects: Project[] }> = ({ projects }) => {
   const map = useMap();
 
   useEffect(() => {
-    const filtered = projects.filter(
-      (project) => project.latitude != null && project.longitude != null
-    );
+    let frame = 0;
 
-    const ukFiltered = filtered.filter((project) => {
-      const lat = project.latitude!;
-      const lng = project.longitude!;
-      return (
-        lat >= UK_BOUNDS.south &&
-        lat <= UK_BOUNDS.north &&
-        lng >= UK_BOUNDS.west &&
-        lng <= UK_BOUNDS.east
+    const applyBounds = () => {
+      // Map may be in a hidden container (e.g. md:block). Disable view animation so
+      // Leaflet does not fire _onZoomTransitionEnd after React teardown or rapid updates.
+      map.invalidateSize({ animate: false });
+
+      const filtered = projects.filter(
+        (project) => project.latitude != null && project.longitude != null
       );
-    });
 
-    if (ukFiltered.length === 0) {
+      const ukFiltered = filtered.filter((project) => {
+        const lat = project.latitude!;
+        const lng = project.longitude!;
+        return (
+          lat >= UK_BOUNDS.south &&
+          lat <= UK_BOUNDS.north &&
+          lng >= UK_BOUNDS.west &&
+          lng <= UK_BOUNDS.east
+        );
+      });
+
+      if (ukFiltered.length === 0) {
+        const bounds = L.latLngBounds(
+          [UK_BOUNDS.south, UK_BOUNDS.west],
+          [UK_BOUNDS.north, UK_BOUNDS.east]
+        );
+        map.fitBounds(bounds, {
+          padding: [20, 20],
+          maxZoom: 7,
+          ...viewOptions,
+        });
+        return;
+      }
+
+      if (ukFiltered.length === 1) {
+        const project = ukFiltered[0];
+        map.setView(
+          [project.latitude!, project.longitude!],
+          10,
+          viewOptions
+        );
+        return;
+      }
+
       const bounds = L.latLngBounds(
-        [UK_BOUNDS.south, UK_BOUNDS.west],
-        [UK_BOUNDS.north, UK_BOUNDS.east]
+        ukFiltered.map((project) => [project.latitude!, project.longitude!])
       );
       map.fitBounds(bounds, {
         padding: [20, 20],
-        maxZoom: 7,
+        maxZoom: 12,
+        ...viewOptions,
       });
-      return;
-    }
+    };
 
-    if (ukFiltered.length === 1) {
-      const project = ukFiltered[0];
-      map.setView([project.latitude!, project.longitude!], 10);
-      return;
-    }
-
-    const bounds = L.latLngBounds(
-      ukFiltered.map((project) => [project.latitude!, project.longitude!])
-    );
-    map.fitBounds(bounds, {
-      padding: [20, 20],
-      maxZoom: 12,
-    });
+    frame = requestAnimationFrame(applyBounds);
+    return () => cancelAnimationFrame(frame);
   }, [map, projects]);
 
   return null;

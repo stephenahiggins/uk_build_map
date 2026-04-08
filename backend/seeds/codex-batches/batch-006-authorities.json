@@ -16,6 +16,14 @@
     "regionName": "East of England"
   },
   {
+    "id": "32d9f262-14b8-40d9-be66-260afe1ec33c",
+    "name": "Woking",
+    "code": "E07000217",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
     "id": "5debc648-a144-4627-aac6-84e5b9973a9f",
     "name": "Colchester",
     "code": "E07000071",
@@ -38,14 +46,6 @@
     "countryCode": "ENGLAND",
     "regionId": "eb603f40-5bff-4e4c-98cc-606a14cd302a",
     "regionName": "East of England"
-  },
-  {
-    "id": "47f68eb2-2bd2-4740-9ff6-d5b8437f453b",
-    "name": "Rushcliffe",
-    "code": "E07000176",
-    "countryCode": "ENGLAND",
-    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
-    "regionName": "East Midlands"
   },
   {
     "id": "9db29c9f-fb30-42d5-b6a2-4de7303bc610",
@@ -72,12 +72,12 @@
     "regionName": "South East"
   },
   {
-    "id": "32d9f262-14b8-40d9-be66-260afe1ec33c",
-    "name": "Woking",
-    "code": "E07000217",
+    "id": "47f68eb2-2bd2-4740-9ff6-d5b8437f453b",
+    "name": "Rushcliffe",
+    "code": "E07000176",
     "countryCode": "ENGLAND",
-    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
-    "regionName": "South East"
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
   },
   {
     "id": "c9e5ea3e-c751-4789-bb68-580befd37617",
@@ -88,20 +88,20 @@
     "regionName": "West Midlands"
   },
   {
-    "id": "175678cf-60cf-473c-8ddc-ddf99e6c46ae",
-    "name": "Burnley",
-    "code": "E07000117",
-    "countryCode": "ENGLAND",
-    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
-    "regionName": "North West"
-  },
-  {
     "id": "9d25a482-0d07-49da-b6f1-521ec3ad62c5",
     "name": "Crawley",
     "code": "E07000226",
     "countryCode": "ENGLAND",
     "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
     "regionName": "South East"
+  },
+  {
+    "id": "175678cf-60cf-473c-8ddc-ddf99e6c46ae",
+    "name": "Burnley",
+    "code": "E07000117",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
   },
   {
     "id": "311939d0-af21-4e6b-adbe-14f6b57b15a8",
@@ -112,9 +112,9 @@
     "regionName": "East Midlands"
   },
   {
-    "id": "89ba0b58-baf3-4a7c-9ca9-d82c41059681",
-    "name": "Bracknell Forest",
-    "code": "E06000036",
+    "id": "1fc80db5-b0c9-48f6-b8a3-c4ab3bcf5ec1",
+    "name": "Thanet",
+    "code": "E07000114",
     "countryCode": "ENGLAND",
     "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
     "regionName": "South East"
@@ -136,11 +136,11 @@
     "regionName": "East Midlands"
   },
   {
-    "id": "4df67854-7f50-4b8d-b431-93adfdd800dc",
-    "name": "Rochdale",
-    "code": "E08000005",
+    "id": "57fdb475-af3a-4bef-96c8-447b65bd627e",
+    "name": "Vale of White Horse",
+    "code": "E07000180",
     "countryCode": "ENGLAND",
-    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
-    "regionName": "North West"
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
   }
 ]

@@ -10,22 +10,22 @@ Research under-covered local authorities using deterministic, public-source evid
 |------------------|------|------|------------|-------------|
 | 342d04fd-d711-44d1-811d-2dd7a28bc365 | Tandridge | E07000215 | South East | ENGLAND |
 | 76c1ad20-5680-40ad-9485-cd47cfd4fdd3 | Watford | E07000103 | East of England | ENGLAND |
+| 32d9f262-14b8-40d9-be66-260afe1ec33c | Woking | E07000217 | South East | ENGLAND |
 | 5debc648-a144-4627-aac6-84e5b9973a9f | Colchester | E07000071 | East of England | ENGLAND |
 | 16483efb-f5b8-40b7-a5ee-92de3bb4daf4 | Mid Sussex | E07000228 | South East | ENGLAND |
 | 455ee169-1b26-48ec-bb4c-e27f54121c08 | North Norfolk | E07000147 | East of England | ENGLAND |
-| 47f68eb2-2bd2-4740-9ff6-d5b8437f453b | Rushcliffe | E07000176 | East Midlands | ENGLAND |
 | 9db29c9f-fb30-42d5-b6a2-4de7303bc610 | St. Helens | E08000013 | North West | ENGLAND |
 | b5c82f1a-f6dd-455c-b215-d179931976f7 | Stoke-on-Trent | E06000021 | West Midlands | ENGLAND |
 | 79fd5cc0-d051-4fff-b14d-2b091a17ae1f | Swale | E07000113 | South East | ENGLAND |
-| 32d9f262-14b8-40d9-be66-260afe1ec33c | Woking | E07000217 | South East | ENGLAND |
+| 47f68eb2-2bd2-4740-9ff6-d5b8437f453b | Rushcliffe | E07000176 | East Midlands | ENGLAND |
 | c9e5ea3e-c751-4789-bb68-580befd37617 | Tamworth | E07000199 | West Midlands | ENGLAND |
-| 175678cf-60cf-473c-8ddc-ddf99e6c46ae | Burnley | E07000117 | North West | ENGLAND |
 | 9d25a482-0d07-49da-b6f1-521ec3ad62c5 | Crawley | E07000226 | South East | ENGLAND |
+| 175678cf-60cf-473c-8ddc-ddf99e6c46ae | Burnley | E07000117 | North West | ENGLAND |
 | 311939d0-af21-4e6b-adbe-14f6b57b15a8 | Ashfield | E07000170 | East Midlands | ENGLAND |
-| 89ba0b58-baf3-4a7c-9ca9-d82c41059681 | Bracknell Forest | E06000036 | South East | ENGLAND |
+| 1fc80db5-b0c9-48f6-b8a3-c4ab3bcf5ec1 | Thanet | E07000114 | South East | ENGLAND |
 | dfa0cab3-b5ed-4352-8df2-0a5e42065d78 | Dacorum | E07000096 | East of England | ENGLAND |
 | 477bad74-9175-4081-aa92-ba38262782bf | Derbyshire Dales | E07000035 | East Midlands | ENGLAND |
-| 4df67854-7f50-4b8d-b431-93adfdd800dc | Rochdale | E08000005 | North West | ENGLAND |
+| 57fdb475-af3a-4bef-96c8-447b65bd627e | Vale of White Horse | E07000180 | South East | ENGLAND |
 
 ## Scope
 
@@ -48,7 +48,7 @@ Research under-covered local authorities using deterministic, public-source evid
 
 ## Output
 
-Return only a JSON array. Each object should include:
+Return only a JSON array in your final message. Do not write files. Each object should include:
 
 - `id`
 - `title`
@@ -61,5 +61,3 @@ Return only a JSON array. Each object should include:
 - `statusRationale`
 - `latitude`, `longitude`, `locationDescription`, `locationSource`, `locationConfidence` when supported by evidence
 - `evidence`: array with `type`, `title`, `source`, `url`, `datePublished`, `summary`
-
-Save the JSON array to `seeds/codex-batches/out/batch-006.json`.

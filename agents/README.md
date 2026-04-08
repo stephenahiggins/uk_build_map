@@ -1,17 +1,94 @@
-# LFG Agents
+# Agents — Project Discovery & Data Pipeline
 
-- Run initial UK-wide scrape to staging (SQLite):
-  ```bash
-  make run ARGS="--uk-wide --stage --since 2025-01-16 --fetch 200 --max-evidence 3 --concurrency 4"
-  ```
-  (Use a YYYY-MM-DD date for `--since`; e.g. 30 days ago: `$(date -v-30d +%Y-%m-%d)` on macOS.)
-- Migrate staged data into production DB:
-  ```bash
-  make migrate-to-backend MODE=append
-  ```
-TypeScript CLI for discovering local government infrastructure projects, gathering evidence, and syncing to the backend. Uses Prisma (SQLite in `agents/`), supports connector-only/manual staging workflows, and uses deterministic project evaluation instead of OpenAI runtime calls.
+TypeScript CLI that discovers UK infrastructure projects, gathers evidence, and pushes data into the backend MySQL database for the Growth Map.
 
-Run everything from the `agents/` directory.
+> **Run everything from the `agents/` directory.**
+
+---
+
+## Which workflow should I use?
+
+There are **three ways** to get project data into the backend. Pick **one**:
+
+| # | Workflow | What it does | Cost | When to use |
+|---|----------|-------------|------|-------------|
+| **A** | [Codex/Claude batch seeding](#workflow-a--codexclaude-batch-seeding-recommended) | Generates prompts for under-covered local authorities, runs Codex/Claude to research projects, merges results, seeds backend | Codex/Claude credits | **Recommended for growing UK coverage.** Best for filling gaps across all ~360 local authorities overnight |
+| **B** | [Live Gemini discovery](#workflow-b--live-gemini-discovery) | CLI calls Gemini with web search to find projects for a locale, stages them, migrates to backend | Gemini API calls (~12 per project) | One-off deep dives into a specific area. Expensive at scale |
+| **C** | [Connectors only (free)](#workflow-c--connectors-only-free) | Pulls from structured government data sources — no LLM needed | Free | Structured data from Contracts Finder, GMPP, Planning Inspectorate, RSS. No API key required |
+
+---
+
+### Workflow A — Codex/Claude batch seeding (recommended)
+
+**One command does everything overnight:**
+
+```bash
+make overnight-growth-map ARGS="--yes --import --model gpt-5.2"
+```
+
+This runs: authority coverage → export → batch generation → Codex research → coordinate backfill → merge → seed → geo sync → evaluation refresh.
+
+**Or step by step:**
+
+```bash
+# 1. Generate batch prompts from under-covered authorities
+make go
+
+# 2. Run Codex on each prompt (or: make go-claude)
+make go-codex ARGS="--yes --model gpt-5.2"
+
+# 3. Merge outputs into a single seed file
+make go-merge
+
+# 4. Import into the backend
+cd ../backend && make seed-projects SEED=seeds/merged-from-codex.json
+```
+
+See [backend/docs/seeding-projects.md](../backend/docs/seeding-projects.md) for the full runbook.
+
+Recommended safer import for refreshed batches:
+
+```bash
+cd ../backend
+make db-backup
+make seed-projects-update SEED=seeds/merged-from-codex.json
+npm run sync:geo
+npm run recompute:evaluations:all
+```
+
+---
+
+### Workflow B — Live Gemini discovery
+
+Requires `GEMINI_API_KEY` in `.env`.
+
+```bash
+# Discover projects for a single area
+make run ARGS="--locale 'London' --limit 5"
+
+# UK-wide discovery (expensive — hundreds of API calls)
+make run ARGS="--uk-wide --stage --since 2025-01-16 --fetch 200 --max-evidence 3 --concurrency 4"
+
+# Then push staged data to the backend
+make commit-staged ALL=1
+make migrate-to-backend MODE=append
+```
+
+**Data flow:** Gemini → `staging/*.json` → agents SQLite DB → backend MySQL.
+
+---
+
+### Workflow C — Connectors only (free)
+
+No API key required. Set connector URLs in `.env`.
+
+```bash
+make run ARGS="--connectors-only --connectors contracts-finder,gmpp-ipa,planning-inspectorate"
+```
+
+**Data flow:** Government API → `staging/*.json` → agents SQLite DB → backend MySQL.
+
+---
 
 ## Quick start
 
@@ -22,99 +99,147 @@ npx prisma generate
 npx prisma db push
 ```
 
-Set `GEMINI_API_KEY` only if you want live Gemini-assisted discovery. Connector-only and deterministic workflows do not require an API key.
+Create `.env` from `.env.example`. The only key you might need is `GEMINI_API_KEY` (for Workflow B only).
 
-Optional: `VALIDATE_EVIDENCE_URLS=true` to skip evidence rows whose URLs fail an HTTP check before persisting to the agents SQLite DB.
+---
 
-## Key Make targets
+## Data pipeline overview
+
+```
+                    ┌─────────────────────┐
+                    │   Data sources       │
+                    │                      │
+     Workflow A:    │  Codex/Claude        │
+     Workflow B:    │  Gemini + web search │
+     Workflow C:    │  Gov API connectors  │
+                    └──────────┬──────────┘
+                               │
+              ┌────────────────┼────────────────┐
+              │ (Workflows B & C)               │ (Workflow A)
+              ▼                                 ▼
+     staging/*.json                   backend/seeds/codex-batches/out/*.json
+              │                                 │
+              ▼                                 │  make go-merge
+     agents SQLite DB                           ▼
+              │                        backend/seeds/merged-from-codex.json
+              │  make migrate-to-backend        │
+              │                                 │  make seed-projects
+              └──────────────┬──────────────────┘
+                             ▼
+                      backend MySQL DB
+                             │
+                             ▼
+                    npm run sync:geo
+               (assign region + local authority)
+                             │
+                             ▼
+                npm run recompute:evaluations
+              (deterministic RAG scoring + coords)
+```
+
+---
+
+## Make targets
+
+### Core
 
 | Command | Description |
-|--------|-------------|
+|---------|-------------|
 | `make help` | List all commands |
-| `make run ARGS="..."` | Build and run the CLI (e.g. `--locale 'London' --limit 3`) |
-| `make debug ARGS="..."` | Debug the CLI with same args |
+| `make build` | Compile TypeScript |
+| `make run ARGS="..."` | Build and run CLI |
 | `make mock ARGS="..."` | Run with mock Gemini responses |
-| `make build` | Build TypeScript |
-| `make clean` | Remove `dist` and cache |
-| `make test` | Test Gemini integration |
+| `make clean` | Remove `dist/` and cache |
 
-### Staging and committing
+### Staging → agents DB → backend DB (Workflows B & C)
 
 | Command | Description |
-|--------|-------------|
-| `make commit-staged` | Commit staged JSON to agents DB (deduped). Use `FILE=<path>` or `ALL=1` |
-| `make commit-latest` | Commit the newest file in `staging/` to agents DB |
+|---------|-------------|
+| `make commit-staged ALL=1` | Commit all staged JSON to agents SQLite DB (deduped by title) |
+| `make commit-staged FILE=staging/file.json` | Commit a specific staged file |
+| `make commit-latest` | Commit only the newest staged file |
+| `make migrate-to-backend MODE=append` | Push agents SQLite → backend MySQL |
+| `make migrate-staged-to-backend MODE=append ALL=1` | Commit + migrate in one step |
 
-### Backend migration
-
-| Command | Description |
-|--------|-------------|
-| `make migrate-to-backend MODE=append` | Migrate agents SQLite → backend DB. Optional: `BACKEND_ENV=<path>`, `BACKEND_URL=<url>` |
-| `make migrate-staged-to-backend MODE=append ...` | Commit staged files then migrate. Optional: `FILE=`, `ALL=1`, `BACKEND_ENV`, `BACKEND_URL` |
-| `make recompute-rag ARGS="..."` | Re-evaluate RAG status for projects in the agents DB using the deterministic scorer |
-
-### Full pipeline
+### Codex/Claude batch pipeline (Workflow A)
 
 | Command | Description |
-|--------|-------------|
-| `make compile-national` | UK-wide: scrape → stage → commit → migrate (script: `scripts/compile-national.sh`) |
-| `make recompute-evaluations` | Backend: fill missing coordinates + RAG (`--mode coords-only`) |
-| `make go` | Export local authorities + generate Codex batch prompts under `../backend/seeds/` (needs backend DB) |
-| `make go-codex ARGS="--yes --model gpt-5.2"` | Run Codex non-interactively against each generated batch prompt |
-| `make go-claude` | Optional: run [scripts/run-claude-seed-batches.sh](scripts/run-claude-seed-batches.sh) (`claude -p` per batch). Use `ARGS="--yes"` to skip confirmation. On limits, if Claude prints `resets 6pm (Europe/London)`-style text, the script sleeps until that wall time (needs `python3` + [parse_claude_limit_reset.py](scripts/parse_claude_limit_reset.py)); otherwise Enter / `CLAUDE_LIMIT_WAIT_MODE=sleep` |
-| `make go-merge` | Merge `codex-batches/out/*.json` → `merged-from-codex.json` |
-| `make overnight-growth-map ARGS="--yes --import"` | Run the full overnight coverage -> Codex -> merge -> import pipeline |
-| `./agents/make go` | Same as `make go` from repo root |
+|---------|-------------|
+| `make go` | Export local authorities → generate batch prompts |
+| `make go-codex ARGS="--yes --model gpt-5.2"` | Run Codex on each prompt |
+| `make go-claude` | Run Claude on each prompt (alternative to Codex) |
+| `make go-merge` | Merge batch outputs → `backend/seeds/merged-from-codex.json` |
+| `make overnight-growth-map ARGS="--yes --import"` | Full overnight pipeline: coverage → batch → codex → merge → import → geo sync |
 
-See [backend/docs/seeding-projects.md](../backend/docs/seeding-projects.md) for the full Codex batch + geo sync runbook.
+### Backend helper commands you will commonly use after agent runs
 
-## Overnight pipeline
+Run these from `backend/`:
 
-To spend Codex credits overnight on under-covered authorities:
+| Command | Description |
+|---------|-------------|
+| `make db-backup` | Create a compressed MySQL backup before imports |
+| `make db-restore BACKUP=backups/mysql-YYYYMMDD-HHMMSS.sql.gz` | Restore a backup into MySQL |
+| `make seed-projects SEED=...` | Insert projects from a JSON file without overwriting existing rows |
+| `make seed-projects-update SEED=...` | Insert projects and update existing rows from a JSON file |
+| `npm run sync:geo` | Reassign region/local authority from project coordinates |
+| `npm run recompute:evaluations:all` | Recompute deterministic project evaluations across all projects |
+| `npm run seed:backfill-codex-coords -- --model gpt-5.2` | Backfill coordinates in Codex batch output files before merge |
 
-```bash
-make overnight-growth-map ARGS="--yes --import --model gpt-5.2"
-```
+### Post-import evaluation
 
-This runs:
-- authority coverage snapshot
-- local authority export
-- Codex batch generation
-- `codex exec` across each batch prompt
-- merge to `backend/seeds/merged-from-codex.json`
-- optional seed/import, geo sync, deterministic evaluation refresh, and final coverage snapshot
+| Command | Description |
+|---------|-------------|
+| `make recompute-evaluations` | Backfill coordinates + RAG status via backend |
+| `make recompute-rag` | Re-run deterministic RAG scorer on agents SQLite DB |
+| `make compile-national` | Continuous loop: Gemini scrape → stage → commit → migrate (long-running, Workflow B) |
 
-## Example runs
+---
 
-```bash
-# Single locale, limit projects
-make run ARGS="--locale 'London' --limit 5"
+## CLI flags
 
-# UK-wide discovery
-make run ARGS="--uk-wide --fetch 200 --limit 50"
+| Flag | Description | Default |
+|------|-------------|---------|
+| `--locale <area>` | Target area (e.g. `'London'`, `'Yorkshire and the Humber'`) | `United Kingdom` |
+| `--uk-wide` | Iterate over all UK nations and English regions | off |
+| `--fetch <n>` | Target number of projects to discover | 10 |
+| `--limit <n>` | Max projects to process | all |
+| `--max-evidence <n>` | Evidence items per project | 3 |
+| `--concurrency <n>` | Parallel workers | 3 |
+| `--since <YYYY-MM-DD>` | Only pull data newer than this date | — |
+| `--stage` | Write to `staging/` only; don't commit to agents DB | off |
+| `--provider gemini` | Use Gemini for live discovery | `gemini` |
+| `--connectors-only` | Skip LLM discovery; use connectors only | off |
+| `--connectors <list>` | Comma-separated connector names to activate | env `CONNECTORS` |
 
-# Stage only (no DB write)
-make run ARGS="--uk-wide --stage"
+---
 
-# Commit all staged, then migrate to backend
-make commit-staged ALL=1
-make migrate-to-backend MODE=append BACKEND_URL="mysql://user:pass@host:3306/dbname"
+## Connectors
 
-# Re-evaluate RAG deterministically
-make recompute-rag
-```
+Structured, free data sources (no LLM required):
 
-## Useful CLI flags
+| Name | Source | Env var |
+|------|--------|---------|
+| `local-json` | Local JSON file on disk | `LOCAL_PROJECTS_JSON` (file path) |
+| `contracts-finder` | [Contracts Finder](https://www.contractsfinder.service.gov.uk/) | `CONTRACTS_FINDER_URL` |
+| `gmpp-ipa` | Gov Major Projects Portfolio / IPA | `GMPP_URL` |
+| `planning-inspectorate` | National Infrastructure Planning | `PLANNING_INSPECTORATE_URL` |
+| `find-a-tender` | Find a Tender Service | `FIND_A_TENDER_URL` |
+| `local-authority-news` | Local authority RSS feeds | `LOCAL_AUTHORITY_NEWS_FEEDS` (comma-separated) |
+| `regional-transport-news` | Regional transport RSS feeds | `REGIONAL_TRANSPORT_NEWS_FEEDS` (comma-separated) |
 
-- `--locale <string>` — Area or comma-separated list (default: United Kingdom)
-- `--uk-wide` — Run across nations and English regions
-- `--fetch <n>` — Target number of projects to fetch (default 10)
-- `--limit <n>` — Max projects to process (default: all)
-- `--max-evidence <n>` — Evidence items per project (default 3)
-- `--concurrency <n>` — Projects to process concurrently (default 3)
-- `--since <YYYY-MM-DD>` — Incremental pull: only use connector data since this date
-- `--stage` — Write to `staging/` only, don’t commit to DB
-- `--provider gemini` — Optional live discovery provider
-- `--connectors-only` — Skip model-driven discovery and rely on connectors only
+---
 
-Logs go to `cli.log`; use `tail -f cli.log` while running.
+## Environment variables
+
+| Variable | Required? | Description |
+|----------|-----------|-------------|
+| `GEMINI_API_KEY` | Workflow B only | Google Gemini API key |
+| `DATABASE_URL` | Auto | Agents SQLite path (Prisma manages this) |
+| `BACKEND_DATABASE_URL` | For migration | MySQL connection string for backend |
+| `VALIDATE_EVIDENCE_URLS` | Optional | `true` to HTTP-check evidence URLs before saving |
+| `CONNECTORS` | Optional | Default connector list (comma-separated) |
+| `LOCALE` | Optional | Default locale (default: `United Kingdom`) |
+| `MODEL` | Optional | LLM model override (default: `gemini-2.5-flash`) |
+| `NO_LLM` | Optional | `true` to disable all LLM calls |
+
+Logs: `tail -f cli.log`

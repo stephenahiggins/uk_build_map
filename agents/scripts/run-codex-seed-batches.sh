@@ -284,6 +284,18 @@ for prompt_file in "${run_list[@]}"; do
     continue
   fi
 
+  had_existing_out=0
+  existing_out_snapshot=""
+  if [[ -f "$out_file" ]]; then
+    had_existing_out=1
+    existing_out_snapshot="$(mktemp "$OUT_DIR/batch-${batch_num}.existing.XXXXXX")"
+    cp "$out_file" "$existing_out_snapshot"
+    archive_stamp="$(date '+%Y%m%dT%H%M%S')"
+    archive_file="$ARCHIVE_DIR/batch-${batch_num}.${archive_stamp}.json"
+    cp "$out_file" "$archive_file"
+    vmsg "Archived previous batch ${batch_num} output to $archive_file"
+  fi
+
   global_args=()
   if [[ "$USE_SEARCH" == "1" ]]; then
     global_args+=(--search)
@@ -329,27 +341,46 @@ for prompt_file in "${run_list[@]}"; do
   if ! cat "$prompt_file" | "${cmd[@]}"; then
     vmsg "Batch ${batch_num} failed; continuing to next batch"
     failed_batches+=("$batch_num")
+    rm -f "$existing_out_snapshot"
     rm -f "$tmp_file"
     continue
   fi
 
   normalized_tmp="$(mktemp "$OUT_DIR/batch-${batch_num}.normalized.XXXXXX")"
   if ! normalize_json_output "$tmp_file" "$normalized_tmp"; then
+    rm -f "$normalized_tmp"
+
+    # Older prompts asked Codex to write the batch file directly. If the final
+    # message is not JSON, accept a valid out file that changed during the run.
+    if [[ -s "$out_file" ]]; then
+      out_changed=1
+      if [[ "$had_existing_out" -eq 1 ]] && cmp -s "$out_file" "$existing_out_snapshot"; then
+        out_changed=0
+      fi
+
+      if [[ "$out_changed" -eq 1 ]]; then
+        normalized_tmp="$(mktemp "$OUT_DIR/batch-${batch_num}.normalized.XXXXXX")"
+        if normalize_json_output "$out_file" "$normalized_tmp"; then
+          mv "$normalized_tmp" "$out_file"
+          rm -f "$existing_out_snapshot"
+          rm -f "$tmp_file"
+          successful_batches+=("$batch_num")
+          vmsg "Saved batch ${batch_num} to $out_file (from file written by Codex)"
+          continue
+        fi
+        rm -f "$normalized_tmp"
+      fi
+    fi
+
     vmsg "Batch ${batch_num} did not produce valid JSON; continuing to next batch"
     invalid_json_batches+=("$batch_num")
-    rm -f "$normalized_tmp"
+    rm -f "$existing_out_snapshot"
     rm -f "$tmp_file"
     continue
   fi
 
-  if [[ -f "$out_file" ]]; then
-    archive_stamp="$(date '+%Y%m%dT%H%M%S')"
-    archive_file="$ARCHIVE_DIR/batch-${batch_num}.${archive_stamp}.json"
-    cp "$out_file" "$archive_file"
-    vmsg "Archived previous batch ${batch_num} output to $archive_file"
-  fi
-
   mv "$normalized_tmp" "$out_file"
+  rm -f "$existing_out_snapshot"
   rm -f "$tmp_file"
   successful_batches+=("$batch_num")
   vmsg "Saved batch ${batch_num} to $out_file"

@@ -25,7 +25,11 @@ type CoverageRow = {
 function parseArgs() {
   const argv = process.argv.slice(2);
   let authoritiesJson = '';
-  let coverageJson = path.join(process.cwd(), 'seeds', 'authority-coverage.snapshot.json');
+  let coverageJson = path.join(
+    process.cwd(),
+    'seeds',
+    'authority-coverage.snapshot.json'
+  );
   let outDir = path.join(process.cwd(), 'seeds', 'codex-batches');
   let batchSize = 18;
   let coverageFromDb = false;
@@ -79,7 +83,10 @@ function countryPriority(countryCode: string): number {
   }
 }
 
-function buildPrompt(batchNumber: number, authorities: AuthorityExport[]): string {
+function buildPrompt(
+  batchNumber: number,
+  authorities: AuthorityExport[]
+): string {
   const table = authorities
     .map(
       (authority) =>
@@ -120,7 +127,7 @@ ${table}
 
 ## Output
 
-Return only a JSON array. Each object should include:
+Return only a JSON array in your final message. Do not write files. Each object should include:
 
 - \`id\`
 - \`title\`
@@ -133,8 +140,6 @@ Return only a JSON array. Each object should include:
 - \`statusRationale\`
 - \`latitude\`, \`longitude\`, \`locationDescription\`, \`locationSource\`, \`locationConfidence\` when supported by evidence
 - \`evidence\`: array with \`type\`, \`title\`, \`source\`, \`url\`, \`datePublished\`, \`summary\`
-
-Save the JSON array to \`seeds/codex-batches/out/batch-${String(batchNumber).padStart(3, '0')}.json\`.
 `;
 }
 
@@ -167,7 +172,9 @@ async function loadCoverageRows(
   coverageFromDb: boolean
 ): Promise<CoverageRow[]> {
   if (!coverageFromDb && fs.existsSync(coverageJson)) {
-    const payload = JSON.parse(fs.readFileSync(coverageJson, 'utf-8')) as { rows?: CoverageRow[] };
+    const payload = JSON.parse(fs.readFileSync(coverageJson, 'utf-8')) as {
+      rows?: CoverageRow[];
+    };
     const rows = payload.rows ?? [];
     if (rows.length > 0) {
       return rows.map(pickCoverageFields);
@@ -193,7 +200,8 @@ async function loadCoverageRows(
 }
 
 async function main() {
-  const { authoritiesJson, coverageJson, outDir, batchSize, coverageFromDb } = parseArgs();
+  const { authoritiesJson, coverageJson, outDir, batchSize, coverageFromDb } =
+    parseArgs();
   const authorities = loadJsonFile<AuthorityExport[]>(authoritiesJson, []);
   const coverageRows = await loadCoverageRows(coverageJson, coverageFromDb);
   const coverageById = new Map(coverageRows.map((row) => [row.id, row]));
@@ -202,7 +210,8 @@ async function main() {
     const leftCoverage = coverageById.get(left.id);
     const rightCoverage = coverageById.get(right.id);
 
-    const countryDelta = countryPriority(left.countryCode) - countryPriority(right.countryCode);
+    const countryDelta =
+      countryPriority(left.countryCode) - countryPriority(right.countryCode);
     if (countryDelta !== 0) return countryDelta;
 
     const leftProjects = leftCoverage?.projectCount ?? 0;

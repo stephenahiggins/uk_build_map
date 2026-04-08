@@ -38,6 +38,10 @@ seed:
 seed-projects:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npx ts-node scripts/seedProjectsFromFile.ts $(SEED)
 
+# Usage: make seed-projects-update SEED=seeds/merged-from-codex.json
+seed-projects-update:
+	$(DOCKER_COMPOSE) exec $(SERVICE) npx ts-node scripts/seedProjectsFromFile.ts $(SEED) --update-existing
+
 # Discovers project-array JSON under seeds/ (skips coverage snapshots, *-authorities.json, archive/).
 # Existing projects are not updated; new evidence rows are skipped when the same URL already exists for the project.
 # Usage: make seed-all  |  EXTRA=--dry-run make seed-all
@@ -64,6 +68,13 @@ seed-merge-codex:
 
 seed-backfill-codex-coords:
 	npm run seed:backfill-codex-coords -- $(ARGS)
+
+db-backup:
+	npm run db:backup
+
+# Usage: make db-restore BACKUP=backups/mysql-YYYYMMDD-HHMMSS.sql.gz
+db-restore:
+	npm run db:restore -- $(BACKUP)
 
 seed-claude-batches:
 	$(DOCKER_COMPOSE) exec $(SERVICE) npm run seed:generate-claude-batches -- --authorities-json seeds/local-authorities.json --out-dir seeds/claude-batches

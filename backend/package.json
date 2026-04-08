@@ -17,6 +17,8 @@
     "loglevel:change": "runtime-node-refresh",
     "seed": "ts-node prisma/seed.ts",
     "seed:all": "ts-node scripts/seedAllFromJson.ts",
+    "db:backup": "bash scripts/backupDatabase.sh",
+    "db:restore": "bash scripts/restoreDatabase.sh",
     "recompute:evaluations": "ts-node scripts/recomputeProjectEvaluations.ts --mode coords-only",
     "recompute:evaluations:all": "ts-node scripts/recomputeProjectEvaluations.ts --mode evaluation",
     "coverage:authorities": "ts-node scripts/computeAuthorityCoverage.ts",

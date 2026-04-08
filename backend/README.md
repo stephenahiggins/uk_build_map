@@ -1,221 +1,253 @@
-# Node Boilerplate TS App
+# Backend Runbook
 
-This project is a Node.js application using TypeScript, Docker, and MySQL. It includes Prisma for database management and Docker Compose for easy setup and management of development environments.
+Backend API and MySQL store for the Growth Map project dataset.
 
-## Prerequisites
+## Setup
 
-Before you start, ensure you have the following installed:
+Prereqs:
+- Docker
+- Docker Compose
+- Node.js for host-side helper scripts
 
-- [Docker](https://docs.docker.com/get-docker/)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+Create `.env`. The important database detail is:
+- container-side app uses `DATABASE_URL=mysql://...@db:3306/...`
+- host-side scripts automatically rewrite that to `127.0.0.1:3307` when needed
 
-## Getting Started
+Start services:
 
-Follow these steps to set up and run the project:
-
-### 1. Clone the Repository
-
-Clone the repository to your local machine:
-
-git clone <repository-url>
-cd <repository-directory>
-
-Replace `<repository-url>` with the URL of your repository and `<repository-directory>` with the name of the directory where the repository is cloned.
-
-### 2. Set Up Environment Variables
-
-Create a `.env` file in the root directory of the project with the following content:
-
-```env
-PORT=5002
-NODE_ENV="development" # development, staging, production
-GOOGLE_CLIENT_ID=""
-EMAIL_USER="youremail@example.com"
-EMAIL_PASS=""
-FRONTEND_URL="http://localhost:3001"
-
-# auth >>>
-JWT_ACCESS_SECRET="your-jwt-secret"
-JWT_REFRESH_SECRET="your-jwt-secret"
-JWT_ACCESS_EXPIRATION='15m'  # Access tokens should be short-lived
-JWT_REFRESH_EXPIRATION='7d'  # Refresh tokens can have longer lifetimes
-
-
-# database
-DATABASE_URL="mysql://root:password@localhost:3306/node_boilerplate" #for local connection
-
-# for docker connection >>>>>>>>>>>>
-DATABASE_USER="root"
-DATABASE_NAME="node_boilerplate"
-DATABASE_PASSWORD="123456"
-DATABASE_PORT=3306
-DATABASE_HOST="db"
-DATABASE_URL="mysql://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}" 
-# for docker connection <<<<<<<<<<<<<
-
-```
-Create a `.env.test` file in the root directory of the project to run tests with the following content:
-```
-PORT=5002
-NODE_ENV="development" # development, staging, production
-GOOGLE_CLIENT_ID=""
-
----
-
-# Project API Routes
-
-## Create a Project
-
-**POST** `/api/v1/projects`
-
-Create a new project.
-
-**Request Body (JSON):**
-
-| Field             | Type     | Required | Description                                 |
-|-------------------|----------|----------|---------------------------------------------|
-| title             | string   | Yes      | Project title                               |
-| description       | string   | No       | Project description                         |
-| type              | string   | Yes      | Project type (`LOCAL_GOV`, `NATIONAL_GOV`, `REGIONAL_GOV`) |
-| regionId          | string   | Yes      | Associated region ID                        |
-| localAuthorityId  | string   | No       | Associated local authority ID               |
-| expectedCompletion| string   | No       | Expected completion date (ISO 8601)         |
-| status            | string   | Yes      | Project status (`RED`, `AMBER`, `GREEN`)    |
-| statusRationale   | string   | No       | Reason for project status                   |
-| latitude          | number   | No       | Project latitude                            |
-| longitude         | number   | No       | Project longitude                           |
-| locationDescription | string | No       | Short description of the primary project location |
-| locationSource    | string   | No       | Source citation for the location            |
-| locationConfidence| string   | No       | Confidence in the location (`LOW`, `MEDIUM`, `HIGH`) |
-
-**Response:**  
-Returns the created project object.
-
----
-
-## Get All Projects
-
-**GET** `/api/v1/projects`
-
-Retrieve a list of projects. All parameters are optional and can be used as filters (combined as needed).
-
-**Query Parameters:**
-
-| Parameter         | Type     | Description                                        |
-|-------------------|----------|----------------------------------------------------|
-| id                | string   | Filter by project ID                               |
-| title             | string   | Filter by title (case-insensitive, partial match)  |
-| description       | string   | Filter by description (case-insensitive, partial)  |
-| type              | string   | Filter by type (`LOCAL_GOV`, `NATIONAL_GOV`, `REGIONAL_GOV`) |
-| regionId          | string   | Filter by region ID                                |
-| localAuthorityId  | string   | Filter by local authority ID                       |
-| expectedCompletion| string   | Filter by expected completion date (ISO 8601)      |
-| status            | string   | Filter by status (`RED`, `AMBER`, `GREEN`)         |
-| statusRationale   | string   | Filter by status rationale (case-insensitive, partial) |
-| latitude          | number   | Filter by latitude                                 |
-| longitude         | number   | Filter by longitude                                |
-| locationDescription | string | Filter by location description (case-insensitive)  |
-| locationSource    | string   | Filter by location source (case-insensitive)       |
-| locationConfidence| string   | Filter by location confidence (`LOW`, `MEDIUM`, `HIGH`) |
-| createdAt         | string   | Filter by creation date (ISO 8601)                 |
-
-**Response:**  
-Returns an array of project objects matching the filters.
-
-**Example:**  
-`GET /api/v1/projects?type=LOCAL_GOV&regionId=abc123&status=GREEN`
-
----
-
-## Get Project by ID
-
-**GET** `/api/v1/projects/:id`
-
-Retrieve a single project by its ID.
-
-**Response:**  
-Returns the project object or 404 if not found.
-
----
-
-## Update Project
-
-**POST** `/api/v1/projects/:id`
-
-Update an existing project.
-
-**Request Body:**  
-Same as "Create a Project" (fields optional; only provided fields will be updated).
-
-**Response:**  
-Returns the updated project object.
-
----
-
-EMAIL_USER="youremail@example.com"
-EMAIL_PASS=""
-FRONTEND_URL="http://localhost:3001"
-
-# auth >>>
-JWT_ACCESS_SECRET="your-jwt-secret"
-JWT_REFRESH_SECRET="your-jwt-secret"
-JWT_ACCESS_EXPIRATION='15m'  # Access tokens should be short-lived
-JWT_REFRESH_EXPIRATION='7d'  # Refresh tokens can have longer lifetimes
-
-
-# database
-DATABASE_URL="mysql://root:password@localhost:3306/node_boilerplate" #for local connection
-
-# for docker connection >>>>>>>>>>>>
-# DATABASE_USER="root"
-# DATABASE_NAME="node_boilerplate"
-# DATABASE_PASSWORD="123456"
-# DATABASE_PORT=3307
-# DATABASE_HOST="localhost"
-# DATABASE_URL="mysql://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}" 
-# for docker connection <<<<<<<<<<<<<
-
-```
-
-### 3. Run Docker Compose to build and start the containers:
-
-```
-docker-compose up --build
-```
-
-**Note on Database Seeding:**  
-The application automatically seeds the database on startup:
-- **Users, Regions, and Local Authorities** are seeded via `prisma/seed.ts`
-- **Projects and Evidence** can be seeded from JSON files in `seeds/` using `scripts/seedProjectsFromFile.ts`
-
-To seed everything manually (including the default `seeds/projects.seed.json`), run:
 ```bash
-make seed
+docker-compose up --build -d
 ```
 
-To seed projects from a specific JSON file, run:
+Open the API at `http://localhost:5002`.
+
+Stop services:
+
+```bash
+docker-compose down
+```
+
+## Main Workflows
+
+There are three practical ways to get project data into the backend.
+
+### 1. Codex Batch Workflow
+
+Best for large-scale authority coverage growth using Codex credits.
+
+From `agents/`:
+
+```bash
+make overnight-growth-map ARGS="--yes --import --model gpt-5.2"
+```
+
+That runs:
+1. authority coverage snapshot
+2. local authority export
+3. Codex batch prompt generation
+4. Codex batch execution
+5. coordinate backfill for batch outputs
+6. merge of batch JSON files
+7. import to backend, geo sync, and evaluation refresh
+
+Step-by-step version:
+
+```bash
+cd ../agents
+make go
+make go-codex ARGS="--yes --model gpt-5.2"
+cd ../backend
+npm run seed:merge-codex-outputs
+make db-backup
+make seed-projects-update SEED=seeds/merged-from-codex.json
+npm run sync:geo
+npm run recompute:evaluations:all
+```
+
+### 2. Claude Batch Workflow
+
+Same idea as Codex, but uses Claude for batch research.
+
+From `agents/`:
+
+```bash
+make go
+make go-claude ARGS="--yes"
+cd ../backend
+npm run seed:merge-claude-outputs
+make db-backup
+make seed-projects-update SEED=seeds/merged-from-claude.json
+npm run sync:geo
+npm run recompute:evaluations:all
+```
+
+### 3. Traditional / Manual Workflow
+
+Use this for curated JSON imports, manual seed files, or non-batch updates.
+
+Seed a JSON file without changing existing rows:
+
 ```bash
 make seed-projects SEED=seeds/national-starter.json
 ```
 
-To backfill missing coordinates in finalized Codex batch output files before merge/import, run:
+Seed a JSON file and update existing rows:
+
 ```bash
+make db-backup
+make seed-projects-update SEED=seeds/codex-batches/out/batch-010.json
+```
+
+Host-side equivalent:
+
+```bash
+npx ts-node scripts/seedProjectsFromFile.ts seeds/codex-batches/out/batch-010.json --update-existing
+```
+
+## Database Safety
+
+Create a compressed MySQL backup:
+
+```bash
+make db-backup
+```
+
+Or:
+
+```bash
+npm run db:backup
+```
+
+Restore from backup:
+
+```bash
+make db-restore BACKUP=backups/mysql-YYYYMMDD-HHMMSS.sql.gz
+```
+
+Or:
+
+```bash
+npm run db:restore -- backups/mysql-YYYYMMDD-HHMMSS.sql.gz
+```
+
+Helper scripts:
+- [scripts/backupDatabase.sh](scripts/backupDatabase.sh)
+- [scripts/restoreDatabase.sh](scripts/restoreDatabase.sh)
+
+## Import Helpers
+
+Core importer:
+- [scripts/seedProjectsFromFile.ts](scripts/seedProjectsFromFile.ts)
+
+Behavior:
+- default mode inserts new projects and new evidence URLs only
+- `--update-existing` updates existing project fields as well
+- stale region UUIDs in incoming seed data are resolved from the matched local authority when possible
+
+Useful commands:
+
+```bash
+make seed-projects SEED=seeds/projects.seed.json
+make seed-projects-update SEED=seeds/merged-from-codex.json
+make seed-all
+```
+
+## Batch / Seed Helpers
+
+Generate and process Codex seed files:
+
+```bash
+npm run seed:export-local-authorities
+npm run coverage:authorities
+npm run seed:generate-codex-batches -- --authorities-json seeds/local-authorities.json
+npm run seed:backfill-codex-coords -- --model gpt-5.2
+npm run seed:merge-codex-outputs
+```
+
+Generate and process Claude seed files:
+
+```bash
+npm run seed:generate-claude-batches -- --authorities-json seeds/local-authorities.json
+npm run seed:merge-claude-outputs
+```
+
+Files:
+- `seeds/codex-batches/out/*.json`
+- `seeds/claude-batches/out/*.json`
+- `seeds/merged-from-codex.json`
+- `seeds/merged-from-claude.json`
+
+## Post-Import Processing
+
+Assign region and local authority from stored coordinates:
+
+```bash
+npm run sync:geo
+```
+
+Recompute deterministic evaluations:
+
+```bash
+npm run recompute:evaluations
+npm run recompute:evaluations:all
+```
+
+Notes:
+- `recompute:evaluations` mainly fills missing coordinates and geo metadata
+- `recompute:evaluations:all` recalculates all project RAG values using the deterministic scorer in `src/lib/projectEvaluation.ts`
+
+## Make Helpers
+
+Common backend helpers:
+
+```bash
+make up
+make down
+make logs
+make shell
+make migrate
+make generate
+make seed
+make seed-projects SEED=...
+make seed-projects-update SEED=...
+make seed-all
+make db-backup
+make db-restore BACKUP=...
+make recompute-evaluations
+make recompute-evaluations-all
+make seed-export-las
+make coverage-authorities
+make seed-codex-batches
+make seed-merge-codex
 make seed-backfill-codex-coords ARGS="--model gpt-5.2"
-```
-This target runs on the host, not inside Docker, because it updates files under `seeds/codex-batches/out/` in place.
-
-### 4. Accessing the Application
-
-Once the containers are up and running, you can access the application at: http://localhost:5002
-
-### 5. Stopping the Containers
-
-To stop and remove the containers, use:
-```
-docker-compose down
+make seed-claude-batches
+make seed-merge-claude
 ```
 
+## API Notes
 
+Projects support:
+- `title`
+- `description`
+- `type`
+- `regionId`
+- `localAuthorityId`
+- `expectedCompletion`
+- `status`
+- `statusRationale`
+- `latitude`
+- `longitude`
+- `locationDescription`
+- `locationSource`
+- `locationConfidence`
 
+Main routes:
+- `GET /api/v1/projects`
+- `GET /api/v1/projects/:id`
+- `POST /api/v1/projects`
+- `POST /api/v1/projects/:id`
 
+## Related Docs
 
+- [docs/seeding-projects.md](/Users/stephenhiggins/Code/lfg/backend/docs/seeding-projects.md)
+- [../agents/README.md](../agents/README.md)

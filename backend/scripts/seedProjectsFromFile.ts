@@ -12,11 +12,14 @@ const prisma = createPrismaClient();
 async function main() {
   const args = process.argv.slice(2);
   if (args.length < 1) {
-    console.error('Usage: ts-node scripts/seedProjectsFromFile.ts <projects.seed.json>');
+    console.error(
+      'Usage: ts-node scripts/seedProjectsFromFile.ts <projects.seed.json> [--update-existing]'
+    );
     process.exit(1);
   }
 
   const jsonPath = path.resolve(args[0]);
+  const updateExisting = args.includes('--update-existing');
   if (!fs.existsSync(jsonPath)) {
     console.error(`File not found: ${jsonPath}`);
     process.exit(1);
@@ -33,8 +36,16 @@ async function main() {
     process.exit(1);
   }
 
-  const { successCount, failCount } = await seedProjectsArray(prisma, projects);
-  console.log(`\nSeeding complete. Success: ${successCount}, Failed: ${failCount}`);
+  const { successCount, failCount } = await seedProjectsArray(
+    prisma,
+    projects,
+    {
+      updateExisting,
+    }
+  );
+  console.log(
+    `\nSeeding complete. Success: ${successCount}, Failed: ${failCount}, Update existing: ${updateExisting}`
+  );
   await prisma.$disconnect();
 }
 

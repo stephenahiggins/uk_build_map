@@ -8,9 +8,9 @@ Research under-covered local authorities using deterministic, public-source evid
 
 | localAuthorityId | name | code | regionName | countryCode |
 |------------------|------|------|------------|-------------|
-| 4913c47e-4926-4305-ba51-1f01707f1d0b | Sutton | E09000029 | London | ENGLAND |
+| 9878daec-1cee-4b83-a68e-ce03d8b1d2de | Amber Valley | E07000032 | East Midlands | ENGLAND |
+| 3a9d3532-ce84-41e9-a5a6-4ebcf29f2988 | East Staffordshire | E07000193 | East Midlands | ENGLAND |
 | 82cc34ae-9c27-4790-b415-124b6faf1593 | Torbay | E06000027 | Unassigned | ENGLAND |
-| 5d1ac344-2735-4c65-8dab-54b3e922fcb7 | West Berkshire | E06000037 | South East | ENGLAND |
 | 88edbc2c-c927-4f71-9179-f6e2d1886ef1 | Cherwell | E07000177 | South East | ENGLAND |
 | bc34f0f3-2116-4264-8840-e806a29b7cba | East Devon | E07000040 | South West | ENGLAND |
 | 7cd0b671-8334-47f0-bcee-a2ffa243b813 | Forest of Dean | E07000080 | South West | ENGLAND |
@@ -48,7 +48,7 @@ Research under-covered local authorities using deterministic, public-source evid
 
 ## Output
 
-Return only a JSON array. Each object should include:
+Return only a JSON array in your final message. Do not write files. Each object should include:
 
 - `id`
 - `title`
@@ -61,5 +61,3 @@ Return only a JSON array. Each object should include:
 - `statusRationale`
 - `latitude`, `longitude`, `locationDescription`, `locationSource`, `locationConfidence` when supported by evidence
 - `evidence`: array with `type`, `title`, `source`, `url`, `datePublished`, `summary`
-
-Save the JSON array to `seeds/codex-batches/out/batch-008.json`.

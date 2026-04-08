@@ -38,7 +38,7 @@ Research under-covered local authorities using deterministic, public-source evid
 
 ## Output
 
-Return only a JSON array. Each object should include:
+Return only a JSON array in your final message. Do not write files. Each object should include:
 
 - `id`
 - `title`
@@ -51,5 +51,3 @@ Return only a JSON array. Each object should include:
 - `statusRationale`
 - `latitude`, `longitude`, `locationDescription`, `locationSource`, `locationConfidence` when supported by evidence
 - `evidence`: array with `type`, `title`, `source`, `url`, `datePublished`, `summary`
-
-Save the JSON array to `seeds/codex-batches/out/batch-017.json`.

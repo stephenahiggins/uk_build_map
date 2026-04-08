@@ -1,43 +1,19 @@
 [
   {
-    "id": "c3069c84-6135-4764-8f30-cbbe22981484",
-    "name": "Test Valley",
-    "code": "E07000093",
+    "id": "5d1ac344-2735-4c65-8dab-54b3e922fcb7",
+    "name": "West Berkshire",
+    "code": "E06000037",
     "countryCode": "ENGLAND",
     "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
     "regionName": "South East"
   },
   {
-    "id": "1fc80db5-b0c9-48f6-b8a3-c4ab3bcf5ec1",
-    "name": "Thanet",
-    "code": "E07000114",
+    "id": "89ba0b58-baf3-4a7c-9ca9-d82c41059681",
+    "name": "Bracknell Forest",
+    "code": "E06000036",
     "countryCode": "ENGLAND",
     "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
     "regionName": "South East"
-  },
-  {
-    "id": "57fdb475-af3a-4bef-96c8-447b65bd627e",
-    "name": "Vale of White Horse",
-    "code": "E07000180",
-    "countryCode": "ENGLAND",
-    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
-    "regionName": "South East"
-  },
-  {
-    "id": "9878daec-1cee-4b83-a68e-ce03d8b1d2de",
-    "name": "Amber Valley",
-    "code": "E07000032",
-    "countryCode": "ENGLAND",
-    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
-    "regionName": "East Midlands"
-  },
-  {
-    "id": "bc9d43a6-2bc0-4037-8bfe-2ff5e657c160",
-    "name": "Cheshire West and Chester",
-    "code": "E06000050",
-    "countryCode": "ENGLAND",
-    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
-    "regionName": "North West"
   },
   {
     "id": "ec85a970-c47d-44d0-b364-f299c48263ec",
@@ -64,20 +40,60 @@
     "regionName": "North West"
   },
   {
-    "id": "3a9d3532-ce84-41e9-a5a6-4ebcf29f2988",
-    "name": "East Staffordshire",
-    "code": "E07000193",
-    "countryCode": "ENGLAND",
-    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
-    "regionName": "East Midlands"
-  },
-  {
     "id": "42efa97b-cf9c-4ae4-b7ce-f0ef1f5518e4",
     "name": "Folkestone and Hythe",
     "code": "E07000112",
     "countryCode": "ENGLAND",
     "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
     "regionName": "South East"
+  },
+  {
+    "id": "45831c76-dafc-4769-8a03-85a7c1623627",
+    "name": "Lincoln",
+    "code": "E07000138",
+    "countryCode": "ENGLAND",
+    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
+    "regionName": "East Midlands"
+  },
+  {
+    "id": "4c223c00-c1eb-43d7-9c49-0e05626166bf",
+    "name": "Newcastle-under-Lyme",
+    "code": "E07000195",
+    "countryCode": "ENGLAND",
+    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
+    "regionName": "West Midlands"
+  },
+  {
+    "id": "4df67854-7f50-4b8d-b431-93adfdd800dc",
+    "name": "Rochdale",
+    "code": "E08000005",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
+  },
+  {
+    "id": "ebc3c1e0-496e-4ae6-a066-5d6f3d65a565",
+    "name": "Somerset",
+    "code": "E06000066",
+    "countryCode": "ENGLAND",
+    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
+    "regionName": "South West"
+  },
+  {
+    "id": "c3069c84-6135-4764-8f30-cbbe22981484",
+    "name": "Test Valley",
+    "code": "E07000093",
+    "countryCode": "ENGLAND",
+    "regionId": "956dc494-6f1e-4aa5-accd-a4c112aaccc9",
+    "regionName": "South East"
+  },
+  {
+    "id": "bc9d43a6-2bc0-4037-8bfe-2ff5e657c160",
+    "name": "Cheshire West and Chester",
+    "code": "E06000050",
+    "countryCode": "ENGLAND",
+    "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
+    "regionName": "North West"
   },
   {
     "id": "6b3bdaf4-2dc0-4491-b5ec-ef9426d998fc",
@@ -104,22 +120,6 @@
     "regionName": "London"
   },
   {
-    "id": "45831c76-dafc-4769-8a03-85a7c1623627",
-    "name": "Lincoln",
-    "code": "E07000138",
-    "countryCode": "ENGLAND",
-    "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
-    "regionName": "East Midlands"
-  },
-  {
-    "id": "4c223c00-c1eb-43d7-9c49-0e05626166bf",
-    "name": "Newcastle-under-Lyme",
-    "code": "E07000195",
-    "countryCode": "ENGLAND",
-    "regionId": "fba9c95e-5e5c-4a33-9559-534df96a1083",
-    "regionName": "West Midlands"
-  },
-  {
     "id": "87427552-d71f-47f8-9329-5edf90d6af12",
     "name": "North Kesteven",
     "code": "E07000139",
@@ -128,19 +128,19 @@
     "regionName": "East Midlands"
   },
   {
-    "id": "ebc3c1e0-496e-4ae6-a066-5d6f3d65a565",
-    "name": "Somerset",
-    "code": "E06000066",
-    "countryCode": "ENGLAND",
-    "regionId": "d0ad57a4-9c4b-4524-a926-06950949d041",
-    "regionName": "South West"
-  },
-  {
     "id": "31455f7b-45c1-43a5-98ef-9c65fd7472ca",
     "name": "South Derbyshire",
     "code": "E07000039",
     "countryCode": "ENGLAND",
     "regionId": "36e6b74c-49f8-4409-9fe8-1f43d06e1ce3",
     "regionName": "East Midlands"
+  },
+  {
+    "id": "4913c47e-4926-4305-ba51-1f01707f1d0b",
+    "name": "Sutton",
+    "code": "E09000029",
+    "countryCode": "ENGLAND",
+    "regionId": "de96b08f-1c59-4dec-8994-ad9216475bc5",
+    "regionName": "London"
   }
 ]

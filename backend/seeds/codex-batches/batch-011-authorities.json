@@ -48,6 +48,14 @@
     "regionName": "West Midlands"
   },
   {
+    "id": "8f566f13-8281-4167-8a26-eff47173c4b6",
+    "name": "North Lincolnshire",
+    "code": "E06000013",
+    "countryCode": "ENGLAND",
+    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
+    "regionName": "Yorkshire and the Humber"
+  },
+  {
     "id": "3c567233-40ed-48a2-8b08-65eadf2efb09",
     "name": "South Norfolk",
     "code": "E07000149",
@@ -86,14 +94,6 @@
     "countryCode": "ENGLAND",
     "regionId": "12f2b4b7-0b33-473c-a63c-2ea4b0d5f39f",
     "regionName": "North West"
-  },
-  {
-    "id": "8f566f13-8281-4167-8a26-eff47173c4b6",
-    "name": "North Lincolnshire",
-    "code": "E06000013",
-    "countryCode": "ENGLAND",
-    "regionId": "0b446a59-d080-4f42-be7d-69cbb54232dc",
-    "regionName": "Yorkshire and the Humber"
   },
   {
     "id": "6161bc31-3a78-42d3-88b6-d87511894f49",

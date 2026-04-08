@@ -1,8 +1,18 @@
-import { Prisma, PrismaClient, ProjectType, ProjectStatus, EvidenceType } from '@prisma/client';
+import {
+  Prisma,
+  PrismaClient,
+  ProjectType,
+  ProjectStatus,
+  EvidenceType,
+} from '@prisma/client';
 
 export type SeedProjectsResult = {
   successCount: number;
   failCount: number;
+};
+
+export type SeedProjectsOptions = {
+  updateExisting?: boolean;
 };
 
 /**
@@ -11,7 +21,8 @@ export type SeedProjectsResult = {
  */
 export async function seedProjectsArray(
   prisma: PrismaClient,
-  projects: unknown[]
+  projects: unknown[],
+  options: SeedProjectsOptions = {}
 ): Promise<SeedProjectsResult> {
   let successCount = 0;
   let failCount = 0;
@@ -27,7 +38,11 @@ export async function seedProjectsArray(
   const normalizeProjectStatus = (value?: string) => {
     if (!value) return 'AMBER';
     const normalized = value.toUpperCase();
-    if (normalized === 'RED' || normalized === 'AMBER' || normalized === 'GREEN') {
+    if (
+      normalized === 'RED' ||
+      normalized === 'AMBER' ||
+      normalized === 'GREEN'
+    ) {
       return normalized;
     }
     if (
@@ -67,7 +82,9 @@ export async function seedProjectsArray(
 
   const isUuid = (value?: string) =>
     !!value &&
-    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value);
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(
+      value
+    );
 
   const resolveRegionId = async (regionName?: string) => {
     if (!regionName) return undefined;
@@ -100,36 +117,36 @@ export async function seedProjectsArray(
     return undefined;
   };
 
-  const resolveLocalAuthorityId = async (
+  const resolveLocalAuthority = async (
     localAuthorityCode?: string,
     localAuthorityName?: string
   ) => {
     if (localAuthorityCode) {
       const byCode = await prisma.localAuthority.findUnique({
         where: { code: localAuthorityCode },
-        select: { id: true },
+        select: { id: true, regionId: true },
       });
-      if (byCode?.id) return byCode.id;
+      if (byCode?.id) return byCode;
     }
     if (localAuthorityName) {
       const byName = await prisma.localAuthority.findFirst({
         where: { name: localAuthorityName },
-        select: { id: true },
+        select: { id: true, regionId: true },
       });
-      if (byName?.id) return byName.id;
+      if (byName?.id) return byName;
     }
     return undefined;
   };
 
-  const ensureLocalAuthorityId = async (
+  const ensureLocalAuthority = async (
     localAuthorityId?: string,
     localAuthorityCode?: string,
     localAuthorityName?: string
-  ): Promise<string | undefined> => {
+  ): Promise<{ id: string; regionId: string } | undefined> => {
     if (localAuthorityId) {
       if (isPlaceholderId(localAuthorityId)) return undefined;
       if (!isUuid(localAuthorityId)) {
-        const resolved = await resolveLocalAuthorityId(
+        const resolved = await resolveLocalAuthority(
           localAuthorityId,
           localAuthorityName
         );
@@ -137,11 +154,11 @@ export async function seedProjectsArray(
       }
       const exists = await prisma.localAuthority.findUnique({
         where: { id: localAuthorityId },
-        select: { id: true },
+        select: { id: true, regionId: true },
       });
-      return exists?.id;
+      return exists ?? undefined;
     }
-    return resolveLocalAuthorityId(localAuthorityCode, localAuthorityName);
+    return resolveLocalAuthority(localAuthorityCode, localAuthorityName);
   };
 
   for (const project of projects) {
@@ -171,38 +188,32 @@ export async function seedProjectsArray(
       } as Prisma.ProjectUncheckedCreateInput;
 
       if (typeof projectData.type === 'string') {
-        projectData.type = normalizeProjectType(projectData.type as string) as ProjectType;
+        projectData.type = normalizeProjectType(
+          projectData.type as string
+        ) as ProjectType;
       }
       projectData.status = normalizeProjectStatus(
-        typeof projectData.status === 'string' ? (projectData.status as string) : undefined
+        typeof projectData.status === 'string'
+          ? (projectData.status as string)
+          : undefined
       ) as ProjectStatus;
       if (
         typeof projectData.expectedCompletion === 'string' &&
         projectData.expectedCompletion.length > 0
       ) {
-        projectData.expectedCompletion = new Date(projectData.expectedCompletion as string);
-      }
-      const resolvedRegionId = await ensureRegionId(
-        typeof projectData.regionId === 'string' ? (projectData.regionId as string) : undefined,
-        typeof regionName === 'string' ? regionName : undefined
-      );
-      if (resolvedRegionId) {
-        projectData.regionId = resolvedRegionId;
-      } else if (projectData.regionId && typeof projectData.regionId === 'string') {
-        console.warn(
-          `Warning: region not found for id/name "${projectData.regionId}" (project ${p.id})`
+        projectData.expectedCompletion = new Date(
+          projectData.expectedCompletion as string
         );
-        delete projectData.regionId;
       }
-      const resolvedLocalAuthorityId = await ensureLocalAuthorityId(
+      const resolvedLocalAuthority = await ensureLocalAuthority(
         typeof projectData.localAuthorityId === 'string'
           ? (projectData.localAuthorityId as string)
           : undefined,
         typeof localAuthorityCode === 'string' ? localAuthorityCode : undefined,
         typeof localAuthorityName === 'string' ? localAuthorityName : undefined
       );
-      if (resolvedLocalAuthorityId) {
-        projectData.localAuthorityId = resolvedLocalAuthorityId;
+      if (resolvedLocalAuthority) {
+        projectData.localAuthorityId = resolvedLocalAuthority.id;
       } else if (
         projectData.localAuthorityId &&
         typeof projectData.localAuthorityId === 'string'
@@ -213,16 +224,62 @@ export async function seedProjectsArray(
         delete projectData.localAuthorityId;
       }
 
+      const resolvedRegionId = await ensureRegionId(
+        typeof projectData.regionId === 'string'
+          ? (projectData.regionId as string)
+          : undefined,
+        typeof regionName === 'string' ? regionName : undefined
+      );
+      if (resolvedRegionId) {
+        projectData.regionId = resolvedRegionId;
+      } else if (resolvedLocalAuthority?.regionId) {
+        projectData.regionId = resolvedLocalAuthority.regionId;
+      } else if (
+        projectData.regionId &&
+        typeof projectData.regionId === 'string'
+      ) {
+        console.warn(
+          `Warning: region not found for id/name "${projectData.regionId}" (project ${p.id})`
+        );
+        delete projectData.regionId;
+      }
+
       if (typeof projectData.statusRationale === 'string') {
         const maxLength = 191;
         if (projectData.statusRationale.length > maxLength) {
-          projectData.statusRationale = projectData.statusRationale.slice(0, maxLength);
+          projectData.statusRationale = projectData.statusRationale.slice(
+            0,
+            maxLength
+          );
         }
       }
 
+      const updateData: Prisma.ProjectUncheckedUpdateInput =
+        options.updateExisting
+          ? Object.fromEntries(
+              Object.entries({
+                title: projectData.title,
+                description: projectData.description,
+                type: projectData.type,
+                regionId: projectData.regionId,
+                localAuthorityId: projectData.localAuthorityId,
+                expectedCompletion: projectData.expectedCompletion,
+                status: projectData.status,
+                statusRationale: projectData.statusRationale,
+                moderationState: projectData.moderationState,
+                latitude: projectData.latitude,
+                longitude: projectData.longitude,
+                locationDescription: projectData.locationDescription,
+                locationSource: projectData.locationSource,
+                locationConfidence: projectData.locationConfidence,
+                imageUrl: projectData.imageUrl,
+              }).filter(([, value]) => value !== undefined)
+            )
+          : {};
+
       const seededProject = await prisma.project.upsert({
         where: { id: p.id as string },
-        update: {},
+        update: updateData,
         create: projectData,
       });
 
@@ -260,7 +317,9 @@ export async function seedProjectsArray(
           })
           .filter(Boolean) as Prisma.EvidenceItemCreateManyInput[];
 
-        const urls = evidenceItems.map((row) => row.url).filter((u): u is string => Boolean(u));
+        const urls = evidenceItems
+          .map((row) => row.url)
+          .filter((u): u is string => Boolean(u));
         let toInsert = evidenceItems;
         if (urls.length > 0) {
           const existing = await prisma.evidenceItem.findMany({
@@ -268,9 +327,13 @@ export async function seedProjectsArray(
             select: { url: true },
           });
           const seen = new Set(
-            existing.map((row) => row.url).filter((u): u is string => Boolean(u))
+            existing
+              .map((row) => row.url)
+              .filter((u): u is string => Boolean(u))
           );
-          toInsert = evidenceItems.filter((row) => !row.url || !seen.has(row.url));
+          toInsert = evidenceItems.filter(
+            (row) => !row.url || !seen.has(row.url)
+          );
         }
 
         if (toInsert.length > 0) {
@@ -287,7 +350,9 @@ export async function seedProjectsArray(
       successCount++;
     } catch (e) {
       const id =
-        project && typeof project === 'object' && typeof (project as { id?: string }).id === 'string'
+        project &&
+        typeof project === 'object' &&
+        typeof (project as { id?: string }).id === 'string'
           ? (project as { id: string }).id
           : '?';
       console.error(`Failed to seed project ${id}:`, e);
